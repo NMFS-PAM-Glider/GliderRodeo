@@ -1,0 +1,86 @@
+project: 
+  type: website
+  output-dir: _site
+
+website: 
+  page-navigation: true
+  title: "NOAA quarto simple" 
+  site-url: "https://shannonrankin.github.io/pathways-flowchart/" 
+  repo-url: "https://github.com/shannonrankin/pathways-flowchart"
+  repo-actions: [edit, source, issue]
+  favicon: images/favicon.ico
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-1.0"
+  
+  sidebar:
+    background: "#D9E3E4"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
+    favicon: images/favicon.ico
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: "https://shannonrankin.github.io/pathways-flowchart/"
+        text: "Pathways Flowchart"
+      - icon: github
+        href: "https://github.com/shannonrankin/pathways-flowchart"
+        text: "Pathways Flowchart"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: content/getStarted.qmd
+        text: "Get Started"
+      - section: content/flowchart-intro.qmd
+        text: "Pathways Flowchart"
+        contents:
+        - href: content/flowchart-pathways-example.qmd
+          text: "Example Flowchart"
+        - href: content/flowchart-doc2draw.qmd
+          text: "Build your Flowchart"
+        - href: content/flowchart-refine.qmd
+          text: "Refine your Flowchart"
+        - href: content/flowchart-pathways.qmd
+          text: "Customize Pathways Flowchart"
+        - href: content/flowchart-decisions.qmd
+          text: "Decision Tool"
+        - href: content/dashboard.qmd
+          text: "Example Dashboard"
+        - href: content/flowchart-getItDone.qmd
+          text: "Get It Done"
+        - href: content/dashboard-givingBack.qmd
+          text: "Giving Back"
+        - href: content/flowchart-revise.qmd
+          text: "Revise and Revisit"
+      - href: content/flowchart-transition.qmd
+        text: "Transition Your Workflow"
+      # - href: content/custom-flowchart.qmd
+      #   text: "Custom Flowcharts"
+
+resources: 
+  - output/*.svg
+  - output/*.drawio
+  - content/card-images/*
+        
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+
+
+  

@@ -1,0 +1,493 @@
+---
+title: "Interactive Workflow Tool"
+format: 
+  html:
+    code-fold: true
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(here)
+source(here("_code/_commonR.R"))
+
+# ============================================
+# CONFIGURATION - EDIT THESE VALUES
+# ============================================
+SURVEY_PASSWORD <- "workflow2026"  # Change this to your desired password
+DIAGRAM_FILE <- "OSworkflow.svg"   # Your SVG diagram filename
+```
+
+## Example Interactive Flowchart
+
+Practice with this example flowchart to see how this works:
+
+-   Use your mouse (or the buttoms) to zoom in, zoom out, then zoom in again
+
+-   Use your mouse to 'grab' and drag the zoomed in flowchart to move the zoomed in view by clicking and holding on the image while moving your mouse.
+
+-   Select the Flowchart Component that says "Flow Charts" (move your mouse to hover over this box until you can click to select it). A survey should open. Add your name and for the password, put "workflow2026".
+
+    -   This flowchart shows the workflow for using the Pathways Flowchart tool– so you can practice with this example while you are learning to use the tool. In this case, you can submit responses truthfully as it relates to your experience with the tool. Or not.
+
+    -   When you are done, submit the response.
+
+    -   When you have finished all responses, scroll down and choose 'Download All Responses'. This will save responses to a csv file in your repository. As you improve components of your workflow, you can revisit these surveys and update the reponses (which will update the csv). This information is used in the Decision Tool, so updated responses are helpful!
+
+-   These instructions are summarized at the bottom of this example Flowchart, and of your modified flowchart.
+
+Click on any shape in the diagram below to open the survey panel and record your observations.
+
+```{=html}
+<!-- Survey Overlay -->
+<div class="survey-overlay" id="survey-overlay" onclick="closeSurvey()"></div>
+
+<!-- Survey Sidebar -->
+<div class="survey-sidebar" id="survey-sidebar">
+  <button class="close-survey" onclick="closeSurvey()">&times;</button>
+  
+  <div class="survey-content">
+    <h2 id="survey-title">Workflow Survey</h2>
+    
+    <div class="info-text">
+      <strong>Shape:</strong> <span id="shape-info">None selected</span>
+    </div>
+    
+    <div id="previous-entry-display"></div>
+    
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="username">Your Name/ID:</label>
+        <input type="text" id="username" required placeholder="Enter your name">
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required placeholder="Enter password">
+        <small>Required for editing entries</small>
+      </div>
+      
+      <div class="form-group">
+        <label for="Status">Question 1: What is the current level of automation?</label>
+        <select id="Status" required>
+          <option value="">-- Select --</option>
+          <option value="Not Started">Not Started</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+          <option value="Not Applicable">Not Applicable</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="Potential">Question 2: What is the potential for Automation?</label>
+        <select id="Potential" required>
+          <option value="">-- Select --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Unknown">Unknown</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="PainPoint">Question 3: How painful is the current process?</label>
+        <select id="PainPoint" required>
+          <option value="">-- Select --</option>
+          <option value="All Good">All Good</option>
+          <option value="Room for Improvement">Room for Improvement</option>
+          <option value="Painful!">Painful!</option>
+          <!-- <option value="Blocked">Blocked</option> -->
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="Concern">Question 4: How concerned are you with modifying this task?</label>
+        <select id="Concern" required>
+          <option value="">-- Select --</option>
+          <option value="No Concern">No Concern</option>
+          <option value="Moderate Concern">Moderate Concern</option>
+          <option value="Terrified">Terrified</option>
+          <!-- <option value="Insufficient">Insufficient</option> -->
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="Proficiency">Question 5: What is your level of proficiency with task automation?</label>
+        <select id="Proficiency" required>
+          <option value="">-- Select --</option>
+          <option value="Very Low">Very Low</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="Medium-Strong">Medium-Strong</option>
+          <option value="Strong">Strong</option>
+        </select>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit Response</button>
+      <div id="form-message"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Diagram Controls -->
+<div class="svg-controls">
+  <button onclick="zoomIn()">🔍 Zoom In</button>
+  <button onclick="zoomOut()">🔍 Zoom Out</button>
+  <button onclick="resetView()">⟲ Reset View</button>
+  <button onclick="togglePanMode()" id="pan-toggle">🔒 Lock Pan</button>
+  <span id="zoom-level">Zoom: 100%</span>
+</div>
+
+<!-- SVG Viewer -->
+<div id="svg-viewer" class="svg-viewer-container"></div>
+
+<!-- Data Management Section -->
+<div class="data-section">
+  <h3>Survey Data Management</h3>
+  <p>All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.</p>
+  <button onclick="downloadCSV()" class="download-btn">📥 Download All Responses (CSV)</button>
+  <p class="response-count" id="response-count">Total responses: 0</p>
+  <button onclick="clearAllData()" class="clear-btn">🗑️ Clear All Local Data</button>
+</div>
+
+<script>
+  // ============================================
+  // CONFIGURATION
+  // ============================================
+  const SURVEY_PASSWORD = '`r SURVEY_PASSWORD`';
+  const DIAGRAM_PATH = '../output/`r DIAGRAM_FILE`';
+  
+  // ============================================
+  // DATA STORAGE
+  // ============================================
+  const STORAGE_KEY = 'workflow_survey_responses';
+  
+  function getResponses() {
+    const data = localStorage.getItem(STORAGE_KEY);
+    return data ? JSON.parse(data) : [];
+  }
+  
+  function saveResponse(response) {
+    const responses = getResponses();
+    responses.push(response);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(responses));
+    updateResponseCount();
+  }
+  
+  function updateResponseCount() {
+    const responses = getResponses();
+    document.getElementById('response-count').textContent = `Total responses: ${responses.length}`;
+  }
+  
+  function getMostRecentResponse(shapeId) {
+    const responses = getResponses();
+    const shapeResponses = responses.filter(r => r.shape_id === shapeId);
+    if (shapeResponses.length === 0) return null;
+    
+    shapeResponses.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    return shapeResponses[0];
+  }
+  
+  // ============================================
+  // SURVEY PANEL FUNCTIONS
+  // ============================================
+  let currentShapeId = null;
+  let currentShapeText = null;
+  
+  function openSurvey(shapeId, shapeText) {
+    currentShapeId = shapeId;
+    currentShapeText = shapeText || shapeId;
+    
+    document.getElementById('survey-sidebar').classList.add('open');
+    document.getElementById('survey-overlay').classList.add('visible');
+    document.getElementById('shape-info').textContent = currentShapeText;
+    
+    const previousEntry = getMostRecentResponse(shapeId);
+    const previousEntryDiv = document.getElementById('previous-entry-display');
+    
+    if (previousEntry) {
+      previousEntryDiv.innerHTML = `
+        <div class="previous-entry">
+          <strong>📝 Previous Entry (${new Date(previousEntry.timestamp).toLocaleString()}):</strong><br>
+          <small>Submitted by: ${previousEntry.username}</small><br>
+          <small>The form below is pre-filled with your previous answers. Make changes and submit to create a new entry.</small>
+        </div>
+      `;
+      
+      document.getElementById('Status').value = previousEntry.Status;
+      document.getElementById('Potential').value = previousEntry.Potential;
+      document.getElementById('PainPoint').value = previousEntry.PainPoint;
+      document.getElementById('Concern').value = previousEntry.Concern;
+      document.getElementById('Proficiency').value = previousEntry.Proficiency;
+    } else {
+      previousEntryDiv.innerHTML = `
+        <div class="info-text">
+          <strong>ℹ️ No previous entries for this shape.</strong>
+        </div>
+      `;
+      document.getElementById('survey-form').reset();
+    }
+    
+    document.getElementById('form-message').innerHTML = '';
+  }
+  
+  function closeSurvey() {
+    document.getElementById('survey-sidebar').classList.remove('open');
+    document.getElementById('survey-overlay').classList.remove('visible');
+    document.getElementById('survey-form').reset();
+    document.getElementById('form-message').innerHTML = '';
+  }
+  
+  // ============================================
+  // FORM SUBMISSION
+  // ============================================
+  document.getElementById('survey-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const messageDiv = document.getElementById('form-message');
+    const password = document.getElementById('password').value;
+    
+    if (password !== SURVEY_PASSWORD) {
+      messageDiv.innerHTML = '<div class="error-msg">❌ Incorrect password</div>';
+      return;
+    }
+    
+    const response = {
+      timestamp: new Date().toISOString(),
+      username: document.getElementById('username').value,
+      shape_id: currentShapeId,
+      shape_text: currentShapeText,
+      Status: document.getElementById('Status').value,
+      Potential: document.getElementById('Potential').value,
+      PainPoint: document.getElementById('PainPoint').value,
+      Concern: document.getElementById('Concern').value,
+      Proficiency: document.getElementById('Proficiency').value
+    };
+    
+    saveResponse(response);
+    
+    messageDiv.innerHTML = '<div class="success-msg">✅ Response saved! Remember to download the CSV and commit to GitHub.</div>';
+    
+    setTimeout(() => {
+      closeSurvey();
+    }, 2000);
+  });
+  
+  // ============================================
+  // CSV DOWNLOAD
+  // ============================================
+  function downloadCSV() {
+    const responses = getResponses();
+    
+    if (responses.length === 0) {
+      alert('No responses to download yet!');
+      return;
+    }
+    
+    const headers = ['timestamp', 'username', 'shape_id', 'shape_text', 'Status', 'Potential', 'PainPoint', 'Concern', 'Proficiency'];
+    const csvContent = [
+      headers.join(','),
+      ...responses.map(r => [
+        r.timestamp,
+        `"${r.username}"`,
+        `"${r.shape_id}"`,
+        `"${r.shape_text}"`,
+        `"${r.Status}"`,
+        `"${r.Potential}"`,
+        `"${r.PainPoint}"`,
+        `"${r.Concern}"`,
+        `"${r.Proficiency}"`
+      ].join(','))
+    ].join('\n');
+    
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `workflow_survey_responses_${new Date().toISOString().split('T')[0]}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+  
+  function clearAllData() {
+    if (confirm('Are you sure you want to clear all survey data? This cannot be undone!')) {
+      localStorage.removeItem(STORAGE_KEY);
+      updateResponseCount();
+      alert('All data cleared!');
+    }
+  }
+  
+  // ============================================
+  // SVG DIAGRAM WITH PAN/ZOOM
+  // ============================================
+  (function() {
+    var container = document.getElementById('svg-viewer');
+    var scale = 1;
+    var translateX = 0;
+    var translateY = 0;
+    var isDragging = false;
+    var panEnabled = true;
+    var startX, startY;
+    var svg;
+    
+    fetch(DIAGRAM_PATH)
+      .then(response => response.text())
+      .then(svgText => {
+        container.innerHTML = svgText;
+        svg = container.querySelector('svg');
+        
+        if (svg) {
+          svg.removeAttribute('width');
+          svg.removeAttribute('height');
+          
+          var viewBox = svg.getAttribute('viewBox');
+          if (!viewBox) {
+            var bbox = svg.getBBox();
+            svg.setAttribute('viewBox', `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`);
+          }
+          
+ 
+// More aggressive link interception
+var links = svg.querySelectorAll('a');
+console.log("Found", links.length, "links in SVG");
+
+links.forEach(function(link) {
+  var href = link.getAttribute('href') || link.getAttribute('xlink:href');
+  console.log("Link href:", href);
+  
+link.addEventListener('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  
+  var href = this.getAttribute('href') || this.getAttribute('xlink:href');
+  console.log("Clicked link with href:", href);
+  
+  // Strip diagrams.net URL if present
+  if (href && href.includes('#survey:')) {
+    var surveyPart = href.substring(href.indexOf('#survey:'));
+    console.log("Opening survey for:", surveyPart);
+    var parts = surveyPart.replace('#survey:', '').split('|');
+    var shapeId = parts[0];
+    var shapeText = parts[1] || shapeId;
+    openSurvey(shapeId, shapeText);
+  } else if (href) {
+      console.log("Opening survey for:", href);
+      var parts = href.replace('#survey:', '').split('|');
+      var shapeId = parts[0];
+      var shapeText = parts[1] || shapeId;
+      openSurvey(shapeId, shapeText);
+    } else if (href) {
+      console.log("Opening external link:", href);
+      window.open(href, '_blank');
+    }
+  });
+});
+          updateTransform();
+        }
+      })
+      .catch(error => {
+        container.innerHTML = '<p style="color: red; padding: 20px;">Error loading diagram: ' + error.message + '</p>';
+      });
+    
+    container.addEventListener('mousedown', function(e) {
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        return;
+      }
+      
+      if (panEnabled) {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        e.preventDefault();
+      }
+    });
+    
+    document.addEventListener('mousemove', function(e) {
+      if (isDragging && panEnabled) {
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+      }
+    });
+    
+    document.addEventListener('mouseup', function(e) {
+      isDragging = false;
+    });
+    
+    container.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      var delta = e.deltaY > 0 ? 0.9 : 1.1;
+      
+      var rect = container.getBoundingClientRect();
+      var mouseX = e.clientX - rect.left;
+      var mouseY = e.clientY - rect.top;
+      
+      translateX = mouseX - (mouseX - translateX) * delta;
+      translateY = mouseY - (mouseY - translateY) * delta;
+      
+      scale *= delta;
+      scale = Math.max(0.1, Math.min(scale, 10));
+      
+      updateTransform();
+    });
+    
+    function updateTransform() {
+      if (svg) {
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        svg.style.transformOrigin = '0 0';
+        document.getElementById('zoom-level').textContent = 'Zoom: ' + Math.round(scale * 100) + '%';
+      }
+    }
+    
+    window.zoomIn = function() {
+      scale *= 1.2;
+      scale = Math.min(scale, 10);
+      updateTransform();
+    };
+    
+    window.zoomOut = function() {
+      scale *= 0.8;
+      scale = Math.max(scale, 0.1);
+      updateTransform();
+    };
+    
+    window.resetView = function() {
+      scale = 1;
+      translateX = 0;
+      translateY = 0;
+      updateTransform();
+    };
+    
+    window.togglePanMode = function() {
+      panEnabled = !panEnabled;
+      var btn = document.getElementById('pan-toggle');
+      if (panEnabled) {
+        btn.textContent = '🔒 Lock Pan';
+        container.style.cursor = 'grab';
+      } else {
+        btn.textContent = '🔓 Enable Pan';
+        container.style.cursor = 'default';
+      }
+    };
+  })();
+  
+  updateResponseCount();
+</script>
+```
+
+## Instructions for Users
+
+### How to Use This System
+
+1.  **Click on any shape** in the diagram to open the survey panel
+2.  **Fill out the survey** with your observations
+3.  **Enter the password** (ask your administrator)
+4.  **Submit** - your response is saved locally in your browser
+5.  **Download CSV** regularly and commit to your GitHub repository
+6.  **Return later** - the form will pre-fill with your previous answers
+
+### For Template Users
+
+When you copy this template: 1. Change the `SURVEY_PASSWORD` in the R setup chunk 2. Replace `DIAGRAM_FILE` with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed

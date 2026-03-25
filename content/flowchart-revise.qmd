@@ -1,0 +1,18 @@
+---
+title: "Revise & Revisit"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+Go Full Circle! - How to revise your existing Flowchart Survey Q
+
+-   Rerun Decision Tool
+
+-   Do another project!
+
+-   Consider adding a function that changes color of flowchart
+    components (blue = calm!)
+
+    ![](images/under-construction.png)

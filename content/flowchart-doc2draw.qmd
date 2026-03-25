@@ -1,0 +1,61 @@
+---
+title: "Build your Flowchart"
+format: html
+---
+
+We have two methods for building your first draft flowchart:
+
+-   Build directly in [draw.io](https://app.diagrams.net/) (see next page on 'Refine your Flowchart'
+
+-   Build a draft from a word document (docx) with Headers (keep reading!)
+
+The automated approach is useful for complex diagrams where there is documentation (or an outline) of all components with Headers in H1, H2, and H3 format (see below). For simple diagrams, it may be easier to build directly in draw.io (see next page).
+
+## Automate Diagram Build from Text
+
+This function will allow you to build a draft draw.io workflow diagram from an existing text document (docx) with headers:
+
+-   Level 1 Headers (H1) will serve as the primary workflow
+
+-   Level 2 headers will branch off from these (these will include lower level headers can be opened in a new draw.io page for clarity).
+
+-   Once this draft flowchart is created, go to the next page to 'Refine your Flowchart'
+
+::: {.callout-note appearance="simple"}
+## Note:
+
+For more information, see the docx_to_drawio_README in the \_code folder.
+:::
+
+**Instructions:**
+
+1.  Test with Sample Data Plan
+    1.  Open your RStudio project for this repository.
+    2.  Open flowchart-doc2draw.qmd (in the content/ folder). *Alternatively, you can copy this code, below, into your own R file)*
+    3.  Run the code chunk as-is to build a draft diagram using the SampleDataPlan.
+    4.  You can follow the instructions on the next page (Refine your Flowchart) to open/view it, if you like, or you can move on to create your custom flowchart.
+2.  Custom docx –\> Flowchart
+    1.  Add your docx file to the 'output' folder. Double-check that all headings are at the level you want need for this project (this function expects H1 to be the top level, and then H2, etc.).
+    2.  Modify the path for 'path_to_docx' to select your personal docx file.
+    3.  Run the code to create your own flowchart (name will be based on the name of your original docx).
+    4.  Open in draw.io to refine (see next page, Refine your Flowchart).
+
+```{r docx2drawio}
+#| output: FALSE
+library(here)
+source(here::here("_code/docx_to_drawio.R"))
+path_to_docx <- here("output/SampleDataPlan.docx")
+path_to_output <- here("output/")
+
+# Create Flowchart in draw.io based on your docx headers
+
+  create_flowchart(
+    input_file = path_to_docx,
+    output_folder = path_to_output,
+    direction = "TB",
+    h2_new_page = TRUE
+  )
+
+```
+
+Alternatively, you can build your diagram using [draw.io](https://app.diagrams.net/)

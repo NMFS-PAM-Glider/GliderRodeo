@@ -1,0 +1,10 @@
+---
+title: "transition-workflow"
+format: html
+---
+
+Once you have finished updating your workflow so that the forms are all 'complete', then you might want to transition this workflow into your lab manual or research compendium and change links or metadata associated with each flow chart component.
+
+Give instructions to modify these (build your own form or attach metadata or give a link to more info).
+
+![](images/under-construction.png)
