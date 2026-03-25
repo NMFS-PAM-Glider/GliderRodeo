@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>setup_guide – NOAA quarto simple</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d5b445d784f0591cd0cfe4f4230be6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://shannonrankin.github.io/pathways-flowchart/" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/shannonrankin/pathways-flowchart" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/getStarted.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Get Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/flowchart-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pathways Flowchart</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-pathways-example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example Flowchart</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-doc2draw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build your Flowchart</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-refine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Refine your Flowchart</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Customize Pathways Flowchart</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decision Tool</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/dashboard.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-getItDone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Get It Done</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/dashboard-givingBack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Giving Back</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-revise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revise and Revisit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/flowchart-transition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transition Your Workflow</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#interactive-workflow-survey-system---setup-guide" id="toc-interactive-workflow-survey-system---setup-guide" class="nav-link active" data-scroll-target="#interactive-workflow-survey-system---setup-guide">Interactive Workflow Survey System - Setup Guide</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  <li><a href="#quick-start-for-template-users" id="toc-quick-start-for-template-users" class="nav-link" data-scroll-target="#quick-start-for-template-users">Quick Start for Template Users</a>
+  <ul class="collapse">
+  <li><a href="#step-1-copy-the-template" id="toc-step-1-copy-the-template" class="nav-link" data-scroll-target="#step-1-copy-the-template">Step 1: Copy the Template</a></li>
+  <li><a href="#step-2-configure-settings" id="toc-step-2-configure-settings" class="nav-link" data-scroll-target="#step-2-configure-settings">Step 2: Configure Settings</a></li>
+  <li><a href="#step-3-add-survey-links-to-your-diagram" id="toc-step-3-add-survey-links-to-your-diagram" class="nav-link" data-scroll-target="#step-3-add-survey-links-to-your-diagram">Step 3: Add Survey Links to Your Diagram</a></li>
+  <li><a href="#step-4-customize-survey-questions-optional" id="toc-step-4-customize-survey-questions-optional" class="nav-link" data-scroll-target="#step-4-customize-survey-questions-optional">Step 4: Customize Survey Questions (Optional)</a></li>
+  <li><a href="#step-5-render-and-test" id="toc-step-5-render-and-test" class="nav-link" data-scroll-target="#step-5-render-and-test">Step 5: Render and Test</a></li>
+  </ul></li>
+  <li><a href="#user-workflow" id="toc-user-workflow" class="nav-link" data-scroll-target="#user-workflow">User Workflow</a>
+  <ul class="collapse">
+  <li><a href="#for-regular-users" id="toc-for-regular-users" class="nav-link" data-scroll-target="#for-regular-users">For Regular Users</a></li>
+  <li><a href="#first-time-setup" id="toc-first-time-setup" class="nav-link" data-scroll-target="#first-time-setup">First-Time Setup</a></li>
+  </ul></li>
+  <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File Structure</a></li>
+  <li><a href="#survey-link-format" id="toc-survey-link-format" class="nav-link" data-scroll-target="#survey-link-format">Survey Link Format</a></li>
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data Storage</a>
+  <ul class="collapse">
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How It Works</a></li>
+  <li><a href="#csv-format" id="toc-csv-format" class="nav-link" data-scroll-target="#csv-format">CSV Format</a></li>
+  <li><a href="#version-control-workflow" id="toc-version-control-workflow" class="nav-link" data-scroll-target="#version-control-workflow">Version Control Workflow</a></li>
+  </ul></li>
+  <li><a href="#customization-guide" id="toc-customization-guide" class="nav-link" data-scroll-target="#customization-guide">Customization Guide</a>
+  <ul class="collapse">
+  <li><a href="#change-number-of-questions" id="toc-change-number-of-questions" class="nav-link" data-scroll-target="#change-number-of-questions">Change Number of Questions</a></li>
+  <li><a href="#change-question-types" id="toc-change-question-types" class="nav-link" data-scroll-target="#change-question-types">Change Question Types</a></li>
+  <li><a href="#change-password" id="toc-change-password" class="nav-link" data-scroll-target="#change-password">Change Password</a></li>
+  <li><a href="#change-diagram" id="toc-change-diagram" class="nav-link" data-scroll-target="#change-diagram">Change Diagram</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#survey-panel-doesnt-open" id="toc-survey-panel-doesnt-open" class="nav-link" data-scroll-target="#survey-panel-doesnt-open">Survey Panel Doesn’t Open</a></li>
+  <li><a href="#password-not-working" id="toc-password-not-working" class="nav-link" data-scroll-target="#password-not-working">Password Not Working</a></li>
+  <li><a href="#previous-entry-not-showing" id="toc-previous-entry-not-showing" class="nav-link" data-scroll-target="#previous-entry-not-showing">Previous Entry Not Showing</a></li>
+  <li><a href="#csv-download-not-working" id="toc-csv-download-not-working" class="nav-link" data-scroll-target="#csv-download-not-working">CSV Download Not Working</a></li>
+  <li><a href="#data-lost-after-closing-browser" id="toc-data-lost-after-closing-browser" class="nav-link" data-scroll-target="#data-lost-after-closing-browser">Data Lost After Closing Browser</a></li>
+  </ul></li>
+  <li><a href="#advanced-features" id="toc-advanced-features" class="nav-link" data-scroll-target="#advanced-features">Advanced Features</a>
+  <ul class="collapse">
+  <li><a href="#analyzing-responses-in-r" id="toc-analyzing-responses-in-r" class="nav-link" data-scroll-target="#analyzing-responses-in-r">Analyzing Responses in R</a></li>
+  <li><a href="#multiple-diagrams" id="toc-multiple-diagrams" class="nav-link" data-scroll-target="#multiple-diagrams">Multiple Diagrams</a></li>
+  <li><a href="#sharing-data-across-team" id="toc-sharing-data-across-team" class="nav-link" data-scroll-target="#sharing-data-across-team">Sharing Data Across Team</a></li>
+  </ul></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
+  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
+  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/supplement/SETUP_GUIDE.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/supplement/SETUP_GUIDE.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<section id="interactive-workflow-survey-system---setup-guide" class="level1">
+<h1>Interactive Workflow Survey System - Setup Guide</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This system allows users to click on shapes in a workflow diagram and fill out surveys about each component. All responses are stored locally and can be downloaded as CSV files for version control in GitHub.</p>
+</section>
+<section id="features" class="level2">
+<h2 class="anchored" data-anchor-id="features">Features</h2>
+<p>✅ <strong>Interactive Diagram</strong> - Pan, zoom, and click on shapes<br>
+✅ <strong>Sliding Survey Panel</strong> - Clean interface for data entry<br>
+✅ <strong>Password Protected</strong> - Simple shared password for editing<br>
+✅ <strong>Pre-filled Forms</strong> - Editing shows previous responses<br>
+✅ <strong>Complete History</strong> - All submissions are logged with timestamps<br>
+✅ <strong>CSV Export</strong> - Download data for GitHub commits<br>
+✅ <strong>Works Out of the Box</strong> - Minimal configuration needed</p>
+<hr>
+</section>
+<section id="quick-start-for-template-users" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start-for-template-users">Quick Start for Template Users</h2>
+<section id="step-1-copy-the-template" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-copy-the-template">Step 1: Copy the Template</h3>
+<ol type="1">
+<li>Copy these files to your project:
+<ul>
+<li><code>workflow-survey-system.qmd</code></li>
+<li><code>add_survey_links.R</code> (optional, for existing diagrams)</li>
+</ul></li>
+<li>Place your SVG diagram in the <code>output/</code> folder</li>
+</ol>
+</section>
+<section id="step-2-configure-settings" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-configure-settings">Step 2: Configure Settings</h3>
+<p>Open <code>workflow-survey-system.qmd</code> and edit the R setup chunk:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># CONFIGURATION - EDIT THESE VALUES</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>SURVEY_PASSWORD <span class="ot">&lt;-</span> <span class="st">"workflow2024"</span>  <span class="co"># Change this to your desired password</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>DIAGRAM_FILE <span class="ot">&lt;-</span> <span class="st">"OSworkflow.svg"</span>   <span class="co"># Your SVG diagram filename</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Change:</strong> - <code>SURVEY_PASSWORD</code> - Set your own password - <code>DIAGRAM_FILE</code> - Use your SVG filename</p>
+</section>
+<section id="step-3-add-survey-links-to-your-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-add-survey-links-to-your-diagram">Step 3: Add Survey Links to Your Diagram</h3>
+<p>You have <strong>two options</strong>:</p>
+<section id="option-a-manually-in-diagrams.net-recommended-for-20-shapes" class="level4">
+<h4 class="anchored" data-anchor-id="option-a-manually-in-diagrams.net-recommended-for-20-shapes">Option A: Manually in diagrams.net (Recommended for &lt;20 shapes)</h4>
+<ol type="1">
+<li>Open your diagram at https://app.diagrams.net/</li>
+<li>Select a shape</li>
+<li>Right-click → <strong>Edit Link</strong> (or <code>Alt+Shift+L</code>)</li>
+<li>Enter link format: <code>#survey:SHAPE_ID|SHAPE_TEXT</code>
+<ul>
+<li>Example: <code>#survey:data_collection|Data Collection</code></li>
+<li><code>SHAPE_ID</code> = Unique identifier (no spaces)</li>
+<li><code>SHAPE_TEXT</code> = Display name for the shape</li>
+</ul></li>
+<li>Click <strong>Apply</strong></li>
+<li>Repeat for all shapes</li>
+<li><strong>File → Export as → SVG</strong>
+<ul>
+<li>✅ Check “Include a copy of my diagram”</li>
+<li>✅ Check “Links”</li>
+</ul></li>
+<li>Save to <code>output/your_diagram.svg</code></li>
+</ol>
+</section>
+<section id="option-b-automatically-with-r-function-for-20-shapes" class="level4">
+<h4 class="anchored" data-anchor-id="option-b-automatically-with-r-function-for-20-shapes">Option B: Automatically with R Function (For &gt;20 shapes)</h4>
+<ol type="1">
+<li>Export your diagram from diagrams.net to SVG (without links)</li>
+<li>Save it to <code>output/</code> folder</li>
+<li>In R Console:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"add_survey_links.R"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">add_survey_links_to_svg</span>(<span class="st">"output/your_diagram.svg"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This automatically adds survey links to all shapes!</p>
+</section>
+</section>
+<section id="step-4-customize-survey-questions-optional" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-customize-survey-questions-optional">Step 4: Customize Survey Questions (Optional)</h3>
+<p>In <code>workflow-survey-system.qmd</code>, find the survey form section and edit questions:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"form-group"</span><span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"question1"</span><span class="dt">&gt;</span>Question 1: YOUR QUESTION HERE<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">select</span><span class="ot"> id</span><span class="op">=</span><span class="st">"question1"</span><span class="ot"> required</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">""</span><span class="dt">&gt;</span>-- Select --<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">"Option1"</span><span class="dt">&gt;</span>Option 1<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">"Option2"</span><span class="dt">&gt;</span>Option 2<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- Add more options --&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">select</span><span class="dt">&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>To add a question:</strong> Copy a <code>&lt;div class="form-group"&gt;</code> block and: - Change <code>question1</code> to <code>question6</code>, <code>question7</code>, etc. - Update the label text - Update the options</p>
+<p><strong>Don’t forget to also update:</strong> - The JavaScript <code>saveResponse()</code> function to include new questions - The CSV headers in <code>downloadCSV()</code> function</p>
+</section>
+<section id="step-5-render-and-test" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-render-and-test">Step 5: Render and Test</h3>
+<ol type="1">
+<li>In RStudio, open <code>workflow-survey-system.qmd</code></li>
+<li>Click <strong>Render</strong> (or use <code>quarto preview</code>)</li>
+<li>Click on a shape in your diagram</li>
+<li>Fill out the survey</li>
+<li>Enter password</li>
+<li>Submit</li>
+<li>Download CSV and commit to GitHub</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="user-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="user-workflow">User Workflow</h2>
+<section id="for-regular-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-regular-users">For Regular Users</h3>
+<ol type="1">
+<li><strong>View Diagram</strong> - Navigate to the page with your workflow</li>
+<li><strong>Click a Shape</strong> - Survey panel slides out from the right</li>
+<li><strong>Review Previous Entry</strong> - If you’ve submitted before, see your last response</li>
+<li><strong>Edit/Update</strong> - Form is pre-filled, make changes as needed</li>
+<li><strong>Submit</strong> - Enter password and submit</li>
+<li><strong>Download Data</strong> - Scroll to bottom, click “Download All Responses (CSV)”</li>
+<li><strong>Commit to GitHub</strong> - Save the CSV file and push to your repo</li>
+</ol>
+</section>
+<section id="first-time-setup" class="level3">
+<h3 class="anchored" data-anchor-id="first-time-setup">First-Time Setup</h3>
+<p>When users first clone your template:</p>
+<ol type="1">
+<li>They get a working survey system out of the box</li>
+<li>They only need to:
+<ul>
+<li>Change the password in the config</li>
+<li>Add their own diagram</li>
+<li>Optionally customize questions</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="file-structure">File Structure</h2>
+<pre><code>your-project/
+├── workflow-survey-system.qmd    # Main Quarto document
+├── add_survey_links.R            # Helper function (optional)
+├── output/
+│   └── your_diagram.svg          # Your workflow diagram
+├── _site/                        # Rendered output (auto-generated)
+│   └── workflow-survey-system.html
+└── data/                         # Store downloaded CSVs here
+    └── workflow_responses_YYYY-MM-DD.csv</code></pre>
+<hr>
+</section>
+<section id="survey-link-format" class="level2">
+<h2 class="anchored" data-anchor-id="survey-link-format">Survey Link Format</h2>
+<p>Links in your SVG should follow this format:</p>
+<pre><code>#survey:SHAPE_ID|SHAPE_TEXT</code></pre>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>#survey:step1|Data Collection</code></li>
+<li><code>#survey:analysis_phase|Analysis Phase</code></li>
+<li><code>#survey:qa_review|QA Review</code></li>
+</ul>
+<p><strong>Rules:</strong> - <code>SHAPE_ID</code> must be unique for each shape - No spaces in <code>SHAPE_ID</code> (use underscores) - <code>SHAPE_TEXT</code> can have spaces and special characters - Separate ID and text with <code>|</code> (pipe character)</p>
+<hr>
+</section>
+<section id="data-storage" class="level2">
+<h2 class="anchored" data-anchor-id="data-storage">Data Storage</h2>
+<section id="how-it-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-it-works">How It Works</h3>
+<ul>
+<li><strong>LocalStorage</strong>: Responses are saved in your browser’s localStorage</li>
+<li><strong>Per User</strong>: Each person who opens the page on their computer has their own data</li>
+<li><strong>Persistent</strong>: Data stays even after closing the browser</li>
+<li><strong>Exportable</strong>: Download as CSV anytime</li>
+</ul>
+</section>
+<section id="csv-format" class="level3">
+<h3 class="anchored" data-anchor-id="csv-format">CSV Format</h3>
+<pre class="csv"><code>timestamp,username,shape_id,shape_text,question1,question2,question3,question4,question5
+2024-02-02T10:30:00.000Z,"Alice","step1","Data Collection","In Progress","High","No Blockers","Adequate","On Track"
+2024-02-02T14:15:00.000Z,"Alice","step1","Data Collection","In Progress","Medium","No Blockers","Adequate","On Track"</code></pre>
+</section>
+<section id="version-control-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="version-control-workflow">Version Control Workflow</h3>
+<ol type="1">
+<li>User fills out surveys over time</li>
+<li>Periodically downloads CSV</li>
+<li>Saves CSV to <code>data/</code> folder in repo</li>
+<li>Commits and pushes to GitHub</li>
+<li>Can analyze responses with R scripts</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="customization-guide" class="level2">
+<h2 class="anchored" data-anchor-id="customization-guide">Customization Guide</h2>
+<section id="change-number-of-questions" class="level3">
+<h3 class="anchored" data-anchor-id="change-number-of-questions">Change Number of Questions</h3>
+<ol type="1">
+<li><strong>Add questions</strong> in the HTML form section</li>
+<li><strong>Update JavaScript</strong> in the <code>saveResponse()</code> function:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> response <span class="op">=</span> {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">timestamp</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">.</span><span class="fu">toISOString</span>()<span class="op">,</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">username</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'username'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">shape_id</span><span class="op">:</span> currentShapeId<span class="op">,</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">shape_text</span><span class="op">:</span> currentShapeText<span class="op">,</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question1</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question1'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question2</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question2'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question3</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question3'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question4</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question4'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question5</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question5'</span>)<span class="op">.</span><span class="at">value</span><span class="op">,</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">question6</span><span class="op">:</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'question6'</span>)<span class="op">.</span><span class="at">value</span>  <span class="co">// ADD NEW QUESTIONS</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li><strong>Update CSV download</strong> in the <code>downloadCSV()</code> function:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> headers <span class="op">=</span> [<span class="st">'timestamp'</span><span class="op">,</span> <span class="st">'username'</span><span class="op">,</span> <span class="st">'shape_id'</span><span class="op">,</span> <span class="st">'shape_text'</span><span class="op">,</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                 <span class="st">'question1'</span><span class="op">,</span> <span class="st">'question2'</span><span class="op">,</span> <span class="st">'question3'</span><span class="op">,</span> <span class="st">'question4'</span><span class="op">,</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                 <span class="st">'question5'</span><span class="op">,</span> <span class="st">'question6'</span>]<span class="op">;</span>  <span class="co">// ADD NEW HEADERS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="change-question-types" class="level3">
+<h3 class="anchored" data-anchor-id="change-question-types">Change Question Types</h3>
+<p>The system currently supports <strong>select dropdowns</strong>. To add other types:</p>
+<p><strong>Text Input:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"form-group"</span><span class="dt">&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"notes"</span><span class="dt">&gt;</span>Additional Notes:<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text"</span><span class="ot"> id</span><span class="op">=</span><span class="st">"notes"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Enter notes"</span><span class="dt">&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Text Area:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"form-group"</span><span class="dt">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">"comments"</span><span class="dt">&gt;</span>Comments:<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> id</span><span class="op">=</span><span class="st">"comments"</span><span class="ot"> rows</span><span class="op">=</span><span class="st">"4"</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Radio Buttons:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"form-group"</span><span class="dt">&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="dt">&gt;</span>Status:<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="dt">&gt;&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"radio"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"status"</span><span class="ot"> value</span><span class="op">=</span><span class="st">"yes"</span><span class="dt">&gt;</span> Yes<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">label</span><span class="dt">&gt;&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"radio"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"status"</span><span class="ot"> value</span><span class="op">=</span><span class="st">"no"</span><span class="dt">&gt;</span> No<span class="dt">&lt;/</span><span class="kw">label</span><span class="dt">&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="change-password" class="level3">
+<h3 class="anchored" data-anchor-id="change-password">Change Password</h3>
+<p>Edit the R setup chunk:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>SURVEY_PASSWORD <span class="ot">&lt;-</span> <span class="st">"your_new_password_here"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="change-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="change-diagram">Change Diagram</h3>
+<p>Replace the SVG file and update:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>DIAGRAM_FILE <span class="ot">&lt;-</span> <span class="st">"new_diagram.svg"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="survey-panel-doesnt-open" class="level3">
+<h3 class="anchored" data-anchor-id="survey-panel-doesnt-open">Survey Panel Doesn’t Open</h3>
+<ul>
+<li><strong>Check link format</strong>: Must be <code>#survey:ID|TEXT</code></li>
+<li><strong>Check SVG export</strong>: “Links” option must be checked</li>
+<li><strong>Check browser console</strong>: Press F12, look for errors</li>
+</ul>
+</section>
+<section id="password-not-working" class="level3">
+<h3 class="anchored" data-anchor-id="password-not-working">Password Not Working</h3>
+<ul>
+<li>Check you haven’t changed the password in the qmd but not re-rendered</li>
+<li>Password is case-sensitive</li>
+<li>Make sure you’re using the same password in config and when submitting</li>
+</ul>
+</section>
+<section id="previous-entry-not-showing" class="level3">
+<h3 class="anchored" data-anchor-id="previous-entry-not-showing">Previous Entry Not Showing</h3>
+<ul>
+<li>This is normal if it’s the first time clicking that shape</li>
+<li>Check browser localStorage (F12 → Application → Local Storage)</li>
+<li>Make sure you submitted with the correct password</li>
+</ul>
+</section>
+<section id="csv-download-not-working" class="level3">
+<h3 class="anchored" data-anchor-id="csv-download-not-working">CSV Download Not Working</h3>
+<ul>
+<li>Check if you have responses (look at count at bottom)</li>
+<li>Try a different browser</li>
+<li>Check browser’s download settings</li>
+</ul>
+</section>
+<section id="data-lost-after-closing-browser" class="level3">
+<h3 class="anchored" data-anchor-id="data-lost-after-closing-browser">Data Lost After Closing Browser</h3>
+<ul>
+<li>LocalStorage should persist, but:</li>
+<li>Make sure you’re using the same browser</li>
+<li>Check if browser is in private/incognito mode (data won’t persist)</li>
+<li><strong>Solution</strong>: Download CSV regularly!</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="advanced-features" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-features">Advanced Features</h2>
+<section id="analyzing-responses-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-responses-in-r">Analyzing Responses in R</h3>
+<p>Once you’ve downloaded CSVs, you can analyze them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read all response files</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>responses <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"data"</span>, <span class="at">pattern =</span> <span class="st">"workflow_responses.*</span><span class="sc">\\</span><span class="st">.csv"</span>, </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">full.names =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">map_df</span>(read_csv)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># View summary by shape</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>responses <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(shape_id, shape_text) <span class="sc">%&gt;%</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_responses =</span> <span class="fu">n</span>(),</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">latest_status =</span> <span class="fu">last</span>(question1),</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Timeline of updates</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>responses <span class="sc">%&gt;%</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date =</span> <span class="fu">as.Date</span>(timestamp)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(date, shape_id) <span class="sc">%&gt;%</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(date, n, <span class="at">color =</span> shape_id)) <span class="sc">+</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Survey Responses Over Time"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="multiple-diagrams" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-diagrams">Multiple Diagrams</h3>
+<p>To have multiple diagrams with surveys:</p>
+<ol type="1">
+<li>Create separate <code>.qmd</code> files for each diagram</li>
+<li>Each can have its own password and questions</li>
+<li>Responses are stored separately per page (based on URL)</li>
+</ol>
+</section>
+<section id="sharing-data-across-team" class="level3">
+<h3 class="anchored" data-anchor-id="sharing-data-across-team">Sharing Data Across Team</h3>
+<p>Since localStorage is per-browser:</p>
+<ol type="1">
+<li>Team members download their CSVs regularly</li>
+<li>Commit to a shared GitHub repo</li>
+<li>Merge CSV files in R for team analysis</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
+<p><strong>Q: Can multiple people edit the same shape?</strong><br>
+A: Yes! Each person’s submissions are logged separately with timestamps and usernames.</p>
+<p><strong>Q: What if I forget the password?</strong><br>
+A: Change it in the R config chunk and re-render the page.</p>
+<p><strong>Q: Can I delete a response?</strong><br>
+A: Not directly in the UI, but you can download the CSV, remove the row, and that’s your new record.</p>
+<p><strong>Q: Is this secure?</strong><br>
+A: This is designed for internal team use with a shared password. It’s not meant for sensitive data requiring encryption.</p>
+<p><strong>Q: Can I use this without GitHub?</strong><br>
+A: Yes! The survey system works locally. You just need to manually share CSV files.</p>
+<p><strong>Q: How many responses can it handle?</strong><br>
+A: LocalStorage typically allows 5-10MB. At ~200 bytes per response, that’s 25,000-50,000 responses. More than enough!</p>
+<hr>
+</section>
+<section id="support" class="level2">
+<h2 class="anchored" data-anchor-id="support">Support</h2>
+<p>For issues or questions: 1. Check this documentation 2. Review the code comments 3. Open an issue on GitHub 4. Contact the template creator</p>
+<hr>
+</section>
+<section id="license" class="level2">
+<h2 class="anchored" data-anchor-id="license">License</h2>
+<p>This template is open source and free to use for your projects!</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/shannonrankin\.github\.io\/pathways-flowchart\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-1.0</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/supplement/SETUP_GUIDE.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/supplement/SETUP_GUIDE.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
