@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6853e3aa7f75efc1083d1ad95df5baef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0e84ede9135a7524ca02c4e66559cc1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-6853e3aa7f75efc1083d1ad95df5baef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-98ecf05373b1a394251d61a6e26352e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -346,12 +346,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#interactive-workflow-diagram" id="toc-interactive-workflow-diagram" class="nav-link active" data-scroll-target="#interactive-workflow-diagram">Interactive Workflow Diagram</a></li>
-  <li><a href="#instructions-for-users" id="toc-instructions-for-users" class="nav-link" data-scroll-target="#instructions-for-users">Instructions for Users</a>
-  <ul class="collapse">
-  <li><a href="#how-to-use-this-system" id="toc-how-to-use-this-system" class="nav-link" data-scroll-target="#how-to-use-this-system">How to Use This System</a></li>
-  <li><a href="#for-template-users" id="toc-for-template-users" class="nav-link" data-scroll-target="#for-template-users">For Template Users</a></li>
-  </ul></li>
+  <li><a href="#overview-of-data-management-plan" id="toc-overview-of-data-management-plan" class="nav-link active" data-scroll-target="#overview-of-data-management-plan">Overview of Data management Plan</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/overview.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -378,98 +373,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="interactive-workflow-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-workflow-diagram">Interactive Workflow Diagram</h2>
-<p>Click on any shape in the diagram below to open the survey panel and record your observations.</p>
-<!-- Survey Overlay -->
-<div class="survey-overlay" id="survey-overlay" onclick="closeSurvey()"></div>
-
-<!-- Survey Sidebar -->
-<div class="survey-sidebar" id="survey-sidebar">
-  <button class="close-survey" onclick="closeSurvey()">×</button>
-  
-  <div class="survey-content">
-    <h2 id="survey-title" class="anchored">Workflow Survey</h2>
-    
-    <div class="info-text">
-      <strong>Shape:</strong> <span id="shape-info">None selected</span>
-    </div>
-    
-    <div id="previous-entry-display"></div>
-    
-    <form id="survey-form">
-      <div class="form-group">
-        <label for="username">Your Name/ID:</label>
-        <input type="text" id="username" required="" placeholder="Enter your name">
-      </div>
-      
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" required="" placeholder="Enter password">
-        <small>Required for editing entries</small>
-      </div>
-      
-      <div class="form-group">
-        <label for="Status">Question 1: What is the current level of automation?</label>
-        <select id="Status" required="">
-          <option value="">-- Select --</option>
-          <option value="Not Started">Not Started</option>
-          <option value="In Progress">In Progress</option>
-          <option value="Completed">Completed</option>
-          <option value="Not Applicable">Not Applicable</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="Potential">Question 2: What is the potential for Automation?</label>
-        <select id="Potential" required="">
-          <option value="">-- Select --</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option>
-          <option value="Unknown">Unknown</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="PainPoint">Question 3: How painful is the current process?</label>
-        <select id="PainPoint" required="">
-          <option value="">-- Select --</option>
-          <option value="All Good">All Good</option>
-          <option value="Room for Improvement">Room for Improvement</option>
-          <option value="Painful!">Painful!</option>
-          <!-- <option value="Blocked">Blocked</option> -->
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="Concern">Question 4: How concerned are you with modifying this task?</label>
-        <select id="Concern" required="">
-          <option value="">-- Select --</option>
-          <option value="No Concern">No Concern</option>
-          <option value="Moderate Concern">Moderate Concern</option>
-          <option value="Terrified">Terrified</option>
-          <!-- <option value="Insufficient">Insufficient</option> -->
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="Proficiency">Question 5: What is your level of proficiency with task automation?</label>
-        <select id="Proficiency" required="">
-          <option value="">-- Select --</option>
-          <option value="Very Low">Very Low</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="Medium-Strong">Medium-Strong</option>
-          <option value="Strong">Strong</option>
-        </select>
-      </div>
-      
-      <button type="submit" class="submit-btn">Submit Response</button>
-      <div id="form-message"></div>
-    </form>
-  </div>
-</div>
+<section id="overview-of-data-management-plan" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-data-management-plan">Overview of Data management Plan</h2>
+<p>Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting. Right-Click on flowchart components to open link in new tab to learn more about each component.</p>
 
 <!-- Diagram Controls -->
 <div class="svg-controls">
@@ -483,14 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- SVG Viewer -->
 <div id="svg-viewer" class="svg-viewer-container"></div>
 
-<!-- Data Management Section -->
-<div class="data-section">
-  <h3 class="anchored">Survey Data Management</h3>
-  <p>All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.</p>
-  <button onclick="downloadCSV()" class="download-btn">📥 Download All Responses (CSV)</button>
-  <p class="response-count" id="response-count">Total responses: 0</p>
-  <button onclick="clearAllData()" class="clear-btn">🗑️ Clear All Local Data</button>
-</div>
+
 
 <script>
   // ============================================
@@ -498,169 +397,8 @@ ul.task-list li input[type="checkbox"] {
   // ============================================
   const SURVEY_PASSWORD = 'rodeo26';
   const DIAGRAM_PATH = '../output/GliderRodeo_flowchart-Overview.drawio.svg';
-  
-  // ============================================
-  // DATA STORAGE
-  // ============================================
-  const STORAGE_KEY = 'workflow_survey_responses';
-  
-  function getResponses() {
-    const data = localStorage.getItem(STORAGE_KEY);
-    return data ? JSON.parse(data) : [];
-  }
-  
-  function saveResponse(response) {
-    const responses = getResponses();
-    responses.push(response);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(responses));
-    updateResponseCount();
-  }
-  
-  function updateResponseCount() {
-    const responses = getResponses();
-    document.getElementById('response-count').textContent = `Total responses: ${responses.length}`;
-  }
-  
-  function getMostRecentResponse(shapeId) {
-    const responses = getResponses();
-    const shapeResponses = responses.filter(r => r.shape_id === shapeId);
-    if (shapeResponses.length === 0) return null;
-    
-    shapeResponses.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    return shapeResponses[0];
-  }
-  
-  // ============================================
-  // SURVEY PANEL FUNCTIONS
-  // ============================================
-  let currentShapeId = null;
-  let currentShapeText = null;
-  
-  function openSurvey(shapeId, shapeText) {
-    currentShapeId = shapeId;
-    currentShapeText = shapeText || shapeId;
-    
-    document.getElementById('survey-sidebar').classList.add('open');
-    document.getElementById('survey-overlay').classList.add('visible');
-    document.getElementById('shape-info').textContent = currentShapeText;
-    
-    const previousEntry = getMostRecentResponse(shapeId);
-    const previousEntryDiv = document.getElementById('previous-entry-display');
-    
-    if (previousEntry) {
-      previousEntryDiv.innerHTML = `
-        <div class="previous-entry">
-          <strong>📝 Previous Entry (${new Date(previousEntry.timestamp).toLocaleString()}):</strong><br>
-          <small>Submitted by: ${previousEntry.username}</small><br>
-          <small>The form below is pre-filled with your previous answers. Make changes and submit to create a new entry.</small>
-        </div>
-      `;
-      
-      document.getElementById('Status').value = previousEntry.Status;
-      document.getElementById('Potential').value = previousEntry.Potential;
-      document.getElementById('PainPoint').value = previousEntry.PainPoint;
-      document.getElementById('Concern').value = previousEntry.Concern;
-      document.getElementById('Proficiency').value = previousEntry.Proficiency;
-    } else {
-      previousEntryDiv.innerHTML = `
-        <div class="info-text">
-          <strong>ℹ️ No previous entries for this shape.</strong>
-        </div>
-      `;
-      document.getElementById('survey-form').reset();
-    }
-    
-    document.getElementById('form-message').innerHTML = '';
-  }
-  
-  function closeSurvey() {
-    document.getElementById('survey-sidebar').classList.remove('open');
-    document.getElementById('survey-overlay').classList.remove('visible');
-    document.getElementById('survey-form').reset();
-    document.getElementById('form-message').innerHTML = '';
-  }
-  
-  // ============================================
-  // FORM SUBMISSION
-  // ============================================
-  document.getElementById('survey-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const messageDiv = document.getElementById('form-message');
-    const password = document.getElementById('password').value;
-    
-    if (password !== SURVEY_PASSWORD) {
-      messageDiv.innerHTML = '<div class="error-msg">❌ Incorrect password</div>';
-      return;
-    }
-    
-    const response = {
-      timestamp: new Date().toISOString(),
-      username: document.getElementById('username').value,
-      shape_id: currentShapeId,
-      shape_text: currentShapeText,
-      Status: document.getElementById('Status').value,
-      Potential: document.getElementById('Potential').value,
-      PainPoint: document.getElementById('PainPoint').value,
-      Concern: document.getElementById('Concern').value,
-      Proficiency: document.getElementById('Proficiency').value
-    };
-    
-    saveResponse(response);
-    
-    messageDiv.innerHTML = '<div class="success-msg">✅ Response saved! Remember to download the CSV and commit to GitHub.</div>';
-    
-    setTimeout(() => {
-      closeSurvey();
-    }, 2000);
-  });
-  
-  // ============================================
-  // CSV DOWNLOAD
-  // ============================================
-  function downloadCSV() {
-    const responses = getResponses();
-    
-    if (responses.length === 0) {
-      alert('No responses to download yet!');
-      return;
-    }
-    
-    const headers = ['timestamp', 'username', 'shape_id', 'shape_text', 'Status', 'Potential', 'PainPoint', 'Concern', 'Proficiency'];
-    const csvContent = [
-      headers.join(','),
-      ...responses.map(r => [
-        r.timestamp,
-        `"${r.username}"`,
-        `"${r.shape_id}"`,
-        `"${r.shape_text}"`,
-        `"${r.Status}"`,
-        `"${r.Potential}"`,
-        `"${r.PainPoint}"`,
-        `"${r.Concern}"`,
-        `"${r.Proficiency}"`
-      ].join(','))
-    ].join('\n');
-    
-    const blob = new Blob([csvContent], { type: 'text/csv' });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `workflow_survey_responses_${new Date().toISOString().split('T')[0]}.csv`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-  }
-  
-  function clearAllData() {
-    if (confirm('Are you sure you want to clear all survey data? This cannot be undone!')) {
-      localStorage.removeItem(STORAGE_KEY);
-      updateResponseCount();
-      alert('All data cleared!');
-    }
-  }
-  
+
+
   // ============================================
   // SVG DIAGRAM WITH PAN/ZOOM
   // ============================================
@@ -819,26 +557,8 @@ link.addEventListener('click', function(e) {
 </script>
 
 
-</section>
-<section id="instructions-for-users" class="level2">
-<h2 class="anchored" data-anchor-id="instructions-for-users">Instructions for Users</h2>
-<section id="how-to-use-this-system" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-this-system">How to Use This System</h3>
-<ol type="1">
-<li><strong>Click on any shape</strong> in the diagram to open the survey panel</li>
-<li><strong>Fill out the survey</strong> with your observations</li>
-<li><strong>Enter the password</strong> (ask your administrator)</li>
-<li><strong>Submit</strong> - your response is saved locally in your browser</li>
-<li><strong>Download CSV</strong> regularly and commit to your GitHub repository</li>
-<li><strong>Return later</strong> - the form will pre-fill with your previous answers</li>
-</ol>
-</section>
-<section id="for-template-users" class="level3">
-<h3 class="anchored" data-anchor-id="for-template-users">For Template Users</h3>
-<p>When you copy this template: 1. Change the <code>SURVEY_PASSWORD</code> in the R setup chunk 2. Replace <code>DIAGRAM_FILE</code> with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

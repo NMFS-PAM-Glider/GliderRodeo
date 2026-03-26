@@ -1,35 +1,5 @@
 [
   {
-    "objectID": "content/overview.html",
-    "href": "content/overview.html",
-    "title": "Overview",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#interactive-workflow-diagram",
-    "href": "content/overview.html#interactive-workflow-diagram",
-    "title": "Overview",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#instructions-for-users",
-    "href": "content/overview.html#instructions-for-users",
-    "title": "Overview",
-    "section": "Instructions for Users",
-    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
     "objectID": "content/pre-processing.html#file-manipulation",
     "href": "content/pre-processing.html#file-manipulation",
     "title": "Pre-Processing",
@@ -60,64 +30,81 @@
     ]
   },
   {
-    "objectID": "content/hardware.html#acoustic-sensors",
-    "href": "content/hardware.html#acoustic-sensors",
-    "title": "Hardware",
-    "section": "Acoustic Sensors",
-    "text": "Acoustic Sensors",
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports",
     "crumbs": [
-      "Hardware"
+      "Reporting"
     ]
   },
   {
-    "objectID": "content/hardware.html#oceo-sensors",
-    "href": "content/hardware.html#oceo-sensors",
-    "title": "Hardware",
-    "section": "Oceo Sensors",
-    "text": "Oceo Sensors",
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report",
     "crumbs": [
-      "Hardware"
+      "Reporting"
     ]
   },
   {
-    "objectID": "content/data-analysis.html#glider-performance",
-    "href": "content/data-analysis.html#glider-performance",
-    "title": "Data Analysis",
-    "section": "Glider Performance",
-    "text": "Glider Performance",
+    "objectID": "content/overview.html",
+    "href": "content/overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting. Right-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
     "crumbs": [
-      "Data Analysis"
+      "Overview"
     ]
   },
   {
-    "objectID": "content/data-analysis.html#noise",
-    "href": "content/data-analysis.html#noise",
-    "title": "Data Analysis",
-    "section": "Noise",
-    "text": "Noise",
+    "objectID": "content/overview.html#overview-of-data-management-plan",
+    "href": "content/overview.html#overview-of-data-management-plan",
+    "title": "Overview",
+    "section": "",
+    "text": "Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting. Right-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
     "crumbs": [
-      "Data Analysis"
+      "Overview"
     ]
   },
   {
-    "objectID": "content/data-analysis.html#species",
-    "href": "content/data-analysis.html#species",
-    "title": "Data Analysis",
-    "section": "Species",
-    "text": "Species",
+    "objectID": "content/flowchart-pathways.html",
+    "href": "content/flowchart-pathways.html",
+    "title": "Interactive Workflow Tool",
+    "section": "",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Data Analysis"
+      "Customize Pathways Flowchart"
     ]
   },
   {
-    "objectID": "content/data-analysis.html#modeling",
-    "href": "content/data-analysis.html#modeling",
-    "title": "Data Analysis",
-    "section": "Modeling",
-    "text": "Modeling",
+    "objectID": "content/flowchart-pathways.html#interactive-workflow-diagram",
+    "href": "content/flowchart-pathways.html#interactive-workflow-diagram",
+    "title": "Interactive Workflow Tool",
+    "section": "",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Data Analysis"
+      "Customize Pathways Flowchart"
     ]
+  },
+  {
+    "objectID": "content/flowchart-pathways.html#instructions-for-users",
+    "href": "content/flowchart-pathways.html#instructions-for-users",
+    "title": "Interactive Workflow Tool",
+    "section": "Instructions for Users",
+    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
+    "crumbs": [
+      "Customize Pathways Flowchart"
+    ]
+  },
+  {
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/SCSS_INTEGRATION.html",
@@ -230,13 +217,6 @@
     "title": "NOAA quarto simple",
     "section": "",
     "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/QUICK_REFERENCE.html",
@@ -421,36 +401,6 @@
     "text": "This template is open source and free to use for your projects!"
   },
   {
-    "objectID": "content/flowchart-pathways.html",
-    "href": "content/flowchart-pathways.html",
-    "title": "Interactive Workflow Tool",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Customize Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "href": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "title": "Interactive Workflow Tool",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Customize Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-pathways.html#instructions-for-users",
-    "href": "content/flowchart-pathways.html#instructions-for-users",
-    "title": "Interactive Workflow Tool",
-    "section": "Instructions for Users",
-    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
-    "crumbs": [
-      "Customize Pathways Flowchart"
-    ]
-  },
-  {
     "objectID": "content/flowchart-pathways-example.html",
     "href": "content/flowchart-pathways-example.html",
     "title": "Interactive Workflow Tool",
@@ -478,6 +428,46 @@
     "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
     "crumbs": [
       "Example Flowchart"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html",
+    "href": "content/data-collection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Point of Contact Name/Email:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n        What is the current status?\n        \n          -- Select --\n          Not Started\n          On Track\n          Delayed\n          On Hold\n          Completed\n        \n      \n\n      \n        Brief Description\n        \n      \n\n      \n        GitHub Issue Link\n        \n      \n      \n      \n        Comments\n        \n      \n\n\n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#data-collection-flowchart",
+    "href": "content/data-collection.html#data-collection-flowchart",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Point of Contact Name/Email:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n        What is the current status?\n        \n          -- Select --\n          Not Started\n          On Track\n          Delayed\n          On Hold\n          Completed\n        \n      \n\n      \n        Brief Description\n        \n      \n\n      \n        GitHub Issue Link\n        \n      \n      \n      \n        Comments\n        \n      \n\n\n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#instructions-for-users",
+    "href": "content/data-collection.html#instructions-for-users",
+    "title": "Data Collection",
+    "section": "Instructions for Users",
+    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#participants",
+    "href": "content/data-collection.html#participants",
+    "title": "Data Collection",
+    "section": "Participants",
+    "text": "Participants",
+    "crumbs": [
+      "Data Collection"
     ]
   },
   {
@@ -521,23 +511,63 @@
     ]
   },
   {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports",
+    "objectID": "content/hardware.html#acoustic-sensors",
+    "href": "content/hardware.html#acoustic-sensors",
+    "title": "Hardware",
+    "section": "Acoustic Sensors",
+    "text": "Acoustic Sensors",
     "crumbs": [
-      "Reporting"
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report",
+    "objectID": "content/hardware.html#oceo-sensors",
+    "href": "content/hardware.html#oceo-sensors",
+    "title": "Hardware",
+    "section": "Oceo Sensors",
+    "text": "Oceo Sensors",
     "crumbs": [
-      "Reporting"
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#glider-performance",
+    "href": "content/data-analysis.html#glider-performance",
+    "title": "Data Analysis",
+    "section": "Glider Performance",
+    "text": "Glider Performance",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#noise",
+    "href": "content/data-analysis.html#noise",
+    "title": "Data Analysis",
+    "section": "Noise",
+    "text": "Noise",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#species",
+    "href": "content/data-analysis.html#species",
+    "title": "Data Analysis",
+    "section": "Species",
+    "text": "Species",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#modeling",
+    "href": "content/data-analysis.html#modeling",
+    "title": "Data Analysis",
+    "section": "Modeling",
+    "text": "Modeling",
+    "crumbs": [
+      "Data Analysis"
     ]
   }
 ]
