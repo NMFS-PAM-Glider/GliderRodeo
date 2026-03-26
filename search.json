@@ -1,221 +1,326 @@
 [
   {
-    "objectID": "content/instructions.html",
-    "href": "content/instructions.html",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "This document covers everything you need to set up, populate, maintain, and extend the Examples Dashboard as a template repository owner or contributor.\n\n\n\nyour-repo/\n│\n├── dashboard.css                         ← All dashboard styling (root level)\n│\n├── _code/\n│   ├── examples.yaml                     ← Single source of truth for all examples\n│   ├── example-submission.yml            ← Reference copy of the issue form template\n│   ├── process_submission.yml            ← Reference copy of the GitHub Action workflow\n│   └── parse_submission.py               ← Reference copy of the parser script\n│\n├── content/\n│   ├── dashboard.qmd                     ← Main dashboard page\n│   ├── instructions.qmd                  ← This guide\n│   └── card-images/                      ← Thumbnail/screenshot images\n│       ├── placeholder.svg               ← Fallback shown when no image is set\n│       └── my-example.png                ← One image file per example\n│\n└── .github/\n    ├── ISSUE_TEMPLATE/\n    │   └── example-submission.yml        ← Working copy (GitHub reads this)\n    ├── workflows/\n    │   └── process_submission.yml        ← Working copy (GitHub reads this)\n    └── scripts/\n        └── parse_submission.py           ← Called by the Action at runtime\n\n_code/ vs .github/: The files in _code/ are your editable source copies — edit them there, then copy the relevant files to their .github/ locations so GitHub can find them. See the Keeping copies in sync section below.\n\n\n\n\n\n\n\ndashboard.qmd has a PATH CONFIGURATION block near the top of its R chunk. This is the single place to update if you ever reorganise the repository. Before deploying, replace YOUR-ORG/YOUR-REPO with your actual GitHub organisation and repository name:\n# ── PATH CONFIGURATION ───────────────────────────────────────────────────────\npath_data        &lt;- here(\"_code\", \"examples.yaml\")\npath_images      &lt;- \"card-images\"\npath_placeholder &lt;- \"card-images/placeholder.svg\"\nsubmit_url       &lt;- paste0(\n  \"https://github.com/YOUR-ORG/YOUR-REPO\",   # ← update this\n  \"/issues/new?template=example-submission.yml\"\n)\n\n\n\nThe dashboard uses the yaml package to read examples.yaml. Install it once:\ninstall.packages(\"yaml\")\nYour renv.lock (if you use renv) should capture this automatically when you next run renv::snapshot().\n\n\n\nThe placeholder image is shown on cards where no image has been provided. A minimal SVG is included at content/card-images/placeholder.svg. You can replace it with your own branded placeholder — any common image format works (SVG, PNG, JPG). If you rename it, update path_placeholder in the PATH CONFIGURATION block of dashboard.qmd.\n\n\n\nA minimal Quarto website configuration:\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"Your Project Name\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: content/dashboard.qmd\n        text: Examples\n      - href: content/instructions.qmd\n        text: Guide\n\nformat:\n  html:\n    theme: default\n\n\n\nIn your repository: Settings → Pages → Source → Deploy from branch → main → /docs.\nAfter this, every push to main that includes a re-rendered docs/ folder will update the live site.\n\n\n\n\n\n\n\nAll examples live in _code/examples.yaml. Each entry is one card on the dashboard. The file begins with a detailed comment header — read it before making edits.\n\n\n\n\n\n\n\n\n\n\n\nField\nRequired\nType\nNotes\n\n\n\n\nid\n✅\ninteger\nUnique. Always increment from the last entry.\n\n\ntitle\n✅\nstring\nShort title for the card (~60 chars).\n\n\ndescription\n✅\nstring\n1–3 sentences. Use the &gt; block scalar for long text.\n\n\nurl\n✅\nstring\nFull public URL.\n\n\ntools\n✅\nlist\nOne or more tool categories (see below).\n\n\nkeywords\n✅\nlist\nOne or more keywords (see below).\n\n\nimage\n—\nstring\nFilename only (e.g. my-example.png). File must be in content/card-images/. Leave blank \"\" for placeholder.\n\n\nauthor\n—\nstring\nPerson or organisation.\n\n\ndate_added\n—\nstring\nISO date YYYY-MM-DD. For internal tracking.\n\n\n\n\n\n\n- id: 7\n  title: \"My Open Science Workflow\"\n  description: &gt;\n    A reproducible end-to-end workflow for open science data analysis,\n    from raw data ingestion through to publication-ready figures.\n  url: \"https://github.com/example/open-workflow\"\n  tools:\n    - Reproducible Reports\n    - Data Management\n  keywords:\n    - r\n    - GitHub\n    - template\n  image: \"open-workflow.png\"\n  author: \"Jane Smith\"\n  date_added: \"2025-03-01\"\n\n\n\nUnlike CSV, multi-value fields are just YAML lists — no need to wrap comma-separated values in quotes. Each tool or keyword is its own indented - item line.\n\n\n\n\n\n\nOpen _code/examples.yaml in RStudio or any text editor.\nCopy an existing entry block and paste it at the bottom of the examples: list.\nIncrement id by 1 from the previous last entry.\nFill in the fields.\nIf you have an image, save it in content/card-images/.\nRender (quarto render) and verify the card appears correctly.\nCommit and push.\n\n\n\n\n\nTools and keywords do not need to be registered anywhere — the dashboard derives its dropdown options automatically from all values present in _code/examples.yaml at render time.\nTo add a new tool or keyword: use it in a new (or existing) entry. It will appear in the dropdown on the next render.\nTo remove a tool or keyword from the dropdowns: remove it from every entry that uses it.\nTo rename a tool or keyword: do a find-and-replace across _code/examples.yaml.\nThe current default values are listed in the GitHub issue form template (_code/example-submission.yml / .github/ISSUE_TEMPLATE/example-submission.yml) — update both copies when you add new official tools or keywords so submitters see the full list.\n\n\n\n\n\n\n\n1. Community member opens the GitHub issue using the \"Submit a New\n   Dashboard Example\" template and fills in the structured form.\n\n2. The issue is auto-labelled \"example-submission\" and \"needs-review\".\n\n3. Admin reviews the issue content.\n\n4. If approved, admin adds the \"approved\" label.\n       ↓\n   GitHub Action fires automatically:\n     a. Parses the issue form body\n     b. Appends a new entry to _code/examples.yaml\n     c. Opens a Pull Request on a branch named example/issue-N\n\n5. Admin reviews the PR:\n     a. Checks the new YAML entry in _code/examples.yaml looks correct\n     b. Downloads any submitted image → saves to content/card-images/\n     c. Verifies any new tool/keyword values are intentional\n     d. Runs quarto preview locally (optional but recommended)\n\n6. Admin merges the PR.\n\n7. Admin re-renders and pushes docs/ (or CI does it automatically).\n\n8. New card appears live on the dashboard. ✅\n\n\n\n\nThe workflow file (.github/workflows/process-submission.yml) is already in place. It needs two things before it will work:\n\n\nGo to your repo → Issues → Labels → New label and create:\n\n\n\n\n\n\n\n\nLabel\nColour\nPurpose\n\n\n\n\nexample-submission\nany\nAuto-applied by the issue template. Identifies submission issues.\n\n\nneeds-review\nyellow\nAuto-applied. Signals it’s awaiting admin review.\n\n\napproved\ngreen\nApplied manually by admins to trigger the Action.\n\n\nauto-generated\ngrey\nApplied to PRs created by the Action.\n\n\n\n\n\n\nGo to: Settings → Actions → General → Workflow permissions Select: Read and write permissions → Save.\nThis allows the Action to commit to the repository and open PRs using GITHUB_TOKEN (no additional secrets needed).\n\n\n\n\n\n\nOpen the new issue (labelled example-submission + needs-review).\nReview: is the URL valid and publicly accessible? Is the description accurate? Are the tool/keyword selections appropriate?\nIf you want to reject it, close the issue with a comment explaining why.\nIf you approve it, add the approved label. The Action will run within ~1 minute.\nCheck the Actions tab to confirm the workflow completed successfully.\nFind the new PR (it’s linked in a comment automatically posted to the issue).\nIn the PR, review _code/examples.yaml in the diff.\nIf the submitter provided an image URL:\n\nDownload the image.\nRename it to match the image field in the new YAML entry.\nAdd it to content/card-images/ and commit it to the PR branch.\n\nMerge the PR.\nRe-render and push (quarto render → git add docs/ → git push).\n\n\n\n\n\nIf you prefer not to use the Action, or if something fails:\n\nRead the issue carefully and extract the submitted values.\nOpen _code/examples.yaml and manually append a new entry.\nIf an image was provided, download it to content/card-images/.\nCommit, push, re-render.\n\n\n\n\n\nThe files in _code/ are your source of record — the copies you edit in RStudio alongside your other project files. The .github/ copies are what GitHub actually reads and executes.\nWhen you edit _code/example-submission.yml (e.g. to add new tools or keywords to the form checkboxes), copy it to .github/ISSUE_TEMPLATE/:\ncp _code/example-submission.yml .github/ISSUE_TEMPLATE/example-submission.yml\nWhen you edit _code/process_submission.yml (e.g. to change Action behaviour), copy it to .github/workflows/:\ncp _code/process_submission.yml .github/workflows/process_submission.yml\n_code/parse_submission.py is the script actually called by the Action (via .github/scripts/parse_submission.py). Keep these in sync the same way:\ncp _code/parse_submission.py .github/scripts/parse_submission.py\n\nTip: You can automate these copies with a short shell script or a pre-commit hook if you find yourself editing these files frequently.\n\n\n\n\n# In your project directory (or use RStudio's Render button):\nquarto render\n\n# Live preview in browser with hot reload:\nquarto preview\n\n\n\nThe standard workflow after any content update:\nquarto render          # rebuilds docs/\ngit add docs/\ngit commit -m \"render: update dashboard\"\ngit push\nGitHub Pages will serve the updated docs/ automatically within ~30 seconds.\n\n\n\nAdd a second workflow to render the site automatically on every push to main:\n# .github/workflows/render-site.yml\nname: Render and Deploy Site\non:\n  push:\n    branches: [main]\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          use-public-rspm: true\n\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          packages: |\n            any::tidyverse\n            any::here\n            any::yaml\n            any::jsonlite\n\n      - uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render site\n        run: quarto render\n\n      - uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          folder: docs\n\n\n\n\n\n\n\nAll visual tokens are CSS custom properties at the top of dashboard.css (in the root directory). Change these to retheme the entire dashboard:\n:root {\n  --ink:        #1a1410;   /* primary text */\n  --ivory:      #f7f3ec;   /* page background */\n  --terra:      #c4583a;   /* tool tag accent */\n  --teal:       #2a6b6e;   /* keyword tag accent */\n  --serif:      \"Fraunces\", Georgia, serif;\n  --sans:       \"DM Sans\", system-ui, sans-serif;\n  --mono:       \"DM Mono\", monospace;\n}\nTo swap fonts: update the Google Fonts &lt;link&gt; tag in the include-in-header section of content/dashboard.qmd, and update the --serif/--sans/--mono variables in dashboard.css.\n\n\n\nBy default, selecting multiple tools uses OR logic: a card appears if it matches any selected tool. To require all selected tools to match (AND logic), edit the filtering OJS cell in content/dashboard.qmd:\n// Change .some() to .every() for AND logic:\nconst toolMatch =\n  selectedTools.length === 0 ||\n  selectedTools.every(t =&gt; exTools.includes(t))   // ← every, not some\n\nconst kwMatch =\n  selectedKeywords.length === 0 ||\n  selectedKeywords.every(k =&gt; exKws.includes(k))  // ← every, not some\n\n\n\n\nAdd the new field to entries in _code/examples.yaml.\nIn the R chunk in content/dashboard.qmd, add the field to the map_dfr() tibble.\nIn the OJS cards cell, reference ex.your_field inside renderCard().\n\n\n\n\nWhen you add new official tools or keywords to _code/examples.yaml, also add them to the checkboxes in _code/example-submission.yml, then copy that file to .github/ISSUE_TEMPLATE/example-submission.yml so submitters see the full list.\n\n\n\n\n\n\nDashboard shows no examples / blank page\n\nConfirm _code/examples.yaml exists and is valid YAML (no tab characters — use spaces). Run yaml::read_yaml(here(\"_code\", \"examples.yaml\")) in R to check. Verify the here() path in the PATH CONFIGURATION block resolves correctly from your project root.\n\nImages not appearing on cards\n\nThe filename in the image field must exactly match the file in content/card-images/ (case-sensitive on Linux/GitHub). The card silently falls back to the placeholder on load failure — open your browser’s DevTools console to see the actual 404 URL.\n\nNew tools/keywords not appearing in dropdowns\n\nThe dropdowns are built from the data at render time. Re-render after editing _code/examples.yaml.\n\nGitHub Action not firing on “approved” label\n\nCheck the label name is spelled exactly approved (case-sensitive). Check the Actions tab for errors. Confirm workflow permissions are set to “Read and write” in repository Settings.\n\nparse_submission.py producing empty or wrong field values\n\nGitHub renders issue form fields as ### Field Label\\n\\nvalue. If GitHub changes this format, the regex in the script may need updating. Print ISSUE_BODY in the Action’s logs to inspect the raw text, then adjust the extract_field() patterns in _code/parse_submission.py, and copy the updated file to .github/scripts/parse_submission.py.\n\n_code/ and .github/ copies are out of sync\n\nIf the Action is behaving unexpectedly, check whether you edited _code/ but forgot to copy to .github/. See the Keeping copies in sync section.\n\nrenv doesn’t include the yaml package\n\nRun install.packages(\"yaml\") then renv::snapshot() to capture it.\n\n\n\n\n\n\nIf you improve this dashboard template and want to share changes upstream, please open an issue or PR in the original template repository. Suggestions for new default tools/keywords, design improvements, workflow enhancements, and accessibility fixes are all welcome."
-  },
-  {
-    "objectID": "content/instructions.html#repository-structure",
-    "href": "content/instructions.html#repository-structure",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "your-repo/\n│\n├── dashboard.css                         ← All dashboard styling (root level)\n│\n├── _code/\n│   ├── examples.yaml                     ← Single source of truth for all examples\n│   ├── example-submission.yml            ← Reference copy of the issue form template\n│   ├── process_submission.yml            ← Reference copy of the GitHub Action workflow\n│   └── parse_submission.py               ← Reference copy of the parser script\n│\n├── content/\n│   ├── dashboard.qmd                     ← Main dashboard page\n│   ├── instructions.qmd                  ← This guide\n│   └── card-images/                      ← Thumbnail/screenshot images\n│       ├── placeholder.svg               ← Fallback shown when no image is set\n│       └── my-example.png                ← One image file per example\n│\n└── .github/\n    ├── ISSUE_TEMPLATE/\n    │   └── example-submission.yml        ← Working copy (GitHub reads this)\n    ├── workflows/\n    │   └── process_submission.yml        ← Working copy (GitHub reads this)\n    └── scripts/\n        └── parse_submission.py           ← Called by the Action at runtime\n\n_code/ vs .github/: The files in _code/ are your editable source copies — edit them there, then copy the relevant files to their .github/ locations so GitHub can find them. See the Keeping copies in sync section below."
-  },
-  {
-    "objectID": "content/instructions.html#first-time-setup",
-    "href": "content/instructions.html#first-time-setup",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "dashboard.qmd has a PATH CONFIGURATION block near the top of its R chunk. This is the single place to update if you ever reorganise the repository. Before deploying, replace YOUR-ORG/YOUR-REPO with your actual GitHub organisation and repository name:\n# ── PATH CONFIGURATION ───────────────────────────────────────────────────────\npath_data        &lt;- here(\"_code\", \"examples.yaml\")\npath_images      &lt;- \"card-images\"\npath_placeholder &lt;- \"card-images/placeholder.svg\"\nsubmit_url       &lt;- paste0(\n  \"https://github.com/YOUR-ORG/YOUR-REPO\",   # ← update this\n  \"/issues/new?template=example-submission.yml\"\n)\n\n\n\nThe dashboard uses the yaml package to read examples.yaml. Install it once:\ninstall.packages(\"yaml\")\nYour renv.lock (if you use renv) should capture this automatically when you next run renv::snapshot().\n\n\n\nThe placeholder image is shown on cards where no image has been provided. A minimal SVG is included at content/card-images/placeholder.svg. You can replace it with your own branded placeholder — any common image format works (SVG, PNG, JPG). If you rename it, update path_placeholder in the PATH CONFIGURATION block of dashboard.qmd.\n\n\n\nA minimal Quarto website configuration:\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"Your Project Name\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: content/dashboard.qmd\n        text: Examples\n      - href: content/instructions.qmd\n        text: Guide\n\nformat:\n  html:\n    theme: default\n\n\n\nIn your repository: Settings → Pages → Source → Deploy from branch → main → /docs.\nAfter this, every push to main that includes a re-rendered docs/ folder will update the live site."
-  },
-  {
-    "objectID": "content/instructions.html#managing-the-examples-data",
-    "href": "content/instructions.html#managing-the-examples-data",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "All examples live in _code/examples.yaml. Each entry is one card on the dashboard. The file begins with a detailed comment header — read it before making edits.\n\n\n\n\n\n\n\n\n\n\n\nField\nRequired\nType\nNotes\n\n\n\n\nid\n✅\ninteger\nUnique. Always increment from the last entry.\n\n\ntitle\n✅\nstring\nShort title for the card (~60 chars).\n\n\ndescription\n✅\nstring\n1–3 sentences. Use the &gt; block scalar for long text.\n\n\nurl\n✅\nstring\nFull public URL.\n\n\ntools\n✅\nlist\nOne or more tool categories (see below).\n\n\nkeywords\n✅\nlist\nOne or more keywords (see below).\n\n\nimage\n—\nstring\nFilename only (e.g. my-example.png). File must be in content/card-images/. Leave blank \"\" for placeholder.\n\n\nauthor\n—\nstring\nPerson or organisation.\n\n\ndate_added\n—\nstring\nISO date YYYY-MM-DD. For internal tracking.\n\n\n\n\n\n\n- id: 7\n  title: \"My Open Science Workflow\"\n  description: &gt;\n    A reproducible end-to-end workflow for open science data analysis,\n    from raw data ingestion through to publication-ready figures.\n  url: \"https://github.com/example/open-workflow\"\n  tools:\n    - Reproducible Reports\n    - Data Management\n  keywords:\n    - r\n    - GitHub\n    - template\n  image: \"open-workflow.png\"\n  author: \"Jane Smith\"\n  date_added: \"2025-03-01\"\n\n\n\nUnlike CSV, multi-value fields are just YAML lists — no need to wrap comma-separated values in quotes. Each tool or keyword is its own indented - item line.\n\n\n\n\n\n\nOpen _code/examples.yaml in RStudio or any text editor.\nCopy an existing entry block and paste it at the bottom of the examples: list.\nIncrement id by 1 from the previous last entry.\nFill in the fields.\nIf you have an image, save it in content/card-images/.\nRender (quarto render) and verify the card appears correctly.\nCommit and push.\n\n\n\n\n\nTools and keywords do not need to be registered anywhere — the dashboard derives its dropdown options automatically from all values present in _code/examples.yaml at render time.\nTo add a new tool or keyword: use it in a new (or existing) entry. It will appear in the dropdown on the next render.\nTo remove a tool or keyword from the dropdowns: remove it from every entry that uses it.\nTo rename a tool or keyword: do a find-and-replace across _code/examples.yaml.\nThe current default values are listed in the GitHub issue form template (_code/example-submission.yml / .github/ISSUE_TEMPLATE/example-submission.yml) — update both copies when you add new official tools or keywords so submitters see the full list."
-  },
-  {
-    "objectID": "content/instructions.html#the-submission-workflow",
-    "href": "content/instructions.html#the-submission-workflow",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "1. Community member opens the GitHub issue using the \"Submit a New\n   Dashboard Example\" template and fills in the structured form.\n\n2. The issue is auto-labelled \"example-submission\" and \"needs-review\".\n\n3. Admin reviews the issue content.\n\n4. If approved, admin adds the \"approved\" label.\n       ↓\n   GitHub Action fires automatically:\n     a. Parses the issue form body\n     b. Appends a new entry to _code/examples.yaml\n     c. Opens a Pull Request on a branch named example/issue-N\n\n5. Admin reviews the PR:\n     a. Checks the new YAML entry in _code/examples.yaml looks correct\n     b. Downloads any submitted image → saves to content/card-images/\n     c. Verifies any new tool/keyword values are intentional\n     d. Runs quarto preview locally (optional but recommended)\n\n6. Admin merges the PR.\n\n7. Admin re-renders and pushes docs/ (or CI does it automatically).\n\n8. New card appears live on the dashboard. ✅\n\n\n\n\nThe workflow file (.github/workflows/process-submission.yml) is already in place. It needs two things before it will work:\n\n\nGo to your repo → Issues → Labels → New label and create:\n\n\n\n\n\n\n\n\nLabel\nColour\nPurpose\n\n\n\n\nexample-submission\nany\nAuto-applied by the issue template. Identifies submission issues.\n\n\nneeds-review\nyellow\nAuto-applied. Signals it’s awaiting admin review.\n\n\napproved\ngreen\nApplied manually by admins to trigger the Action.\n\n\nauto-generated\ngrey\nApplied to PRs created by the Action.\n\n\n\n\n\n\nGo to: Settings → Actions → General → Workflow permissions Select: Read and write permissions → Save.\nThis allows the Action to commit to the repository and open PRs using GITHUB_TOKEN (no additional secrets needed).\n\n\n\n\n\n\nOpen the new issue (labelled example-submission + needs-review).\nReview: is the URL valid and publicly accessible? Is the description accurate? Are the tool/keyword selections appropriate?\nIf you want to reject it, close the issue with a comment explaining why.\nIf you approve it, add the approved label. The Action will run within ~1 minute.\nCheck the Actions tab to confirm the workflow completed successfully.\nFind the new PR (it’s linked in a comment automatically posted to the issue).\nIn the PR, review _code/examples.yaml in the diff.\nIf the submitter provided an image URL:\n\nDownload the image.\nRename it to match the image field in the new YAML entry.\nAdd it to content/card-images/ and commit it to the PR branch.\n\nMerge the PR.\nRe-render and push (quarto render → git add docs/ → git push).\n\n\n\n\n\nIf you prefer not to use the Action, or if something fails:\n\nRead the issue carefully and extract the submitted values.\nOpen _code/examples.yaml and manually append a new entry.\nIf an image was provided, download it to content/card-images/.\nCommit, push, re-render.\n\n\n\n\n\nThe files in _code/ are your source of record — the copies you edit in RStudio alongside your other project files. The .github/ copies are what GitHub actually reads and executes.\nWhen you edit _code/example-submission.yml (e.g. to add new tools or keywords to the form checkboxes), copy it to .github/ISSUE_TEMPLATE/:\ncp _code/example-submission.yml .github/ISSUE_TEMPLATE/example-submission.yml\nWhen you edit _code/process_submission.yml (e.g. to change Action behaviour), copy it to .github/workflows/:\ncp _code/process_submission.yml .github/workflows/process_submission.yml\n_code/parse_submission.py is the script actually called by the Action (via .github/scripts/parse_submission.py). Keep these in sync the same way:\ncp _code/parse_submission.py .github/scripts/parse_submission.py\n\nTip: You can automate these copies with a short shell script or a pre-commit hook if you find yourself editing these files frequently.\n\n\n\n\n# In your project directory (or use RStudio's Render button):\nquarto render\n\n# Live preview in browser with hot reload:\nquarto preview\n\n\n\nThe standard workflow after any content update:\nquarto render          # rebuilds docs/\ngit add docs/\ngit commit -m \"render: update dashboard\"\ngit push\nGitHub Pages will serve the updated docs/ automatically within ~30 seconds.\n\n\n\nAdd a second workflow to render the site automatically on every push to main:\n# .github/workflows/render-site.yml\nname: Render and Deploy Site\non:\n  push:\n    branches: [main]\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          use-public-rspm: true\n\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          packages: |\n            any::tidyverse\n            any::here\n            any::yaml\n            any::jsonlite\n\n      - uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render site\n        run: quarto render\n\n      - uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          folder: docs"
-  },
-  {
-    "objectID": "content/instructions.html#customising-the-dashboard",
-    "href": "content/instructions.html#customising-the-dashboard",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "All visual tokens are CSS custom properties at the top of dashboard.css (in the root directory). Change these to retheme the entire dashboard:\n:root {\n  --ink:        #1a1410;   /* primary text */\n  --ivory:      #f7f3ec;   /* page background */\n  --terra:      #c4583a;   /* tool tag accent */\n  --teal:       #2a6b6e;   /* keyword tag accent */\n  --serif:      \"Fraunces\", Georgia, serif;\n  --sans:       \"DM Sans\", system-ui, sans-serif;\n  --mono:       \"DM Mono\", monospace;\n}\nTo swap fonts: update the Google Fonts &lt;link&gt; tag in the include-in-header section of content/dashboard.qmd, and update the --serif/--sans/--mono variables in dashboard.css.\n\n\n\nBy default, selecting multiple tools uses OR logic: a card appears if it matches any selected tool. To require all selected tools to match (AND logic), edit the filtering OJS cell in content/dashboard.qmd:\n// Change .some() to .every() for AND logic:\nconst toolMatch =\n  selectedTools.length === 0 ||\n  selectedTools.every(t =&gt; exTools.includes(t))   // ← every, not some\n\nconst kwMatch =\n  selectedKeywords.length === 0 ||\n  selectedKeywords.every(k =&gt; exKws.includes(k))  // ← every, not some\n\n\n\n\nAdd the new field to entries in _code/examples.yaml.\nIn the R chunk in content/dashboard.qmd, add the field to the map_dfr() tibble.\nIn the OJS cards cell, reference ex.your_field inside renderCard().\n\n\n\n\nWhen you add new official tools or keywords to _code/examples.yaml, also add them to the checkboxes in _code/example-submission.yml, then copy that file to .github/ISSUE_TEMPLATE/example-submission.yml so submitters see the full list."
-  },
-  {
-    "objectID": "content/instructions.html#troubleshooting",
-    "href": "content/instructions.html#troubleshooting",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "Dashboard shows no examples / blank page\n\nConfirm _code/examples.yaml exists and is valid YAML (no tab characters — use spaces). Run yaml::read_yaml(here(\"_code\", \"examples.yaml\")) in R to check. Verify the here() path in the PATH CONFIGURATION block resolves correctly from your project root.\n\nImages not appearing on cards\n\nThe filename in the image field must exactly match the file in content/card-images/ (case-sensitive on Linux/GitHub). The card silently falls back to the placeholder on load failure — open your browser’s DevTools console to see the actual 404 URL.\n\nNew tools/keywords not appearing in dropdowns\n\nThe dropdowns are built from the data at render time. Re-render after editing _code/examples.yaml.\n\nGitHub Action not firing on “approved” label\n\nCheck the label name is spelled exactly approved (case-sensitive). Check the Actions tab for errors. Confirm workflow permissions are set to “Read and write” in repository Settings.\n\nparse_submission.py producing empty or wrong field values\n\nGitHub renders issue form fields as ### Field Label\\n\\nvalue. If GitHub changes this format, the regex in the script may need updating. Print ISSUE_BODY in the Action’s logs to inspect the raw text, then adjust the extract_field() patterns in _code/parse_submission.py, and copy the updated file to .github/scripts/parse_submission.py.\n\n_code/ and .github/ copies are out of sync\n\nIf the Action is behaving unexpectedly, check whether you edited _code/ but forgot to copy to .github/. See the Keeping copies in sync section.\n\nrenv doesn’t include the yaml package\n\nRun install.packages(\"yaml\") then renv::snapshot() to capture it."
-  },
-  {
-    "objectID": "content/instructions.html#contributing-to-this-template",
-    "href": "content/instructions.html#contributing-to-this-template",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "If you improve this dashboard template and want to share changes upstream, please open an issue or PR in the original template repository. Suggestions for new default tools/keywords, design improvements, workflow enhancements, and accessibility fixes are all welcome."
-  },
-  {
-    "objectID": "content/flowchart-refine.html",
-    "href": "content/flowchart-refine.html",
-    "title": "Refine your Flowchart",
-    "section": "",
-    "text": "(If you did not yet build one)\n\nGo to app.diagrams.net to initiate your draw.io flowchart.\nMake a draft flowchart. Draw.io is very intuitive, but if you need help, see resources at the bottom of this page.\nExport As –&gt; SVG –&gt; Device (in my experience, I cannot navigate the ‘save as’ to my folder of interest. So, you will need to save to your downloads folder, and then in File Explorer, save to the outputs/ folder of your Repository.",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-refine.html#build-a-flowchart-in-draw.io",
-    "href": "content/flowchart-refine.html#build-a-flowchart-in-draw.io",
-    "title": "Refine your Flowchart",
-    "section": "",
-    "text": "(If you did not yet build one)\n\nGo to app.diagrams.net to initiate your draw.io flowchart.\nMake a draft flowchart. Draw.io is very intuitive, but if you need help, see resources at the bottom of this page.\nExport As –&gt; SVG –&gt; Device (in my experience, I cannot navigate the ‘save as’ to my folder of interest. So, you will need to save to your downloads folder, and then in File Explorer, save to the outputs/ folder of your Repository.",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-refine.html#modify-flowchart-in-draw.io",
-    "href": "content/flowchart-refine.html#modify-flowchart-in-draw.io",
-    "title": "Refine your Flowchart",
-    "section": "Modify Flowchart in draw.io",
-    "text": "Modify Flowchart in draw.io\n\nOpen app.diagrams.net in your web browser\nFile –&gt; Open From –&gt; Device and navigate to open your diagram in your repository output folder\nYou can create sub-pages for different components of your Flowchart (the auto-build may have done this for you). Note that changes made to one page are not reflected on other pages.\nModify your chart in draw.io, considering using these conventions:",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-refine.html#customize-your-pathways-flowchart-tool",
-    "href": "content/flowchart-refine.html#customize-your-pathways-flowchart-tool",
-    "title": "Refine your Flowchart",
-    "section": "Customize your Pathways Flowchart Tool",
-    "text": "Customize your Pathways Flowchart Tool\nNow that your diagram is ready and saved to your ‘output’ folder, you need to modify the tool so it can find your diagram.\n\nOpen your project in Rstudio\nOpen the ‘flowchart-pathways.qmd’ in the content/ folder\nscroll to the # Configuration. Modify the SURVEY_PASSWORD (if you choose), and give the name of your DIAGRAM_FILE (and ensure this file is in the output/ folder!)\n\n\n\nSave the file\nCheck that it works by:\n\nOpen the index.qmd (in your root directory), and click ‘Render’\nGo to the Terminal (bottom left in RStudio), and type ‘quarto preview’",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-refine.html#note",
-    "href": "content/flowchart-refine.html#note",
-    "title": "Refine your Flowchart",
-    "section": "Note:",
-    "text": "Note:\nThe Flowchart tool is in html, and to view locally you will need to ‘preview’ quarto as html. If it looks good here, then it should render correctly as html in the github pages",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-refine.html#resources",
-    "href": "content/flowchart-refine.html#resources",
-    "title": "Refine your Flowchart",
-    "section": "Resources",
-    "text": "Resources\nDraw.io Tutorials\nDraw.io Documentation\nDraw.io Examples and Templates",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Refine your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/dashboard.html",
-    "href": "content/dashboard.html",
-    "title": "Examples Dashboard",
-    "section": "",
-    "text": "Need Instructions? Here you go!\n\nexamples  = transpose(r_examples)\nallTools  = r_all_tools\nallKws    = r_all_keywords\nsubmitUrl = r_submit_url\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtml`\n&lt;div class=\"dash-header\"&gt;\n  &lt;div class=\"dash-header-inner\"&gt;\n    &lt;div class=\"dash-eyebrow\"&gt;Resource Library&lt;/div&gt;\n    &lt;h1 class=\"dash-title\"&gt;Examples Dashboard&lt;/h1&gt;\n    &lt;p class=\"dash-subtitle\"&gt;\n      Discover community-contributed examples across tools and topics.\n      Filter below, or\n      &lt;a href=\"${submitUrl}\" target=\"_blank\" rel=\"noopener\" class=\"submit-link\"&gt;\n        submit your own ↗\n      &lt;/a&gt;\n    &lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\nviewof rawSearch = Inputs.text({\n  placeholder: \"Search by title, description, author…\",\n  label: null,\n  submit: false,\n  attributes: { \"aria-label\": \"Search examples\" }\n})\n\n// ── Tools multi-select ────────────────────────────────────────────────────────\nviewof rawTools = Inputs.select(allTools, {\n  label: \"Filter by Tool\",\n  multiple: true,\n  size: Math.min(allTools.length, 8),\n  attributes: { \"aria-label\": \"Filter by tool type\" }\n})\n\n// ── Keywords multi-select ─────────────────────────────────────────────────────\nviewof rawKeywords = Inputs.select(allKws, {\n  label: \"Filter by Keyword\",\n  multiple: true,\n  size: Math.min(allKws.length, 8),\n  attributes: { \"aria-label\": \"Filter by keyword\" }\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nselectedTools    = Array.from(rawTools)\nselectedKeywords = Array.from(rawKeywords)\nsearchQuery      = rawSearch.toLowerCase().trim()\n\n// Filter examples — OR logic within tools, OR logic within keywords\nfiltered = examples.filter(ex =&gt; {\n  // 1. Text search across title, description, author, tags\n  const textMatch =\n    !searchQuery ||\n    ex.title.toLowerCase().includes(searchQuery) ||\n    ex.description.toLowerCase().includes(searchQuery) ||\n    (ex.author || \"\").toLowerCase().includes(searchQuery) ||\n    ex.tools.toLowerCase().includes(searchQuery) ||\n    ex.keywords.toLowerCase().includes(searchQuery)\n\n  // 2. Tools filter: passes if no tools selected, OR example has ≥1 match\n  const exTools  = ex.tools ? ex.tools.split(\"|\").map(t =&gt; t.trim()) : []\n  const toolMatch =\n    selectedTools.length === 0 ||\n    selectedTools.some(t =&gt; exTools.includes(t))\n\n  // 3. Keywords filter: same OR logic\n  const exKws   = ex.keywords ? ex.keywords.split(\"|\").map(k =&gt; k.trim()) : []\n  const kwMatch =\n    selectedKeywords.length === 0 ||\n    selectedKeywords.some(k =&gt; exKws.includes(k))\n\n  return textMatch && toolMatch && kwMatch\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunction clearText(viewofEl) {\n  const input = viewofEl.querySelector(\"input\")\n  if (input) { input.value = \"\"; input.dispatchEvent(new Event(\"input\", { bubbles: true })) }\n}\n\nfunction clearSelect(viewofEl) {\n  const select = viewofEl.querySelector(\"select\")\n  if (select) {\n    Array.from(select.options).forEach(o =&gt; { o.selected = false })\n    select.dispatchEvent(new Event(\"input\", { bubbles: true }))\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtml`\n&lt;div class=\"results-bar\"&gt;\n  &lt;span class=\"results-count\"&gt;\n    ${filtered.length === examples.length\n      ? `Showing all &lt;strong&gt;${examples.length}&lt;/strong&gt; examples`\n      : `Showing &lt;strong&gt;${filtered.length}&lt;/strong&gt; of ${examples.length} examples`}\n  &lt;/span&gt;\n  ${(selectedTools.length &gt; 0 || selectedKeywords.length &gt; 0 || searchQuery)\n    ? html`&lt;button class=\"clear-btn\" onclick=${() =&gt; {\n        clearText(viewof rawSearch)\n        clearSelect(viewof rawTools)\n        clearSelect(viewof rawKeywords)\n      }}&gt;✕ Clear all filters&lt;/button&gt;`\n    : \"\"}\n&lt;/div&gt;`\n\n\n\n\n\n\n\nfunction renderTag(label, type) {\n  return html`&lt;span class=\"tag tag-${type}\"&gt;${label}&lt;/span&gt;`\n}\n\n// ── Card renderer ──────────────────────────────────────────────────────────────\nfunction renderCard(ex) {\n  const toolTags = ex.tools\n    ? ex.tools.split(\"|\").map(t =&gt; renderTag(t.trim(), \"tool\"))\n    : []\n  const kwTags = ex.keywords\n    ? ex.keywords.split(\"|\").map(k =&gt; renderTag(k.trim(), \"keyword\"))\n    : []\n\n  const hasImage = ex.image &&\n    !ex.image.endsWith(\"/\") &&\n    ex.image !== \"\"\n\n  return html`\n    &lt;article class=\"ex-card\"&gt;\n      &lt;div class=\"card-img-wrap ${hasImage ? \"\" : \"card-img-placeholder\"}\"&gt;\n        ${hasImage\n          ? html`&lt;img\n               src=\"${ex.image}\"\n               alt=\"${ex.title}\"\n               class=\"card-img\"\n               loading=\"lazy\"\n               onerror=\"this.parentElement.classList.add('card-img-placeholder'); this.remove()\"\n             /&gt;`\n          : html`&lt;span class=\"placeholder-icon\" aria-hidden=\"true\"&gt;◈&lt;/span&gt;`}\n      &lt;/div&gt;\n      &lt;div class=\"card-body\"&gt;\n        &lt;h3 class=\"card-title\"&gt;\n          &lt;a href=\"${ex.url}\" target=\"_blank\" rel=\"noopener\"&gt;${ex.title}&lt;/a&gt;\n        &lt;/h3&gt;\n        &lt;p class=\"card-desc\"&gt;${ex.description}&lt;/p&gt;\n        ${ex.author\n          ? html`&lt;p class=\"card-author\"&gt;by ${ex.author}&lt;/p&gt;`\n          : \"\"}\n        &lt;div class=\"card-tags\"&gt;\n          ${toolTags}\n          ${kwTags}\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/article&gt;`\n}\n\n// ── Render grid or empty state ─────────────────────────────────────────────────\nfiltered.length === 0\n  ? html`\n    &lt;div class=\"empty-state\"&gt;\n      &lt;div class=\"empty-icon\" aria-hidden=\"true\"&gt;◈&lt;/div&gt;\n      &lt;p&gt;No examples match your current filters.&lt;/p&gt;\n      &lt;p&gt;\n        &lt;a href=\"${submitUrl}\" target=\"_blank\" rel=\"noopener\"&gt;\n          Know one that should be here? Submit it ↗\n        &lt;/a&gt;\n      &lt;/p&gt;\n    &lt;/div&gt;`\n  : html`&lt;div class=\"card-grid\"&gt;${filtered.map(renderCard)}&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtml`\n&lt;div class=\"submit-cta\"&gt;\n  &lt;div class=\"submit-cta-inner\"&gt;\n    &lt;div class=\"submit-icon\" aria-hidden=\"true\"&gt;✦&lt;/div&gt;\n    &lt;h2&gt;Know a great example?&lt;/h2&gt;\n    &lt;p&gt;\n      Contributions from the community keep this dashboard growing.\n      Submit a resource using our GitHub Issue template — an admin will\n      review it and add it to the next site build.\n    &lt;/p&gt;\n    &lt;a href=\"${submitUrl}\" target=\"_blank\" rel=\"noopener\" class=\"submit-btn\"&gt;\n      Submit an Example ↗\n    &lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;`",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Example Dashboard"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-doc2draw.html",
-    "href": "content/flowchart-doc2draw.html",
-    "title": "Build your Flowchart",
-    "section": "",
-    "text": "We have two methods for building your first draft flowchart:\nThe automated approach is useful for complex diagrams where there is documentation (or an outline) of all components with Headers in H1, H2, and H3 format (see below). For simple diagrams, it may be easier to build directly in draw.io (see next page).",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Build your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-doc2draw.html#automate-diagram-build-from-text",
-    "href": "content/flowchart-doc2draw.html#automate-diagram-build-from-text",
-    "title": "Build your Flowchart",
-    "section": "Automate Diagram Build from Text",
-    "text": "Automate Diagram Build from Text\nThis function will allow you to build a draft draw.io workflow diagram from an existing text document (docx) with headers:\n\nLevel 1 Headers (H1) will serve as the primary workflow\nLevel 2 headers will branch off from these (these will include lower level headers can be opened in a new draw.io page for clarity).\nOnce this draft flowchart is created, go to the next page to ‘Refine your Flowchart’\n\n\n\n\n\n\n\nNoteNote:\n\n\n\nFor more information, see the docx_to_drawio_README in the _code folder.\n\n\nInstructions:\n\nTest with Sample Data Plan\n\nOpen your RStudio project for this repository.\nOpen flowchart-doc2draw.qmd (in the content/ folder). Alternatively, you can copy this code, below, into your own R file)\nRun the code chunk as-is to build a draft diagram using the SampleDataPlan.\nYou can follow the instructions on the next page (Refine your Flowchart) to open/view it, if you like, or you can move on to create your custom flowchart.\n\nCustom docx –&gt; Flowchart\n\nAdd your docx file to the ‘output’ folder. Double-check that all headings are at the level you want need for this project (this function expects H1 to be the top level, and then H2, etc.).\nModify the path for ‘path_to_docx’ to select your personal docx file.\nRun the code to create your own flowchart (name will be based on the name of your original docx).\nOpen in draw.io to refine (see next page, Refine your Flowchart).\n\n\n\nlibrary(here)\nsource(here::here(\"_code/docx_to_drawio.R\"))\npath_to_docx &lt;- here(\"output/SampleDataPlan.docx\")\npath_to_output &lt;- here(\"output/\")\n\n# Create Flowchart in draw.io based on your docx headers\n\n  create_flowchart(\n    input_file = path_to_docx,\n    output_folder = path_to_output,\n    direction = \"TB\",\n    h2_new_page = TRUE\n  )\n\nAlternatively, you can build your diagram using draw.io",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Build your Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-transition.html",
-    "href": "content/flowchart-transition.html",
-    "title": "transition-workflow",
-    "section": "",
-    "text": "Once you have finished updating your workflow so that the forms are all ‘complete’, then you might want to transition this workflow into your lab manual or research compendium and change links or metadata associated with each flow chart component.\nGive instructions to modify these (build your own form or attach metadata or give a link to more info).",
-    "crumbs": [
-      "Transition Your Workflow"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-pathways.html",
-    "href": "content/flowchart-pathways.html",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/overview.html",
+    "href": "content/overview.html",
+    "title": "Overview",
     "section": "",
     "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Pathways Flowchart",
-      "Customize Pathways Flowchart"
+      "Overview"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "href": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/overview.html#interactive-workflow-diagram",
+    "href": "content/overview.html#interactive-workflow-diagram",
+    "title": "Overview",
     "section": "",
     "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Pathways Flowchart",
-      "Customize Pathways Flowchart"
+      "Overview"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways.html#instructions-for-users",
-    "href": "content/flowchart-pathways.html#instructions-for-users",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/overview.html#instructions-for-users",
+    "href": "content/overview.html#instructions-for-users",
+    "title": "Overview",
     "section": "Instructions for Users",
     "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
     "crumbs": [
-      "Pathways Flowchart",
-      "Customize Pathways Flowchart"
+      "Overview"
     ]
   },
   {
-    "objectID": "content/getStarted.html",
-    "href": "content/getStarted.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "This template will create a Github Repository standard folders and embedded flowcharts and the foundation for a Quarto website that can serve as a tool for navigating your Openscapes Pathways, a Lab Manual with embedded flowcharts, or as an experimental repository.\nFollow the steps below to copy this template to your lab’s GitHub\n\nOpen [this repository on GitHub]\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nImportantNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your project is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
+    "objectID": "content/pre-processing.html#file-manipulation",
+    "href": "content/pre-processing.html#file-manipulation",
+    "title": "Pre-Processing",
+    "section": "File Manipulation",
+    "text": "File Manipulation",
     "crumbs": [
-      "Get Started"
+      "Pre-Processing"
     ]
   },
   {
-    "objectID": "content/getStarted.html#how-to-use-this-template",
-    "href": "content/getStarted.html#how-to-use-this-template",
-    "title": "Getting Started",
-    "section": "",
-    "text": "This template will create a Github Repository standard folders and embedded flowcharts and the foundation for a Quarto website that can serve as a tool for navigating your Openscapes Pathways, a Lab Manual with embedded flowcharts, or as an experimental repository.\nFollow the steps below to copy this template to your lab’s GitHub\n\nOpen [this repository on GitHub]\nClick on the ‘Use this template’ button in the top right, select ‘Create new repository’\n\nEdit repository settings\n\nSelect the ‘Include all branches’ option\nSelect your lab organization or yourself as the owner and set the repository name to your Project Name\nMake description “Research Compendium for Project Name”\nMake the repo public\n\n\nClick create repository\nTurn on GitHub pages under Settings-&gt;Pages. You will set pages to be made from the gh-pages branch and root directory\n\nUpdate ‘Actions’ settings\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Actions permissions select ‘Allow all actions and reusable workflows’. Select save\n\nUnder Settings -&gt; Actions -&gt; General -&gt; Workflow permissions select ‘Read and write permissions’\n\n\n\n\n\n\n\nImportantNote: Both of these settings may already be selected but you have to click save for both\n\n\n\n\n\n\n\nReturn to the main page of the repo to edit your website\n\nClick on ‘Code’ in the top left\nClick on the settings button next to the ‘About’ section on the right side of the repository\nSelect ‘Use your GitHub Pages website’. This should autopopulate the website\nSelect ‘Save Changes’\n\n\nThe foundation for your project is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.",
+    "objectID": "content/pre-processing.html#ltsa",
+    "href": "content/pre-processing.html#ltsa",
+    "title": "Pre-Processing",
+    "section": "LTSA",
+    "text": "LTSA",
     "crumbs": [
-      "Get Started"
+      "Pre-Processing"
     ]
+  },
+  {
+    "objectID": "content/pre-processing.html#qaqc",
+    "href": "content/pre-processing.html#qaqc",
+    "title": "Pre-Processing",
+    "section": "QAQC",
+    "text": "QAQC",
+    "crumbs": [
+      "Pre-Processing"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#acoustic-sensors",
+    "href": "content/hardware.html#acoustic-sensors",
+    "title": "Hardware",
+    "section": "Acoustic Sensors",
+    "text": "Acoustic Sensors",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#oceo-sensors",
+    "href": "content/hardware.html#oceo-sensors",
+    "title": "Hardware",
+    "section": "Oceo Sensors",
+    "text": "Oceo Sensors",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#glider-performance",
+    "href": "content/data-analysis.html#glider-performance",
+    "title": "Data Analysis",
+    "section": "Glider Performance",
+    "text": "Glider Performance",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#noise",
+    "href": "content/data-analysis.html#noise",
+    "title": "Data Analysis",
+    "section": "Noise",
+    "text": "Noise",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#species",
+    "href": "content/data-analysis.html#species",
+    "title": "Data Analysis",
+    "section": "Species",
+    "text": "Species",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#modeling",
+    "href": "content/data-analysis.html#modeling",
+    "title": "Data Analysis",
+    "section": "Modeling",
+    "text": "Modeling",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html",
+    "href": "supplement/SCSS_INTEGRATION.html",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
+    "href": "supplement/SCSS_INTEGRATION.html#overview",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
+    "href": "supplement/SCSS_INTEGRATION.html#customization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
+    "href": "supplement/SCSS_INTEGRATION.html#verification",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
+    "href": "supplement/SCSS_INTEGRATION.html#need-help",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "supplement/ReadMe.html",
+    "href": "supplement/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "figs/ReadMe.html",
+    "href": "figs/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "manuscript/ReadMe.html",
+    "href": "manuscript/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html",
+    "href": "supplement/QUICK_REFERENCE.html",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
+    "href": "supplement/QUICK_REFERENCE.html#need-help",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
   },
   {
     "objectID": "supplement/SETUP_GUIDE.html",
@@ -316,492 +421,33 @@
     "text": "This template is open source and free to use for your projects!"
   },
   {
-    "objectID": "supplement/SCSS_INTEGRATION.html",
-    "href": "supplement/SCSS_INTEGRATION.html",
-    "title": "Integrating Survey System Styles into Your Theme",
+    "objectID": "content/flowchart-pathways.html",
+    "href": "content/flowchart-pathways.html",
+    "title": "Interactive Workflow Tool",
     "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
-    "href": "supplement/SCSS_INTEGRATION.html#overview",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
-    "href": "supplement/SCSS_INTEGRATION.html#customization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
-    "href": "supplement/SCSS_INTEGRATION.html#verification",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
-    "href": "supplement/SCSS_INTEGRATION.html#need-help",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html",
-    "href": "supplement/QUICK_REFERENCE.html",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
-    "href": "supplement/QUICK_REFERENCE.html#need-help",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
-  },
-  {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "manuscript/ReadMe.html",
-    "href": "manuscript/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "figs/ReadMe.html",
-    "href": "figs/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "supplement/ReadMe.html",
-    "href": "supplement/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html",
-    "href": "supplement/dashboard_instructions.html",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "This document covers everything you need to set up, populate, maintain, and extend the Examples Dashboard as a template repository owner or contributor.\n\n\n\nyour-repo/\n│\n├── dashboard.qmd                    ← Main dashboard page\n├── instructions.qmd                 ← This guide\n│\n├── styles/\n│   └── dashboard.css                ← All dashboard styling\n│\n├── content/\n│   ├── examples.yaml                ← Single source of truth for all examples\n│   └── card-images/                 ← Thumbnail/screenshot images\n│       ├── placeholder.svg          ← Fallback shown when no image is set\n│       └── my-example.png           ← One file per example (any format)\n│\n└── .github/\n    ├── ISSUE_TEMPLATE/\n    │   └── example-submission.yml   ← Structured submission form\n    ├── workflows/\n    │   └── process-submission.yml   ← GitHub Action (auto-PR on approval)\n    └── scripts/\n        └── parse_submission.py      ← Parses issue form → YAML entry\n\n\n\n\n\n\nIn dashboard.qmd, find this line in the R code chunk and replace YOUR-ORG/YOUR-REPO with your actual GitHub organisation and repository name:\nsubmit_url &lt;- paste0(\n  \"https://github.com/YOUR-ORG/YOUR-REPO\",\n  \"/issues/new?template=example-submission.yml\"\n)\n\n\n\nThe dashboard uses the yaml package to read examples.yaml. Install it once:\ninstall.packages(\"yaml\")\nYour renv.lock (if you use renv) should capture this automatically when you next run renv::snapshot().\n\n\n\nThe placeholder image is shown on cards where no image has been provided. A minimal SVG is included (content/card-images/placeholder.svg). You can replace it with your own branded placeholder — any common image format works (SVG, PNG, JPG).\n\n\n\nA minimal Quarto website configuration:\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"Your Project Name\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: dashboard.qmd\n        text: Examples\n      - href: instructions.qmd\n        text: Guide\n\nformat:\n  html:\n    theme: default\n\n\n\nIn your repository: Settings → Pages → Source → Deploy from branch → main → /docs.\nAfter this, every push to main that includes a re-rendered docs/ folder will update the live site.\n\n\n\n\n\n\n\nAll examples live in content/examples.yaml. Each entry is one card on the dashboard. The file begins with a detailed comment header — read it before making edits.\n\n\n\n\n\n\n\n\n\n\n\nField\nRequired\nType\nNotes\n\n\n\n\nid\n✅\ninteger\nUnique. Always increment from the last entry.\n\n\ntitle\n✅\nstring\nShort title for the card (~60 chars).\n\n\ndescription\n✅\nstring\n1–3 sentences. Use the &gt; block scalar for long text.\n\n\nurl\n✅\nstring\nFull public URL.\n\n\ntools\n✅\nlist\nOne or more tool categories (see below).\n\n\nkeywords\n✅\nlist\nOne or more keywords (see below).\n\n\nimage\n—\nstring\nFilename only (e.g. my-example.png). File must be in content/card-images/. Leave blank \"\" for placeholder.\n\n\nauthor\n—\nstring\nPerson or organisation.\n\n\ndate_added\n—\nstring\nISO date YYYY-MM-DD. For internal tracking.\n\n\n\n\n\n\n- id: 7\n  title: \"My Open Science Workflow\"\n  description: &gt;\n    A reproducible end-to-end workflow for open science data analysis,\n    from raw data ingestion through to publication-ready figures.\n  url: \"https://github.com/example/open-workflow\"\n  tools:\n    - Reproducible Reports\n    - Data Management\n  keywords:\n    - r\n    - GitHub\n    - template\n  image: \"open-workflow.png\"\n  author: \"Jane Smith\"\n  date_added: \"2025-03-01\"\n\n\n\nUnlike CSV, multi-value fields are just YAML lists — no need to wrap comma-separated values in quotes. Each tool or keyword is its own indented - item line.\n\n\n\n\n\n\nOpen content/examples.yaml in RStudio or any text editor.\nCopy an existing entry block and paste it at the bottom of the examples: list.\nIncrement id by 1 from the previous last entry.\nFill in the fields.\nIf you have an image, save it in content/card-images/.\nRender (quarto render) and verify the card appears correctly.\nCommit and push.\n\n\n\n\n\nTools and keywords do not need to be registered anywhere — the dashboard derives its dropdown options automatically from all values present in examples.yaml at render time.\nTo add a new tool or keyword: use it in a new (or existing) entry. It will appear in the dropdown on the next render.\nTo remove a tool or keyword from the dropdowns: remove it from every entry that uses it.\nTo rename a tool or keyword: do a find-and-replace across examples.yaml.\nThe current default values are listed in the GitHub issue form template (example-submission.yml) — update that file too when you add new official tools or keywords so submitters see the full list.\n\n\n\n\n\n\n\n1. Community member opens the GitHub issue using the \"Submit a New\n   Dashboard Example\" template and fills in the structured form.\n\n2. The issue is auto-labelled \"example-submission\" and \"needs-review\".\n\n3. Admin reviews the issue content.\n\n4. If approved, admin adds the \"approved\" label.\n       ↓\n   GitHub Action fires automatically:\n     a. Parses the issue form body\n     b. Appends a new entry to content/examples.yaml\n     c. Opens a Pull Request on a branch named example/issue-N\n\n5. Admin reviews the PR:\n     a. Checks the new YAML entry looks correct\n     b. Downloads any submitted image → saves to content/card-images/\n     c. Verifies any new tool/keyword values are intentional\n     d. Runs quarto preview locally (optional but recommended)\n\n6. Admin merges the PR.\n\n7. Admin re-renders and pushes docs/ (or CI does it automatically).\n\n8. New card appears live on the dashboard. ✅\n\n\n\n\nThe workflow file (.github/workflows/process-submission.yml) is already in place. It needs two things before it will work:\n\n\nGo to your repo → Issues → Labels → New label and create:\n\n\n\n\n\n\n\n\nLabel\nColour\nPurpose\n\n\n\n\nexample-submission\nany\nAuto-applied by the issue template. Identifies submission issues.\n\n\nneeds-review\nyellow\nAuto-applied. Signals it’s awaiting admin review.\n\n\napproved\ngreen\nApplied manually by admins to trigger the Action.\n\n\nauto-generated\ngrey\nApplied to PRs created by the Action.\n\n\n\n\n\n\nGo to: Settings → Actions → General → Workflow permissions Select: Read and write permissions → Save.\nThis allows the Action to commit to the repository and open PRs using GITHUB_TOKEN (no additional secrets needed).\n\n\n\n\n\n\nOpen the new issue (labelled example-submission + needs-review).\nReview: is the URL valid and publicly accessible? Is the description accurate? Are the tool/keyword selections appropriate?\nIf you want to reject it, close the issue with a comment explaining why.\nIf you approve it, add the approved label. The Action will run within ~1 minute.\nCheck the Actions tab to confirm the workflow completed successfully.\nFind the new PR (it’s linked in a comment automatically posted to the issue).\nIn the PR, review content/examples.yaml in the diff.\nIf the submitter provided an image URL:\n\nDownload the image.\nRename it to match the image field in the new YAML entry.\nAdd it to content/card-images/ and commit it to the PR branch.\n\nMerge the PR.\nRe-render and push (quarto render → git add docs/ → git push).\n\n\n\n\n\nIf you prefer not to use the Action, or if something fails:\n\nRead the issue carefully and extract the submitted values.\nOpen content/examples.yaml and manually append a new entry.\nIf an image was provided, download it to content/card-images/.\nCommit, push, re-render.\n\n\n\n\n\n\n\n\n# In your project directory (or use RStudio's Render button):\nquarto render\n\n# Live preview in browser with hot reload:\nquarto preview\n\n\n\nThe standard workflow after any content update:\nquarto render          # rebuilds docs/\ngit add docs/\ngit commit -m \"render: update dashboard\"\ngit push\nGitHub Pages will serve the updated docs/ automatically within ~30 seconds.\n\n\n\nAdd a second workflow to render the site automatically on every push to main:\n# .github/workflows/render-site.yml\nname: Render and Deploy Site\non:\n  push:\n    branches: [main]\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          use-public-rspm: true\n\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          packages: |\n            any::tidyverse\n            any::here\n            any::yaml\n            any::jsonlite\n\n      - uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render site\n        run: quarto render\n\n      - uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          folder: docs\n\n\n\n\n\n\n\nAll visual tokens are CSS custom properties at the top of styles/dashboard.css. Change these to retheme the entire dashboard:\n:root {\n  --ink:        #1a1410;   /* primary text */\n  --ivory:      #f7f3ec;   /* page background */\n  --terra:      #c4583a;   /* tool tag accent */\n  --teal:       #2a6b6e;   /* keyword tag accent */\n  --serif:      \"Fraunces\", Georgia, serif;\n  --sans:       \"DM Sans\", system-ui, sans-serif;\n  --mono:       \"DM Mono\", monospace;\n}\nTo swap fonts: update the Google Fonts &lt;link&gt; tag in the include-in-header section of dashboard.qmd, and update the --serif/--sans/--mono variables.\n\n\n\nBy default, selecting multiple tools uses OR logic: a card appears if it matches any selected tool. To require all selected tools to match (AND logic), edit the filtering OJS cell in dashboard.qmd:\n// Change .some() to .every() for AND logic:\nconst toolMatch =\n  selectedTools.length === 0 ||\n  selectedTools.every(t =&gt; exTools.includes(t))   // ← every, not some\n\nconst kwMatch =\n  selectedKeywords.length === 0 ||\n  selectedKeywords.every(k =&gt; exKws.includes(k))  // ← every, not some\n\n\n\n\nAdd the new field to entries in examples.yaml.\nIn the R chunk in dashboard.qmd, add the field to the map_dfr() tibble.\nIn the OJS cards cell, reference ex.your_field inside renderCard().\n\n\n\n\nWhen you add new official tools or keywords to examples.yaml, also add them to the checkboxes in .github/ISSUE_TEMPLATE/example-submission.yml so that submitters can select them. The file is self-documented with comments.\n\n\n\n\n\n\nDashboard shows no examples / blank page\n\nConfirm content/examples.yaml exists and is valid YAML (no tab characters — use spaces). Run yaml::read_yaml(\"content/examples.yaml\") in R to check. Verify the here() path resolves correctly from your project root.\n\nImages not appearing on cards\n\nThe filename in the image field must exactly match the file in content/card-images/ (case-sensitive on Linux/GitHub). The card silently falls back to the placeholder on load failure — open your browser’s DevTools console to see the actual 404 URL.\n\nNew tools/keywords not appearing in dropdowns\n\nThe dropdowns are built from the data at render time. Re-render after editing the YAML.\n\nGitHub Action not firing on “approved” label\n\nCheck the label name is spelled exactly approved (case-sensitive). Check the Actions tab for errors. Confirm workflow permissions are set to “Read and write” in repository Settings.\n\nparse_submission.py producing empty or wrong field values\n\nGitHub renders issue form fields as ### Field Label\\n\\nvalue. If GitHub changes this format, the regex in the script may need updating. Print ISSUE_BODY in the Action’s logs to inspect the raw text, then adjust the extract_field() patterns accordingly.\n\nrenv doesn’t include the yaml package\n\nRun install.packages(\"yaml\") then renv::snapshot() to capture it.\n\n\n\n\n\n\nIf you improve this dashboard template and want to share changes upstream, please open an issue or PR in the original template repository. Suggestions for new default tools/keywords, design improvements, workflow enhancements, and accessibility fixes are all welcome."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#repository-structure",
-    "href": "supplement/dashboard_instructions.html#repository-structure",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "your-repo/\n│\n├── dashboard.qmd                    ← Main dashboard page\n├── instructions.qmd                 ← This guide\n│\n├── styles/\n│   └── dashboard.css                ← All dashboard styling\n│\n├── content/\n│   ├── examples.yaml                ← Single source of truth for all examples\n│   └── card-images/                 ← Thumbnail/screenshot images\n│       ├── placeholder.svg          ← Fallback shown when no image is set\n│       └── my-example.png           ← One file per example (any format)\n│\n└── .github/\n    ├── ISSUE_TEMPLATE/\n    │   └── example-submission.yml   ← Structured submission form\n    ├── workflows/\n    │   └── process-submission.yml   ← GitHub Action (auto-PR on approval)\n    └── scripts/\n        └── parse_submission.py      ← Parses issue form → YAML entry"
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#first-time-setup",
-    "href": "supplement/dashboard_instructions.html#first-time-setup",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "In dashboard.qmd, find this line in the R code chunk and replace YOUR-ORG/YOUR-REPO with your actual GitHub organisation and repository name:\nsubmit_url &lt;- paste0(\n  \"https://github.com/YOUR-ORG/YOUR-REPO\",\n  \"/issues/new?template=example-submission.yml\"\n)\n\n\n\nThe dashboard uses the yaml package to read examples.yaml. Install it once:\ninstall.packages(\"yaml\")\nYour renv.lock (if you use renv) should capture this automatically when you next run renv::snapshot().\n\n\n\nThe placeholder image is shown on cards where no image has been provided. A minimal SVG is included (content/card-images/placeholder.svg). You can replace it with your own branded placeholder — any common image format works (SVG, PNG, JPG).\n\n\n\nA minimal Quarto website configuration:\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"Your Project Name\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: dashboard.qmd\n        text: Examples\n      - href: instructions.qmd\n        text: Guide\n\nformat:\n  html:\n    theme: default\n\n\n\nIn your repository: Settings → Pages → Source → Deploy from branch → main → /docs.\nAfter this, every push to main that includes a re-rendered docs/ folder will update the live site."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#managing-the-examples-data",
-    "href": "supplement/dashboard_instructions.html#managing-the-examples-data",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "All examples live in content/examples.yaml. Each entry is one card on the dashboard. The file begins with a detailed comment header — read it before making edits.\n\n\n\n\n\n\n\n\n\n\n\nField\nRequired\nType\nNotes\n\n\n\n\nid\n✅\ninteger\nUnique. Always increment from the last entry.\n\n\ntitle\n✅\nstring\nShort title for the card (~60 chars).\n\n\ndescription\n✅\nstring\n1–3 sentences. Use the &gt; block scalar for long text.\n\n\nurl\n✅\nstring\nFull public URL.\n\n\ntools\n✅\nlist\nOne or more tool categories (see below).\n\n\nkeywords\n✅\nlist\nOne or more keywords (see below).\n\n\nimage\n—\nstring\nFilename only (e.g. my-example.png). File must be in content/card-images/. Leave blank \"\" for placeholder.\n\n\nauthor\n—\nstring\nPerson or organisation.\n\n\ndate_added\n—\nstring\nISO date YYYY-MM-DD. For internal tracking.\n\n\n\n\n\n\n- id: 7\n  title: \"My Open Science Workflow\"\n  description: &gt;\n    A reproducible end-to-end workflow for open science data analysis,\n    from raw data ingestion through to publication-ready figures.\n  url: \"https://github.com/example/open-workflow\"\n  tools:\n    - Reproducible Reports\n    - Data Management\n  keywords:\n    - r\n    - GitHub\n    - template\n  image: \"open-workflow.png\"\n  author: \"Jane Smith\"\n  date_added: \"2025-03-01\"\n\n\n\nUnlike CSV, multi-value fields are just YAML lists — no need to wrap comma-separated values in quotes. Each tool or keyword is its own indented - item line.\n\n\n\n\n\n\nOpen content/examples.yaml in RStudio or any text editor.\nCopy an existing entry block and paste it at the bottom of the examples: list.\nIncrement id by 1 from the previous last entry.\nFill in the fields.\nIf you have an image, save it in content/card-images/.\nRender (quarto render) and verify the card appears correctly.\nCommit and push.\n\n\n\n\n\nTools and keywords do not need to be registered anywhere — the dashboard derives its dropdown options automatically from all values present in examples.yaml at render time.\nTo add a new tool or keyword: use it in a new (or existing) entry. It will appear in the dropdown on the next render.\nTo remove a tool or keyword from the dropdowns: remove it from every entry that uses it.\nTo rename a tool or keyword: do a find-and-replace across examples.yaml.\nThe current default values are listed in the GitHub issue form template (example-submission.yml) — update that file too when you add new official tools or keywords so submitters see the full list."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#the-submission-workflow",
-    "href": "supplement/dashboard_instructions.html#the-submission-workflow",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "1. Community member opens the GitHub issue using the \"Submit a New\n   Dashboard Example\" template and fills in the structured form.\n\n2. The issue is auto-labelled \"example-submission\" and \"needs-review\".\n\n3. Admin reviews the issue content.\n\n4. If approved, admin adds the \"approved\" label.\n       ↓\n   GitHub Action fires automatically:\n     a. Parses the issue form body\n     b. Appends a new entry to content/examples.yaml\n     c. Opens a Pull Request on a branch named example/issue-N\n\n5. Admin reviews the PR:\n     a. Checks the new YAML entry looks correct\n     b. Downloads any submitted image → saves to content/card-images/\n     c. Verifies any new tool/keyword values are intentional\n     d. Runs quarto preview locally (optional but recommended)\n\n6. Admin merges the PR.\n\n7. Admin re-renders and pushes docs/ (or CI does it automatically).\n\n8. New card appears live on the dashboard. ✅\n\n\n\n\nThe workflow file (.github/workflows/process-submission.yml) is already in place. It needs two things before it will work:\n\n\nGo to your repo → Issues → Labels → New label and create:\n\n\n\n\n\n\n\n\nLabel\nColour\nPurpose\n\n\n\n\nexample-submission\nany\nAuto-applied by the issue template. Identifies submission issues.\n\n\nneeds-review\nyellow\nAuto-applied. Signals it’s awaiting admin review.\n\n\napproved\ngreen\nApplied manually by admins to trigger the Action.\n\n\nauto-generated\ngrey\nApplied to PRs created by the Action.\n\n\n\n\n\n\nGo to: Settings → Actions → General → Workflow permissions Select: Read and write permissions → Save.\nThis allows the Action to commit to the repository and open PRs using GITHUB_TOKEN (no additional secrets needed).\n\n\n\n\n\n\nOpen the new issue (labelled example-submission + needs-review).\nReview: is the URL valid and publicly accessible? Is the description accurate? Are the tool/keyword selections appropriate?\nIf you want to reject it, close the issue with a comment explaining why.\nIf you approve it, add the approved label. The Action will run within ~1 minute.\nCheck the Actions tab to confirm the workflow completed successfully.\nFind the new PR (it’s linked in a comment automatically posted to the issue).\nIn the PR, review content/examples.yaml in the diff.\nIf the submitter provided an image URL:\n\nDownload the image.\nRename it to match the image field in the new YAML entry.\nAdd it to content/card-images/ and commit it to the PR branch.\n\nMerge the PR.\nRe-render and push (quarto render → git add docs/ → git push).\n\n\n\n\n\nIf you prefer not to use the Action, or if something fails:\n\nRead the issue carefully and extract the submitted values.\nOpen content/examples.yaml and manually append a new entry.\nIf an image was provided, download it to content/card-images/.\nCommit, push, re-render."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#rendering-and-deployment",
-    "href": "supplement/dashboard_instructions.html#rendering-and-deployment",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "# In your project directory (or use RStudio's Render button):\nquarto render\n\n# Live preview in browser with hot reload:\nquarto preview\n\n\n\nThe standard workflow after any content update:\nquarto render          # rebuilds docs/\ngit add docs/\ngit commit -m \"render: update dashboard\"\ngit push\nGitHub Pages will serve the updated docs/ automatically within ~30 seconds.\n\n\n\nAdd a second workflow to render the site automatically on every push to main:\n# .github/workflows/render-site.yml\nname: Render and Deploy Site\non:\n  push:\n    branches: [main]\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n\n      - uses: r-lib/actions/setup-r@v2\n        with:\n          use-public-rspm: true\n\n      - uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          packages: |\n            any::tidyverse\n            any::here\n            any::yaml\n            any::jsonlite\n\n      - uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render site\n        run: quarto render\n\n      - uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          folder: docs"
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#customising-the-dashboard",
-    "href": "supplement/dashboard_instructions.html#customising-the-dashboard",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "All visual tokens are CSS custom properties at the top of styles/dashboard.css. Change these to retheme the entire dashboard:\n:root {\n  --ink:        #1a1410;   /* primary text */\n  --ivory:      #f7f3ec;   /* page background */\n  --terra:      #c4583a;   /* tool tag accent */\n  --teal:       #2a6b6e;   /* keyword tag accent */\n  --serif:      \"Fraunces\", Georgia, serif;\n  --sans:       \"DM Sans\", system-ui, sans-serif;\n  --mono:       \"DM Mono\", monospace;\n}\nTo swap fonts: update the Google Fonts &lt;link&gt; tag in the include-in-header section of dashboard.qmd, and update the --serif/--sans/--mono variables.\n\n\n\nBy default, selecting multiple tools uses OR logic: a card appears if it matches any selected tool. To require all selected tools to match (AND logic), edit the filtering OJS cell in dashboard.qmd:\n// Change .some() to .every() for AND logic:\nconst toolMatch =\n  selectedTools.length === 0 ||\n  selectedTools.every(t =&gt; exTools.includes(t))   // ← every, not some\n\nconst kwMatch =\n  selectedKeywords.length === 0 ||\n  selectedKeywords.every(k =&gt; exKws.includes(k))  // ← every, not some\n\n\n\n\nAdd the new field to entries in examples.yaml.\nIn the R chunk in dashboard.qmd, add the field to the map_dfr() tibble.\nIn the OJS cards cell, reference ex.your_field inside renderCard().\n\n\n\n\nWhen you add new official tools or keywords to examples.yaml, also add them to the checkboxes in .github/ISSUE_TEMPLATE/example-submission.yml so that submitters can select them. The file is self-documented with comments."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#troubleshooting",
-    "href": "supplement/dashboard_instructions.html#troubleshooting",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "Dashboard shows no examples / blank page\n\nConfirm content/examples.yaml exists and is valid YAML (no tab characters — use spaces). Run yaml::read_yaml(\"content/examples.yaml\") in R to check. Verify the here() path resolves correctly from your project root.\n\nImages not appearing on cards\n\nThe filename in the image field must exactly match the file in content/card-images/ (case-sensitive on Linux/GitHub). The card silently falls back to the placeholder on load failure — open your browser’s DevTools console to see the actual 404 URL.\n\nNew tools/keywords not appearing in dropdowns\n\nThe dropdowns are built from the data at render time. Re-render after editing the YAML.\n\nGitHub Action not firing on “approved” label\n\nCheck the label name is spelled exactly approved (case-sensitive). Check the Actions tab for errors. Confirm workflow permissions are set to “Read and write” in repository Settings.\n\nparse_submission.py producing empty or wrong field values\n\nGitHub renders issue form fields as ### Field Label\\n\\nvalue. If GitHub changes this format, the regex in the script may need updating. Print ISSUE_BODY in the Action’s logs to inspect the raw text, then adjust the extract_field() patterns accordingly.\n\nrenv doesn’t include the yaml package\n\nRun install.packages(\"yaml\") then renv::snapshot() to capture it."
-  },
-  {
-    "objectID": "supplement/dashboard_instructions.html#contributing-to-this-template",
-    "href": "supplement/dashboard_instructions.html#contributing-to-this-template",
-    "title": "Dashboard Setup & Maintenance Guide",
-    "section": "",
-    "text": "If you improve this dashboard template and want to share changes upstream, please open an issue or PR in the original template repository. Suggestions for new default tools/keywords, design improvements, workflow enhancements, and accessibility fixes are all welcome."
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html",
-    "href": "supplement/docx_to_drawio_README.html",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "R function to automatically convert Word document headings into multi-page Draw.io flowcharts.\n\n\n\n✅ Converts .docx headings to Draw.io flowchart diagrams\n✅ Sequential H1 spine: H1 headings connected in order\n✅ H2 branches: H2s branch perpendicular from their parent H1\n✅ Smart layout: TB direction = H1 vertical, H2 horizontal right; LR direction = H1 horizontal, H2 vertical down\n✅ Color-coded rounded rectangles by heading hierarchy\n✅ Multi-page support: Each H2 gets its own sub-page\n✅ Link buttons: H2s on overview are clickable links (marked with 🔗) to sub-pages\n✅ Configurable flow direction (top-to-bottom or left-to-right)\n✅ Exclude specific heading levels\n✅ Automatic “Back to Overview” links on sub-pages\n✅ Tidyverse-compatible syntax with %&gt;% pipes\n\n\n\n\ninstall.packages(c(\"officer\", \"xml2\", \"dplyr\", \"purrr\"))\n\n\n\n# Source the function\nsource(\"docx_to_drawio.R\")\n\n# Create flowchart from your Word document\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"output\",\n  direction = \"TB\",\n  h2_new_page = TRUE\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParameter\nType\nDefault\nDescription\n\n\n\n\ninput_file\ncharacter\nrequired\nPath to .docx file\n\n\noutput_folder\ncharacter\nrequired\nFolder where .drawio file will be saved\n\n\nexclude_levels\nnumeric vector\nNULL\nHeading levels to exclude (e.g., c(3, 4))\n\n\ndirection\ncharacter\n\"TB\"\nFlow direction: \"TB\" (top-bottom) or \"LR\" (left-right)\n\n\nh2_new_page\nlogical\nTRUE\nIf TRUE, each H2 creates a new diagram page\n\n\noutput_filename\ncharacter\nNULL\nCustom filename without extension (auto-generated if NULL)\n\n\n\n\n\n\n\nThe function uses a default color palette for heading hierarchy:\n\nH1: Blue (#4A90E2)\nH2: Medium Purple (#7B68EE)\nH3: Emerald (#50C878)\nH4: Sandy Brown (#F4A460)\nH5: Light Coral (#E57373)\nH6: Gold (#FFD700)\n\n\n\n\n\n\nH1-1 → H2a → H2b\n ↓\nH1-2\n ↓\nH1-3 → H2c → H2d → H2e\n\nH1 spine: Vertical (top-to-bottom)\nH2 branches: Horizontal to the right\nConnections: H1s connected sequentially; H2s under same H1 connected horizontally\n\n\n\n\nH1-1 → H1-2 → H1-3\n ↓              ↓\nH2a            H2c\n ↓              ↓\nH2b            H2d\n               ↓\n              H2e\n\nH1 spine: Horizontal (left-to-right)\nH2 branches: Vertical downward\nConnections: H1s connected sequentially; H2s under same H1 connected vertically\n\n\n\n\n\nWhen h2_new_page = TRUE:\nOverview Page: - Contains all H1 and H2 headings - H1 boxes show the main document structure (sequential spine) - H2 boxes are clickable link buttons (marked with 🔗 icon and dashed borders) - Clicking an H2 navigates to its dedicated sub-page\nSub-Pages (one per H2): - Contains the H2 heading + all its children (H3, H4, etc.) - H2 box appears here as an editable node (this is the “real” version) - Shows hierarchical tree structure of that section - Includes “Back to Overview” button to return to main page\nNote: H2 boxes appear on overview as navigation links only. Edit the actual H2 content on its sub-page.\n\n\n\n\n\nlibrary(officer)\nsource(\"docx_to_drawio.R\")\n\n# Convert document with default settings\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\"\n)\n\n\n\n# Create horizontal flowchart\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  direction = \"LR\"\n)\n\n\n\n# Exclude H3 and H4 headings from diagram\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  exclude_levels = c(3, 4)\n)\n\n\n\n# Put all headings on one page (no H2 sub-pages)\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  h2_new_page = FALSE\n)\n\n\n\n# Specify custom output filename\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  output_filename = \"project_workflow_v2\"\n)\n\n\n\nlibrary(dplyr)\n\n# Use in a pipeline\n\"my_document.docx\" %&gt;%\n  create_flowchart(\n    output_folder = \"flowcharts\",\n    exclude_levels = 4,\n    direction = \"TB\"\n  )\n\n\n\n# Process multiple documents\nlibrary(purrr)\n\ndocx_files &lt;- list.files(\"documents\", pattern = \"\\\\.docx$\", full.names = TRUE)\n\ndocx_files %&gt;%\n  walk(~create_flowchart(\n    input_file = .x,\n    output_folder = \"flowcharts\",\n    direction = \"TB\"\n  ))\n\n\n\n\nYour Word document should use built-in heading styles:\nHeading 1 (H1)\n├── Heading 2 (H2)\n│   ├── Heading 3 (H3)\n│   └── Heading 3 (H3)\n├── Heading 2 (H2)\n│   ├── Heading 3 (H3)\n│   └── Heading 3 (H3)\n└── Heading 2 (H2)\n\nHeading 1 (H1)\n└── Heading 2 (H2)\n    └── Heading 3 (H3)\nImportant: Use Word’s built-in heading styles (Heading 1, Heading 2, etc.), not manually formatted text.\n\n\n\nThe function creates a .drawio XML file that can be:\n\nOpened in Draw.io:\n\nGo to https://app.diagrams.net\nFile → Open → Select your .drawio file\n\nImported into other tools: Compatible with diagrams.net integrations\nEdited: Full Draw.io functionality available for customization\n\n\n\n\nyour-project/\n├── docx_to_drawio.R         # Main function file\n├── example_usage.R           # Example scripts\n├── your_document.docx        # Input Word document\n└── output/                   # Output folder\n    └── your_document_flowchart.drawio\n\n\n\n\n\nProblem: “No headings found in document” error\nSolution: Ensure your document uses Word’s built-in Heading styles (not just bold text)\n\n\n\nProblem: Some headings don’t appear in flowchart\nSolution: Check if they’re excluded via exclude_levels parameter\n\n\n\nProblem: Boxes overlap or spacing looks off\nSolution: Try changing direction parameter or use single-page mode\n\n\n\nProblem: Output file not created\nSolution: Ensure output_folder path exists or can be created\n\n\n\n\nTo modify colors, spacing, or node sizes, edit these internal variables in docx_to_drawio.R:\n# In get_heading_color() function - change colors\ncolors &lt;- c(\n  \"1\" = \"#4A90E2\",  # Your custom H1 color\n  \"2\" = \"#7B68EE\",  # Your custom H2 color\n  # ...\n)\n\n# In calculate_layout() function - change spacing\nnode_width &lt;- 180      # Box width\nnode_height &lt;- 60      # Box height\nh_spacing &lt;- 80        # Horizontal spacing\nv_spacing &lt;- 100       # Vertical spacing\n\n\n\n\nThe function preserves heading hierarchy from your Word document\nEmpty headings are included but may appear as empty boxes\nVery large documents may create complex diagrams - consider excluding lower heading levels\nDraw.io page links work when opened in draw.io/diagrams.net\n\n\n\n\nFree to use and modify for your projects.\n\n\n\nFor issues or questions, refer to the example scripts in example_usage.R."
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#features",
-    "href": "supplement/docx_to_drawio_README.html#features",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "✅ Converts .docx headings to Draw.io flowchart diagrams\n✅ Sequential H1 spine: H1 headings connected in order\n✅ H2 branches: H2s branch perpendicular from their parent H1\n✅ Smart layout: TB direction = H1 vertical, H2 horizontal right; LR direction = H1 horizontal, H2 vertical down\n✅ Color-coded rounded rectangles by heading hierarchy\n✅ Multi-page support: Each H2 gets its own sub-page\n✅ Link buttons: H2s on overview are clickable links (marked with 🔗) to sub-pages\n✅ Configurable flow direction (top-to-bottom or left-to-right)\n✅ Exclude specific heading levels\n✅ Automatic “Back to Overview” links on sub-pages\n✅ Tidyverse-compatible syntax with %&gt;% pipes"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#requirements",
-    "href": "supplement/docx_to_drawio_README.html#requirements",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "install.packages(c(\"officer\", \"xml2\", \"dplyr\", \"purrr\"))"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#quick-start",
-    "href": "supplement/docx_to_drawio_README.html#quick-start",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "# Source the function\nsource(\"docx_to_drawio.R\")\n\n# Create flowchart from your Word document\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"output\",\n  direction = \"TB\",\n  h2_new_page = TRUE\n)"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#function-parameters",
-    "href": "supplement/docx_to_drawio_README.html#function-parameters",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "Parameter\nType\nDefault\nDescription\n\n\n\n\ninput_file\ncharacter\nrequired\nPath to .docx file\n\n\noutput_folder\ncharacter\nrequired\nFolder where .drawio file will be saved\n\n\nexclude_levels\nnumeric vector\nNULL\nHeading levels to exclude (e.g., c(3, 4))\n\n\ndirection\ncharacter\n\"TB\"\nFlow direction: \"TB\" (top-bottom) or \"LR\" (left-right)\n\n\nh2_new_page\nlogical\nTRUE\nIf TRUE, each H2 creates a new diagram page\n\n\noutput_filename\ncharacter\nNULL\nCustom filename without extension (auto-generated if NULL)"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#color-scheme",
-    "href": "supplement/docx_to_drawio_README.html#color-scheme",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "The function uses a default color palette for heading hierarchy:\n\nH1: Blue (#4A90E2)\nH2: Medium Purple (#7B68EE)\nH3: Emerald (#50C878)\nH4: Sandy Brown (#F4A460)\nH5: Light Coral (#E57373)\nH6: Gold (#FFD700)"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#layout-structure",
-    "href": "supplement/docx_to_drawio_README.html#layout-structure",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "H1-1 → H2a → H2b\n ↓\nH1-2\n ↓\nH1-3 → H2c → H2d → H2e\n\nH1 spine: Vertical (top-to-bottom)\nH2 branches: Horizontal to the right\nConnections: H1s connected sequentially; H2s under same H1 connected horizontally\n\n\n\n\nH1-1 → H1-2 → H1-3\n ↓              ↓\nH2a            H2c\n ↓              ↓\nH2b            H2d\n               ↓\n              H2e\n\nH1 spine: Horizontal (left-to-right)\nH2 branches: Vertical downward\nConnections: H1s connected sequentially; H2s under same H1 connected vertically"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#multi-page-structure",
-    "href": "supplement/docx_to_drawio_README.html#multi-page-structure",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "When h2_new_page = TRUE:\nOverview Page: - Contains all H1 and H2 headings - H1 boxes show the main document structure (sequential spine) - H2 boxes are clickable link buttons (marked with 🔗 icon and dashed borders) - Clicking an H2 navigates to its dedicated sub-page\nSub-Pages (one per H2): - Contains the H2 heading + all its children (H3, H4, etc.) - H2 box appears here as an editable node (this is the “real” version) - Shows hierarchical tree structure of that section - Includes “Back to Overview” button to return to main page\nNote: H2 boxes appear on overview as navigation links only. Edit the actual H2 content on its sub-page."
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#usage-examples",
-    "href": "supplement/docx_to_drawio_README.html#usage-examples",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "library(officer)\nsource(\"docx_to_drawio.R\")\n\n# Convert document with default settings\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\"\n)\n\n\n\n# Create horizontal flowchart\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  direction = \"LR\"\n)\n\n\n\n# Exclude H3 and H4 headings from diagram\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  exclude_levels = c(3, 4)\n)\n\n\n\n# Put all headings on one page (no H2 sub-pages)\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  h2_new_page = FALSE\n)\n\n\n\n# Specify custom output filename\ncreate_flowchart(\n  input_file = \"my_document.docx\",\n  output_folder = \"flowcharts\",\n  output_filename = \"project_workflow_v2\"\n)\n\n\n\nlibrary(dplyr)\n\n# Use in a pipeline\n\"my_document.docx\" %&gt;%\n  create_flowchart(\n    output_folder = \"flowcharts\",\n    exclude_levels = 4,\n    direction = \"TB\"\n  )\n\n\n\n# Process multiple documents\nlibrary(purrr)\n\ndocx_files &lt;- list.files(\"documents\", pattern = \"\\\\.docx$\", full.names = TRUE)\n\ndocx_files %&gt;%\n  walk(~create_flowchart(\n    input_file = .x,\n    output_folder = \"flowcharts\",\n    direction = \"TB\"\n  ))"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#document-structure-requirements",
-    "href": "supplement/docx_to_drawio_README.html#document-structure-requirements",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "Your Word document should use built-in heading styles:\nHeading 1 (H1)\n├── Heading 2 (H2)\n│   ├── Heading 3 (H3)\n│   └── Heading 3 (H3)\n├── Heading 2 (H2)\n│   ├── Heading 3 (H3)\n│   └── Heading 3 (H3)\n└── Heading 2 (H2)\n\nHeading 1 (H1)\n└── Heading 2 (H2)\n    └── Heading 3 (H3)\nImportant: Use Word’s built-in heading styles (Heading 1, Heading 2, etc.), not manually formatted text."
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#output",
-    "href": "supplement/docx_to_drawio_README.html#output",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "The function creates a .drawio XML file that can be:\n\nOpened in Draw.io:\n\nGo to https://app.diagrams.net\nFile → Open → Select your .drawio file\n\nImported into other tools: Compatible with diagrams.net integrations\nEdited: Full Draw.io functionality available for customization"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#file-structure",
-    "href": "supplement/docx_to_drawio_README.html#file-structure",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "your-project/\n├── docx_to_drawio.R         # Main function file\n├── example_usage.R           # Example scripts\n├── your_document.docx        # Input Word document\n└── output/                   # Output folder\n    └── your_document_flowchart.drawio"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#troubleshooting",
-    "href": "supplement/docx_to_drawio_README.html#troubleshooting",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "Problem: “No headings found in document” error\nSolution: Ensure your document uses Word’s built-in Heading styles (not just bold text)\n\n\n\nProblem: Some headings don’t appear in flowchart\nSolution: Check if they’re excluded via exclude_levels parameter\n\n\n\nProblem: Boxes overlap or spacing looks off\nSolution: Try changing direction parameter or use single-page mode\n\n\n\nProblem: Output file not created\nSolution: Ensure output_folder path exists or can be created"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#advanced-customization",
-    "href": "supplement/docx_to_drawio_README.html#advanced-customization",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "To modify colors, spacing, or node sizes, edit these internal variables in docx_to_drawio.R:\n# In get_heading_color() function - change colors\ncolors &lt;- c(\n  \"1\" = \"#4A90E2\",  # Your custom H1 color\n  \"2\" = \"#7B68EE\",  # Your custom H2 color\n  # ...\n)\n\n# In calculate_layout() function - change spacing\nnode_width &lt;- 180      # Box width\nnode_height &lt;- 60      # Box height\nh_spacing &lt;- 80        # Horizontal spacing\nv_spacing &lt;- 100       # Vertical spacing"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#notes",
-    "href": "supplement/docx_to_drawio_README.html#notes",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "The function preserves heading hierarchy from your Word document\nEmpty headings are included but may appear as empty boxes\nVery large documents may create complex diagrams - consider excluding lower heading levels\nDraw.io page links work when opened in draw.io/diagrams.net"
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#license",
-    "href": "supplement/docx_to_drawio_README.html#license",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "Free to use and modify for your projects."
-  },
-  {
-    "objectID": "supplement/docx_to_drawio_README.html#support",
-    "href": "supplement/docx_to_drawio_README.html#support",
-    "title": "Word Document to Draw.io Flowchart Generator",
-    "section": "",
-    "text": "For issues or questions, refer to the example scripts in example_usage.R."
-  },
-  {
-    "objectID": "index.html#openscapes-pathways",
-    "href": "index.html#openscapes-pathways",
-    "title": "Home",
-    "section": "Openscapes Pathways",
-    "text": "Openscapes Pathways\nOpenscapes is an open source approach and movement that helps researchers do better science, together. The Openscapes Champions Program is an open data science mentorship program for science teams, and it begins by identifying an individual or teams’ ‘Pathway’. The Pathways concept identifies how work is currently being done, and where they would like to go in the future with respect to reproducibility, collaboration, communication, and culture. This first step traditionally begins with a self-assessment using a spreadsheet template.\n\n\n\n\n\nNavigating the landscape of our scientific journey; Openscapes encourages identifying common needs and working with teams to navigate the landscape.\n\n\n\n\n\n\n\n\nExample of spreadsheet approach to identifying the components of your path, from where you are now, to where you want to go.\n\n\n\n\nFor those new to open science and with limited exposure to alternative scientific cultures or ways of doing science, it can be difficult to identify what exactly you want and need. By the end of the Openscapes Champions Program, this vision of these alternatives become clear and these initial projects frequently include developing a Lab Manual (a one-stop shop for everything) or automation of part of their workflow to improve reproducibility. T",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Home"
+      "Customize Pathways Flowchart"
     ]
   },
   {
-    "objectID": "index.html#pathways-flowchart",
-    "href": "index.html#pathways-flowchart",
-    "title": "Home",
-    "section": "Pathways Flowchart",
-    "text": "Pathways Flowchart\nThe Pathways Flowchart was developed as an alternative approach to the Openscapes Pathways Spreadsheet to reduce decision-related friction and identify priority projects for automation. This approach is more complicated to initiate than the spreadsheet, but it offers great flexibility and utility. With good documentation, this approach should facilitate adoption of streamlined open science methods while learning (and reinforcing) open science methods.\nThe goals of the Pathways Flowchart are to:\n\nCreate a visual representation of your workflow (Flowchart)\nEvaluate the potential for streamlining/automation of each component\nPrioritize components for improvement\nIdentify templates and examples to facilitate these improvements\nEncourage a return to the Flowchart to revise and re-evaluate to identify the next priority for improvement\nEncourage viewing this as an iterative process, improving one component at a time\nEncourage sharing developments as part of the Open Science process\nProvide alternative uses of these flowcharts to serve other data science needs\n\nThis work emphasizes the iteritive nature of this process, helping users identify workflow components in a flowchart, identifying their potential for automation, and prioritizing projects based on experience, need, and potential.\n\n\n\nWorkflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and the process of incremental adoption of an open science framework for each component of your workflow.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-getItDone.html",
-    "href": "content/flowchart-getItDone.html",
-    "title": "Get It Done",
+    "objectID": "content/flowchart-pathways.html#interactive-workflow-diagram",
+    "href": "content/flowchart-pathways.html#interactive-workflow-diagram",
+    "title": "Interactive Workflow Tool",
     "section": "",
-    "text": "Do It, Share It, Revise It (link to revise it)",
+    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Pathways Flowchart",
-      "Get It Done"
+      "Customize Pathways Flowchart"
     ]
   },
   {
-    "objectID": "content/flowchart-intro.html",
-    "href": "content/flowchart-intro.html",
-    "title": "Working with Workflows",
-    "section": "",
-    "text": "For many, creating a diagram of your workflow is an intuitive approach to identifying the parts of the process, and from there we can start to think about how to transition those parts into an open source framework. If this approach feels right for you, then this template serves to simplify this adoption in an open source way.\nSure, you can sketch your workflow on a piece of paper, but by following this process, you will learn skills, and the diagrams you develop can be integrated into your developing open source framework. Ultimately, do what is best for you, but know this template is here for you to follow.\n\n\n\n\nWorkflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and the process of incremental adoption of an open science framework for each component of your workflow.",
+    "objectID": "content/flowchart-pathways.html#instructions-for-users",
+    "href": "content/flowchart-pathways.html#instructions-for-users",
+    "title": "Interactive Workflow Tool",
+    "section": "Instructions for Users",
+    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
     "crumbs": [
-      "Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-intro.html#why-a-pathway-flowchart",
-    "href": "content/flowchart-intro.html#why-a-pathway-flowchart",
-    "title": "Working with Workflows",
-    "section": "",
-    "text": "For many, creating a diagram of your workflow is an intuitive approach to identifying the parts of the process, and from there we can start to think about how to transition those parts into an open source framework. If this approach feels right for you, then this template serves to simplify this adoption in an open source way.\nSure, you can sketch your workflow on a piece of paper, but by following this process, you will learn skills, and the diagrams you develop can be integrated into your developing open source framework. Ultimately, do what is best for you, but know this template is here for you to follow.\n\n\n\n\nWorkflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and the process of incremental adoption of an open science framework for each component of your workflow.",
-    "crumbs": [
-      "Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-intro.html#what-do-i-need-to-start",
-    "href": "content/flowchart-intro.html#what-do-i-need-to-start",
-    "title": "Working with Workflows",
-    "section": "What do I need to Start?",
-    "text": "What do I need to Start?\nYou will need to work in R/Quarto (RStudio or Positron) and Github. We also recommend Github Desktop to facilitate working locally and saving to the cloud (github). If you are new, we recommend the PSAW 2022 R/Github Training Sessions to get started.",
-    "crumbs": [
-      "Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-intro.html#then-what",
-    "href": "content/flowchart-intro.html#then-what",
-    "title": "Working with Workflows",
-    "section": "Then what?",
-    "text": "Then what?\n\nGetting Started: Create your own Pathways Repo by saving this template to your own Github Repo\nFlowchart Build: Build a Flowchart using your existing documentation and/or the draw.io web application\nFlowchart Refine: Refine your flowchart and prepare for Pathways Flowchart\nPathways Flowchart: Compile surveys for your Pathways Flowchart\nDecision Tool: The decision tool will evaluate your pathways survey responses to identify workflow components for prioritization.\nOpen Science Dashboard: Use keywords to find a template to use or an example to fork. Cheating is Encouraged!\nGet it Done: Work on your project! This is independent of the Pathways Flowchart, but we encourage you to find a community to help you tackle your goals.\nGiving Back: If your project can serve as a good example or if it has new ways of solving a problem, we encourage you to share it as an example for others to consider!\nRevise and Revisit: Revise and Revisit your workflow, and move onto the next project!\n\nFollow the button on the bottom right to get started (or follow the process using the left sidebar)",
-    "crumbs": [
-      "Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/dashboard-givingBack.html",
-    "href": "content/dashboard-givingBack.html",
-    "title": "workflow-givingBack",
-    "section": "",
-    "text": "Share your examples and templates for others to access using the Example Dashboard",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Giving Back"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-revise.html",
-    "href": "content/flowchart-revise.html",
-    "title": "Revise & Revisit",
-    "section": "",
-    "text": "Go Full Circle! - How to revise your existing Flowchart Survey Q\n\nRerun Decision Tool\nDo another project!\nConsider adding a function that changes color of flowchart components (blue = calm!)",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Revise and Revisit"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-decisions.html",
-    "href": "content/flowchart-decisions.html",
-    "title": "Making a Decision",
-    "section": "",
-    "text": "This section will allow the user to take their survey results and apply them to a function to return some recommendations and considerations for their decisions.",
-    "crumbs": [
-      "Pathways Flowchart",
-      "Decision Tool"
+      "Customize Pathways Flowchart"
     ]
   },
   {
@@ -811,7 +457,6 @@
     "section": "",
     "text": "Practice with this example flowchart to see how this works:\n\nUse your mouse (or the buttoms) to zoom in, zoom out, then zoom in again\nUse your mouse to ‘grab’ and drag the zoomed in flowchart to move the zoomed in view by clicking and holding on the image while moving your mouse.\nSelect the Flowchart Component that says “Flow Charts” (move your mouse to hover over this box until you can click to select it). A survey should open. Add your name and for the password, put “workflow2026”.\n\nThis flowchart shows the workflow for using the Pathways Flowchart tool– so you can practice with this example while you are learning to use the tool. In this case, you can submit responses truthfully as it relates to your experience with the tool. Or not.\nWhen you are done, submit the response.\nWhen you have finished all responses, scroll down and choose ‘Download All Responses’. This will save responses to a csv file in your repository. As you improve components of your workflow, you can revisit these surveys and update the reponses (which will update the csv). This information is used in the Decision Tool, so updated responses are helpful!\n\nThese instructions are summarized at the bottom of this example Flowchart, and of your modified flowchart.\n\nClick on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Pathways Flowchart",
       "Example Flowchart"
     ]
   },
@@ -822,7 +467,6 @@
     "section": "",
     "text": "Practice with this example flowchart to see how this works:\n\nUse your mouse (or the buttoms) to zoom in, zoom out, then zoom in again\nUse your mouse to ‘grab’ and drag the zoomed in flowchart to move the zoomed in view by clicking and holding on the image while moving your mouse.\nSelect the Flowchart Component that says “Flow Charts” (move your mouse to hover over this box until you can click to select it). A survey should open. Add your name and for the password, put “workflow2026”.\n\nThis flowchart shows the workflow for using the Pathways Flowchart tool– so you can practice with this example while you are learning to use the tool. In this case, you can submit responses truthfully as it relates to your experience with the tool. Or not.\nWhen you are done, submit the response.\nWhen you have finished all responses, scroll down and choose ‘Download All Responses’. This will save responses to a csv file in your repository. As you improve components of your workflow, you can revisit these surveys and update the reponses (which will update the csv). This information is used in the Decision Tool, so updated responses are helpful!\n\nThese instructions are summarized at the bottom of this example Flowchart, and of your modified flowchart.\n\nClick on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
     "crumbs": [
-      "Pathways Flowchart",
       "Example Flowchart"
     ]
   },
@@ -833,8 +477,67 @@
     "section": "Instructions for Users",
     "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
     "crumbs": [
-      "Pathways Flowchart",
       "Example Flowchart"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#trackline-planning",
+    "href": "content/data-collection.html#trackline-planning",
+    "title": "Data Collection",
+    "section": "Trackline Planning",
+    "text": "Trackline Planning",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#communications",
+    "href": "content/data-collection.html#communications",
+    "title": "Data Collection",
+    "section": "Communications",
+    "text": "Communications",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#data-offload",
+    "href": "content/data-collection.html#data-offload",
+    "title": "Data Collection",
+    "section": "Data Offload",
+    "text": "Data Offload",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#field-reports",
+    "href": "content/data-collection.html#field-reports",
+    "title": "Data Collection",
+    "section": "Field Reports",
+    "text": "Field Reports",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report",
+    "crumbs": [
+      "Reporting"
     ]
   }
 ]

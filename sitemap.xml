@@ -1,95 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/instructions.html</loc>
-    <lastmod>2026-03-25T22:30:04.765Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/overview.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-refine.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/pre-processing.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/dashboard.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/hardware.html</loc>
+    <lastmod>2026-03-26T01:18:46.510Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-doc2draw.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-transition.html</loc>
-    <lastmod>2026-03-25T22:30:04.761Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-pathways.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/getStarted.html</loc>
-    <lastmod>2026-03-25T22:30:04.761Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SETUP_GUIDE.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SCSS_INTEGRATION.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/QUICK_REFERENCE.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/data/ReadMe.html</loc>
-    <lastmod>2026-03-25T22:30:04.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/manuscript/ReadMe.html</loc>
-    <lastmod>2026-03-25T22:30:04.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/figs/ReadMe.html</loc>
-    <lastmod>2026-03-25T22:30:04.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/ReadMe.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/dashboard_instructions.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/docx_to_drawio_README.html</loc>
-    <lastmod>2026-03-25T22:30:04.768Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/data-analysis.html</loc>
+    <lastmod>2026-03-26T01:18:46.509Z</lastmod>
   </url>
   <url>
     <loc>https://shannonrankin.github.io/pathways-flowchart/index.html</loc>
-    <lastmod>2026-03-25T22:30:04.765Z</lastmod>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-getItDone.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SCSS_INTEGRATION.html</loc>
+    <lastmod>2026-03-26T01:18:46.560Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-intro.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/ReadMe.html</loc>
+    <lastmod>2026-03-26T01:18:46.560Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/dashboard-givingBack.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/figs/ReadMe.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-revise.html</loc>
-    <lastmod>2026-03-25T22:30:04.761Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/manuscript/ReadMe.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-decisions.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/data/ReadMe.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/QUICK_REFERENCE.html</loc>
+    <lastmod>2026-03-26T01:18:46.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SETUP_GUIDE.html</loc>
+    <lastmod>2026-03-26T01:18:46.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-pathways.html</loc>
+    <lastmod>2026-03-26T01:18:46.510Z</lastmod>
   </url>
   <url>
     <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-pathways-example.html</loc>
-    <lastmod>2026-03-25T22:30:04.760Z</lastmod>
+    <lastmod>2026-03-26T01:18:46.510Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/data-collection.html</loc>
+    <lastmod>2026-03-26T01:18:46.510Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shannonrankin.github.io/pathways-flowchart/content/reporting.html</loc>
+    <lastmod>2026-03-26T01:18:46.544Z</lastmod>
   </url>
 </urlset>
