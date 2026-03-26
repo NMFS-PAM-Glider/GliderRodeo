@@ -394,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
   <button class="close-survey" onclick="closeSurvey()">×</button>
   
   <div class="survey-content">
-    <h2 id="survey-title" class="anchored">Workflow Survey</h2>
+    <h2 id="survey-title" class="anchored">Component Metadata Survey</h2>
     
     <div class="info-text">
       <strong>Shape:</strong> <span id="shape-info">None selected</span>
@@ -435,6 +435,35 @@ ul.task-list li input[type="checkbox"] {
         <label for="SingleLink">GitHub Issue Link</label>
         <input type="url" id="SingleLink" placeholder="https://github.com/org/repo/issues/123">
       </div>
+      
+      <div class="form-group">
+        <label>Data In / Links</label>
+
+        <div id="DataIn-links">
+          <div class="link-entry">
+            <input type="text" placeholder="Data In/ Name">
+            <input type="url" placeholder="Data In Link URL">
+          </div>
+        </div>
+
+        <button type="button" onclick="addLink()">Add another</button>
+     </div>
+
+  
+      
+      <div class="form-group">
+        <label>Data Out / Links</label>
+
+        <div id="DataOut-links">
+          <div class="link-entry">
+            <input type="text" placeholder="Data Out/ Name">
+            <input type="url" placeholder="Data Out Link URL">
+          </div>
+        </div>
+
+        <button type="button" onclick="addLink()">Add another</button>
+     </div>
+
       
       <div class="form-group">
         <label for="Comments">Comments</label>
@@ -796,6 +825,37 @@ link.addEventListener('click', function(e) {
   updateResponseCount();
 </script>
 
+<script>
+function addLink() {
+  const container = document.getElementById("DataIn-links");
+
+  const div = document.createElement("div");
+  div.className = "link-entry";
+
+  div.innerHTML = `
+    <input type="text" placeholder="Data In / Name">
+    <input type="url" placeholder="Data In Link URL">
+  `;
+
+  container.appendChild(div);
+}
+</script>
+
+<script>
+function addLink() {
+  const container = document.getElementById("DataOut-links");
+
+  const div = document.createElement("div");
+  div.className = "link-entry";
+
+  div.innerHTML = `
+    <input type="text" placeholder="Data Out / Name">
+    <input type="url" placeholder="Data Out Link URL">
+  `;
+
+  container.appendChild(div);
+}
+</script>
 
 </section>
 <section id="instructions-for-users" class="level2">
