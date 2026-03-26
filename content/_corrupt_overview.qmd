@@ -1,5 +1,5 @@
 ---
-title: "Interactive Workflow Tool"
+title: "Overview"
 format: 
   html:
     code-fold: true
@@ -13,10 +13,10 @@ library(here)
 # ============================================
 # CONFIGURATION - EDIT THESE VALUES
 # ============================================
-SURVEY_PASSWORD <- "workflow2024"  # Change this to your desired password
-DIAGRAM_FILE <- "OSworkflow.svg"   # Your SVG diagram filename
+SURVEY_PASSWORD <- "rodeo26"  # Change this to your desired password
+# DIAGRAM_FILE <- "OSworkflow.svg"   # Your SVG diagram filename
+DIAGRAM_FILE <- "test.svg"   # Your SVG diagram filename
 ```
-
 ## Interactive Workflow Diagram
 
 Click on any shape in the diagram below to open the survey panel and record your observations.
@@ -40,71 +40,55 @@ Click on any shape in the diagram below to open the survey panel and record your
     
     <form id="survey-form">
       <div class="form-group">
-        <label for="username">Your Name/ID:</label>
-        <input type="text" id="username" required placeholder="Enter your name">
+        <label for="poc">Point of Contact Name/Email:</label>
+        <input type="text" id="poc" required placeholder="POC Name/Email">
+      </div>
+      
+      <!-- <div class="form-group"> -->
+      <!--   <label for="password">Password:</label> -->
+      <!--   <input type="password" id="password" required placeholder="Enter password"> -->
+      <!--   <small>Required for editing entries</small> -->
+      <!-- </div> -->
+      
+      <div class="form-group">
+        <label for="Status">What is the current status?</label>
+        <select id="Status" required>
+          <option value="">-- Select --</option>
+          <option value="Not Started">Not Started</option>
+          <option value="On Track">On Track</option>
+          <option value="Delayed">Delayed</option>
+          <option value="On Hold">On Hold</option>
+          <option value="Completed">Completed</option>
+        </select>
       </div>
       
       <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" required placeholder="Enter password">
-        <small>Required for editing entries</small>
+        <label for="BriefDescription">Brief Description</label>
+        <textarea id="BriefDescription" rows="4" placeholder="Provide a short description..." required></textarea>
       </div>
 
-      <!-- <div class="form-group"> -->
-      <!--   <label for="Status">Question 1: What is the current level of automation?</label> -->
-      <!--   <select id="Status" required> -->
-      <!--     <option value="">-- Select --</option> -->
-      <!--     <option value="Not Started">Not Started</option> -->
-      <!--     <option value="In Progress">In Progress</option> -->
-      <!--     <option value="Completed">Completed</option> -->
-      <!--     <option value="Not Applicable">Not Applicable</option> -->
-      <!--   </select> -->
-      <!-- </div> -->
+      <div class="form-group">
+        <label>Keywords / Links</label>
 
-      <!-- <div class="form-group"> -->
-      <!--   <label for="Potential">Question 2: What is the potential for Automation?</label> -->
-      <!--   <select id="Potential" required> -->
-      <!--     <option value="">-- Select --</option> -->
-      <!--     <option value="Low">Low</option> -->
-      <!--     <option value="Medium">Medium</option> -->
-      <!--     <option value="High">High</option> -->
-      <!--     <option value="Unknown">Unknown</option> -->
-      <!--   </select> -->
-      <!-- </div> -->
+        <div id="keyword-links">
+          <div class="link-entry">
+            <input type="text" placeholder="Keyword / Name">
+            <input type="url" placeholder="Link URL">
+          </div>
+        </div>
 
-      <!-- <div class="form-group"> -->
-      <!--   <label for="PainPoint">Question 3: How painful is the current process?</label> -->
-      <!--   <select id="PainPoint" required> -->
-      <!--     <option value="">-- Select --</option> -->
-      <!--     <option value="All Good">All Good</option> -->
-      <!--     <option value="Room for Improvement">Room for Improvement</option> -->
-      <!--     <option value="Painful!">Painful!</option> -->
-      <!--     <!-- <option value="Blocked">Blocked</option> --> -->
-      <!--   </select> -->
-      <!-- </div> -->
+        <button type="button" onclick="addLink()">Add another</button>
+       </div>
+      
+     <div class="form-group">
+        <label for="SingleLink">GitHub Issue Link</label>
+        <input type="url" id="SingleLink" placeholder="https://github.com/org/repo/issues/123">
+      </div>
 
-      <!-- <div class="form-group"> -->
-      <!--   <label for="Concern">Question 4: How concerned are you with modifying this task?</label> -->
-      <!--   <select id="Concern" required> -->
-      <!--     <option value="">-- Select --</option> -->
-      <!--     <option value="No Concern">No Concern</option> -->
-      <!--     <option value="Moderate Concern">Moderate Concern</option> -->
-      <!--     <option value="Terrified">Terrified</option> -->
-      <!--     <!-- <option value="Insufficient">Insufficient</option> --> -->
-      <!--   </select> -->
-      <!-- </div> -->
-
-      <!-- <div class="form-group"> -->
-      <!--   <label for="Proficiency">Question 5: What is your level of proficiency with task automation?</label> -->
-      <!--   <select id="Proficiency" required> -->
-      <!--     <option value="">-- Select --</option> -->
-      <!--     <option value="Very Low">Very Low</option> -->
-      <!--     <option value="Low">Low</option> -->
-      <!--     <option value="Medium">Medium</option> -->
-      <!--     <option value="Medium-Strong">Medium-Strong</option> -->
-      <!--     <option value="Strong">Strong</option> -->
-      <!--   </select> -->
-      <!-- </div> -->
+      <div class="form-group">
+        <label for="Comments">Comments</label>
+        <textarea id="Comments" rows="4" placeholder="Add any comments..." required></textarea>
+      </div>
       
       <button type="submit" class="submit-btn">Submit Response</button>
       <div id="form-message"></div>
@@ -134,6 +118,9 @@ Click on any shape in the diagram below to open the survey panel and record your
 </div>
 
 <script>
+
+
+
   // ============================================
   // CONFIGURATION
   // ============================================
@@ -459,7 +446,21 @@ link.addEventListener('click', function(e) {
   updateResponseCount();
 </script>
 
+<script>
+function addLink() {
+  const container = document.getElementById("keyword-links");
 
+  const div = document.createElement("div");
+  div.className = "link-entry";
+
+  div.innerHTML = `
+    <input type="text" placeholder="Keyword / Name">
+    <input type="url" placeholder="Link URL">
+  `;
+
+  container.appendChild(div);
+}
+</script>
 ```
 
 ## Instructions for Users

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6" pages="6">
   <diagram id="main-page" name="Overview">
     <mxGraphModel dx="1678" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#66FFFF" math="0" shadow="0">
@@ -185,7 +186,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="← Back to Overview" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html" id="back-button">
+        <UserObject label="← Back to Overview" link="data:page/id,main-page" id="back-button">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D3D3D3;strokeColor=#000000;fontColor=#000000;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="40" width="170" x="50" y="50" as="geometry" />
           </mxCell>
@@ -193,17 +194,17 @@
         <mxCell id="PwICqzhEHqJ_XK0hc2xh-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;fillColor=#9999FF;strokeColor=#3700CC;fontColor=#000000;fontStyle=1" value="Fieldwork&amp;nbsp;&lt;div&gt;(Data Collection)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="180" x="120" y="120" as="geometry" />
         </mxCell>
-        <UserObject label="&lt;font face=&quot;Comic Sans MS&quot;&gt;Participants 🔗&lt;/font&gt;" link="#survey:participants|Participants" id="PwICqzhEHqJ_XK0hc2xh-2">
+        <UserObject label="&lt;font face=&quot;Comic Sans MS&quot;&gt;Participants 🔗&lt;/font&gt;" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#participants" id="PwICqzhEHqJ_XK0hc2xh-2">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="240" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Trackline Planning 🔗" link="#survey:tracklline-planning|Trackline Planning" id="PwICqzhEHqJ_XK0hc2xh-3">
+        <UserObject label="Trackline Planning 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#trackline-planning" id="PwICqzhEHqJ_XK0hc2xh-3">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="360" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Communications 🔗" link="#survey:communications|Communications" id="PwICqzhEHqJ_XK0hc2xh-4">
+        <UserObject label="Communications 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#communications" id="PwICqzhEHqJ_XK0hc2xh-4">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="480" as="geometry" />
           </mxCell>
@@ -211,12 +212,12 @@
         <mxCell id="a7BNJjoLDA_PPxOVOG68-12" edge="1" parent="1" source="PwICqzhEHqJ_XK0hc2xh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="a7BNJjoLDA_PPxOVOG68-11" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Data Offload 🔗" link="#survey:data-offload|Data Offload" id="PwICqzhEHqJ_XK0hc2xh-5">
+        <UserObject label="Data Offload 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#data-offload" id="PwICqzhEHqJ_XK0hc2xh-5">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="600" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Field Report/Mission Summary Report 🔗" link="#survey:field-report|Field Report" id="PwICqzhEHqJ_XK0hc2xh-6">
+        <UserObject label="Field Report/Mission Summary Report 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#field-reports" id="PwICqzhEHqJ_XK0hc2xh-6">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="720" as="geometry" />
           </mxCell>
@@ -239,16 +240,12 @@
         <mxCell id="a7BNJjoLDA_PPxOVOG68-15" edge="1" parent="1" source="a7BNJjoLDA_PPxOVOG68-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="a7BNJjoLDA_PPxOVOG68-14" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="PAM Data Offload" link="#survey:pam-data-offload|PAM Data Offload" id="a7BNJjoLDA_PPxOVOG68-11">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="390" y="530" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Oceo Sensor Offload" link="#survey:oceo-data-offload|Oceo Data Offload" id="a7BNJjoLDA_PPxOVOG68-14">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="390" y="670" as="geometry" />
-          </mxCell>
-        </UserObject>
+        <mxCell id="a7BNJjoLDA_PPxOVOG68-11" parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" value="PAM Data Offload" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="a7BNJjoLDA_PPxOVOG68-14" parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" value="Oceo Sensor Offload" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="670" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -257,7 +254,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="← Back to Overview" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html" id="back-button">
+        <UserObject label="← Back to Overview" link="data:page/id,main-page" id="back-button">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D3D3D3;strokeColor=#000000;fontColor=#000000;fontSize=16;fontFamily=Comic Sans MS;sketch=1;curveFitting=1;jiggle=2;" vertex="1">
             <mxGeometry height="40" width="190" x="50" y="50" as="geometry" />
           </mxCell>
@@ -268,7 +265,7 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-2" edge="1" parent="1" source="_Mc4lC3Ive-moGAjM0Z_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Gliders 🔗" link="#survey:gliders|Gliders" id="_Mc4lC3Ive-moGAjM0Z_-2">
+        <UserObject label="Gliders 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html#gliders" id="_Mc4lC3Ive-moGAjM0Z_-2">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="240" as="geometry" />
           </mxCell>
@@ -276,12 +273,12 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-10" edge="1" parent="1" source="_Mc4lC3Ive-moGAjM0Z_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-9" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Acoustic Sensors 🔗" link="#survey:ac-sensor-wispr|WISPR Acoustic Sensor" id="_Mc4lC3Ive-moGAjM0Z_-3">
+        <UserObject label="Acoustic Sensors 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html#acoustic-sensors" id="_Mc4lC3Ive-moGAjM0Z_-3">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="360" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Oceo Sensors 🔗" link="#survey:oceo-sensor|Oceo Sensor" id="_Mc4lC3Ive-moGAjM0Z_-4">
+        <UserObject label="Oceo Sensors 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html#oceo-sensors" id="_Mc4lC3Ive-moGAjM0Z_-4">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="480" as="geometry" />
           </mxCell>
@@ -298,7 +295,7 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-4" edge="1" parent="1" source="sNQxAarIj_Y_FQ1DzmB8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Teledyne&amp;nbsp;&lt;div&gt;Slocum&lt;/div&gt;" link="#survey:gliders-slocum|Slocum Gliders" id="sNQxAarIj_Y_FQ1DzmB8-1">
+        <UserObject label="Teledyne&amp;nbsp;&lt;div&gt;Slocum&lt;/div&gt;" link="data:page/id,page-h2-10" id="sNQxAarIj_Y_FQ1DzmB8-1">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="380" y="240" as="geometry" />
           </mxCell>
@@ -306,7 +303,7 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-6" edge="1" parent="1" source="sNQxAarIj_Y_FQ1DzmB8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="UW&lt;div&gt;SeaGlider&lt;/div&gt;" link="#survey:gliders-seaglider|SeaGlider Gliders" id="sNQxAarIj_Y_FQ1DzmB8-3">
+        <UserObject label="UW&lt;div&gt;SeaGlider&lt;/div&gt;" link="data:page/id,page-h2-10" id="sNQxAarIj_Y_FQ1DzmB8-3">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="640" y="240" as="geometry" />
           </mxCell>
@@ -314,12 +311,12 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-8" edge="1" parent="1" source="sNQxAarIj_Y_FQ1DzmB8-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Alseamar&amp;nbsp;&lt;div&gt;Sea Explorer&lt;/div&gt;" link="#survey:gliders-alseamar|Alseamar Gliders" id="sNQxAarIj_Y_FQ1DzmB8-5">
+        <UserObject label="Alseamar&amp;nbsp;&lt;div&gt;Sea Explorer&lt;/div&gt;" link="data:page/id,page-h2-10" id="sNQxAarIj_Y_FQ1DzmB8-5">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="900" y="240" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Hefring&amp;nbsp;&lt;div&gt;Ocean Scout&lt;/div&gt;" link="#survey:gliders-hefring|HefringGliders" id="sNQxAarIj_Y_FQ1DzmB8-7">
+        <UserObject label="Hefring&amp;nbsp;&lt;div&gt;Ocean Scout&lt;/div&gt;" link="data:page/id,page-h2-10" id="sNQxAarIj_Y_FQ1DzmB8-7">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="1160" y="240" as="geometry" />
           </mxCell>
@@ -333,24 +330,18 @@
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-14" edge="1" parent="1" source="sNQxAarIj_Y_FQ1DzmB8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-13" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="DMON" link="#survey:ac-sensor-dmon|DMON Acoustic Sensor" id="sNQxAarIj_Y_FQ1DzmB8-11">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="610" y="360" as="geometry" />
-          </mxCell>
-        </UserObject>
+        <mxCell id="sNQxAarIj_Y_FQ1DzmB8-11" parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" value="DMON" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="360" as="geometry" />
+        </mxCell>
         <mxCell id="sNQxAarIj_Y_FQ1DzmB8-16" edge="1" parent="1" source="sNQxAarIj_Y_FQ1DzmB8-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="sNQxAarIj_Y_FQ1DzmB8-15" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="Jasco&lt;div&gt;Ocean Observer&lt;/div&gt;" link="#survey:ac-sensor-jasco|JASCO Acoustic Sensor" id="sNQxAarIj_Y_FQ1DzmB8-13">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="140" x="800" y="360" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Alseamar&lt;div&gt;Auris&lt;/div&gt;" link="#survey:ac-sensor-auris|AURIS Acoustic Sensor" id="sNQxAarIj_Y_FQ1DzmB8-15">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="1030" y="360" as="geometry" />
-          </mxCell>
-        </UserObject>
+        <mxCell id="sNQxAarIj_Y_FQ1DzmB8-13" parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" value="Jasco&lt;div&gt;Ocean Observer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="800" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="sNQxAarIj_Y_FQ1DzmB8-15" parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" value="Alseamar&lt;div&gt;Auris&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1030" y="360" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -359,7 +350,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="← Back to Overview" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html" id="back-button">
+        <UserObject label="← Back to Overview" link="data:page/id,main-page" id="back-button">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D3D3D3;strokeColor=#000000;fontColor=#000000;fontSize=12;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;fontStyle=1" vertex="1">
             <mxGeometry height="40" width="150" x="50" y="50" as="geometry" />
           </mxCell>
@@ -367,25 +358,22 @@
         <mxCell id="MFGkp7upJmEiY_abWxQb-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;fillColor=#9999FF;fontStyle=1" value=" Pre-Processing" vertex="1">
           <mxGeometry height="60" width="180" x="120" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="S1U943JKWljqjzj3dUTx-2" edge="1" parent="1" source="MFGkp7upJmEiY_abWxQb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="S1U943JKWljqjzj3dUTx-1" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="Data Transfer 🔗" link="#survey:data-transfer|Data Transfer" id="MFGkp7upJmEiY_abWxQb-2">
+        <UserObject label="Data Transfer 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html#data-transfer" id="MFGkp7upJmEiY_abWxQb-2">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="240" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="File Manipulation 🔗" link="#survey:file-manipulation|File Manipulation" id="MFGkp7upJmEiY_abWxQb-3">
+        <UserObject label="File Manipulation 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html#file-manipulation" id="MFGkp7upJmEiY_abWxQb-3">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="360" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="LTSA 🔗" link="#survey:ltsa|LTSA" id="MFGkp7upJmEiY_abWxQb-4">
+        <UserObject label="LTSA 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html#ltsa" id="MFGkp7upJmEiY_abWxQb-4">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="480" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="QAQC 🔗" link="#survey:qaqc|QAQC" id="MFGkp7upJmEiY_abWxQb-5">
+        <UserObject label="QAQC 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html#qaqc" id="MFGkp7upJmEiY_abWxQb-5">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="600" as="geometry" />
           </mxCell>
@@ -402,35 +390,6 @@
         <mxCell id="MFGkp7upJmEiY_abWxQb-9" edge="1" parent="1" source="MFGkp7upJmEiY_abWxQb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontColor=default;fontFamily=Comic Sans MS;fontSize=16;" target="MFGkp7upJmEiY_abWxQb-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="S1U943JKWljqjzj3dUTx-4" edge="1" parent="1" source="S1U943JKWljqjzj3dUTx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="S1U943JKWljqjzj3dUTx-3" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="Slocum" link="#survey:data-transfer-slocum|Slocum Data Transfer" id="S1U943JKWljqjzj3dUTx-1">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="360" y="240" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="S1U943JKWljqjzj3dUTx-6" edge="1" parent="1" source="S1U943JKWljqjzj3dUTx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="S1U943JKWljqjzj3dUTx-5" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="SeaGlider" link="#survey:data-transfer-seaglider|Seaglider Data Transfer" id="S1U943JKWljqjzj3dUTx-3">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="560" y="240" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="S1U943JKWljqjzj3dUTx-8" edge="1" parent="1" source="S1U943JKWljqjzj3dUTx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" target="S1U943JKWljqjzj3dUTx-7" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="Alseamar" link="#survey:data-transfer-alseamar|Alseamar Data Transfer" id="S1U943JKWljqjzj3dUTx-5">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="760" y="240" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Hefring" link="#survey:data-transfer-hefring|Hefring Data Transfer" id="S1U943JKWljqjzj3dUTx-7">
-          <mxCell parent="1" style="whiteSpace=wrap;html=1;fontSize=16;fontFamily=Comic Sans MS;rounded=1;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry height="60" width="120" x="960" y="240" as="geometry" />
-          </mxCell>
-        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
@@ -439,7 +398,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="← Back to Overview" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html" id="back-button">
+        <UserObject label="← Back to Overview" link="data:page/id,main-page" id="back-button">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D3D3D3;strokeColor=#000000;fontColor=#000000;fontSize=16;fontFamily=Comic Sans MS;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" vertex="1">
             <mxGeometry height="40" width="170" x="50" y="50" as="geometry" />
           </mxCell>
@@ -447,27 +406,27 @@
         <mxCell id="6rkY79dxWRnDvy9_ThYC-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;fillColor=#9999FF;fontStyle=1" value="Data Analysis" vertex="1">
           <mxGeometry height="60" width="180" x="120" y="120" as="geometry" />
         </mxCell>
-        <UserObject label="Effort 🔗" link="#survey:effort|Effort" id="6rkY79dxWRnDvy9_ThYC-2">
+        <UserObject label="Effort 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html#effort" id="6rkY79dxWRnDvy9_ThYC-2">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="240" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Glider Performance 🔗" link="#survey:glider-performance|Glider Performance" id="6rkY79dxWRnDvy9_ThYC-3">
+        <UserObject label="Glider Performance 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html#glider-performance" id="6rkY79dxWRnDvy9_ThYC-3">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="370" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Noise 🔗" link="#survey:noise|Noise" id="6rkY79dxWRnDvy9_ThYC-4">
+        <UserObject label="Noise 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html#noise" id="6rkY79dxWRnDvy9_ThYC-4">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="480" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Species 🔗" link="#survey:species|Species" id="6rkY79dxWRnDvy9_ThYC-5">
+        <UserObject label="Species 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html#species" id="6rkY79dxWRnDvy9_ThYC-5">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="600" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="Modeling 🔗" link="#survey:modeling|Modeling" id="6rkY79dxWRnDvy9_ThYC-6">
+        <UserObject label="Modeling 🔗" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html#modeling" id="6rkY79dxWRnDvy9_ThYC-6">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;dashed=1;dashPattern=3 3;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;fontFamily=Comic Sans MS;" vertex="1">
             <mxGeometry height="60" width="180" x="120" y="720" as="geometry" />
           </mxCell>
@@ -495,7 +454,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="← Back to Overview" link="https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html" id="back-button">
+        <UserObject label="← Back to Overview" link="data:page/id,main-page" id="back-button">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D3D3D3;strokeColor=#000000;fontColor=#000000;fontSize=16;fontFamily=Comic Sans MS;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1">
             <mxGeometry height="40" width="170" x="50" y="50" as="geometry" />
           </mxCell>
