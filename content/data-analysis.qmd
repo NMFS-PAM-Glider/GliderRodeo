@@ -1,0 +1,18 @@
+---
+title: "Data Analysis"
+format: html
+---
+
+## Effort
+
+
+## Glider Performance
+
+
+## Noise
+
+
+## Species
+
+
+## Modeling

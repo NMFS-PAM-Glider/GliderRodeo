@@ -1,8 +1,0 @@
----
-title: "Get It Done"
-format: html
----
-
-Do It, Share It, Revise It (link to revise it)
-
-![](images/under-construction.png)

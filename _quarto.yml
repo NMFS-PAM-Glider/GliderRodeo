@@ -34,33 +34,23 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: content/getStarted.qmd
-        text: "Get Started"
-      - section: content/flowchart-intro.qmd
-        text: "Pathways Flowchart"
-        contents:
-        - href: content/flowchart-pathways-example.qmd
-          text: "Example Flowchart"
-        - href: content/flowchart-doc2draw.qmd
-          text: "Build your Flowchart"
-        - href: content/flowchart-refine.qmd
-          text: "Refine your Flowchart"
-        - href: content/flowchart-pathways.qmd
-          text: "Customize Pathways Flowchart"
-        - href: content/flowchart-decisions.qmd
-          text: "Decision Tool"
-        - href: content/dashboard.qmd
-          text: "Example Dashboard"
-        - href: content/flowchart-getItDone.qmd
-          text: "Get It Done"
-        - href: content/dashboard-givingBack.qmd
-          text: "Giving Back"
-        - href: content/flowchart-revise.qmd
-          text: "Revise and Revisit"
-      - href: content/flowchart-transition.qmd
-        text: "Transition Your Workflow"
-      # - href: content/custom-flowchart.qmd
-      #   text: "Custom Flowcharts"
+      - href: content/overview.qmd
+        text: "Overview"
+      - href: content/data-collection.qmd
+        text: "Data Collection"
+      - href: content/hardware.qmd
+        text: "Hardware"
+      - href: content/pre-processing.qmd
+        text: "Pre-Processing"
+      - href: content/data-analysis.qmd
+        text: "Data Analysis"
+      - href: content/reporting.qmd
+        text: "Reporting"
+      - href: content/flowchart-pathways.qmd
+        text: "Customize Pathways Flowchart"
+      - href: content/flowchart-pathways-example.qmd
+        text: "Example Flowchart"
+
 
 resources: 
   - output/*.svg

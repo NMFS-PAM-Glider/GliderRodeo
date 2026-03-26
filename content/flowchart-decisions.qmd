@@ -1,8 +1,0 @@
----
-title: "Making a Decision"
-format: html
----
-
-![](images/under-construction.png)
-
-*This section will allow the user to take their survey results and apply them to a function to return some recommendations and considerations for their decisions.*

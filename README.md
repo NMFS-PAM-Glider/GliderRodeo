@@ -1,22 +1,16 @@
-# Pathways Flowchart Template
-
-**Rename above to your *Project Name***
+# NOAA Fisheries Glider Rodeo 2026
 
 ## Link to Final Report
 
-**Provide link to final report**
+*Stay Tuned!*
 
 ## How to Cite
 
-**Provide recommended citation**
+*Stay Tuned!*
 
 ## Research Compendium
 
-This repository contains data and code for the ***Project Name***, including
-
-## Updates for Reproducible Workflows
-
-Periodically renv::snapshot() should be run to save the state of the project library to lockfile (to ensure reproducibility).
+This repository contains data and code for the ***2026 NOAA Fisheries Glider Rodeo*** including:
 
 ## Contents
 
@@ -34,13 +28,17 @@ This directory contains:
 
 -   📁 output: Include any modified or intermediate data or data products, including flowcharts (data in data folder is ORIGINAL, and data in output may be modified using code stored in R folder.
 
--   📁 code: scripts that actually do things.
+-   📁 \_code: scripts that actually do things.
 
 -   📁 supplement: Supplementary files that are not data, script, or components of the manuscript
 
+## Updates for Reproducible Workflows
+
+Periodically renv::snapshot() should be run to save the state of the project library to lockfile (to ensure reproducibility).
+
 ## Funding
 
-**Provide statement of funding**
+*Stay Tuned!*
 
 ### Disclaimer
 
