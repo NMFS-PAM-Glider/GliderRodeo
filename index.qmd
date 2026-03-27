@@ -4,4 +4,31 @@ subtitle: "NOAA Fisheries PAM-Glider Rodeo 2026"
 page-layout: full
 ---
 
-![](content/images/GliderRodeoLogo.png){width="405"}
+# NOAA Fisheries PAM-Glider Rodeo 2026
+## Research Compendium
+
+::: columns
+
+::: {.column width="60%"}
+
+Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.
+
+***Why This Matters:*** NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.
+
+:::
+
+::: {.column width="40%"}
+
+![](content/images/PAMplatforms_gliders.png)
+
+:::
+:::
+
+
+The NOAA Fisheries PAM 'Glider Rodeo' (aka *Underwater Glider Challenge*) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations ([link to more information on the larger PAM-Glider effort](https://nmfs-ost.github.io/PAM-Glider/)). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai'i in February 2026.
+
+This research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.
+
+![](content/images/RodeoTracks.png) 
+
+

@@ -8,6 +8,18 @@ editor:
 
 ## Mission (Field) Reports
 
+Mission Reports can be saved to the 📂supplement/missionReports folder
+
+Pilot Logs can be saved to the 📂supplement/pilotLogs folder
+
+If there are any other field reports, please save to the 📂supplement/
+folder (if multiple, then provide a relevant subfolder).
+
 ## Vendor Reports
 
+Alseamar Technical Report and Alseamar Acoustic real-time report are
+saved in the 📂supplement/ folder of this repository.
+
 ## Final Report
+
+*Stay Tuned!*

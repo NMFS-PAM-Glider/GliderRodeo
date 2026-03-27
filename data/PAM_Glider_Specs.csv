@@ -1,0 +1,12 @@
+Type,Manufacturer,Glider ID,Glider Name,Owner,PAM system,PAM ID,PAM Version,PAM Software version,Hydrophone ID ,PAM system notes
+Slocum,TWR,Unit 1025?,Risso,SWFSC,DMON,,,,,
+Slocum,TWR,Unit 1024,Stenella,SWFSC,WISPR,EOS,WISPR 3.0,1.1.1,,Has two additional header entries - 'vmp_state = 0' and 'vmp_depth = 0'
+Oceanscout,Hefring,1025,Elrond,SWFSC,WISPR,B,WISPR 6.1,1.2.0,,sensor_id = 'B' for Elrond. Not sure for others
+Oceanscout,Hefring,1026,Cirdan,SWFSC,WISPR,,WISPR 6.1,,,
+Oceanscout,Hefring,,Gil-galad,SWFSC,WISPR,,WISPR 6.1,,,
+Seaglider M1,UW/IOP,sg607,Will,OSU,WISPR,,,,,
+Seaglider M1,UW/IOP,sg639,Otis Jr,OSU,WISPR,no4,WISPR 3.0,,,
+Seaglider M1,UW/IOP,sg679,Sylvia,OSU,WISPR,,WISPR 3.0,,,
+Seaglider M1,UW/IOP,sg680,Kathy,OSU,WISPR,no2,WISPR 3.0,,,file headers say WISPR no3 but actually was no2
+Seaglider SGX,UW/IOP,sg273,TBD,PIFSC,WISPR,,WISPR 3.0,,,
+Seaglider SGX,UW/IOP,sg274,TBD,PIFSC,WISPR,,WISPR 3.0,,,

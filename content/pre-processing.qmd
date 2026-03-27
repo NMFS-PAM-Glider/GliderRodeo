@@ -3,14 +3,30 @@ title: "Pre-Processing"
 format: html
 ---
 
+All pre-processing methods are PAM system specific. Detailed methods are documented in [our lab manual here](https://nmfs-ost.github.io/PAM-Glider/content/data_processing/AcousticData-preprocessing.html). There may be additional methods that need to be added for partner PAM systems (Alseamar Auris and TWR w/JASCO system). The following steps are a general overview of what needs to be completed for PAM data from each deployment.
+
 ## Data Transfer
 
+After data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket. Some data will require local file manipulation prior to Data Transfer.
 
 ## File Manipulation
 
+-   Decompress Audio files
+
+-   Rename audio files to standardized convention
+
+-   Decimate data
 
 ## LTSA
 
+-   Run LTSAs and save to appropriate folder w/ appropriate naming convention
+
+-   LTSA Settings: 200 kHz - 5 sec 100 Hz, 10 kHz - 2 sec 10 hz, 1 kHz - 1 sec 1 Hz
 
 ## QAQC
 
+-   Run relevant QAQC and create a report for each glider. There will almost definitely be multiple lines of QAQC (for each data stream, etc). Identify each of these separate QAQC methods (in detail, including code) as well as the POC
+
+-   Noise assessment to identify periods of poor data quality (and reason for noise if known) - SWFSC has done manual noise assessments in the past by scanning LTSAs, this might be trickier with glider noises 
+
+-   Identify these methods, provide detailed methods and any relevant script.
