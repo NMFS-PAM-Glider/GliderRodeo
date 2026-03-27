@@ -1,1 +1,1 @@
-Sitemap: https://shannonrankin.github.io/pathways-flowchart/sitemap.xml
+Sitemap: https://nmfs-pam-glider.github.io/GliderRodeo/sitemap.xml

@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-98ecf05373b1a394251d61a6e26352e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4e89039b912a07372fbbbdd2df3bebfe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bd703d219c9389ba6d2417305610f388.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4e89039b912a07372fbbbdd2df3bebfe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -76,6 +76,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="../site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="../site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="../site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 </head>
@@ -270,8 +284,8 @@ ul.task-list li input[type="checkbox"] {
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://shannonrankin.github.io/pathways-flowchart/" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/shannonrankin/pathways-flowchart" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-github"></i></a>
+    <a href="https://nmfs-pam-glider.github.io/GliderRodeo/" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -324,18 +338,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Reporting</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Customize Pathways Flowchart</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-pathways-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Flowchart</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -346,11 +348,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gliders" id="toc-gliders" class="nav-link active" data-scroll-target="#gliders">Gliders</a></li>
+  <li><a href="#acoustic-hardware" id="toc-acoustic-hardware" class="nav-link active" data-scroll-target="#acoustic-hardware">Acoustic Hardware</a>
+  <ul class="collapse">
+  <li><a href="#gliders" id="toc-gliders" class="nav-link" data-scroll-target="#gliders">Gliders</a>
+  <ul class="collapse">
+  <li><a href="#slocum-gliders-teledyne-webb" id="toc-slocum-gliders-teledyne-webb" class="nav-link" data-scroll-target="#slocum-gliders-teledyne-webb">Slocum Gliders (Teledyne Webb) <img src="images/SlocumGlider.jpg" class="img-fluid" width="97"></a></li>
+  <li><a href="#seagliders-u-washington" id="toc-seagliders-u-washington" class="nav-link" data-scroll-target="#seagliders-u-washington">Seagliders (U Washington) <img src="images/SEAGLIDER.png" class="img-fluid" width="114"></a></li>
+  <li><a href="#oceanscout-hefring" id="toc-oceanscout-hefring" class="nav-link" data-scroll-target="#oceanscout-hefring">Oceanscout (Hefring) <img src="images/HefringGlider.jpg" class="img-fluid" width="149"></a></li>
+  <li><a href="#seaexplorer-alseamar" id="toc-seaexplorer-alseamar" class="nav-link" data-scroll-target="#seaexplorer-alseamar">SeaExplorer (Alseamar) <img src="images/alseamarGlider.png" class="img-fluid" width="247"></a></li>
+  </ul></li>
   <li><a href="#acoustic-sensors" id="toc-acoustic-sensors" class="nav-link" data-scroll-target="#acoustic-sensors">Acoustic Sensors</a></li>
   <li><a href="#oceo-sensors" id="toc-oceo-sensors" class="nav-link" data-scroll-target="#oceo-sensors">Oceo Sensors</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/hardware.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/hardware.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/hardware.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/hardware.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -375,16 +386,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="acoustic-hardware" class="level1">
+<h1>Acoustic Hardware</h1>
+<p>A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ddf968d47839fd62db96" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ddf968d47839fd62db96">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;,&quot;na&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>List of Gliders used during PAM-Glider Rodeo<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11"],["Slocum","Slocum","Oceanscout","Oceanscout","Oceanscout","Seaglider M1","Seaglider M1","Seaglider M1","Seaglider M1","Seaglider SGX","Seaglider SGX"],["TWR","TWR","Hefring","Hefring","Hefring","UW/IOP","UW/IOP","UW/IOP","UW/IOP","UW/IOP","UW/IOP"],["Unit 1025?","Unit 1024","1025","1026","","sg607","sg639","sg679","sg680","sg273","sg274"],["Risso","Stenella","Elrond","Cirdan","Gil-galad","Will","Otis Jr","Sylvia","Kathy","TBD","TBD"],["SWFSC","SWFSC","SWFSC","SWFSC","SWFSC","OSU","OSU","OSU","OSU","PIFSC","PIFSC"],["DMON","WISPR","WISPR","WISPR","WISPR","WISPR","WISPR","WISPR","WISPR","WISPR","WISPR"],["","EOS","B","","","","no4","","no2","",""],["","WISPR 3.0","WISPR 6.1","WISPR 6.1","WISPR 6.1","","WISPR 3.0","WISPR 3.0","WISPR 3.0","WISPR 3.0","WISPR 3.0"],["","1.1.1","1.2.0","","","","","","","",""],[null,null,null,null,null,null,null,null,null,null,null],["","Has two additional header entries - 'vmp_state = 0' and 'vmp_depth = 0'","sensor_id = 'B' for Elrond. Not sure for others","","","","","","file headers say WISPR no3 but actually was no2","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Type<\/th>\n      <th>Manufacturer<\/th>\n      <th>Glider.ID<\/th>\n      <th>Glider.Name<\/th>\n      <th>Owner<\/th>\n      <th>PAM.system<\/th>\n      <th>PAM.ID<\/th>\n      <th>PAM.Version<\/th>\n      <th>PAM.Software.version<\/th>\n      <th>Hydrophone.ID<\/th>\n      <th>PAM.system.notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Type","targets":1},{"name":"Manufacturer","targets":2},{"name":"Glider.ID","targets":3},{"name":"Glider.Name","targets":4},{"name":"Owner","targets":5},{"name":"PAM.system","targets":6},{"name":"PAM.ID","targets":7},{"name":"PAM.Version","targets":8},{"name":"PAM.Software.version","targets":9},{"name":"Hydrophone.ID","targets":10},{"name":"PAM.system.notes","targets":11}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <section id="gliders" class="level2">
 <h2 class="anchored" data-anchor-id="gliders">Gliders</h2>
+<section id="slocum-gliders-teledyne-webb" class="level3">
+<h3 class="anchored" data-anchor-id="slocum-gliders-teledyne-webb">Slocum Gliders (Teledyne Webb) <img src="images/SlocumGlider.jpg" class="img-fluid" width="97"></h3>
+<p>NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the <a href="https://apps.dtic.mil/sti/tr/pdf/ADA617025.pdf" target="_blank">DMON</a> (developed by WHOI) and <a href="https://embeddedocean.com/passive-acoustics-2/" target="_blank">WISPR</a> (Embedded Ocean Systems), and <a href="https://static1.squarespace.com/static/52aa2773e4b0f29916f46675/t/6845b40f81c09d69d27e3a8e/1749398546414/OceanObserver+Slocum+Glider+Brochure.pdf">OceanObserver</a> ((JASCO Applied Sciences)[https://www.jasco.com/].</p>
+</section>
+<section id="seagliders-u-washington" class="level3">
+<h3 class="anchored" data-anchor-id="seagliders-u-washington">Seagliders (U Washington) <img src="images/SEAGLIDER.png" class="img-fluid" width="114"></h3>
+<p><a href="https://iop.apl.washington.edu/seaglider.php" target="_blank">Seagliders</a> are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard <a href="https://embeddedocean.com/passive-acoustics-2/" target="_blank">WISPR</a> acoustic processors. Seaglider support resources can be found <a href="https://iop.apl.washington.edu/iopsg/" target="_blank">here</a> , and WISPR 2.0 specifications can be found <a href="https://embeddedocean.com/wispr-v2-0/" target="_blank">here</a> . <em>Note that WISPR 3.0 is under development.</em></p>
+</section>
+<section id="oceanscout-hefring" class="level3">
+<h3 class="anchored" data-anchor-id="oceanscout-hefring">Oceanscout (Hefring) <img src="images/HefringGlider.jpg" class="img-fluid" width="149"></h3>
+<p>The <a href="https://www.hefring.com/oceanscout" target="_blank">Oceanscout</a> is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found <a href="https://cdn2.assets-servd.host/hefring-engineering/production/dist/assets/PDFs/combined-base-and-pam.pdf?dm=1707500641">here</a>.</p>
+</section>
+<section id="seaexplorer-alseamar" class="level3">
+<h3 class="anchored" data-anchor-id="seaexplorer-alseamar">SeaExplorer (Alseamar) <img src="images/alseamarGlider.png" class="img-fluid" width="247"></h3>
+<p>The <a href="https://www.alseamar-alcen.com/products/underwater-glider" target="_blank">SeaExplorer</a> was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a <a href="https://www.alseamar-alcen.com/services/marine-survey-services/underwater-gliders-services">service</a>, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found <a href="https://www.alseamar-alcen.com/sites/alseamar-alcen/files/products/pdf/ALSEAMAR-SEA_EXPLORER-2022-Web.pdf" target="_blank">here</a>.</p>
+</section>
 </section>
 <section id="acoustic-sensors" class="level2">
 <h2 class="anchored" data-anchor-id="acoustic-sensors">Acoustic Sensors</h2>
+<p>Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:</p>
 </section>
+<div class="columns">
+<div class="column" style="width:&quot;80%;">
+<section id="wispr" class="level2">
+<h2 class="anchored" data-anchor-id="wispr">WISPR</h2>
+</section>
+</div><div class="column" style="width:&quot;20%;">
+<p><img src="images/wispr.jfif" class="img-fluid" width="100"></p>
+</div>
+</div>
+<p><a href="https://embeddedocean.com/passive-acoustics-2/" target="_blank">WISPR</a> (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.</p>
+<p>WISPR3 resources can be found <a href="https://github.com/embeddedocean/wispr3">here</a>.</p>
+<p>Additional resources installing and operating the WISPR system on Seagliders can be found at the <a href="https://noaa-pifsc.github.io/glider-lab/wispr.html">PIFSC Glider Lab WISPR page</a>.</p>
+<div class="columns">
+<div class="column" style="width:&quot;80%;">
+<section id="dmon" class="level2">
+<h2 class="anchored" data-anchor-id="dmon">DMON</h2>
+</section>
+</div><div class="column" style="width:&quot;20%;">
+<p><img src="images/dmon.png" class="img-fluid" width="200"></p>
+</div>
+</div>
+<p>The Digital MONitor (<a href="https://apps.dtic.mil/sti/tr/pdf/ADA617025.pdf">DMON</a>) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with <a href="https://www.soest.hawaii.edu/ore/OE/Prof.Howe_PDF/DMON_Van_Uffelen_JOE_2017.pdf">Seagliders</a>. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.</p>
+<div class="columns">
+<div class="column" style="width:&quot;80%;">
+<section id="auris" class="level2">
+<h2 class="anchored" data-anchor-id="auris">Auris</h2>
+</section>
+</div><div class="column" style="width:&quot;20%;">
+<p><img src="images/auris.jpg" class="img-fluid" width="182"></p>
+</div>
+</div>
+<p>The <a href="https://www.alseamar-alcen.com/index.php/products/underwater-glider/seaexplorer" target="_blank">Auris</a> acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.</p>
+<div class="columns">
+<div class="column" style="width:&quot;80%;">
+<section id="oceanobserver" class="level2">
+<h2 class="anchored" data-anchor-id="oceanobserver">OceanObserver</h2>
+</section>
+</div><div class="column" style="width:&quot;20%;">
+<p><img src="images/jasco_observer.png" class="img-fluid" width="182"></p>
+</div>
+</div>
+<p><a href="https://www.jasco.com/oceanobserver" title="https://www.jasco.com/oceanobserver"><u>Jasco’s OceanObserver</u></a>&nbsp;can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.</p>
 <section id="oceo-sensors" class="level2">
 <h2 class="anchored" data-anchor-id="oceo-sensors">Oceo Sensors</h2>
+<p><em>Stay Tuned!</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -474,7 +555,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/shannonrankin\.github\.io\/pathways-flowchart\/");
+        var filterRegex = new RegExp("https:\/\/nmfs-pam-glider\.github\.io\/GliderRodeo\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -821,7 +902,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/hardware.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/hardware.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/hardware.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/hardware.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

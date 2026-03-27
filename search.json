@@ -1,10 +1,80 @@
 [
   {
+    "objectID": "content/overview.html",
+    "href": "content/overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#goals",
+    "href": "content/overview.html#goals",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#objectives",
+    "href": "content/overview.html#objectives",
+    "title": "Overview",
+    "section": "Objectives",
+    "text": "Objectives\nField testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#approach",
+    "href": "content/overview.html#approach",
+    "title": "Overview",
+    "section": "Approach",
+    "text": "Approach\nCollect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:\n\nOptimize to survey coverage\nOptimize for low noise\nIntermediate approach to survey coverage and noise reduction\nDrifting (Quiet Mode)\n\n\nPiloting: To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.\nNavigation: Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).\nEndurance: Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.\nNoise: Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.\n\nThe Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to Glider Platforms and PAM Sensors.\nThe Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our PAM-Glider site.\n\n\n\nGlider Rodeo draft figure-8 tracklines planned for offshore Hawaii.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#data-management-plan",
+    "href": "content/overview.html#data-management-plan",
+    "title": "Overview",
+    "section": "Data management Plan",
+    "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/pre-processing.html",
+    "href": "content/pre-processing.html",
+    "title": "Pre-Processing",
+    "section": "",
+    "text": "All pre-processing methods are PAM system specific. Detailed methods are documented in our lab manual here. There may be additional methods that need to be added for partner PAM systems (Alseamar Auris and TWR w/JASCO system). The following steps are a general overview of what needs to be completed for PAM data from each deployment.",
+    "crumbs": [
+      "Pre-Processing"
+    ]
+  },
+  {
+    "objectID": "content/pre-processing.html#data-transfer",
+    "href": "content/pre-processing.html#data-transfer",
+    "title": "Pre-Processing",
+    "section": "Data Transfer",
+    "text": "Data Transfer\nAfter data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket. Some data will require local file manipulation prior to Data Transfer.",
+    "crumbs": [
+      "Pre-Processing"
+    ]
+  },
+  {
     "objectID": "content/pre-processing.html#file-manipulation",
     "href": "content/pre-processing.html#file-manipulation",
     "title": "Pre-Processing",
     "section": "File Manipulation",
-    "text": "File Manipulation",
+    "text": "File Manipulation\n\nDecompress Audio files\nRename audio files to standardized convention\nDecimate data",
     "crumbs": [
       "Pre-Processing"
     ]
@@ -14,7 +84,7 @@
     "href": "content/pre-processing.html#ltsa",
     "title": "Pre-Processing",
     "section": "LTSA",
-    "text": "LTSA",
+    "text": "LTSA\n\nRun LTSAs and save to appropriate folder w/ appropriate naming convention\nLTSA Settings: 200 kHz - 5 sec 100 Hz, 10 kHz - 2 sec 10 hz, 1 kHz - 1 sec 1 Hz",
     "crumbs": [
       "Pre-Processing"
     ]
@@ -24,87 +94,70 @@
     "href": "content/pre-processing.html#qaqc",
     "title": "Pre-Processing",
     "section": "QAQC",
-    "text": "QAQC",
+    "text": "QAQC\n\nRun relevant QAQC and create a report for each glider. There will almost definitely be multiple lines of QAQC (for each data stream, etc). Identify each of these separate QAQC methods (in detail, including code) as well as the POC\nNoise assessment to identify periods of poor data quality (and reason for noise if known) - SWFSC has done manual noise assessments in the past by scanning LTSAs, this might be trickier with glider noises \nIdentify these methods, provide detailed methods and any relevant script.",
     "crumbs": [
       "Pre-Processing"
     ]
   },
   {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports",
-    "crumbs": [
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report",
-    "crumbs": [
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/overview.html",
-    "href": "content/overview.html",
-    "title": "Overview",
+    "objectID": "content/hardware.html",
+    "href": "content/hardware.html",
+    "title": "Hardware",
     "section": "",
-    "text": "Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting. Right-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
+    "text": "A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).\n\n\n\n\n\n\n\n\n\n\nNOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.\n\n\n\n\nGlider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:\n\n\n\n\n\n\n\n\n\n\nWISPR (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.\nWISPR3 resources can be found here.\nAdditional resources installing and operating the WISPR system on Seagliders can be found at the PIFSC Glider Lab WISPR page.\n\n\n\n\n\n\n\n\n\nThe Digital MONitor (DMON) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with Seagliders. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.\n\n\n\n\n\n\n\n\n\nThe Auris acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.\n\n\n\n\n\n\n\n\n\nJasco’s OceanObserver can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.\n\n\nStay Tuned!",
     "crumbs": [
-      "Overview"
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/overview.html#overview-of-data-management-plan",
-    "href": "content/overview.html#overview-of-data-management-plan",
-    "title": "Overview",
+    "objectID": "content/hardware.html#gliders",
+    "href": "content/hardware.html#gliders",
+    "title": "Hardware",
     "section": "",
-    "text": "Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting. Right-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
+    "text": "NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.",
     "crumbs": [
-      "Overview"
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways.html",
-    "href": "content/flowchart-pathways.html",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/hardware.html#acoustic-sensors",
+    "href": "content/hardware.html#acoustic-sensors",
+    "title": "Hardware",
     "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "text": "Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:",
     "crumbs": [
-      "Customize Pathways Flowchart"
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "href": "content/flowchart-pathways.html#interactive-workflow-diagram",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/hardware.html#oceo-sensors",
+    "href": "content/hardware.html#oceo-sensors",
+    "title": "Hardware",
     "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n       --&gt;\n      \n      \n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "text": "Stay Tuned!",
     "crumbs": [
-      "Customize Pathways Flowchart"
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways.html#instructions-for-users",
-    "href": "content/flowchart-pathways.html#instructions-for-users",
-    "title": "Interactive Workflow Tool",
-    "section": "Instructions for Users",
-    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
-    "crumbs": [
-      "Customize Pathways Flowchart"
-    ]
-  },
-  {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
-    "title": "NOAA quarto simple",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#research-compendium",
+    "href": "index.html#research-compendium",
+    "title": "Home",
+    "section": "",
+    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "supplement/SCSS_INTEGRATION.html",
@@ -217,6 +270,13 @@
     "title": "NOAA quarto simple",
     "section": "",
     "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/QUICK_REFERENCE.html",
@@ -401,133 +461,23 @@
     "text": "This template is open source and free to use for your projects!"
   },
   {
-    "objectID": "content/flowchart-pathways-example.html",
-    "href": "content/flowchart-pathways-example.html",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/data-analysis.html",
+    "href": "content/data-analysis.html",
+    "title": "Data Analysis",
     "section": "",
-    "text": "Practice with this example flowchart to see how this works:\n\nUse your mouse (or the buttoms) to zoom in, zoom out, then zoom in again\nUse your mouse to ‘grab’ and drag the zoomed in flowchart to move the zoomed in view by clicking and holding on the image while moving your mouse.\nSelect the Flowchart Component that says “Flow Charts” (move your mouse to hover over this box until you can click to select it). A survey should open. Add your name and for the password, put “workflow2026”.\n\nThis flowchart shows the workflow for using the Pathways Flowchart tool– so you can practice with this example while you are learning to use the tool. In this case, you can submit responses truthfully as it relates to your experience with the tool. Or not.\nWhen you are done, submit the response.\nWhen you have finished all responses, scroll down and choose ‘Download All Responses’. This will save responses to a csv file in your repository. As you improve components of your workflow, you can revisit these surveys and update the reponses (which will update the csv). This information is used in the Decision Tool, so updated responses are helpful!\n\nThese instructions are summarized at the bottom of this example Flowchart, and of your modified flowchart.\n\nClick on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "text": "Stay Tuned!",
     "crumbs": [
-      "Example Flowchart"
+      "Data Analysis"
     ]
   },
   {
-    "objectID": "content/flowchart-pathways-example.html#example-interactive-flowchart",
-    "href": "content/flowchart-pathways-example.html#example-interactive-flowchart",
-    "title": "Interactive Workflow Tool",
+    "objectID": "content/data-analysis.html#effort",
+    "href": "content/data-analysis.html#effort",
+    "title": "Data Analysis",
     "section": "",
-    "text": "Practice with this example flowchart to see how this works:\n\nUse your mouse (or the buttoms) to zoom in, zoom out, then zoom in again\nUse your mouse to ‘grab’ and drag the zoomed in flowchart to move the zoomed in view by clicking and holding on the image while moving your mouse.\nSelect the Flowchart Component that says “Flow Charts” (move your mouse to hover over this box until you can click to select it). A survey should open. Add your name and for the password, put “workflow2026”.\n\nThis flowchart shows the workflow for using the Pathways Flowchart tool– so you can practice with this example while you are learning to use the tool. In this case, you can submit responses truthfully as it relates to your experience with the tool. Or not.\nWhen you are done, submit the response.\nWhen you have finished all responses, scroll down and choose ‘Download All Responses’. This will save responses to a csv file in your repository. As you improve components of your workflow, you can revisit these surveys and update the reponses (which will update the csv). This information is used in the Decision Tool, so updated responses are helpful!\n\nThese instructions are summarized at the bottom of this example Flowchart, and of your modified flowchart.\n\nClick on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Your Name/ID:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n      \n      \n        Question 1: What is the current level of automation?\n        \n          -- Select --\n          Not Started\n          In Progress\n          Completed\n          Not Applicable\n        \n      \n      \n      \n        Question 2: What is the potential for Automation?\n        \n          -- Select --\n          Low\n          Medium\n          High\n          Unknown\n        \n      \n      \n      \n        Question 3: How painful is the current process?\n        \n          -- Select --\n          All Good\n          Room for Improvement\n          Painful!\n          \n        \n      \n      \n      \n        Question 4: How concerned are you with modifying this task?\n        \n          -- Select --\n          No Concern\n          Moderate Concern\n          Terrified\n          \n        \n      \n      \n      \n        Question 5: What is your level of proficiency with task automation?\n        \n          -- Select --\n          Very Low\n          Low\n          Medium\n          Medium-Strong\n          Strong\n        \n      \n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
+    "text": "Stay Tuned!",
     "crumbs": [
-      "Example Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/flowchart-pathways-example.html#instructions-for-users",
-    "href": "content/flowchart-pathways-example.html#instructions-for-users",
-    "title": "Interactive Workflow Tool",
-    "section": "Instructions for Users",
-    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
-    "crumbs": [
-      "Example Flowchart"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html",
-    "href": "content/data-collection.html",
-    "title": "Data Collection",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Point of Contact Name/Email:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n        What is the current status?\n        \n          -- Select --\n          Not Started\n          On Track\n          Delayed\n          On Hold\n          Completed\n        \n      \n\n      \n        Brief Description\n        \n      \n\n      \n        GitHub Issue Link\n        \n      \n      \n      \n        Data In / Links\n\n        \n          \n            \n            \n          \n        \n\n        Add another\n     \n\n  \n      \n      \n        Data Out / Links\n\n        \n          \n            \n            \n          \n        \n\n        Add another\n     \n\n      \n      \n        Comments\n        \n      \n\n\n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#data-collection-flowchart",
-    "href": "content/data-collection.html#data-collection-flowchart",
-    "title": "Data Collection",
-    "section": "",
-    "text": "Click on any shape in the diagram below to open the survey panel and record your observations.\n\n\n\n\n\n  ×\n  \n  \n    \n    \n    \n      Shape: None selected\n    \n    \n    \n    \n    \n      \n        Point of Contact Name/Email:\n        \n      \n      \n      \n        Password:\n        \n        Required for editing entries\n      \n\n      \n        What is the current status?\n        \n          -- Select --\n          Not Started\n          On Track\n          Delayed\n          On Hold\n          Completed\n        \n      \n\n      \n        Brief Description\n        \n      \n\n      \n        GitHub Issue Link\n        \n      \n      \n      \n        Data In / Links\n\n        \n          \n            \n            \n          \n        \n\n        Add another\n     \n\n  \n      \n      \n        Data Out / Links\n\n        \n          \n            \n            \n          \n        \n\n        Add another\n     \n\n      \n      \n        Comments\n        \n      \n\n\n      \n      Submit Response\n      \n    \n  \n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%\n\n\n\n\n\n\n\n  \n  All responses are stored locally in your browser. Download the CSV file and commit it to your GitHub repository.\n  📥 Download All Responses (CSV)\n  Total responses: 0\n  🗑️ Clear All Local Data",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#instructions-for-users",
-    "href": "content/data-collection.html#instructions-for-users",
-    "title": "Data Collection",
-    "section": "Instructions for Users",
-    "text": "Instructions for Users\n\nHow to Use This System\n\nClick on any shape in the diagram to open the survey panel\nFill out the survey with your observations\nEnter the password (ask your administrator)\nSubmit - your response is saved locally in your browser\nDownload CSV regularly and commit to your GitHub repository\nReturn later - the form will pre-fill with your previous answers\n\n\n\nFor Template Users\nWhen you copy this template: 1. Change the SURVEY_PASSWORD in the R setup chunk 2. Replace DIAGRAM_FILE with your SVG filename 3. Add survey links to your shapes (see QUICK_REFERENCE.md) 4. Customize the survey questions as needed",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#participants",
-    "href": "content/data-collection.html#participants",
-    "title": "Data Collection",
-    "section": "Participants",
-    "text": "Participants",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#trackline-planning",
-    "href": "content/data-collection.html#trackline-planning",
-    "title": "Data Collection",
-    "section": "Trackline Planning",
-    "text": "Trackline Planning",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#communications",
-    "href": "content/data-collection.html#communications",
-    "title": "Data Collection",
-    "section": "Communications",
-    "text": "Communications",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#data-offload",
-    "href": "content/data-collection.html#data-offload",
-    "title": "Data Collection",
-    "section": "Data Offload",
-    "text": "Data Offload",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#field-reports",
-    "href": "content/data-collection.html#field-reports",
-    "title": "Data Collection",
-    "section": "Field Reports",
-    "text": "Field Reports",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#acoustic-sensors",
-    "href": "content/hardware.html#acoustic-sensors",
-    "title": "Hardware",
-    "section": "Acoustic Sensors",
-    "text": "Acoustic Sensors",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#oceo-sensors",
-    "href": "content/hardware.html#oceo-sensors",
-    "title": "Hardware",
-    "section": "Oceo Sensors",
-    "text": "Oceo Sensors",
-    "crumbs": [
-      "Hardware"
+      "Data Analysis"
     ]
   },
   {
@@ -535,7 +485,7 @@
     "href": "content/data-analysis.html#glider-performance",
     "title": "Data Analysis",
     "section": "Glider Performance",
-    "text": "Glider Performance",
+    "text": "Glider Performance\nStay Tuned!",
     "crumbs": [
       "Data Analysis"
     ]
@@ -545,7 +495,7 @@
     "href": "content/data-analysis.html#noise",
     "title": "Data Analysis",
     "section": "Noise",
-    "text": "Noise",
+    "text": "Noise\nStay Tuned!",
     "crumbs": [
       "Data Analysis"
     ]
@@ -555,7 +505,7 @@
     "href": "content/data-analysis.html#species",
     "title": "Data Analysis",
     "section": "Species",
-    "text": "Species",
+    "text": "Species\nStay Tuned!",
     "crumbs": [
       "Data Analysis"
     ]
@@ -565,9 +515,109 @@
     "href": "content/data-analysis.html#modeling",
     "title": "Data Analysis",
     "section": "Modeling",
-    "text": "Modeling",
+    "text": "Modeling\nStay Tuned!",
     "crumbs": [
       "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html",
+    "href": "content/data-collection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#partners",
+    "href": "content/data-collection.html#partners",
+    "title": "Data Collection",
+    "section": "",
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#trackline-planning",
+    "href": "content/data-collection.html#trackline-planning",
+    "title": "Data Collection",
+    "section": "Trackline Planning",
+    "text": "Trackline Planning\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#communications",
+    "href": "content/data-collection.html#communications",
+    "title": "Data Collection",
+    "section": "Communications",
+    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#data-offload",
+    "href": "content/data-collection.html#data-offload",
+    "title": "Data Collection",
+    "section": "Data Offload",
+    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#field-reports",
+    "href": "content/data-collection.html#field-reports",
+    "title": "Data Collection",
+    "section": "Field Reports",
+    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!",
+    "crumbs": [
+      "Reporting"
     ]
   }
 ]

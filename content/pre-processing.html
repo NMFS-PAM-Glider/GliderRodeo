@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-98ecf05373b1a394251d61a6e26352e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-fe2fbaf32cb7b1b1df984352024fe67e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4e89039b912a07372fbbbdd2df3bebfe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bd703d219c9389ba6d2417305610f388.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4e89039b912a07372fbbbdd2df3bebfe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -270,8 +270,8 @@ ul.task-list li input[type="checkbox"] {
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://shannonrankin.github.io/pathways-flowchart/" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/shannonrankin/pathways-flowchart" title="Pathways Flowchart" class="quarto-navigation-tool px-1" aria-label="Pathways Flowchart"><i class="bi bi-github"></i></a>
+    <a href="https://nmfs-pam-glider.github.io/GliderRodeo/" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -324,18 +324,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Reporting</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Customize Pathways Flowchart</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-pathways-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Flowchart</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -351,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ltsa" id="toc-ltsa" class="nav-link" data-scroll-target="#ltsa">LTSA</a></li>
   <li><a href="#qaqc" id="toc-qaqc" class="nav-link" data-scroll-target="#qaqc">QAQC</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/pre-processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/pre-processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/pre-processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/pre-processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -376,17 +364,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>All pre-processing methods are PAM system specific. Detailed methods are documented in <a href="https://nmfs-ost.github.io/PAM-Glider/content/data_processing/AcousticData-preprocessing.html">our lab manual here</a>. There may be additional methods that need to be added for partner PAM systems (Alseamar Auris and TWR w/JASCO system). The following steps are a general overview of what needs to be completed for PAM data from each deployment.</p>
 <section id="data-transfer" class="level2">
 <h2 class="anchored" data-anchor-id="data-transfer">Data Transfer</h2>
+<p>After data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket. Some data will require local file manipulation prior to Data Transfer.</p>
 </section>
 <section id="file-manipulation" class="level2">
 <h2 class="anchored" data-anchor-id="file-manipulation">File Manipulation</h2>
+<ul>
+<li><p>Decompress Audio files</p></li>
+<li><p>Rename audio files to standardized convention</p></li>
+<li><p>Decimate data</p></li>
+</ul>
 </section>
 <section id="ltsa" class="level2">
 <h2 class="anchored" data-anchor-id="ltsa">LTSA</h2>
+<ul>
+<li><p>Run LTSAs and save to appropriate folder w/ appropriate naming convention</p></li>
+<li><p>LTSA Settings: 200 kHz - 5 sec 100 Hz, 10 kHz - 2 sec 10 hz, 1 kHz - 1 sec 1 Hz</p></li>
+</ul>
 </section>
 <section id="qaqc" class="level2">
 <h2 class="anchored" data-anchor-id="qaqc">QAQC</h2>
+<ul>
+<li><p>Run relevant QAQC and create a report for each glider. There will almost definitely be multiple lines of QAQC (for each data stream, etc). Identify each of these separate QAQC methods (in detail, including code) as well as the POC</p></li>
+<li><p>Noise assessment to identify periods of poor data quality (and reason for noise if known) - SWFSC has done manual noise assessments in the past by scanning LTSAs, this might be trickier with glider noises&nbsp;</p></li>
+<li><p>Identify these methods, provide detailed methods and any relevant script.</p></li>
+</ul>
 
 
 </section>
@@ -478,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/shannonrankin\.github\.io\/pathways-flowchart\/");
+        var filterRegex = new RegExp("https:\/\/nmfs-pam-glider\.github\.io\/GliderRodeo\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -825,7 +829,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/pre-processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/pre-processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/pre-processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/pre-processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

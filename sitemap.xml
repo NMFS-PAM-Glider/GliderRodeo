@@ -1,67 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/pre-processing.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html</loc>
+    <lastmod>2026-03-27T19:46:05.797Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/reporting.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html</loc>
+    <lastmod>2026-03-27T19:46:05.797Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/overview.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html</loc>
+    <lastmod>2026-03-27T19:46:05.731Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-pathways.html</loc>
-    <lastmod>2026-03-26T18:14:50.804Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/index.html</loc>
+    <lastmod>2026-03-27T19:46:05.798Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/data/ReadMe.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/SCSS_INTEGRATION.html</loc>
+    <lastmod>2026-03-27T19:46:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SCSS_INTEGRATION.html</loc>
-    <lastmod>2026-03-26T18:14:50.854Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/ReadMe.html</loc>
+    <lastmod>2026-03-27T19:46:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/ReadMe.html</loc>
-    <lastmod>2026-03-26T18:14:50.854Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/figs/ReadMe.html</loc>
+    <lastmod>2026-03-27T19:46:05.798Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/figs/ReadMe.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/manuscript/ReadMe.html</loc>
+    <lastmod>2026-03-27T19:46:05.798Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/index.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/data/ReadMe.html</loc>
+    <lastmod>2026-03-27T19:46:05.798Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/manuscript/ReadMe.html</loc>
-    <lastmod>2026-03-26T18:14:50.838Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/QUICK_REFERENCE.html</loc>
+    <lastmod>2026-03-27T19:46:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/QUICK_REFERENCE.html</loc>
-    <lastmod>2026-03-26T18:14:50.854Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/SETUP_GUIDE.html</loc>
+    <lastmod>2026-03-27T19:46:05.831Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/supplement/SETUP_GUIDE.html</loc>
-    <lastmod>2026-03-26T18:14:50.854Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html</loc>
+    <lastmod>2026-03-27T19:46:05.730Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/flowchart-pathways-example.html</loc>
-    <lastmod>2026-03-26T18:14:50.804Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html</loc>
+    <lastmod>2026-03-27T19:46:05.731Z</lastmod>
   </url>
   <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/data-collection.html</loc>
-    <lastmod>2026-03-26T18:14:50.804Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/hardware.html</loc>
-    <lastmod>2026-03-26T18:14:50.804Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shannonrankin.github.io/pathways-flowchart/content/data-analysis.html</loc>
-    <lastmod>2026-03-26T18:14:50.804Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/reporting.html</loc>
+    <lastmod>2026-03-27T19:46:05.797Z</lastmod>
   </url>
 </urlset>
