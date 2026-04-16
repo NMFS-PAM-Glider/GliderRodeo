@@ -1,5 +1,210 @@
 [
   {
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "manuscript/ReadMe.html",
+    "href": "manuscript/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "supplement/ReadMe.html",
+    "href": "supplement/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html",
+    "href": "supplement/QUICK_REFERENCE.html",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
+    "href": "supplement/QUICK_REFERENCE.html#need-help",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html",
+    "href": "content/data-collection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#partners",
+    "href": "content/data-collection.html#partners",
+    "title": "Data Collection",
+    "section": "",
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#trackline-planning",
+    "href": "content/data-collection.html#trackline-planning",
+    "title": "Data Collection",
+    "section": "Trackline Planning",
+    "text": "Trackline Planning\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#communications",
+    "href": "content/data-collection.html#communications",
+    "title": "Data Collection",
+    "section": "Communications",
+    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#data-offload",
+    "href": "content/data-collection.html#data-offload",
+    "title": "Data Collection",
+    "section": "Data Offload",
+    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#field-reports",
+    "href": "content/data-collection.html#field-reports",
+    "title": "Data Collection",
+    "section": "Field Reports",
+    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
     "objectID": "content/overview.html",
     "href": "content/overview.html",
     "title": "Overview",
@@ -50,6 +255,13 @@
     ]
   },
   {
+    "objectID": "figs/ReadMe.html",
+    "href": "figs/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
     "objectID": "content/pre-processing.html",
     "href": "content/pre-processing.html",
     "title": "Pre-Processing",
@@ -64,7 +276,7 @@
     "href": "content/pre-processing.html#data-transfer",
     "title": "Pre-Processing",
     "section": "Data Transfer",
-    "text": "Data Transfer\nAfter data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket. Some data will require local file manipulation prior to Data Transfer.",
+    "text": "Data Transfer\nAfter data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Some data will require local file manipulation prior to Data Transfer.",
     "crumbs": [
       "Pre-Processing"
     ]
@@ -140,23 +352,63 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "content/data-analysis.html",
+    "href": "content/data-analysis.html",
+    "title": "Data Analysis",
     "section": "",
-    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
+    "text": "Stay Tuned!",
     "crumbs": [
-      "Home"
+      "Data Analysis"
     ]
   },
   {
-    "objectID": "index.html#research-compendium",
-    "href": "index.html#research-compendium",
-    "title": "Home",
+    "objectID": "content/data-analysis.html#effort",
+    "href": "content/data-analysis.html#effort",
+    "title": "Data Analysis",
     "section": "",
-    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
+    "text": "Stay Tuned!",
     "crumbs": [
-      "Home"
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#glider-performance",
+    "href": "content/data-analysis.html#glider-performance",
+    "title": "Data Analysis",
+    "section": "Glider Performance",
+    "text": "Glider Performance\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#noise",
+    "href": "content/data-analysis.html#noise",
+    "title": "Data Analysis",
+    "section": "Noise",
+    "text": "Noise\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#species",
+    "href": "content/data-analysis.html#species",
+    "title": "Data Analysis",
+    "section": "Species",
+    "text": "Species\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#modeling",
+    "href": "content/data-analysis.html#modeling",
+    "title": "Data Analysis",
+    "section": "Modeling",
+    "text": "Modeling\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
     ]
   },
   {
@@ -249,118 +501,6 @@
     "title": "Integrating Survey System Styles into Your Theme",
     "section": "",
     "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/ReadMe.html",
-    "href": "supplement/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "figs/ReadMe.html",
-    "href": "figs/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "manuscript/ReadMe.html",
-    "href": "manuscript/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html",
-    "href": "supplement/QUICK_REFERENCE.html",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
-    "href": "supplement/QUICK_REFERENCE.html#need-help",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
   },
   {
     "objectID": "supplement/SETUP_GUIDE.html",
@@ -461,163 +601,23 @@
     "text": "This template is open source and free to use for your projects!"
   },
   {
-    "objectID": "content/data-analysis.html",
-    "href": "content/data-analysis.html",
-    "title": "Data Analysis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "Stay Tuned!",
+    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
     "crumbs": [
-      "Data Analysis"
+      "Home"
     ]
   },
   {
-    "objectID": "content/data-analysis.html#effort",
-    "href": "content/data-analysis.html#effort",
-    "title": "Data Analysis",
+    "objectID": "index.html#research-compendium",
+    "href": "index.html#research-compendium",
+    "title": "Home",
     "section": "",
-    "text": "Stay Tuned!",
+    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
     "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#glider-performance",
-    "href": "content/data-analysis.html#glider-performance",
-    "title": "Data Analysis",
-    "section": "Glider Performance",
-    "text": "Glider Performance\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#noise",
-    "href": "content/data-analysis.html#noise",
-    "title": "Data Analysis",
-    "section": "Noise",
-    "text": "Noise\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#species",
-    "href": "content/data-analysis.html#species",
-    "title": "Data Analysis",
-    "section": "Species",
-    "text": "Species\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#modeling",
-    "href": "content/data-analysis.html#modeling",
-    "title": "Data Analysis",
-    "section": "Modeling",
-    "text": "Modeling\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html",
-    "href": "content/data-collection.html",
-    "title": "Data Collection",
-    "section": "",
-    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#partners",
-    "href": "content/data-collection.html#partners",
-    "title": "Data Collection",
-    "section": "",
-    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#trackline-planning",
-    "href": "content/data-collection.html#trackline-planning",
-    "title": "Data Collection",
-    "section": "Trackline Planning",
-    "text": "Trackline Planning\nStay Tuned!",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#communications",
-    "href": "content/data-collection.html#communications",
-    "title": "Data Collection",
-    "section": "Communications",
-    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#data-offload",
-    "href": "content/data-collection.html#data-offload",
-    "title": "Data Collection",
-    "section": "Data Offload",
-    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#field-reports",
-    "href": "content/data-collection.html#field-reports",
-    "title": "Data Collection",
-    "section": "Field Reports",
-    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
-    "crumbs": [
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html#mission-field-reports",
-    "href": "content/reporting.html#mission-field-reports",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
-    "crumbs": [
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
-    "crumbs": [
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report\nStay Tuned!",
-    "crumbs": [
-      "Reporting"
+      "Home"
     ]
   }
 ]
