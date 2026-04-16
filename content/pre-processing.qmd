@@ -7,7 +7,7 @@ All pre-processing methods are PAM system specific. Detailed methods are documen
 
 ## Data Transfer
 
-After data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket. Some data will require local file manipulation prior to Data Transfer.
+After data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Some data will require local file manipulation prior to Data Transfer.
 
 ## File Manipulation
 
