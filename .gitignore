@@ -9,3 +9,6 @@
 /_site/
 
 **/*.quarto_ipynb
+
+/data/_example-seaexplorer
+/data/TestGlider-Delayed
