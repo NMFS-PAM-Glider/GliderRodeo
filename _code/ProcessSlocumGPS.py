@@ -7,6 +7,8 @@ import dbdreader
 import numpy as np
 from datetime import datetime, timezone
 import csv
+import pandas as pd
+import plotly.express as px
 
 # %% Create Functions
 ## function to extract surface gps points from dcd files
@@ -92,20 +94,17 @@ def export_to_csv(data, output_filename):
 # %% EXAMPLE
 # set up directories
 cache_files = r'C:\Users\kourtney.burger\Documents\GitHub\standard-glider-files\Cache'
-dbd_files = r'C:\Users\kourtney.burger\Desktop\Test_dbd_data\unit_1024-20260309\*.dcd'
+dbd_files = r'C:\Users\kourtney.burger\Documents\GitHub\GliderRodeo\data\slocumData-delayed\risso-20260128\*.dcd'
 
 # run functions
 gps_data = extract_surfac_gps_from_dbd(dbd_files, cache_files)
-export_to_csv(gps_data, r'C:\Users\kourtney.burger\Desktop\Test_dbd_data\unit_1024-20260309/DeploymentID_GPS_Surface.csv')
+export_to_csv(gps_data, r'C:\Users\kourtney.burger\Documents\GitHub\GliderRodeo\data\slocumData-delayed\risso-20260128\risso-20260128_GPS_Surface.csv')
 
 drloc_depth_data = extract_drloc_and_depth_from_dbd(dbd_files, cache_files)
-export_to_csv(drloc_depth_data, r'C:\Users\kourtney.burger\Desktop\Test_dbd_data\unit_1024-20260309/DeploymentID_GPS_DeadReckoned.csv')
+export_to_csv(drloc_depth_data, r'C:\Users\kourtney.burger\Documents\GitHub\GliderRodeo\data\slocumData-delayed\risso-20260128/risso-20260128_GPS_DeadReckoned.csv')
 
 
 # %% quick data check for surface gps
-import pandas as pd
-import plotly.express as px
-
 df = pd.DataFrame(gps_data)
 
 fig = px.scatter_mapbox(df, lat="lat", lon="lon", hover_data=["timestamp"], zoom=9)

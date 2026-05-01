@@ -11,5 +11,4 @@
 **/*.quarto_ipynb
 
 /data/_example-seaexplorer
-/data/TestGlider-delayed
-
+/data/slocumData-delayed
