@@ -375,7 +375,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="featured" class="level3 media-sidebar">
 <h3 class="anchored" data-anchor-id="featured">Featured</h3>
 <div class="media-card">
-<p><img src="content/images/media/glider-challenge-2026.JPG" class="img-fluid"></p>
+<p><img src="content/images/media/glider-challenge-2026.jpg" class="img-fluid"></p>
 <p><a href="https://www.fisheries.noaa.gov/science-blog/sound-bytes-synchronous-swimming-robots-behind-glider-challenge"> <strong>Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider Challenge</strong><br>The exciting work of flying robots underwater takes science, teamwork, and flexibility</a></p>
 </div>
 <div class="media-card">
@@ -500,6 +500,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
