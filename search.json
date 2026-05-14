@@ -7,6 +7,146 @@
     "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
+    "objectID": "content/hardware.html",
+    "href": "content/hardware.html",
+    "title": "Hardware",
+    "section": "",
+    "text": "A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).\n\n\n\n\n\n\n\n\n\n\nNOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.\n\n\n\n\nGlider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:\n\n\n\n\n\n\n\n\n\n\nWISPR (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.\nWISPR3 resources can be found here.\nAdditional resources installing and operating the WISPR system on Seagliders can be found at the PIFSC Glider Lab WISPR page.\n\n\n\n\n\n\n\n\n\nThe Digital MONitor (DMON) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with Seagliders. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.\n\n\n\n\n\n\n\n\n\nThe Auris acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.\n\n\n\n\n\n\n\n\n\nJasco’s OceanObserver can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.\n\n\nStay Tuned!",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#gliders",
+    "href": "content/hardware.html#gliders",
+    "title": "Hardware",
+    "section": "",
+    "text": "NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#acoustic-sensors",
+    "href": "content/hardware.html#acoustic-sensors",
+    "title": "Hardware",
+    "section": "",
+    "text": "Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#oceo-sensors",
+    "href": "content/hardware.html#oceo-sensors",
+    "title": "Hardware",
+    "section": "",
+    "text": "Stay Tuned!",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html",
+    "href": "content/data-analysis.html",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "Stay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#effort",
+    "href": "content/data-analysis.html#effort",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "Stay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#glider-performance",
+    "href": "content/data-analysis.html#glider-performance",
+    "title": "Data Analysis",
+    "section": "Glider Performance",
+    "text": "Glider Performance\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#noise",
+    "href": "content/data-analysis.html#noise",
+    "title": "Data Analysis",
+    "section": "Noise",
+    "text": "Noise\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#species",
+    "href": "content/data-analysis.html#species",
+    "title": "Data Analysis",
+    "section": "Species",
+    "text": "Species\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/data-analysis.html#modeling",
+    "href": "content/data-analysis.html#modeling",
+    "title": "Data Analysis",
+    "section": "Modeling",
+    "text": "Modeling\nStay Tuned!",
+    "crumbs": [
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
     "objectID": "manuscript/ReadMe.html",
     "href": "manuscript/ReadMe.html",
     "title": "NOAA quarto simple",
@@ -14,11 +154,210 @@
     "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "NOAA Fisheries PAM-Glider Rodeo 2026\nPassive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.\n\nInformation provided here is ongoing, and is frequently updated.\n\n\nFeatured\n\n\n Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider ChallengeThe exciting work of flying robots underwater takes science, teamwork, and flexibility\n\n\n\n Sound Bytes: Meet the Pilots of the Underwater Glider ChallengeA conversation with the NOAA pilots guiding gliders to capture the sounds of our ocean\n\n\n\n NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘iNOAA Fisheries is leading a major effort to evaluate how next-generation ocean gliders can transform ocean monitoring and marine mammal conservation, while also benefitting U.S. fishermen and ocean industries\n\n\n\n Sound Bytes Blog: It’s a boat, it’s a plane, it’s a passive acoustic ocean glider! Selene Fregosi (PIFSC) explains how underwater gliders help us listen for whales! \n\n\n\n Ocean Gliders Listen for Whales off Oregon in Test of New Ways to Count Them Passive acoustic monitoring by ‘gliders’ may better detect some species",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html",
+    "href": "supplement/SCSS_INTEGRATION.html",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
+    "href": "supplement/SCSS_INTEGRATION.html#overview",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
+    "href": "supplement/SCSS_INTEGRATION.html#customization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
+    "href": "supplement/SCSS_INTEGRATION.html#verification",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
+    "href": "supplement/SCSS_INTEGRATION.html#need-help",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
     "objectID": "supplement/ReadMe.html",
     "href": "supplement/ReadMe.html",
     "title": "NOAA quarto simple",
     "section": "",
     "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html",
+    "href": "supplement/SETUP_GUIDE.html",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "This system allows users to click on shapes in a workflow diagram and fill out surveys about each component. All responses are stored locally and can be downloaded as CSV files for version control in GitHub.\n\n\n\n✅ Interactive Diagram - Pan, zoom, and click on shapes\n✅ Sliding Survey Panel - Clean interface for data entry\n✅ Password Protected - Simple shared password for editing\n✅ Pre-filled Forms - Editing shows previous responses\n✅ Complete History - All submissions are logged with timestamps\n✅ CSV Export - Download data for GitHub commits\n✅ Works Out of the Box - Minimal configuration needed\n\n\n\n\n\n\n\nCopy these files to your project:\n\nworkflow-survey-system.qmd\nadd_survey_links.R (optional, for existing diagrams)\n\nPlace your SVG diagram in the output/ folder\n\n\n\n\nOpen workflow-survey-system.qmd and edit the R setup chunk:\n# ============================================\n# CONFIGURATION - EDIT THESE VALUES\n# ============================================\nSURVEY_PASSWORD &lt;- \"workflow2024\"  # Change this to your desired password\nDIAGRAM_FILE &lt;- \"OSworkflow.svg\"   # Your SVG diagram filename\nChange: - SURVEY_PASSWORD - Set your own password - DIAGRAM_FILE - Use your SVG filename\n\n\n\nYou have two options:\n\n\n\nOpen your diagram at https://app.diagrams.net/\nSelect a shape\nRight-click → Edit Link (or Alt+Shift+L)\nEnter link format: #survey:SHAPE_ID|SHAPE_TEXT\n\nExample: #survey:data_collection|Data Collection\nSHAPE_ID = Unique identifier (no spaces)\nSHAPE_TEXT = Display name for the shape\n\nClick Apply\nRepeat for all shapes\nFile → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n\nExport your diagram from diagrams.net to SVG (without links)\nSave it to output/ folder\nIn R Console:\n\nsource(\"add_survey_links.R\")\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\nThis automatically adds survey links to all shapes!\n\n\n\n\nIn workflow-survey-system.qmd, find the survey form section and edit questions:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"question1\"&gt;Question 1: YOUR QUESTION HERE&lt;/label&gt;\n  &lt;select id=\"question1\" required&gt;\n    &lt;option value=\"\"&gt;-- Select --&lt;/option&gt;\n    &lt;option value=\"Option1\"&gt;Option 1&lt;/option&gt;\n    &lt;option value=\"Option2\"&gt;Option 2&lt;/option&gt;\n    &lt;!-- Add more options --&gt;\n  &lt;/select&gt;\n&lt;/div&gt;\nTo add a question: Copy a &lt;div class=\"form-group\"&gt; block and: - Change question1 to question6, question7, etc. - Update the label text - Update the options\nDon’t forget to also update: - The JavaScript saveResponse() function to include new questions - The CSV headers in downloadCSV() function\n\n\n\n\nIn RStudio, open workflow-survey-system.qmd\nClick Render (or use quarto preview)\nClick on a shape in your diagram\nFill out the survey\nEnter password\nSubmit\nDownload CSV and commit to GitHub\n\n\n\n\n\n\n\n\n\nView Diagram - Navigate to the page with your workflow\nClick a Shape - Survey panel slides out from the right\nReview Previous Entry - If you’ve submitted before, see your last response\nEdit/Update - Form is pre-filled, make changes as needed\nSubmit - Enter password and submit\nDownload Data - Scroll to bottom, click “Download All Responses (CSV)”\nCommit to GitHub - Save the CSV file and push to your repo\n\n\n\n\nWhen users first clone your template:\n\nThey get a working survey system out of the box\nThey only need to:\n\nChange the password in the config\nAdd their own diagram\nOptionally customize questions\n\n\n\n\n\n\n\nyour-project/\n├── workflow-survey-system.qmd    # Main Quarto document\n├── add_survey_links.R            # Helper function (optional)\n├── output/\n│   └── your_diagram.svg          # Your workflow diagram\n├── _site/                        # Rendered output (auto-generated)\n│   └── workflow-survey-system.html\n└── data/                         # Store downloaded CSVs here\n    └── workflow_responses_YYYY-MM-DD.csv\n\n\n\n\nLinks in your SVG should follow this format:\n#survey:SHAPE_ID|SHAPE_TEXT\nExamples:\n\n#survey:step1|Data Collection\n#survey:analysis_phase|Analysis Phase\n#survey:qa_review|QA Review\n\nRules: - SHAPE_ID must be unique for each shape - No spaces in SHAPE_ID (use underscores) - SHAPE_TEXT can have spaces and special characters - Separate ID and text with | (pipe character)\n\n\n\n\n\n\n\nLocalStorage: Responses are saved in your browser’s localStorage\nPer User: Each person who opens the page on their computer has their own data\nPersistent: Data stays even after closing the browser\nExportable: Download as CSV anytime\n\n\n\n\ntimestamp,username,shape_id,shape_text,question1,question2,question3,question4,question5\n2024-02-02T10:30:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"High\",\"No Blockers\",\"Adequate\",\"On Track\"\n2024-02-02T14:15:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"Medium\",\"No Blockers\",\"Adequate\",\"On Track\"\n\n\n\n\nUser fills out surveys over time\nPeriodically downloads CSV\nSaves CSV to data/ folder in repo\nCommits and pushes to GitHub\nCan analyze responses with R scripts\n\n\n\n\n\n\n\n\n\nAdd questions in the HTML form section\nUpdate JavaScript in the saveResponse() function:\n\nconst response = {\n  timestamp: new Date().toISOString(),\n  username: document.getElementById('username').value,\n  shape_id: currentShapeId,\n  shape_text: currentShapeText,\n  question1: document.getElementById('question1').value,\n  question2: document.getElementById('question2').value,\n  question3: document.getElementById('question3').value,\n  question4: document.getElementById('question4').value,\n  question5: document.getElementById('question5').value,\n  question6: document.getElementById('question6').value  // ADD NEW QUESTIONS\n};\n\nUpdate CSV download in the downloadCSV() function:\n\nconst headers = ['timestamp', 'username', 'shape_id', 'shape_text', \n                 'question1', 'question2', 'question3', 'question4', \n                 'question5', 'question6'];  // ADD NEW HEADERS\n\n\n\nThe system currently supports select dropdowns. To add other types:\nText Input:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"notes\"&gt;Additional Notes:&lt;/label&gt;\n  &lt;input type=\"text\" id=\"notes\" placeholder=\"Enter notes\"&gt;\n&lt;/div&gt;\nText Area:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"comments\"&gt;Comments:&lt;/label&gt;\n  &lt;textarea id=\"comments\" rows=\"4\"&gt;&lt;/textarea&gt;\n&lt;/div&gt;\nRadio Buttons:\n&lt;div class=\"form-group\"&gt;\n  &lt;label&gt;Status:&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"yes\"&gt; Yes&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"no\"&gt; No&lt;/label&gt;\n&lt;/div&gt;\n\n\n\nEdit the R setup chunk:\nSURVEY_PASSWORD &lt;- \"your_new_password_here\"\n\n\n\nReplace the SVG file and update:\nDIAGRAM_FILE &lt;- \"new_diagram.svg\"\n\n\n\n\n\n\n\n\nCheck link format: Must be #survey:ID|TEXT\nCheck SVG export: “Links” option must be checked\nCheck browser console: Press F12, look for errors\n\n\n\n\n\nCheck you haven’t changed the password in the qmd but not re-rendered\nPassword is case-sensitive\nMake sure you’re using the same password in config and when submitting\n\n\n\n\n\nThis is normal if it’s the first time clicking that shape\nCheck browser localStorage (F12 → Application → Local Storage)\nMake sure you submitted with the correct password\n\n\n\n\n\nCheck if you have responses (look at count at bottom)\nTry a different browser\nCheck browser’s download settings\n\n\n\n\n\nLocalStorage should persist, but:\nMake sure you’re using the same browser\nCheck if browser is in private/incognito mode (data won’t persist)\nSolution: Download CSV regularly!\n\n\n\n\n\n\n\n\nOnce you’ve downloaded CSVs, you can analyze them:\nlibrary(tidyverse)\n\n# Read all response files\nresponses &lt;- list.files(\"data\", pattern = \"workflow_responses.*\\\\.csv\", \n                       full.names = TRUE) %&gt;%\n  map_df(read_csv)\n\n# View summary by shape\nresponses %&gt;%\n  group_by(shape_id, shape_text) %&gt;%\n  summarize(\n    n_responses = n(),\n    latest_status = last(question1),\n    .groups = \"drop\"\n  )\n\n# Timeline of updates\nresponses %&gt;%\n  mutate(date = as.Date(timestamp)) %&gt;%\n  count(date, shape_id) %&gt;%\n  ggplot(aes(date, n, color = shape_id)) +\n  geom_line() +\n  labs(title = \"Survey Responses Over Time\")\n\n\n\nTo have multiple diagrams with surveys:\n\nCreate separate .qmd files for each diagram\nEach can have its own password and questions\nResponses are stored separately per page (based on URL)\n\n\n\n\nSince localStorage is per-browser:\n\nTeam members download their CSVs regularly\nCommit to a shared GitHub repo\nMerge CSV files in R for team analysis\n\n\n\n\n\n\nQ: Can multiple people edit the same shape?\nA: Yes! Each person’s submissions are logged separately with timestamps and usernames.\nQ: What if I forget the password?\nA: Change it in the R config chunk and re-render the page.\nQ: Can I delete a response?\nA: Not directly in the UI, but you can download the CSV, remove the row, and that’s your new record.\nQ: Is this secure?\nA: This is designed for internal team use with a shared password. It’s not meant for sensitive data requiring encryption.\nQ: Can I use this without GitHub?\nA: Yes! The survey system works locally. You just need to manually share CSV files.\nQ: How many responses can it handle?\nA: LocalStorage typically allows 5-10MB. At ~200 bytes per response, that’s 25,000-50,000 responses. More than enough!\n\n\n\n\nFor issues or questions: 1. Check this documentation 2. Review the code comments 3. Open an issue on GitHub 4. Contact the template creator\n\n\n\n\nThis template is open source and free to use for your projects!"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#overview",
+    "href": "supplement/SETUP_GUIDE.html#overview",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "This system allows users to click on shapes in a workflow diagram and fill out surveys about each component. All responses are stored locally and can be downloaded as CSV files for version control in GitHub."
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#features",
+    "href": "supplement/SETUP_GUIDE.html#features",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "✅ Interactive Diagram - Pan, zoom, and click on shapes\n✅ Sliding Survey Panel - Clean interface for data entry\n✅ Password Protected - Simple shared password for editing\n✅ Pre-filled Forms - Editing shows previous responses\n✅ Complete History - All submissions are logged with timestamps\n✅ CSV Export - Download data for GitHub commits\n✅ Works Out of the Box - Minimal configuration needed"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#quick-start-for-template-users",
+    "href": "supplement/SETUP_GUIDE.html#quick-start-for-template-users",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Copy these files to your project:\n\nworkflow-survey-system.qmd\nadd_survey_links.R (optional, for existing diagrams)\n\nPlace your SVG diagram in the output/ folder\n\n\n\n\nOpen workflow-survey-system.qmd and edit the R setup chunk:\n# ============================================\n# CONFIGURATION - EDIT THESE VALUES\n# ============================================\nSURVEY_PASSWORD &lt;- \"workflow2024\"  # Change this to your desired password\nDIAGRAM_FILE &lt;- \"OSworkflow.svg\"   # Your SVG diagram filename\nChange: - SURVEY_PASSWORD - Set your own password - DIAGRAM_FILE - Use your SVG filename\n\n\n\nYou have two options:\n\n\n\nOpen your diagram at https://app.diagrams.net/\nSelect a shape\nRight-click → Edit Link (or Alt+Shift+L)\nEnter link format: #survey:SHAPE_ID|SHAPE_TEXT\n\nExample: #survey:data_collection|Data Collection\nSHAPE_ID = Unique identifier (no spaces)\nSHAPE_TEXT = Display name for the shape\n\nClick Apply\nRepeat for all shapes\nFile → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n\nExport your diagram from diagrams.net to SVG (without links)\nSave it to output/ folder\nIn R Console:\n\nsource(\"add_survey_links.R\")\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\nThis automatically adds survey links to all shapes!\n\n\n\n\nIn workflow-survey-system.qmd, find the survey form section and edit questions:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"question1\"&gt;Question 1: YOUR QUESTION HERE&lt;/label&gt;\n  &lt;select id=\"question1\" required&gt;\n    &lt;option value=\"\"&gt;-- Select --&lt;/option&gt;\n    &lt;option value=\"Option1\"&gt;Option 1&lt;/option&gt;\n    &lt;option value=\"Option2\"&gt;Option 2&lt;/option&gt;\n    &lt;!-- Add more options --&gt;\n  &lt;/select&gt;\n&lt;/div&gt;\nTo add a question: Copy a &lt;div class=\"form-group\"&gt; block and: - Change question1 to question6, question7, etc. - Update the label text - Update the options\nDon’t forget to also update: - The JavaScript saveResponse() function to include new questions - The CSV headers in downloadCSV() function\n\n\n\n\nIn RStudio, open workflow-survey-system.qmd\nClick Render (or use quarto preview)\nClick on a shape in your diagram\nFill out the survey\nEnter password\nSubmit\nDownload CSV and commit to GitHub"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#user-workflow",
+    "href": "supplement/SETUP_GUIDE.html#user-workflow",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "View Diagram - Navigate to the page with your workflow\nClick a Shape - Survey panel slides out from the right\nReview Previous Entry - If you’ve submitted before, see your last response\nEdit/Update - Form is pre-filled, make changes as needed\nSubmit - Enter password and submit\nDownload Data - Scroll to bottom, click “Download All Responses (CSV)”\nCommit to GitHub - Save the CSV file and push to your repo\n\n\n\n\nWhen users first clone your template:\n\nThey get a working survey system out of the box\nThey only need to:\n\nChange the password in the config\nAdd their own diagram\nOptionally customize questions"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#file-structure",
+    "href": "supplement/SETUP_GUIDE.html#file-structure",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "your-project/\n├── workflow-survey-system.qmd    # Main Quarto document\n├── add_survey_links.R            # Helper function (optional)\n├── output/\n│   └── your_diagram.svg          # Your workflow diagram\n├── _site/                        # Rendered output (auto-generated)\n│   └── workflow-survey-system.html\n└── data/                         # Store downloaded CSVs here\n    └── workflow_responses_YYYY-MM-DD.csv"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#survey-link-format",
+    "href": "supplement/SETUP_GUIDE.html#survey-link-format",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Links in your SVG should follow this format:\n#survey:SHAPE_ID|SHAPE_TEXT\nExamples:\n\n#survey:step1|Data Collection\n#survey:analysis_phase|Analysis Phase\n#survey:qa_review|QA Review\n\nRules: - SHAPE_ID must be unique for each shape - No spaces in SHAPE_ID (use underscores) - SHAPE_TEXT can have spaces and special characters - Separate ID and text with | (pipe character)"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#data-storage",
+    "href": "supplement/SETUP_GUIDE.html#data-storage",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "LocalStorage: Responses are saved in your browser’s localStorage\nPer User: Each person who opens the page on their computer has their own data\nPersistent: Data stays even after closing the browser\nExportable: Download as CSV anytime\n\n\n\n\ntimestamp,username,shape_id,shape_text,question1,question2,question3,question4,question5\n2024-02-02T10:30:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"High\",\"No Blockers\",\"Adequate\",\"On Track\"\n2024-02-02T14:15:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"Medium\",\"No Blockers\",\"Adequate\",\"On Track\"\n\n\n\n\nUser fills out surveys over time\nPeriodically downloads CSV\nSaves CSV to data/ folder in repo\nCommits and pushes to GitHub\nCan analyze responses with R scripts"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#customization-guide",
+    "href": "supplement/SETUP_GUIDE.html#customization-guide",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Add questions in the HTML form section\nUpdate JavaScript in the saveResponse() function:\n\nconst response = {\n  timestamp: new Date().toISOString(),\n  username: document.getElementById('username').value,\n  shape_id: currentShapeId,\n  shape_text: currentShapeText,\n  question1: document.getElementById('question1').value,\n  question2: document.getElementById('question2').value,\n  question3: document.getElementById('question3').value,\n  question4: document.getElementById('question4').value,\n  question5: document.getElementById('question5').value,\n  question6: document.getElementById('question6').value  // ADD NEW QUESTIONS\n};\n\nUpdate CSV download in the downloadCSV() function:\n\nconst headers = ['timestamp', 'username', 'shape_id', 'shape_text', \n                 'question1', 'question2', 'question3', 'question4', \n                 'question5', 'question6'];  // ADD NEW HEADERS\n\n\n\nThe system currently supports select dropdowns. To add other types:\nText Input:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"notes\"&gt;Additional Notes:&lt;/label&gt;\n  &lt;input type=\"text\" id=\"notes\" placeholder=\"Enter notes\"&gt;\n&lt;/div&gt;\nText Area:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"comments\"&gt;Comments:&lt;/label&gt;\n  &lt;textarea id=\"comments\" rows=\"4\"&gt;&lt;/textarea&gt;\n&lt;/div&gt;\nRadio Buttons:\n&lt;div class=\"form-group\"&gt;\n  &lt;label&gt;Status:&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"yes\"&gt; Yes&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"no\"&gt; No&lt;/label&gt;\n&lt;/div&gt;\n\n\n\nEdit the R setup chunk:\nSURVEY_PASSWORD &lt;- \"your_new_password_here\"\n\n\n\nReplace the SVG file and update:\nDIAGRAM_FILE &lt;- \"new_diagram.svg\""
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#troubleshooting",
+    "href": "supplement/SETUP_GUIDE.html#troubleshooting",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Check link format: Must be #survey:ID|TEXT\nCheck SVG export: “Links” option must be checked\nCheck browser console: Press F12, look for errors\n\n\n\n\n\nCheck you haven’t changed the password in the qmd but not re-rendered\nPassword is case-sensitive\nMake sure you’re using the same password in config and when submitting\n\n\n\n\n\nThis is normal if it’s the first time clicking that shape\nCheck browser localStorage (F12 → Application → Local Storage)\nMake sure you submitted with the correct password\n\n\n\n\n\nCheck if you have responses (look at count at bottom)\nTry a different browser\nCheck browser’s download settings\n\n\n\n\n\nLocalStorage should persist, but:\nMake sure you’re using the same browser\nCheck if browser is in private/incognito mode (data won’t persist)\nSolution: Download CSV regularly!"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#advanced-features",
+    "href": "supplement/SETUP_GUIDE.html#advanced-features",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Once you’ve downloaded CSVs, you can analyze them:\nlibrary(tidyverse)\n\n# Read all response files\nresponses &lt;- list.files(\"data\", pattern = \"workflow_responses.*\\\\.csv\", \n                       full.names = TRUE) %&gt;%\n  map_df(read_csv)\n\n# View summary by shape\nresponses %&gt;%\n  group_by(shape_id, shape_text) %&gt;%\n  summarize(\n    n_responses = n(),\n    latest_status = last(question1),\n    .groups = \"drop\"\n  )\n\n# Timeline of updates\nresponses %&gt;%\n  mutate(date = as.Date(timestamp)) %&gt;%\n  count(date, shape_id) %&gt;%\n  ggplot(aes(date, n, color = shape_id)) +\n  geom_line() +\n  labs(title = \"Survey Responses Over Time\")\n\n\n\nTo have multiple diagrams with surveys:\n\nCreate separate .qmd files for each diagram\nEach can have its own password and questions\nResponses are stored separately per page (based on URL)\n\n\n\n\nSince localStorage is per-browser:\n\nTeam members download their CSVs regularly\nCommit to a shared GitHub repo\nMerge CSV files in R for team analysis"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#faq",
+    "href": "supplement/SETUP_GUIDE.html#faq",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "Q: Can multiple people edit the same shape?\nA: Yes! Each person’s submissions are logged separately with timestamps and usernames.\nQ: What if I forget the password?\nA: Change it in the R config chunk and re-render the page.\nQ: Can I delete a response?\nA: Not directly in the UI, but you can download the CSV, remove the row, and that’s your new record.\nQ: Is this secure?\nA: This is designed for internal team use with a shared password. It’s not meant for sensitive data requiring encryption.\nQ: Can I use this without GitHub?\nA: Yes! The survey system works locally. You just need to manually share CSV files.\nQ: How many responses can it handle?\nA: LocalStorage typically allows 5-10MB. At ~200 bytes per response, that’s 25,000-50,000 responses. More than enough!"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#support",
+    "href": "supplement/SETUP_GUIDE.html#support",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "For issues or questions: 1. Check this documentation 2. Review the code comments 3. Open an issue on GitHub 4. Contact the template creator"
+  },
+  {
+    "objectID": "supplement/SETUP_GUIDE.html#license",
+    "href": "supplement/SETUP_GUIDE.html#license",
+    "title": "Interactive Workflow Survey System - Setup Guide",
+    "section": "",
+    "text": "This template is open source and free to use for your projects!"
   },
   {
     "objectID": "supplement/QUICK_REFERENCE.html",
@@ -105,43 +444,60 @@
     "text": "See SETUP_GUIDE.md for comprehensive documentation!"
   },
   {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Reporting",
+    "objectID": "figs/ReadMe.html",
+    "href": "figs/ReadMe.html",
+    "title": "NOAA quarto simple",
     "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
-    "crumbs": [
-      "Reporting"
-    ]
+    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
-    "objectID": "content/reporting.html#mission-field-reports",
-    "href": "content/reporting.html#mission-field-reports",
-    "title": "Reporting",
+    "objectID": "content/pre-processing.html",
+    "href": "content/pre-processing.html",
+    "title": "Pre-Processing",
     "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "text": "All pre-processing methods are PAM system specific. Detailed methods are documented in our lab manual here. There may be additional methods that need to be added for partner PAM systems (Alseamar Auris and TWR w/JASCO system). The following steps are a general overview of what needs to be completed for PAM data from each deployment.",
     "crumbs": [
-      "Reporting"
+      "Pre-Processing"
     ]
   },
   {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "objectID": "content/pre-processing.html#data-transfer",
+    "href": "content/pre-processing.html#data-transfer",
+    "title": "Pre-Processing",
+    "section": "Data Transfer",
+    "text": "Data Transfer\nAfter data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Some data will require local file manipulation prior to Data Transfer.",
     "crumbs": [
-      "Reporting"
+      "Pre-Processing"
     ]
   },
   {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report\nStay Tuned!",
+    "objectID": "content/pre-processing.html#file-manipulation",
+    "href": "content/pre-processing.html#file-manipulation",
+    "title": "Pre-Processing",
+    "section": "File Manipulation",
+    "text": "File Manipulation\n\nDecompress Audio files\nRename audio files to standardized convention\nDecimate data",
     "crumbs": [
-      "Reporting"
+      "Pre-Processing"
+    ]
+  },
+  {
+    "objectID": "content/pre-processing.html#ltsa",
+    "href": "content/pre-processing.html#ltsa",
+    "title": "Pre-Processing",
+    "section": "LTSA",
+    "text": "LTSA\n\nRun LTSAs and save to appropriate folder w/ appropriate naming convention\nLTSA Settings: 200 kHz - 5 sec 100 Hz, 10 kHz - 2 sec 10 hz, 1 kHz - 1 sec 1 Hz",
+    "crumbs": [
+      "Pre-Processing"
+    ]
+  },
+  {
+    "objectID": "content/pre-processing.html#qaqc",
+    "href": "content/pre-processing.html#qaqc",
+    "title": "Pre-Processing",
+    "section": "QAQC",
+    "text": "QAQC\n\nRun relevant QAQC and create a report for each glider. There will almost definitely be multiple lines of QAQC (for each data stream, etc). Identify each of these separate QAQC methods (in detail, including code) as well as the POC\nNoise assessment to identify periods of poor data quality (and reason for noise if known) - SWFSC has done manual noise assessments in the past by scanning LTSAs, this might be trickier with glider noises \nIdentify these methods, provide detailed methods and any relevant script.",
+    "crumbs": [
+      "Pre-Processing"
     ]
   },
   {
@@ -255,369 +611,33 @@
     ]
   },
   {
-    "objectID": "figs/ReadMe.html",
-    "href": "figs/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "content/pre-processing.html",
-    "href": "content/pre-processing.html",
-    "title": "Pre-Processing",
-    "section": "",
-    "text": "All pre-processing methods are PAM system specific. Detailed methods are documented in our lab manual here. There may be additional methods that need to be added for partner PAM systems (Alseamar Auris and TWR w/JASCO system). The following steps are a general overview of what needs to be completed for PAM data from each deployment.",
+    "objectID": "content/hackathon.html#objective",
+    "href": "content/hackathon.html#objective",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Objective",
+    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a standardized framework for future data integration. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
     "crumbs": [
-      "Pre-Processing"
+      "Hackathon"
     ]
   },
   {
-    "objectID": "content/pre-processing.html#data-transfer",
-    "href": "content/pre-processing.html#data-transfer",
-    "title": "Pre-Processing",
-    "section": "Data Transfer",
-    "text": "Data Transfer\nAfter data is offloaded, data will be transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Some data will require local file manipulation prior to Data Transfer.",
+    "objectID": "content/hackathon.html#goals",
+    "href": "content/hackathon.html#goals",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Goals",
+    "text": "Goals\nWe have a suite of initial goals for this community hackathon:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
     "crumbs": [
-      "Pre-Processing"
+      "Hackathon"
     ]
   },
   {
-    "objectID": "content/pre-processing.html#file-manipulation",
-    "href": "content/pre-processing.html#file-manipulation",
-    "title": "Pre-Processing",
-    "section": "File Manipulation",
-    "text": "File Manipulation\n\nDecompress Audio files\nRename audio files to standardized convention\nDecimate data",
+    "objectID": "content/hackathon.html#how-to-participate",
+    "href": "content/hackathon.html#how-to-participate",
+    "title": "Glider Rodeo Hackathon",
+    "section": "How to Participate",
+    "text": "How to Participate\nDo you have ideas, recommendations or advice for this event? Are you interested in participating?\nPlease fill out this survey, and we’ll reach out later in the summer.",
     "crumbs": [
-      "Pre-Processing"
-    ]
-  },
-  {
-    "objectID": "content/pre-processing.html#ltsa",
-    "href": "content/pre-processing.html#ltsa",
-    "title": "Pre-Processing",
-    "section": "LTSA",
-    "text": "LTSA\n\nRun LTSAs and save to appropriate folder w/ appropriate naming convention\nLTSA Settings: 200 kHz - 5 sec 100 Hz, 10 kHz - 2 sec 10 hz, 1 kHz - 1 sec 1 Hz",
-    "crumbs": [
-      "Pre-Processing"
-    ]
-  },
-  {
-    "objectID": "content/pre-processing.html#qaqc",
-    "href": "content/pre-processing.html#qaqc",
-    "title": "Pre-Processing",
-    "section": "QAQC",
-    "text": "QAQC\n\nRun relevant QAQC and create a report for each glider. There will almost definitely be multiple lines of QAQC (for each data stream, etc). Identify each of these separate QAQC methods (in detail, including code) as well as the POC\nNoise assessment to identify periods of poor data quality (and reason for noise if known) - SWFSC has done manual noise assessments in the past by scanning LTSAs, this might be trickier with glider noises \nIdentify these methods, provide detailed methods and any relevant script.",
-    "crumbs": [
-      "Pre-Processing"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html",
-    "href": "content/hardware.html",
-    "title": "Hardware",
-    "section": "",
-    "text": "A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).\n\n\n\n\n\n\n\n\n\n\nNOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.\n\n\n\n\nGlider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:\n\n\n\n\n\n\n\n\n\n\nWISPR (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.\nWISPR3 resources can be found here.\nAdditional resources installing and operating the WISPR system on Seagliders can be found at the PIFSC Glider Lab WISPR page.\n\n\n\n\n\n\n\n\n\nThe Digital MONitor (DMON) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with Seagliders. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.\n\n\n\n\n\n\n\n\n\nThe Auris acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.\n\n\n\n\n\n\n\n\n\nJasco’s OceanObserver can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.\n\n\nStay Tuned!",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#gliders",
-    "href": "content/hardware.html#gliders",
-    "title": "Hardware",
-    "section": "",
-    "text": "NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#acoustic-sensors",
-    "href": "content/hardware.html#acoustic-sensors",
-    "title": "Hardware",
-    "section": "",
-    "text": "Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#oceo-sensors",
-    "href": "content/hardware.html#oceo-sensors",
-    "title": "Hardware",
-    "section": "",
-    "text": "Stay Tuned!",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html",
-    "href": "content/data-analysis.html",
-    "title": "Data Analysis",
-    "section": "",
-    "text": "Stay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#effort",
-    "href": "content/data-analysis.html#effort",
-    "title": "Data Analysis",
-    "section": "",
-    "text": "Stay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#glider-performance",
-    "href": "content/data-analysis.html#glider-performance",
-    "title": "Data Analysis",
-    "section": "Glider Performance",
-    "text": "Glider Performance\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#noise",
-    "href": "content/data-analysis.html#noise",
-    "title": "Data Analysis",
-    "section": "Noise",
-    "text": "Noise\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#species",
-    "href": "content/data-analysis.html#species",
-    "title": "Data Analysis",
-    "section": "Species",
-    "text": "Species\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html#modeling",
-    "href": "content/data-analysis.html#modeling",
-    "title": "Data Analysis",
-    "section": "Modeling",
-    "text": "Modeling\nStay Tuned!",
-    "crumbs": [
-      "Data Analysis"
-    ]
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html",
-    "href": "supplement/SCSS_INTEGRATION.html",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
-    "href": "supplement/SCSS_INTEGRATION.html#overview",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
-    "href": "supplement/SCSS_INTEGRATION.html#customization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
-    "href": "supplement/SCSS_INTEGRATION.html#verification",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
-    "href": "supplement/SCSS_INTEGRATION.html#need-help",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html",
-    "href": "supplement/SETUP_GUIDE.html",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "This system allows users to click on shapes in a workflow diagram and fill out surveys about each component. All responses are stored locally and can be downloaded as CSV files for version control in GitHub.\n\n\n\n✅ Interactive Diagram - Pan, zoom, and click on shapes\n✅ Sliding Survey Panel - Clean interface for data entry\n✅ Password Protected - Simple shared password for editing\n✅ Pre-filled Forms - Editing shows previous responses\n✅ Complete History - All submissions are logged with timestamps\n✅ CSV Export - Download data for GitHub commits\n✅ Works Out of the Box - Minimal configuration needed\n\n\n\n\n\n\n\nCopy these files to your project:\n\nworkflow-survey-system.qmd\nadd_survey_links.R (optional, for existing diagrams)\n\nPlace your SVG diagram in the output/ folder\n\n\n\n\nOpen workflow-survey-system.qmd and edit the R setup chunk:\n# ============================================\n# CONFIGURATION - EDIT THESE VALUES\n# ============================================\nSURVEY_PASSWORD &lt;- \"workflow2024\"  # Change this to your desired password\nDIAGRAM_FILE &lt;- \"OSworkflow.svg\"   # Your SVG diagram filename\nChange: - SURVEY_PASSWORD - Set your own password - DIAGRAM_FILE - Use your SVG filename\n\n\n\nYou have two options:\n\n\n\nOpen your diagram at https://app.diagrams.net/\nSelect a shape\nRight-click → Edit Link (or Alt+Shift+L)\nEnter link format: #survey:SHAPE_ID|SHAPE_TEXT\n\nExample: #survey:data_collection|Data Collection\nSHAPE_ID = Unique identifier (no spaces)\nSHAPE_TEXT = Display name for the shape\n\nClick Apply\nRepeat for all shapes\nFile → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n\nExport your diagram from diagrams.net to SVG (without links)\nSave it to output/ folder\nIn R Console:\n\nsource(\"add_survey_links.R\")\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\nThis automatically adds survey links to all shapes!\n\n\n\n\nIn workflow-survey-system.qmd, find the survey form section and edit questions:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"question1\"&gt;Question 1: YOUR QUESTION HERE&lt;/label&gt;\n  &lt;select id=\"question1\" required&gt;\n    &lt;option value=\"\"&gt;-- Select --&lt;/option&gt;\n    &lt;option value=\"Option1\"&gt;Option 1&lt;/option&gt;\n    &lt;option value=\"Option2\"&gt;Option 2&lt;/option&gt;\n    &lt;!-- Add more options --&gt;\n  &lt;/select&gt;\n&lt;/div&gt;\nTo add a question: Copy a &lt;div class=\"form-group\"&gt; block and: - Change question1 to question6, question7, etc. - Update the label text - Update the options\nDon’t forget to also update: - The JavaScript saveResponse() function to include new questions - The CSV headers in downloadCSV() function\n\n\n\n\nIn RStudio, open workflow-survey-system.qmd\nClick Render (or use quarto preview)\nClick on a shape in your diagram\nFill out the survey\nEnter password\nSubmit\nDownload CSV and commit to GitHub\n\n\n\n\n\n\n\n\n\nView Diagram - Navigate to the page with your workflow\nClick a Shape - Survey panel slides out from the right\nReview Previous Entry - If you’ve submitted before, see your last response\nEdit/Update - Form is pre-filled, make changes as needed\nSubmit - Enter password and submit\nDownload Data - Scroll to bottom, click “Download All Responses (CSV)”\nCommit to GitHub - Save the CSV file and push to your repo\n\n\n\n\nWhen users first clone your template:\n\nThey get a working survey system out of the box\nThey only need to:\n\nChange the password in the config\nAdd their own diagram\nOptionally customize questions\n\n\n\n\n\n\n\nyour-project/\n├── workflow-survey-system.qmd    # Main Quarto document\n├── add_survey_links.R            # Helper function (optional)\n├── output/\n│   └── your_diagram.svg          # Your workflow diagram\n├── _site/                        # Rendered output (auto-generated)\n│   └── workflow-survey-system.html\n└── data/                         # Store downloaded CSVs here\n    └── workflow_responses_YYYY-MM-DD.csv\n\n\n\n\nLinks in your SVG should follow this format:\n#survey:SHAPE_ID|SHAPE_TEXT\nExamples:\n\n#survey:step1|Data Collection\n#survey:analysis_phase|Analysis Phase\n#survey:qa_review|QA Review\n\nRules: - SHAPE_ID must be unique for each shape - No spaces in SHAPE_ID (use underscores) - SHAPE_TEXT can have spaces and special characters - Separate ID and text with | (pipe character)\n\n\n\n\n\n\n\nLocalStorage: Responses are saved in your browser’s localStorage\nPer User: Each person who opens the page on their computer has their own data\nPersistent: Data stays even after closing the browser\nExportable: Download as CSV anytime\n\n\n\n\ntimestamp,username,shape_id,shape_text,question1,question2,question3,question4,question5\n2024-02-02T10:30:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"High\",\"No Blockers\",\"Adequate\",\"On Track\"\n2024-02-02T14:15:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"Medium\",\"No Blockers\",\"Adequate\",\"On Track\"\n\n\n\n\nUser fills out surveys over time\nPeriodically downloads CSV\nSaves CSV to data/ folder in repo\nCommits and pushes to GitHub\nCan analyze responses with R scripts\n\n\n\n\n\n\n\n\n\nAdd questions in the HTML form section\nUpdate JavaScript in the saveResponse() function:\n\nconst response = {\n  timestamp: new Date().toISOString(),\n  username: document.getElementById('username').value,\n  shape_id: currentShapeId,\n  shape_text: currentShapeText,\n  question1: document.getElementById('question1').value,\n  question2: document.getElementById('question2').value,\n  question3: document.getElementById('question3').value,\n  question4: document.getElementById('question4').value,\n  question5: document.getElementById('question5').value,\n  question6: document.getElementById('question6').value  // ADD NEW QUESTIONS\n};\n\nUpdate CSV download in the downloadCSV() function:\n\nconst headers = ['timestamp', 'username', 'shape_id', 'shape_text', \n                 'question1', 'question2', 'question3', 'question4', \n                 'question5', 'question6'];  // ADD NEW HEADERS\n\n\n\nThe system currently supports select dropdowns. To add other types:\nText Input:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"notes\"&gt;Additional Notes:&lt;/label&gt;\n  &lt;input type=\"text\" id=\"notes\" placeholder=\"Enter notes\"&gt;\n&lt;/div&gt;\nText Area:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"comments\"&gt;Comments:&lt;/label&gt;\n  &lt;textarea id=\"comments\" rows=\"4\"&gt;&lt;/textarea&gt;\n&lt;/div&gt;\nRadio Buttons:\n&lt;div class=\"form-group\"&gt;\n  &lt;label&gt;Status:&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"yes\"&gt; Yes&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"no\"&gt; No&lt;/label&gt;\n&lt;/div&gt;\n\n\n\nEdit the R setup chunk:\nSURVEY_PASSWORD &lt;- \"your_new_password_here\"\n\n\n\nReplace the SVG file and update:\nDIAGRAM_FILE &lt;- \"new_diagram.svg\"\n\n\n\n\n\n\n\n\nCheck link format: Must be #survey:ID|TEXT\nCheck SVG export: “Links” option must be checked\nCheck browser console: Press F12, look for errors\n\n\n\n\n\nCheck you haven’t changed the password in the qmd but not re-rendered\nPassword is case-sensitive\nMake sure you’re using the same password in config and when submitting\n\n\n\n\n\nThis is normal if it’s the first time clicking that shape\nCheck browser localStorage (F12 → Application → Local Storage)\nMake sure you submitted with the correct password\n\n\n\n\n\nCheck if you have responses (look at count at bottom)\nTry a different browser\nCheck browser’s download settings\n\n\n\n\n\nLocalStorage should persist, but:\nMake sure you’re using the same browser\nCheck if browser is in private/incognito mode (data won’t persist)\nSolution: Download CSV regularly!\n\n\n\n\n\n\n\n\nOnce you’ve downloaded CSVs, you can analyze them:\nlibrary(tidyverse)\n\n# Read all response files\nresponses &lt;- list.files(\"data\", pattern = \"workflow_responses.*\\\\.csv\", \n                       full.names = TRUE) %&gt;%\n  map_df(read_csv)\n\n# View summary by shape\nresponses %&gt;%\n  group_by(shape_id, shape_text) %&gt;%\n  summarize(\n    n_responses = n(),\n    latest_status = last(question1),\n    .groups = \"drop\"\n  )\n\n# Timeline of updates\nresponses %&gt;%\n  mutate(date = as.Date(timestamp)) %&gt;%\n  count(date, shape_id) %&gt;%\n  ggplot(aes(date, n, color = shape_id)) +\n  geom_line() +\n  labs(title = \"Survey Responses Over Time\")\n\n\n\nTo have multiple diagrams with surveys:\n\nCreate separate .qmd files for each diagram\nEach can have its own password and questions\nResponses are stored separately per page (based on URL)\n\n\n\n\nSince localStorage is per-browser:\n\nTeam members download their CSVs regularly\nCommit to a shared GitHub repo\nMerge CSV files in R for team analysis\n\n\n\n\n\n\nQ: Can multiple people edit the same shape?\nA: Yes! Each person’s submissions are logged separately with timestamps and usernames.\nQ: What if I forget the password?\nA: Change it in the R config chunk and re-render the page.\nQ: Can I delete a response?\nA: Not directly in the UI, but you can download the CSV, remove the row, and that’s your new record.\nQ: Is this secure?\nA: This is designed for internal team use with a shared password. It’s not meant for sensitive data requiring encryption.\nQ: Can I use this without GitHub?\nA: Yes! The survey system works locally. You just need to manually share CSV files.\nQ: How many responses can it handle?\nA: LocalStorage typically allows 5-10MB. At ~200 bytes per response, that’s 25,000-50,000 responses. More than enough!\n\n\n\n\nFor issues or questions: 1. Check this documentation 2. Review the code comments 3. Open an issue on GitHub 4. Contact the template creator\n\n\n\n\nThis template is open source and free to use for your projects!"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#overview",
-    "href": "supplement/SETUP_GUIDE.html#overview",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "This system allows users to click on shapes in a workflow diagram and fill out surveys about each component. All responses are stored locally and can be downloaded as CSV files for version control in GitHub."
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#features",
-    "href": "supplement/SETUP_GUIDE.html#features",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "✅ Interactive Diagram - Pan, zoom, and click on shapes\n✅ Sliding Survey Panel - Clean interface for data entry\n✅ Password Protected - Simple shared password for editing\n✅ Pre-filled Forms - Editing shows previous responses\n✅ Complete History - All submissions are logged with timestamps\n✅ CSV Export - Download data for GitHub commits\n✅ Works Out of the Box - Minimal configuration needed"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#quick-start-for-template-users",
-    "href": "supplement/SETUP_GUIDE.html#quick-start-for-template-users",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Copy these files to your project:\n\nworkflow-survey-system.qmd\nadd_survey_links.R (optional, for existing diagrams)\n\nPlace your SVG diagram in the output/ folder\n\n\n\n\nOpen workflow-survey-system.qmd and edit the R setup chunk:\n# ============================================\n# CONFIGURATION - EDIT THESE VALUES\n# ============================================\nSURVEY_PASSWORD &lt;- \"workflow2024\"  # Change this to your desired password\nDIAGRAM_FILE &lt;- \"OSworkflow.svg\"   # Your SVG diagram filename\nChange: - SURVEY_PASSWORD - Set your own password - DIAGRAM_FILE - Use your SVG filename\n\n\n\nYou have two options:\n\n\n\nOpen your diagram at https://app.diagrams.net/\nSelect a shape\nRight-click → Edit Link (or Alt+Shift+L)\nEnter link format: #survey:SHAPE_ID|SHAPE_TEXT\n\nExample: #survey:data_collection|Data Collection\nSHAPE_ID = Unique identifier (no spaces)\nSHAPE_TEXT = Display name for the shape\n\nClick Apply\nRepeat for all shapes\nFile → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n\nExport your diagram from diagrams.net to SVG (without links)\nSave it to output/ folder\nIn R Console:\n\nsource(\"add_survey_links.R\")\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\nThis automatically adds survey links to all shapes!\n\n\n\n\nIn workflow-survey-system.qmd, find the survey form section and edit questions:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"question1\"&gt;Question 1: YOUR QUESTION HERE&lt;/label&gt;\n  &lt;select id=\"question1\" required&gt;\n    &lt;option value=\"\"&gt;-- Select --&lt;/option&gt;\n    &lt;option value=\"Option1\"&gt;Option 1&lt;/option&gt;\n    &lt;option value=\"Option2\"&gt;Option 2&lt;/option&gt;\n    &lt;!-- Add more options --&gt;\n  &lt;/select&gt;\n&lt;/div&gt;\nTo add a question: Copy a &lt;div class=\"form-group\"&gt; block and: - Change question1 to question6, question7, etc. - Update the label text - Update the options\nDon’t forget to also update: - The JavaScript saveResponse() function to include new questions - The CSV headers in downloadCSV() function\n\n\n\n\nIn RStudio, open workflow-survey-system.qmd\nClick Render (or use quarto preview)\nClick on a shape in your diagram\nFill out the survey\nEnter password\nSubmit\nDownload CSV and commit to GitHub"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#user-workflow",
-    "href": "supplement/SETUP_GUIDE.html#user-workflow",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "View Diagram - Navigate to the page with your workflow\nClick a Shape - Survey panel slides out from the right\nReview Previous Entry - If you’ve submitted before, see your last response\nEdit/Update - Form is pre-filled, make changes as needed\nSubmit - Enter password and submit\nDownload Data - Scroll to bottom, click “Download All Responses (CSV)”\nCommit to GitHub - Save the CSV file and push to your repo\n\n\n\n\nWhen users first clone your template:\n\nThey get a working survey system out of the box\nThey only need to:\n\nChange the password in the config\nAdd their own diagram\nOptionally customize questions"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#file-structure",
-    "href": "supplement/SETUP_GUIDE.html#file-structure",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "your-project/\n├── workflow-survey-system.qmd    # Main Quarto document\n├── add_survey_links.R            # Helper function (optional)\n├── output/\n│   └── your_diagram.svg          # Your workflow diagram\n├── _site/                        # Rendered output (auto-generated)\n│   └── workflow-survey-system.html\n└── data/                         # Store downloaded CSVs here\n    └── workflow_responses_YYYY-MM-DD.csv"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#survey-link-format",
-    "href": "supplement/SETUP_GUIDE.html#survey-link-format",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Links in your SVG should follow this format:\n#survey:SHAPE_ID|SHAPE_TEXT\nExamples:\n\n#survey:step1|Data Collection\n#survey:analysis_phase|Analysis Phase\n#survey:qa_review|QA Review\n\nRules: - SHAPE_ID must be unique for each shape - No spaces in SHAPE_ID (use underscores) - SHAPE_TEXT can have spaces and special characters - Separate ID and text with | (pipe character)"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#data-storage",
-    "href": "supplement/SETUP_GUIDE.html#data-storage",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "LocalStorage: Responses are saved in your browser’s localStorage\nPer User: Each person who opens the page on their computer has their own data\nPersistent: Data stays even after closing the browser\nExportable: Download as CSV anytime\n\n\n\n\ntimestamp,username,shape_id,shape_text,question1,question2,question3,question4,question5\n2024-02-02T10:30:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"High\",\"No Blockers\",\"Adequate\",\"On Track\"\n2024-02-02T14:15:00.000Z,\"Alice\",\"step1\",\"Data Collection\",\"In Progress\",\"Medium\",\"No Blockers\",\"Adequate\",\"On Track\"\n\n\n\n\nUser fills out surveys over time\nPeriodically downloads CSV\nSaves CSV to data/ folder in repo\nCommits and pushes to GitHub\nCan analyze responses with R scripts"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#customization-guide",
-    "href": "supplement/SETUP_GUIDE.html#customization-guide",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Add questions in the HTML form section\nUpdate JavaScript in the saveResponse() function:\n\nconst response = {\n  timestamp: new Date().toISOString(),\n  username: document.getElementById('username').value,\n  shape_id: currentShapeId,\n  shape_text: currentShapeText,\n  question1: document.getElementById('question1').value,\n  question2: document.getElementById('question2').value,\n  question3: document.getElementById('question3').value,\n  question4: document.getElementById('question4').value,\n  question5: document.getElementById('question5').value,\n  question6: document.getElementById('question6').value  // ADD NEW QUESTIONS\n};\n\nUpdate CSV download in the downloadCSV() function:\n\nconst headers = ['timestamp', 'username', 'shape_id', 'shape_text', \n                 'question1', 'question2', 'question3', 'question4', \n                 'question5', 'question6'];  // ADD NEW HEADERS\n\n\n\nThe system currently supports select dropdowns. To add other types:\nText Input:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"notes\"&gt;Additional Notes:&lt;/label&gt;\n  &lt;input type=\"text\" id=\"notes\" placeholder=\"Enter notes\"&gt;\n&lt;/div&gt;\nText Area:\n&lt;div class=\"form-group\"&gt;\n  &lt;label for=\"comments\"&gt;Comments:&lt;/label&gt;\n  &lt;textarea id=\"comments\" rows=\"4\"&gt;&lt;/textarea&gt;\n&lt;/div&gt;\nRadio Buttons:\n&lt;div class=\"form-group\"&gt;\n  &lt;label&gt;Status:&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"yes\"&gt; Yes&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"status\" value=\"no\"&gt; No&lt;/label&gt;\n&lt;/div&gt;\n\n\n\nEdit the R setup chunk:\nSURVEY_PASSWORD &lt;- \"your_new_password_here\"\n\n\n\nReplace the SVG file and update:\nDIAGRAM_FILE &lt;- \"new_diagram.svg\""
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#troubleshooting",
-    "href": "supplement/SETUP_GUIDE.html#troubleshooting",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Check link format: Must be #survey:ID|TEXT\nCheck SVG export: “Links” option must be checked\nCheck browser console: Press F12, look for errors\n\n\n\n\n\nCheck you haven’t changed the password in the qmd but not re-rendered\nPassword is case-sensitive\nMake sure you’re using the same password in config and when submitting\n\n\n\n\n\nThis is normal if it’s the first time clicking that shape\nCheck browser localStorage (F12 → Application → Local Storage)\nMake sure you submitted with the correct password\n\n\n\n\n\nCheck if you have responses (look at count at bottom)\nTry a different browser\nCheck browser’s download settings\n\n\n\n\n\nLocalStorage should persist, but:\nMake sure you’re using the same browser\nCheck if browser is in private/incognito mode (data won’t persist)\nSolution: Download CSV regularly!"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#advanced-features",
-    "href": "supplement/SETUP_GUIDE.html#advanced-features",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Once you’ve downloaded CSVs, you can analyze them:\nlibrary(tidyverse)\n\n# Read all response files\nresponses &lt;- list.files(\"data\", pattern = \"workflow_responses.*\\\\.csv\", \n                       full.names = TRUE) %&gt;%\n  map_df(read_csv)\n\n# View summary by shape\nresponses %&gt;%\n  group_by(shape_id, shape_text) %&gt;%\n  summarize(\n    n_responses = n(),\n    latest_status = last(question1),\n    .groups = \"drop\"\n  )\n\n# Timeline of updates\nresponses %&gt;%\n  mutate(date = as.Date(timestamp)) %&gt;%\n  count(date, shape_id) %&gt;%\n  ggplot(aes(date, n, color = shape_id)) +\n  geom_line() +\n  labs(title = \"Survey Responses Over Time\")\n\n\n\nTo have multiple diagrams with surveys:\n\nCreate separate .qmd files for each diagram\nEach can have its own password and questions\nResponses are stored separately per page (based on URL)\n\n\n\n\nSince localStorage is per-browser:\n\nTeam members download their CSVs regularly\nCommit to a shared GitHub repo\nMerge CSV files in R for team analysis"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#faq",
-    "href": "supplement/SETUP_GUIDE.html#faq",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "Q: Can multiple people edit the same shape?\nA: Yes! Each person’s submissions are logged separately with timestamps and usernames.\nQ: What if I forget the password?\nA: Change it in the R config chunk and re-render the page.\nQ: Can I delete a response?\nA: Not directly in the UI, but you can download the CSV, remove the row, and that’s your new record.\nQ: Is this secure?\nA: This is designed for internal team use with a shared password. It’s not meant for sensitive data requiring encryption.\nQ: Can I use this without GitHub?\nA: Yes! The survey system works locally. You just need to manually share CSV files.\nQ: How many responses can it handle?\nA: LocalStorage typically allows 5-10MB. At ~200 bytes per response, that’s 25,000-50,000 responses. More than enough!"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#support",
-    "href": "supplement/SETUP_GUIDE.html#support",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "For issues or questions: 1. Check this documentation 2. Review the code comments 3. Open an issue on GitHub 4. Contact the template creator"
-  },
-  {
-    "objectID": "supplement/SETUP_GUIDE.html#license",
-    "href": "supplement/SETUP_GUIDE.html#license",
-    "title": "Interactive Workflow Survey System - Setup Guide",
-    "section": "",
-    "text": "This template is open source and free to use for your projects!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#research-compendium",
-    "href": "index.html#research-compendium",
-    "title": "Home",
-    "section": "",
-    "text": "Passive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\n\n\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this reseasrch project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.",
-    "crumbs": [
-      "Home"
+      "Hackathon"
     ]
   }
 ]
