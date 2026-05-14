@@ -20,6 +20,7 @@ The NOAA Fisheries PAM 'Glider Rodeo' (aka *Underwater Glider Challenge*) is par
 This research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.
 
 ![](content/images/RodeoTracks.png){width="618"} 
+
 *Information provided here is ongoing, and is frequently updated.*
 :::
 
