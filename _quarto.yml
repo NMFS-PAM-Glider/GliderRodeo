@@ -41,8 +41,14 @@ website:
         text: "Hardware"
       - href: content/pre-processing.qmd
         text: "Pre-Processing"
-      - href: content/hackathon.qmd
+      - section: content/hackathon.qmd
         text: "Hackathon"
+      #   contents:
+      #   - content/hack/details.qmd
+      #   - content/hack/prep.qmd
+      #   - content/hack/presentations.qmd
+      #   - content/hack/projects.qmd
+      #   - content/hack/reference.qmd
       - href: content/data-analysis.qmd
         text: "Data Analysis"
       - href: content/reporting.qmd
