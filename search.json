@@ -1,10 +1,20 @@
 [
   {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
+    "objectID": "figs/ReadMe.html",
+    "href": "figs/ReadMe.html",
     "title": "NOAA quarto simple",
     "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "NOAA Fisheries PAM-Glider Rodeo 2026\nPassive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.\n\nInformation provided here is ongoing, and is frequently updated.\n\n\nFeatured\n\n\n Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider ChallengeThe exciting work of flying robots underwater takes science, teamwork, and flexibility\n\n\n\n Sound Bytes: Meet the Pilots of the Underwater Glider ChallengeA conversation with the NOAA pilots guiding gliders to capture the sounds of our ocean\n\n\n\n NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘iNOAA Fisheries is leading a major effort to evaluate how next-generation ocean gliders can transform ocean monitoring and marine mammal conservation, while also benefitting U.S. fishermen and ocean industries\n\n\n\n Sound Bytes Blog: It’s a boat, it’s a plane, it’s a passive acoustic ocean glider! Selene Fregosi (PIFSC) explains how underwater gliders help us listen for whales! \n\n\n\n Ocean Gliders Listen for Whales off Oregon in Test of New Ways to Count Them Passive acoustic monitoring by ‘gliders’ may better detect some species",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "content/hardware.html",
@@ -107,6 +117,76 @@
     ]
   },
   {
+    "objectID": "content/hack/prep.html",
+    "href": "content/hack/prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "content/hack/prep.html#hackweek-projects",
+    "href": "content/hack/prep.html#hackweek-projects",
+    "title": "Preparation",
+    "section": "",
+    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "content/hack/prep.html#github-account",
+    "href": "content/hack/prep.html#github-account",
+    "title": "Preparation",
+    "section": "Github Account",
+    "text": "Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek."
+  },
+  {
+    "objectID": "content/hack/prep.html#hackweek-jupyterhub",
+    "href": "content/hack/prep.html#hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Hackweek JupyterHub",
+    "text": "Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day."
+  },
+  {
+    "objectID": "content/hack/prep.html#pre-hackweek-learning-optional",
+    "href": "content/hack/prep.html#pre-hackweek-learning-optional",
+    "title": "Preparation",
+    "section": "Pre-HackWeek Learning (Optional)",
+    "text": "Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners."
+  },
+  {
+    "objectID": "content/hack/prep.html#what-is-git",
+    "href": "content/hack/prep.html#what-is-git",
+    "title": "Preparation",
+    "section": "What is Git?",
+    "text": "What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website"
+  },
+  {
+    "objectID": "content/hack/prep.html#setting-up-on-jupyterhub",
+    "href": "content/hack/prep.html#setting-up-on-jupyterhub",
+    "title": "Preparation",
+    "section": "Setting up on JupyterHub",
+    "text": "Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\n\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\n\nAfter you have entered the code and granted authorization, the Terminal will update:\n\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\n\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\n\ngit config --global credential.helper store\n\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key."
+  },
+  {
+    "objectID": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
+    "href": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Log into the hackweek JupyterHub",
+    "text": "Log into the hackweek JupyterHub\n\nworkshop.nmfs-openscapes.2i2c.cloud\n\nWatch this video for a quick orientation to the JupyterHub."
+  },
+  {
+    "objectID": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
+    "href": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
+    "title": "Preparation",
+    "section": "For those who are brand new to Python",
+    "text": "For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run"
+  },
+  {
+    "objectID": "content/hack/prep.html#start-with-some-basic-tutorials",
+    "href": "content/hack/prep.html#start-with-some-basic-tutorials",
+    "title": "Preparation",
+    "section": "Start with some basic tutorials",
+    "text": "Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\n\nOpen the ipynb notebooks and start working through the material."
+  },
+  {
     "objectID": "content/reporting.html",
     "href": "content/reporting.html",
     "title": "Reporting",
@@ -152,114 +232,6 @@
     "title": "NOAA quarto simple",
     "section": "",
     "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "NOAA Fisheries PAM-Glider Rodeo 2026\nPassive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.\n\nInformation provided here is ongoing, and is frequently updated.\n\n\nFeatured\n\n\n Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider ChallengeThe exciting work of flying robots underwater takes science, teamwork, and flexibility\n\n\n\n Sound Bytes: Meet the Pilots of the Underwater Glider ChallengeA conversation with the NOAA pilots guiding gliders to capture the sounds of our ocean\n\n\n\n NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘iNOAA Fisheries is leading a major effort to evaluate how next-generation ocean gliders can transform ocean monitoring and marine mammal conservation, while also benefitting U.S. fishermen and ocean industries\n\n\n\n Sound Bytes Blog: It’s a boat, it’s a plane, it’s a passive acoustic ocean glider! Selene Fregosi (PIFSC) explains how underwater gliders help us listen for whales! \n\n\n\n Ocean Gliders Listen for Whales off Oregon in Test of New Ways to Count Them Passive acoustic monitoring by ‘gliders’ may better detect some species",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html",
-    "href": "supplement/SCSS_INTEGRATION.html",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
-    "href": "supplement/SCSS_INTEGRATION.html#overview",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
-    "href": "supplement/SCSS_INTEGRATION.html#customization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
-    "href": "supplement/SCSS_INTEGRATION.html#verification",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
-  },
-  {
-    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
-    "href": "supplement/SCSS_INTEGRATION.html#need-help",
-    "title": "Integrating Survey System Styles into Your Theme",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
-  },
-  {
-    "objectID": "supplement/ReadMe.html",
-    "href": "supplement/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/SETUP_GUIDE.html",
@@ -444,11 +416,217 @@
     "text": "See SETUP_GUIDE.md for comprehensive documentation!"
   },
   {
-    "objectID": "figs/ReadMe.html",
-    "href": "figs/ReadMe.html",
+    "objectID": "supplement/SCSS_INTEGRATION.html",
+    "href": "supplement/SCSS_INTEGRATION.html",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable.\n\n\n\n\n\n_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS\n\n\n\n\n\n\n\nPlace the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files.\n\n\n\n\n\nThe survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;\n\n\n\n\n\nIf you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file.\n\n\n\n\n\n\n\nEdit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}\n\n\n\n\n\nAfter integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects\n\n\n\n\n\n\n\n\nCheck that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config\n\n\n\n\n\n✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles\n\n\n\n\nAfter integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config\n\n\n\n\nIf you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";\n\n\n\n\n\nSee SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#overview",
+    "href": "supplement/SCSS_INTEGRATION.html#overview",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles have been separated into SCSS partials that you can integrate into your existing theme.scss and theme-dark.scss files. This keeps your Quarto documents clean and maintainable."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "href": "supplement/SCSS_INTEGRATION.html#files-provided",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "_survey-system.scss - Main styles for the survey system\n_survey-system-dark.scss - Dark theme overrides\nworkflow-survey-system-clean.qmd - QMD file without embedded CSS"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "href": "supplement/SCSS_INTEGRATION.html#integration-steps",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Place the SCSS files in the same directory as your theme.scss and theme-dark.scss files (your root directory):\nyour-project/\n├── theme.scss\n├── theme-dark.scss\n├── _survey-system.scss          ← Add this\n├── _survey-system-dark.scss     ← Add this\n└── workflow-survey-system-clean.qmd\n\n\n\nAt the end of your theme.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM\n// ==============================================================================\n@import \"survey-system\";\n\n\n\nAt the end of your theme-dark.scss file, add:\n// ==============================================================================\n// INTERACTIVE WORKFLOW SURVEY SYSTEM - DARK MODE\n// ==============================================================================\n@import \"survey-system-dark\";\n\n\n\nMake sure your Quarto configuration points to your theme files:\nformat:\n  html:\n    theme:\n      light: theme.scss\n      dark: theme-dark.scss\n\n\n\nReplace your workflow-survey-system.qmd with workflow-survey-system-clean.qmd. This version has all the CSS removed and relies on your SCSS files."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "href": "supplement/SCSS_INTEGRATION.html#required-scss-variables",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "The survey system styles use these Bootstrap/Quarto SCSS variables. Make sure they’re defined in your theme:\n\n\n\n$primary - Primary button color\n$success - Success/download button color\n$danger - Danger/delete button color\n$warning - Warning message color\n$info - Info message color\n$white - White color\n$body-bg - Background color for light theme\n$body-bg-dark - Background color for dark theme\n$body-color - Text color\n$text-muted - Muted text color\n$border-color - Border color\n$input-bg - Input background color\n\n\n\n\n\n$gray-100 - Lightest gray\n$gray-200\n$gray-400\n$gray-700\n$gray-800\n$gray-900 - Darkest gray\n\nIf any of these are missing, you can define them at the top of your theme.scss:\n// Example defaults (adjust to match your design)\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n$white: #ffffff;\n$body-bg: #ffffff;\n$body-color: #212529;\n$text-muted: #6c757d;\n$border-color: #dee2e6;\n$input-bg: #ffffff;\n\n// Grays\n$gray-100: #f8f9fa;\n$gray-200: #e9ecef;\n$gray-400: #ced4da;\n$gray-700: #495057;\n$gray-800: #343a40;\n$gray-900: #212529;\n\n// Dark theme\n$body-bg-dark: #1a1a1a;"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "href": "supplement/SCSS_INTEGRATION.html#alternative-direct-copy-paste-method",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you prefer not to use @import, you can copy the contents of the SCSS files directly:\n\n\nOpen _survey-system.scss, copy all the code, and paste it at the end of your theme.scss file.\n\n\n\nOpen _survey-system-dark.scss, copy all the code, and paste it at the end of your theme-dark.scss file."
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#customization",
+    "href": "supplement/SCSS_INTEGRATION.html#customization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Edit the variables in your theme files, and the survey system will automatically use them:\n// In theme.scss\n$primary: #0066cc;  // Survey buttons will use this color\n$success: #00aa00;  // Download button will use this color\n\n\n\nIn _survey-system.scss, find:\n.survey-sidebar {\n  width: 450px;\n  right: -500px;  // Should be slightly larger than width\n  // ...\n}\n\n\n\nIn _survey-system.scss, find:\n.svg-viewer-container {\n  height: 700px;  // Change this\n  // ...\n}\n\n\n\nYou can extend the survey system styles in your main theme files:\n// In theme.scss, after @import \"survey-system\";\n\n// Custom: Make survey panel wider\n.survey-sidebar {\n  width: 600px;\n  right: -600px;\n}\n\n// Custom: Change form label color\n.form-group label {\n  color: $primary;\n}"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#verification",
+    "href": "supplement/SCSS_INTEGRATION.html#verification",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, verify that:\n\nRender your Quarto document:\nquarto render workflow-survey-system-clean.qmd\nCheck the output:\n\nSurvey panel should slide in from the right\nButtons should have your theme colors\nDark mode should work if you have it enabled\n\nTest in browser:\n\nClick a shape → panel opens\nForm fields should be styled\nButtons should have hover effects"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "href": "supplement/SCSS_INTEGRATION.html#troubleshooting",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "Check that: 1. SCSS files are in the correct directory 2. @import statements are at the end of your theme files 3. Quarto has been re-rendered after changes 4. Browser cache is cleared (hard refresh: Ctrl+Shift+R)\n\n\n\nIf you see errors like Undefined variable $primary:\n\nAdd the missing variable definitions to your theme.scss\nOr replace the variable with a hard-coded color in the SCSS partial\n\n\n\n\nCheck that: 1. _survey-system-dark.scss is imported into theme-dark.scss 2. Your theme uses [data-bs-theme=\"dark\"] selector 3. Dark theme is enabled in Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "href": "supplement/SCSS_INTEGRATION.html#benefits-of-this-approach",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "✅ Cleaner QMD files - No CSS clutter\n✅ Centralized styling - All styles in theme files\n✅ Theme consistency - Uses your existing color variables\n✅ Easy maintenance - Update styles in one place\n✅ Dark mode support - Automatically works with your dark theme\n✅ Reusable - Multiple pages can use the same styles"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "href": "supplement/SCSS_INTEGRATION.html#file-organization",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "After integration, your project structure should look like:\nyour-project/\n├── theme.scss                           # Your light theme\n├── theme-dark.scss                      # Your dark theme\n├── _survey-system.scss                  # Survey styles\n├── _survey-system-dark.scss             # Survey dark styles\n├── content/\n│   └── workflow-survey-system-clean.qmd # Clean QMD (no CSS)\n├── output/\n│   └── your_diagram.svg                 # Your SVG diagram\n└── _quarto.yml                          # Quarto config"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "href": "supplement/SCSS_INTEGRATION.html#example-minimal-integration",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "If you don’t have extensive theme files yet, here’s a minimal theme.scss:\n/*-- scss:defaults --*/\n// Basic colors\n$primary: #007bff;\n$success: #28a745;\n$danger: #dc3545;\n$warning: #ffc107;\n$info: #17a2b8;\n\n/*-- scss:rules --*/\n// Import survey system\n@import \"survey-system\";\nAnd a minimal theme-dark.scss:\n/*-- scss:defaults --*/\n$body-bg-dark: #1a1a1a;\n\n/*-- scss:rules --*/\n// Import dark theme overrides\n@import \"survey-system-dark\";"
+  },
+  {
+    "objectID": "supplement/SCSS_INTEGRATION.html#need-help",
+    "href": "supplement/SCSS_INTEGRATION.html#need-help",
+    "title": "Integrating Survey System Styles into Your Theme",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
+  },
+  {
+    "objectID": "supplement/ReadMe.html",
+    "href": "supplement/ReadMe.html",
     "title": "NOAA quarto simple",
     "section": "",
-    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "content/overview.html",
+    "href": "content/overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#goals",
+    "href": "content/overview.html#goals",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#objectives",
+    "href": "content/overview.html#objectives",
+    "title": "Overview",
+    "section": "Objectives",
+    "text": "Objectives\nField testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#approach",
+    "href": "content/overview.html#approach",
+    "title": "Overview",
+    "section": "Approach",
+    "text": "Approach\nCollect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:\n\nOptimize to survey coverage\nOptimize for low noise\nIntermediate approach to survey coverage and noise reduction\nDrifting (Quiet Mode)\n\n\nPiloting: To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.\nNavigation: Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).\nEndurance: Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.\nNoise: Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.\n\nThe Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to Glider Platforms and PAM Sensors.\nThe Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our PAM-Glider site.\n\n\n\nGlider Rodeo draft figure-8 tracklines planned for offshore Hawaii.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#data-management-plan",
+    "href": "content/overview.html#data-management-plan",
+    "title": "Overview",
+    "section": "Data management Plan",
+    "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/hack/details.html",
+    "href": "content/hack/details.html",
+    "title": "Details",
+    "section": "",
+    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and West). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project."
+  },
+  {
+    "objectID": "content/hack/details.html#overview",
+    "href": "content/hack/details.html#overview",
+    "title": "Details",
+    "section": "Overview",
+    "text": "Overview\nThe organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers."
+  },
+  {
+    "objectID": "content/hack/details.html#definition-of-harassment",
+    "href": "content/hack/details.html#definition-of-harassment",
+    "title": "Details",
+    "section": "Definition of Harassment",
+    "text": "Definition of Harassment\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior"
+  },
+  {
+    "objectID": "content/hack/details.html#expectations",
+    "href": "content/hack/details.html#expectations",
+    "title": "Details",
+    "section": "Expectations",
+    "text": "Expectations\nWe expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers."
+  },
+  {
+    "objectID": "content/hack/details.html#reporting-a-violation",
+    "href": "content/hack/details.html#reporting-a-violation",
+    "title": "Details",
+    "section": "Reporting a violation",
+    "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
+  },
+  {
+    "objectID": "content/hackathon.html#objective",
+    "href": "content/hackathon.html#objective",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Objective",
+    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a standardized framework for future data integration. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "content/hackathon.html#goals",
+    "href": "content/hackathon.html#goals",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Goals",
+    "text": "Goals\nWe have a suite of initial goals for this community hackathon:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "content/hackathon.html#how-to-participate",
+    "href": "content/hackathon.html#how-to-participate",
+    "title": "Glider Rodeo Hackathon",
+    "section": "How to Participate",
+    "text": "How to Participate\nDo you have ideas, recommendations or advice for this event? Are you interested in participating?\nPlease fill out this survey, and we’ll reach out later in the summer.",
+    "crumbs": [
+      "Hackathon"
+    ]
   },
   {
     "objectID": "content/pre-processing.html",
@@ -561,83 +739,10 @@
     ]
   },
   {
-    "objectID": "content/overview.html",
-    "href": "content/overview.html",
-    "title": "Overview",
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
+    "title": "NOAA quarto simple",
     "section": "",
-    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#goals",
-    "href": "content/overview.html#goals",
-    "title": "Overview",
-    "section": "",
-    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#objectives",
-    "href": "content/overview.html#objectives",
-    "title": "Overview",
-    "section": "Objectives",
-    "text": "Objectives\nField testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#approach",
-    "href": "content/overview.html#approach",
-    "title": "Overview",
-    "section": "Approach",
-    "text": "Approach\nCollect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:\n\nOptimize to survey coverage\nOptimize for low noise\nIntermediate approach to survey coverage and noise reduction\nDrifting (Quiet Mode)\n\n\nPiloting: To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.\nNavigation: Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).\nEndurance: Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.\nNoise: Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.\n\nThe Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to Glider Platforms and PAM Sensors.\nThe Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our PAM-Glider site.\n\n\n\nGlider Rodeo draft figure-8 tracklines planned for offshore Hawaii.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#data-management-plan",
-    "href": "content/overview.html#data-management-plan",
-    "title": "Overview",
-    "section": "Data management Plan",
-    "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/hackathon.html#objective",
-    "href": "content/hackathon.html#objective",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Objective",
-    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a standardized framework for future data integration. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "content/hackathon.html#goals",
-    "href": "content/hackathon.html#goals",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Goals",
-    "text": "Goals\nWe have a suite of initial goals for this community hackathon:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "content/hackathon.html#how-to-participate",
-    "href": "content/hackathon.html#how-to-participate",
-    "title": "Glider Rodeo Hackathon",
-    "section": "How to Participate",
-    "text": "How to Participate\nDo you have ideas, recommendations or advice for this event? Are you interested in participating?\nPlease fill out this survey, and we’ll reach out later in the summer.",
-    "crumbs": [
-      "Hackathon"
-    ]
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   }
 ]
