@@ -1,19 +1,102 @@
 [
   {
-    "objectID": "figs/ReadMe.html",
-    "href": "figs/ReadMe.html",
-    "title": "NOAA quarto simple",
+    "objectID": "content/data-collection.html",
+    "href": "content/data-collection.html",
+    "title": "Data Collection",
     "section": "",
-    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Data Collection"
+    ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "content/data-collection.html#partners",
+    "href": "content/data-collection.html#partners",
+    "title": "Data Collection",
     "section": "",
-    "text": "NOAA Fisheries PAM-Glider Rodeo 2026\nPassive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.\n\nInformation provided here is ongoing, and is frequently updated.\n\n\nFeatured\n\n\n Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider ChallengeThe exciting work of flying robots underwater takes science, teamwork, and flexibility\n\n\n\n Sound Bytes: Meet the Pilots of the Underwater Glider ChallengeA conversation with the NOAA pilots guiding gliders to capture the sounds of our ocean\n\n\n\n NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘iNOAA Fisheries is leading a major effort to evaluate how next-generation ocean gliders can transform ocean monitoring and marine mammal conservation, while also benefitting U.S. fishermen and ocean industries\n\n\n\n Sound Bytes Blog: It’s a boat, it’s a plane, it’s a passive acoustic ocean glider! Selene Fregosi (PIFSC) explains how underwater gliders help us listen for whales! \n\n\n\n Ocean Gliders Listen for Whales off Oregon in Test of New Ways to Count Them Passive acoustic monitoring by ‘gliders’ may better detect some species",
+    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
     "crumbs": [
-      "Home"
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#trackline-planning",
+    "href": "content/data-collection.html#trackline-planning",
+    "title": "Data Collection",
+    "section": "Trackline Planning",
+    "text": "Trackline Planning\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#communications",
+    "href": "content/data-collection.html#communications",
+    "title": "Data Collection",
+    "section": "Communications",
+    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#data-offload",
+    "href": "content/data-collection.html#data-offload",
+    "title": "Data Collection",
+    "section": "Data Offload",
+    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/data-collection.html#field-reports",
+    "href": "content/data-collection.html#field-reports",
+    "title": "Data Collection",
+    "section": "Field Reports",
+    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
+    "crumbs": [
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "crumbs": [
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!",
+    "crumbs": [
+      "Reporting"
     ]
   },
   {
@@ -117,113 +200,58 @@
     ]
   },
   {
-    "objectID": "content/hack/prep.html",
-    "href": "content/hack/prep.html",
-    "title": "Preparation",
+    "objectID": "content/hack/details.html",
+    "href": "content/hack/details.html",
+    "title": "Details",
     "section": "",
-    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
-  },
-  {
-    "objectID": "content/hack/prep.html#hackweek-projects",
-    "href": "content/hack/prep.html#hackweek-projects",
-    "title": "Preparation",
-    "section": "",
-    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
-  },
-  {
-    "objectID": "content/hack/prep.html#github-account",
-    "href": "content/hack/prep.html#github-account",
-    "title": "Preparation",
-    "section": "Github Account",
-    "text": "Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek."
-  },
-  {
-    "objectID": "content/hack/prep.html#hackweek-jupyterhub",
-    "href": "content/hack/prep.html#hackweek-jupyterhub",
-    "title": "Preparation",
-    "section": "Hackweek JupyterHub",
-    "text": "Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day."
-  },
-  {
-    "objectID": "content/hack/prep.html#pre-hackweek-learning-optional",
-    "href": "content/hack/prep.html#pre-hackweek-learning-optional",
-    "title": "Preparation",
-    "section": "Pre-HackWeek Learning (Optional)",
-    "text": "Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners."
-  },
-  {
-    "objectID": "content/hack/prep.html#what-is-git",
-    "href": "content/hack/prep.html#what-is-git",
-    "title": "Preparation",
-    "section": "What is Git?",
-    "text": "What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website"
-  },
-  {
-    "objectID": "content/hack/prep.html#setting-up-on-jupyterhub",
-    "href": "content/hack/prep.html#setting-up-on-jupyterhub",
-    "title": "Preparation",
-    "section": "Setting up on JupyterHub",
-    "text": "Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\n\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\n\nAfter you have entered the code and granted authorization, the Terminal will update:\n\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\n\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\n\ngit config --global credential.helper store\n\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key."
-  },
-  {
-    "objectID": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
-    "href": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
-    "title": "Preparation",
-    "section": "Log into the hackweek JupyterHub",
-    "text": "Log into the hackweek JupyterHub\n\nworkshop.nmfs-openscapes.2i2c.cloud\n\nWatch this video for a quick orientation to the JupyterHub."
-  },
-  {
-    "objectID": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
-    "href": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
-    "title": "Preparation",
-    "section": "For those who are brand new to Python",
-    "text": "For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run"
-  },
-  {
-    "objectID": "content/hack/prep.html#start-with-some-basic-tutorials",
-    "href": "content/hack/prep.html#start-with-some-basic-tutorials",
-    "title": "Preparation",
-    "section": "Start with some basic tutorials",
-    "text": "Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\n\nOpen the ipynb notebooks and start working through the material."
-  },
-  {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and West). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.",
     "crumbs": [
-      "Reporting"
+      "Hackathon",
+      "Details"
     ]
   },
   {
-    "objectID": "content/reporting.html#mission-field-reports",
-    "href": "content/reporting.html#mission-field-reports",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder).",
+    "objectID": "content/hack/details.html#overview",
+    "href": "content/hack/details.html#overview",
+    "title": "Details",
+    "section": "Overview",
+    "text": "Overview\nThe organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers.",
     "crumbs": [
-      "Reporting"
+      "Hackathon",
+      "Details"
     ]
   },
   {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository.",
+    "objectID": "content/hack/details.html#definition-of-harassment",
+    "href": "content/hack/details.html#definition-of-harassment",
+    "title": "Details",
+    "section": "Definition of Harassment",
+    "text": "Definition of Harassment\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior",
     "crumbs": [
-      "Reporting"
+      "Hackathon",
+      "Details"
     ]
   },
   {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report\nStay Tuned!",
+    "objectID": "content/hack/details.html#expectations",
+    "href": "content/hack/details.html#expectations",
+    "title": "Details",
+    "section": "Expectations",
+    "text": "Expectations\nWe expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.",
     "crumbs": [
-      "Reporting"
+      "Hackathon",
+      "Details"
+    ]
+  },
+  {
+    "objectID": "content/hack/details.html#reporting-a-violation",
+    "href": "content/hack/details.html#reporting-a-violation",
+    "title": "Details",
+    "section": "Reporting a violation",
+    "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers.",
+    "crumbs": [
+      "Hackathon",
+      "Details"
     ]
   },
   {
@@ -232,6 +260,13 @@
     "title": "NOAA quarto simple",
     "section": "",
     "text": "ReadMe for Manuscript Folder\nThe purpose of this folder is to provide a home to one or more versions of the manuscript in one or more formats. This folder does not serve as the output location for rendered versions of the manuscript (those would be saved in the docs folder). Typically, this would be reserved for final manuscripts or manuscripts saved in an alternative format or manually modified (not direct rendered output).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "figs/ReadMe.html",
+    "href": "figs/ReadMe.html",
+    "title": "NOAA quarto simple",
+    "section": "",
+    "text": "ReadMe for Figs Folder\nThe purpose of this folder is hold all figures generated for the analysis. Your code to create figures should be saved in the code folder, and it should automatically save figure output directly to this figs folder. All figure names should be descriptive not based on the # of the figure (as this may change).\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/SETUP_GUIDE.html",
@@ -332,88 +367,11 @@
     "text": "This template is open source and free to use for your projects!"
   },
   {
-    "objectID": "supplement/QUICK_REFERENCE.html",
-    "href": "supplement/QUICK_REFERENCE.html",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "objectID": "supplement/ReadMe.html",
+    "href": "supplement/ReadMe.html",
+    "title": "NOAA quarto simple",
     "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
-  },
-  {
-    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
-    "href": "supplement/QUICK_REFERENCE.html#need-help",
-    "title": "Quick Reference: Adding Survey Links to Diagrams",
-    "section": "",
-    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
+    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   },
   {
     "objectID": "supplement/SCSS_INTEGRATION.html",
@@ -507,11 +465,175 @@
     "text": "See SETUP_GUIDE.md for general setup\nSee QUICK_REFERENCE.md for adding survey links\nCheck Quarto documentation: https://quarto.org/docs/output-formats/html-themes.html"
   },
   {
-    "objectID": "supplement/ReadMe.html",
-    "href": "supplement/ReadMe.html",
+    "objectID": "supplement/QUICK_REFERENCE.html",
+    "href": "supplement/QUICK_REFERENCE.html",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌\n\n\n\n\n\n\n\n\n\n\n# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes\n\n\n\n\n\n\n\n\nClick File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured\n\n\n\n\n\n\n\nCopy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]\n\n\n\n\n\n\n#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase\n\n\n\n\n\n\n\nKeep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection\n\n\n\n\n\n\n\nIn diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save\n\n\n\n\n\n\n\n\nTask\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG\n\n\n\n\n\n\n\n\nSVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors\n\n\n\n\n\nLet’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open\n\n\n\n\n\nSee SETUP_GUIDE.md for comprehensive documentation!"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "href": "supplement/QUICK_REFERENCE.html#method-1-manual-links-in-diagrams.net",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Open diagram at https://app.diagrams.net/\nSelect shape you want to make clickable\nRight-click → Edit Link (or press Alt + Shift + L)\nEnter link:\n#survey:UNIQUE_ID|SHAPE_NAME\nExample: #survey:data_collect|Data Collection\nClick Apply\nRepeat for all shapes\nExport: File → Export as → SVG\n\n✅ Check “Include a copy of my diagram”\n✅ Check “Links”\n\nSave to output/your_diagram.svg\n\n\n\n\n#survey:SHAPE_ID|SHAPE_TEXT\n         ↑            ↑\n    unique ID    display name\n\nSHAPE_ID: Unique identifier (no spaces, use underscores)\nSHAPE_TEXT: Display name (can have spaces)\nSeparator: Use | (pipe) between ID and text\n\n\n\n\n\n\n\n\n\n\n\n\nShape Type\nGood Link\nBad Link\n\n\n\n\nData Collection\n#survey:data_collection\\|Data Collection\n#survey:data collection ❌\n\n\nQA Review\n#survey:qa_review\\|QA Review\n#survey:QA Review ❌\n\n\nStep 1\n#survey:step_1\\|Step 1: Planning\n#survey:step 1 ❌"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "href": "supplement/QUICK_REFERENCE.html#method-2-automatic-with-r-function",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "# 1. Load the function\nsource(\"add_survey_links.R\")\n\n# 2. Run on your SVG\nadd_survey_links_to_svg(\"output/your_diagram.svg\")\n\n# 3. Done! Links are now added to all shapes\n\n\n\n\nFinds all shapes in your SVG\nExtracts text from each shape\nCreates survey link for each shape\nPreserves all existing styling\n\n\n\n\n✅ Use automatic method when: - You have &gt;20 shapes - You want consistent IDs - You’re updating an existing diagram\n✅ Use manual method when: - You have &lt;20 shapes - You want custom, descriptive IDs - You only want surveys on specific shapes"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "href": "supplement/QUICK_REFERENCE.html#testing-your-links",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Click File → Preview (or Ctrl + Shift + E)\nClick on shapes\nShould do nothing (links work after export)\n\n\n\n\n\nOpen the rendered Quarto page\nClick on a shape\nSurvey panel should slide out\nShape name should appear at the top\n\n\n\n\nIf links don’t work:\n\nCheck SVG export settings\n\n“Links” option must be checked\n\nCheck link format\n\nMust start with #survey:\nMust have | separator\nNo spaces in SHAPE_ID\n\nCheck browser console (F12)\n\nLook for JavaScript errors\nCheck if click is being captured"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "href": "supplement/QUICK_REFERENCE.html#workflow-diagram-link-template",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Copy this template for consistent naming:\nProcess Steps:\n#survey:step_1|Step 1: [NAME]\n#survey:step_2|Step 2: [NAME]\n#survey:step_3|Step 3: [NAME]\n\nDecisions:\n#survey:decision_1|Decision: [QUESTION]\n#survey:decision_2|Decision: [QUESTION]\n\nOutputs:\n#survey:output_1|Output: [NAME]\n#survey:output_2|Output: [NAME]\n\nReviews:\n#survey:review_1|Review: [NAME]\n#survey:review_2|Review: [NAME]"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "href": "supplement/QUICK_REFERENCE.html#common-patterns",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "#survey:step_01|Step 1: Data Collection\n#survey:step_02|Step 2: Data Cleaning\n#survey:step_03|Step 3: Analysis\n#survey:step_04|Step 4: Reporting\n\n\n\n#survey:team_data|Data Team Activities\n#survey:team_analysis|Analysis Team Activities\n#survey:team_qa|QA Team Activities\n\n\n\n#survey:planning|Planning Phase\n#survey:development|Development Phase\n#survey:testing|Testing Phase\n#survey:deployment|Deployment Phase"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "href": "supplement/QUICK_REFERENCE.html#pro-tips",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Keep shapes organized with prefixes: - step_ for process steps - decision_ for decision points - doc_ for documentation - review_ for review gates\n\n\n\nUse zero-padded numbers for sorting:\nstep_01, step_02, ..., step_09, step_10\nNot: step_1, step_2, ..., step_9, step_10\n\n\n\nMake IDs meaningful:\n✅ #survey:data_quality_check|Data Quality Check\n❌ #survey:shape1|Data Quality Check\n\n\n\nPick a convention and stick to it:\nsnake_case: data_collection\nkebab-case: data-collection\ncamelCase: dataCollection"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "href": "supplement/QUICK_REFERENCE.html#batch-operations",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "In diagrams.net: 1. Select first shape 2. Add link: #survey:analysis_step1|Analysis Step 1 3. Copy shape (Ctrl + C) 4. Select next shape 5. Paste style (Ctrl + Shift + V) 6. Edit link to change ID\n\n\n\nIf you need to change many IDs: 1. Export SVG 2. Open in text editor 3. Find: #survey:old_prefix 4. Replace: #survey:new_prefix 5. Save"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "href": "supplement/QUICK_REFERENCE.html#cheat-sheet",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Task\ndiagrams.net Shortcut\n\n\n\n\nEdit Link\nAlt + Shift + L\n\n\nEdit Tooltip\nAlt + Shift + T\n\n\nPreview\nCtrl + Shift + E\n\n\nCopy Style\nCtrl + Shift + C\n\n\nPaste Style\nCtrl + Shift + V\n\n\n\n\n\n\nTask\nAfter Export\n\n\n\n\nTest Links\nClick shapes in browser\n\n\nView Source\nRight-click → Inspect\n\n\nCheck Links\nSearch for #survey: in SVG"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "href": "supplement/QUICK_REFERENCE.html#troubleshooting-checklist",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "SVG exported with “Links” option checked\nLink format is #survey:ID|TEXT\nNo spaces in SHAPE_ID portion\nIDs are unique (no duplicates)\nSVG file is in correct folder\nQuarto document points to correct SVG\nPage has been re-rendered after changes\nJavaScript console shows no errors"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "href": "supplement/QUICK_REFERENCE.html#example-complete-workflow",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "Let’s say you have a 5-step workflow:\n\n\nhttps://app.diagrams.net/\n\n\n\nStep 1: #survey:collect_data|Collect Data\nStep 2: #survey:clean_data|Clean Data  \nStep 3: #survey:analyze_data|Analyze Data\nStep 4: #survey:create_report|Create Report\nStep 5: #survey:review_publish|Review & Publish\n\n\n\n\nFile → Export as → SVG\n✅ Links\n✅ Include a copy of my diagram\nSave to output/workflow.svg\n\n\n\n\nDIAGRAM_FILE &lt;- \"workflow.svg\"\n\n\n\nClick Render in RStudio\n\n\n\nClick each step → Survey should open"
+  },
+  {
+    "objectID": "supplement/QUICK_REFERENCE.html#need-help",
+    "href": "supplement/QUICK_REFERENCE.html#need-help",
+    "title": "Quick Reference: Adding Survey Links to Diagrams",
+    "section": "",
+    "text": "See SETUP_GUIDE.md for comprehensive documentation!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "NOAA Fisheries PAM-Glider Rodeo 2026\nPassive Acoustic Monitoring (PAM) is an effective means of monitoring marine mammals and the marine environment, and NOAA Fisheries is expanding their efforts into PAM-equipped underwater gliders as a means of conducting this research to meet their management needs.\nWhy This Matters: NOAA Fisheries is mandated by Congress to monitor marine mammals to mitigate current risks and support sustainable oceans by improving our understanding of marine mammals as functioning parts of marine ecosystems. PAM-equipped gliders allow for a more economical approach to improving our understanding of marine mammals and supporting their long-term conservation.\n\nThe NOAA Fisheries PAM ‘Glider Rodeo’ (aka Underwater Glider Challenge) is part of a larger effort to accelerate the use of PAM-Gliders to monitor and assess cetacean populations (link to more information on the larger PAM-Glider effort). The objective of the Glider Rodeo is to field-test PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This two-week sea trial was conducted off Oahu, Hawai’i in February 2026.\nThis research compendium provides a comprehensive collection of the digital components related to this research project, including data products, code and text (protocols, reports, metadata, etc). Raw acoustic data will be archived to NCEI at a future date.\n\nInformation provided here is ongoing, and is frequently updated.\n\n\nFeatured\n\n\n Sound Bytes: Synchronous Swimming (With Robots) – Behind the Glider ChallengeThe exciting work of flying robots underwater takes science, teamwork, and flexibility\n\n\n\n Sound Bytes: Meet the Pilots of the Underwater Glider ChallengeA conversation with the NOAA pilots guiding gliders to capture the sounds of our ocean\n\n\n\n NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘iNOAA Fisheries is leading a major effort to evaluate how next-generation ocean gliders can transform ocean monitoring and marine mammal conservation, while also benefitting U.S. fishermen and ocean industries\n\n\n\n Sound Bytes Blog: It’s a boat, it’s a plane, it’s a passive acoustic ocean glider! Selene Fregosi (PIFSC) explains how underwater gliders help us listen for whales! \n\n\n\n Ocean Gliders Listen for Whales off Oregon in Test of New Ways to Count Them Passive acoustic monitoring by ‘gliders’ may better detect some species",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "data/ReadMe.html",
+    "href": "data/ReadMe.html",
     "title": "NOAA quarto simple",
     "section": "",
-    "text": "ReadMe for Supplement Folder\nThe purpose of this folder is to hold any supplementary files that are not data, script, or components of the manuscript.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
+  },
+  {
+    "objectID": "content/hack/prep.html",
+    "href": "content/hack/prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "content/hack/prep.html#hackweek-projects",
+    "href": "content/hack/prep.html#hackweek-projects",
+    "title": "Preparation",
+    "section": "",
+    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "content/hack/prep.html#github-account",
+    "href": "content/hack/prep.html#github-account",
+    "title": "Preparation",
+    "section": "Github Account",
+    "text": "Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek."
+  },
+  {
+    "objectID": "content/hack/prep.html#hackweek-jupyterhub",
+    "href": "content/hack/prep.html#hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Hackweek JupyterHub",
+    "text": "Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day."
+  },
+  {
+    "objectID": "content/hack/prep.html#pre-hackweek-learning-optional",
+    "href": "content/hack/prep.html#pre-hackweek-learning-optional",
+    "title": "Preparation",
+    "section": "Pre-HackWeek Learning (Optional)",
+    "text": "Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners."
+  },
+  {
+    "objectID": "content/hack/prep.html#what-is-git",
+    "href": "content/hack/prep.html#what-is-git",
+    "title": "Preparation",
+    "section": "What is Git?",
+    "text": "What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website"
+  },
+  {
+    "objectID": "content/hack/prep.html#setting-up-on-jupyterhub",
+    "href": "content/hack/prep.html#setting-up-on-jupyterhub",
+    "title": "Preparation",
+    "section": "Setting up on JupyterHub",
+    "text": "Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\n\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\n\nAfter you have entered the code and granted authorization, the Terminal will update:\n\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\n\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\n\ngit config --global credential.helper store\n\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key."
+  },
+  {
+    "objectID": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
+    "href": "content/hack/prep.html#log-into-the-hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Log into the hackweek JupyterHub",
+    "text": "Log into the hackweek JupyterHub\n\nworkshop.nmfs-openscapes.2i2c.cloud\n\nWatch this video for a quick orientation to the JupyterHub."
+  },
+  {
+    "objectID": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
+    "href": "content/hack/prep.html#for-those-who-are-brand-new-to-python",
+    "title": "Preparation",
+    "section": "For those who are brand new to Python",
+    "text": "For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run"
+  },
+  {
+    "objectID": "content/hack/prep.html#start-with-some-basic-tutorials",
+    "href": "content/hack/prep.html#start-with-some-basic-tutorials",
+    "title": "Preparation",
+    "section": "Start with some basic tutorials",
+    "text": "Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\n\nOpen the ipynb notebooks and start working through the material."
   },
   {
     "objectID": "content/overview.html",
@@ -561,71 +683,6 @@
     "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
     "crumbs": [
       "Overview"
-    ]
-  },
-  {
-    "objectID": "content/hack/details.html",
-    "href": "content/hack/details.html",
-    "title": "Details",
-    "section": "",
-    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and West). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project."
-  },
-  {
-    "objectID": "content/hack/details.html#overview",
-    "href": "content/hack/details.html#overview",
-    "title": "Details",
-    "section": "Overview",
-    "text": "Overview\nThe organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers."
-  },
-  {
-    "objectID": "content/hack/details.html#definition-of-harassment",
-    "href": "content/hack/details.html#definition-of-harassment",
-    "title": "Details",
-    "section": "Definition of Harassment",
-    "text": "Definition of Harassment\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior"
-  },
-  {
-    "objectID": "content/hack/details.html#expectations",
-    "href": "content/hack/details.html#expectations",
-    "title": "Details",
-    "section": "Expectations",
-    "text": "Expectations\nWe expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers."
-  },
-  {
-    "objectID": "content/hack/details.html#reporting-a-violation",
-    "href": "content/hack/details.html#reporting-a-violation",
-    "title": "Details",
-    "section": "Reporting a violation",
-    "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
-  },
-  {
-    "objectID": "content/hackathon.html#objective",
-    "href": "content/hackathon.html#objective",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Objective",
-    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a standardized framework for future data integration. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "content/hackathon.html#goals",
-    "href": "content/hackathon.html#goals",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Goals",
-    "text": "Goals\nWe have a suite of initial goals for this community hackathon:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "content/hackathon.html#how-to-participate",
-    "href": "content/hackathon.html#how-to-participate",
-    "title": "Glider Rodeo Hackathon",
-    "section": "How to Participate",
-    "text": "How to Participate\nDo you have ideas, recommendations or advice for this event? Are you interested in participating?\nPlease fill out this survey, and we’ll reach out later in the summer.",
-    "crumbs": [
-      "Hackathon"
     ]
   },
   {
@@ -679,70 +736,33 @@
     ]
   },
   {
-    "objectID": "content/data-collection.html",
-    "href": "content/data-collection.html",
-    "title": "Data Collection",
-    "section": "",
-    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "objectID": "content/hackathon.html#objective",
+    "href": "content/hackathon.html#objective",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Objective",
+    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a standardized framework for future data integration. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
     "crumbs": [
-      "Data Collection"
+      "Hackathon"
     ]
   },
   {
-    "objectID": "content/data-collection.html#partners",
-    "href": "content/data-collection.html#partners",
-    "title": "Data Collection",
-    "section": "",
-    "text": "The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "objectID": "content/hackathon.html#goals",
+    "href": "content/hackathon.html#goals",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Goals",
+    "text": "Goals\nWe have a suite of initial goals for this community hackathon:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
     "crumbs": [
-      "Data Collection"
+      "Hackathon"
     ]
   },
   {
-    "objectID": "content/data-collection.html#trackline-planning",
-    "href": "content/data-collection.html#trackline-planning",
-    "title": "Data Collection",
-    "section": "Trackline Planning",
-    "text": "Trackline Planning\nStay Tuned!",
+    "objectID": "content/hackathon.html#how-to-participate",
+    "href": "content/hackathon.html#how-to-participate",
+    "title": "Glider Rodeo Hackathon",
+    "section": "How to Participate",
+    "text": "How to Participate\nDo you have ideas, recommendations or advice for this event? Are you interested in participating?\nPlease fill out this survey, and we’ll reach out later in the summer.",
     "crumbs": [
-      "Data Collection"
+      "Hackathon"
     ]
-  },
-  {
-    "objectID": "content/data-collection.html#communications",
-    "href": "content/data-collection.html#communications",
-    "title": "Data Collection",
-    "section": "Communications",
-    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#data-offload",
-    "href": "content/data-collection.html#data-offload",
-    "title": "Data Collection",
-    "section": "Data Offload",
-    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "content/data-collection.html#field-reports",
-    "href": "content/data-collection.html#field-reports",
-    "title": "Data Collection",
-    "section": "Field Reports",
-    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
-    "crumbs": [
-      "Data Collection"
-    ]
-  },
-  {
-    "objectID": "data/ReadMe.html",
-    "href": "data/ReadMe.html",
-    "title": "NOAA quarto simple",
-    "section": "",
-    "text": "ReadMe for Data Folder\nThe purpose of this folder is hold ORIGINAL raw or raw-derived data. Github is NOT an appropriate platform for saving large files or large numbers of files. You will need to save your raw data (and possible other large data products) in an alternative location, such as NCEI, Figshare, or Zenodo. We recommend that you identify the location of all raw data (WHERE?). As this data is intended to be ORIGINAL data, we recommend that modified or intermediate data or data products (that are modified by code stored in the code folder) be stored in the output folder.\nNote: to create a template with standardized folder structure, there needs to be a document within the folder to save to github. This readme serves as this document, and can be deleted from your personal project/repository."
   }
 ]
