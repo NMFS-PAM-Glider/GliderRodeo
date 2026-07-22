@@ -43,8 +43,8 @@ website:
         text: "Pre-Processing"
       - section: content/hackathon.qmd
         text: "Hackathon"
-      #   contents:
-      #   - content/hack/details.qmd
+        contents:
+        - content/hack/details.qmd
       #   - content/hack/prep.qmd
       #   - content/hack/presentations.qmd
       #   - content/hack/projects.qmd
