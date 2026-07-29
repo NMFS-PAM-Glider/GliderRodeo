@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,14 +44,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-10c6b92a73c2a44fe166cfa5755df0f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b3d9365e5f40c0b715a3344a89b6772a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-10c6b92a73c2a44fe166cfa5755df0f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-132fa084fb3a675ec195fa3bc40ea97f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-877e0457fa88d1cd2250aa79b7b7812d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-132fa084fb3a675ec195fa3bc40ea97f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -352,7 +355,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#event-logistics" id="toc-event-logistics" class="nav-link active" data-scroll-target="#event-logistics">Event Logistics</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a>
+  <ul class="collapse">
+  <li><a href="#day-1-monday" id="toc-day-1-monday" class="nav-link" data-scroll-target="#day-1-monday">Day 1 — Monday</a></li>
+  <li><a href="#day-2-tuesday" id="toc-day-2-tuesday" class="nav-link" data-scroll-target="#day-2-tuesday">Day 2 — Tuesday</a></li>
+  <li><a href="#day-3-wednesday" id="toc-day-3-wednesday" class="nav-link" data-scroll-target="#day-3-wednesday">Day 3 — Wednesday</a></li>
+  <li><a href="#day-4-thursday" id="toc-day-4-thursday" class="nav-link" data-scroll-target="#day-4-thursday">Day 4 — Thursday</a></li>
+  <li><a href="#day-5-friday" id="toc-day-5-friday" class="nav-link" data-scroll-target="#day-5-friday">Day 5 — Friday</a></li>
+  </ul></li>
   <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team">Team</a></li>
   <li><a href="#jupyter-hub" id="toc-jupyter-hub" class="nav-link" data-scroll-target="#jupyter-hub">Jupyter Hub</a></li>
   <li><a href="#event-code-of-conduct" id="toc-event-code-of-conduct" class="nav-link" data-scroll-target="#event-code-of-conduct">Event Code of Conduct</a>
@@ -395,7 +405,430 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="schedule" class="level1">
 <h1>Schedule</h1>
-<p><em>coming soon!</em></p>
+<p>All times are in UTC-8 (Pacific Standard Time).</p>
+<section id="day-1-monday" class="level2">
+<h2 class="anchored" data-anchor-id="day-1-monday">Day 1 — Monday</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 10:30</td>
+<td>East Project Time</td>
+<td>10am to 1:30pm ET</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>7:00 - 7:45</td>
+<td>East Project Introduction</td>
+<td>Welcome, Introductions, &amp; Housekeeping <a href="https://docs.google.com/presentation/d/1fS9mCqvg_kWwCQ0Ud5_9uLb1CjNBw62e/present?slide=id.p1">slides</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="odd">
+<td>7:45 - 8:45</td>
+<td>East Group Project Brainstorming (3 rotations)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9:00 - 9:30</td>
+<td>East Project Pitching</td>
+<td>1 slide pitch</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:30 - 10:30</td>
+<td>East Group Project Breakout Rooms</td>
+<td>Each project will have a breakout room and start to get organized.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:30</td>
+<td>Science Lecture</td>
+<td>PACE Mission Overview <a href="https://fish-pace.github.io/hackweek-2025/presentations/lectures.html">lectures</a></td>
+<td>Jeremy Werdell</td>
+</tr>
+<tr class="even">
+<td>11:30 - 12:15</td>
+<td>Science Lecture</td>
+<td>Hyperspectral Products for Fisheries Applications <a href="https://fish-pace.github.io/hackweek-2025/presentations/lectures.html">lectures</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="odd">
+<td>12:15 - 12:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12:30 - 13:00</td>
+<td>Coding Tutorial 1</td>
+<td>Orientation for the Hackweek JupyterHub <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="odd">
+<td>13:00 - 14:00</td>
+<td>Coding Tutorial 2</td>
+<td>Accessing PACE data via earthaccess <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 17:30</td>
+<td>West Project Time</td>
+<td>2:30pm to 5:30pm PT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14:30 - 15:15</td>
+<td>West Project Introduction</td>
+<td>Welcome, Introductions, &amp; Housekeeping <a href="https://docs.google.com/presentation/d/1fS9mCqvg_kWwCQ0Ud5_9uLb1CjNBw62e/present?slide=id.p1">slides</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="odd">
+<td>15:15 - 16:00</td>
+<td>West Group Project Brainstorming (3 rotations)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>16:00 - 16:30</td>
+<td>West Project Pitching</td>
+<td>1 slide pitch</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16:30 - 17:30</td>
+<td>West Group Project Breakout Rooms</td>
+<td>Each project will have a breakout room and start to get organized.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-2-tuesday" class="level2">
+<h2 class="anchored" data-anchor-id="day-2-tuesday">Day 2 — Tuesday</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Tutorial</td>
+<td>Fish-PACE Hackweek Collaboration via Git and GitHub <a href="https://docs.google.com/presentation/d/1JuS8pNoq0__TyQMsTcXvvmSO8eaxJkAcxJQIlVpM2XA/present">slides</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/West Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>Science Lecture</td>
+<td>Harmful Algal Blooms and Hyperspectral Ocean Color Data <a href="https://fish-pace.github.io/hackweek-2025/presentations/lectures.html">lectures</a></td>
+<td>Shelly Tomlinson; Sachi Mishra</td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:15 - 13:00</td>
+<td>Coding Tutorial 1</td>
+<td>Remote Sensing Reflectance (Rrs) <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>13:00 - 13:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:15 - 14:00</td>
+<td>Coding Tutorial 2</td>
+<td>Data Matchups <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>West Tutorial</td>
+<td>Fish-PACE Hackweek Collaboration via Git and GitHub <a href="https://docs.google.com/presentation/d/1JuS8pNoq0__TyQMsTcXvvmSO8eaxJkAcxJQIlVpM2XA/present">slides</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>West Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-3-wednesday" class="level2">
+<h2 class="anchored" data-anchor-id="day-3-wednesday">Day 3 — Wednesday</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/West Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>Science Lecture</td>
+<td>Phytoplankton Community Composition from Ocean Color <a href="https://fish-pace.github.io/hackweek-2025/presentations/lectures.html">lectures</a></td>
+<td>Sasha Kramer</td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:15 - 13:00</td>
+<td>Coding Tutorial 1</td>
+<td>Accessing and Visualizing MOANA Data <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>13:00 - 13:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:15 - 14:00</td>
+<td>Coding Tutorial 2</td>
+<td>Optical water classification and clustering <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>West Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>West Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-4-thursday" class="level2">
+<h2 class="anchored" data-anchor-id="day-4-thursday">Day 4 — Thursday</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/West Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>Science Lecture</td>
+<td>Optical Light Fields and Fish Behavior <a href="https://fish-pace.github.io/hackweek-2025/presentations/lectures.html">lectures</a></td>
+<td>Christopher Haak</td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:00 - 12:45</td>
+<td>Coding Tutorial 1</td>
+<td>Exploring Light Attenuation with Kd <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Ryan Vandermeulen</td>
+</tr>
+<tr class="even">
+<td>12:30 - 12:45</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:45 - 13:30</td>
+<td>Coding Tutorial 2</td>
+<td>PACE, Bio-Argo and Machine-learning <a href="https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html">tutorials</a></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>13:30 - 14:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>West Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Eli Holmes</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>West Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-5-friday" class="level2">
+<h2 class="anchored" data-anchor-id="day-5-friday">Day 5 — Friday</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 11:00</td>
+<td>East &amp; West Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11:00 - 12:30</td>
+<td>Project Presentations</td>
+<td>East &amp; West together <a href="https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html">schedule</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:30 - 13:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13:00 - 14:00</td>
+<td>Project Presentations</td>
+<td>East &amp; West together <a href="https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html">schedule</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:00 - 14:15</td>
+<td>HackWeek Wrap-Up</td>
+<td></td>
+<td>Ryan Vandermeulen; Eli Holmes</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="team" class="level1">
 <h1>Team</h1>
