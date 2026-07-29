@@ -11,7 +11,90 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 # Schedule
 
-*coming soon!*
+All times are in UTC-8 (Pacific Standard Time).
+
+## Day 1 — Monday
+
+| Time | Event | Details | Lead(s) |
+|---|---|---|---|
+| 7:00 - 10:30 | East Project Time | 10am to 1:30pm ET | |
+| 7:00 - 7:45 | East Project Introduction | Welcome, Introductions, & Housekeeping [slides](https://docs.google.com/presentation/d/1fS9mCqvg_kWwCQ0Ud5_9uLb1CjNBw62e/present?slide=id.p1) | Ryan Vandermeulen |
+| 7:45 - 8:45 | East Group Project Brainstorming (3 rotations) | | |
+| 9:00 - 9:30 | East Project Pitching | 1 slide pitch | |
+| 9:30 - 10:30 | East Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. | |
+| 10:30 - 11:00 | Break | | |
+| 11:00 - 11:30 | Science Lecture | PACE Mission Overview [lectures](https://fish-pace.github.io/hackweek-2025/presentations/lectures.html) | Jeremy Werdell |
+| 11:30 - 12:15 | Science Lecture | Hyperspectral Products for Fisheries Applications [lectures](https://fish-pace.github.io/hackweek-2025/presentations/lectures.html) | Ryan Vandermeulen |
+| 12:15 - 12:30 | Break | | |
+| 12:30 - 13:00 | Coding Tutorial 1 | Orientation for the Hackweek JupyterHub [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Eli Holmes |
+| 13:00 - 14:00 | Coding Tutorial 2 | Accessing PACE data via earthaccess [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Eli Holmes |
+| 14:00 - 14:30 | Break | | |
+| 14:30 - 17:30 | West Project Time | 2:30pm to 5:30pm PT | |
+| 14:30 - 15:15 | West Project Introduction | Welcome, Introductions, & Housekeeping [slides](https://docs.google.com/presentation/d/1fS9mCqvg_kWwCQ0Ud5_9uLb1CjNBw62e/present?slide=id.p1) | Eli Holmes |
+| 15:15 - 16:00 | West Group Project Brainstorming (3 rotations) | | |
+| 16:00 - 16:30 | West Project Pitching | 1 slide pitch | |
+| 16:30 - 17:30 | West Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. | |
+
+## Day 2 — Tuesday
+
+| Time | Event | Details | Lead(s) |
+|---|---|---|---|
+| 7:00 - 7:30 | East Tutorial | Fish-PACE Hackweek Collaboration via Git and GitHub [slides](https://docs.google.com/presentation/d/1JuS8pNoq0__TyQMsTcXvvmSO8eaxJkAcxJQIlVpM2XA/present) | Eli Holmes |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. | |
+| 9:00 - 10:30 | East/West Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break | | |
+| 11:00 - 11:45 | Science Lecture | Harmful Algal Blooms and Hyperspectral Ocean Color Data [lectures](https://fish-pace.github.io/hackweek-2025/presentations/lectures.html) | Shelly Tomlinson; Sachi Mishra |
+| 11:45 - 12:15 | Break | | |
+| 12:15 - 13:00 | Coding Tutorial 1 | Remote Sensing Reflectance (Rrs) [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Ryan Vandermeulen |
+| 13:00 - 13:15 | Break | | |
+| 13:15 - 14:00 | Coding Tutorial 2 | Data Matchups [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Ryan Vandermeulen |
+| 14:00 - 14:30 | Break | | |
+| 14:30 - 15:00 | West Tutorial | Fish-PACE Hackweek Collaboration via Git and GitHub [slides](https://docs.google.com/presentation/d/1JuS8pNoq0__TyQMsTcXvvmSO8eaxJkAcxJQIlVpM2XA/present) | Eli Holmes |
+| 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+
+## Day 3 — Wednesday
+
+| Time | Event | Details | Lead(s) |
+|---|---|---|---|
+| 7:00 - 7:30 | East Group Check-ins (Rose, Bud, Thorn) | | Ryan Vandermeulen |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. | |
+| 9:00 - 10:30 | East/West Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break | | |
+| 11:00 - 11:45 | Science Lecture | Phytoplankton Community Composition from Ocean Color [lectures](https://fish-pace.github.io/hackweek-2025/presentations/lectures.html) | Sasha Kramer |
+| 11:45 - 12:15 | Break | | |
+| 12:15 - 13:00 | Coding Tutorial 1 | Accessing and Visualizing MOANA Data [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Ryan Vandermeulen |
+| 13:00 - 13:15 | Break | | |
+| 13:15 - 14:00 | Coding Tutorial 2 | Optical water classification and clustering [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Ryan Vandermeulen |
+| 14:00 - 14:30 | Break | | |
+| 14:30 - 15:00 | West Group Check-ins (Rose, Bud, Thorn) | | Eli Holmes |
+| 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+
+## Day 4 — Thursday
+
+| Time | Event | Details | Lead(s) |
+|---|---|---|---|
+| 7:00 - 7:30 | East Group Check-ins (Rose, Bud, Thorn) | | Ryan Vandermeulen |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. | |
+| 9:00 - 10:30 | East/West Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break | | |
+| 11:00 - 11:45 | Science Lecture | Optical Light Fields and Fish Behavior [lectures](https://fish-pace.github.io/hackweek-2025/presentations/lectures.html) | Christopher Haak |
+| 11:45 - 12:00 | Break | | |
+| 12:00 - 12:45 | Coding Tutorial 1 | Exploring Light Attenuation with Kd [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Ryan Vandermeulen |
+| 12:30 - 12:45 | Break | | |
+| 12:45 - 13:30 | Coding Tutorial 2 | PACE, Bio-Argo and Machine-learning [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Eli Holmes |
+| 13:30 - 14:00 | Break | | |
+| 14:30 - 15:00 | West Group Check-ins (Rose, Bud, Thorn) | | Eli Holmes |
+| 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+
+## Day 5 — Friday
+
+| Time | Event | Details | Lead(s) |
+|---|---|---|---|
+| 7:00 - 11:00 | East & West Project Work Time | Each project will have a breakout room. | |
+| 11:00 - 12:30 | Project Presentations | East & West together [schedule](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html) | |
+| 12:30 - 13:00 | Break | | |
+| 13:00 - 14:00 | Project Presentations | East & West together [schedule](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html) | |
+| 14:00 - 14:15 | HackWeek Wrap-Up | | Ryan Vandermeulen; Eli Holmes |
 
 # Team
 
