@@ -13,7 +13,33 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 All times are in UTC-8 (Pacific Standard Time).
 
-## Day 1 — Monday
+::: {.schedule-picker}
+<label for="schedule-date">Select a date</label>
+
+```{ojs}
+//| echo: false
+
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+viewof selectedDay = {
+  const select = document.createElement("select");
+  select.id = "schedule-date";
+  select.className = "form-select";
+  days.forEach((day, index) => select.add(new Option(`${day} — Day ${index + 1}`, day)));
+  return select;
+}
+
+scheduleDisplay = {
+  for (const section of document.querySelectorAll(".schedule-day")) {
+    section.hidden = section.dataset.day !== selectedDay;
+  }
+  return html``;
+}
+```
+:::
+
+::: {.schedule-day data-day="Monday" aria-live="polite"}
+## Day 1 — Monday {.unlisted}
 
 | Time | Event | Details | Lead(s) |
 |---|---|---|---|
@@ -34,8 +60,10 @@ All times are in UTC-8 (Pacific Standard Time).
 | 15:15 - 16:00 | West Group Project Brainstorming (3 rotations) | | |
 | 16:00 - 16:30 | West Project Pitching | 1 slide pitch | |
 | 16:30 - 17:30 | West Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. | |
+:::
 
-## Day 2 — Tuesday
+::: {.schedule-day data-day="Tuesday" aria-live="polite" hidden="true"}
+## Day 2 — Tuesday {.unlisted}
 
 | Time | Event | Details | Lead(s) |
 |---|---|---|---|
@@ -51,8 +79,10 @@ All times are in UTC-8 (Pacific Standard Time).
 | 14:00 - 14:30 | Break | | |
 | 14:30 - 15:00 | West Tutorial | Fish-PACE Hackweek Collaboration via Git and GitHub [slides](https://docs.google.com/presentation/d/1JuS8pNoq0__TyQMsTcXvvmSO8eaxJkAcxJQIlVpM2XA/present) | Eli Holmes |
 | 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+:::
 
-## Day 3 — Wednesday
+::: {.schedule-day data-day="Wednesday" aria-live="polite" hidden="true"}
+## Day 3 — Wednesday {.unlisted}
 
 | Time | Event | Details | Lead(s) |
 |---|---|---|---|
@@ -68,8 +98,10 @@ All times are in UTC-8 (Pacific Standard Time).
 | 14:00 - 14:30 | Break | | |
 | 14:30 - 15:00 | West Group Check-ins (Rose, Bud, Thorn) | | Eli Holmes |
 | 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+:::
 
-## Day 4 — Thursday
+::: {.schedule-day data-day="Thursday" aria-live="polite" hidden="true"}
+## Day 4 — Thursday {.unlisted}
 
 | Time | Event | Details | Lead(s) |
 |---|---|---|---|
@@ -85,8 +117,10 @@ All times are in UTC-8 (Pacific Standard Time).
 | 13:30 - 14:00 | Break | | |
 | 14:30 - 15:00 | West Group Check-ins (Rose, Bud, Thorn) | | Eli Holmes |
 | 15:00 - 17:30 | West Project Work Time | Each project will have a breakout room. | |
+:::
 
-## Day 5 — Friday
+::: {.schedule-day data-day="Friday" aria-live="polite" hidden="true"}
+## Day 5 — Friday {.unlisted}
 
 | Time | Event | Details | Lead(s) |
 |---|---|---|---|
@@ -95,6 +129,60 @@ All times are in UTC-8 (Pacific Standard Time).
 | 12:30 - 13:00 | Break | | |
 | 13:00 - 14:00 | Project Presentations | East & West together [schedule](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html) | |
 | 14:00 - 14:15 | HackWeek Wrap-Up | | Ryan Vandermeulen; Eli Holmes |
+:::
+
+```{=html}
+<style>
+.schedule-picker {
+  max-width: 24rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 0.3rem solid var(--bs-primary);
+  border-radius: 0.4rem;
+  background: var(--bs-tertiary-bg);
+}
+
+.schedule-picker form {
+  margin: 0;
+}
+
+.schedule-picker .code-copy-outer-scaffold {
+  display: none;
+}
+
+.schedule-picker label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.schedule-day {
+  padding: 0.25rem 1.25rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-day h2 {
+  margin-top: 0.75rem;
+}
+
+.schedule-day table {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .schedule-day {
+    overflow-x: auto;
+    padding-inline: 0.75rem;
+  }
+
+  .schedule-day table {
+    min-width: 42rem;
+  }
+}
+</style>
+```
 
 # Team
 
