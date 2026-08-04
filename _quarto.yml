@@ -39,8 +39,23 @@ website:
         text: "Data Collection"
       - href: content/hardware.qmd
         text: "Hardware"
-      - href: content/pre-processing.qmd
+      - section: content/pre-processing.qmd
         text: "Pre-Processing"
+        contents:
+          - href: content/data_processing/seaglider-wispr.qmd
+            text: Seaglider - WISPR
+          - href: content/data_processing/seaglider-pmar-xl.qmd
+            text: Seaglider - PMAR XL
+          - href: content/data_processing/slocum-wispr3.qmd
+            text: Slocum - WISPR 3
+          - href: content/data_processing/slocum-dmon2.qmd
+            text: Slocum - DMON 2
+          - href: content/data_processing/oceanscout-wispr6.qmd
+            text: Oceanscout - WISPR 6.1
+          - href: content/data_processing/alseamar.qmd
+            text: Alseamar
+          - href: content/data_processing/EnvData-processing.qmd
+          - href: content/data_processing/DeploymentSummaries.qmd
       - section: content/hackathon.qmd
         text: "Hackathon"
         contents:
