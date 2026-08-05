@@ -60,10 +60,9 @@ website:
         text: "Hackathon"
         contents:
         - content/hack/details.qmd
-      #   - content/hack/prep.qmd
-      #   - content/hack/presentations.qmd
-      #   - content/hack/projects.qmd
-      #   - content/hack/reference.qmd
+        - content/hack/prep.qmd
+        - content/hack/info.qmd
+        - content/hack/projects.qmd
       - href: content/data-analysis.qmd
         text: "Data Analysis"
       - href: content/reporting.qmd

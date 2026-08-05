@@ -46,7 +46,13 @@ The project work is a combination of
 ::: callout-important
 ## Attention!
 
-Here is a checklist of things you need to do in advance: - \[ \] Create a Github Account - \[ \] Login to the JupyterHub - \[ \] Review material on the Resource Book linked on the website
+Here is a checklist of things you need to do in advance:
+
+\- \[ \] Create a Github Account
+
+\- \[ \] Login to the JupyterHub
+
+\- \[ \] Review material on the Resource Book linked on the website
 :::
 
 ## Github Account
