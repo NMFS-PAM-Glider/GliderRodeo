@@ -7,9 +7,9 @@ format: html
 
 | Title | Slides | Recording |
 | :---- | :----: | :-------: |
-| Welcome to the Hackweek      | [{{ l1 }}][welcome-view]  | [{{ v1 }}][welcome-vid] |
-| The Glider Rodeo             | [{{ l1 }}][rodeo-view]   | [{{ v1 }}][rodeo-vid] |
-| Hackweek Wrapup             | [{{ l1 }}][rodeo-view]   | [{{ v1 }}][rodeo-vid] |
+| Welcome to the Hackweek      | [<i class="bi bi-eye"></i>][welcome-view]  | [<i class="bi bi-youtube"></i>][welcome-vid] |
+| The Glider Rodeo             | [<i class="bi bi-eye"></i>][rodeo-view]   | [<i class="bi bi-youtube"></i>][rodeo-vid] |
+| Hackweek Wrapup             | [<i class="bi bi-eye"></i>][rodeo-view]   | [<i class="bi bi-youtube"></i>][rodeo-vid] |
 
 <!-- 
 | The Future of High-resolution Ocean Color | [{{ l0 }}][future-view]  | [{{ v0 }}][future-vid] |
