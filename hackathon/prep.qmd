@@ -115,8 +115,7 @@ Below are instructions to get you setup with `git` on the PAM-Glider Rodeo Hac
 Use your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee\@hackweek.com. Both values need to be surrounded by quotes ".
 :::
 
-```{r}
-#| eval: false
+```console
 $ git config --global user.name "Attendee Name"
 $ git config --global user.email "attendee@hackweek.com"
 $ git config --global pull.rebase true
@@ -126,8 +125,7 @@ The third line is a configuration you must set before pulling with git. It speci
 
 To verify that you successfully executed the above commands, use the git config --list command in the Terminal. The output should look similar to this:
 
-```{r}
-#| eval: false
+```console
 $ git config --list
 user.name=Attendee Name
 user.email=attendee@hackweek.com
@@ -140,8 +138,7 @@ Option 1: gh-scoped-creds We recommend this method if you have permission to con
 
 Start from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:
 
-```{r}
-#| eval: false
+```console
 $ gh-scoped-creds 
 You have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX
 Waiting......
@@ -149,8 +146,7 @@ Waiting......
 
 After you have entered the code and granted authorization, the Terminal will update:
 
-```{r}
-#| eval: false
+```console
 Success! Authentication will expire in 8.0 hours.
 
 Visit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location
@@ -167,8 +163,7 @@ Option 2: Manual Configuration Work through the instructions on the [GitHub pers
 
 Once you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.
 
-```{r}
-#| eval: false
+```console
 git config --global credential.helper store
 ```
 
@@ -184,8 +179,7 @@ For those of you who want to learn scientific programming with Python, here is o
 
 ## Log into the hackweek JupyterHub
 
-```{r}
-#| eval: false
+```console
 workshop.nmfs-openscapes.2i2c.cloud
 ```
 
@@ -213,8 +207,7 @@ These are by [Robert Johansson](https://jrjohansson.github.io/) author of Numeri
 
 - Type
 
-```{r}
-#| eval: false
+```console
 cd ~
 git clone https://github.com/jrjohansson/scientific-python-lectures
 ```
