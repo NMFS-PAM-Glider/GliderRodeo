@@ -50,10 +50,10 @@ scheduleDisplay = {
 | 9:30 - 10:30 | East Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. |  |
 | 10:30 - 11:00 | Break |  |  |
 | 11:00 - 11:30 | Science Lecture | Glider Rodeo Overview lectures | Selene Fregosi |
-| 11:30 - 12:15 | Science Lecture | TBD | TBD |
+| 11:30 - 12:15 | Science Lecture | Glider Rodeo Data | Kourtney Burger |
 | 12:15 - 12:30 | Break |  |  |
 | 12:30 - 13:00 | Coding Tutorial 1 | Orientation for the Hackweek JupyterHub [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Aksel Sloan |
-| 13:00 - 14:00 | Coding Tutorial 2 | Accessing Glider Rodeo Data tutorials | TBD |
+| 13:00 - 14:00 | Coding Tutorial 2 | Best Practices for Working with Data | Aksel Sloan |
 | 14:00 - 14:30 | Break |  |  |
 | 14:30 - 17:30 | Hawaii Project Time | 2:30pm to 5:30pm PT |  |
 | 14:30 - 15:15 | Hawaii Project Introduction | Welcome, Introductions, & Housekeeping slides | Shannon Rankin |

@@ -35,10 +35,12 @@ website:
         text: Home
       - href: content/overview.qmd
         text: "Overview"
-      - href: content/data-collection.qmd
-        text: "Data Collection"
       - href: content/hardware.qmd
         text: "Hardware"
+      - href: content/fieldwork.qmd
+        text: "Fieldwork"
+      - href: content/data.qmd
+        text: "Data"
       - section: content/pre-processing.qmd
         text: "Pre-Processing"
         contents:
@@ -63,10 +65,10 @@ website:
         - content/hack/prep.qmd
         - content/hack/info.qmd
         - content/hack/projects.qmd
-      - href: content/data-analysis.qmd
-        text: "Data Analysis"
-      - href: content/reporting.qmd
-        text: "Reporting"
+      # - href: content/data-analysis.qmd
+      #   text: "Data Analysis"
+      # - href: content/reporting.qmd
+      #   text: "Reporting"
 
 
 

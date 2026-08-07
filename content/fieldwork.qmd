@@ -4,13 +4,14 @@ format:
   html:
     code-fold: true
 ---
-
 ## Partners
 
-#### *Pacific Islands Fisheries Science Center*
+#### [*Pacific Islands Fisheries Science Center*](https://www.fisheries.noaa.gov/pacific-islands/population-assessments/passive-acoustics-pacific-islands)
 
-#### *Southwest Fisheries Science Center*
 
+#### [*Southwest Fisheries Science Center*](https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab)
+
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *Oregon State University, CIMERS*
 
 The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.
@@ -18,32 +19,43 @@ The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) an
 They were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.
 
 Participants: [Selene Fregosi](selene.fregosi@noaa.gov), [Dave Mellinger](dave.mellinger@noaa.gov)
+:::
 
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *Cornell University*
 
 K. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.
 
 Participants: [Maria Vasilkin](mv478@cornell.edu)
+:::
 
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *Teledyne Webb Research*
 
 Teledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.
 
 Participants:[Karl Boettger](karl.boettger@teledyne.com), [Shea Quinn](Shea.Quinn@teledyne.com), [Cordie Goodrich](cordielyn.goodrich@teledyne.com)
+:::
 
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *Alseamar*
 
 Alseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.
 
 Participants: [Camille Pierini](cpierini@alseamar-alcen.com), [Laurent Beguery](LBEGUERY@alseamar-alcen.com)
+:::
 
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *JASCO Applied Science*
 
 JASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.
+:::
 
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *University of Hawaii Marine Center*
 
 Special thanks to [UH Marine Center](https://www.soest.hawaii.edu/UHMC/) for providing charter vessel support
+:::
 
 ## Trackline Planning
 
@@ -57,7 +69,7 @@ PIFSC/SWFSC communication teams facilitated the creating and amplification of a 
 
 February 5, 2026, NOAA Featured Web Story: [NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘i]()https://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: [Meet the Pilots of the Underwater Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-meet-pilots-underwater-glider-challenge) (Kourtney Burger)
 
-March 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)
+March 30, 2026, Sound Bytes Blog: [Synchronous Swimming (With Robots) – Behind the Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-synchronous-swimming-robots-behind-glider-challenge) (Selene Fregosi)
 
 ## Data Offload
 
@@ -83,46 +95,33 @@ Each glider platform provides a different approach to real-time summaries:
 
 Pre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.
 
-::: columns
+:::::: columns
 ::: {.column width="30%"}
-
 ![Real time detections provided by Alseamar SeaExplorer during a window of several days](images/realTime_jasco_detections.jpg){fig-alt="Real time detections provided by JASCO OceanObserver (on a Slocum Glider) during a window of several days."}
-
 :::
 
 ::: {.column width="30%"}
-
 ![Near real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).](images/realTime_jasco_detectionMap.png)
-
 :::
 
 ::: {.column width="30%"}
-
 ![Near real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.](images/realTime_jasco_dolphinPlot.png)
-
 :::
+::::::
 
-:::
-
-::: columns
+:::::: columns
 ::: {.column width="30%"}
-
 ![Near real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.](images/realTime_jasco_humpbackPlot.png)
-
 :::
 
 ::: {.column width="30%"}
-
 ![Near real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.](images/realTime_jasco_minkePlot.png)
-
 :::
 
 ::: {.column width="30%"}
-
 ![Power spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).](images/realTime_jasco_psd.png)
-
 :::
-:::
+::::::
 
 #### *Alseamar Ocean Explorer*
 
