@@ -1,119 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/fieldwork.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/index.html</loc>
+    <lastmod>2026-08-07T16:17:32.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/prep.html</loc>
+    <lastmod>2026-08-07T16:17:32.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/index.html</loc>
+    <lastmod>2026-08-07T16:17:32.201Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/reporting.html</loc>
-    <lastmod>2026-08-07T15:44:47.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html</loc>
-    <lastmod>2026-08-07T15:44:47.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-pmar-xl.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-dmon2.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/oceanscout-wispr6.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-wispr3.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/alseamar.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html</loc>
-    <lastmod>2026-08-07T15:44:47.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hack/info.html</loc>
-    <lastmod>2026-08-07T15:44:47.272Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hack/details.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/manuscript/ReadMe.html</loc>
-    <lastmod>2026-08-07T15:44:47.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/figs/ReadMe.html</loc>
-    <lastmod>2026-08-07T15:44:47.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/SETUP_GUIDE.html</loc>
-    <lastmod>2026-08-07T15:44:47.447Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/ReadMe.html</loc>
-    <lastmod>2026-08-07T15:44:47.447Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/SCSS_INTEGRATION.html</loc>
-    <lastmod>2026-08-07T15:44:47.447Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/supplement/QUICK_REFERENCE.html</loc>
-    <lastmod>2026-08-07T15:44:47.446Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/index.html</loc>
-    <lastmod>2026-08-07T15:44:47.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/data/ReadMe.html</loc>
-    <lastmod>2026-08-07T15:44:47.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hack/prep.html</loc>
-    <lastmod>2026-08-07T15:44:47.273Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hack/projects.html</loc>
-    <lastmod>2026-08-07T15:44:47.273Z</lastmod>
+    <lastmod>2026-08-07T16:17:32.198Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/overview.html</loc>
-    <lastmod>2026-08-07T15:44:47.355Z</lastmod>
+    <lastmod>2026-08-07T16:17:32.198Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-wispr.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/fieldwork.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-dmon2.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-pmar-xl.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/alseamar.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/DeploymentSummaries.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/AcousticData-preprocessing.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html</loc>
-    <lastmod>2026-08-07T15:44:47.273Z</lastmod>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data.html</loc>
-    <lastmod>2026-08-07T15:44:47.271Z</lastmod>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hackathon.html</loc>
-    <lastmod>2026-08-07T15:44:47.273Z</lastmod>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data-analysis.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/AcousticData-preprocessing.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/oceanscout-wispr6.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-wispr.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-wispr3.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/hardware.html</loc>
+    <lastmod>2026-08-07T16:17:32.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/content/pre-processing.html</loc>
+    <lastmod>2026-08-07T16:17:32.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/details.html</loc>
+    <lastmod>2026-08-07T16:17:32.200Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/info.html</loc>
+    <lastmod>2026-08-07T16:17:32.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/projects.html</loc>
+    <lastmod>2026-08-07T16:17:32.201Z</lastmod>
   </url>
 </urlset>
