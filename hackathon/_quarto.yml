@@ -10,7 +10,7 @@ book:
   repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
-    - details.qmd
+    - logistics.qmd
     - prep.qmd
     - info.qmd
     - projects.qmd
