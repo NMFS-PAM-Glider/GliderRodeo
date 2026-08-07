@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Collection – NOAA quarto simple</title>
+<title>Data – NOAA quarto simple</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,8 +35,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/hardware.html" rel="next">
-<link href="../content/overview.html" rel="prev">
+<link href="../content/pre-processing.html" rel="next">
+<link href="../content/fieldwork.html" rel="prev">
 <link href="../content/images/GliderRodeo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -254,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data-collection.html">Data Collection</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data.html">Data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -299,14 +299,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/data-collection.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Collection</span></a>
+  <a href="../content/hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware</span></a>
+  <a href="../content/fieldwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fieldwork</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -403,18 +409,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Analysis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/reporting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reporting</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -425,13 +419,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#partners" id="toc-partners" class="nav-link active" data-scroll-target="#partners">Partners</a></li>
-  <li><a href="#trackline-planning" id="toc-trackline-planning" class="nav-link" data-scroll-target="#trackline-planning">Trackline Planning</a></li>
-  <li><a href="#communications" id="toc-communications" class="nav-link" data-scroll-target="#communications">Communications</a></li>
-  <li><a href="#data-offload" id="toc-data-offload" class="nav-link" data-scroll-target="#data-offload">Data Offload</a></li>
-  <li><a href="#field-reports" id="toc-field-reports" class="nav-link" data-scroll-target="#field-reports">Field Reports</a></li>
+  <li><a href="#data-management-plan" id="toc-data-management-plan" class="nav-link active" data-scroll-target="#data-management-plan">Data Management Plan</a>
+  <ul class="collapse">
+  <li><a href="#glider-rodeo-datasets" id="toc-glider-rodeo-datasets" class="nav-link" data-scroll-target="#glider-rodeo-datasets">Glider Rodeo Datasets</a></li>
+  </ul></li>
+  <li><a href="#raw-audio-data" id="toc-raw-audio-data" class="nav-link" data-scroll-target="#raw-audio-data">Raw Audio Data</a>
+  <ul class="collapse">
+  <li><a href="#soundscape-analysis" id="toc-soundscape-analysis" class="nav-link" data-scroll-target="#soundscape-analysis">Soundscape Analysis</a></li>
+  <li><a href="#cetacean-acoustic-detections" id="toc-cetacean-acoustic-detections" class="nav-link" data-scroll-target="#cetacean-acoustic-detections">Cetacean Acoustic Detections</a></li>
+  </ul></li>
+  <li><a href="#environmental-data" id="toc-environmental-data" class="nav-link" data-scroll-target="#environmental-data">Environmental Data</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/data-collection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/data-collection.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -439,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Collection</h1>
+<h1 class="title">Data</h1>
 </div>
 
 
@@ -456,184 +455,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="partners" class="level2">
-<h2 class="anchored" data-anchor-id="partners">Partners</h2>
-<section id="pacific-islands-fisheries-science-center" class="level4">
-<h4 class="anchored" data-anchor-id="pacific-islands-fisheries-science-center"><em>Pacific Islands Fisheries Science Center</em></h4>
+<section id="data-management-plan" class="level2">
+<h2 class="anchored" data-anchor-id="data-management-plan">Data Management Plan</h2>
+<p>A draft <a href="https://docs.google.com/document/d/12bI75Ho0-ega1G6QQIJenqn-rv5-S4ZpbXyxpyQLVUs/edit?usp=sharing">Data Management Plan</a> outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited.</p>
+<section id="glider-rodeo-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="glider-rodeo-datasets">Glider Rodeo Datasets</h3>
+<p>Link to Google Doc (for those with permissions) <iframe src="https://docs.google.com/spreadsheets/d/1fyHxeri_VOFBRXGSuNiKqbW0iODNe0UmCyOPemWovsU/edit?usp=sharing;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;"></p>
+</iframe>
+</p></section>
 </section>
-<section id="southwest-fisheries-science-center" class="level4">
-<h4 class="anchored" data-anchor-id="southwest-fisheries-science-center"><em>Southwest Fisheries Science Center</em></h4>
+<section id="raw-audio-data" class="level2">
+<h2 class="anchored" data-anchor-id="raw-audio-data">Raw Audio Data</h2>
+<p>Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">National Centers for Environmental Information Passive Acoustic Data Portal</a> after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.</p>
+<section id="soundscape-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="soundscape-analysis">Soundscape Analysis</h3>
 </section>
-<section id="oregon-state-university-cimers" class="level4">
-<h4 class="anchored" data-anchor-id="oregon-state-university-cimers"><em>Oregon State University, CIMERS</em></h4>
-<p>The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.</p>
-<p>They were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.</p>
-<p>Participants: <a href="selene.fregosi@noaa.gov">Selene Fregosi</a>, <a href="dave.mellinger@noaa.gov">Dave Mellinger</a></p>
-</section>
-<section id="cornell-university" class="level4">
-<h4 class="anchored" data-anchor-id="cornell-university"><em>Cornell University</em></h4>
-<p>K. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.</p>
-<p>Participants: <a href="mv478@cornell.edu">Maria Vasilkin</a></p>
-</section>
-<section id="teledyne-webb-research" class="level4">
-<h4 class="anchored" data-anchor-id="teledyne-webb-research"><em>Teledyne Webb Research</em></h4>
-<p>Teledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.</p>
-<p>Participants:<a href="karl.boettger@teledyne.com">Karl Boettger</a>, <a href="Shea.Quinn@teledyne.com">Shea Quinn</a>, <a href="cordielyn.goodrich@teledyne.com">Cordie Goodrich</a></p>
-</section>
-<section id="alseamar" class="level4">
-<h4 class="anchored" data-anchor-id="alseamar"><em>Alseamar</em></h4>
-<p>Alseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.</p>
-<p>Participants: <a href="cpierini@alseamar-alcen.com">Camille Pierini</a>, <a href="LBEGUERY@alseamar-alcen.com">Laurent Beguery</a></p>
-</section>
-<section id="jasco-applied-science" class="level4">
-<h4 class="anchored" data-anchor-id="jasco-applied-science"><em>JASCO Applied Science</em></h4>
-<p>JASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.</p>
-</section>
-<section id="university-of-hawaii-marine-center" class="level4">
-<h4 class="anchored" data-anchor-id="university-of-hawaii-marine-center"><em>University of Hawaii Marine Center</em></h4>
-<p>Special thanks to <a href="https://www.soest.hawaii.edu/UHMC/">UH Marine Center</a> for providing charter vessel support</p>
+<section id="cetacean-acoustic-detections" class="level3">
+<h3 class="anchored" data-anchor-id="cetacean-acoustic-detections">Cetacean Acoustic Detections</h3>
 </section>
 </section>
-<section id="trackline-planning" class="level2">
-<h2 class="anchored" data-anchor-id="trackline-planning">Trackline Planning</h2>
-<p><em>Stay Tuned!</em></p>
-</section>
-<section id="communications" class="level2">
-<h2 class="anchored" data-anchor-id="communications">Communications</h2>
-<p>PIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (<a href="stefanie.gutierrez@noaa.gov">Stefanie Gutierrez</a>) and SWFSC (<a href="sarah.mesnick@noaa.gov">Sarah Mesnick</a>).</p>
-<p><em>Communications included:</em></p>
-<p>February 5, 2026, NOAA Featured Web Story: <a href="">NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘i</a>https://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: <a href="https://www.fisheries.noaa.gov/science-blog/sound-bytes-meet-pilots-underwater-glider-challenge">Meet the Pilots of the Underwater Glider Challenge</a> (Kourtney Burger)</p>
-<p>March 28, 2026, Sound Bytes Blog: XXXX (Selene Fregosi)</p>
-</section>
-<section id="data-offload" class="level2">
-<h2 class="anchored" data-anchor-id="data-offload">Data Offload</h2>
-<p>Data from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.</p>
-<p>At the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.</p>
-<p>Data download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).</p>
-</section>
-<section id="field-reports" class="level2">
-<h2 class="anchored" data-anchor-id="field-reports">Field Reports</h2>
-<p>Brief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (<a href="https://drive.google.com/file/d/1ef5zI-_UE4WJwWlxOpZdEz625DopJ44u/view?usp=drivesdk">Feb 2,</a> <a href="https://drive.google.com/file/d/1w-aB2o7pMtN3jAHkogazJ11-pYViMWFv/view?usp=drivesdk">Feb 9</a>, <a href="https://drive.google.com/file/d/1LPmR2GF-eWiwqoa6sY0LExupUPDJEG0K/view?usp=drivesdk">Feb17</a>, in addition to <a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#communications">NOAA Webstory and Blogs</a>).</p>
-<p><strong>Pilot Logs:</strong> can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.</p>
-<p>Each glider platform provides a different approach to real-time summaries:</p>
-<section id="seaglider" class="level4">
-<h4 class="anchored" data-anchor-id="seaglider"><em>SeaGlider</em></h4>
-<p><em>Stay Tuned!</em></p>
-</section>
-<section id="jasco-oceanobserver-on-slocum-glider" class="level4">
-<h4 class="anchored" data-anchor-id="jasco-oceanobserver-on-slocum-glider"><em>JASCO OceanObserver on Slocum Glider</em></h4>
-<p>Pre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.</p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_detections.jpg" class="img-fluid figure-img" alt="Real time detections provided by JASCO OceanObserver (on a Slocum Glider) during a window of several days."></p>
-<figcaption>Real time detections provided by Alseamar SeaExplorer during a window of several days</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_detectionMap.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_dolphinPlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_humpbackPlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_minkePlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_psd.png" class="img-fluid figure-img"></p>
-<figcaption>Power spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="alseamar-ocean-explorer" class="level4">
-<h4 class="anchored" data-anchor-id="alseamar-ocean-explorer"><em>Alseamar Ocean Explorer</em></h4>
-<p>Pre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_detections.png" class="img-fluid figure-img"></p>
-<figcaption>Real time detections provided by Alseamar SeaExplorer during a window of several days.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_dolphins.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_humpbacks.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_spermWhale.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>The Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_ltsa.psd.png" class="img-fluid figure-img"></p>
-<figcaption>Low resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_ltsa.yo.png" class="img-fluid figure-img"></p>
-<figcaption>Low resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="hefring-oceanscout" class="level4">
-<h4 class="anchored" data-anchor-id="hefring-oceanscout"><em>Hefring OceanScout</em></h4>
-<p><em>Stay Tuned!</em></p>
+<section id="environmental-data" class="level2">
+<h2 class="anchored" data-anchor-id="environmental-data">Environmental Data</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1057,13 +901,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/overview.html" class="pagination-link" aria-label="Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
+      <a href="../content/fieldwork.html" class="pagination-link" aria-label="Fieldwork">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Fieldwork</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/hardware.html" class="pagination-link" aria-label="Hardware">
-        <span class="nav-page-text">Hardware</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/pre-processing.html" class="pagination-link" aria-label="Pre-Processing">
+        <span class="nav-page-text">Pre-Processing</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1075,7 +919,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/data-collection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/data-collection.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
