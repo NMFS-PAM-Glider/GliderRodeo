@@ -31,9 +31,16 @@ jobs:
       
       # add software dependencies here
 
-      - name: Publish to GitHub Pages (and render)
+      - name: Render website
+        run: quarto render
+
+      - name: Render Hackathon book
+        run: quarto render hackathon
+
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions

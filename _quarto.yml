@@ -1,6 +1,9 @@
 project: 
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "content/**/*.qmd"
 
 website: 
   page-navigation: true
@@ -58,13 +61,8 @@ website:
             text: Alseamar
           - href: content/data_processing/EnvData-processing.qmd
           - href: content/data_processing/DeploymentSummaries.qmd
-      - section: content/hackathon.qmd
+      - href: hackathon/index.html
         text: "Hackathon"
-        contents:
-        - content/hack/details.qmd
-        - content/hack/prep.qmd
-        - content/hack/info.qmd
-        - content/hack/projects.qmd
       # - href: content/data-analysis.qmd
       #   text: "Data Analysis"
       # - href: content/reporting.qmd
