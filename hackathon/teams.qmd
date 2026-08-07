@@ -30,7 +30,7 @@ Copy the outer column and card below into the card grid in this page. Replace ev
 ::: {.card-body}
 ### [Preferred name]
 
-**[Role]**  
+**[Role]**<br>
 [Organization or affiliation]
 
 [One- or two-sentence biography.]
@@ -53,7 +53,7 @@ The example card below shows how the supplied information will appear. Replace i
 ::: {.card-body}
 ### Example Team Member
 
-**Project Lead**  
+**Project Lead**<br>
 Ocean Research Organization
 
 Coordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.
