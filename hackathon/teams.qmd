@@ -1,0 +1,74 @@
+---
+title: "Team Members"
+format: html
+---
+
+Meet the people participating in the Glider Rodeo Hackathon.
+
+## Information to provide
+
+To add your card, please provide:
+
+- your preferred name and pronouns (optional)
+- your role on the team
+- your organization or affiliation
+- a short biography (one or two sentences)
+- a headshot or other square image, plus a brief description for the image's alternative text
+- links you would like to share, such as GitHub, an organization profile, or a personal website
+
+Images should be placed in `hackathon/images/team/`. A square image at least 400 × 400 pixels works best.
+
+## Card template
+
+Copy the outer column and card below into the card grid in this page. Replace every value in brackets and remove any links or fields that do not apply.
+
+````markdown
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+![Brief description of the team member](images/team/[image-file.jpg]){.card-img-top}
+
+::: {.card-body}
+### [Preferred name]
+
+**[Role]**  
+[Organization or affiliation]
+
+[One- or two-sentence biography.]
+
+[[GitHub](https://github.com/[username])] · [[Profile or website](https://example.org)]
+:::
+:::
+:::
+````
+
+## Team
+
+The example card below shows how the supplied information will appear. Replace it when the first team member is added.
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+![Generic profile silhouette used for the example team member](images/team/profile-placeholder.svg){.card-img-top}
+
+::: {.card-body}
+### Example Team Member
+
+**Project Lead**  
+Ocean Research Organization
+
+Coordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.
+
+[[GitHub](https://github.com/example)] · [[Organization profile](https://example.org)]
+:::
+:::
+:::
+::::
+
+```{=html}
+<style>
+.card-img-top {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+</style>
+```
