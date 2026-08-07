@@ -240,13 +240,53 @@
     ]
   },
   {
+    "objectID": "teams.html",
+    "href": "teams.html",
+    "title": "5  Team Members",
+    "section": "",
+    "text": "5.1 Information to provide\nMeet the people participating in the Glider Rodeo Hackathon.\nTo add your card, please provide:\nImages should be placed in hackathon/images/team/. A square image at least 400 × 400 pixels works best.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Team Members</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#information-to-provide",
+    "href": "teams.html#information-to-provide",
+    "title": "5  Team Members",
+    "section": "",
+    "text": "your preferred name and pronouns (optional)\nyour role on the team\nyour organization or affiliation\na short biography (one or two sentences)\na headshot or other square image, plus a brief description for the image’s alternative text\nlinks you would like to share, such as GitHub, an organization profile, or a personal website",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Team Members</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#card-template",
+    "href": "teams.html#card-template",
+    "title": "5  Team Members",
+    "section": "5.2 Card template",
+    "text": "5.2 Card template\nCopy the outer column and card below into the card grid in this page. Replace every value in brackets and remove any links or fields that do not apply.\n::: {.g-col-12 .g-col-md-6 .g-col-lg-4}\n::: {.card .h-100}\n![](images/team/[image-file.jpg]){.card-img-top fig-alt=\"Brief description of the team member\"}\n\n::: {.card-body}\n### [Preferred name]\n\n**[Role]**&lt;br&gt;\n[Organization or affiliation]\n\n[One- or two-sentence biography.]\n\n[[GitHub](https://github.com/[username])] · [[Profile or website](https://example.org)]\n:::\n:::\n:::",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Team Members</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#team",
+    "href": "teams.html#team",
+    "title": "5  Team Members",
+    "section": "5.3 Team",
+    "text": "5.3 Team\nThe example card below shows how the supplied information will appear. Replace it when the first team member is added.\n\n\n\n\n\n5.3.1 Example Team Member\nProject Lead Ocean Research Organization\nCoordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.\n[GitHub] · [Organization profile]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Team Members</span>"
+    ]
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "5  Projects",
+    "title": "6  Projects",
     "section": "",
     "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing until the hackweek begins via our Glider Rodeo slack site (click here to join).\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into tutorial content and gain more hands on experience with new tools\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\nfocus on research: people often work to advance a research challenge using tools shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: hackweeks often expose general community software needs. Projects can be the catalyst for new community libraries.\n\nProject development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our discussion platform\nday one: pitching of ideas and selection of a project to work on\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteHave a Project Idea?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin@noaa.gov",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
   }
 ]

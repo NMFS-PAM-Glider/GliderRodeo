@@ -10,662 +10,11 @@
     ]
   },
   {
-    "objectID": "hackathon/prep.html",
-    "href": "hackathon/prep.html",
-    "title": "Preparation",
+    "objectID": "hackathon/projects.html",
+    "href": "hackathon/projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
-  },
-  {
-    "objectID": "hackathon/prep.html#hackweek-projects",
-    "href": "hackathon/prep.html#hackweek-projects",
-    "title": "Preparation",
-    "section": "",
-    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
-  },
-  {
-    "objectID": "hackathon/prep.html#github-account",
-    "href": "hackathon/prep.html#github-account",
-    "title": "Preparation",
-    "section": "Github Account",
-    "text": "Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek."
-  },
-  {
-    "objectID": "hackathon/prep.html#hackweek-jupyterhub",
-    "href": "hackathon/prep.html#hackweek-jupyterhub",
-    "title": "Preparation",
-    "section": "Hackweek JupyterHub",
-    "text": "Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day."
-  },
-  {
-    "objectID": "hackathon/prep.html#pre-hackweek-learning-optional",
-    "href": "hackathon/prep.html#pre-hackweek-learning-optional",
-    "title": "Preparation",
-    "section": "Pre-HackWeek Learning (Optional)",
-    "text": "Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners."
-  },
-  {
-    "objectID": "hackathon/prep.html#what-is-git",
-    "href": "hackathon/prep.html#what-is-git",
-    "title": "Preparation",
-    "section": "What is Git?",
-    "text": "What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website"
-  },
-  {
-    "objectID": "hackathon/prep.html#setting-up-on-jupyterhub",
-    "href": "hackathon/prep.html#setting-up-on-jupyterhub",
-    "title": "Preparation",
-    "section": "Setting up on JupyterHub",
-    "text": "Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\nAfter you have entered the code and granted authorization, the Terminal will update:\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\ngit config --global credential.helper store\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key."
-  },
-  {
-    "objectID": "hackathon/prep.html#log-into-the-hackweek-jupyterhub",
-    "href": "hackathon/prep.html#log-into-the-hackweek-jupyterhub",
-    "title": "Preparation",
-    "section": "Log into the hackweek JupyterHub",
-    "text": "Log into the hackweek JupyterHub\nworkshop.nmfs-openscapes.2i2c.cloud\nWatch this video for a quick orientation to the JupyterHub."
-  },
-  {
-    "objectID": "hackathon/prep.html#for-those-who-are-brand-new-to-python",
-    "href": "hackathon/prep.html#for-those-who-are-brand-new-to-python",
-    "title": "Preparation",
-    "section": "For those who are brand new to Python",
-    "text": "For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run"
-  },
-  {
-    "objectID": "hackathon/prep.html#start-with-some-basic-tutorials",
-    "href": "hackathon/prep.html#start-with-some-basic-tutorials",
-    "title": "Preparation",
-    "section": "Start with some basic tutorials",
-    "text": "Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\nOpen the ipynb notebooks and start working through the material."
-  },
-  {
-    "objectID": "hackathon/info.html",
-    "href": "hackathon/info.html",
-    "title": "Information",
-    "section": "",
-    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\n\n\nReferences\nGlider Rodeo Github Repository and website Glider Rodeo Zenodo Repository"
-  },
-  {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
-  },
-  {
-    "objectID": "content/reporting.html#mission-field-reports",
-    "href": "content/reporting.html#mission-field-reports",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
-  },
-  {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository."
-  },
-  {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report\nStay Tuned!"
-  },
-  {
-    "objectID": "content/overview.html",
-    "href": "content/overview.html",
-    "title": "Overview",
-    "section": "",
-    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#goals",
-    "href": "content/overview.html#goals",
-    "title": "Overview",
-    "section": "",
-    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#objectives",
-    "href": "content/overview.html#objectives",
-    "title": "Overview",
-    "section": "Objectives",
-    "text": "Objectives\nField testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#approach",
-    "href": "content/overview.html#approach",
-    "title": "Overview",
-    "section": "Approach",
-    "text": "Approach\nCollect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:\n\nOptimize to survey coverage\nOptimize for low noise\nIntermediate approach to survey coverage and noise reduction\nDrifting (Quiet Mode)\n\n\nPiloting: To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.\nNavigation: Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).\nEndurance: Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.\nNoise: Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.\n\nThe Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to Glider Platforms and PAM Sensors.\nThe Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our PAM-Glider site.\n\n\n\nGlider Rodeo draft figure-8 tracklines planned for offshore Hawaii.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/overview.html#data-management-plan",
-    "href": "content/overview.html#data-management-plan",
-    "title": "Overview",
-    "section": "Data management Plan",
-    "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html",
-    "href": "content/fieldwork.html",
-    "title": "Data Collection",
-    "section": "",
-    "text": "NoteOregon State University, CIMERS\n\n\n\n\n\nThe Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\n\n\n\n\n\n\nNoteCornell University\n\n\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\n\n\n\n\n\n\nNoteTeledyne Webb Research\n\n\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\n\n\n\n\n\n\nNoteAlseamar\n\n\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\n\n\n\n\n\n\nNoteJASCO Applied Science\n\n\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\n\n\n\n\n\n\nNoteUniversity of Hawaii Marine Center\n\n\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html#partners",
-    "href": "content/fieldwork.html#partners",
-    "title": "Data Collection",
-    "section": "",
-    "text": "NoteOregon State University, CIMERS\n\n\n\n\n\nThe Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\n\n\n\n\n\n\nNoteCornell University\n\n\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\n\n\n\n\n\n\nNoteTeledyne Webb Research\n\n\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\n\n\n\n\n\n\nNoteAlseamar\n\n\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\n\n\n\n\n\n\nNoteJASCO Applied Science\n\n\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\n\n\n\n\n\n\nNoteUniversity of Hawaii Marine Center\n\n\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html#trackline-planning",
-    "href": "content/fieldwork.html#trackline-planning",
-    "title": "Data Collection",
-    "section": "Trackline Planning",
-    "text": "Trackline Planning\nStay Tuned!",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html#communications",
-    "href": "content/fieldwork.html#communications",
-    "title": "Data Collection",
-    "section": "Communications",
-    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 30, 2026, Sound Bytes Blog: Synchronous Swimming (With Robots) – Behind the Glider Challenge (Selene Fregosi)",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html#data-offload",
-    "href": "content/fieldwork.html#data-offload",
-    "title": "Data Collection",
-    "section": "Data Offload",
-    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/fieldwork.html#field-reports",
-    "href": "content/fieldwork.html#field-reports",
-    "title": "Data Collection",
-    "section": "Field Reports",
-    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
-    "crumbs": [
-      "Fieldwork"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html",
-    "href": "content/data_processing/slocum-dmon2.html",
-    "title": "Slocum DMON 2",
-    "section": "",
-    "text": "The DMON has two sampling routines for low and high frequency; continuous recording of the low-frequency hydrophone at 2 kHz and duty-cycled recording of the high-frequency hydrophone at 120 kHz for 30 seconds out of every 450 seconds (30 sec on 7.5 minutes off, 8 minute cycle) (LF2_HF120d30_450s.bin). The low frequency hydrophone recordings are .wav2 and the high frequency hydrophone recordings are .wav3. These files have to be renamed to .wav to be usable, so this script renames each wav file with its respective frequency",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html#offload-data",
-    "href": "content/data_processing/slocum-dmon2.html#offload-data",
-    "title": "Slocum DMON 2",
-    "section": "Offload data",
-    "text": "Offload data\n\nGlider techs: open Slocum glider and follow dmon instructions section H and I (up to step 4) here \ncopy raw files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "href": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "title": "Slocum DMON 2",
-    "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: Get offloaded data from glider team (section I here)\nIf you only see .dgt files, then you will need to unpack them to get .wav and other recording metadata files \n\nYou do not need to follow these steps if you can see .err, .log, .wav2, .wav3, and .xml files for each .dtg file\n\nDownload the dmon software here and open d3read.exe\nYou should see a new terminal window open, prompting you to enter a directory. Copy the directory where the .dgt files are located and press enter\nYou will then be prompted to ‘Input filename base?’, type the file header of each dgt file (before the three digits ###) and hit enter\n\nExample: for the file named risso001.dgt, you would type risso and hit enter\n\nYou should then see a list of .dgt files in that directory and the unpacking process should start\nIf .flac files are needed, use the wav2flac.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
-    "href": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
-    "title": "Slocum DMON 2",
-    "section": "Clean wav Files and Segment Duty Cycled Data",
-    "text": "Clean wav Files and Segment Duty Cycled Data\n\n\n\n\n\n\nImportant\n\n\n\nThe existing processing workflow for DMON data requires access to an IDL Runtime license\n\n\n\nOpen the ‘reformat_dmon_wav_files.sav’ file, this will open a stand alone application window\nYou will be prompted to choose a folder with DMON data, select a directory that includes the unpackaged data files from the steps above (including wav and log.xml files)\nYou will then be prompted to choose an output folder, it is recommended you save your processed audio files in a subfolder\nYou should then see the two file paths in the application window, click ‘Go!’ and the processing will start\nClose the window once all the raw audio files have been renamed and separated based on the sampling routine\nThis processing renames the files to include a 4 digit year. Matlab and other processing softwares expect two digit years, so we need to rename these\nOpen files explorer and select all of the newly processed audio files\nRight click on the files and select ‘Rename with PowerRename’. If you do not see this option, you may need to use different renaming methods/software\nIn the PowerRename window, fill in the four digit year to the ‘Search for’ box and the two digit year in the ‘Replace with’ box\n\nClick ‘Apply’ and all of your files should now have the YYMMDD naming structure needed for the next data processing steps\nR methods - work in progress",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
-    "href": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
-    "title": "Slocum DMON 2",
-    "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 1 for wav\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
-    "href": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
-    "title": "Slocum DMON 2",
-    "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-pmar-xl.html",
-    "href": "content/data_processing/seaglider-pmar-xl.html",
-    "title": "Seaglider - PMAR XL",
-    "section": "",
-    "text": "PMARXL has been removed from the OSU Seagliders and replaced with the WISPR3 system. If it is used again in the future by NMFS this page will be updated.",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - PMAR XL"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/DeploymentSummaries.html",
-    "href": "content/data_processing/DeploymentSummaries.html",
-    "title": "Deployment Summaries",
-    "section": "",
-    "text": "Slocum\nLink to ESD instructions\nMETHODS - Work in progress\nWork with SWFSC glider team to get post mission metadata (TBD) and create a Mission Report using this template. Save the report to … (TBD)\n\n\nSeaglider\nLink to Agate instructions\n\nFollow the Agate methods here to run post-mission processing.\n\nThis includes extracting sampling locations and environmental data, assessing acoustic effort, creating summary tables, and plotting the glider paths.\n\nCreate a Mission Report using this template. Save the report to … (TBD)\n\n\n\nHefring\nCreate a Mission Report using this template. Save the report to … (TBD)",
-    "crumbs": [
-      "Pre-Processing",
-      "Deployment Summaries"
-    ]
-  },
-  {
-    "objectID": "content/data.html",
-    "href": "content/data.html",
-    "title": "Data",
-    "section": "",
-    "text": "A draft Data Management Plan outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited.\n\n\nLink to Google Doc (for those with permissions) &lt;/p&gt;",
-    "crumbs": [
-      "Data"
-    ]
-  },
-  {
-    "objectID": "content/data.html#data-management-plan",
-    "href": "content/data.html#data-management-plan",
-    "title": "Data",
-    "section": "",
-    "text": "A draft Data Management Plan outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited.\n\n\nLink to Google Doc (for those with permissions) &lt;/p&gt;",
-    "crumbs": [
-      "Data"
-    ]
-  },
-  {
-    "objectID": "content/data.html#raw-audio-data",
-    "href": "content/data.html#raw-audio-data",
-    "title": "Data",
-    "section": "Raw Audio Data",
-    "text": "Raw Audio Data\nRaw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the National Centers for Environmental Information Passive Acoustic Data Portal after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.\n\nSoundscape Analysis\n\n\nCetacean Acoustic Detections",
-    "crumbs": [
-      "Data"
-    ]
-  },
-  {
-    "objectID": "content/data.html#environmental-data",
-    "href": "content/data.html#environmental-data",
-    "title": "Data",
-    "section": "Environmental Data",
-    "text": "Environmental Data",
-    "crumbs": [
-      "Data"
-    ]
-  },
-  {
-    "objectID": "content/data-analysis.html",
-    "href": "content/data-analysis.html",
-    "title": "Data Analysis",
-    "section": "",
-    "text": "Stay Tuned!"
-  },
-  {
-    "objectID": "content/data-analysis.html#effort",
-    "href": "content/data-analysis.html#effort",
-    "title": "Data Analysis",
-    "section": "",
-    "text": "Stay Tuned!"
-  },
-  {
-    "objectID": "content/data-analysis.html#glider-performance",
-    "href": "content/data-analysis.html#glider-performance",
-    "title": "Data Analysis",
-    "section": "Glider Performance",
-    "text": "Glider Performance\nStay Tuned!"
-  },
-  {
-    "objectID": "content/data-analysis.html#noise",
-    "href": "content/data-analysis.html#noise",
-    "title": "Data Analysis",
-    "section": "Noise",
-    "text": "Noise\nStay Tuned!"
-  },
-  {
-    "objectID": "content/data-analysis.html#species",
-    "href": "content/data-analysis.html#species",
-    "title": "Data Analysis",
-    "section": "Species",
-    "text": "Species\nStay Tuned!"
-  },
-  {
-    "objectID": "content/data-analysis.html#modeling",
-    "href": "content/data-analysis.html#modeling",
-    "title": "Data Analysis",
-    "section": "Modeling",
-    "text": "Modeling\nStay Tuned!"
-  },
-  {
-    "objectID": "content/data_processing/AcousticData-preprocessing.html",
-    "href": "content/data_processing/AcousticData-preprocessing.html",
-    "title": "Acoustic Data Pre-Processing",
-    "section": "",
-    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include offloading the data from the PAM system, decompressing files, creating LTSAs, decimating, and updating the deployment tracker.\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSeaglider - PMAR XL\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar"
-  },
-  {
-    "objectID": "content/data_processing/EnvData-processing.html",
-    "href": "content/data_processing/EnvData-processing.html",
-    "title": "Environmental Data Processing",
-    "section": "",
-    "text": "Slocum\nLink to ESD instructions\n\n\nSeaglider\nLink to Agate instructions\n\n\nHefring\n\nExtract environmental data and oceanscout mission summaries from Hefring website",
-    "crumbs": [
-      "Pre-Processing",
-      "Environmental Data Processing"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/oceanscout-wispr6.html",
-    "href": "content/data_processing/oceanscout-wispr6.html",
-    "title": "Oceanscout WISPR 6",
-    "section": "",
-    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/oceanscout-wispr6.html#offload-data",
-    "href": "content/data_processing/oceanscout-wispr6.html#offload-data",
-    "title": "Oceanscout WISPR 6",
-    "section": "",
-    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "href": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "title": "Oceanscout WISPR 6",
-    "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
-    "href": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
-    "title": "Oceanscout WISPR 6",
-    "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
-    "href": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
-    "title": "Oceanscout WISPR 6",
-    "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-wispr.html",
-    "href": "content/data_processing/seaglider-wispr.html",
-    "title": "Seaglider - WISPR",
-    "section": "",
-    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-wispr.html#offload-data",
-    "href": "content/data_processing/seaglider-wispr.html#offload-data",
-    "title": "Seaglider - WISPR",
-    "section": "",
-    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "href": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "title": "Seaglider - WISPR",
-    "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac (guide)\nIf you have an existing mission configuration file, skip to step 8. If you do not have one, download the example configuration file and complete the following steps to edit it\nOpen configuration file with text editor and replace “% %%%  TEMPLATE - PUT MISSION METADATA HERE  %%%” with the glider deployment ID\n\ni.e. “% %%% sg639_Sep2024 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘sgXXX’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the following two lines of the configuration file\n\nCONFIG.ws.inDir = ‘D:\\sgXXX_Location_Mon20XX_raw_acoustic_data’;   % path to raw .dat files\nCONFIG.ws.outDir = ‘E:\\sgXXX_Location_Mon20XX\\flac’;   % path to save converted files\n\nIf only converting to flac, comment out all of the other lines in the config file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nDownload and open workflow_convertWISPR.m matlab script. Set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
-    "href": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
-    "title": "Seaglider - WISPR",
-    "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
-    "href": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
-    "title": "Seaglider - WISPR",
-    "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality\nUse the acoustic effort summary from the post mission processing to fill in the deployment duration, distance, and recording duration columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-wispr3.html",
-    "href": "content/data_processing/slocum-wispr3.html",
-    "title": "Slocum - WISPR 3",
-    "section": "",
-    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-wispr3.html#offload-data",
-    "href": "content/data_processing/slocum-wispr3.html#offload-data",
-    "title": "Slocum - WISPR 3",
-    "section": "",
-    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "href": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
-    "title": "Slocum - WISPR 3",
-    "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
-    "href": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
-    "title": "Slocum - WISPR 3",
-    "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nDownload a zipped folder of Triton - flac version, extract and save it to your Matlab folder as Triton-flac\nOpen Matlab and set the path to this flac version of Triton\nOpen Triton by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. stenella-20250414_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
-  },
-  {
-    "objectID": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
-    "href": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
-    "title": "Slocum - WISPR 3",
-    "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html",
-    "href": "content/hardware.html",
-    "title": "Hardware",
-    "section": "",
-    "text": "A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).\n\n\n\n\n\n\n\n\n\n\nNOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.\n\n\n\n\nGlider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:\n\n\n\n\n\n\n\n\n\n\nWISPR (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.\nWISPR3 resources can be found here.\nAdditional resources installing and operating the WISPR system on Seagliders can be found at the PIFSC Glider Lab WISPR page.\n\n\n\n\n\n\n\n\n\nThe Digital MONitor (DMON) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with Seagliders. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.\n\n\n\n\n\n\n\n\n\nThe Auris acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.\n\n\n\n\n\n\n\n\n\nJasco’s OceanObserver can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.\n\n\nStay Tuned!",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#gliders",
-    "href": "content/hardware.html#gliders",
-    "title": "Hardware",
-    "section": "",
-    "text": "NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#acoustic-sensors",
-    "href": "content/hardware.html#acoustic-sensors",
-    "title": "Hardware",
-    "section": "",
-    "text": "Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/hardware.html#oceo-sensors",
-    "href": "content/hardware.html#oceo-sensors",
-    "title": "Hardware",
-    "section": "",
-    "text": "Stay Tuned!",
-    "crumbs": [
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/pre-processing.html",
-    "href": "content/pre-processing.html",
-    "title": "Pre-Processing",
-    "section": "",
-    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include offloading the data from the PAM system, decompressing files, creating LTSAs, QAQC, decimating, and updating the deployment tracker. We’ve also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo).\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar\nEnvironmental Data Processing: Methods for extracting and processing environmental data collected during glider deployments\nDeployment Summaries: Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths\n\n\n\n\n\n\n\nNoteNote about PreProcessing Methods\n\n\n\nPre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.",
-    "crumbs": [
-      "Pre-Processing"
-    ]
-  },
-  {
-    "objectID": "hackathon/index.html",
-    "href": "hackathon/index.html",
-    "title": "Glider Rodeo Hackathon",
-    "section": "",
-    "text": "The Glider Rodeo Hackweek is a 5-day virtual collaboration where we will explore data collected from a suite of underwater gliders equipped with Passive Acoustic and CTD sensors. We will host various learning opportunities and participant-led project teams will explore areas of interest, including (but not limited to!) data exploration, analysis, and tool development.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "hackathon/index.html#objective",
-    "href": "hackathon/index.html#objective",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Objective",
-    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "hackathon/index.html#goals",
-    "href": "hackathon/index.html#goals",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Goals",
-    "text": "Goals\nOur goals are to foster learning and community building while collaborating on a wide range of project ideas that include those identified by NOAA Fisheries (see below) as well as others identified by the broader community.\nInitial NOAA Fisheries research goals:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
-    "crumbs": [
-      "Hackathon"
-    ]
-  },
-  {
-    "objectID": "hackathon/index.html#participation",
-    "href": "hackathon/index.html#participation",
-    "title": "Glider Rodeo Hackathon",
-    "section": "Participation",
-    "text": "Participation\n\nDo you want to build community within the glider or PAM community?\nDo you analyses or tools that you would like to apply to this dataset?\nCould you apply products to your data?\nAre you a student in science, engineering, or software development?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\nExpectations:\n\nNo experience is necessary, although we expect all project team participants to participate all week.\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\n\n\n\nHow to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!",
-    "crumbs": [
-      "Hackathon"
-    ]
+    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing until the hackweek begins via our Glider Rodeo slack site (click here to join).\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into tutorial content and gain more hands on experience with new tools\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\nfocus on research: people often work to advance a research challenge using tools shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: hackweeks often expose general community software needs. Projects can be the catalyst for new community libraries.\n\nProject development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our discussion platform\nday one: pitching of ideas and selection of a project to work on\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteHave a Project Idea?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin@noaa.gov"
   },
   {
     "objectID": "hackathon/logistics.html",
@@ -738,10 +87,689 @@
     "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
   },
   {
-    "objectID": "hackathon/projects.html",
-    "href": "hackathon/projects.html",
-    "title": "Projects",
+    "objectID": "hackathon/index.html",
+    "href": "hackathon/index.html",
+    "title": "Glider Rodeo Hackathon",
     "section": "",
-    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing until the hackweek begins via our Glider Rodeo slack site (click here to join).\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into tutorial content and gain more hands on experience with new tools\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\nfocus on research: people often work to advance a research challenge using tools shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: hackweeks often expose general community software needs. Projects can be the catalyst for new community libraries.\n\nProject development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our discussion platform\nday one: pitching of ideas and selection of a project to work on\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteHave a Project Idea?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin@noaa.gov"
+    "text": "The Glider Rodeo Hackweek is a 5-day virtual collaboration where we will explore data collected from a suite of underwater gliders equipped with Passive Acoustic and CTD sensors. We will host various learning opportunities and participant-led project teams will explore areas of interest, including (but not limited to!) data exploration, analysis, and tool development.",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "hackathon/index.html#objective",
+    "href": "hackathon/index.html#objective",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Objective",
+    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "hackathon/index.html#goals",
+    "href": "hackathon/index.html#goals",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Goals",
+    "text": "Goals\nOur goals are to foster learning and community building while collaborating on a wide range of project ideas that include those identified by NOAA Fisheries (see below) as well as others identified by the broader community.\nInitial NOAA Fisheries research goals:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "hackathon/index.html#participation",
+    "href": "hackathon/index.html#participation",
+    "title": "Glider Rodeo Hackathon",
+    "section": "Participation",
+    "text": "Participation\n\nDo you want to build community within the glider or PAM community?\nDo you analyses or tools that you would like to apply to this dataset?\nCould you apply products to your data?\nAre you a student in science, engineering, or software development?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\nExpectations:\n\nNo experience is necessary, although we expect all project team participants to participate all week.\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\n\n\n\nHow to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!",
+    "crumbs": [
+      "Hackathon"
+    ]
+  },
+  {
+    "objectID": "content/pre-processing.html",
+    "href": "content/pre-processing.html",
+    "title": "Pre-Processing",
+    "section": "",
+    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include offloading the data from the PAM system, decompressing files, creating LTSAs, QAQC, decimating, and updating the deployment tracker. We’ve also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo).\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar\nEnvironmental Data Processing: Methods for extracting and processing environmental data collected during glider deployments\nDeployment Summaries: Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths\n\n\n\n\n\n\n\nNoteNote about PreProcessing Methods\n\n\n\nPre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.",
+    "crumbs": [
+      "Pre-Processing"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html",
+    "href": "content/hardware.html",
+    "title": "Hardware",
+    "section": "",
+    "text": "A total of 8 gliders from four different companies, with four different PAM sensors, were included in the PAM-Glider Rodeo. A summary of the platform specifications are provided in the table, below, and additional details are provided for the Glider platforms, acoustic sensors, and oceo sensors (below).\n\n\n\n\n\n\n\n\n\n\nNOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.\n\n\n\n\nGlider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:\n\n\n\n\n\n\n\n\n\n\nWISPR (Wideband Intelligent Signal Processor and Recorder) is an acoustic processor developed by Embedded Ocean Systems and designed for limited space and low power, with options for customized applications. WISPR are currently used on Seagliders, and recent integration with Slocum gliders is undergoing testing.\nWISPR3 resources can be found here.\nAdditional resources installing and operating the WISPR system on Seagliders can be found at the PIFSC Glider Lab WISPR page.\n\n\n\n\n\n\n\n\n\nThe Digital MONitor (DMON) was developed by Woods Hole Oceanographic Institute and have been integrated on Slocum gliders and have been used with Seagliders. The current iteration of DMON has limited capacity for high frequency recording, but expansion of this capacity to improve storage capacity is under development.\n\n\n\n\n\n\n\n\n\nThe Auris acoustic processing system is a proprietary system developed for the Alseamar SeaExplorer glider. It can accommodate up to 4 channels with embedded processing capabilities for detection, classification, and beamforming.\n\n\n\n\n\n\n\n\n\nJasco’s OceanObserver can accommodate up to 16 acoustic channels with onboard processing for detection, ambient noise, and ocean environmental measurements. The Ocean Observer will be used on a Teledyne Slocum glider.\n\n\nStay Tuned!",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#gliders",
+    "href": "content/hardware.html#gliders",
+    "title": "Hardware",
+    "section": "",
+    "text": "NOAA’s Southwest Fisheries Science Center began deploying Slocum gliders to study Antarctic krill in 2018, and in 2025 they will expand their glider program with PAM-equipped gliders to study marine mammals off the U.S. West coast. Slocum Gliders are modular, and three different PAM systems will be tested: the DMON (developed by WHOI) and WISPR (Embedded Ocean Systems), and OceanObserver ((JASCO Applied Sciences)[https://www.jasco.com/].\n\n\n\nSeagliders are buoyancy driven autonomous underwater vehicles developed at the University of Washington. Through a partnership with Dave Mellinger at Oregon State University, NOAA researchers at Pacific Islands Fisheries Science Center has been testing the passive acoustic capabilities of these gliders to conduct marine mammal monitoring off Hawaiʻi. They will continue this collaboration in 2025 as PIFSC builds out their own glider lab with Seagliders with onboard WISPR acoustic processors. Seaglider support resources can be found here , and WISPR 2.0 specifications can be found here . Note that WISPR 3.0 is under development.\n\n\n\nThe Oceanscout is a small glider developed as a ‘user friendly’ PAM-equipped glider. They are much smaller and require less training and expertise to use. Southwest Fisheries Science Center has procured two Oceanscouts for testing and for specific scientific research efforts. The Oceanscout specifications can be found here.\n\n\n\nThe SeaExplorer was developed by the French company Alcen-Alseamar. Alseamar SeaExplorers are not yet available for purchase in the United States, but the company offers their gliders as a service, with mission planning, piloting, and data delivery. We will include SeaExplorers in our Glider Rodeo (as a service). SeaExplorer specifications can be found here.",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#acoustic-sensors",
+    "href": "content/hardware.html#acoustic-sensors",
+    "title": "Hardware",
+    "section": "",
+    "text": "Glider platforms can support one or more options for PAM sensors. Technology is rapidly developing, and we will be testing the following PAM Sensors:",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/hardware.html#oceo-sensors",
+    "href": "content/hardware.html#oceo-sensors",
+    "title": "Hardware",
+    "section": "",
+    "text": "Stay Tuned!",
+    "crumbs": [
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-wispr3.html",
+    "href": "content/data_processing/slocum-wispr3.html",
+    "title": "Slocum - WISPR 3",
+    "section": "",
+    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - WISPR 3"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-wispr3.html#offload-data",
+    "href": "content/data_processing/slocum-wispr3.html#offload-data",
+    "title": "Slocum - WISPR 3",
+    "section": "",
+    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - WISPR 3"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "href": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "title": "Slocum - WISPR 3",
+    "section": "Decompress data and convert to usable audio file format",
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - WISPR 3"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
+    "href": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
+    "title": "Slocum - WISPR 3",
+    "section": "Create full bandwidth LTSA",
+    "text": "Create full bandwidth LTSA\n\nDownload a zipped folder of Triton - flac version, extract and save it to your Matlab folder as Triton-flac\nOpen Matlab and set the path to this flac version of Triton\nOpen Triton by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. stenella-20250414_200kHz_5s_200Hz.ltsa)",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - WISPR 3"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
+    "href": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
+    "title": "Slocum - WISPR 3",
+    "section": "Update Deployment Tracker Spreadsheet",
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - WISPR 3"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-wispr.html",
+    "href": "content/data_processing/seaglider-wispr.html",
+    "title": "Seaglider - WISPR",
+    "section": "",
+    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - WISPR"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-wispr.html#offload-data",
+    "href": "content/data_processing/seaglider-wispr.html#offload-data",
+    "title": "Seaglider - WISPR",
+    "section": "",
+    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - WISPR"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "href": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "title": "Seaglider - WISPR",
+    "section": "Decompress data and convert to usable audio file format",
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac (guide)\nIf you have an existing mission configuration file, skip to step 8. If you do not have one, download the example configuration file and complete the following steps to edit it\nOpen configuration file with text editor and replace “% %%%  TEMPLATE - PUT MISSION METADATA HERE  %%%” with the glider deployment ID\n\ni.e. “% %%% sg639_Sep2024 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘sgXXX’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the following two lines of the configuration file\n\nCONFIG.ws.inDir = ‘D:\\sgXXX_Location_Mon20XX_raw_acoustic_data’;   % path to raw .dat files\nCONFIG.ws.outDir = ‘E:\\sgXXX_Location_Mon20XX\\flac’;   % path to save converted files\n\nIf only converting to flac, comment out all of the other lines in the config file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nDownload and open workflow_convertWISPR.m matlab script. Set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - WISPR"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
+    "href": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
+    "title": "Seaglider - WISPR",
+    "section": "Create full bandwidth LTSA",
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - WISPR"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
+    "href": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
+    "title": "Seaglider - WISPR",
+    "section": "Update Deployment Tracker Spreadsheet",
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality\nUse the acoustic effort summary from the post mission processing to fill in the deployment duration, distance, and recording duration columns",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - WISPR"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/oceanscout-wispr6.html",
+    "href": "content/data_processing/oceanscout-wispr6.html",
+    "title": "Oceanscout WISPR 6",
+    "section": "",
+    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Oceanscout - WISPR 6.1"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/oceanscout-wispr6.html#offload-data",
+    "href": "content/data_processing/oceanscout-wispr6.html#offload-data",
+    "title": "Oceanscout WISPR 6",
+    "section": "",
+    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Oceanscout - WISPR 6.1"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "href": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "title": "Oceanscout WISPR 6",
+    "section": "Decompress data and convert to usable audio file format",
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
+    "crumbs": [
+      "Pre-Processing",
+      "Oceanscout - WISPR 6.1"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
+    "href": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
+    "title": "Oceanscout WISPR 6",
+    "section": "Create full bandwidth LTSA",
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
+    "crumbs": [
+      "Pre-Processing",
+      "Oceanscout - WISPR 6.1"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
+    "href": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
+    "title": "Oceanscout WISPR 6",
+    "section": "Update Deployment Tracker Spreadsheet",
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
+    "crumbs": [
+      "Pre-Processing",
+      "Oceanscout - WISPR 6.1"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/EnvData-processing.html",
+    "href": "content/data_processing/EnvData-processing.html",
+    "title": "Environmental Data Processing",
+    "section": "",
+    "text": "Slocum\nLink to ESD instructions\n\n\nSeaglider\nLink to Agate instructions\n\n\nHefring\n\nExtract environmental data and oceanscout mission summaries from Hefring website",
+    "crumbs": [
+      "Pre-Processing",
+      "Environmental Data Processing"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/AcousticData-preprocessing.html",
+    "href": "content/data_processing/AcousticData-preprocessing.html",
+    "title": "Acoustic Data Pre-Processing",
+    "section": "",
+    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include offloading the data from the PAM system, decompressing files, creating LTSAs, decimating, and updating the deployment tracker.\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSeaglider - PMAR XL\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar"
+  },
+  {
+    "objectID": "content/data-analysis.html",
+    "href": "content/data-analysis.html",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "Stay Tuned!"
+  },
+  {
+    "objectID": "content/data-analysis.html#effort",
+    "href": "content/data-analysis.html#effort",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "Stay Tuned!"
+  },
+  {
+    "objectID": "content/data-analysis.html#glider-performance",
+    "href": "content/data-analysis.html#glider-performance",
+    "title": "Data Analysis",
+    "section": "Glider Performance",
+    "text": "Glider Performance\nStay Tuned!"
+  },
+  {
+    "objectID": "content/data-analysis.html#noise",
+    "href": "content/data-analysis.html#noise",
+    "title": "Data Analysis",
+    "section": "Noise",
+    "text": "Noise\nStay Tuned!"
+  },
+  {
+    "objectID": "content/data-analysis.html#species",
+    "href": "content/data-analysis.html#species",
+    "title": "Data Analysis",
+    "section": "Species",
+    "text": "Species\nStay Tuned!"
+  },
+  {
+    "objectID": "content/data-analysis.html#modeling",
+    "href": "content/data-analysis.html#modeling",
+    "title": "Data Analysis",
+    "section": "Modeling",
+    "text": "Modeling\nStay Tuned!"
+  },
+  {
+    "objectID": "content/data.html",
+    "href": "content/data.html",
+    "title": "Data",
+    "section": "",
+    "text": "A draft Data Management Plan outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited.\n\n\nLink to Google Doc (for those with permissions) &lt;/p&gt;",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data.html#data-management-plan",
+    "href": "content/data.html#data-management-plan",
+    "title": "Data",
+    "section": "",
+    "text": "A draft Data Management Plan outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited.\n\n\nLink to Google Doc (for those with permissions) &lt;/p&gt;",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data.html#raw-audio-data",
+    "href": "content/data.html#raw-audio-data",
+    "title": "Data",
+    "section": "Raw Audio Data",
+    "text": "Raw Audio Data\nRaw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the National Centers for Environmental Information Passive Acoustic Data Portal after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.\n\nSoundscape Analysis\n\n\nCetacean Acoustic Detections",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data.html#environmental-data",
+    "href": "content/data.html#environmental-data",
+    "title": "Data",
+    "section": "Environmental Data",
+    "text": "Environmental Data",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/DeploymentSummaries.html",
+    "href": "content/data_processing/DeploymentSummaries.html",
+    "title": "Deployment Summaries",
+    "section": "",
+    "text": "Slocum\nLink to ESD instructions\nMETHODS - Work in progress\nWork with SWFSC glider team to get post mission metadata (TBD) and create a Mission Report using this template. Save the report to … (TBD)\n\n\nSeaglider\nLink to Agate instructions\n\nFollow the Agate methods here to run post-mission processing.\n\nThis includes extracting sampling locations and environmental data, assessing acoustic effort, creating summary tables, and plotting the glider paths.\n\nCreate a Mission Report using this template. Save the report to … (TBD)\n\n\n\nHefring\nCreate a Mission Report using this template. Save the report to … (TBD)",
+    "crumbs": [
+      "Pre-Processing",
+      "Deployment Summaries"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/seaglider-pmar-xl.html",
+    "href": "content/data_processing/seaglider-pmar-xl.html",
+    "title": "Seaglider - PMAR XL",
+    "section": "",
+    "text": "PMARXL has been removed from the OSU Seagliders and replaced with the WISPR3 system. If it is used again in the future by NMFS this page will be updated.",
+    "crumbs": [
+      "Pre-Processing",
+      "Seaglider - PMAR XL"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html",
+    "href": "content/data_processing/slocum-dmon2.html",
+    "title": "Slocum DMON 2",
+    "section": "",
+    "text": "The DMON has two sampling routines for low and high frequency; continuous recording of the low-frequency hydrophone at 2 kHz and duty-cycled recording of the high-frequency hydrophone at 120 kHz for 30 seconds out of every 450 seconds (30 sec on 7.5 minutes off, 8 minute cycle) (LF2_HF120d30_450s.bin). The low frequency hydrophone recordings are .wav2 and the high frequency hydrophone recordings are .wav3. These files have to be renamed to .wav to be usable, so this script renames each wav file with its respective frequency",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html#offload-data",
+    "href": "content/data_processing/slocum-dmon2.html#offload-data",
+    "title": "Slocum DMON 2",
+    "section": "Offload data",
+    "text": "Offload data\n\nGlider techs: open Slocum glider and follow dmon instructions section H and I (up to step 4) here \ncopy raw files to a hard drive\nPass hard drive off to PAM analyst",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "href": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
+    "title": "Slocum DMON 2",
+    "section": "Decompress data and convert to usable audio file format",
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: Get offloaded data from glider team (section I here)\nIf you only see .dgt files, then you will need to unpack them to get .wav and other recording metadata files \n\nYou do not need to follow these steps if you can see .err, .log, .wav2, .wav3, and .xml files for each .dtg file\n\nDownload the dmon software here and open d3read.exe\nYou should see a new terminal window open, prompting you to enter a directory. Copy the directory where the .dgt files are located and press enter\nYou will then be prompted to ‘Input filename base?’, type the file header of each dgt file (before the three digits ###) and hit enter\n\nExample: for the file named risso001.dgt, you would type risso and hit enter\n\nYou should then see a list of .dgt files in that directory and the unpacking process should start\nIf .flac files are needed, use the wav2flac.m matlab script",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
+    "href": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
+    "title": "Slocum DMON 2",
+    "section": "Clean wav Files and Segment Duty Cycled Data",
+    "text": "Clean wav Files and Segment Duty Cycled Data\n\n\n\n\n\n\nImportant\n\n\n\nThe existing processing workflow for DMON data requires access to an IDL Runtime license\n\n\n\nOpen the ‘reformat_dmon_wav_files.sav’ file, this will open a stand alone application window\nYou will be prompted to choose a folder with DMON data, select a directory that includes the unpackaged data files from the steps above (including wav and log.xml files)\nYou will then be prompted to choose an output folder, it is recommended you save your processed audio files in a subfolder\nYou should then see the two file paths in the application window, click ‘Go!’ and the processing will start\nClose the window once all the raw audio files have been renamed and separated based on the sampling routine\nThis processing renames the files to include a 4 digit year. Matlab and other processing softwares expect two digit years, so we need to rename these\nOpen files explorer and select all of the newly processed audio files\nRight click on the files and select ‘Rename with PowerRename’. If you do not see this option, you may need to use different renaming methods/software\nIn the PowerRename window, fill in the four digit year to the ‘Search for’ box and the two digit year in the ‘Replace with’ box\n\nClick ‘Apply’ and all of your files should now have the YYMMDD naming structure needed for the next data processing steps\nR methods - work in progress",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
+    "href": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
+    "title": "Slocum DMON 2",
+    "section": "Create full bandwidth LTSA",
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 1 for wav\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
+    "href": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
+    "title": "Slocum DMON 2",
+    "section": "Update Deployment Tracker Spreadsheet",
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
+    "crumbs": [
+      "Pre-Processing",
+      "Slocum - DMON 2"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html",
+    "href": "content/fieldwork.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "NoteOregon State University, CIMERS\n\n\n\n\n\nThe Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\n\n\n\n\n\n\nNoteCornell University\n\n\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\n\n\n\n\n\n\nNoteTeledyne Webb Research\n\n\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\n\n\n\n\n\n\nNoteAlseamar\n\n\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\n\n\n\n\n\n\nNoteJASCO Applied Science\n\n\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\n\n\n\n\n\n\nNoteUniversity of Hawaii Marine Center\n\n\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html#partners",
+    "href": "content/fieldwork.html#partners",
+    "title": "Data Collection",
+    "section": "",
+    "text": "NoteOregon State University, CIMERS\n\n\n\n\n\nThe Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.\nThey were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.\nParticipants: Selene Fregosi, Dave Mellinger\n\n\n\n\n\n\n\n\n\nNoteCornell University\n\n\n\n\n\nK. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.\nParticipants: Maria Vasilkin\n\n\n\n\n\n\n\n\n\nNoteTeledyne Webb Research\n\n\n\n\n\nTeledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.\nParticipants:Karl Boettger, Shea Quinn, Cordie Goodrich\n\n\n\n\n\n\n\n\n\nNoteAlseamar\n\n\n\n\n\nAlseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.\nParticipants: Camille Pierini, Laurent Beguery\n\n\n\n\n\n\n\n\n\nNoteJASCO Applied Science\n\n\n\n\n\nJASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.\n\n\n\n\n\n\n\n\n\nNoteUniversity of Hawaii Marine Center\n\n\n\n\n\nSpecial thanks to UH Marine Center for providing charter vessel support",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html#trackline-planning",
+    "href": "content/fieldwork.html#trackline-planning",
+    "title": "Data Collection",
+    "section": "Trackline Planning",
+    "text": "Trackline Planning\nStay Tuned!",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html#communications",
+    "href": "content/fieldwork.html#communications",
+    "title": "Data Collection",
+    "section": "Communications",
+    "text": "Communications\nPIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (Stefanie Gutierrez) and SWFSC (Sarah Mesnick).\nCommunications included:\nFebruary 5, 2026, NOAA Featured Web Story: NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘ihttps://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: Meet the Pilots of the Underwater Glider Challenge (Kourtney Burger)\nMarch 30, 2026, Sound Bytes Blog: Synchronous Swimming (With Robots) – Behind the Glider Challenge (Selene Fregosi)",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html#data-offload",
+    "href": "content/fieldwork.html#data-offload",
+    "title": "Data Collection",
+    "section": "Data Offload",
+    "text": "Data Offload\nData from the Hefring Ocean Scout and the Alseamar SeaExplorer gliders were offloaded at the end of the Glider Rodeo prior to shipping the gliders.\nAt the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.\nData download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/fieldwork.html#field-reports",
+    "href": "content/fieldwork.html#field-reports",
+    "title": "Data Collection",
+    "section": "Field Reports",
+    "text": "Field Reports\nBrief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (Feb 2, Feb 9, Feb17, in addition to NOAA Webstory and Blogs).\nPilot Logs: can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.\nEach glider platform provides a different approach to real-time summaries:\n\nSeaGlider\nStay Tuned!\n\n\nJASCO OceanObserver on Slocum Glider\nPre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days\n\n\n\n\n\n\nNear real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nNear real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\n\n\n\nNear real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nNear real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.\n\n\n\n\n\n\nPower spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).\n\n\n\n\n\n\nAlseamar Ocean Explorer\nPre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.\n\n\n\n\n\nReal time detections provided by Alseamar SeaExplorer during a window of several days.\n\n\n\n\n\n\nLow-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\n\n\n\nLow-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.\n\n\n\n\nThe Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.\n\n\n\n\n\nLow resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nLow resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.\n\n\n\n\n\n\nHefring OceanScout\nStay Tuned!",
+    "crumbs": [
+      "Fieldwork"
+    ]
+  },
+  {
+    "objectID": "content/overview.html",
+    "href": "content/overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#goals",
+    "href": "content/overview.html#goals",
+    "title": "Overview",
+    "section": "",
+    "text": "Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#objectives",
+    "href": "content/overview.html#objectives",
+    "title": "Overview",
+    "section": "Objectives",
+    "text": "Objectives\nField testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#approach",
+    "href": "content/overview.html#approach",
+    "title": "Overview",
+    "section": "Approach",
+    "text": "Approach\nCollect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:\n\nOptimize to survey coverage\nOptimize for low noise\nIntermediate approach to survey coverage and noise reduction\nDrifting (Quiet Mode)\n\n\nPiloting: To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.\nNavigation: Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).\nEndurance: Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.\nNoise: Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.\n\nThe Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to Glider Platforms and PAM Sensors.\nThe Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our PAM-Glider site.\n\n\n\nGlider Rodeo draft figure-8 tracklines planned for offshore Hawaii.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/overview.html#data-management-plan",
+    "href": "content/overview.html#data-management-plan",
+    "title": "Overview",
+    "section": "Data management Plan",
+    "text": "Data management Plan\nFlowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.\n\n\n\n\n\n\nNote\n\n\n\nRight-Click on flowchart components to open link in new tab to learn more about each component.\n\n\n\n\n\n  🔍 Zoom In\n  🔍 Zoom Out\n  ⟲ Reset View\n  🔒 Lock Pan\n  Zoom: 100%",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
+  },
+  {
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
+    "section": "",
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository."
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!"
+  },
+  {
+    "objectID": "hackathon/info.html",
+    "href": "hackathon/info.html",
+    "title": "Information",
+    "section": "",
+    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\n\n\nReferences\nGlider Rodeo Github Repository and website Glider Rodeo Zenodo Repository"
+  },
+  {
+    "objectID": "hackathon/prep.html",
+    "href": "hackathon/prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "hackathon/prep.html#hackweek-projects",
+    "href": "hackathon/prep.html#hackweek-projects",
+    "title": "Preparation",
+    "section": "",
+    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+  },
+  {
+    "objectID": "hackathon/prep.html#github-account",
+    "href": "hackathon/prep.html#github-account",
+    "title": "Preparation",
+    "section": "Github Account",
+    "text": "Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek."
+  },
+  {
+    "objectID": "hackathon/prep.html#hackweek-jupyterhub",
+    "href": "hackathon/prep.html#hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Hackweek JupyterHub",
+    "text": "Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day."
+  },
+  {
+    "objectID": "hackathon/prep.html#pre-hackweek-learning-optional",
+    "href": "hackathon/prep.html#pre-hackweek-learning-optional",
+    "title": "Preparation",
+    "section": "Pre-HackWeek Learning (Optional)",
+    "text": "Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners."
+  },
+  {
+    "objectID": "hackathon/prep.html#what-is-git",
+    "href": "hackathon/prep.html#what-is-git",
+    "title": "Preparation",
+    "section": "What is Git?",
+    "text": "What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website"
+  },
+  {
+    "objectID": "hackathon/prep.html#setting-up-on-jupyterhub",
+    "href": "hackathon/prep.html#setting-up-on-jupyterhub",
+    "title": "Preparation",
+    "section": "Setting up on JupyterHub",
+    "text": "Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\nAfter you have entered the code and granted authorization, the Terminal will update:\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\ngit config --global credential.helper store\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key."
+  },
+  {
+    "objectID": "hackathon/prep.html#log-into-the-hackweek-jupyterhub",
+    "href": "hackathon/prep.html#log-into-the-hackweek-jupyterhub",
+    "title": "Preparation",
+    "section": "Log into the hackweek JupyterHub",
+    "text": "Log into the hackweek JupyterHub\nworkshop.nmfs-openscapes.2i2c.cloud\nWatch this video for a quick orientation to the JupyterHub."
+  },
+  {
+    "objectID": "hackathon/prep.html#for-those-who-are-brand-new-to-python",
+    "href": "hackathon/prep.html#for-those-who-are-brand-new-to-python",
+    "title": "Preparation",
+    "section": "For those who are brand new to Python",
+    "text": "For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run"
+  },
+  {
+    "objectID": "hackathon/prep.html#start-with-some-basic-tutorials",
+    "href": "hackathon/prep.html#start-with-some-basic-tutorials",
+    "title": "Preparation",
+    "section": "Start with some basic tutorials",
+    "text": "Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\nOpen the ipynb notebooks and start working through the material."
+  },
+  {
+    "objectID": "hackathon/teams.html",
+    "href": "hackathon/teams.html",
+    "title": "Team Members",
+    "section": "",
+    "text": "Meet the people participating in the Glider Rodeo Hackathon."
+  },
+  {
+    "objectID": "hackathon/teams.html#information-to-provide",
+    "href": "hackathon/teams.html#information-to-provide",
+    "title": "Team Members",
+    "section": "Information to provide",
+    "text": "Information to provide\nTo add your card, please provide:\n\nyour preferred name and pronouns (optional)\nyour role on the team\nyour organization or affiliation\na short biography (one or two sentences)\na headshot or other square image, plus a brief description for the image’s alternative text\nlinks you would like to share, such as GitHub, an organization profile, or a personal website\n\nImages should be placed in hackathon/images/team/. A square image at least 400 × 400 pixels works best."
+  },
+  {
+    "objectID": "hackathon/teams.html#card-template",
+    "href": "hackathon/teams.html#card-template",
+    "title": "Team Members",
+    "section": "Card template",
+    "text": "Card template\nCopy the outer column and card below into the card grid in this page. Replace every value in brackets and remove any links or fields that do not apply.\n::: {.g-col-12 .g-col-md-6 .g-col-lg-4}\n::: {.card .h-100}\n![](images/team/[image-file.jpg]){.card-img-top fig-alt=\"Brief description of the team member\"}\n\n::: {.card-body}\n### [Preferred name]\n\n**[Role]**&lt;br&gt;\n[Organization or affiliation]\n\n[One- or two-sentence biography.]\n\n[[GitHub](https://github.com/[username])] · [[Profile or website](https://example.org)]\n:::\n:::\n:::"
+  },
+  {
+    "objectID": "hackathon/teams.html#team",
+    "href": "hackathon/teams.html#team",
+    "title": "Team Members",
+    "section": "Team",
+    "text": "Team\nThe example card below shows how the supplied information will appear. Replace it when the first team member is added.\n\n\n\n\n\nExample Team Member\nProject Lead Ocean Research Organization\nCoordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.\n[GitHub] · [Organization profile]"
   }
 ]
