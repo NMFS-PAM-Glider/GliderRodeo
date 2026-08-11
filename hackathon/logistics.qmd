@@ -1,0 +1,222 @@
+---
+title: "Logistics"
+format: html
+---
+
+# Event Logistics
+
+The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. [Time Zone Comparison](https://www.timeanddate.com/worldclock/converter.html?iso=20251020T140000).
+
+No software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.
+
+# Schedule
+
+All times are in UTC-8 (Pacific Standard Time).
+
+::: schedule-picker
+<label for="schedule-date">Select a date</label>
+
+```{ojs}
+//| echo: false
+
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+viewof selectedDay = {
+  const select = document.createElement("select");
+  select.id = "schedule-date";
+  select.className = "form-select";
+  days.forEach((day, index) => select.add(new Option(`${day} — Day ${index + 1}`, day)));
+  return select;
+}
+
+scheduleDisplay = {
+  for (const section of document.querySelectorAll(".schedule-day")) {
+    section.hidden = section.dataset.day !== selectedDay;
+  }
+  return html``;
+}
+```
+:::
+
+::: {.schedule-day data-day="Monday" aria-live="polite"}
+## Day 1 — Monday {.unlisted}
+
+| Time | Event | Details | Lead(s) |
+|------------------|------------------|------------------|------------------|
+| 7:00 - 10:30 | East Project Time | 10am to 1:30pm ET |  |
+| 7:00 - 7:45 | East Project Introduction | Welcome, Introductions, & Housekeeping slides | Shannon Rankin |
+| 7:45 - 8:45 | East Group Project Brainstorming (3 rotations) |  |  |
+| 9:00 - 9:30 | East Project Pitching | 1 slide pitch |  |
+| 9:30 - 10:30 | East Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. |  |
+| 10:30 - 11:00 | Break |  |  |
+| 11:00 - 11:30 | Science Lecture | Glider Rodeo Overview lectures | Selene Fregosi |
+| 11:30 - 12:15 | Science Lecture | Glider Rodeo Data | Kourtney Burger |
+| 12:15 - 12:30 | Break |  |  |
+| 12:30 - 13:00 | Coding Tutorial 1 | Orientation for the Hackweek JupyterHub [tutorials](https://fish-pace.github.io/hackweek-2025/presentations/tutorials.html) | Aksel Sloan |
+| 13:00 - 14:00 | Coding Tutorial 2 | Best Practices for Working with Data | Aksel Sloan |
+| 14:00 - 14:30 | Break |  |  |
+| 14:30 - 17:30 | Hawaii Project Time | 2:30pm to 5:30pm PT |  |
+| 14:30 - 15:15 | Hawaii Project Introduction | Welcome, Introductions, & Housekeeping slides | Shannon Rankin |
+| 15:15 - 16:00 | Hawaii Group Project Brainstorming (3 rotations) |  |  |
+| 16:00 - 16:30 | Hawaii Project Pitching | 1 slide pitch |  |
+| 16:30 - 17:30 | Hawaii Group Project Breakout Rooms | Each project will have a breakout room and start to get organized. |  |
+:::
+
+::: {.schedule-day data-day="Tuesday" aria-live="polite" hidden="true"}
+## Day 2 — Tuesday {.unlisted}
+
+| Time | Event | Details | Lead(s) |
+|----|----|----|----|
+| 7:00 - 7:30 | East Tutorial | Glider Rodeo Hackweek Collaboration via Git and GitHub slides | TBD |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. |  |
+| 9:00 - 10:30 | East/Hawaii Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break |  |  |
+| 11:00 - 11:45 | AquaView | TBD |
+| 11:45 - 12:15 | Break |  |  |
+| 12:15 - 13:00 | Noise Analysis | Kaitlin Palmer |
+| 13:00 - 13:15 | Break |  |  |
+| 13:15 - 14:00 | Coding Tutorial 2 | TBD  | TBD |
+| 14:00 - 14:30 | Break |  |  |
+| 14:30 - 15:00 | Hawaii Tutorial | Glider Rodeo Hackweek Collaboration via Git and GitHub slides | TBD |
+| 15:00 - 17:30 | Hawaii Project Work Time | Each project will have a breakout room. |  |
+:::
+
+::: {.schedule-day data-day="Wednesday" aria-live="polite" hidden="true"}
+## Day 3 — Wednesday {.unlisted}
+
+| Time | Event | Details | Lead(s) |
+|----|----|----|----|
+| 7:00 - 7:30 | East Group Check-ins (Rose, Bud, Thorn) |  | Shannon Rankin |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. |  |
+| 9:00 - 10:30 | East/Hawaii Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break |  |  |
+| 11:00 - 11:45 | Science Lecture | TBD | TBD |
+| 11:45 - 12:15 | Break |  |  |
+| 12:15 - 13:00 | Coding Tutorial 1 | TBD | TBD |
+| 13:00 - 13:15 | Break |  |  |
+| 13:15 - 14:00 | Coding Tutorial 2 | TBD | TBDn |
+| 14:00 - 14:30 | Break |  |  |
+| 14:30 - 15:00 | Hawaii Group Check-ins (Rose, Bud, Thorn) |  | Shannon Rankin |
+| 15:00 - 17:30 | Hawaii Project Work Time | Each project will have a breakout room. |  |
+:::
+
+::: {.schedule-day data-day="Thursday" aria-live="polite" hidden="true"}
+## Day 4 — Thursday {.unlisted}
+
+| Time | Event | Details | Lead(s) |
+|----|----|----|----|
+| 7:00 - 7:30 | East Group Check-ins (Rose, Bud, Thorn) |  | Shannon Rankin |
+| 7:30 - 10:30 | East Project Work Time | Each project will have a breakout room. |  |
+| 9:00 - 10:30 | East/Hawaii Open Helpdesk with Mentors | Bring your questions and go into breakout room with a mentor | mentors |
+| 10:30 - 11:00 | Break |  |  |
+| 11:00 - 11:45 | Science Lecture | TBD | TBD |
+| 11:45 - 12:00 | Break |  |  |
+| 12:00 - 12:45 | Pilot Q&A Panel | TBD | TBD |
+| 12:30 - 12:45 | Break |  |  |
+| 12:45 - 13:30 | Coding Tutorial 2 | TBD | TBD |
+| 13:30 - 14:00 | Break |  |  |
+| 14:30 - 15:00 | Hawaii Group Check-ins (Rose, Bud, Thorn) |  | Shannon Rankin |
+| 15:00 - 17:30 | Hawaii Project Work Time | Each project will have a breakout room. |  |
+:::
+
+::: {.schedule-day data-day="Friday" aria-live="polite" hidden="true"}
+## Day 5 — Friday {.unlisted}
+
+| Time | Event | Details | Lead(s) |
+|----|----|----|----|
+| 7:00 - 11:00 | East & Hawaii Project Work Time | Each project will have a breakout room. |  |
+| 11:00 - 12:30 | Project Presentations | East & Hawaii together schedule |  |
+| 12:30 - 13:00 | Break |  |  |
+| 13:00 - 14:00 | Project Presentations | East & Hawaii together schedule |  |
+| 14:00 - 14:15 | HackWeek Wrap-Up |  | Shannon Rankin; Selene Fregosi |
+:::
+
+```{=html}
+<style>
+.schedule-picker {
+  max-width: 24rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 0.3rem solid var(--bs-primary);
+  border-radius: 0.4rem;
+  background: var(--bs-tertiary-bg);
+}
+
+.schedule-picker form {
+  margin: 0;
+}
+
+.schedule-picker .code-copy-outer-scaffold {
+  display: none;
+}
+
+.schedule-picker label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.schedule-day {
+  padding: 0.25rem 1.25rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-day h2 {
+  margin-top: 0.75rem;
+}
+
+.schedule-day table {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .schedule-day {
+    overflow-x: auto;
+    padding-inline: 0.75rem;
+  }
+
+  .schedule-day table {
+    min-width: 42rem;
+  }
+}
+</style>
+```
+
+
+# Event Code of Conduct
+
+Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the [Contributor Covenant Code of Conduct](https://github.com/fish-pace/hackweek-2025/blob/main/CODE_OF_CONDUCT.md) governing contributions to this JupyterBook.
+
+## Overview
+
+The organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers.
+
+## Definition of Harassment
+
+Harassment includes, but is not limited to:
+
+- Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.
+
+- Sexual images in public spaces
+
+- Deliberate intimidation, stalking, or following
+
+- Harassing photography or recording
+
+- Sustained disruption of talks or other events
+
+- Inappropriate physical contact
+
+- Unwelcome sexual attention
+
+- Advocating for, or encouraging, any of the above behavior
+
+## Expectations
+
+We expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.
+
+## Reporting a violation
+
+Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers.

@@ -1,0 +1,52 @@
+---
+title: "Glider Rodeo Hackathon"
+format: html
+---
+
+![](images/hackathon_flyer.png)
+
+The Glider Rodeo Hackweek is a 5-day virtual collaboration where we will explore data collected from a suite of underwater gliders equipped with Passive Acoustic and CTD sensors. We will host various learning opportunities and participant-led project teams will explore areas of interest, including (but not limited to!) data exploration, analysis, and tool development.
+
+## Objective
+
+Our goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.
+
+## Goals
+
+Our goals are to foster learning and community building while collaborating on a wide range of project ideas that include those identified by NOAA Fisheries (see below) as well as others identified by the broader community.
+
+Initial NOAA Fisheries research goals:
+
+- Assess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or 'best practices'.
+
+- Assess variation in navigation capabilities for each glider in different conditions and during different mission modes.
+
+- Assess impact of mission modes on battery endurance and PAM data storage.
+
+- Assess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives
+
+- Assess variation in acoustic detection of target species for different platforms in different conditions.
+
+## Participation
+
+- *Do you want to build community within the glider or PAM community?*
+
+- *Do you analyses or tools that you would like to apply to this dataset?*
+
+- *Could you apply products to your data?*
+
+- *Are you a student in science, engineering, or software development?*
+
+- *Do you have project ideas you'd like to propose (or lead?)?*
+
+### **Expectations:**
+
+- No experience is necessary, although **we expect all project team participants to participate all week**.
+
+- See the tentative [schedule](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/details.html#schedule) for planning purposes.
+
+- All communications will use the [Slack platform](https://slack.com/) (can use browser or app).
+
+### **How to Participate:**
+
+Please fill out this [participant form](https://forms.gle/y1kFU1U13iEbww2i9), and we'll invite you to join our conversation on our Slack Workspace!

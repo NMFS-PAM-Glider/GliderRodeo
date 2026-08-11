@@ -1,0 +1,36 @@
+---
+title: "Information"
+format: html
+---
+# Hackathon Lectures
+ The slides and recordings will be linked from this page as they become available. Download slides from the [shared drive](https://drive.google.com/drive/folders/1B4hZURV1iCf3S14q2FAjmDYCGJS1rNwh?usp=drive_link).
+
+| Title | Slides | Recording |
+| :---- | :----: | :-------: |
+| Welcome to the Hackweek      | [<i class="bi bi-eye"></i>][welcome-view]  | [<i class="bi bi-youtube"></i>][welcome-vid] |
+| The Glider Rodeo             | [<i class="bi bi-eye"></i>][rodeo-view]   | [<i class="bi bi-youtube"></i>][rodeo-vid] |
+| Hackweek Wrapup             | [<i class="bi bi-eye"></i>][rodeo-view]   | [<i class="bi bi-youtube"></i>][rodeo-vid] |
+
+<!-- 
+| The Future of High-resolution Ocean Color | [{{ l0 }}][future-view]  | [{{ v0 }}][future-vid] |
+| Chlorophyll, Fish and Fisheries Management    | [{{ l0 }}][fish-view]  | [{{ v0 }}][fish-vid] | 
+-->
+
+
+[welcome-view]: https://docs.google.com/presentation/d/1Ln9nPJRil9XsX5QMCCjrny2FF9qXkrTF24QRND8w-L4/edit?usp=drive_link
+[welcome-dl]: ""
+[welcome-vid]: "" 
+[rodeo-view]: https://docs.google.com/presentation/d/1geFiIyw4iKxpyNoWek2_w0lY1QIBsLe_pV-fozx2Zq0/edit?usp=drive_link
+[rodeo-dl]: ""
+[rodeo-vid]: ""
+
+ 
+ 
+# Tutorials
+ 
+ 
+ 
+ 
+# References
+[Glider Rodeo Github Repository](https://github.com/NMFS-PAM-Glider/GliderRodeo) and [website](https://nmfs-pam-glider.github.io/GliderRodeo/)
+Glider Rodeo Zenodo Repository

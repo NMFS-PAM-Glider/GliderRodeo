@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: ../_site/hackathon
+
+book:
+  title: "Glider Rodeo Hackathon"
+  site-url: "https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/"
+  repo-url: "https://github.com/NMFS-PAM-Glider/GliderRodeo"
+  repo-subdir: hackathon
+  repo-actions: [edit, source, issue]
+  chapters:
+    - index.qmd
+    - logistics.qmd
+    - prep.qmd
+    - info.qmd
+    - teams.qmd
+    - projects.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    link-external-newwindow: true

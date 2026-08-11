@@ -1,0 +1,25 @@
+---
+title: "Data"
+format: html
+---
+
+## Data Management Plan
+A draft [Data Management Plan](https://docs.google.com/document/d/12bI75Ho0-ega1G6QQIJenqn-rv5-S4ZpbXyxpyQLVUs/edit?usp=sharing) outlines the data collected and processes for managing the data (from initial data offload to preprocessing to final archive). This is a work in progress and access is limited. 
+
+### Glider Rodeo Datasets
+Link to Google Doc (for those with permissions)
+<iframe src="https://docs.google.com/spreadsheets/d/1fyHxeri_VOFBRXGSuNiKqbW0iODNe0UmCyOPemWovsU/edit?usp=sharing;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+
+</iframe>
+
+## Raw Audio Data
+Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the [National Centers for Environmental Information Passive Acoustic Data Portal](https://www.ncei.noaa.gov/products/passive-acoustic-data) after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review. 
+
+### Soundscape Analysis
+
+
+### Cetacean Acoustic Detections
+
+
+## Environmental Data
+
