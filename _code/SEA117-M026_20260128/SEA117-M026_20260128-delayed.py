@@ -5,16 +5,14 @@ import pyglider.ncprocess as ncprocess
 import pyglider.utils as pgutils
 
 logging.basicConfig(
-        filename=os.path.join(paths["logdir"], log_file_name),
-        filemode="w",
-        format="%(name)s:%(asctime)s:%(levelname)s:%(message)s [line %(lineno)d]",
-        level=logging.INFO,
-        datefmt="%Y-%m-%d %H:%M:%S",
-    )
-    logging.captureWarnings(True)
-    logging.info("Beginning scheduled processing for %s", file_info)
-
-logging.basicConfig(level='INFO')
+    filename= "C:/Users/kourtney.burger/Documents/GitHub/GliderRodeo/data/SEA117-M026_20260128/log.log",
+    filemode="w",
+    format="%(name)s:%(asctime)s:%(levelname)s:%(message)s [line %(lineno)d]",
+    level=logging.INFO,
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+logging.captureWarnings(True)
+logging.info("Beginning scheduled processing")
 
 # sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
 rawdir  = 'data/SEA117-M026_20260128/0_RawData_gli_and_pld_sub/'
@@ -40,9 +38,9 @@ if True:
 
     # Make level-1 timeseries netcdf file from the raw files...
     outname = seaexplorer.raw_to_timeseries(rawncdir, l0tsdir, deploymentyaml, kind='sub')
-    ncprocess.extract_timeseries_profiles(outname, profiledir, deploymentyaml)
-    outname2 = ncprocess.make_gridfiles(outname, griddir, deploymentyaml)
+    # ncprocess.extract_timeseries_profiles(outname, profiledir, deploymentyaml)
+    # outname2 = ncprocess.make_gridfiles(outname, griddir, deploymentyaml)
 
-    pgutils.example_gridplot(outname2, './gridplot.png', ylim=[700, 0],
-                             toplot=['potential_temperature', 'salinity', 'oxygen_concentration',
-                                     'chlorophyll', 'cdom'])
+    # pgutils.example_gridplot(outname2, './gridplot.png', ylim=[700, 0],
+    #                          toplot=['potential_temperature', 'salinity', 'oxygen_concentration',
+    #                                  'chlorophyll', 'cdom'])
