@@ -11,4 +11,5 @@
 **/*.quarto_ipynb
 .positai
 
-/data/SEA117-M026_20260128
+/data/SEA117-M026_20260128/*
+!/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml
