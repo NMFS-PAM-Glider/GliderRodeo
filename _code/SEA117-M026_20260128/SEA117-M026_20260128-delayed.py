@@ -5,7 +5,7 @@ import pyglider.ncprocess as ncprocess
 import pyglider.utils as pgutils
 
 logging.basicConfig(
-    filename= "C:/Users/kourtney.burger/Documents/GitHub/GliderRodeo/data/SEA117-M026_20260128/log.log",
+    filename= "C:/Users/kourtney.burger/Documents/GitHub/GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
     filemode="w",
     format="%(name)s:%(asctime)s:%(levelname)s:%(message)s [line %(lineno)d]",
     level=logging.INFO,
@@ -23,12 +23,12 @@ profiledir = 'data/SEA117-M026_20260128/L0-profiles/'
 griddir    = 'data/SEA117-M026_20260128/L0-gridfiles/'
 
 ## get the data and clean up derived
-if False:
-    os.system('rsync -av ' + sourcedir + ' ' + rawdir)
+# if False:
+#     os.system('rsync -av ' + sourcedir + ' ' + rawdir)
 
-# clean last processing...
-os.system('rm ' + rawncdir + '* ' + l0tsdir + '* ' + profiledir + '* ' +
-          griddir + '* ')
+# # clean last processing...
+# os.system('rm ' + rawncdir + '* ' + l0tsdir + '* ' + profiledir + '* ' +
+#           griddir + '* ')
 
 if True:
     # turn *.EBD and *.DBD into *.ebd.nc and *.dbd.nc netcdf files.
