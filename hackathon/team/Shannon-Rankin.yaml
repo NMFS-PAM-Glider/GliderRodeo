@@ -1,0 +1,25 @@
+- title: Shannon Rankin
+  avatar: ../images/team/ShannonRankin.jpg
+  image: images/team/ShannonRankin.jpg
+  role: Glider Rodeo organizer
+  organizations:
+    - name: NOAA Fisheries
+  bio: >-
+    Works on passive acoustic monitoring, data workflows, and the use of
+    autonomous platforms for ocean observing.
+  expertise:
+    - passive acoustic monitoring
+    - data workflows
+  social:
+    - icon: github
+      link: https://github.com/shannonrankin
+  user_groups:
+    - Organizer
+  description: >-
+    **Glider Rodeo organizer**<br>
+    NOAA Fisheries
+
+    Works on passive acoustic monitoring, data workflows, and the use of
+    autonomous platforms for ocean observing.
+
+    [GitHub](https://github.com/shannonrankin)

@@ -1,0 +1,21 @@
+title: Preferred Name
+avatar: ../images/team/profile-placeholder.svg
+image: ../images/team/profile-placeholder.svg
+role: Your title
+organizations:
+  - name: Your institution
+bio: >-
+  A short bio about yourself. You can have multiple lines.
+expertise:
+  - skill 1
+  - skill 2
+social:
+  - icon: github
+    link: https://github.com/your-username
+user_groups:
+  - The role in the hackathon
+description: >-
+  **Your title**<br>
+  Your institution
+
+  A short bio about yourself.
