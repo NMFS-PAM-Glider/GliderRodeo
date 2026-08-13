@@ -1,0 +1,25 @@
+- title: Kourtney Burger
+  avatar: ../images/team/KourtneyBurger.jpg
+  image: images/team/KourtneyBurger.jpg
+  role: Glider Rodeo organizer
+  organizations:
+    - name: NOAA Fisheries
+  bio: >-
+    Works with passive acoustic monitoring data and autonomous underwater gliders
+    to support marine science and conservation.
+  expertise:
+    - passive acoustic monitoring
+    - autonomous underwater gliders
+  social:
+    - icon: github
+      link: https://github.com/kourtneyburger
+  user_groups:
+    - Organizer
+  description: >-
+    **Glider Rodeo organizer**<br>
+    NOAA Fisheries
+
+    Works with passive acoustic monitoring data and autonomous underwater gliders
+    to support marine science and conservation.
+
+    [GitHub](https://github.com/kourtneyburger)
