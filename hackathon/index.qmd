@@ -1,6 +1,8 @@
 ---
 title: "Glider Rodeo Hackathon"
-format: html
+format:
+  html:
+    link-external-newwindow: true
 ---
 
 ![](images/hackathon_flyer.png)
@@ -9,13 +11,11 @@ The Glider Rodeo Hackweek is a 5-day virtual collaboration where we will explore
 
 ## Objective
 
-Our goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.
+Our objective is to develop open-source analysis and visualization tools that evaluate glider performance during the [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/), providing the community with a framework for future studies.
 
 ## Goals
 
-Our goals are to foster learning and community building while collaborating on a wide range of project ideas that include those identified by NOAA Fisheries (see below) as well as others identified by the broader community.
-
-Initial NOAA Fisheries research goals:
+Our goals are to share this dataset with the wider community and encourage use of this data to meet a broad range of needs, foster hands-on community learning, build community and strengthen professional networks. In addition to these broad goals, we at NOAA Fisheries have our own set of initial research goals:
 
 - Assess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or 'best practices'.
 
@@ -31,11 +31,11 @@ Initial NOAA Fisheries research goals:
 
 - *Do you want to build community within the glider or PAM community?*
 
-- *Do you analyses or tools that you would like to apply to this dataset?*
+- *Do you have analyses or tools that you would like to apply to this dataset?*
 
-- *Could you apply products to your data?*
+- *Do you want to transfer analyses or tools developed here to your data?*
 
-- *Are you a student in science, engineering, or software development?*
+- *Are you a student in science, engineering, or software development looking for new experiences?*
 
 - *Do you have project ideas you'd like to propose (or lead?)?*
 
@@ -50,3 +50,6 @@ Initial NOAA Fisheries research goals:
 ### **How to Participate:**
 
 Please fill out this [participant form](https://forms.gle/y1kFU1U13iEbww2i9), and we'll invite you to join our conversation on our Slack Workspace!
+
+\
+*Learn more about the [NOAA Fisheries PAM-Glider Program](https://nmfs-ost.github.io/PAM-Glider/) and the [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)*

@@ -29,7 +29,7 @@ All tutorials will be in Python using the Pangeo ecosystem of tools for computin
 
 ## HackWeek Projects
 
-A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.
+A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.
 
 The project work is a combination of
 
@@ -52,7 +52,7 @@ Here is a checklist of things you need to do in advance:
 
 \- \[ \] Login to the JupyterHub
 
-\- \[ \] Review material on the Resource Book linked on the website
+\- \[ \] Review material on the Glider Rodeo and Hackathon websites
 :::
 
 ## Github Account

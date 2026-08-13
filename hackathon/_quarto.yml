@@ -10,10 +10,10 @@ book:
   repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
+    - teams.qmd
     - logistics.qmd
     - prep.qmd
     - info.qmd
-    - teams.qmd
     - projects.qmd
 
 format:

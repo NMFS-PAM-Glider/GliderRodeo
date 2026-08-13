@@ -1,8 +1,8 @@
 ---
 title: "Overview"
-format: 
-  html:
-    code-fold: true
+# format: 
+#   html:
+#     code-fold: true
 ---
 
 ## Goals
