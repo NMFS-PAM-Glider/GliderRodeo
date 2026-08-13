@@ -11,5 +11,64 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 # Schedule
 
+Choose the time zone that works best for you. The schedule below is linked to the [shared Google Sheet](https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/edit?usp=sharing) and shows only the selected time column.
 
+<div class="schedule-sheet">
+  <label for="schedule-timezone">Show schedule in:</label>
+  <select id="schedule-timezone" class="form-select">
+    <option value="A" selected>Time (Pacific - PDT)</option>
+    <option value="B">Time (Mountain - MDT)</option>
+    <option value="C">Time (Central - CDT)</option>
+    <option value="D">Time (Eastern - EDT)</option>
+    <option value="E">Time (Hawaii - HST)</option>
+  </select>
+  <iframe
+    id="schedule-sheet-frame"
+    title="Hackathon schedule in the selected time zone"
+    src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;tq=select%20A"
+    loading="lazy">
+  </iframe>
+</div>
 
+```{=html}
+<style>
+.schedule-sheet {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  background: var(--bs-tertiary-bg);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-sheet label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.schedule-sheet select {
+  max-width: 28rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-sheet iframe {
+  display: block;
+  width: 100%;
+  min-height: 34rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.35rem;
+  background: var(--bs-body-bg);
+}
+</style>
+<script>
+const scheduleSheet = document.querySelector("#schedule-sheet-frame");
+const scheduleTimezone = document.querySelector("#schedule-timezone");
+const scheduleSheetUrl =
+  "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&tq=select%20";
+
+scheduleTimezone.addEventListener("change", () => {
+  scheduleSheet.src = `${scheduleSheetUrl}${scheduleTimezone.value}`;
+});
+</script>
+```
