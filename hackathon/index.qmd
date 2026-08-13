@@ -41,7 +41,7 @@ Our goals are to share this dataset with the wider community and encourage use o
 
 ### **Expectations:**
 
-- No experience is necessary, although **we expect all project team participants to participate all week**.
+- No experience is necessary, although *we expect all project team participants to participate all week*.
 
 - See the tentative [schedule](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/logistics.html#schedule) for planning purposes.
 

@@ -1,8 +1,6 @@
 ---
 title: "Overview"
-# format: 
-#   html:
-#     code-fold: true
+format: html
 ---
 
 ## Goals
@@ -59,7 +57,7 @@ Flowchart identifying different components of the Data management Plan, includin
 Right-Click on flowchart components to open link in new tab to learn more about each component.
 :::
 
-```{=html flowchart}
+```{=html}
 
 <!-- Diagram Controls -->
 <div class="svg-controls">
