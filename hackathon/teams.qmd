@@ -2,10 +2,10 @@
 title: "Team Members"
 format: html
 listing:
-  contents:
-    - team/Kourtney-Burger.yaml
-    - team/Selene-Fregosi.yaml
-    - team/Shannon-Rankin.yaml
+  contents: team/*.yaml
+  exclude:
+    - team/header.yaml
+    - team/template.yaml
   type: grid
   fields: [image, title, description]
   sort: title
