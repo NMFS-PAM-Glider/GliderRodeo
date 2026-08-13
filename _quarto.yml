@@ -71,10 +71,8 @@ website:
 
 
 
-# resources: 
-#   - output/*.svg
-#   - output/*.drawio
-#   - content/card-images/*
+resources:
+  - output/*.svg
         
 format:
   html:
