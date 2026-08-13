@@ -11,7 +11,7 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 # Schedule
 
-Choose the time zone that works best for you. The schedule below is linked to the [shared Google Sheet](https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/edit?usp=sharing) and shows only the selected time column.
+Choose the time zone that works best for you. The schedule below is linked to the [shared Google Sheet](https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/edit?usp=sharing) and shows the selected time column along with the event details.
 
 <div class="schedule-sheet">
   <label for="schedule-timezone">Show schedule in:</label>
@@ -25,7 +25,7 @@ Choose the time zone that works best for you. The schedule below is linked to th
   <iframe
     id="schedule-sheet-frame"
     title="Hackathon schedule in the selected time zone"
-    src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;tq=select%20A"
+    src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;tq=select%20A,F,G,H,I,J"
     loading="lazy">
   </iframe>
 </div>
@@ -68,7 +68,7 @@ const scheduleSheetUrl =
   "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&tq=select%20";
 
 scheduleTimezone.addEventListener("change", () => {
-  scheduleSheet.src = `${scheduleSheetUrl}${scheduleTimezone.value}`;
+  scheduleSheet.src = `${scheduleSheetUrl}${scheduleTimezone.value},F,G,H,I,J`;
 });
 </script>
 ```
