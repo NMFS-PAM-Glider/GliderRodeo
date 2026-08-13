@@ -11,16 +11,16 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 # Schedule
 
-Choose the time zone that works best for you. The schedule below is linked to the [shared Google Sheet](https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/edit?usp=sharing) and shows the selected time column along with the event details.
+Choose the time zone that works best for you. 
 
 <div class="schedule-sheet">
   <label for="schedule-timezone">Show schedule in:</label>
   <select id="schedule-timezone" class="form-select">
-    <option value="A" selected>Time (Pacific - PDT)</option>
-    <option value="B">Time (Mountain - MDT)</option>
+    <option value="B" selected>Time (Pacific - PDT)</option>
+    <option value="E">Time (UTC)</option>
     <option value="C">Time (Central - CDT)</option>
     <option value="D">Time (Eastern - EDT)</option>
-    <option value="E">Time (Hawaii - HST)</option>
+    <option value="A">Time (Hawaii - HST)</option>
   </select>
   <iframe
     id="schedule-sheet-frame"
