@@ -3,7 +3,7 @@ title: "Projects"
 format: html
 ---
 
-During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site ([Submit your name here to join](https://forms.gle/y1kFU1U13iEbww2i9).
+During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site [Submit your name here to join](https://forms.gle/y1kFU1U13iEbww2i9).
 
 We encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:
 
@@ -28,5 +28,5 @@ We encourage you to be creative in how you design your project work! Here are so
 ::: {.callout-note}
 ## Want to join the conversation?
 
-If you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin\@noaa.gov
+If you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by adding your contact information to the [Participant Form](https://forms.gle/y1kFU1U13iEbww2i9).
 :::

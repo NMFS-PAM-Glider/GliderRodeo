@@ -41,6 +41,8 @@ The project work is a combination of
 
 - and then Friday, frantically putting a presentation on your project and results.
 
+See [Projects page](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/projects.html) for more information.
+
 # Checklist
 
 ::: callout-important
@@ -93,7 +95,7 @@ You are not required to know Git in advance of this event, but this is a great o
 
 ## Setting up on JupyterHub
 
-Below are instructions to get you setup with `git` on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the [Software Carpentry Git](#0){style="font-size: 11pt;"} instructions for a thorough explanation and background information.
+Below are instructions to get you setup with `git` on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the [Software Carpentry Git](https://swcarpentry.github.io/git-novice/index.html){style="font-size: 11pt;"} instructions for a thorough explanation and background information.
 
 1.  Login to JupyterHub
 
