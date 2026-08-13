@@ -63,6 +63,7 @@ website:
           - href: content/data_processing/DeploymentSummaries.qmd
       - href: hackathon/index.html
         text: "Hackathon"
+        target: "_blank"
       # - href: content/data-analysis.qmd
       #   text: "Data Analysis"
       # - href: content/reporting.qmd

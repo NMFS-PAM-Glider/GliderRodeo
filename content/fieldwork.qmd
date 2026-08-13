@@ -5,11 +5,17 @@ format:
     code-fold: true
 ---
 ## Partners
+:::{.callout-note collapse="true" appearance="simple" icon=false}
+#### *Pacific Islands Fisheries Science Center*
+[*Pacific Islands Fisheries Science Center*](https://www.fisheries.noaa.gov/pacific-islands/population-assessments/passive-acoustics-pacific-islands) was the lead on all Glider Rodeo field efforts and co-lead of the PAM-Glider Strategic Initiative.
+:::
 
-#### [*Pacific Islands Fisheries Science Center*](https://www.fisheries.noaa.gov/pacific-islands/population-assessments/passive-acoustics-pacific-islands)
+:::{.callout-note collapse="true" appearance="simple" icon=false}
 
+#### *Southwest Fisheries Science Center*
+[*Southwest Fisheries Science Center*](https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab) assisted with the Glider Rodeo event and co-leads the PAM-Glider Strategic Initiative.
 
-#### [*Southwest Fisheries Science Center*](https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab)
+:::
 
 :::{.callout-note collapse="true" appearance="simple" icon=false}
 #### *Oregon State University, CIMERS*

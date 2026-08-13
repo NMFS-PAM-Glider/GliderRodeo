@@ -59,7 +59,7 @@ Flowchart identifying different components of the Data management Plan, includin
 Right-Click on flowchart components to open link in new tab to learn more about each component.
 :::
 
-```{=html}
+```{=html flowchart}
 
 <!-- Diagram Controls -->
 <div class="svg-controls">
