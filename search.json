@@ -14,77 +14,14 @@
     "href": "hackathon/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing until the hackweek begins via our Glider Rodeo slack site (click here to join).\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into tutorial content and gain more hands on experience with new tools\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\nfocus on research: people often work to advance a research challenge using tools shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: hackweeks often expose general community software needs. Projects can be the catalyst for new community libraries.\n\nProject development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our discussion platform\nday one: pitching of ideas and selection of a project to work on\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteHave a Project Idea?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin@noaa.gov"
+    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site (Submit your name here to join.\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into this shared data resource and tutorial content; gain more hands-on data science experience\nfocus on research: people often work to advance a research challenge using tools or data shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: The tools we build here will be shared with the greater community and can serve as a catalyst for new community libraries.\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\n\nProject development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our Slack communication platform\nday one: pitching of ideas and selection of a project to work on, identify tasks for each person on the team\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteWant to join the conversation?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by emailing shannon.rankin@noaa.gov"
   },
   {
     "objectID": "hackathon/logistics.html",
     "href": "hackathon/logistics.html",
     "title": "Logistics",
     "section": "",
-    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project."
-  },
-  {
-    "objectID": "hackathon/logistics.html#day-1-monday",
-    "href": "hackathon/logistics.html#day-1-monday",
-    "title": "Logistics",
-    "section": "Day 1 — Monday",
-    "text": "Day 1 — Monday\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 10:30\nEast Project Time\n10am to 1:30pm ET\n\n\n\n7:00 - 7:45\nEast Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n7:45 - 8:45\nEast Group Project Brainstorming (3 rotations)\n\n\n\n\n9:00 - 9:30\nEast Project Pitching\n1 slide pitch\n\n\n\n9:30 - 10:30\nEast Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized.\n\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:30\nScience Lecture\nGlider Rodeo Overview lectures\nSelene Fregosi\n\n\n11:30 - 12:15\nScience Lecture\nGlider Rodeo Data\nKourtney Burger\n\n\n12:15 - 12:30\nBreak\n\n\n\n\n12:30 - 13:00\nCoding Tutorial 1\nOrientation for the Hackweek JupyterHub tutorials\nAksel Sloan\n\n\n13:00 - 14:00\nCoding Tutorial 2\nBest Practices for Working with Data\nAksel Sloan\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 17:30\nHawaii Project Time\n2:30pm to 5:30pm PT\n\n\n\n14:30 - 15:15\nHawaii Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n15:15 - 16:00\nHawaii Group Project Brainstorming (3 rotations)\n\n\n\n\n16:00 - 16:30\nHawaii Project Pitching\n1 slide pitch\n\n\n\n16:30 - 17:30\nHawaii Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized."
-  },
-  {
-    "objectID": "hackathon/logistics.html#day-2-tuesday",
-    "href": "hackathon/logistics.html#day-2-tuesday",
-    "title": "Logistics",
-    "section": "Day 2 — Tuesday",
-    "text": "Day 2 — Tuesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nAquaView\nTBD\n\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nNoise Analysis\nKaitlin Palmer\n\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nCoding Tutorial 2\nTBD\nTBD\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/logistics.html#day-3-wednesday",
-    "href": "hackathon/logistics.html#day-3-wednesday",
-    "title": "Logistics",
-    "section": "Day 3 — Wednesday",
-    "text": "Day 3 — Wednesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nCoding Tutorial 1\nTBD\nTBD\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nCoding Tutorial 2\nTBD\nTBDn\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/logistics.html#day-4-thursday",
-    "href": "hackathon/logistics.html#day-4-thursday",
-    "title": "Logistics",
-    "section": "Day 4 — Thursday",
-    "text": "Day 4 — Thursday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:00\nBreak\n\n\n\n\n12:00 - 12:45\nPilot Q&A Panel\nTBD\nTBD\n\n\n12:30 - 12:45\nBreak\n\n\n\n\n12:45 - 13:30\nCoding Tutorial 2\nTBD\nTBD\n\n\n13:30 - 14:00\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/logistics.html#day-5-friday",
-    "href": "hackathon/logistics.html#day-5-friday",
-    "title": "Logistics",
-    "section": "Day 5 — Friday",
-    "text": "Day 5 — Friday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 11:00\nEast & Hawaii Project Work Time\nEach project will have a breakout room.\n\n\n\n11:00 - 12:30\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n12:30 - 13:00\nBreak\n\n\n\n\n13:00 - 14:00\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n14:00 - 14:15\nHackWeek Wrap-Up\n\nShannon Rankin; Selene Fregosi"
-  },
-  {
-    "objectID": "hackathon/logistics.html#overview",
-    "href": "hackathon/logistics.html#overview",
-    "title": "Logistics",
-    "section": "Overview",
-    "text": "Overview\nThe organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers."
-  },
-  {
-    "objectID": "hackathon/logistics.html#definition-of-harassment",
-    "href": "hackathon/logistics.html#definition-of-harassment",
-    "title": "Logistics",
-    "section": "Definition of Harassment",
-    "text": "Definition of Harassment\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior"
-  },
-  {
-    "objectID": "hackathon/logistics.html#expectations",
-    "href": "hackathon/logistics.html#expectations",
-    "title": "Logistics",
-    "section": "Expectations",
-    "text": "Expectations\nWe expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers."
-  },
-  {
-    "objectID": "hackathon/logistics.html#reporting-a-violation",
-    "href": "hackathon/logistics.html#reporting-a-violation",
-    "title": "Logistics",
-    "section": "Reporting a violation",
-    "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
+    "text": "Event Logistics\nThe Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.\n\n\nSchedule"
   },
   {
     "objectID": "hackathon/index.html",
@@ -101,7 +38,7 @@
     "href": "hackathon/index.html#objective",
     "title": "Glider Rodeo Hackathon",
     "section": "Objective",
-    "text": "Objective\nOur goal is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies. By collaborating on these methods, we aim to strengthen professional networks and foster hands-on learning that advances the collective expertise of the glider community.",
+    "text": "Objective\nOur objective is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies.",
     "crumbs": [
       "Hackathon"
     ]
@@ -111,7 +48,7 @@
     "href": "hackathon/index.html#goals",
     "title": "Glider Rodeo Hackathon",
     "section": "Goals",
-    "text": "Goals\nOur goals are to foster learning and community building while collaborating on a wide range of project ideas that include those identified by NOAA Fisheries (see below) as well as others identified by the broader community.\nInitial NOAA Fisheries research goals:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
+    "text": "Goals\nOur goals are to share this dataset with the wider community and encourage use of this data to meet a broad range of needs, foster hands-on community learning, build community and strengthen professional networks. In addition to these broad goals, we at NOAA Fisheries have our own set of initial research goals:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
     "crumbs": [
       "Hackathon"
     ]
@@ -121,10 +58,52 @@
     "href": "hackathon/index.html#participation",
     "title": "Glider Rodeo Hackathon",
     "section": "Participation",
-    "text": "Participation\n\nDo you want to build community within the glider or PAM community?\nDo you analyses or tools that you would like to apply to this dataset?\nCould you apply products to your data?\nAre you a student in science, engineering, or software development?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\nExpectations:\n\nNo experience is necessary, although we expect all project team participants to participate all week.\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\n\n\n\nHow to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!",
+    "text": "Participation\n\nDo you want to build community within the glider or PAM community?\nDo you have analyses or tools that you would like to apply to this dataset?\nDo you want to transfer analyses or tools developed here to your data?\nAre you a student in science, engineering, or software development looking for new experiences?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\nExpectations:\n\nNo experience is necessary, although we expect all project team participants to participate all week.\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\n\n\n\nHow to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!\n\nLearn more about the NOAA Fisheries PAM-Glider Program and the Glider Rodeo",
     "crumbs": [
       "Hackathon"
     ]
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html",
+    "href": "hackathon/CopyOflogistics.html",
+    "title": "Logistics",
+    "section": "",
+    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project."
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html#day-1-monday",
+    "href": "hackathon/CopyOflogistics.html#day-1-monday",
+    "title": "Logistics",
+    "section": "Day 1 — Monday",
+    "text": "Day 1 — Monday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 10:30\nEast Project Time\n10am to 1:30pm ET\n\n\n\n7:00 - 7:45\nEast Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n7:45 - 8:45\nEast Group Project Brainstorming (3 rotations)\n\n\n\n\n9:00 - 9:30\nEast Project Pitching\n1 slide pitch\n\n\n\n9:30 - 10:30\nEast Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized.\n\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:30\nScience Lecture\nGlider Rodeo Overview lectures\nSelene Fregosi\n\n\n11:30 - 12:15\nScience Lecture\nGlider Rodeo Data\nKourtney Burger\n\n\n12:15 - 12:30\nBreak\n\n\n\n\n12:30 - 13:00\nCoding Tutorial 1\nOrientation for the Hackweek JupyterHub Tutorials\nAksel Sloan\n\n\n13:00 - 14:00\nCoding Tutorial 2\nBest Practices for Working with Data\nAksel Sloan\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 17:30\nHawaii Project Time\n2:30pm to 5:30pm PT\n\n\n\n14:30 - 15:15\nHawaii Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n15:15 - 16:00\nHawaii Group Project Brainstorming (3 rotations)\n\n\n\n\n16:00 - 16:30\nHawaii Project Pitching\n1 slide pitch\n\n\n\n16:30 - 17:30\nHawaii Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized."
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html#day-2-tuesday",
+    "href": "hackathon/CopyOflogistics.html#day-2-tuesday",
+    "title": "Logistics",
+    "section": "Day 2 — Tuesday",
+    "text": "Day 2 — Tuesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nAquaView\nTBD\n\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nNoise Analysis\nKaitlin Palmer\n\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html#day-3-wednesday",
+    "href": "hackathon/CopyOflogistics.html#day-3-wednesday",
+    "title": "Logistics",
+    "section": "Day 3 — Wednesday",
+    "text": "Day 3 — Wednesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nCoding Tutorial 1\nTBD\nTBD\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nCoding Tutorial 2\nTBD\nTBDn\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html#day-4-thursday",
+    "href": "hackathon/CopyOflogistics.html#day-4-thursday",
+    "title": "Logistics",
+    "section": "Day 4 — Thursday",
+    "text": "Day 4 — Thursday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:00\nBreak\n\n\n\n\n12:00 - 12:45\nPilot Q&A Panel\nTBD\nTBD\n\n\n12:30 - 12:45\nBreak\n\n\n\n\n12:45 - 13:30\nCoding Tutorial 2\nTBD\nTBD\n\n\n13:30 - 14:00\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
+  },
+  {
+    "objectID": "hackathon/CopyOflogistics.html#day-5-friday",
+    "href": "hackathon/CopyOflogistics.html#day-5-friday",
+    "title": "Logistics",
+    "section": "Day 5 — Friday",
+    "text": "Day 5 — Friday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 11:00\nEast & Hawaii Project Work Time\nEach project will have a breakout room.\n\n\n\n11:00 - 12:30\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n12:30 - 13:00\nBreak\n\n\n\n\n13:00 - 14:00\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n14:00 - 14:15\nHackWeek Wrap-Up\n\nShannon Rankin; Selene Fregosi"
   },
   {
     "objectID": "content/pre-processing.html",
@@ -668,25 +647,60 @@
     "text": "Final Report\nStay Tuned!"
   },
   {
+    "objectID": "hackathon/conduct.html",
+    "href": "hackathon/conduct.html",
+    "title": "conduct",
+    "section": "",
+    "text": "Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the Contributor Covenant Code of Conduct governing contributions to this JupyterBook.\n\n\nThe organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers.\n\n\n\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior\n\n\n\n\nWe expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.\n\n\n\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
+  },
+  {
+    "objectID": "hackathon/conduct.html#overview",
+    "href": "hackathon/conduct.html#overview",
+    "title": "conduct",
+    "section": "",
+    "text": "The organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including our discussion spaces. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the hackweek at the discretion of the organizers."
+  },
+  {
+    "objectID": "hackathon/conduct.html#definition-of-harassment",
+    "href": "hackathon/conduct.html#definition-of-harassment",
+    "title": "conduct",
+    "section": "",
+    "text": "Harassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior"
+  },
+  {
+    "objectID": "hackathon/conduct.html#expectations",
+    "href": "hackathon/conduct.html#expectations",
+    "title": "conduct",
+    "section": "",
+    "text": "We expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers."
+  },
+  {
+    "objectID": "hackathon/conduct.html#reporting-a-violation",
+    "href": "hackathon/conduct.html#reporting-a-violation",
+    "title": "conduct",
+    "section": "",
+    "text": "Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible to one of the lead hackweek organizers."
+  },
+  {
     "objectID": "hackathon/info.html",
     "href": "hackathon/info.html",
     "title": "Information",
     "section": "",
-    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\n\n\nReferences\nGlider Rodeo Github Repository and website Glider Rodeo Zenodo Repository"
+    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\nStay Tuned!\n\n\nReferences\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAquaview"
   },
   {
     "objectID": "hackathon/prep.html",
     "href": "hackathon/prep.html",
     "title": "Preparation",
     "section": "",
-    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+    "text": "The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\n\nConnecting to a Jupyter Notebook environment and accessing content for tutorial training.\nAccessing cloud-hosted remote sensing data using earthaccess and plotting it using matplotlib.\nExploring multi-dimensional remote sensing data using xarray.\nOpening CSV tabular data in Pandas and run tools to conduct satellite matchups.\nModifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.\nExploring methods for high performance computing such as using Dask and parallelization\nPreparing datasets for machine learning tools, including PyTorch and TensorFlow for neural networks\n\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.\n\n\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
   },
   {
     "objectID": "hackathon/prep.html#hackweek-projects",
     "href": "hackathon/prep.html#hackweek-projects",
     "title": "Preparation",
     "section": "",
-    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
+    "text": "A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results."
   },
   {
     "objectID": "hackathon/prep.html#github-account",

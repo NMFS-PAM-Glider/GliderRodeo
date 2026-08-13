@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overview – NOAA quarto simple</title>
+<title>Logistics – NOAA quarto simple</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -35,8 +70,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/hardware.html" rel="next">
-<link href="../index.html" rel="prev">
 <link href="../content/images/GliderRodeo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -79,6 +112,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -254,7 +289,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/overview.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Logistics</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -293,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -390,12 +425,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
-  <li><a href="#data-management-plan" id="toc-data-management-plan" class="nav-link" data-scroll-target="#data-management-plan">Data management Plan</a></li>
+  <li><a href="#event-logistics" id="toc-event-logistics" class="nav-link active" data-scroll-target="#event-logistics">Event Logistics</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/overview.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/CopyOflogistics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/CopyOflogistics.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -403,7 +436,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Overview</h1>
+<h1 class="title">Logistics</h1>
 </div>
 
 
@@ -420,238 +453,575 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="goals" class="level2">
-<h2 class="anchored" data-anchor-id="goals">Goals</h2>
-<p>Accelerate the use of uncrewed vessels (UxS) to decrease dependence on large scale ship surveys. PAM-Gliders provide an opportunity to assess populations of marine mammals (protected species) and the environment to augment existing shipboard surveys.</p>
+<section id="event-logistics" class="level1">
+<h1>Event Logistics</h1>
+<p>The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20251020T140000">Time Zone Comparison</a>.</p>
+<p>No software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.</p>
 </section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>Field testing of PAM-glider platforms to provide data-driven guidance on the capabilities of each system to (1) work in different operational environments and (2) address different research questions. This 2-week sea trial was conducted off Oahu, Hawai’i in February 2026.</p>
+<section id="schedule" class="level1">
+<h1>Schedule</h1>
+<p>All times are in UTC-8 (Pacific Standard Time).</p>
+<div class="schedule-picker">
+<p><label for="schedule-date">Select a date</label></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="22" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> [<span class="st">"Monday"</span><span class="op">,</span> <span class="st">"Tuesday"</span><span class="op">,</span> <span class="st">"Wednesday"</span><span class="op">,</span> <span class="st">"Thursday"</span><span class="op">,</span> <span class="st">"Friday"</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>viewof selectedDay <span class="op">=</span> {</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> select <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">"select"</span>)<span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  select<span class="op">.</span><span class="at">id</span> <span class="op">=</span> <span class="st">"schedule-date"</span><span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  select<span class="op">.</span><span class="at">className</span> <span class="op">=</span> <span class="st">"form-select"</span><span class="op">;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  days<span class="op">.</span><span class="fu">forEach</span>((day<span class="op">,</span> index) <span class="kw">=&gt;</span> select<span class="op">.</span><span class="fu">add</span>(<span class="kw">new</span> <span class="fu">Option</span>(<span class="vs">`</span><span class="sc">${</span>day<span class="sc">}</span><span class="vs"> — Day </span><span class="sc">${</span>index <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="vs">`</span><span class="op">,</span> day)))<span class="op">;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> select<span class="op">;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>scheduleDisplay <span class="op">=</span> {</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">const</span> section <span class="kw">of</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelectorAll</span>(<span class="st">".schedule-day"</span>)) {</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    section<span class="op">.</span><span class="at">hidden</span> <span class="op">=</span> section<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">day</span> <span class="op">!==</span> selectedDay<span class="op">;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">``</span><span class="op">;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="day-1-monday" class="level2 unlisted schedule-day" data-day="Monday" aria-live="polite">
+<h2 class="unlisted anchored" data-anchor-id="day-1-monday">Day 1 — Monday</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 10:30</td>
+<td>East Project Time</td>
+<td>10am to 1:30pm ET</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>7:00 - 7:45</td>
+<td>East Project Introduction</td>
+<td>Welcome, Introductions, &amp; Housekeeping slides</td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="odd">
+<td>7:45 - 8:45</td>
+<td>East Group Project Brainstorming (3 rotations)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9:00 - 9:30</td>
+<td>East Project Pitching</td>
+<td>1 slide pitch</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:30 - 10:30</td>
+<td>East Group Project Breakout Rooms</td>
+<td>Each project will have a breakout room and start to get organized.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:30</td>
+<td>Science Lecture</td>
+<td>Glider Rodeo Overview lectures</td>
+<td>Selene Fregosi</td>
+</tr>
+<tr class="even">
+<td>11:30 - 12:15</td>
+<td>Science Lecture</td>
+<td>Glider Rodeo Data</td>
+<td>Kourtney Burger</td>
+</tr>
+<tr class="odd">
+<td>12:15 - 12:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12:30 - 13:00</td>
+<td>Coding Tutorial 1</td>
+<td>Orientation for the Hackweek JupyterHub Tutorials</td>
+<td>Aksel Sloan</td>
+</tr>
+<tr class="odd">
+<td>13:00 - 14:00</td>
+<td>Coding Tutorial 2</td>
+<td>Best Practices for Working with Data</td>
+<td>Aksel Sloan</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 17:30</td>
+<td>Hawaii Project Time</td>
+<td>2:30pm to 5:30pm PT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14:30 - 15:15</td>
+<td>Hawaii Project Introduction</td>
+<td>Welcome, Introductions, &amp; Housekeeping slides</td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="odd">
+<td>15:15 - 16:00</td>
+<td>Hawaii Group Project Brainstorming (3 rotations)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>16:00 - 16:30</td>
+<td>Hawaii Project Pitching</td>
+<td>1 slide pitch</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16:30 - 17:30</td>
+<td>Hawaii Group Project Breakout Rooms</td>
+<td>Each project will have a breakout room and start to get organized.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="approach" class="level2">
-<h2 class="anchored" data-anchor-id="approach">Approach</h2>
-<p>Collect comparable data (at the same time and place) during the 2-week sea trial to assess several glider capabilities. Gliders transited tracklines with a ‘Figure 8’ design, while conducting several mission modes, with each mode serving as an in-situ experiment for assessing piloting strategies and impacts on navigation, endurance, and noise. Modes include:</p>
-<ul>
-<li><p>Optimize to survey coverage</p></li>
-<li><p>Optimize for low noise</p></li>
-<li><p>Intermediate approach to survey coverage and noise reduction</p></li>
-<li><p>Drifting (Quiet Mode)</p></li>
-</ul>
-<ol type="1">
-<li><p><strong>Piloting:</strong> To achieve mission goals, different gliders may have different approaches, advantages, and limitations. These approaches may have differing impacts on other critical components (navigation, endurance, noise). Also, each glider platform has a unique approach to piloting requiring different levels of expertise and abilities to modify a mission.</p></li>
-<li><p><strong>Navigation:</strong> Different platforms vary in their ability to overcome challenges due to currents and navigating hazards. This may affect their suitability to work in certain environmental conditions, the survey area they can cover, flight efficiency and endurance, and the additional noise resulting from maintaining course (which reduces quality of acoustic data).</p></li>
-<li><p><strong>Endurance:</strong> Primary endurance concerns are related to battery endurance (glider platform, environmental sensors, and PAM sensors) and PAM data storage. Survey modes provide a means of assessing power and storage endurance ranges under a variety of mission conditions to inform future survey planning.</p></li>
-<li><p><strong>Noise:</strong> Our ability to use PAM gliders to effectively study specific species, anthropogenic noise, and/or the marine soundscape is necessarily dependent on interference by self-noise produced by the glider platform and its components. For each glider, we will study the source of each noise identified and the degree to which these noise sources interfere with study objectives.</p></li>
-</ol>
-<p>The Glider Rodeo will include glider teams from Pacific Islands Fisheries Science Center, Southwest Fisheries Science Center as well as academic partners (Oregon State University, Cornell University) and industry partners (Alseamar, Teledyne, and Jasco). For more information, see links to <a href="https://nmfs-ost.github.io/PAM-Glider/content/gliders.html">Glider Platforms</a> and <a href="https://nmfs-ost.github.io/PAM-Glider/content/sensors.html">PAM Sensors</a>.</p>
-<p>The Glider Rodeo is part of a larger effort to develop a Transition to Operations plan for PAM-Gliders. For more information on these larger efforts, visit our <a href="https://nmfs-ost.github.io/PAM-Glider/">PAM-Glider site</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RodeoTracks.png" class="img-fluid figure-img" width="511"></p>
-<figcaption>Glider Rodeo draft figure-8 tracklines planned for offshore Hawaii.</figcaption>
-</figure>
-</div>
+<section id="day-2-tuesday" class="level2 unlisted schedule-day" data-day="Tuesday" aria-live="polite" hidden="true">
+<h2 class="unlisted anchored" data-anchor-id="day-2-tuesday">Day 2 — Tuesday</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Tutorial</td>
+<td>Glider Rodeo Hackweek Collaboration via Git and GitHub slides</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/Hawaii Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>AquaView</td>
+<td>TBD</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:15 - 13:00</td>
+<td>Noise Analysis</td>
+<td>Kaitlin Palmer</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13:00 - 13:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:15 - 14:00</td>
+<td>East/Hawaii Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>Hawaii Tutorial</td>
+<td>Glider Rodeo Hackweek Collaboration via Git and GitHub slides</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>Hawaii Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="data-management-plan" class="level2">
-<h2 class="anchored" data-anchor-id="data-management-plan">Data management Plan</h2>
-<p>Flowchart identifying different components of the Data management Plan, including Data Collection (fieldwork), Hardware, Pre-Processing of data, Data Analysis, and Reporting.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Right-Click on flowchart components to open link in new tab to learn more about each component.</p>
-</div>
-</div>
+<section id="day-3-wednesday" class="level2 unlisted schedule-day" data-day="Wednesday" aria-live="polite" hidden="true">
+<h2 class="unlisted anchored" data-anchor-id="day-3-wednesday">Day 3 — Wednesday</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/Hawaii Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>Science Lecture</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:15 - 13:00</td>
+<td>Coding Tutorial 1</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>13:00 - 13:15</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:15 - 14:00</td>
+<td>Coding Tutorial 2</td>
+<td>TBD</td>
+<td>TBDn</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>Hawaii Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>Hawaii Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-4-thursday" class="level2 unlisted schedule-day" data-day="Thursday" aria-live="polite" hidden="true">
+<h2 class="unlisted anchored" data-anchor-id="day-4-thursday">Day 4 — Thursday</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 7:30</td>
+<td>East Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="even">
+<td>7:30 - 10:30</td>
+<td>East Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9:00 - 10:30</td>
+<td>East/Hawaii Open Helpdesk with Mentors</td>
+<td>Bring your questions and go into breakout room with a mentor</td>
+<td>mentors</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:45</td>
+<td>Science Lecture</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>11:45 - 12:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:00 - 12:45</td>
+<td>Pilot Q&amp;A Panel</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>12:30 - 12:45</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:45 - 13:30</td>
+<td>Coding Tutorial 2</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>13:30 - 14:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:00</td>
+<td>Hawaii Group Check-ins (Rose, Bud, Thorn)</td>
+<td></td>
+<td>Shannon Rankin</td>
+</tr>
+<tr class="even">
+<td>15:00 - 17:30</td>
+<td>Hawaii Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-5-friday" class="level2 unlisted schedule-day" data-day="Friday" aria-live="polite" hidden="true">
+<h2 class="unlisted anchored" data-anchor-id="day-5-friday">Day 5 — Friday</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Event</th>
+<th>Details</th>
+<th>Lead(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00 - 11:00</td>
+<td>East &amp; Hawaii Project Work Time</td>
+<td>Each project will have a breakout room.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>11:00 - 12:30</td>
+<td>Project Presentations</td>
+<td>East &amp; Hawaii together schedule</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>12:30 - 13:00</td>
+<td>Break</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13:00 - 14:00</td>
+<td>Project Presentations</td>
+<td>East &amp; Hawaii together schedule</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>14:00 - 14:15</td>
+<td>HackWeek Wrap-Up</td>
+<td></td>
+<td>Shannon Rankin; Selene Fregosi</td>
+</tr>
+</tbody>
+</table>
+</section>
+<style>
+.schedule-picker {
+  max-width: 24rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 0.3rem solid var(--bs-primary);
+  border-radius: 0.4rem;
+  background: var(--bs-tertiary-bg);
+}
 
-<!-- Diagram Controls -->
-<div class="svg-controls">
-  <button onclick="zoomIn()">🔍 Zoom In</button>
-  <button onclick="zoomOut()">🔍 Zoom Out</button>
-  <button onclick="resetView()">⟲ Reset View</button>
-  <button onclick="togglePanMode()" id="pan-toggle">🔒 Lock Pan</button>
-  <span id="zoom-level">Zoom: 100%</span>
-</div>
+.schedule-picker form {
+  margin: 0;
+}
 
-<!-- SVG Viewer -->
-<div id="svg-viewer" class="svg-viewer-container"></div>
+.schedule-picker .code-copy-outer-scaffold {
+  display: none;
+}
 
+.schedule-picker label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
 
+.schedule-day {
+  padding: 0.25rem 1.25rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
 
-<script>
-  // ============================================
-  // CONFIGURATION
-  // ============================================
-  const SURVEY_PASSWORD = 'rodeo26';
-  const DIAGRAM_PATH = '../output/GliderRodeo_flowchart-Overview.drawio.svg';
+.schedule-day h2 {
+  margin-top: 0.75rem;
+}
 
+.schedule-day table {
+  margin-bottom: 0;
+}
 
-  // ============================================
-  // SVG DIAGRAM WITH PAN/ZOOM
-  // ============================================
-  (function() {
-    var container = document.getElementById('svg-viewer');
-    var scale = 1;
-    var translateX = 0;
-    var translateY = 0;
-    var isDragging = false;
-    var panEnabled = true;
-    var startX, startY;
-    var svg;
-    
-    fetch(DIAGRAM_PATH)
-      .then(response => response.text())
-      .then(svgText => {
-        container.innerHTML = svgText;
-        svg = container.querySelector('svg');
-        
-        if (svg) {
-          svg.removeAttribute('width');
-          svg.removeAttribute('height');
-          
-          var viewBox = svg.getAttribute('viewBox');
-          if (!viewBox) {
-            var bbox = svg.getBBox();
-            svg.setAttribute('viewBox', `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`);
-          }
-          
- 
-// More aggressive link interception
-var links = svg.querySelectorAll('a');
-console.log("Found", links.length, "links in SVG");
+@media (max-width: 767.98px) {
+  .schedule-day {
+    overflow-x: auto;
+    padding-inline: 0.75rem;
+  }
 
-links.forEach(function(link) {
-  var href = link.getAttribute('href') || link.getAttribute('xlink:href');
-  console.log("Link href:", href);
-  
-link.addEventListener('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  
-  var href = this.getAttribute('href') || this.getAttribute('xlink:href');
-  console.log("Clicked link with href:", href);
-  
-  // Strip diagrams.net URL if present
-  if (href && href.includes('#survey:')) {
-    var surveyPart = href.substring(href.indexOf('#survey:'));
-    console.log("Opening survey for:", surveyPart);
-    var parts = surveyPart.replace('#survey:', '').split('|');
-    var shapeId = parts[0];
-    var shapeText = parts[1] || shapeId;
-    openSurvey(shapeId, shapeText);
-  } else if (href) {
-      console.log("Opening survey for:", href);
-      var parts = href.replace('#survey:', '').split('|');
-      var shapeId = parts[0];
-      var shapeText = parts[1] || shapeId;
-      openSurvey(shapeId, shapeText);
-    } else if (href) {
-      console.log("Opening external link:", href);
-      window.open(href, '_blank');
-    }
-  });
-});
-          updateTransform();
-        }
-      })
-      .catch(error => {
-        container.innerHTML = '<p style="color: red; padding: 20px;">Error loading diagram: ' + error.message + '</p>';
-      });
-    
-    container.addEventListener('mousedown', function(e) {
-      if (e.target.tagName === 'A' || e.target.closest('a')) {
-        return;
-      }
-      
-      if (panEnabled) {
-        isDragging = true;
-        startX = e.clientX - translateX;
-        startY = e.clientY - translateY;
-        e.preventDefault();
-      }
-    });
-    
-    document.addEventListener('mousemove', function(e) {
-      if (isDragging && panEnabled) {
-        translateX = e.clientX - startX;
-        translateY = e.clientY - startY;
-        updateTransform();
-      }
-    });
-    
-    document.addEventListener('mouseup', function(e) {
-      isDragging = false;
-    });
-    
-    container.addEventListener('wheel', function(e) {
-      e.preventDefault();
-      var delta = e.deltaY > 0 ? 0.9 : 1.1;
-      
-      var rect = container.getBoundingClientRect();
-      var mouseX = e.clientX - rect.left;
-      var mouseY = e.clientY - rect.top;
-      
-      translateX = mouseX - (mouseX - translateX) * delta;
-      translateY = mouseY - (mouseY - translateY) * delta;
-      
-      scale *= delta;
-      scale = Math.max(0.1, Math.min(scale, 10));
-      
-      updateTransform();
-    });
-    
-    function updateTransform() {
-      if (svg) {
-        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-        svg.style.transformOrigin = '0 0';
-        document.getElementById('zoom-level').textContent = 'Zoom: ' + Math.round(scale * 100) + '%';
-      }
-    }
-    
-    window.zoomIn = function() {
-      scale *= 1.2;
-      scale = Math.min(scale, 10);
-      updateTransform();
-    };
-    
-    window.zoomOut = function() {
-      scale *= 0.8;
-      scale = Math.max(scale, 0.1);
-      updateTransform();
-    };
-    
-    window.resetView = function() {
-      scale = 1;
-      translateX = 0;
-      translateY = 0;
-      updateTransform();
-    };
-    
-    window.togglePanMode = function() {
-      panEnabled = !panEnabled;
-      var btn = document.getElementById('pan-toggle');
-      if (panEnabled) {
-        btn.textContent = '🔒 Lock Pan';
-        container.style.cursor = 'grab';
-      } else {
-        btn.textContent = '🔓 Enable Pan';
-        container.style.cursor = 'default';
-      }
-    };
-  })();
-  
-  updateResponseCount();
-</script>
+  .schedule-day table {
+    min-width: 42rem;
+  }
+}
+</style>
 
 
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuZGF5cyA9IFtcIk1vbmRheVwiLCBcIlR1ZXNkYXlcIiwgXCJXZWRuZXNkYXlcIiwgXCJUaHVyc2RheVwiLCBcIkZyaWRheVwiXVxuXG52aWV3b2Ygc2VsZWN0ZWREYXkgPSB7XG4gIGNvbnN0IHNlbGVjdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJzZWxlY3RcIik7XG4gIHNlbGVjdC5pZCA9IFwic2NoZWR1bGUtZGF0ZVwiO1xuICBzZWxlY3QuY2xhc3NOYW1lID0gXCJmb3JtLXNlbGVjdFwiO1xuICBkYXlzLmZvckVhY2goKGRheSwgaW5kZXgpID0+IHNlbGVjdC5hZGQobmV3IE9wdGlvbihgJHtkYXl9IOKAlCBEYXkgJHtpbmRleCArIDF9YCwgZGF5KSkpO1xuICByZXR1cm4gc2VsZWN0O1xufVxuXG5zY2hlZHVsZURpc3BsYXkgPSB7XG4gIGZvciAoY29uc3Qgc2VjdGlvbiBvZiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKFwiLnNjaGVkdWxlLWRheVwiKSkge1xuICAgIHNlY3Rpb24uaGlkZGVuID0gc2VjdGlvbi5kYXRhc2V0LmRheSAhPT0gc2VsZWN0ZWREYXk7XG4gIH1cbiAgcmV0dXJuIGh0bWxgYDtcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWREYXknKSJ9XX0=
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../hackathon";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1070,18 +1440,6 @@ link.addEventListener('click', function(e) {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Home">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/hardware.html" class="pagination-link" aria-label="Hardware">
-        <span class="nav-page-text">Hardware</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1090,7 +1448,7 @@ link.addEventListener('click', function(e) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/overview.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/CopyOflogistics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/CopyOflogistics.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
