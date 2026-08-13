@@ -376,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../hackathon/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../hackathon/index.html" class="sidebar-item-text sidebar-link" target="_blank">
  <span class="menu-text">Hackathon</span></a>
   </div>
 </li>
@@ -468,21 +468,15 @@ Note
 <p>Right-Click on flowchart components to open link in new tab to learn more about each component.</p>
 </div>
 </div>
-
+<p>```{=html flowchart}</p>
 <!-- Diagram Controls -->
 <div class="svg-controls">
-  <button onclick="zoomIn()">🔍 Zoom In</button>
-  <button onclick="zoomOut()">🔍 Zoom Out</button>
-  <button onclick="resetView()">⟲ Reset View</button>
-  <button onclick="togglePanMode()" id="pan-toggle">🔒 Lock Pan</button>
-  <span id="zoom-level">Zoom: 100%</span>
+<p><button onclick="zoomIn()">🔍 Zoom In</button> <button onclick="zoomOut()">🔍 Zoom Out</button> <button onclick="resetView()">⟲ Reset View</button> <button onclick="togglePanMode()" id="pan-toggle">🔒 Lock Pan</button> <span id="zoom-level">Zoom: 100%</span></p>
 </div>
-
 <!-- SVG Viewer -->
-<div id="svg-viewer" class="svg-viewer-container"></div>
+<div id="svg-viewer" class="svg-viewer-container">
 
-
-
+</div>
 <script>
   // ============================================
   // CONFIGURATION
@@ -647,6 +641,7 @@ link.addEventListener('click', function(e) {
   
   updateResponseCount();
 </script>
+<p>```</p>
 
 
 </section>
