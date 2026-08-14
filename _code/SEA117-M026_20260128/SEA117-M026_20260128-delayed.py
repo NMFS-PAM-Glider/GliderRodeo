@@ -1,6 +1,7 @@
 import logging
 import os
 import pyglider.seaexplorer as seaexplorer
+print("Loading from:", seaexplorer.__file__)
 import pyglider.ncprocess as ncprocess
 import pyglider.utils as pgutils
 
@@ -15,7 +16,7 @@ logging.captureWarnings(True)
 logging.info("Beginning scheduled processing")
 
 # sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
-rawdir  = 'data/SEA117-M026_20260128/0_RawData_gli_and_pld_sub/'
+rawdir  = 'data/SEA117-M026_20260128/0_RawData_gli_and_pld/'
 rawncdir     = 'data/SEA117-M026_20260128/realtime_rawnc/'
 deploymentyaml = 'data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
 l0tsdir    = 'data/SEA117-M026_20260128/L0-timeseries/'
@@ -34,13 +35,16 @@ if True:
     # turn *.EBD and *.DBD into *.ebd.nc and *.dbd.nc netcdf files.
     seaexplorer.raw_to_rawnc(rawdir, rawncdir, deploymentyaml)
     # merge individual neetcdf files into single netcdf files *.ebd.nc and *.dbd.nc
-    seaexplorer.merge_parquet(rawncdir, rawncdir, deploymentyaml, kind='sub')
+    seaexplorer.merge_parquet(rawncdir, rawncdir, deploymentyaml, kind='raw')
 
     # Make level-1 timeseries netcdf file from the raw files...
     outname = seaexplorer.raw_to_timeseries(rawncdir, l0tsdir, deploymentyaml, kind='sub')
-    # ncprocess.extract_timeseries_profiles(outname, profiledir, deploymentyaml)
-    # outname2 = ncprocess.make_gridfiles(outname, griddir, deploymentyaml)
+    ncprocess.extract_timeseries_profiles(outname, profiledir, deploymentyaml)
+    outname2 = ncprocess.make_gridfiles(outname, griddir, deploymentyaml)
 
     # pgutils.example_gridplot(outname2, './gridplot.png', ylim=[700, 0],
     #                          toplot=['potential_temperature', 'salinity', 'oxygen_concentration',
     #                                  'chlorophyll', 'cdom'])
+
+    #--------------------------------------------------------------------------
+    logging.info("Completed scheduled processing")

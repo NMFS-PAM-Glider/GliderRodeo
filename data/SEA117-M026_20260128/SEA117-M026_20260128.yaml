@@ -48,7 +48,7 @@ metadata:
   wmo_id: ' '
 
 glider_devices:
-  ctd:
+  instrument_ctd:
     make: RBR
     model: RBRlegato3
     serial: '230630'
@@ -59,7 +59,7 @@ glider_devices:
     # calibration_report: " "
     comment:   " "
 
-  pam:
+  instrument_pam:
     make: Alseamar
     model: Auris Acoustic Antenna
     serial: '666'
@@ -95,6 +95,22 @@ netcdf_variables:
     valid_min:    -90.0
     coordinate_reference_frame:  urn:ogc:crs:EPSG::4326
 
+  # latitude:
+  #   source:       Lat
+  #   long_name:    latitude
+  #   standard_name: latitude
+  #   units:        degrees_north
+  #   axis:         Y
+  #   coordinates:   time depth latitude longitude
+  #   conversion:   nmea2deg
+  #   comment:     "Estimated between surface fixes"
+  #   observation_type: measured
+  #   platform:     platform
+  #   reference:    WGS84
+  #   valid_max:    90.0
+  #   valid_min:    -90.0
+  #   coordinate_reference_frame:  urn:ogc:crs:EPSG::4326
+
   longitude:
     source:       NAV_LONGITUDE
     long_name:    longitude
@@ -110,6 +126,22 @@ netcdf_variables:
     valid_max:    180.0
     valid_min:    -180.0
     coordinate_reference_frame:  urn:ogc:crs:EPSG::4326
+
+  # longitude:
+  #   source:       Lon
+  #   long_name:    longitude
+  #   standard_name: longitude
+  #   units:        degrees_east
+  #   axis:         X
+  #   coordinates:  time depth latitude longitude
+  #   conversion:   nmea2deg
+  #   comment:     "Estimated between surface fixes"
+  #   observation_type: measured
+  #   platform:     platform
+  #   reference:    WGS84
+  #   valid_max:    180.0
+  #   valid_min:    -180.0
+  #   coordinate_reference_frame:  urn:ogc:crs:EPSG::4326
 
   heading:
     source:       Heading
