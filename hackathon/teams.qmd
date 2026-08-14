@@ -4,8 +4,8 @@ format: html
 listing:
   contents: team/*.yaml
   exclude:
-    - team/header.yaml
-    - team/template.yaml
+    - path: team/header.yaml
+    - path: team/template.yaml
   type: grid
   fields: [image, title, description]
   sort: title
