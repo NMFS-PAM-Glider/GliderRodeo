@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -73,6 +38,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <link href="./logistics.html" rel="next">
 <link href="./index.html" rel="prev">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -110,7 +77,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-avatar","listing-image","listing-role","listing-organizations","listing-bio","listing-expertise","listing-social","listing-user_groups","listing-description","listing-people"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -192,16 +217,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#information-to-provide" id="toc-information-to-provide" class="nav-link active" data-scroll-target="#information-to-provide"><span class="header-section-number">2.1</span> Information to provide</a></li>
-  <li><a href="#card-template" id="toc-card-template" class="nav-link" data-scroll-target="#card-template"><span class="header-section-number">2.2</span> Card template</a></li>
-  <li><a href="#team" id="toc-team" class="nav-link" data-scroll-target="#team"><span class="header-section-number">2.3</span> Team</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/teams.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/teams.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -226,66 +243,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Meet the people participating in the Glider Rodeo Hackathon.</p>
-<section id="information-to-provide" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="information-to-provide"><span class="header-section-number">2.1</span> Information to provide</h2>
-<p>To add your card, please provide:</p>
-<ul>
-<li>your preferred name and pronouns (optional)</li>
-<li>your role on the team</li>
-<li>your organization or affiliation</li>
-<li>a short biography (one or two sentences)</li>
-<li>a headshot or other square image, plus a brief description for the image’s alternative text</li>
-<li>links you would like to share, such as GitHub, an organization profile, or a personal website</li>
-</ul>
-<p>Images should be placed in <code>hackathon/images/team/</code>. A square image at least 400 × 400 pixels works best.</p>
-</section>
-<section id="card-template" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="card-template"><span class="header-section-number">2.2</span> Card template</h2>
-<p>Copy the outer column and card below into the card grid in this page. Replace every value in brackets and remove any links or fields that do not apply.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6 .g-col-lg-4}</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>::: {.card .h-100}</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/team/[image-file.jpg])</span>{.card-img-top fig-alt="Brief description of the team member"}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>::: {.card-body}</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Preferred name]</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>**[Role]**<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Organization or affiliation</span><span class="co">]</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">One- or two-sentence biography.</span><span class="co">]</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>[<span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/[username])</span>] · [<span class="co">[</span><span class="ot">Profile or website</span><span class="co">](https://example.org)</span>]</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="team" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="team"><span class="header-section-number">2.3</span> Team</h2>
-<p>The example card below shows how the supplied information will appear. Replace it when the first team member is added.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-6 g-col-lg-4">
-<div class="card h-100">
-<p><img src="images/team/profile-placeholder.svg" class="card-img-top img-fluid" alt="Generic profile silhouette used for the example team member"></p>
-<section id="example-team-member" class="level3 card-body" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="example-team-member"><span class="header-section-number">2.3.1</span> Example Team Member</h3>
-<p><strong>Project Lead</strong><br> Ocean Research Organization</p>
-<p>Coordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.</p>
-<p>[<a href="https://github.com/example">GitHub</a>] · [<a href="https://example.org">Organization profile</a>]</p>
-</section>
-</div>
-</div>
-</div>
+<p>The cards below are generated from the member files in <code>hackathon/team/</code>.</p>
 <style>
-.card-img-top {
+.quarto-listing-grid .card-img-top {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 </style>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="images/team/KourtneyBurger.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Kourtney Burger
+</h5>
+<div class="card-text listing-description delink">
+<p><strong>Glider Rodeo organizer</strong><br> NOAA Fisheries Works with passive acoustic monitoring data and autonomous underwater gliders to support marine science and…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/team/profile-placeholder.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Preferred Name
+</h5>
+<div class="card-text listing-description delink">
+<p><strong>Your title</strong><br> Your institution A short bio about yourself.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="images/team/SeleneFregosi.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Selene Fregosi
+</h5>
+<div class="card-text listing-description delink">
+<p><strong>Glider Rodeo organizer</strong><br> NOAA Fisheries Studies marine mammal acoustics and develops tools for analyzing passive acoustic data collected by…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="images/team/ShannonRankin.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Shannon Rankin
+</h5>
+<div class="card-text listing-description delink">
+<p><strong>Glider Rodeo organizer</strong><br> NOAA Fisheries Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+
+<div class="card-body post-contents">
+<div class="card-text listing-description delink">
+<p>The people participating in the Glider Rodeo Hackathon. You will find a few specializations listed per person if you are wondering who to reach out to during the event!</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -708,4 +756,4 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/teams.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/teams.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/teams.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/teams.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

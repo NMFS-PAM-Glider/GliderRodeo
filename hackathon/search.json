@@ -34,37 +34,7 @@
     "href": "teams.html",
     "title": "2  Team Members",
     "section": "",
-    "text": "2.1 Information to provide\nMeet the people participating in the Glider Rodeo Hackathon.\nTo add your card, please provide:\nImages should be placed in hackathon/images/team/. A square image at least 400 × 400 pixels works best.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Team Members</span>"
-    ]
-  },
-  {
-    "objectID": "teams.html#information-to-provide",
-    "href": "teams.html#information-to-provide",
-    "title": "2  Team Members",
-    "section": "",
-    "text": "your preferred name and pronouns (optional)\nyour role on the team\nyour organization or affiliation\na short biography (one or two sentences)\na headshot or other square image, plus a brief description for the image’s alternative text\nlinks you would like to share, such as GitHub, an organization profile, or a personal website",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Team Members</span>"
-    ]
-  },
-  {
-    "objectID": "teams.html#card-template",
-    "href": "teams.html#card-template",
-    "title": "2  Team Members",
-    "section": "2.2 Card template",
-    "text": "2.2 Card template\nCopy the outer column and card below into the card grid in this page. Replace every value in brackets and remove any links or fields that do not apply.\n::: {.g-col-12 .g-col-md-6 .g-col-lg-4}\n::: {.card .h-100}\n![](images/team/[image-file.jpg]){.card-img-top fig-alt=\"Brief description of the team member\"}\n\n::: {.card-body}\n### [Preferred name]\n\n**[Role]**&lt;br&gt;\n[Organization or affiliation]\n\n[One- or two-sentence biography.]\n\n[[GitHub](https://github.com/[username])] · [[Profile or website](https://example.org)]\n:::\n:::\n:::",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Team Members</span>"
-    ]
-  },
-  {
-    "objectID": "teams.html#team",
-    "href": "teams.html#team",
-    "title": "2  Team Members",
-    "section": "2.3 Team",
-    "text": "2.3 Team\nThe example card below shows how the supplied information will appear. Replace it when the first team member is added.\n\n\n\n\n\n2.3.1 Example Team Member\nProject Lead Ocean Research Organization\nCoordinates a project team and studies passive acoustic data collected by autonomous underwater gliders.\n[GitHub] · [Organization profile]",
+    "text": "Meet the people participating in the Glider Rodeo Hackathon.\nThe cards below are generated from the member files in hackathon/team/.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKourtney Burger\n\n\nGlider Rodeo organizer NOAA Fisheries Works with passive acoustic monitoring data and autonomous underwater gliders to support marine science and…\n\n\n\n\n\n\n\n\n\n\n\n\nPreferred Name\n\n\nYour title Your institution A short bio about yourself.\n\n\n\n\n\n\n\n\n\n\n\n\nSelene Fregosi\n\n\nGlider Rodeo organizer NOAA Fisheries Studies marine mammal acoustics and develops tools for analyzing passive acoustic data collected by…\n\n\n\n\n\n\n\n\n\n\n\n\nShannon Rankin\n\n\nGlider Rodeo organizer NOAA Fisheries Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean…\n\n\n\n\n\n\n\n\n\n\nThe people participating in the Glider Rodeo Hackathon. You will find a few specializations listed per person if you are wondering who to reach out to during the event!\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Team Members</span>"
     ]
