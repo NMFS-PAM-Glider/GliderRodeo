@@ -16,11 +16,11 @@ Choose the time zone that works best for you.
 <div class="schedule-sheet">
   <label for="schedule-timezone">Show schedule in:</label>
   <select id="schedule-timezone" class="form-select">
-    <option value="B" selected>Time (Pacific - PDT)</option>
-    <option value="E">Time (UTC)</option>
+    <option value="A" selected>Time (Pacific - PDT)</option>
+    <option value="B">Time (Hawaii - HST)</option>
     <option value="C">Time (Central - CDT)</option>
     <option value="D">Time (Eastern - EDT)</option>
-    <option value="A">Time (Hawaii - HST)</option>
+    <option value="E">Time (UTC)</option>
   </select>
   <iframe
     id="schedule-sheet-frame"
