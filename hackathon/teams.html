@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Team Members – Glider Rodeo Hackathon</title>
+<title>2&nbsp; Meet the Team – Glider Rodeo Hackathon</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -80,20 +80,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-team-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-user_groups','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-role','listing-organizations','listing-bio','listing-expertise','listing-user_groups','listing-description','listing-links','listing-social','listing-github','listing-linkedin','listing-orcid','listing-website',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-avatar","listing-image","listing-role","listing-organizations","listing-bio","listing-expertise","listing-social","listing-user_groups","listing-description","listing-people"],
+      searchColumns: ["listing-title","listing-avatar","listing-image","listing-role","listing-organizations","listing-bio","listing-expertise","listing-social","listing-user_groups","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-team-listing'] = new List('listing-team-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -106,6 +106,7 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -137,6 +138,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="team/team-cards.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -148,7 +150,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./teams.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Team Members</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./teams.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Meet the Team</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +187,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./teams.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Team Members</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Meet the Team</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -225,7 +227,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Team Members</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Meet the Team</span></h1>
 </div>
 
 
@@ -244,240 +246,501 @@ window.Quarto = {
 
 <p>Meet the people participating in the Glider Rodeo Hackathon.</p>
 <p>The cards below are generated from the member files in <code>hackathon/team/</code>.</p>
-<style>
-.quarto-listing-grid .card-img-top {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-</style>
+<div id="listing-team-listing" class="quarto-listing quarto-listing-container-custom">
+
+<div class="team-card-grid list">
+
+  <article class="team-card card" data-index="'0'">
+    
+    <img src="team/img/profile-placeholder.svg" class="team-card-image card-img-top" alt="Portrait of Aksel Sloan" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Aksel Sloan</h2>
+      
+      <p class="team-card-subtitle">Software Engineer</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Organizer</span>
+        
+        <span class="team-card-badge">Jupyter Hub</span>
+        
+        <span class="team-card-badge">Science Lecturer</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-0" aria-label="Read more about Aksel Sloan">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Aksel Sloan social links">
+        
+        <a href="https://github.com/hAkselS" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Aksel Sloan on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-0" tabindex="-1" aria-labelledby="team-member-0-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-0-title">Aksel Sloan</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Software Engineer</strong></p>
+          
+          
+          <p>NOAA Fisheries</p>
+          
+          
+          <p>Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>skill 1</li>
+            
+            <li>skill 2</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Organizer</span>
+            
+            <span class="team-card-badge">Jupyter Hub</span>
+            
+            <span class="team-card-badge">Science Lecturer</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'1'">
+    
+    <img src="team/img/profile-placeholder.svg" class="team-card-image card-img-top" alt="Portrait of Kaitlin Palmer" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Kaitlin Palmer</h2>
+      
+      <p class="team-card-subtitle">Acoustic Ecologist</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Science Lecturer</span>
+        
+        <span class="team-card-badge">Data Analysis</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. </p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-1" aria-label="Read more about Kaitlin Palmer">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Kaitlin Palmer social links">
+        
+        <a href="https://github.com/JPalmerK" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Kaitlin Palmer on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-1" tabindex="-1" aria-labelledby="team-member-1-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-1-title">Kaitlin Palmer</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Acoustic Ecologist</strong></p>
+          
+          
+          <p>NOAA Fisheries</p>
+          
+          
+          <p>Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. </p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>Developing tools for Acoustic Analysis</li>
+            
+            <li>Marine mammal ecology</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Science Lecturer</span>
+            
+            <span class="team-card-badge">Data Analysis</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'2'">
+    
+    <img src="team/img/KourtneyBurger.jpg" class="team-card-image card-img-top" alt="Portrait of Kourtney Burger" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Kourtney Burger</h2>
+      
+      <p class="team-card-subtitle">Glider Rodeo organizer</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Organizer</span>
+        
+        <span class="team-card-badge">Science Lecturer</span>
+        
+        <span class="team-card-badge">Data Analysis</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-2" aria-label="Read more about Kourtney Burger">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Kourtney Burger social links">
+        
+        <a href="https://github.com/Kourtney-Burger" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Kourtney Burger on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-2" tabindex="-1" aria-labelledby="team-member-2-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-2-title">Kourtney Burger</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Glider Rodeo organizer</strong></p>
+          
+          
+          <p>NOAA Fisheries</p>
+          
+          
+          <p>Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>passive acoustic monitoring</li>
+            
+            <li>autonomous underwater gliders</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Organizer</span>
+            
+            <span class="team-card-badge">Science Lecturer</span>
+            
+            <span class="team-card-badge">Data Analysis</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'3'">
+    
+    <img src="team/img/CaraWilson.jpg" class="team-card-image card-img-top" alt="Portrait of Preferred Name" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Preferred Name</h2>
+      
+      <p class="team-card-subtitle">Program Lead CoastWatch and PolarWatch</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Science Lecturer</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-3" aria-label="Read more about Preferred Name">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Preferred Name social links">
+        
+        <a href="https://github.com/your-username" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Preferred Name on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-3" tabindex="-1" aria-labelledby="team-member-3-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-3-title">Preferred Name</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Program Lead CoastWatch and PolarWatch</strong></p>
+          
+          
+          <p>Your institution</p>
+          
+          
+          <p>Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>Satellite Data Access</li>
+            
+            <li>Ocean Color</li>
+            
+            <li>Hyperspectral Data</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Science Lecturer</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'4'">
+    
+    <img src="team/img/SeleneFregosi.jpg" class="team-card-image card-img-top" alt="Portrait of Selene Fregosi" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Selene Fregosi</h2>
+      
+      <p class="team-card-subtitle">Glider Rodeo organizer</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Organizer</span>
+        
+        <span class="team-card-badge">Data Analysis</span>
+        
+        <span class="team-card-badge">Science Lecturer</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-4" aria-label="Read more about Selene Fregosi">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Selene Fregosi social links">
+        
+        <a href="https://github.com/sfregosi" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Selene Fregosi on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-4" tabindex="-1" aria-labelledby="team-member-4-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-4-title">Selene Fregosi</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Glider Rodeo organizer</strong></p>
+          
+          
+          <p>NOAA Fisheries</p>
+          
+          
+          <p>Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>marine mammal acoustics</li>
+            
+            <li>passive acoustic data analysis</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Organizer</span>
+            
+            <span class="team-card-badge">Data Analysis</span>
+            
+            <span class="team-card-badge">Science Lecturer</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'5'">
+    
+    <img src="team/img/ShannonRankin.jpg" class="team-card-image card-img-top" alt="Portrait of Shannon Rankin" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Shannon Rankin</h2>
+      
+      <p class="team-card-subtitle">Glider Rodeo organizer</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Organizer</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-5" aria-label="Read more about Shannon Rankin">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Shannon Rankin social links">
+        
+        <a href="https://github.com/shannonrankin" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Shannon Rankin on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-5" tabindex="-1" aria-labelledby="team-member-5-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-5-title">Shannon Rankin</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Glider Rodeo organizer</strong></p>
+          
+          
+          <p>NOAA Fisheries</p>
+          
+          
+          <p>Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>passive acoustic monitoring</li>
+            
+            <li>data workflows</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Organizer</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/profile-placeholder.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Aksel Sloan
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Software Engineer</strong><br> NOAA Fisheries Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Organizer,Jupyter Hub,Science Lecturer
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/profile-placeholder.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kaitlin Palmer
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Acoustic Ecologist</strong><br> NOAA Fisheries Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Science Lecturer,Data Analysis
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/KourtneyBurger.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kourtney Burger
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Glider Rodeo organizer</strong><br> NOAA Fisheries Kourtney Burger works for the Ecosystem Science Division at NOAA’s Southwest Fisheries Science Center. Kourtney works with…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Organizer,Science Lecturer,Data Analysis
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/CaraWilson.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Preferred Name
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Program Lead CoastWatch and PolarWatch</strong><br> NOAA Fisheries Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA’s Southwest Fisheries…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Science Lecturer
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/team/profile-placeholder.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Preferred Name
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Your title</strong><br> Your institution A short bio about yourself.</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-The role in the hackathon
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/SeleneFregosi.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Selene Fregosi
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Acoustic Ecologist</strong><br> NOAA Fisheries Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Organizer,Data Analysis,Science Lecturer
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="team/img/ShannonRankin.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Shannon Rankin
-</h5>
-<div class="card-text listing-description delink">
-<p><strong>Glider Rodeo organizer</strong><br> NOAA Fisheries Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean…</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-Organizer
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-
-<div class="card-body post-contents">
-<div class="card-text listing-description delink">
-<p>The people participating in the Glider Rodeo Hackathon. You will find a few specializations listed per person if you are wondering who to reach out to during the event!</p>
-</div>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-user_groups
-</td>
-<td class="user_groups">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-</div>
+```{=html}
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
