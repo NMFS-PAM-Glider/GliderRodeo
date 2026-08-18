@@ -1,4 +1,5 @@
 title: Preferred Name
+subtitle: Your title
 avatar: ../images/team/profile-placeholder.svg
 image: ../images/team/profile-placeholder.svg
 role: Your title
@@ -12,6 +13,10 @@ expertise:
 social:
   - icon: github
     link: https://github.com/your-username
+github: https://github.com/your-username
+linkedin: https://www.linkedin.com/in/your-profile
+orcid: https://orcid.org/0000-0000-0000-0000
+website: https://example.com
 user_groups:
   - The role in the hackathon
 description: >-
