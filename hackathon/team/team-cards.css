@@ -1,0 +1,117 @@
+.team-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.team-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.team-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.25rem;
+}
+
+.team-card-title {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 1.35rem;
+}
+
+.team-card-subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--bs-secondary-color);
+}
+
+.team-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.team-card-badge {
+  max-width: 100%;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--bs-primary);
+  border-radius: 999px;
+  color: var(--bs-primary);
+  font-size: 0.8rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.team-card-summary {
+  display: -webkit-box;
+  margin: 1rem 0 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.team-card-read-more {
+  align-self: flex-start;
+  margin-top: 0.75rem;
+  padding: 0;
+  text-decoration: none;
+}
+
+.team-card-social {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.team-card-social-link {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: 0 0 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 50%;
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.team-card-social-link:hover,
+.team-card-social-link:focus-visible {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+
+.team-card-modal h3 {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.team-modal-role {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 991.98px) {
+  .team-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .team-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
