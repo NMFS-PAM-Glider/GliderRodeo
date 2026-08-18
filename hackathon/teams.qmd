@@ -7,7 +7,7 @@ listing:
     - path: team/header.yaml
     - path: team/template.yaml
   type: grid
-  fields: [image, title, description]
+  fields: [image, title, user_groups, description]
   sort: title
   grid-columns: 3
 ---

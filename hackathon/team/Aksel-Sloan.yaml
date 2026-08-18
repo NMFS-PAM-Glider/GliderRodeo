@@ -1,0 +1,23 @@
+title: Aksel Sloan
+avatar: ../team/img/profile-placeholder.svg
+image: team/img/profile-placeholder.svg
+role: Software Engineer
+organizations:
+  - name: NOAA Fisheries
+bio: >-
+  Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.
+expertise:
+  - skill 1
+  - skill 2
+social:
+  - icon: github
+    link: https://github.com/hAkselS
+user_groups:
+  - Organizer
+  - Jupyter Hub
+  - Science Lecturer
+description: >-
+  **Software Engineer**<br>
+  NOAA Fisheries
+
+  Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.

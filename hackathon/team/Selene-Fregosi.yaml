@@ -1,25 +1,25 @@
 - title: Selene Fregosi
-  avatar: ../images/team/SeleneFregosi.jpg
-  image: images/team/SeleneFregosi.jpg
+  avatar: ../team/img/SeleneFregosi.jpg
+  image: team/img/SeleneFregosi.jpg
   role: Glider Rodeo organizer
   organizations:
     - name: NOAA Fisheries
   bio: >-
-    Studies marine mammal acoustics and develops tools for analyzing passive
-    acoustic data collected by gliders.
+    Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.
   expertise:
     - marine mammal acoustics
     - passive acoustic data analysis
   social:
     - icon: github
-      link: https://github.com/selenefregosi
+      link: https://github.com/sfregosi
   user_groups:
     - Organizer
+    - Data Analysis
+    - Science Lecturer
   description: >-
-    **Glider Rodeo organizer**<br>
+    **Acoustic Ecologist**<br>
     NOAA Fisheries
 
-    Studies marine mammal acoustics and develops tools for analyzing passive
-    acoustic data collected by gliders.
+    Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data. 
 
     [GitHub](https://github.com/selenefregosi)

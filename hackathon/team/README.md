@@ -13,5 +13,5 @@ used to render the cards on `../teams.qmd`.
 
 2. Replace the placeholder values with your name, image, role, organization,
    biography, areas of expertise, social links, and hackathon user groups.
-3. Put the image referenced by `image` in `../images/team/`.
+3. Put the image referenced by `image` in `../team/img/`.
 4. Render the hackathon book locally and open a pull request for review.
