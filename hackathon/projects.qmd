@@ -15,7 +15,13 @@ We encourage you to be creative in how you design your project work! Here are so
 
 - *focus on community building:* hackweeks bring people together for the first time and projects are used to build social fabric and foster open science
 
-**Project development timeline:**
+### Examples from previous Hackathons
+Ocean Hackweek[Searchable table of Projects](https://oceanhackweek.org/ohw24_proj_catalog_us/OHW_project_list.html)
+
+[Fish-PACE Hackweek 2026 Projects](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html)
+
+
+### Project development timeline:
 
 - *pre-hackweek:* brainstorming ideas for projects with other participants in our Slack communication platform
 
