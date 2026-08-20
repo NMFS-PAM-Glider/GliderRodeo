@@ -7,7 +7,7 @@ import pyglider.utils as pgutils
 from pathlib import Path
 
 logging.basicConfig(
-    filename= "GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
+    filename= "data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
     filemode="w",
     format="%(name)s:%(asctime)s:%(levelname)s:%(message)s [line %(lineno)d]",
     level=logging.INFO,
@@ -16,23 +16,23 @@ logging.basicConfig(
 logging.captureWarnings(True)
 logging.info("Beginning scheduled processing")
 
-# GCS Files - linux remote workstation
-# sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
-rawdir  = 'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/SEA117-MO26_20260128/Raw/'
-rawncdir     = 'GliderRodeo/data/SEA117-M026_20260128/realtime_rawnc/'
-deploymentyaml = 'GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
-l0tsdir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-timeseries/'
-profiledir = 'GliderRodeo/data/SEA117-M026_20260128/L0-profiles/'
-griddir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-gridfiles/'
-
-# # Local Files - windows machine (for testing)
+# # GCS Files - linux remote workstation
 # # sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
-# rawdir  = 'P:/2026_GliderRodeo/Data/SEA117-MO26_20260128/Raw'
-# rawncdir     = '/data/SEA117-M026_20260128/realtime_rawnc/'
-# deploymentyaml = '/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
-# l0tsdir    = '/data/SEA117-M026_20260128/L0-timeseries/'
-# profiledir = '/data/SEA117-M026_20260128/L0-profiles/'
-# griddir    = '/data/SEA117-M026_20260128/L0-gridfiles/'
+# rawdir  = 'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/SEA117-MO26_20260128/Raw/'
+# rawncdir     = 'GliderRodeo/data/SEA117-M026_20260128/realtime_rawnc/'
+# deploymentyaml = 'GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
+# l0tsdir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-timeseries/'
+# profiledir = 'GliderRodeo/data/SEA117-M026_20260128/L0-profiles/'
+# griddir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-gridfiles/'
+
+# Local Files - windows machine (for testing)
+# sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
+rawdir  = 'C:/Users/kourtney.burger/Documents/GitHub/GliderRodeo/data/SEA117-M026_20260128/0_RawData_gli_and_pld/'
+rawncdir     = 'data/SEA117-M026_20260128/realtime_rawnc/'
+deploymentyaml = 'data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
+l0tsdir    = 'data/SEA117-M026_20260128/L0-timeseries/'
+profiledir = 'data/SEA117-M026_20260128/L0-profiles/'
+griddir    = 'data/SEA117-M026_20260128/L0-gridfiles/'
 
 ## get the data and clean up derived
 # if False:
