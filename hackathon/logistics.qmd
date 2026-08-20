@@ -22,12 +22,15 @@ Choose the time zone that works best for you.
     <option value="D">Time (Eastern - EDT)</option>
     <option value="E">Time (UTC)</option>
   </select>
-  <iframe
-    id="schedule-sheet-frame"
-    title="Hackathon schedule in the selected time zone"
-    src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;tq=select%20A,F,G,H,I,J"
-    loading="lazy">
-  </iframe>
+  <div class="schedule-sheet-frame-wrap">
+    <iframe
+      id="schedule-sheet-frame"
+      title="Hackathon schedule in the selected time zone"
+      src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;headers=false&amp;widget=true&amp;chrome=false&amp;tq=select%20A,F,G,H,I,J"
+      loading="lazy"
+      scrolling="yes">
+    </iframe>
+  </div>
 </div>
 
 ```{=html}
@@ -52,23 +55,30 @@ Choose the time zone that works best for you.
   margin-bottom: 1rem;
 }
 
-.schedule-sheet iframe {
-  display: block;
-  width: 100%;
-  min-height: 34rem;
+.schedule-sheet-frame-wrap {
+  max-width: 100%;
+  overflow: auto;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.35rem;
   background: var(--bs-body-bg);
+}
+
+.schedule-sheet iframe {
+  display: block;
+  width: max(100%, 56rem);
+  height: 40rem;
+  border: 0;
 }
 </style>
 <script>
 const scheduleSheet = document.querySelector("#schedule-sheet-frame");
 const scheduleTimezone = document.querySelector("#schedule-timezone");
 const scheduleSheetUrl =
-  "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&tq=select%20";
+  "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&headers=false&widget=true&chrome=false&tq=";
 
 scheduleTimezone.addEventListener("change", () => {
-  scheduleSheet.src = `${scheduleSheetUrl}${scheduleTimezone.value},F,G,H,I,J`;
+  const columns = `${scheduleTimezone.value},F,G,H,I,J`;
+  scheduleSheet.src = `${scheduleSheetUrl}${encodeURIComponent(`select ${columns}`)}`;
 });
 </script>
 ```
