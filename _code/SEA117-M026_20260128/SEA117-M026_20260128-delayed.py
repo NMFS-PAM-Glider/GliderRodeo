@@ -4,9 +4,10 @@ import pyglider.seaexplorer as seaexplorer
 print("Loading from:", seaexplorer.__file__)
 import pyglider.ncprocess as ncprocess
 import pyglider.utils as pgutils
+from pathlib import Path
 
 logging.basicConfig(
-    filename= "C:/Users/kourtney.burger/Documents/GitHub/GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
+    filename= "GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
     filemode="w",
     format="%(name)s:%(asctime)s:%(levelname)s:%(message)s [line %(lineno)d]",
     level=logging.INFO,
@@ -15,13 +16,23 @@ logging.basicConfig(
 logging.captureWarnings(True)
 logging.info("Beginning scheduled processing")
 
+# GCS Files - linux remote workstation
 # sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
-rawdir  = 'data/SEA117-M026_20260128/0_RawData_gli_and_pld/'
-rawncdir     = 'data/SEA117-M026_20260128/realtime_rawnc/'
-deploymentyaml = 'data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
-l0tsdir    = 'data/SEA117-M026_20260128/L0-timeseries/'
-profiledir = 'data/SEA117-M026_20260128/L0-profiles/'
-griddir    = 'data/SEA117-M026_20260128/L0-gridfiles/'
+rawdir  = 'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/SEA117-MO26_20260128/Raw/'
+rawncdir     = 'GliderRodeo/data/SEA117-M026_20260128/realtime_rawnc/'
+deploymentyaml = 'GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
+l0tsdir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-timeseries/'
+profiledir = 'GliderRodeo/data/SEA117-M026_20260128/L0-profiles/'
+griddir    = 'GliderRodeo/data/SEA117-M026_20260128/L0-gridfiles/'
+
+# # Local Files - windows machine (for testing)
+# # sourcedir = '~alseamar/Documents/SEA035/000012/000012/C-Csv/*'
+# rawdir  = 'P:/2026_GliderRodeo/Data/SEA117-MO26_20260128/Raw'
+# rawncdir     = '/data/SEA117-M026_20260128/realtime_rawnc/'
+# deploymentyaml = '/data/SEA117-M026_20260128/SEA117-M026_20260128.yaml'
+# l0tsdir    = '/data/SEA117-M026_20260128/L0-timeseries/'
+# profiledir = '/data/SEA117-M026_20260128/L0-profiles/'
+# griddir    = '/data/SEA117-M026_20260128/L0-gridfiles/'
 
 ## get the data and clean up derived
 # if False:
@@ -38,7 +49,7 @@ if True:
     seaexplorer.merge_parquet(rawncdir, rawncdir, deploymentyaml, kind='raw')
 
     # Make level-1 timeseries netcdf file from the raw files...
-    outname = seaexplorer.raw_to_timeseries(rawncdir, l0tsdir, deploymentyaml, kind='sub')
+    outname = seaexplorer.raw_to_timeseries(rawncdir, l0tsdir, deploymentyaml, kind='raw')
     ncprocess.extract_timeseries_profiles(outname, profiledir, deploymentyaml)
     outname2 = ncprocess.make_gridfiles(outname, griddir, deploymentyaml)
 
