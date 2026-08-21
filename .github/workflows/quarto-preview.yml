@@ -8,14 +8,18 @@ concurrency:
   group: ${{ github.workflow }}-${ ${{ github.head_ref || github.ref }} }
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   preview:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -23,10 +27,10 @@ jobs:
       - name: Render Quarto Site
         uses: quarto-dev/quarto-actions/render@v2
 
-      - name: Deploy Preview Files to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy Preview to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          destination_dir: preview/pr-${{ github.event.number }}
-          keep_files: true
+          target: gh-pages
+          path: preview/pr-${{ github.event.number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
