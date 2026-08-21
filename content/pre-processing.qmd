@@ -3,9 +3,21 @@ title: "Pre-Processing"
 format: html
 ---
 
-Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include offloading the data from the PAM system, decompressing files, creating LTSAs, QAQC, decimating, and updating the deployment tracker. We've also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). 
+Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:
 
+- Offloading the data from the PAM system,
 
+- Decompressing files,
+
+- Creating LTSAs,
+
+- QAQC,
+
+- Decimating files (lower sample rates are useful for different analyses), and
+
+- Updating the deployment tracker.
+
+We've also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo).
 
 
 Each section below links to detailed methods for each glider/pam system combination
@@ -26,5 +38,5 @@ Each section below links to detailed methods for each glider/pam system combinat
 
 :::{.callout-note appearance="simple"}
 ## Note about PreProcessing Methods
-Pre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab  manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve. 
+Pre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve.
 :::

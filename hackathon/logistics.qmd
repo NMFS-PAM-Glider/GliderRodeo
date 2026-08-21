@@ -5,9 +5,11 @@ format: html
 
 # Event Logistics
 
-The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. [Time Zone Comparison](https://www.timeanddate.com/worldclock/converter.html?iso=20251020T140000).
+The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 12pm-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. [Time Zone Comparison](https://www.timeanddate.com/worldclock/converter.html?iso=20251020T140000).
 
-No software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.
+No software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project. If a project is lacking a programmer- please do not hesitate to reach out to the Hackthon hosts on the Slack site-- we'll find a way to help you out!
+
+There is no cost for participating in the event.
 
 # Schedule
 

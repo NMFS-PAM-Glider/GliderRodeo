@@ -16,10 +16,10 @@ We encourage you to be creative in how you design your project work! Here are so
 - *focus on community building:* hackweeks bring people together for the first time and projects are used to build social fabric and foster open science
 
 ### Examples from previous Hackathons
-Ocean Hackweek[Searchable table of Projects](https://oceanhackweek.org/ohw24_proj_catalog_us/OHW_project_list.html)
 
-[Fish-PACE Hackweek 2026 Projects](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html)
+- Ocean Hackweek [Searchable table of Projects](https://oceanhackweek.org/ohw24_proj_catalog_us/OHW_project_list.html)
 
+- [Fish-PACE Hackweek 2026 Projects](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html)
 
 ### Project development timeline:
 
@@ -31,7 +31,7 @@ Ocean Hackweek[Searchable table of Projects](https://oceanhackweek.org/ohw24_pro
 
 - *last day:* presentation of your project work. What did you create? What did you learn?
 
-::: {.callout-note}
+::: callout-note
 ## Want to join the conversation?
 
 If you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by adding your contact information to the [Participant Form](https://forms.gle/y1kFU1U13iEbww2i9).

@@ -3,6 +3,8 @@ title: "Data Analysis"
 format: html
 ---
 
+Preliminary data analysis will be conducted during an open participant-led ['Hackathon'](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/). Results from the Hackathon and follow-up analysis conducted by NOAA Fisheries scientists will be presented here when completed. 
+
 ## Effort
 
 *Stay Tuned!*
