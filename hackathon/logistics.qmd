@@ -13,6 +13,7 @@ No software is required as we will be using a JupyterHub (cloud computing platfo
 
 Choose the time zone that works best for you. 
 
+```{=html}
 <div class="schedule-sheet">
   <label for="schedule-timezone">Show schedule in:</label>
   <select id="schedule-timezone" class="form-select">
@@ -33,7 +34,6 @@ Choose the time zone that works best for you.
   </div>
 </div>
 
-```{=html}
 <style>
 .schedule-sheet {
   margin: 1.5rem 0;
