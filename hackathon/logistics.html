@@ -207,7 +207,11 @@ ul.task-list li input[type="checkbox"] {
     <option value="E">Time (UTC)</option>
   </select>
   <div class="schedule-sheet-frame-wrap">
-    <iframe id="schedule-sheet-frame" title="Hackathon schedule in the selected time zone" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/gviz/tq?tqx=out:html&amp;gid=0&amp;headers=false&amp;tq=select%20A%2C%20F%2C%20G%2C%20H%2C%20I%2C%20J">
+    <iframe id="schedule-timezone-frame" title="Selected schedule time zone" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A:A">
+      loading="lazy"
+      scrolling="yes">
+    </iframe>
+    <iframe id="schedule-body-frame" title="Hackathon schedule events" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;range=F:J">
       loading="lazy"
       scrolling="yes">
     </iframe>
@@ -236,6 +240,7 @@ ul.task-list li input[type="checkbox"] {
 }
 
 .schedule-sheet-frame-wrap {
+  display: flex;
   max-width: 100%;
   overflow: auto;
   border: 1px solid var(--bs-border-color);
@@ -245,34 +250,39 @@ ul.task-list li input[type="checkbox"] {
 
 .schedule-sheet iframe {
   display: block;
-  width: 100%;
-  min-width: 56rem;
   height: 40rem;
   border: 0;
 }
+
+#schedule-timezone-frame {
+  flex: 0 0 10rem;
+}
+
+#schedule-body-frame {
+  flex: 1 0 56rem;
+}
 </style>
 <script>
-const scheduleSheet = document.querySelector("#schedule-sheet-frame");
+const scheduleTimezoneSheet = document.querySelector("#schedule-timezone-frame");
 const scheduleTimezone = document.querySelector("#schedule-timezone");
 const BASE_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/gviz/tq";
-const SCHEDULE_COLUMNS = ["F", "G", "H", "I", "J"];
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml";
 
-function scheduleUrl(timezoneColumn) {
+function timezoneUrl(timezoneColumn) {
   const url = new URL(BASE_URL);
-  const columns = [timezoneColumn, ...SCHEDULE_COLUMNS].join(", ");
-  url.searchParams.set("tqx", "out:html");
   url.searchParams.set("gid", "0");
+  url.searchParams.set("single", "true");
+  url.searchParams.set("widget", "true");
   url.searchParams.set("headers", "false");
-  url.searchParams.set("tq", `select ${columns}`);
+  url.searchParams.set("range", `${timezoneColumn}:${timezoneColumn}`);
   return url.toString();
 }
 
 scheduleTimezone.addEventListener("change", () => {
-  scheduleSheet.src = scheduleUrl(scheduleTimezone.value);
+  scheduleTimezoneSheet.src = timezoneUrl(scheduleTimezone.value);
 });
 
-scheduleSheet.src = scheduleUrl(scheduleTimezone.value);
+scheduleTimezoneSheet.src = timezoneUrl(scheduleTimezone.value);
 </script>
 
 
