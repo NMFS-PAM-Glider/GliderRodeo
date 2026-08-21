@@ -27,14 +27,14 @@ Choose the time zone that works best for you.
     <iframe
       id="schedule-timezone-frame"
       title="Selected schedule time zone"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A:A">
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=A:A">
       loading="lazy"
       scrolling="yes">
     </iframe>
     <iframe
       id="schedule-body-frame"
       title="Hackathon schedule events"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;range=F:J">
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=F:J">
       loading="lazy"
       scrolling="yes">
     </iframe>
@@ -78,7 +78,8 @@ Choose the time zone that works best for you.
 }
 
 #schedule-timezone-frame {
-  flex: 0 0 10rem;
+  flex: 0 0 8rem;
+  width: 8rem;
 }
 
 #schedule-body-frame {
@@ -97,6 +98,7 @@ function timezoneUrl(timezoneColumn) {
   url.searchParams.set("single", "true");
   url.searchParams.set("widget", "true");
   url.searchParams.set("headers", "false");
+  url.searchParams.set("chrome", "false");
   url.searchParams.set("range", `${timezoneColumn}:${timezoneColumn}`);
   return url.toString();
 }
