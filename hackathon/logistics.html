@@ -198,17 +198,20 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="5"><span class="header-section-number">5</span> Schedule</h1>
 <p>Choose the time zone that works best for you.</p>
 <div class="schedule-sheet">
-<label for="schedule-timezone">Show schedule in:</label> <select id="schedule-timezone" class="form-select"> <option value="A" selected="">Time (Pacific - PDT)</option> <option value="B">Time (Hawaii - HST)</option> <option value="C">Time (Central - CDT)</option> <option value="D">Time (Eastern - EDT)</option> <option value="E">Time (UTC)</option> </select>
-<div class="schedule-sheet-frame-wrap">
-<pre><code>&lt;iframe
-  id="schedule-sheet-frame"
-  title="Hackathon schedule in the selected time zone"
-  src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;amp;headers=false&amp;amp;widget=true&amp;amp;chrome=false&amp;amp;tq=select%20A,F,G,H,I,J"
-  loading="lazy"
-  scrolling="yes"&gt;
-&lt;/iframe&gt;</code></pre>
+  <label for="schedule-timezone">Show schedule in:</label>
+  <select id="schedule-timezone" class="form-select">
+    <option value="A" selected="">Time (Pacific - PDT)</option>
+    <option value="B">Time (Hawaii - HST)</option>
+    <option value="C">Time (Central - CDT)</option>
+    <option value="D">Time (Eastern - EDT)</option>
+    <option value="E">Time (UTC)</option>
+  </select>
+  <div class="schedule-sheet-frame-wrap">
+    <iframe id="schedule-sheet-frame" title="Hackathon schedule in the selected time zone" src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;headers=false&amp;widget=true&amp;chrome=false&amp;tq=select%20A,F,G,H,I,J" loading="lazy" scrolling="yes">
+    </iframe>
+  </div>
 </div>
-</div>
+
 <style>
 .schedule-sheet {
   margin: 1.5rem 0;
