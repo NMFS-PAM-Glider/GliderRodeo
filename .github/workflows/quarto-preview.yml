@@ -35,6 +35,9 @@ jobs:
       - name: Render Quarto Site
         run: quarto render
 
+      - name: Render Hackathon book
+        run: quarto render hackathon
+
       - name: Deploy Preview to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
