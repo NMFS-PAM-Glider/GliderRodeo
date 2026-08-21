@@ -1,0 +1,172 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Glider Rodeo Hackathon",
+    "section": "",
+    "text": "0.1 Objective\nThe Glider Rodeo Hackweek is a 5-day virtual collaboration where we will explore data collected from a suite of underwater gliders equipped with Passive Acoustic and CTD sensors. We will host various learning opportunities and participant-led project teams will explore areas of interest, including (but not limited to!) data exploration, analysis, and tool development.\nOur objective is to develop open-source analysis and visualization tools that evaluate glider performance during the Glider Rodeo, providing the community with a framework for future studies.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Glider Rodeo Hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Glider Rodeo Hackathon",
+    "section": "0.2 Goals",
+    "text": "0.2 Goals\nOur goals are to share this dataset with the wider community and encourage use of this data to meet a broad range of needs, foster hands-on community learning, build community and strengthen professional networks. In addition to these broad goals, we at NOAA Fisheries have our own set of initial research goals:\n\nAssess different piloting approaches to identify impacts on critical components (navigation, endurance, noise) and identify a set or recommendations or ‘best practices’.\nAssess variation in navigation capabilities for each glider in different conditions and during different mission modes.\nAssess impact of mission modes on battery endurance and PAM data storage.\nAssess impact of self noise (and variation in self noise under different conditions) and the impact of this noise on study objectives\nAssess variation in acoustic detection of target species for different platforms in different conditions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Glider Rodeo Hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#participation",
+    "href": "index.html#participation",
+    "title": "Glider Rodeo Hackathon",
+    "section": "0.3 Participation",
+    "text": "0.3 Participation\n\nDo you want to build community within the glider or PAM community?\nDo you have analyses or tools that you would like to apply to this dataset?\nDo you want to transfer analyses or tools developed here to your data?\nAre you a student in science, engineering, or software development looking for new experiences?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\n0.3.1 Expectations:\n\nNo experience is necessary, although we expect all project team participants to participate all week.\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\n\n\n\n0.3.2 How to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!\n\nLearn more about the NOAA Fisheries PAM-Glider Program and the Glider Rodeo",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Glider Rodeo Hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html",
+    "href": "teams.html",
+    "title": "2  Meet the Team",
+    "section": "",
+    "text": "Meet the people participating in the Glider Rodeo Hackathon.\nThe cards below are generated from the member files in hackathon/team/.\n\n\n\n\n  \n    \n    \n    \n    \n      Aksel Sloan\n      \n      Software Engineer\n      \n      \n      \n        \n        Organizer\n        \n        Jupyter Hub\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Aksel Sloan\n          \n        \n        \n          \n          Software Engineer\n          \n          \n          NOAA Fisheries\n          \n          \n          Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n          \n          \n          Areas of expertise\n          \n            \n            skill 1\n            \n            skill 2\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Jupyter Hub\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Cara Wilson\n      \n      Program Lead CoastWatch and PolarWatch\n      \n      \n      \n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Cara Wilson\n          \n        \n        \n          \n          Program Lead CoastWatch and PolarWatch\n          \n          \n          Your institution\n          \n          \n          Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n          \n          \n          Areas of expertise\n          \n            \n            Satellite Data Access\n            \n            Ocean Color\n            \n            Hyperspectral Data\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kaitlin Palmer\n      \n      Acoustic Ecologist\n      \n      \n      \n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kaitlin Palmer\n          \n        \n        \n          \n          Acoustic Ecologist\n          \n          \n          NOAA Fisheries\n          \n          \n          Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n          \n          \n          Areas of expertise\n          \n            \n            Developing tools for Acoustic Analysis\n            \n            Marine mammal ecology\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kourtney Burger\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kourtney Burger\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            autonomous underwater gliders\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Selene Fregosi\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Data Analysis\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Selene Fregosi\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n          \n          \n          Areas of expertise\n          \n            \n            marine mammal acoustics\n            \n            passive acoustic data analysis\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Data Analysis\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Shannon Rankin\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n      \n      ```\n      \n      \n      Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Shannon Rankin\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            data workflows\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n          \n          \n        \n      \n    \n  \n\n\n\n\n```{=html}\nNo matching items",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Meet the Team</span>"
+    ]
+  },
+  {
+    "objectID": "logistics.html",
+    "href": "logistics.html",
+    "title": "3  Logistics",
+    "section": "",
+    "text": "4 Event Logistics\nThe Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project.\n\n\n5 Schedule\nChoose the time zone that works best for you.\n\n  Show schedule in:\n  \n    Time (Pacific - PDT)\n    Time (Hawaii - HST)\n    Time (Central - CDT)\n    Time (Eastern - EDT)\n    Time (UTC)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Logistics</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html",
+    "href": "prep.html",
+    "title": "4  Preparation",
+    "section": "",
+    "text": "5 What to Expect\nThe PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.\nTypical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:\nThese are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.\nAll tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#hackweek-projects",
+    "href": "prep.html#hackweek-projects",
+    "title": "4  Preparation",
+    "section": "5.1 HackWeek Projects",
+    "text": "5.1 HackWeek Projects\nA good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.\nThe project work is a combination of\n\nfleshing out a science idea that is small enough on Monday brainstorming.\ndividing up into tasks so that everyone can participate.\ncoding and data wrangling on Tuesday through Thursday.\nand then Friday, frantically putting a presentation on your project and results.\n\nSee Projects page for more information.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#github-account",
+    "href": "prep.html#github-account",
+    "title": "4  Preparation",
+    "section": "6.1 Github Account",
+    "text": "6.1 Github Account\nGitHub enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to GitHub, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#hackweek-jupyterhub",
+    "href": "prep.html#hackweek-jupyterhub",
+    "title": "4  Preparation",
+    "section": "6.2 Hackweek JupyterHub",
+    "text": "6.2 Hackweek JupyterHub\nWe will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.\nWatch this video to get an orientation on our JupyterHub.\nSign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.\nYou will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.\n\n\n\nimages\n\n\nYou will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.\nTo save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#pre-hackweek-learning-optional",
+    "href": "prep.html#pre-hackweek-learning-optional",
+    "title": "4  Preparation",
+    "section": "6.3 Pre-HackWeek Learning (Optional)",
+    "text": "6.3 Pre-HackWeek Learning (Optional)\nIf interested, please review course material from prior events:\nHow do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in Colab. Here is a nice intro to Colab for complete beginners.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#what-is-git",
+    "href": "prep.html#what-is-git",
+    "title": "4  Preparation",
+    "section": "7.1 What is Git?",
+    "text": "7.1 What is Git?\nGit is a version control system that many scientists use to collaborate on code.\n\n\n\n\n\n\nNote\n\n\n\nYou are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! Here’s a quick introduction video from the official website",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#setting-up-on-jupyterhub",
+    "href": "prep.html#setting-up-on-jupyterhub",
+    "title": "4  Preparation",
+    "section": "7.2 Setting up on JupyterHub",
+    "text": "7.2 Setting up on JupyterHub\nBelow are instructions to get you setup with git on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the Software Carpentry Git instructions for a thorough explanation and background information.\n\nLogin to JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud. See also our JupyterHub documentation: accessing-jupyterhub\nOpen a Terminal\nChoose the “Terminal” app from the “Other” options in the Launcher.\n\nConfigure Basic git Information\nSet your name and email address. The user.name is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.\n\n\n\n\n\n\n\nImportantAttention\n\n\n\nUse your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.\n\n\n$ git config --global user.name \"Attendee Name\"\n$ git config --global user.email \"attendee@hackweek.com\"\n$ git config --global pull.rebase true\nThe third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is described here.\nTo verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:\n$ git config --list\nuser.name=Attendee Name\nuser.email=attendee@hackweek.com\npull.rebase=true\n\nAuthenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. The two methods below both rely on secure Personal Access Tokens, which you can learn more about on GitHub docs.\n\nOption 1: gh-scoped-creds We recommend this method if you have permission to configure a GitHub App on the user or organization where you need to authenticate. For the hackweek, we have pre-configured permissions so that you can push to fish-pace.\nStart from a Terminal (choose the “Terminal” app from the “Other” options in the Launcher). Follow the instructions returned by the gh-scoped-creds command:\n$ gh-scoped-creds \nYou have 15 minutes to go to https://github.com/login/device and enter the code: XXXX-XXXX\nWaiting......\nAfter you have entered the code and granted authorization, the Terminal will update:\nSuccess! Authentication will expire in 8.0 hours.\n\nVisit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location\nTip: Use https:// URLs to clone and push to repos, not ssh URLs!\nIf you need to push to repositories that are not in Glider-Rode, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.\n\n\n\nimage\n\n\nOption 2: Manual Configuration Work through the instructions on the GitHub personal access tokens page. The maximum permissions you likely need is the repo scope.\n\n\n\nimage\n\n\nOnce you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.\ngit config --global credential.helper store\nTo use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.\n\n\n\n\n\n\nImportant\n\n\n\nThe prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#log-into-the-hackweek-jupyterhub",
+    "href": "prep.html#log-into-the-hackweek-jupyterhub",
+    "title": "4  Preparation",
+    "section": "8.1 Log into the hackweek JupyterHub",
+    "text": "8.1 Log into the hackweek JupyterHub\nworkshop.nmfs-openscapes.2i2c.cloud\nWatch this video for a quick orientation to the JupyterHub.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#for-those-who-are-brand-new-to-python",
+    "href": "prep.html#for-those-who-are-brand-new-to-python",
+    "title": "4  Preparation",
+    "section": "8.2 For those who are brand new to Python",
+    "text": "8.2 For those who are brand new to Python\nYou might want to start with this basic Software Carpentries Python course.\n\nLog into the JupyterHub\nOpen and new Jupyter notebook\nEnter code from the course and run",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "prep.html#start-with-some-basic-tutorials",
+    "href": "prep.html#start-with-some-basic-tutorials",
+    "title": "4  Preparation",
+    "section": "8.3 Start with some basic tutorials",
+    "text": "8.3 Start with some basic tutorials\nWatch a video to see Eli doing these instructions.\nThese are by Robert Johansson author of Numerical Python.\n\nLog into the JupyterHub\nOpen a terminal.\nType\n\ncd ~\ngit clone https://github.com/jrjohansson/scientific-python-lectures\nOpen the ipynb notebooks and start working through the material.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "info.html",
+    "href": "info.html",
+    "title": "5  Information",
+    "section": "",
+    "text": "6 Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\n7 Tutorials\nStay Tuned!\n\n\n8 References\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAquaview",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Information</span>"
+    ]
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "6  Projects",
+    "section": "",
+    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site Submit your name here to join.\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into this shared data resource and tutorial content; gain more hands-on data science experience\nfocus on research: people often work to advance a research challenge using tools or data shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: The tools we build here will be shared with the greater community and can serve as a catalyst for new community libraries.\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\n\n\n6.0.1 Examples from previous Hackathons\nOcean HackweekSearchable table of Projects\nFish-PACE Hackweek 2026 Projects\n\n\n6.0.2 Project development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our Slack communication platform\nday one: pitching of ideas and selection of a project to work on, identify tasks for each person on the team\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteWant to join the conversation?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by adding your contact information to the Participant Form.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  }
+]
