@@ -27,7 +27,7 @@ Choose the time zone that works best for you.
     <iframe
       id="schedule-sheet-frame"
       title="Hackathon schedule in the selected time zone"
-      src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&amp;headers=false&amp;widget=true&amp;chrome=false&amp;tq=select%20A,F,G,H,I,J"
+      src="https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/pubhtml?single=true&amp;widget=true&amp;headers=false&amp;range=A:J"
       loading="lazy"
       scrolling="yes">
     </iframe>
@@ -65,7 +65,8 @@ Choose the time zone that works best for you.
 
 .schedule-sheet iframe {
   display: block;
-  width: max(100%, 56rem);
+  width: 100%;
+  min-width: 56rem;
   height: 40rem;
   border: 0;
 }
@@ -74,11 +75,11 @@ Choose the time zone that works best for you.
 const scheduleSheet = document.querySelector("#schedule-sheet-frame");
 const scheduleTimezone = document.querySelector("#schedule-timezone");
 const scheduleSheetUrl =
-  "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/gviz/tq?tqx=out:html&headers=false&widget=true&chrome=false&tq=";
+  "https://docs.google.com/spreadsheets/d/181CvkcLD3CdSw0bX-NvtWl1skCMZXfmaCvU8iowfAgk/pubhtml?single=true&widget=true&headers=false";
 
 scheduleTimezone.addEventListener("change", () => {
-  const columns = `${scheduleTimezone.value},F,G,H,I,J`;
-  scheduleSheet.src = `${scheduleSheetUrl}${encodeURIComponent(`select ${columns}`)}`;
+  const range = `${scheduleTimezone.value}:J`;
+  scheduleSheet.src = `${scheduleSheetUrl}&range=${encodeURIComponent(range)}`;
 });
 </script>
 ```
