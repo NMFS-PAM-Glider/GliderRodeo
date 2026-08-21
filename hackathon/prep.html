@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Preparation – Glider Rodeo Hackathon</title>
+<title>Preparation – NOAA quarto simple</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,25 +29,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./info.html" rel="next">
-<link href="./logistics.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-77f877a8bbdaf906de76408b5606b2fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../content/images/GliderRodeo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ee96c6c0c87688c20d7c0e1ed75aa4b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6a9c8367d013e988e621cce676db73f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ee96c6c0c87688c20d7c0e1ed75aa4b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -79,7 +81,169 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prep.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Preparation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Preparation</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -100,14 +264,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Glider Rodeo Hackathon</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://nmfs-pam-glider.github.io/GliderRodeo/" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo" title="NOAA Fisheries PAM-Glider Rodeo" class="quarto-navigation-tool px-1" aria-label="NOAA Fisheries PAM-Glider Rodeo"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -118,38 +285,97 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Glider Rodeo Hackathon</span></span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teams.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Meet the Team</span></span></a>
+  <a href="../content/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./logistics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Logistics</span></span></a>
+  <a href="../content/hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prep.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Preparation</span></span></a>
+  <a href="../content/fieldwork.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fieldwork</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./info.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Information</span></span></a>
+  <a href="../content/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/pre-processing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pre-Processing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/seaglider-wispr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seaglider - WISPR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/seaglider-pmar-xl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seaglider - PMAR XL</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/slocum-wispr3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slocum - WISPR 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/slocum-dmon2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slocum - DMON 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/oceanscout-wispr6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Oceanscout - WISPR 6.1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/alseamar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alseamar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/EnvData-processing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Environmental Data Processing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data_processing/DeploymentSummaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deployment Summaries</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Projects</span></span></a>
+  <a href="../hackathon/index.html" class="sidebar-item-text sidebar-link" target="_blank">
+ <span class="menu-text">Hackathon</span></a>
   </div>
 </li>
     </ul>
@@ -159,29 +385,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link active" data-scroll-target="#what-to-expect"><span class="header-section-number">5</span> What to Expect</a>
+  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link active" data-scroll-target="#what-to-expect">What to Expect</a>
   <ul class="collapse">
-  <li><a href="#hackweek-projects" id="toc-hackweek-projects" class="nav-link" data-scroll-target="#hackweek-projects"><span class="header-section-number">5.1</span> HackWeek Projects</a></li>
+  <li><a href="#hackweek-projects" id="toc-hackweek-projects" class="nav-link" data-scroll-target="#hackweek-projects">HackWeek Projects</a></li>
   </ul></li>
-  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist"><span class="header-section-number">6</span> Checklist</a>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a>
   <ul class="collapse">
-  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account"><span class="header-section-number">6.1</span> Github Account</a></li>
-  <li><a href="#hackweek-jupyterhub" id="toc-hackweek-jupyterhub" class="nav-link" data-scroll-target="#hackweek-jupyterhub"><span class="header-section-number">6.2</span> Hackweek JupyterHub</a></li>
-  <li><a href="#pre-hackweek-learning-optional" id="toc-pre-hackweek-learning-optional" class="nav-link" data-scroll-target="#pre-hackweek-learning-optional"><span class="header-section-number">6.3</span> Pre-HackWeek Learning (Optional)</a></li>
+  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account">Github Account</a></li>
+  <li><a href="#hackweek-jupyterhub" id="toc-hackweek-jupyterhub" class="nav-link" data-scroll-target="#hackweek-jupyterhub">Hackweek JupyterHub</a></li>
+  <li><a href="#pre-hackweek-learning-optional" id="toc-pre-hackweek-learning-optional" class="nav-link" data-scroll-target="#pre-hackweek-learning-optional">Pre-HackWeek Learning (Optional)</a></li>
   </ul></li>
-  <li><a href="#setting-up-git" id="toc-setting-up-git" class="nav-link" data-scroll-target="#setting-up-git"><span class="header-section-number">7</span> Setting up <strong><code>git</code></strong></a>
+  <li><a href="#setting-up-git" id="toc-setting-up-git" class="nav-link" data-scroll-target="#setting-up-git">Setting up <strong><code>git</code></strong></a>
   <ul class="collapse">
-  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git"><span class="header-section-number">7.1</span> What is Git?</a></li>
-  <li><a href="#setting-up-on-jupyterhub" id="toc-setting-up-on-jupyterhub" class="nav-link" data-scroll-target="#setting-up-on-jupyterhub"><span class="header-section-number">7.2</span> Setting up on JupyterHub</a></li>
+  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git">What is Git?</a></li>
+  <li><a href="#setting-up-on-jupyterhub" id="toc-setting-up-on-jupyterhub" class="nav-link" data-scroll-target="#setting-up-on-jupyterhub">Setting up on JupyterHub</a></li>
   </ul></li>
-  <li><a href="#getting-started-with-python" id="toc-getting-started-with-python" class="nav-link" data-scroll-target="#getting-started-with-python"><span class="header-section-number">8</span> Getting started with Python</a>
+  <li><a href="#getting-started-with-python" id="toc-getting-started-with-python" class="nav-link" data-scroll-target="#getting-started-with-python">Getting started with Python</a>
   <ul class="collapse">
-  <li><a href="#log-into-the-hackweek-jupyterhub" id="toc-log-into-the-hackweek-jupyterhub" class="nav-link" data-scroll-target="#log-into-the-hackweek-jupyterhub"><span class="header-section-number">8.1</span> Log into the hackweek JupyterHub</a></li>
-  <li><a href="#for-those-who-are-brand-new-to-python" id="toc-for-those-who-are-brand-new-to-python" class="nav-link" data-scroll-target="#for-those-who-are-brand-new-to-python"><span class="header-section-number">8.2</span> For those who are brand new to Python</a></li>
-  <li><a href="#start-with-some-basic-tutorials" id="toc-start-with-some-basic-tutorials" class="nav-link" data-scroll-target="#start-with-some-basic-tutorials"><span class="header-section-number">8.3</span> Start with some basic tutorials</a></li>
+  <li><a href="#log-into-the-hackweek-jupyterhub" id="toc-log-into-the-hackweek-jupyterhub" class="nav-link" data-scroll-target="#log-into-the-hackweek-jupyterhub">Log into the hackweek JupyterHub</a></li>
+  <li><a href="#for-those-who-are-brand-new-to-python" id="toc-for-those-who-are-brand-new-to-python" class="nav-link" data-scroll-target="#for-those-who-are-brand-new-to-python">For those who are brand new to Python</a></li>
+  <li><a href="#start-with-some-basic-tutorials" id="toc-start-with-some-basic-tutorials" class="nav-link" data-scroll-target="#start-with-some-basic-tutorials">Start with some basic tutorials</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/prep.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -189,9 +415,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Preparation</span></h1>
+<h1 class="title">Preparation</h1>
 </div>
 
 
@@ -208,8 +435,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-to-expect" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> What to Expect</h1>
+<section id="what-to-expect" class="level1">
+<h1>What to Expect</h1>
 <p>The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to inform you about the types of tools we think are best suited to working with the glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.</p>
 <p>Typical Workflows and Tools Here are a few specific scenarios of how hackweek participants will engage with data science tools:</p>
 <ul>
@@ -223,8 +450,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>These are examples of the types of activities we will do at the PAM-Glider Rodeo hackweek in a collaborative setting. Be aware that most of the project work will be within self-organized project teams. Much of the hackweek will be spent running code (via notebooks), writing code and talking about code. The mentors and organizers will provide links to tutorials and help trouble-shoot code, but much of the learning comes from working on a project together.</p>
 <p>All tutorials will be in Python using the Pangeo ecosystem of tools for computing in the earth sciences. For participants wishing to brush up on their skills before the event, we recommend viewing the resources as described on the Pythia Foundations website. Teams are welcome to do their project in R and our compute platform fully supports R for earth science computation. The HackWeek mentors/helpers are experienced in Python, R and Matlab.</p>
-<section id="hackweek-projects" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="hackweek-projects"><span class="header-section-number">5.1</span> HackWeek Projects</h2>
+<section id="hackweek-projects" class="level2">
+<h2 class="anchored" data-anchor-id="hackweek-projects">HackWeek Projects</h2>
 <p>A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data for our region.” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.</p>
 <p>The project work is a combination of</p>
 <ul>
@@ -236,8 +463,8 @@ ul.task-list li input[type="checkbox"] {
 <p>See <a href="https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/projects.html">Projects page</a> for more information.</p>
 </section>
 </section>
-<section id="checklist" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Checklist</h1>
+<section id="checklist" class="level1">
+<h1>Checklist</h1>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -254,12 +481,12 @@ ul.task-list li input[type="checkbox"] {
 <p>- [ ] Review material on the Glider Rodeo and Hackathon websites</p>
 </div>
 </div>
-<section id="github-account" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="github-account"><span class="header-section-number">6.1</span> Github Account</h2>
+<section id="github-account" class="level2">
+<h2 class="anchored" data-anchor-id="github-account">Github Account</h2>
 <p><a href="https://github.com/">GitHub</a> enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to <a href="https://github.com/">GitHub</a>, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek.</p>
 </section>
-<section id="hackweek-jupyterhub" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="hackweek-jupyterhub"><span class="header-section-number">6.2</span> Hackweek JupyterHub</h2>
+<section id="hackweek-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="hackweek-jupyterhub">Hackweek JupyterHub</h2>
 <p>We will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.</p>
 <p><a href="https://youtu.be/uZ2Uy376Az8">Watch this video</a> to get an orientation on our JupyterHub.</p>
 <p>Sign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel here.</p>
@@ -273,16 +500,16 @@ ul.task-list li input[type="checkbox"] {
 <p>You will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.</p>
 <p>To save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day.</p>
 </section>
-<section id="pre-hackweek-learning-optional" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="pre-hackweek-learning-optional"><span class="header-section-number">6.3</span> Pre-HackWeek Learning (Optional)</h2>
+<section id="pre-hackweek-learning-optional" class="level2">
+<h2 class="anchored" data-anchor-id="pre-hackweek-learning-optional">Pre-HackWeek Learning (Optional)</h2>
 <p>If interested, please review course material from prior events:</p>
 <p>How do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in <a href="https://colab.research.google.com/">Colab</a>. Here is a nice <a href="https://www.youtube.com/watch?v=Xi9-W26cDBs">intro to Colab for complete beginners</a>.</p>
 </section>
 </section>
-<section id="setting-up-git" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Setting up <strong><code>git</code></strong></h1>
-<section id="what-is-git" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="what-is-git"><span class="header-section-number">7.1</span> What is Git?</h2>
+<section id="setting-up-git" class="level1">
+<h1>Setting up <strong><code>git</code></strong></h1>
+<section id="what-is-git" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-git">What is Git?</h2>
 <p><a href="https://git-scm.com/">Git</a> is a version control system that many scientists use to collaborate on code.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -298,8 +525,8 @@ Note
 </div>
 </div>
 </section>
-<section id="setting-up-on-jupyterhub" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="setting-up-on-jupyterhub"><span class="header-section-number">7.2</span> Setting up on JupyterHub</h2>
+<section id="setting-up-on-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-on-jupyterhub">Setting up on JupyterHub</h2>
 <p>Below are instructions to get you setup with&nbsp;<code>git</code>&nbsp;on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the <a href="https://swcarpentry.github.io/git-novice/index.html" style="font-size: 11pt;">Software Carpentry Git</a> instructions for a thorough explanation and background information.</p>
 <ol type="1">
 <li><p>Login to JupyterHub</p>
@@ -377,16 +604,16 @@ Important
 </div>
 </section>
 </section>
-<section id="getting-started-with-python" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Getting started with Python</h1>
+<section id="getting-started-with-python" class="level1">
+<h1>Getting started with Python</h1>
 <p>For those of you who want to learn scientific programming with Python, here is one path you can follow.</p>
-<section id="log-into-the-hackweek-jupyterhub" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="log-into-the-hackweek-jupyterhub"><span class="header-section-number">8.1</span> Log into the hackweek JupyterHub</h2>
+<section id="log-into-the-hackweek-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="log-into-the-hackweek-jupyterhub">Log into the hackweek JupyterHub</h2>
 <pre class="console"><code>workshop.nmfs-openscapes.2i2c.cloud</code></pre>
 <p>Watch this <a href="https://youtu.be/uZ2Uy376Az8?si=Nh3simSYe94c0eEB">video</a> for a quick orientation to the JupyterHub.</p>
 </section>
-<section id="for-those-who-are-brand-new-to-python" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="for-those-who-are-brand-new-to-python"><span class="header-section-number">8.2</span> For those who are brand new to Python</h2>
+<section id="for-those-who-are-brand-new-to-python" class="level2">
+<h2 class="anchored" data-anchor-id="for-those-who-are-brand-new-to-python">For those who are brand new to Python</h2>
 <p>You might want to start with this basic <a href="https://swcarpentry.github.io/python-novice-inflammation/index.html">Software Carpentries Python</a> course.</p>
 <ul>
 <li><p>Log into the JupyterHub</p></li>
@@ -394,8 +621,8 @@ Important
 <li><p>Enter code from the course and run</p></li>
 </ul>
 </section>
-<section id="start-with-some-basic-tutorials" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="start-with-some-basic-tutorials"><span class="header-section-number">8.3</span> Start with some basic tutorials</h2>
+<section id="start-with-some-basic-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-some-basic-tutorials">Start with some basic tutorials</h2>
 <p>Watch a <a href="https://youtu.be/scNDbOKZB4A">video</a> to see Eli doing these instructions.</p>
 <p>These are by <a href="https://jrjohansson.github.io/">Robert Johansson</a> author of Numerical Python.</p>
 <ul>
@@ -414,6 +641,19 @@ git clone https://github.com/jrjohansson/scientific-python-lectures</code></pre>
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -485,7 +725,7 @@ git clone https://github.com/jrjohansson/scientific-python-lectures</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nmfs-pam-glider\.github\.io\/GliderRodeo\/hackathon\/");
+        var filterRegex = new RegExp("https:\/\/nmfs-pam-glider\.github\.io\/GliderRodeo\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -817,21 +1057,22 @@ git clone https://github.com/jrjohansson/scientific-python-lectures</code></pre>
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./logistics.html" class="pagination-link" aria-label="Logistics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Logistics</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./info.html" class="pagination-link" aria-label="Information">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Information</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-1.0</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/prep.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/prep.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>
