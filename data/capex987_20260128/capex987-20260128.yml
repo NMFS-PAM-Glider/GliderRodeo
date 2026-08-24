@@ -27,7 +27,7 @@ metadata:
   Metadata_Conventions: Unidata Dataset Discovery v1.0, COARDS, CF-1.8
   metadata_link: https://swfsc.github.io/glider-lab-manual/
   naming_authority: gov.noaa.fisheries
-  # os_version: ''
+  os_version: '11.07'
   platform_type: Slocum Glider
   project: GLIDERRODEO
   publisher_email: sam.woodman@noaa.gov
@@ -45,20 +45,24 @@ metadata:
 glider_devices:
   instrument_ctd:
     _FillValue: -999
-  #  long_name: 
-  #  make_model: 
-  #  serial_number: '9807'
-  #  factory_calibrated: '2022-04-29'
-  #  calibration_date: '2022-04-29'
+    make: RBR
+    model: RBRlegato3
+    serial: '205806'
+    long_name: RBRlegato3
+    make_model: RBRlegato3
+    factory_calibrated: '2020-12-05'
+    calibration_date: '2020-12-05'
   #  calibration_report: 
     comment: 'flow through'
     description: ''
     platform: platform
     type: instrument
+
   instrument_OceanObserver:
     _FillValue: -999
-  #  make_model: 'JASCO OceanObserver'
-  #  serial_number: ''
+    make: 'JASCO OceanObserver'
+    model: 'G9 5.2'
+    serial_number: '1195'
   #  calibration_date: ''
   #  factory_calibrated: ''
   #  calibration_report: 
@@ -66,50 +70,54 @@ glider_devices:
     description: 'Passive Acoustics Monitoring (PAM) sensor. The JASCO OceanObserver is a compact, low-power, autonomous acoustic recorder designed for long-term monitoring of marine mammals and other underwater sounds. It is equipped with 4 external hydrophones, attached at the nose, tail, and tip of each wing. Each hydrophone has it own instrument description.'
     platform: platform
     type: instrument
+  
   instrument_hydrophone:
     _FillValue: -999
-  #  make_model: ''
-  #  serial_number: ''
-  #  calibration_date: ''
+    make_model: 'M36-V35-EXBH-100'
+    serial_number: 'H001896'
+    calibration_date: '2025-03-21'
   #  factory_calibrated: ''
   #  calibration_report: 
   #  comment: ''
   #  description: 
-  #  platform: platform
-  #  type: instrument
+    platform: platform
+    type: instrument
+  
   instrument_hydrophone:
     _FillValue: -999
-  #  make_model: ''
-  #  serial_number: ''
-  #  calibration_date: ''
+    make_model: 'M36-V35-100'
+    serial_number: 'H001305'
+    calibration_date: '2025-03-21'
   #  factory_calibrated: ''
   #  calibration_report: 
   #  comment: ''
   #  description: 
-  #  platform: platform
-  #  type: instrument
+    platform: platform
+    type: instrument
+  
   instrument_hydrophone:
     _FillValue: -999
-  #  make_model: ''
-  #  serial_number: ''
-  #  calibration_date: ''
+    make_model: 'M36-V35-100'
+    serial_number: 'H001202'
+    calibration_date: '2025-03-21'
   #  factory_calibrated: ''
   #  calibration_report: 
   #  comment: ''
   #  description: 
-  #  platform: platform
-  #  type: instrument
+    platform: platform
+    type: instrument
+  
   instrument_hydrophone:
     _FillValue: -999
-  #  make_model: ''
-  #  serial_number: ''
-  #  calibration_date: ''
+    make_model: 'M36-V35-100'
+    serial_number: 'H001203'
+    calibration_date: '2025-03-21'
   #  factory_calibrated: ''
   #  calibration_report: 
   #  comment: ''
   #  description: 
-  #  platform: platform
-  #  type: instrument
+    platform: platform
+    type: instrument
 
 netcdf_variables:
   time:
