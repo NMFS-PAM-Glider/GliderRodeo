@@ -23,7 +23,7 @@ Raw audio data is **not** available for analysis during the Hackathon due to lim
 Audio data was analyzed to provide Hybrid-millidecade band levels ([Martin et al 2021](https://doi.org/10.1121/10.0003324)) using [YAWN](https://github.com/JPalmerK/YAWN_functions) (Yet Another Way to implement Noise analysis).  
 
 ## Marine Mammal Acoustic Detections
-Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!)
+Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!). 
 
 ## Environmental Data
 *Stay Tuned!*
