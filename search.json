@@ -415,7 +415,7 @@
     "href": "content/data.html#marine-mammal-acoustic-detections",
     "title": "Data",
     "section": "Marine Mammal Acoustic Detections",
-    "text": "Marine Mammal Acoustic Detections\nDue to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!)",
+    "text": "Marine Mammal Acoustic Detections\nDue to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!).",
     "crumbs": [
       "Data"
     ]
