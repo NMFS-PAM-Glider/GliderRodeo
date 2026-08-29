@@ -25,11 +25,7 @@ here()
 ::: {.callout-note collapse="true" appearance="simple" icon="false"}
 #### *Southwest Fisheries Science Center*
 
-[*Southwest Fisheries Science Center*](https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab) assisted with the Glider Rodeo event and co-leads the PAM-Glider Strategic Initiative.
-:::
-
-::: {.callout-note collapse="true" appearance="simple" icon="false"}
-#### *Oregon State University, CIMERS*
+#### *Oregon State University, MMI and CIMERS*
 
 The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.
 
@@ -153,15 +149,15 @@ PIFSC/SWFSC communication teams facilitated the creating and amplification of a 
 
 *Communications included:*
 
-February 5, 2026, NOAA Featured Web Story: [NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘i]()https://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii (Stefanie Gutierrez) February 5, 2026, Sound Bytes Blog: [Meet the Pilots of the Underwater Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-meet-pilots-underwater-glider-challenge) (Kourtney Burger)
-
-March 30, 2026, Sound Bytes Blog: [Synchronous Swimming (With Robots) – Behind the Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-synchronous-swimming-robots-behind-glider-challenge) (Selene Fregosi)
+February 5, 2026 - NOAA Featured Web Story: [NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘i](https://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii) (Stefanie Gutierrez) 
+February 5, 2026 - Sound Bytes Blog: [Meet the Pilots of the Underwater Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-meet-pilots-underwater-glider-challenge) (Kourtney Burger)
+March 30, 2026 - Sound Bytes Blog: [Synchronous Swimming (with Robots) - Behind the Glider Challenge](https://www.fisheries.noaa.gov/science-blog/sound-bytes-synchronous-swimming-robots-behind-glider-challenge) (Selene Fregosi)
 
 ## Data Offload
 
 Hefring Ocean Scout, Alseamar SeaExplorer: Data were offloaded at the end of the Glider Rodeo prior to shipping the gliders.
 
-SeaGliders: At the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.
+At the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines and for an additional 8-10 weeks associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.
 
 Slocum: Data download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).
 
@@ -173,21 +169,10 @@ Brief summaries were provided for the SWFSC Weekly Reports during the Glider Rod
 
 Each glider platform provides a different approach to real-time summaries:
 
-#### *Hefring OceanScout*
+<!-- #### *Seaglider* -->
 
-*Stay Tuned!*
-
-#### *SeaGlider*
-
-*Stay Tuned!*
-
-#### *DMON on Slocum Glider*
-
-*Stay Tuned!*
-
-#### *WISPR on Slocum Glider*
-
-*Stay Tuned!*
+<!-- Seaglider doesn't actually provide any real-time acoustic reports so I [SF] commented this out for now. We could link to the mission reports eventually if we want. -->
+<!-- *Stay Tuned!* -->
 
 #### *JASCO OceanObserver on Slocum Glider*
 
