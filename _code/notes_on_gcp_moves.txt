@@ -1,0 +1,55 @@
+WHICEAS to Rodeo Folder GCP Data Copy
+
+##### For SG274 ######
+# set up the folders and files to transfer
+SRC="gs://pifsc-1/glider/sg274_20260128_WHICEAS/recordings/flac"
+DST="gs://nmfs-collaborative/2026_GliderRodeo/sg274_20260128_WHICEAS/Recordings_CENSOR/flac"
+START="WISPR_260129_003604.flac"
+END="WISPR_260210_081155.flac"
+
+# create a list of all files to transfer
+gcloud storage ls "$SRC/WISPR_*.flac" > all_files_sg274.txt
+# check the list
+cat all_files_sg274.txt
+
+# now get a list of just what to copy
+awk -v s="$START" -v e="$END" -F/ '$NF >= s && $NF <= e' all_files_sg274.txt > to_copy_sg274.txt 
+
+# verify the scope
+wc -l < all_files_sg274.txt      # total in source
+wc -l < to_copy_sg274.txt        # what will be copied
+head -2 to_copy_sg274.txt
+tail -2 to_copy_sg274.txt
+
+# actually copy
+cat to_copy_sg274.txt | gcloud storage cp -I "$DST/"
+
+# check things
+gcloud storage ls "$DST/" | wc -l
+
+##### FOR SG607 ######
+# set up the folders and files to transfer
+SRC="gs://pifsc-1/glider/sg607_20260128_WHICEAS/recordings/flac"
+DST="gs://nmfs-collaborative/2026_GliderRodeo/sg607_20260128_WHICEAS/Recordings_CENSOR/flac"
+START="WISPR_260128_222328.flac"
+END="WISPR_260210_064055.flac"
+
+# create a list of all files to transfer
+gcloud storage ls "$SRC/WISPR_*.flac" > all_files_sg607.txt
+# check the list
+cat all_files_sg607.txt
+
+# now get a list of just what to copy
+awk -v s="$START" -v e="$END" -F/ '$NF >= s && $NF <= e' all_files_sg607.txt > to_copy_sg607.txt 
+
+# verify the scope
+wc -l < all_files_sg607.txt      # total in source
+wc -l < to_copy_sg607.txt        # what will be copied
+head -2 to_copy_sg607.txt
+tail -2 to_copy_sg607.txt
+
+# actually copy
+cat to_copy_sg607.txt | gcloud storage cp -I "$DST/"
+
+# check things
+gcloud storage ls "$DST/" | wc -l
