@@ -1,0 +1,169 @@
+---
+title: "Logistics"
+format: html
+---
+
+# Event Logistics
+
+The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 12pm-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. [Time Zone Comparison](https://www.timeanddate.com/worldclock/converter.html?iso=20251020T140000).
+
+No software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project. If a project is lacking a programmer- please do not hesitate to reach out to the Hackthon hosts on the Slack site-- we'll find a way to help you out!
+
+There is no cost for participating in the event.
+
+# Schedule
+
+Choose the time zone that works best for you. 
+
+```{=html}
+<div class="schedule-sheet">
+  <label for="schedule-timezone">Show schedule in:</label>
+  <select id="schedule-timezone" class="form-select">
+    <option value="A" selected>Time (Pacific - PDT)</option>
+    <option value="B">Time (Hawaii - HST)</option>
+    <option value="C">Time (Central - CDT)</option>
+    <option value="D">Time (Eastern - EDT)</option>
+    <option value="E">Time (UTC)</option>
+  </select>
+  <div class="schedule-zoom-controls" role="group" aria-label="Schedule zoom controls">
+    <span id="schedule-zoom-level">100%</span>
+    <button type="button" id="schedule-zoom-out" aria-label="Zoom out">−</button>
+    <button type="button" id="schedule-zoom-reset">Reset</button>
+    <button type="button" id="schedule-zoom-in" aria-label="Zoom in">+</button>
+  </div>
+  <div class="schedule-sheet-frame-wrap">
+    <iframe
+      id="schedule-timezone-frame"
+      title="Selected schedule time zone"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=A:A">
+      loading="lazy"
+      scrolling="yes">
+    </iframe>
+    <iframe
+      id="schedule-body-frame"
+      title="Hackathon schedule events"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=F:J">
+      loading="lazy"
+      scrolling="yes">
+    </iframe>
+  </div>
+</div>
+
+<style>
+.schedule-sheet {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  background: var(--bs-tertiary-bg);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-sheet label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.schedule-sheet select {
+  max-width: 28rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-zoom-controls span {
+  min-width: 3.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.schedule-zoom-controls button {
+  min-width: 2.25rem;
+}
+
+.schedule-sheet-frame-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.35rem;
+  background: var(--bs-body-bg);
+  zoom: var(--schedule-zoom, 1);
+}
+
+.schedule-sheet iframe {
+  display: block;
+  height: 40rem;
+  border: 0;
+}
+
+#schedule-timezone-frame {
+  flex: 0 0 8rem;
+  width: 8rem;
+}
+
+#schedule-body-frame {
+  flex: 1 1 auto;
+  width: 0;
+  min-width: 0;
+}
+</style>
+<script>
+const scheduleTimezoneSheet = document.querySelector("#schedule-timezone-frame");
+const scheduleTimezone = document.querySelector("#schedule-timezone");
+const scheduleFrameWrap = document.querySelector(".schedule-sheet-frame-wrap");
+const scheduleZoomLevel = document.querySelector("#schedule-zoom-level");
+const scheduleZoomSteps = [0.75, 1, 1.25, 1.5];
+let scheduleZoomIndex = 1;
+const BASE_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3m7_YB15GjvuWMRptFFYbG5PMw6iEiZoOE0GijYvHqLO12EZIalHRAloDwx2-xgqt-Cbg3X4ZRSwS/pubhtml";
+
+function timezoneUrl(timezoneColumn) {
+  const url = new URL(BASE_URL);
+  url.searchParams.set("gid", "0");
+  url.searchParams.set("single", "true");
+  url.searchParams.set("widget", "true");
+  url.searchParams.set("headers", "false");
+  url.searchParams.set("chrome", "false");
+  url.searchParams.set("range", `${timezoneColumn}:${timezoneColumn}`);
+  return url.toString();
+}
+
+function updateScheduleZoom() {
+  const zoom = scheduleZoomSteps[scheduleZoomIndex];
+  scheduleFrameWrap.style.setProperty("--schedule-zoom", zoom);
+  scheduleZoomLevel.textContent = `${Math.round(zoom * 100)}%`;
+  document.querySelector("#schedule-zoom-out").disabled = scheduleZoomIndex === 0;
+  document.querySelector("#schedule-zoom-in").disabled =
+    scheduleZoomIndex === scheduleZoomSteps.length - 1;
+}
+
+scheduleTimezone.addEventListener("change", () => {
+  scheduleTimezoneSheet.src = timezoneUrl(scheduleTimezone.value);
+});
+
+document.querySelector("#schedule-zoom-out").addEventListener("click", () => {
+  scheduleZoomIndex = Math.max(0, scheduleZoomIndex - 1);
+  updateScheduleZoom();
+});
+
+document.querySelector("#schedule-zoom-reset").addEventListener("click", () => {
+  scheduleZoomIndex = 1;
+  updateScheduleZoom();
+});
+
+document.querySelector("#schedule-zoom-in").addEventListener("click", () => {
+  scheduleZoomIndex = Math.min(scheduleZoomSteps.length - 1, scheduleZoomIndex + 1);
+  updateScheduleZoom();
+});
+
+scheduleTimezoneSheet.src = timezoneUrl(scheduleTimezone.value);
+updateScheduleZoom();
+</script>
+```

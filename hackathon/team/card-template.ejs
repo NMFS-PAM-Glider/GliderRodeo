@@ -1,0 +1,133 @@
+```{=html}
+<%
+const iconDetails = {
+  github: { className: "fa-brands fa-github", label: "GitHub" },
+  linkedin: { className: "fa-brands fa-linkedin", label: "LinkedIn" },
+  orcid: { className: "fa-brands fa-orcid", label: "ORCID" },
+  website: { className: "fa-solid fa-globe", label: "Personal website" }
+};
+
+const safeLink = (link) =>
+  typeof link === "string" && /^https?:\/\//i.test(link) ? link : null;
+
+const socialLinks = (item) => {
+  const links = [];
+  const addLink = (type, link) => {
+    const normalizedType = type === "chrome" || type === "globe" ? "website" : type;
+    const normalizedLink = safeLink(link);
+    if (iconDetails[normalizedType] && normalizedLink &&
+        !links.some((entry) => entry.type === normalizedType)) {
+      links.push({ type: normalizedType, link: normalizedLink });
+    }
+  };
+
+  ["github", "linkedin", "orcid", "website"].forEach((type) =>
+    addLink(type, item[type])
+  );
+  (Array.isArray(item.social) ? item.social : []).forEach((entry) =>
+    addLink(entry.icon, entry.link)
+  );
+  (Array.isArray(item.links) ? item.links : []).forEach((entry) =>
+    addLink(entry.icon || entry.type, entry.href || entry.link)
+  );
+  return links;
+};
+
+const organizations = (item) =>
+  (Array.isArray(item.organizations) ? item.organizations : [])
+    .map((organization) =>
+      typeof organization === "string" ? organization : organization.name
+    )
+    .filter(Boolean);
+%>
+
+<div class="team-card-grid list">
+<% items.filter((item) => item.title).forEach((item, index) => {
+  const modalId = `team-member-${index}`;
+  const groups = Array.isArray(item.user_groups) ? item.user_groups : [];
+  const expertise = Array.isArray(item.expertise) ? item.expertise : [];
+  const memberOrganizations = organizations(item);
+  const memberSocialLinks = socialLinks(item);
+  const summary = item.bio || item.description || "";
+%>
+  <article class="team-card card" <%- metadataAttrs(item) %>>
+    <% if (item.image) { %>
+    <img src="<%= item.image %>" class="team-card-image card-img-top" alt="Portrait of <%= item.title %>" loading="lazy">
+    <% } %>
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title"><%= item.title %></h2>
+      <% if (item.subtitle || item.role) { %>
+      <p class="team-card-subtitle"><%= item.subtitle || item.role %></p>
+      <% } %>
+      <% if (groups.length) { %>
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        <% groups.forEach((group) => { %>
+        <span class="team-card-badge"><%= group %></span>
+        <% }); %>
+      </div>
+      ```
+      <% } %>
+      <% if (summary) { %>
+      <p class="team-card-summary listing-description"><%= summary %></p>
+      <% } %>
+      <button class="team-card-read-more btn btn-link" type="button"
+              data-bs-toggle="modal" data-bs-target="#<%= modalId %>"
+              aria-label="Read more about <%= item.title %>">
+        Read More &rarr;
+      </button>
+      <% if (memberSocialLinks.length) { %>
+      <div class="team-card-social" aria-label="<%= item.title %> social links">
+        <% memberSocialLinks.forEach((socialLink) => {
+          const details = iconDetails[socialLink.type];
+        %>
+        <a href="<%= socialLink.link %>" class="team-card-social-link"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="<%= item.title %> on <%= details.label %>" title="<%= details.label %>">
+          <i class="<%= details.className %>" aria-hidden="true"></i>
+        </a>
+        <% }); %>
+      </div>
+      <% } %>
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="<%= modalId %>" tabindex="-1"
+       aria-labelledby="<%= modalId %>-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="<%= modalId %>-title"><%= item.title %></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <% if (item.role) { %>
+          <p class="team-modal-role"><strong><%= item.role %></strong></p>
+          <% } %>
+          <% if (memberOrganizations.length) { %>
+          <p><%= memberOrganizations.join(", ") %></p>
+          <% } %>
+          <% if (item.bio) { %>
+          <p><%= item.bio %></p>
+          <% } %>
+          <% if (expertise.length) { %>
+          <h3>Areas of expertise</h3>
+          <ul>
+            <% expertise.forEach((skill) => { %>
+            <li><%= skill %></li>
+            <% }); %>
+          </ul>
+          <% } %>
+          <% if (groups.length) { %>
+          <h3>Hackathon roles</h3>
+          <div class="team-card-badges">
+            <% groups.forEach((group) => { %>
+            <span class="team-card-badge"><%= group %></span>
+            <% }); %>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% }); %>
+</div>

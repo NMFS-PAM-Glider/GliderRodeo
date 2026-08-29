@@ -1,0 +1,30 @@
+---
+title: "Meet the Team"
+format:
+  html:
+    css: team/team-cards.css
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+listing:
+  id: team-listing
+  contents:
+    - team/*.yaml
+    - "!team/header.yaml"
+    - "!team/template.yaml"
+  type: custom
+  template: team/card-template.ejs
+  image-height: "220px"
+  fields: [image, title, subtitle, role, organizations, bio, expertise, user_groups, description, links, social, github, linkedin, orcid, website]
+  field-types:
+    user_groups: badges
+  sort: title
+  grid-columns: 3
+---
+
+Meet the people participating in the Glider Rodeo Hackathon.
+
+The cards below are generated from the member files in `hackathon/team/`.
+
+::: {#team-listing}
+:::
