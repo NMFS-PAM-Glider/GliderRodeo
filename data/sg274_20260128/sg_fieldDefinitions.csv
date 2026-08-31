@@ -1,0 +1,47 @@
+Column_Name,Dataset,Definition,Units
+dive,flight_timeseries_engineering,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
+time,flight_timeseries_engineering,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+dateTime,flight_timeseries_engineering,,
+pitch,flight_timeseries_engineering,The angle between the gliders's longitudinal centerline and the horizontal plane of the earth. A positive pitch represents a 'nose-up' attitude; a negative pitch respresents a 'nose-down' attitude. ,
+roll,flight_timeseries_engineering,The angular rotation of the glider around its' longitudinal axis. ,
+heading,flight_timeseries_engineering,,
+vbdCC,flight_timeseries_engineering,Measurement of the volume change/displacement pf the glider's external oil bladder/buoyancy engine,cubic centimeters (cc)
+dive,flight_timeseries_modeled,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
+time,flight_timeseries_modeled,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+vertSpeed,flight_timeseries_modeled,The velocity along the vertical z-axis during the dive.,centimeters per second (cm/s)
+horzSpeed,flight_timeseries_modeled,The horizontal velocity through the water column during the dive.,centimeters per second (cm/s)
+speed,flight_timeseries_modeled,, 
+speed_qc,flight_timeseries_modeled,, 
+glideAngle,flight_timeseries_modeled,The downward or upward slope angle at which the vehicle moves through the water relative to the horizontal plane. ,degrees (°)
+buoyancy,flight_timeseries_modeled,,
+north_displacement,flight_timeseries_modeled,The estimated distance (in meters) the glider has traveled northward during the dive.,meters (m)
+east_displacement,flight_timeseries_modeled,The estimated distance (in meters) the glider has traveled eastward during the dive.,meters (m)
+dive,GPS_timeseries,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
+startTime,GPS_timeseries,Dive Start Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+startLatitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
+startLongitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
+endTime,GPS_timeseries,Dive End Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+endLatitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
+endLongitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
+duration_hr,GPS_timeseries,Duration (in hours) for the dive,hours (hrs)
+distance_km,GPS_timeseries,"Straight line distance calculation between start and end lat/lons, haversine formula.",kilometers (km)
+maxDepth_m,GPS_timeseries,Maximum depth of the dive in meters.,meters (m)
+dac_n,GPS_timeseries,"Depth averaged current northing, in m/s",meters (m)
+dac_e,GPS_timeseries,"Depth averaged current easting, in m/s",meters (m)
+dac_n_gsm,GPS_timeseries,"Glider Slope Model: Depth averaged current northing, in m/s",meters (m)
+dac_e_gsm,GPS_timeseries,"Glider Slope Model: Depth averaged current easting, in m/s",meters (m)
+dac_qc,GPS_timeseries,,
+avg_speed_n,GPS_timeseries,Flight average speed northing in meters/second,meters per second (m/s)
+avg_speed_e,GPS_timeseries,Flight average speed in easting in meters/second,meters per second (m/s)
+avg_speed_n_gsm,GPS_timeseries,Glider Slope Model (gsm):  Flight average speed northing in meters/second,meters per second (m/s)
+avg_speed_e_gsm,GPS_timeseries,Glider Slope Model (gsm): Flight average speed in easting in meters/second,meters per second (m/s)
+hdm_qc,GPS_timeseries,A quality flag for validity of data dependent on the hydrodynamic model**,
+dive,science_timeseries,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
+time,science_timeseries,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+latitude,science_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
+longitude,science_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
+depth,science_timeseries,Depth in meters,meters (m)
+temperature,science_timeseries,Temperature in Celcius degrees,celcius degrees (°C)
+salinity,science_timeseries,Salinity in Practical Salinity Units (PSU),PSU
+density,science_timeseries,Seawater density in kilograms per cubic meter,kilograms/cubic meter (kg m-3)
+soundVelocity,science_timeseries,Underwater sound velocity in meters/second,meters per second (m/s)

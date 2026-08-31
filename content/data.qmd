@@ -9,9 +9,11 @@ A draft [Data Management Plan](https://docs.google.com/document/d/12bI75Ho0-ega1
 
 # Glider Rodeo Datasets
 
-Link to Google Doc (for those with permissions) <iframe src="https://docs.google.com/spreadsheets/d/1fyHxeri_VOFBRXGSuNiKqbW0iODNe0UmCyOPemWovsU/edit?usp=sharing;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+[Link to Google Doc](https://docs.google.com/spreadsheets/d/1fyHxeri_VOFBRXGSuNiKqbW0iODNe0UmCyOPemWovsU/edit?usp=sharing) (for those with permissions) . Below is a summary of the datasets and their status.
 
-</iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0vGMrpCMdvJiqVUVnYw6wNK1IcKPNhl_I72P8nifpVq-eyk6I9ToMytc0Ucx9Eo0pIiQMt7OUPtHM/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;"></iframe>
+
+
 
 ## Raw Audio Data
 
