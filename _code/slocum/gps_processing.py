@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # read in profiles csv from cloud
-coords = pd.read_csv('')
+glider = 'risso'
+coords = pd.read_csv(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{glider}-20260128/processed-L0/{glider}-20260128-delayed-profiles.csv')
 
 # subset variables of interest and rename
 surfacing_coords = coords.loc[
@@ -23,7 +24,7 @@ cutoff = pd.to_datetime('2026-02-10 05:37')
 surfacing_coords = surfacing_coords[surfacing_coords['startTime'] <= cutoff]
 
 # save to folder 
-surfacing_coords.to_csv('GliderRodeo/data/stenella-20260128/stenella-20260128_GPS.csv', index=False)
+surfacing_coords.to_csv(f'GliderRodeo/data/{glider}-20260128/{glider}-20260128_GPS_timeseries.csv', index=False)
 
 
 # %% FOR TESTING

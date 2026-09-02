@@ -38,4 +38,4 @@ cutoff = pd.to_datetime('2026-02-10 05:37')
 eng_time = eng_time[eng_time['time_utc'] <= cutoff]
 
 # save as csv
-eng_time.to_csv(f'GliderRodeo/data/{glider}-20260128/{glider}-20260128_flight_timeseries_engineering', index=False)
+eng_time.to_csv(f'GliderRodeo/data/{glider}-20260128/{glider}-20260128_flight_timeseries_engineering.csv', index=False)
