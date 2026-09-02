@@ -3,7 +3,9 @@ import pandas as pd
 import xarray as xr
 
 # % load ESD Glider processed engineering timeseries, convert to dataframe, and reset index to inlcude time as reg column
-eng_time_ds = xr.open_dataset('gcs-mnt/swfscesd-glider-deployments-data-out/2026/stenella-20260128/processed-L1/stenella-20260128-delayed-eng.nc')
+glider = 'stenella'
+
+eng_time_ds = xr.open_dataset(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{glider}-20260128/processed-L1/{glider}-20260128-delayed-eng.nc')
 
 eng_time_df = eng_time_ds.to_dataframe()
 eng_time_df = eng_time_df.reset_index()
@@ -36,4 +38,4 @@ cutoff = pd.to_datetime('2026-02-10 05:37')
 eng_time = eng_time[eng_time['time_utc'] <= cutoff]
 
 # save as csv
-eng_time.to_csv('GliderRodeo/data/stenella-20260128/stenella-20260128_engineering.csv', index=False)
+eng_time.to_csv(f'GliderRodeo/data/{glider}-20260128/{glider}-20260128_flight_timeseries_engineering', index=False)
