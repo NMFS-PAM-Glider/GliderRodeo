@@ -716,7 +716,7 @@
     "href": "hackathon/info.html",
     "title": "Information",
     "section": "",
-    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\n\n\n\nTitle\nPreview\nPython {{ d1 }}\n\n\n\n\nComparing Glider Observations with Satellite Data\n\n{{ d1 }}\n\n\nAquaView Tutorial\n\n{{ d1 }}\n\n\n\n\n\nReferences\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAquaview"
+    "text": "Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n\n\n\nThe Glider Rodeo\n\n\n\n\nHackweek Wrapup\n\n\n\n\n\n\n\n\nTutorials\n\n\n\nTitle\nPreview\nPython {{ d1 }}\nR {{ d1 }}\n\n\n\n\nComparing Glider Observations with Satellite Data\n\n{{ d1 }}\n{{ d1 }}\n\n\nAquaView Tutorial\n\n{{ d1 }}\n{{ d1 }}\n\n\n\n\n\nReferences\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAquaview"
   },
   {
     "objectID": "hackathon/prep.html",
