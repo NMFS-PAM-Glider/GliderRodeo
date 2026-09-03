@@ -168,3 +168,43 @@ data %>%
 Soundspeed profile for the WHICEAS mission (which includes the Glider Rodeo).
 
 ![](sg274_20260128_WHICEAS_SSP.png)
+## sg274_20260128_FakeData_EventDetections.csv
+Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!). Field definitions/units for data are found in the table below (fields are the same for EventDetections and HrlyDetections).
+
+Event Detections (ex, sg607_20260128_FakeData_HrlyDetections.csv) These files show different events with a start and end date/time that may be greater than or less than an hour. So, some long humpback whale events in this sheet may extend through several hourly bins from the Hourly Detection file.
+
+## sg274_20260128_FakeData_HrlyDetections.csv
+Hourly Detections (ex, FakeData_HrlyDetections_GliderRodeo2026_Belladonna.csv) These files show positive detections in hourly bins. Effort with no detections are not provided.
+
+```{r det}
+#| echo = FALSE
+#| 
+data %>% 
+  filter(Dataset == "detections") %>%
+  kbl(
+    align = "l", # Justify text to the left (use "c" for center or "r" for right)
+    booktabs = TRUE # Clean, professional tablines
+  ) %>%
+  kable_styling(
+    latex_options = c("striped", "HOLD_position"), # Alternating row shading (gray/white)
+    bootstrap_options = c("striped", "hover", "condensed"), # Web alternative if compiling to HTML
+    full_width = TRUE # Fits text across the full page width with automatic word wrap
+  ) %>%
+  row_spec(
+    0, # Target header row
+    bold = TRUE,
+    extra_css = "border-bottom: 3px solid black;" # Thick bottom border for HTML
+  ) %>%
+  # Apply thick line underneath header for PDF/LaTeX output
+  {
+    if (knitr::is_latex_output()) {
+      row_spec(., 0, bold = TRUE) %>%
+        row_spec(0, extra_latex_after = "\\hline\\noalign{\\hrule height 1.5pt}")
+    } else {
+      .
+    }
+  }
+```
+
+
+

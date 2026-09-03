@@ -1,50 +1,88 @@
 Column_Name,Dataset,Definition,Units
-dive,flight_timeseries_engineering,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
-time,flight_timeseries_engineering,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
-dateTime,flight_timeseries_engineering,,
-pitch,flight_timeseries_engineering,The angle between the gliders's longitudinal centerline and the horizontal plane of the earth. A positive pitch represents a 'nose-up' attitude; a negative pitch respresents a 'nose-down' attitude. ,
-roll,flight_timeseries_engineering,The angular rotation of the glider around its' longitudinal axis. ,
-heading,flight_timeseries_engineering,,
-vbdCC,flight_timeseries_engineering,Measurement of the volume change/displacement pf the glider's external oil bladder/buoyancy engine,cubic centimeters (cc)
-dive,flight_timeseries_modeled,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
-time,flight_timeseries_modeled,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
-vertSpeed,flight_timeseries_modeled,The velocity along the vertical z-axis during the dive.,centimeters per second (cm/s)
-horzSpeed,flight_timeseries_modeled,The horizontal velocity through the water column during the dive.,centimeters per second (cm/s)
-speed,flight_timeseries_modeled,, 
-speed_qc,flight_timeseries_modeled,, 
-glideAngle,flight_timeseries_modeled,The downward or upward slope angle at which the vehicle moves through the water relative to the horizontal plane. ,degrees (°)
-buoyancy,flight_timeseries_modeled,,
-north_displacement,flight_timeseries_modeled,The estimated distance (in meters) the glider has traveled northward during the dive.,meters (m)
-east_displacement,flight_timeseries_modeled,The estimated distance (in meters) the glider has traveled eastward during the dive.,meters (m)
-dive,GPS_timeseries,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
-startTime,GPS_timeseries,Dive Start Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
-startLatitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
-startLongitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
-endTime,GPS_timeseries,Dive End Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
-endLatitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
-endLongitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
-duration_hr,GPS_timeseries,Duration (in hours) for the dive,hours (hrs)
-distance_km,GPS_timeseries,"Straight line distance calculation between start and end lat/lons, haversine formula.",kilometers (km)
-maxDepth_m,GPS_timeseries,Maximum depth of the dive in meters.,meters (m)
-dac_n,GPS_timeseries,"Northward component of the dive depth-average current based on hydrodynamic model, in m/s",meters per second (m/s)
-dac_e,GPS_timeseries,"Eastward component of the dive depth-average current based on hydrodynamic model, in m/s",meters per second (m/s)
-dac_n_gsm,GPS_timeseries,"Glider Slope Model: Depth averaged current northing, in m/s",meters (m)
-dac_e_gsm,GPS_timeseries,"Glider Slope Model: Depth averaged current easting, in m/s",meters (m)
-dac_qc,GPS_timeseries,,
-avg_speed_n,GPS_timeseries,"Northward component of flight average speed based on hydrodynamic model, in meters per second",meters per second (m/s)
-avg_speed_e,GPS_timeseries,"Eastward component of flight average speed based on hydrodynamic model, in meters per second",meters per second (m/s)
-avg_speed_n_gsm,GPS_timeseries,Glider Slope Model (gsm):  Flight average speed northing in meters/second,meters per second (m/s)
-avg_speed_e_gsm,GPS_timeseries,Glider Slope Model (gsm): Flight average speed in easting in meters/second,meters per second (m/s)
-hdm_qc,GPS_timeseries,A quality flag for validity of data dependent on the hydrodynamic model**,
-dive,science_timeseries,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
+startTime,GPS_timeseries,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+endTime,GPS_timeseries,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+latitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
+longitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
+Heading,flight_timeseries_engineering,"c_heading, m_heading",
+Roll,flight_timeseries_engineering,"c_roll, m_roll",
+Distance_over_ground,flight_timeseries_engineering,,
+Speed,flight_timeseries_engineering,,
+Ballast,flight_timeseries_engineering,,
+m_speed_avg,flight_timeseries_engineering,"Average over a dive or climb, reset at next dive or climb (m/s)",meters per second
+m_speed,flight_timeseries_engineering,Vehicle horizontal speed THRU WATER (m/s),meters per second
+m_depth_rate,flight_timeseries_engineering,"Rate of change of depth, >0 is down (m/s)",meters per second
+c_autoballast_state,flight_timeseries_engineering,"Describes the current state of autoballast. The user may also change its value to force autoballast to change state. 
+(enum) # in/out: 
+# 0=uninitialized.; 
+# 1=initialized, still converging; 
+# 2=converged successfully; 
+# 3=converged unsuccessfully: abs(c_dive_bpump) or c_climb_bpump > X_BALLAST_PUMPED_MAX/X_DE_OIL_VOL_MAX; 
+# 4=converged unsuccessfully: c_climb_bpump - c_dive_bpump < c_autoballast_volume (d_bpump_value);  
+# 5=converged unsuccessfully: may be a bit more complicated. Consider examining .mlg ",
+d_use_bpump,flight_timeseries_engineering,"(enum):  
+# 0 Autoballast/Depth rate control (See doco/how-it-works/autoballast.txt); 
+# 1 Reserved - do not use (uses c_bpump_value cc about 0); 
+# 2 Buoyancy Pump absolute (uses c_bpump_value as total difference between dive and climbs); 
+# 3 Buoyancy Pump absolute surface, uses this value during the surface interval (instead of pumping all the way out); 
+# 5 Speed relative to water current. See 'use_bpump=SM_WATER_SPEED' section",
+c_use_bpump,flight_timeseries_engineering,"(enum): 
+# 0 Autoballast/Depth rate control (See doco/how-it-works/autoballast.txt); 
+# 1 Reserved - do not use (uses c_bpump_value cc about 0); 
+# 2 Buoyancy Pump absolute (uses c_bpump_value as total difference between dive and climbs); 
+# 3 Buoyancy Pump absolute surface, uses this value during the surface interval (instead of pumping all the way out); 
+# 5 Speed relative to water current. See 'use_bpump=SM_WATER_SPEED' section",
+c_bpump_value,flight_timeseries_engineering,Commanded bpump value for climb (cc),cubic centimeters (cc)
+d_bpump_value,flight_timeseries_engineering,Commanded bpump value for dive (cc),cubic centimeters (cc)
+c_climb_bpump,flight_timeseries_engineering,Measured bpump value for climb (cc),cubic centimeters (cc)
+c_dive_bpump,flight_timeseries_engineering,Measured bpump value for dive (cc),cubic centimeters (cc)
+use_pitch,flight_timeseries_engineering,"(enum): 
+# 4 Fluid Pumped absolute; 
+# 3 Servo on Pitch; 
+# 2 Pitch, set once from curve; 
+# 1 BattPos",
+c_pitch,flight_timeseries_engineering,Commanded pitch value (radians),radians (rad)
+m_pitch,flight_timeseries_engineering,Measured pitch value (radians),"radians (rad)  (also have a degrees option, m_pitch_deg)"
+d_pitch_value,flight_timeseries_engineering,Commanded pitch value for dives (radians),radians (rad)
+c_pitch_value,flight_timeseries_engineering,Commanded pitch value for climbs (radians),radians (rad)
+m_fin,flight_timeseries_engineering,measured digifin readings in radians,radians (rad)
+c_fin,flight_timeseries_engineering,commanded (by glider) digifin readings in radians,radians (rad)
+m_coulomb_current,flight_timeseries_engineering,instantaneous current,amperage (amp)
+m_water_vx,flight_timeseries_engineering,0 # in/out How fast the water is going. LMC coord. sys.,meters per second (m/s)
+m_water_vy,flight_timeseries_engineering,0 #    used as input here (if u_use_current_correction is true),meters per second (m/s)
+ctd,flight_timeseries_engineering,"Ctd on/off - pulled from science (off no value, identify on/off times) ",text
+Battery_voltage,flight_timeseries_engineering,,
+Battpos,flight_timeseries_engineering,,
 time,science_timeseries,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
+time_utc,science_timeseries,Date/Time converted to epoch time,yyyy-mm-dd hh:mm:ss
 latitude,science_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
 longitude,science_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
 depth,science_timeseries,Depth in meters,meters (m)
+conductivity,science_timeseries,,
 temperature,science_timeseries,Temperature in Celcius degrees,celcius degrees (°C)
+pressure,science_timeseries,,
 salinity,science_timeseries,Salinity in Practical Salinity Units (PSU),PSU
 density,science_timeseries,Seawater density in kilograms per cubic meter,kilograms/cubic meter (kg m-3)
+potential_temperature,science_timeseries,Underwater sound velocity in meters/second,meters per second (m/s)
+potential_density,,,
 soundVelocity,science_timeseries,Underwater sound velocity in meters/second,meters per second (m/s)
+profile_index,profiles,,
+profile_direction,profiles,,
+profile_phase,profiles,,
+start_time,profiles,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+end_time,profiles,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+start_depth,profiles,,
+end_depth,profiles,,
+min_depth,profiles,,
+max_depth,profiles,,
+depth_range,profiles,,
+min_lon,profiles,,decimal degrees
+max_lon,profiles,,decimal degrees
+min_lat,profiles,,decimal degrees
+max_lat,profiles,,decimal degrees
+distance_traveled,profiles,,
+num_points,profiles,,
+time_at_surface_s,profiles,,seconds (s)
+profile_duration_s,profiles,,seconds (s)
 UNIQUE_ID,detections,"A unique ID for the recorder on the metadata sheet that this detection data can be linked to. There should be only one unique ID for any recorder entered. For each UNIQUE_ID and SPECIES combination, there should be the same combination of values for all of the following fields: CALL_TYPE, DETECTON_METHOD, PROTOCOL_REFERENCE, and ANALYSIS_SAMPLING_RATE_HZ. If multiple values are used across one UNIQUE_ID and SPECIES for any of these fields marked with an asterisk (*), enter all values and separate with a semicolon ("";""). A unique ID should have a combination with the minimum components: organization name or code, region or location of data collection, date for data (typically Year and Month of the first date of data collection), and site name or instrument ID for the particular recorder. Additional components could include project name, platform or recorder type, etc., as needed.",Text string
 ANALYSIS_PERIOD_START_DATETIME,detections,"Start date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the start date and time for the time bin of reporting right whales detected for that row of data); for daily presence, the start date would be the beginning date and time for that analysis day). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 ANALYSIS_PERIOD_END_DATETIME,detections,"End date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the end for the time bin of reporting right whales detected for that row of data). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)

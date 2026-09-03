@@ -577,46 +577,181 @@ display: none;
 </div>
 
 
-<p>Glider Rodeo Synthesized (fake!) Marine Mammal Detection Data</p>
+<div id="preliminary-datasets-for-slocum-glider-with-jasco-oceanobserver-capex987" class="section level1">
+<h1>PRELIMINARY datasets for Slocum Glider with JASCO OceanObserver
+‘capex987’</h1>
+<p>Non-audio data from Slocum Glider with JASCO OceanObserver was
+prepared using [CHECK] the Post-mission processing via SWFSC Ecosystem
+Science Division’s <a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html">Slocum
+Glider Data Processing Methods)</a>. Below are descriptions of the
+available datasets:</p>
+<div id="capex987_20260128_flight_timeseries_engineering.csv" class="section level2">
+<h2>capex987_20260128_flight_timeseries_engineering.csv</h2>
+<p>The flight engineering dataset contains information on the pitch,
+roll, heading, etc. for each dive. Methods to develop this dataset can
+be found here (cite!), and definitions/units for data are found in the
+table below. <em>Note: Data are preliminary and require additional
+QAQC.</em></p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Column_Name
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Definition
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="capex987_20260128_gps_timeseries.csv" class="section level2">
+<h2>capex987_20260128_GPS_timeseries.csv</h2>
+<p>GPS time series data is formatted with one row per dive, with start
+and end times and locations for each dive. Movement between the end of
+one dive and the start of the next is due to any surface drift. The GPS
+dataset contains information on the Start and End Time, Latitude,
+Longitude as well as the duration, distance, and max depth for each
+dive. Additional variables are presented in the table (below). Methods
+to develop this dataset can be found here (cite!), and definitions/units
+for data are found in the table below. <em>Note: Data are preliminary
+and require additional QAQC.</em></p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Column_Name
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Definition
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="capex987_20260128_science_timeseries.csv" class="section level2">
+<h2>capex987_20260128_science_timeseries.csv</h2>
+<p>The science dataset contains information on the depth, temperature,
+salinity, density, and sound velocity for each dive. Methods to develop
+this dataset can be found here (cite!), and definitions/units for data
+are found in the table below. <em>Note: Data are preliminary and require
+additional QAQC.</em></p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Column_Name
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Definition
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="capex987_20260128_profiles.csv" class="section level2">
+<h2>capex987_20260128_profiles.csv</h2>
+<p>Profile data.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Column_Name
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Definition
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="capex987_20260128_fakedata_eventdetections.csv" class="section level2">
+<h2>capex987_20260128_FakeData_EventDetections.csv</h2>
 <p>Due to complications beyond our control, accurate acoustic detection
 of cetacean species via manual and/or automated methods could not be
 completed prior to the Hackathon. A set of synthesized (fake!) data was
 provided in the data/detection folder to provide sample formatted data
 if a group would like to lead a project working with marine mammal
 acoustic data (projects developed with these synthesized datasets should
-be reproducible with real datasets in the future!)</p>
-<p>Datasets:</p>
-<ol style="list-style-type: decimal">
-<li><p>Hourly Detections (ex,
-FakeData_HrlyDetections_GliderRodeo2026_Belladonna.csv)</p></li>
-<li></li>
-</ol>
-<p>Dataset Formatting: Datasets are formatted for NOAA’s Makara
-database. Below are field descriptions and formatting:</p>
+be reproducible with real datasets in the future!). Field
+definitions/units for data are found in the table below (fields are the
+same for EventDetections and HrlyDetections).</p>
+<p>Event Detections (ex, sg607_20260128_FakeData_HrlyDetections.csv)
+These files show different events with a start and end date/time that
+may be greater than or less than an hour. So, some long humpback whale
+events in this sheet may extend through several hourly bins from the
+Hourly Detection file.</p>
+</div>
+<div id="capex987_20260128_fakedata_hrlydetections.csv" class="section level2">
+<h2>capex987_20260128_FakeData_HrlyDetections.csv</h2>
+<p>Hourly Detections (ex,
+FakeData_HrlyDetections_GliderRodeo2026_Belladonna.csv) These files show
+positive detections in hourly bins. Effort with no detections are not
+provided.</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
-COLUMN_NAME
+Column_Name
 </th>
 <th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
-DEFINITION
+Dataset
 </th>
 <th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
-ENTRY OPTIONS
+Definition
 </th>
 <th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
-EXAMPLE
-</th>
-<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
-Included in Glider Rodeo Datasets?
+Units
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-UNIQUE_ID*
+UNIQUE_ID
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 A unique ID for the recorder on the metadata sheet that this detection
@@ -636,16 +771,13 @@ include project name, platform or recorder type, etc., as needed.
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-NEFSC_SBNMS_200601_CH3_3
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ANALYSIS_PERIOD_START_DATETIME
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 Start date time of validated data analyzed, for the time scale of the
@@ -659,16 +791,13 @@ information on ISO8601 formats and time zones.
 <td style="text-align:left;">
 DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 </td>
-<td style="text-align:left;">
-2021-01-01T00:00:00-05:00
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ANALYSIS_PERIOD_END_DATETIME
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 End date time of validated data analyzed, for the time scale of the
@@ -680,16 +809,13 @@ information on ISO8601 formats and time zones.
 <td style="text-align:left;">
 DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 </td>
-<td style="text-align:left;">
-2021-01-02T00:00:00-05:00
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ANALYSIS_PERIOD_EFFORT_SECONDS
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The amount of time, in seconds, the effort occurred in (i.e. if the
@@ -699,16 +825,13 @@ be 300).
 <td style="text-align:left;">
 Numeric
 </td>
-<td style="text-align:left;">
-86400
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ANALYSIS_TIME_ZONE
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The time-zone that the analysis was conducted in and that the time
@@ -720,16 +843,13 @@ zone would be i.e. UTC-5).
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-UTC-5
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-SPECIES_CODE*
+SPECIES_CODE
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The species for which analysis was conducted for and the detection
@@ -737,18 +857,16 @@ The species for which analysis was conducted for and the detection
 appropriate code to use for each species.
 </td>
 <td style="text-align:left;">
-see SPECIES_CODE field on Species_Codes tab
-</td>
-<td style="text-align:left;">
-FIWH
-</td>
-<td style="text-align:left;">
-Y
+BBWH = Beaked Whales, FIWH = Fin Whales, HUWH = Humpback Whales, SPWH =
+Sperm Whales, UNDO = Unidentified dolphins
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 ACOUSTIC_PRESENCE
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 Whether the species was detected, possibly detected, not detected, or
@@ -762,35 +880,13 @@ for data gap times within a deployment).
 <td style="text-align:left;">
 “D”; “P”; “N”; “M”
 </td>
-<td style="text-align:left;">
-D
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-N_VALIDATED_DETECTIONS
+CALL_TYPE_CODE
 </td>
 <td style="text-align:left;">
-The number of detections validated and found “true” during the analysis
-period. This column may be left blank if total true detections was not
-tallied for the analysis.
-</td>
-<td style="text-align:left;">
-Numeric or NA
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-CALL_TYPE_CODE*
+detections
 </td>
 <td style="text-align:left;">
 The call type used for the analysis period to determine the species’
@@ -803,18 +899,15 @@ field can be updated accordingly. There should be only one code listed
 per row. No commas should be used in this field.
 </td>
 <td style="text-align:left;">
-see CALL_TYPE_CODE field on Call_Type_Codes tab
-</td>
-<td style="text-align:left;">
-UPCALL
-</td>
-<td style="text-align:left;">
-Y
+NA
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-DETECTION_METHOD*
+DETECTION_METHOD
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 How the data was reviewed for this species’ presence, either “Manual”
@@ -827,16 +920,13 @@ semicolon (“;”).
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-LFDCS
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-PROTOCOL_REFERENCE*
+PROTOCOL_REFERENCE
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 Published reference, DOI, or link to documentation for the detector
@@ -848,16 +938,13 @@ this field.
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-Baumgartner &amp; Mussoline 2011 (<a href="doi:10.1121/1.3562166" class="uri">doi:10.1121/1.3562166</a>); Davis et al. 2017 (<a href="doi:10.1038/s41598-017-13359-3" class="uri">doi:10.1038/s41598-017-13359-3</a>)
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 DETECTION_SOFTWARE_NAME
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The software used for the detection method. This could be either the
@@ -868,16 +955,13 @@ MATLAB).
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-Matlab
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 DETECTION_SOFTWARE_VERSION
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The version number of the software used, if applicable.
@@ -885,16 +969,13 @@ The version number of the software used, if applicable.
 <td style="text-align:left;">
 Text string
 </td>
-<td style="text-align:left;">
-2014b
-</td>
-<td style="text-align:left;">
-Y
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 MIN_ANALYSIS_FREQUENCY_RANGE_HZ
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The minimum frequency (Hz) used for this analysis, if applicable.
@@ -902,18 +983,15 @@ Default value is 0 (Hz). If middle frequencies were viewed for this
 analysis (i.e. 200-1000Hz), this value would be 200.
 </td>
 <td style="text-align:left;">
-Numeric
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-Y
+Hertz (Hz)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 MAX_ANALYSIS_FREQUENCY_RANGE_HZ
+</td>
+<td style="text-align:left;">
+detections
 </td>
 <td style="text-align:left;">
 The maximum frequency (Hz) used for the analysis, if applicable. For
@@ -924,165 +1002,13 @@ recordings’ sample rate (i.e. if sample rate is 48 kHz, the default
 value for this field is 24000).
 </td>
 <td style="text-align:left;">
-Numeric
-</td>
-<td style="text-align:left;">
-1000
-</td>
-<td style="text-align:left;">
-Y
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ANALYSIS_SAMPLING_RATE_HZ
-</td>
-<td style="text-align:left;">
-The sample rate used for the analysis. For example, if the recorder had
-a sample rate of 48kHz, and the data was resampled to 2kHz for the
-analysis, then this value would be 2000.
-</td>
-<td style="text-align:left;">
-Numeric
-</td>
-<td style="text-align:left;">
-2000
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-QC_PROCESSING
-</td>
-<td style="text-align:left;">
-Was the analysis conducted in real time (i.e. the recorder did not have
-to be retrieved for the analysis), or was analysis done post-processing
-recordings (i.e. analysis done after the recorder was retrieved)?
-</td>
-<td style="text-align:left;">
-“Real-time” or “Archival”
-</td>
-<td style="text-align:left;">
-Archival
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-LOCALIZED_LATITUDE
-</td>
-<td style="text-align:left;">
-The estimated latitude (in DD) of the localized detection, if applicable
-</td>
-<td style="text-align:left;">
-Numeric in DD
-</td>
-<td style="text-align:left;">
-42.4697
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-LOCALIZED_LONGITUDE
-</td>
-<td style="text-align:left;">
-The estimated latitude (in DD) of the localized detection, if applicable
-</td>
-<td style="text-align:left;">
-Numeric in DD
-</td>
-<td style="text-align:left;">
--70.2403
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-DETECTION_DISTANCE_M
-</td>
-<td style="text-align:left;">
-The estimated distance (in meters) of the detection, if applicable
-</td>
-<td style="text-align:left;">
-Numeric
-</td>
-<td style="text-align:left;">
-8500
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-LOCALIZATION_DISTANCE_METHOD
-</td>
-<td style="text-align:left;">
-The method used to localize and/or estimate distance for the detections.
-Do not use commas in this field.
-</td>
-<td style="text-align:left;">
-Text string
-</td>
-<td style="text-align:left;">
-Cross-correlation
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-LOCALIZATION_DISTANCE_PROTOCOL
-</td>
-<td style="text-align:left;">
-Published reference, DOI, or link to documentation for the
-localization/distance estimation method used (and/or analysis method).
-If not available, “Unpublished” should be used. Separate multiple
-entries with a semicolon (“;”) and have doi in parenthesis following
-Author Year (if available). Do not use commas in this field.
-</td>
-<td style="text-align:left;">
-Text string
-</td>
-<td style="text-align:left;">
-Stafford et al. 1998 (doi.org:10.1121/1.423944)
-</td>
-<td style="text-align:left;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-<ul>
-<li>Fields with an asterisk (*) should have the same combination of
-values across for all entries of that species for that UNIQUE_ID
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-N
+Hertz (Hz)
 </td>
 </tr>
 </tbody>
-</table></li>
-</ul>
+</table>
+</div>
+</div>
 
 
 

@@ -23,7 +23,7 @@ The slides and recordings will be linked from this page as they become available
 # Tutorials
 
 | Title | Preview | Python {{ d1 }} | R {{ d1 }} |
-|:-----------------|:--------------------:|:------------------------------:|
+|:-----------------|:--------------------:|:------------------------------:|:------------------------------:|
 | Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | <a href="/_code/tutorials/GliderTracks.ipynb" download>{{ d1 }}</a> | <a href="/_code/tutorials/GliderTracks.Rmd" download>{{ d1 }}</a>
 | AquaView Tutorial | [<i class="bi bi-eye"></i>](https://aquaview.org/) | <a href="" download>{{ d1 }}</a> | <a href="" download>{{ d1 }}</a>
 
