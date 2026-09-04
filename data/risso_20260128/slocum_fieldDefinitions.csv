@@ -65,24 +65,24 @@ density,science_timeseries,Seawater density in kilograms per cubic meter,kilogra
 potential_temperature,science_timeseries,Underwater sound velocity in meters/second,meters per second (m/s)
 potential_density,,,
 soundVelocity,science_timeseries,Underwater sound velocity in meters/second,meters per second (m/s)
-profile_index,profiles,,
-profile_direction,profiles,,
-profile_phase,profiles,,
-start_time,profiles,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
-end_time,profiles,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
-start_depth,profiles,,
-end_depth,profiles,,
-min_depth,profiles,,
-max_depth,profiles,,
-depth_range,profiles,,
-min_lon,profiles,,decimal degrees
-max_lon,profiles,,decimal degrees
-min_lat,profiles,,decimal degrees
-max_lat,profiles,,decimal degrees
-distance_traveled,profiles,,
+profile_index,profiles,Incremental index of profile phase from intial surfacing to final surfacing for the profile. ,numeric in 0.5 increments
+profile_direction,profiles,"Profile Direction: 0 = surfacing or inflection, 1 = descent, -1 = ascent","numeric (0, 1, -1)"
+profile_phase,profiles,"Profile phase: surfacing, descent, inflection, ascent",Text string
+start_time,profiles,Start of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+end_time,profiles,End of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+start_depth,profiles,Depth at start of profile in meters,meters (m)
+end_depth,profiles,Depth at end of profile in meters,meters (m)
+min_depth,profiles,Minimum profile depth in meters,meters (m)
+max_depth,profiles,Maximum profile depth in meters,meters (m)
+depth_range,profiles,Profile Depth Range (maximum - minimum depth) in meters,meters (m)
+min_lon,profiles,Minimum longitude during profile in decimal degrees (DD.DDDD),decimal degrees
+max_lon,profiles,Maximum longitude during profile in decimal degrees (DD.DDDD),decimal degrees
+min_lat,profiles,Minimum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
+max_lat,profiles,Maximum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
+distance_traveled,profiles,Distance traveled during profile in meters,meters (m)
 num_points,profiles,,
-time_at_surface_s,profiles,,seconds (s)
-profile_duration_s,profiles,,seconds (s)
+time_at_surface_s,profiles,Length of time at surface in seconds (s),seconds (s)
+profile_duration_s,profiles,Length of time from start to end of profile in seconds (s),seconds (s)
 UNIQUE_ID,detections,"A unique ID for the recorder on the metadata sheet that this detection data can be linked to. There should be only one unique ID for any recorder entered. For each UNIQUE_ID and SPECIES combination, there should be the same combination of values for all of the following fields: CALL_TYPE, DETECTON_METHOD, PROTOCOL_REFERENCE, and ANALYSIS_SAMPLING_RATE_HZ. If multiple values are used across one UNIQUE_ID and SPECIES for any of these fields marked with an asterisk (*), enter all values and separate with a semicolon ("";""). A unique ID should have a combination with the minimum components: organization name or code, region or location of data collection, date for data (typically Year and Month of the first date of data collection), and site name or instrument ID for the particular recorder. Additional components could include project name, platform or recorder type, etc., as needed.",Text string
 ANALYSIS_PERIOD_START_DATETIME,detections,"Start date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the start date and time for the time bin of reporting right whales detected for that row of data); for daily presence, the start date would be the beginning date and time for that analysis day). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 ANALYSIS_PERIOD_END_DATETIME,detections,"End date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the end for the time bin of reporting right whales detected for that row of data). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)

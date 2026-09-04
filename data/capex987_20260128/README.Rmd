@@ -124,7 +124,7 @@ data %>%
   }
 ```
 
-## capex987_20260128_profiles.csv
+## capex987_20260128_delayed_profiles.csv
 
 Profile data.
 
@@ -133,7 +133,7 @@ Profile data.
 #| echo = FALSE
 #| 
 data %>% 
-  filter(Dataset == "profile") %>%
+  filter(Dataset == "profiles") %>%
   kbl(
     align = "l", # Justify text to the left (use "c" for center or "r" for right)
     booktabs = TRUE # Clean, professional tablines

@@ -13,3 +13,25 @@ DETECTION_SOFTWARE_NAME,detections,"The software used for the detection method. 
 DETECTION_SOFTWARE_VERSION,detections,"The version number of the software used, if applicable.",Text string
 MIN_ANALYSIS_FREQUENCY_RANGE_HZ,detections,"The minimum frequency (Hz) used for this analysis, if applicable. Default value is 0 (Hz). If middle frequencies were viewed for this analysis (i.e. 200-1000Hz), this value would be 200.",Hertz (Hz)
 MAX_ANALYSIS_FREQUENCY_RANGE_HZ,detections,"The maximum frequency (Hz) used for the analysis, if applicable. For example, if the original recordings had a sample rate of 48kHz, and the data was either resampled to 2kHz for the analysis, or only viewed at up to 1kHz, then this value would be 1000. Default value is relative to the recordings' sample rate (i.e. if sample rate is 48 kHz, the default value for this field is 24000).",Hertz (Hz)
+startTime,GPS_timeseries,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+endTime,GPS_timeseries,Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+latitude,GPS_timeseries,Latitude in decimal degrees (DD.DDDD),decimal degrees
+longitude,GPS_timeseries,Longitude in decimal degrees (DD.DDDD),decimal degrees
+profile_index,profiles,Incremental index of profile phase from intial surfacing to final surfacing for the profile. ,numeric in 0.5 increments
+profile_direction,profiles,"Profile Direction: 0 = surfacing or inflection, 1 = descent, -1 = ascent","numeric (0, 1, -1)"
+profile_phase,profiles,"Profile phase: surfacing, descent, inflection, ascent",Text string
+start_time,profiles,Start of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+end_time,profiles,End of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS),YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+start_depth,profiles,Depth at start of profile in meters,meters (m)
+end_depth,profiles,Depth at end of profile in meters,meters (m)
+min_depth,profiles,Minimum profile depth in meters,meters (m)
+max_depth,profiles,Maximum profile depth in meters,meters (m)
+depth_range,profiles,Profile Depth Range (maximum - minimum depth) in meters,meters (m)
+min_lon,profiles,Minimum longitude during profile in decimal degrees (DD.DDDD),decimal degrees
+max_lon,profiles,Maximum longitude during profile in decimal degrees (DD.DDDD),decimal degrees
+min_lat,profiles,Minimum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
+max_lat,profiles,Maximum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
+distance_traveled,profiles,Distance traveled during profile in meters,meters (m)
+num_points,profiles,,
+time_at_surface_s,profiles,Length of time at surface in seconds (s),seconds (s)
+profile_duration_s,profiles,Length of time from start to end of profile in seconds (s),seconds (s)

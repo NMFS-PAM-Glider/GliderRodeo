@@ -1309,8 +1309,8 @@ meters per second (m/s)
 </tbody>
 </table>
 </div>
-<div id="stenella_20260128_profiles.csv" class="section level2">
-<h2>stenella_20260128_profiles.csv</h2>
+<div id="stenella_20260128_delayed_profiles.csv" class="section level2">
+<h2>stenella_20260128_delayed_profiles.csv</h2>
 <p>Profile data.</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -1331,6 +1331,257 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+profile_index
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Incremental index of profile phase from intial surfacing to final
+surfacing for the profile.
+</td>
+<td style="text-align:left;">
+numeric in 0.5 increments
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+profile_direction
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Profile Direction: 0 = surfacing or inflection, 1 = descent, -1 = ascent
+</td>
+<td style="text-align:left;">
+numeric (0, 1, -1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+profile_phase
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Profile phase: surfacing, descent, inflection, ascent
+</td>
+<td style="text-align:left;">
+Text string
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start_time
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Start of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS)
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+end_time
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+End of Profile Date and Time (YYYY-MM-DD HH:mm:ss.SSSSSSSSS)
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD HH:mm:ss.SSSSSSSSS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start_depth
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Depth at start of profile in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+end_depth
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Depth at end of profile in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+min_depth
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Minimum profile depth in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+max_depth
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Maximum profile depth in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+depth_range
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Profile Depth Range (maximum - minimum depth) in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+min_lon
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Minimum longitude during profile in decimal degrees (DD.DDDD)
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+max_lon
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Maximum longitude during profile in decimal degrees (DD.DDDD)
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+min_lat
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Minimum latitude during profile in decimal degrees (DD.DDDD)
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+max_lat
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Maximum latitude during profile in decimal degrees (DD.DDDD)
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+distance_traveled
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Distance traveled during profile in meters
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+num_points
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_at_surface_s
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Length of time at surface in seconds (s)
+</td>
+<td style="text-align:left;">
+seconds (s)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+profile_duration_s
+</td>
+<td style="text-align:left;">
+profiles
+</td>
+<td style="text-align:left;">
+Length of time from start to end of profile in seconds (s)
+</td>
+<td style="text-align:left;">
+seconds (s)
+</td>
 </tr>
 </tbody>
 </table>
