@@ -27,6 +27,9 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libnetcdf-dev
+
       - name: Install dependencies with renv
         uses: r-lib/actions/setup-renv@v2
         with:
