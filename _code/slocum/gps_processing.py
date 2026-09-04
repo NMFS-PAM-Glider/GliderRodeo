@@ -3,12 +3,14 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # set global vars
-GLIDER = 'risso'
-START_TIME_CUTOFF = '2026-01-28 23:15:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
-END_TIME_CUTOFF = '2026-02-10 08:05:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
+GLIDER = 'capex987'
+START_TIME_CUTOFF = '2026-01-29 00:50:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
+END_TIME_CUTOFF = '2026-02-10 09:45:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
 
 # read in profiles csv from cloud
-coords = pd.read_csv(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-profiles.csv')
+coords = pd.read_csv(f'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/{GLIDER}_20260128/esd data structure/data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-profiles.csv')
+# coords = pd.read_csv(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-profiles.csv')
+
 # subset variables of interest and rename
 surfacing_coords = coords.loc[
     coords['profile_phase'] == 'surfacing', 
@@ -32,7 +34,7 @@ surfacing_coords = surfacing_coords[
 ]
 
 # save
-surfacing_coords.to_csv(f'GliderRodeo/data/{GLIDER}-20260128/{GLIDER}-20260128_GPS_timeseries.csv', index=False)
+surfacing_coords.to_csv(f'GliderRodeo/data/{GLIDER}_20260128/{GLIDER}-20260128_GPS_timeseries.csv', index=False)
 
 # %% FOR TESTING
 surfacing_coords = surfacing_coords.sort_values(by='startTime')

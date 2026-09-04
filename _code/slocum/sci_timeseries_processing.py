@@ -3,13 +3,14 @@ import pandas as pd
 import xarray as xr
 
 # set global vars
-GLIDER = 'capex987'
-START_TIME_CUTOFF = '2026-01-29 00:55:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
-END_TIME_CUTOFF = '2026-02-10 09:41:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
+GLIDER = 'stenella'
+START_TIME_CUTOFF = '2026-01-28 20:45:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
+END_TIME_CUTOFF = '2026-02-10 05:40:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
 
 
 # % load ESD Glider processed science timeseries, convert to dataframe, and reset index to inlcude time as reg column
-sci_time_ds = xr.open_dataset(f'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/{GLIDER}_20260128/esd data structure/data-out/2026/{GLIDER}-20260128/processed-L1/{GLIDER}-20260128-delayed-sci.nc')
+# sci_time_ds = xr.open_dataset(f'gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/{GLIDER}_20260128/esd data structure/data-out/2026/{GLIDER}-20260128/processed-L1/{GLIDER}-20260128-delayed-sci.nc')
+sci_time_ds = xr.open_dataset(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L1/{GLIDER}-20260128-delayed-sci.nc')
 
 sci_time_df = sci_time_ds.to_dataframe()
 sci_time_df = sci_time_df.reset_index()
