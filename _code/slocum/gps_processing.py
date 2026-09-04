@@ -2,10 +2,13 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# read in profiles csv from cloud
-glider = 'risso'
-coords = pd.read_csv(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{glider}-20260128/processed-L0/{glider}-20260128-delayed-profiles.csv')
+# set global vars
+GLIDER = 'risso'
+START_TIME_CUTOFF = '2026-01-28 23:15:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
+END_TIME_CUTOFF = '2026-02-10 08:05:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
 
+# read in profiles csv from cloud
+coords = pd.read_csv(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-profiles.csv')
 # subset variables of interest and rename
 surfacing_coords = coords.loc[
     coords['profile_phase'] == 'surfacing', 
@@ -19,33 +22,37 @@ surfacing_coords['startTime'] = pd.to_datetime(surfacing_coords['startTime'])
 surfacing_coords['endTime'] = surfacing_coords['endTime'].str.strip()
 surfacing_coords['endTime'] = pd.to_datetime(surfacing_coords['endTime'])
 
-# optional, cut off extra data points before and after rodeo
-cutoff = pd.to_datetime('2026-02-10 05:37')
-surfacing_coords = surfacing_coords[surfacing_coords['startTime'] <= cutoff]
+# only keep data between cutoff_start and cutoff_end
+cutoff_start = pd.to_datetime(START_TIME_CUTOFF)
+cutoff_end = pd.to_datetime(END_TIME_CUTOFF)
 
-# save to folder 
-surfacing_coords.to_csv(f'GliderRodeo/data/{glider}-20260128/{glider}-20260128_GPS_timeseries.csv', index=False)
+surfacing_coords = surfacing_coords[
+    (surfacing_coords['startTime'] >= cutoff_start) & 
+    (surfacing_coords['startTime'] <= cutoff_end)
+]
 
+# save
+surfacing_coords.to_csv(f'GliderRodeo/data/{GLIDER}-20260128/{GLIDER}-20260128_GPS_timeseries.csv', index=False)
 
 # %% FOR TESTING
-# surfacing_coords = surfacing_coords.sort_values(by='start_time')
+surfacing_coords = surfacing_coords.sort_values(by='startTime')
 
-# plt.figure(figsize=(8, 6))
-# plt.plot(
-#     surfacing_coords['Longitude'], 
-#     surfacing_coords['Latitude'], 
-#     marker='o',       # Adds a dot for every surfacing event
-#     linestyle='-',    # Connects the dots with a line to show the path
-#     color='b',        # Blue color
-#     alpha=0.7         # Slight transparency
-# )
+plt.figure(figsize=(8, 6))
+plt.plot(
+    surfacing_coords['longitude'], 
+    surfacing_coords['latitude'], 
+    marker='o',       # Adds a dot for every surfacing event
+    linestyle='-',    # Connects the dots with a line to show the path
+    color='b',        # Blue color
+    alpha=0.7         # Slight transparency
+)
 
-# plt.title('Glider Surfacing Trajectory (stenella-20260128)')
-# plt.xlabel('Longitude')
-# plt.ylabel('Latitude')
-# plt.grid(True, linestyle='--', alpha=0.5)
+plt.title(f'Glider Surfacing Trajectory ({GLIDER}-20260128)')
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.grid(True, linestyle='--', alpha=0.5)
 
-# plt.gca().set_aspect('equal', adjustable='datalim') 
+plt.gca().set_aspect('equal', adjustable='datalim') 
 
-# plt.tight_layout()
-# plt.show()
+plt.tight_layout()
+plt.show()
