@@ -11,9 +11,14 @@ A draft [Data Management Plan](https://docs.google.com/document/d/12bI75Ho0-ega1
 
 [Link to Google Doc](https://docs.google.com/spreadsheets/d/1fyHxeri_VOFBRXGSuNiKqbW0iODNe0UmCyOPemWovsU/edit?usp=sharing) (for those with permissions) . Below is a summary of the datasets and their status.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0vGMrpCMdvJiqVUVnYw6wNK1IcKPNhl_I72P8nifpVq-eyk6I9ToMytc0Ucx9Eo0pIiQMt7OUPtHM/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0vGMrpCMdvJiqVUVnYw6wNK1IcKPNhl_I72P8nifpVq-eyk6I9ToMytc0Ucx9Eo0pIiQMt7OUPtHM/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
 
+</iframe>
 
+:::{.callout-note appearance="simple"}
+## Note about Data Processing Methods
+Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve.
+:::
 
 ## Raw Audio Data
 
@@ -22,17 +27,21 @@ Raw audio data is offloaded from the instrument, reformatted to FLAC using a sta
 Raw audio data is **not** available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).
 
 ## Soundscape Analysis
-Audio data was analyzed to provide Hybrid-millidecade band levels ([Martin et al 2021](https://doi.org/10.1121/10.0003324)) using [YAWN](https://github.com/JPalmerK/YAWN_functions) (Yet Another Way to implement Noise analysis).  
+
+Audio data was analyzed to provide Hybrid-millidecade band levels ([Martin et al 2021](https://doi.org/10.1121/10.0003324)) using [YAWN](https://github.com/JPalmerK/YAWN_functions) (Yet Another Way to implement Noise analysis).
 
 ## Marine Mammal Acoustic Detections
-Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!). 
+
+Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!).
 
 ## Environmental Data
+
 *Stay Tuned!*
 
 ## GPS Data
+
 *Stay Tuned!*
 
 ## Engineering, Flight, and Profile Data
-*Stay Tuned!*
 
+*Stay Tuned!*
