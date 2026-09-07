@@ -1,11 +1,14 @@
+# WORK IN PROGRESS - PyGlider Processing Methods
 import logging
-import os
 import pyglider.seaexplorer as seaexplorer
-print("Loading from:", seaexplorer.__file__)
 import pyglider.ncprocess as ncprocess
 import pyglider.utils as pgutils
 from pathlib import Path
+import matplotlib.pyplot as plt
+import pandas as pd
+import xarray as xr
 
+# %% Basic PyGlider processing
 logging.basicConfig(
     filename= "data/SEA117-M026_20260128/SEA117-M026_20260128-processing.log",
     filemode="w",
@@ -59,3 +62,95 @@ if True:
 
     #--------------------------------------------------------------------------
     logging.info("Completed scheduled processing")
+
+
+
+
+# %% Processing PyGlider L0 Profile NetCDFs created above
+# prep data from nc files 
+# time base for files is legato_temperature (payload clock)
+# file_path = "gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/SEA117-MO26_20260128/L0-profiles/*.nc"
+
+# ds = xr.open_mfdataset(
+#     file_path, 
+#     combine='nested', 
+#     concat_dim='time',
+#     data_vars='minimal',
+#     coords='minimal', 
+#     compat='override'
+# )
+
+# df = ds.to_dataframe().reset_index()
+
+# profiles = df.sort_values(by='time').reset_index(drop=True)
+
+# # Save time running above script
+# profiles.to_csv('GliderRodeo/data/SEA117-M026_20260128/raw_timeseries.csv', index=False)
+
+# read in raw data and remove extra data
+df = pd.read_csv('GliderRodeo/data/SEA117-M026_20260128/raw_timeseries.csv')
+
+df['time'] = pd.to_datetime(df['time'])
+
+# remove extra data before and after rodeo
+START_TIME_CUTOFF = '2026-01-28 21:40:00' # Format: 'YYYY-MM-DD HH:MM:SS'
+END_TIME_CUTOFF = '2026-02-10 06:15:00' # Format: 'YYYY-MM-DD HH:MM:SS'
+
+cutoff_start = pd.to_datetime(START_TIME_CUTOFF)
+cutoff_end = pd.to_datetime(END_TIME_CUTOFF)
+
+df = df[
+    (df['time'] >= cutoff_start) & 
+    (df['time'] <= cutoff_end)
+]
+
+# Create surface gps csv
+coord_vars = ['time', 'lat', 'lon']
+coords = df[vars]
+coords = coords.rename(columns={'time': 'time_utc', 'lat':'latitude', 'lon':'longitude'})
+
+# clean data (remove na)
+surfacing_coords = coords.dropna()
+
+# save
+surfacing_coords.to_csv('GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128_GPS_timeseries.csv', index=False)
+
+# for testing
+# surfacing_coords = surfacing_coords.sort_values(by='time_utc')
+
+# plt.figure(figsize=(8, 6))
+# plt.plot(
+#     surfacing_coords['longitude'], 
+#     surfacing_coords['latitude'], 
+#     marker='o',       # Adds a dot for every surfacing event
+#     linestyle='-',    # Connects the dots with a line to show the path
+#     color='b',        # Blue color
+#     alpha=0.7         # Slight transparency
+# )
+
+# plt.title('Glider Surfacing Trajectory (SEA117_M026-20260128)')
+# plt.xlabel('Longitude')
+# plt.ylabel('Latitude')
+# plt.grid(True, linestyle='--', alpha=0.5)
+
+# plt.gca().set_aspect('equal', adjustable='datalim') 
+
+# plt.tight_layout()
+# plt.show()
+
+# Create eng csv
+eng_vars = ['time', 'heading', 'pitch', 'roll', 'distance_over_ground', 'profile_index', 'profile_direction', 'trajectory', 'latitude', 'longitude', 'depth']
+coords = df[vars]
+coords = coords.rename(columns={'time': 'time_utc', 'lat':'latitude', 'lon':'longitude'})
+
+# clean data (remove na)
+surfacing_coords = coords.dropna()
+
+# save
+surfacing_coords.to_csv('GliderRodeo/data/SEA117-M026_20260128/SEA117-M026_20260128_GPS_timeseries.csv', index=False)
+
+# Create sci csv
+
+
+
+
