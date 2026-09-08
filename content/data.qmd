@@ -15,16 +15,31 @@ A draft [Data Management Plan](https://docs.google.com/document/d/12bI75Ho0-ega1
 
 </iframe>
 
-:::{.callout-note appearance="simple"}
+::: {.callout-note appearance="simple"}
 ## Note about Data Processing Methods
-Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve.
+
+Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve. Specific methods for pre-processing vary by glider/PAM system, and are provided in the [Pre-Processing section]().
 :::
 
 ## Raw Audio Data
 
-Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the [National Centers for Environmental Information Passive Acoustic Data Portal](https://www.ncei.noaa.gov/products/passive-acoustic-data) after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.
+Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Data will be made publicly available via the [National Centers for Environmental Information Passive Acoustic Data Portal](https://www.ncei.noaa.gov/products/passive-acoustic-data) after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.
 
-Raw audio data is **not** available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).
+Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:
+
+- *Offloading the data from the PAM system,*
+
+- *Decompressing files,*
+
+- *Creating LTSAs,*
+
+- *QAQC,*
+
+- *Decimating files (lower sample rates are useful for different analyses), and*
+
+- *Updating the deployment tracker.*
+
+Raw audio data is not available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).
 
 ## Soundscape Analysis
 
@@ -34,14 +49,36 @@ Audio data was analyzed to provide Hybrid-millidecade band levels ([Martin et al
 
 Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!).
 
-## Environmental Data
+The synthesized datasets are saved ad '**_FakeData_EventDetections.csv' and '**_FakeData_HrlyDetections.csv' for each glider.
 
-*Stay Tuned!*
+## Environmental Data
+[Environmental Data Processing](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html) Methods for extracting and processing environmental data collected during glider deployments are provided for the Seaglider ([link to Agate instructions](https://sfregosi.github.io/agate/)) and Slocum ([link to ESD instructions](https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html)). Hefring environmental is extracted from the Hefring website. Environmental data are saved as 'data/**_science_timeseries.csv' for each glider. 
 
 ## GPS Data
-
-*Stay Tuned!*
+GPS data are identified for each glider surfacing, and estimated GPS points for the subsurface profiles are estimated. GPS data are saved as 'data/**_GPS_timeseries.csv'
 
 ## Engineering, Flight, and Profile Data
+Glider engineering and profile data varies by platform (methods and output). See the detailed methods for each glider/pam system in the Pre-processing methods, below. 
 
-*Stay Tuned!*
+## Deployment Summaries
+Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths can be found [here](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/DeploymentSummaries.html) 
+
+## Pre-Processing Methods by Glider
+Each section below links to detailed methods for each glider/pam system combination
+
+-   [Seaglider - WISPR](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-wispr.html)
+
+-   [Slocum - WISPR 3](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-wispr3.html)
+
+-   [Slocum - DMON 2](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-dmon2.html)
+
+-   [Oceanscout - WISPR 6.1](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/oceanscout-wispr6.html)
+
+-   [Alseamar](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/alseamar.html)
+
+-   [Environmental Data Processing:](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html) Methods for extracting and processing environmental data collected during glider deployments
+
+:::{.callout-note appearance="simple"}
+## Note about PreProcessing Methods
+Pre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve.
+:::

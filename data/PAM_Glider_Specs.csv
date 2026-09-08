@@ -1,9 +1,9 @@
-Owner,Type,Manufacturer,PAM system,Glider ID,Glider Name,Hydrophone Type,Hydrophone SN,Battery Type,Additional Sensors,Glider Lab Spec Sheet
-SWFSC,Slocum G3S,TWR,DMON2,1025,risso,NA,65,Lithium rechargable standard (215 amp hrs),"CTD, ECO puck, oxegyn optode, PAR",Fleet Status
-SWFSC,Slocum G3S,TWR,WISPR 3.0,1031,stenella,HTI-99HF,856196,Lithium rechargable standard (215 amp hrs),"CTD, ECO puck, oxegyn optode, PAR",Fleet Status
-OSU,Seaglider M1,Kongsberg,WISPR 3.0,SG607,Will,HTI-92WB,,,CTD,
-OSU,Seaglider M1,Kongsberg,WISPR 3.0,SG679,Kathy,HTI-92WB,,,CTD,
-PIFSC,Seaglider SGX,UW/IOP,WISPR 3.0,SG273,NA,,,,CTD,
-Cornell,Oceanscout,Hefring,WISPR 6.1,belladonna,belladonna,,,,,
-Alseamar,Seaexplorer,Alseamar,Auris,SEA117,SEA117,Auris,,Lithium rechargeable,CTD (RBR Legato),Specifications in Reports(https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/supplement)
-Teledyne,Slocum,TWR,JASCO Observer,capex987,capex987,"M36-V35-EXBH-100, M36-V35-100, M36-V35-100, M36-V35-100","H001896, H001305, H001202, H001203",,CTD (RBRlegato3),
+Glider Name,Owner,Type,Manufacturer,PAM system,Glider ID,Hydrophone Type,Hydrophone SN,Battery Type,Battery Capacity,Additional Sensors,Notes,Glider Lab Spec Sheet
+risso,SWFSC,Slocum G3S,TWR,DMON2,1025,NA,65,Lithium rechargable standard ,215 Amp Hours,CTD (Seabird CTD),,Fleet Status
+stenella,SWFSC,Slocum G3S,TWR,WISPR 3.0,1031,HTI-99HF,856196,Lithium rechargable standard ,215 Amp Hours,CTD (Seabird CTD),,Fleet Status
+Will,OSU,Seaglider M1,Kongsberg,WISPR 3.0,SG607,HTI-92WB,653007 (-162.5 dB),Lithium primary,,Seabird CTD,,
+NA,PIFSC,Seaglider SGX,UW/IOP,WISPR 3.0,SG274,HTI-92WB,635054 (-164.1 dB),Lithium primary,,RBR Legato CTD,,
+belladonna,Cornell,Oceanscout,Hefring,WISPR 6.1,belladonna,HTI-92WB,,Lithium Primary MnO2,1.2 kW-hours,CT (JFE ACTD-OEMU-Z105),,
+rosie,Cornell,Oceanscout,Hefring,WISPR 6.1,rosie,HTI-92WB,,Lithium Primary MnO2,1.2 kW-hours,CT (JFE ACTD-OEMU-Z105),Lost at Sea,
+SEA117,Alseamar,Seaexplorer,Alseamar,Auris,SEA117,Auris,,Lithium rechargeable,Unknown,CTD (RBR Legato),4 channels at 96kHz. Specifications in Reports(https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/supplement),
+capex987,Teledyne,Slocum G3S,TWR,JASCO Observer,capex987,"M36-V35-EXBH-100, M36-V35-100, M36-V35-100, M36-V35-100","H001896, H001305, H001202, H001203",Lithium rechargable standard ,215 Amp Hours,CTD (RBRlegato3),"5 channels (4 at 64kHz, 1 at 512 kHz) from 4 hydrophones",

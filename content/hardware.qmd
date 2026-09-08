@@ -25,6 +25,7 @@ oceo sensors (below).
 
 ```{r gliderTable}
 #| echo: false
+#| caption: Glider Specifications
 
 gliderTable <- read.csv(here("data/PAM_Glider_Specs.csv"))
 

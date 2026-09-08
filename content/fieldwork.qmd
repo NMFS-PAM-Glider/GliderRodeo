@@ -122,11 +122,13 @@ Mon 0800 HST - Start FAST mode
 Mon 2000 HST - proceed to recovery - fly as you need to get as close as possible to recovery location
 
 ### Phase 7: Recovery 
-
-::: columns
-::: {.column width="50%"}
+  
+    
+      
+    
 ```{r waypointsTable}
 #| echo: false
+#| caption: Trackline Waypoints
 
 waypointsTable <- read.csv(here("data/waypoints.csv"))
 
@@ -137,14 +139,6 @@ waypointsTable %>%
   )
 
 ```
-:::
-
-::: {.column width="50%"}
-![](images/RodeoTracks.png)
-:::
-:::
-
-
 
 
 

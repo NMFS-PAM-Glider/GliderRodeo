@@ -14,6 +14,10 @@ There is no cost for participating in the event.
 # Schedule
 
 Choose the time zone that works best for you. 
+Green: Highlights East Coast time Zone
+Yellow: Tutorials & Lecctures for EVERYONE!! 
+Blue: Highlights Hawaii time zone
+
 
 ```{=html}
 <div class="schedule-sheet">
