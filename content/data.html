@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/pre-processing.html" rel="next">
+<link href="../hackathon/index.html" rel="next">
 <link href="../content/fieldwork.html" rel="prev">
 <link href="../content/images/GliderRodeo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -315,65 +315,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Data</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../content/pre-processing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pre-Processing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/seaglider-wispr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Seaglider - WISPR</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/seaglider-pmar-xl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Seaglider - PMAR XL</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/slocum-wispr3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slocum - WISPR 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/slocum-dmon2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slocum - DMON 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/oceanscout-wispr6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Oceanscout - WISPR 6.1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/alseamar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Alseamar</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/EnvData-processing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Environmental Data Processing</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/data_processing/DeploymentSummaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Deployment Summaries</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../hackathon/index.html" class="sidebar-item-text sidebar-link" target="_blank">
@@ -399,6 +340,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#environmental-data" id="toc-environmental-data" class="nav-link" data-scroll-target="#environmental-data">Environmental Data</a></li>
   <li><a href="#gps-data" id="toc-gps-data" class="nav-link" data-scroll-target="#gps-data">GPS Data</a></li>
   <li><a href="#engineering-flight-and-profile-data" id="toc-engineering-flight-and-profile-data" class="nav-link" data-scroll-target="#engineering-flight-and-profile-data">Engineering, Flight, and Profile Data</a></li>
+  <li><a href="#deployment-summaries" id="toc-deployment-summaries" class="nav-link" data-scroll-target="#deployment-summaries">Deployment Summaries</a></li>
+  <li><a href="#pre-processing-methods-by-glider" id="toc-pre-processing-methods-by-glider" class="nav-link" data-scroll-target="#pre-processing-methods-by-glider">Pre-Processing Methods by Glider</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -445,13 +388,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.</p>
+<p>Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve. Specific methods for pre-processing vary by glider/PAM system, and are provided in the <a href="">Pre-Processing section</a>.</p>
 </div>
 </div>
 <section id="raw-audio-data" class="level2">
 <h2 class="anchored" data-anchor-id="raw-audio-data">Raw Audio Data</h2>
-<p>Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">National Centers for Environmental Information Passive Acoustic Data Portal</a> after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.</p>
-<p>Raw audio data is <strong>not</strong> available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).</p>
+<p>Raw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Data will be made publicly available via the <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">National Centers for Environmental Information Passive Acoustic Data Portal</a> after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.</p>
+<p>Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:</p>
+<ul>
+<li><p><em>Offloading the data from the PAM system,</em></p></li>
+<li><p><em>Decompressing files,</em></p></li>
+<li><p><em>Creating LTSAs,</em></p></li>
+<li><p><em>QAQC,</em></p></li>
+<li><p><em>Decimating files (lower sample rates are useful for different analyses), and</em></p></li>
+<li><p><em>Updating the deployment tracker.</em></p></li>
+</ul>
+<p>Raw audio data is not available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).</p>
 </section>
 <section id="soundscape-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="soundscape-analysis">Soundscape Analysis</h2>
@@ -460,18 +412,48 @@ ul.task-list li input[type="checkbox"] {
 <section id="marine-mammal-acoustic-detections" class="level2">
 <h2 class="anchored" data-anchor-id="marine-mammal-acoustic-detections">Marine Mammal Acoustic Detections</h2>
 <p>Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with <em>real</em> datasets in the future!).</p>
+<p>The synthesized datasets are saved ad ’**_FakeData_EventDetections.csv’ and ’**_FakeData_HrlyDetections.csv’ for each glider.</p>
 </section>
 <section id="environmental-data" class="level2">
 <h2 class="anchored" data-anchor-id="environmental-data">Environmental Data</h2>
-<p><em>Stay Tuned!</em></p>
+<p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html">Environmental Data Processing</a> Methods for extracting and processing environmental data collected during glider deployments are provided for the Seaglider (<a href="https://sfregosi.github.io/agate/">link to Agate instructions</a>) and Slocum (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html">link to ESD instructions</a>). Hefring environmental is extracted from the Hefring website. Environmental data are saved as ’data/**_science_timeseries.csv’ for each glider.</p>
 </section>
 <section id="gps-data" class="level2">
 <h2 class="anchored" data-anchor-id="gps-data">GPS Data</h2>
-<p><em>Stay Tuned!</em></p>
+<p>GPS data are identified for each glider surfacing, and estimated GPS points for the subsurface profiles are estimated. GPS data are saved as ’data/**_GPS_timeseries.csv’</p>
 </section>
 <section id="engineering-flight-and-profile-data" class="level2">
 <h2 class="anchored" data-anchor-id="engineering-flight-and-profile-data">Engineering, Flight, and Profile Data</h2>
-<p><em>Stay Tuned!</em></p>
+<p>Glider engineering and profile data varies by platform (methods and output). See the detailed methods for each glider/pam system in the Pre-processing methods, below.</p>
+</section>
+<section id="deployment-summaries" class="level2">
+<h2 class="anchored" data-anchor-id="deployment-summaries">Deployment Summaries</h2>
+<p>Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths can be found <a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/DeploymentSummaries.html">here</a></p>
+</section>
+<section id="pre-processing-methods-by-glider" class="level2">
+<h2 class="anchored" data-anchor-id="pre-processing-methods-by-glider">Pre-Processing Methods by Glider</h2>
+<p>Each section below links to detailed methods for each glider/pam system combination</p>
+<ul>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/seaglider-wispr.html">Seaglider - WISPR</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-wispr3.html">Slocum - WISPR 3</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/slocum-dmon2.html">Slocum - DMON 2</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/oceanscout-wispr6.html">Oceanscout - WISPR 6.1</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/alseamar.html">Alseamar</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html">Environmental Data Processing:</a> Methods for extracting and processing environmental data collected during glider deployments</p></li>
+</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note about PreProcessing Methods
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.</p>
+</div>
+</div>
 
 
 </section>
@@ -903,8 +885,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/pre-processing.html" class="pagination-link" aria-label="Pre-Processing">
-        <span class="nav-page-text">Pre-Processing</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../hackathon/index.html" class="pagination-link" aria-label="Hackathon">
+        <span class="nav-page-text">Hackathon</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

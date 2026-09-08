@@ -21,7 +21,7 @@
     "href": "hackathon/logistics.html",
     "title": "Logistics",
     "section": "",
-    "text": "Event Logistics\nThe Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 12pm-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project. If a project is lacking a programmer- please do not hesitate to reach out to the Hackthon hosts on the Slack site– we’ll find a way to help you out!\nThere is no cost for participating in the event.\n\n\nSchedule\nChoose the time zone that works best for you.\n\n  Show schedule in:\n  \n    Time (Pacific - PDT)\n    Time (Hawaii - HST)\n    Time (Central - CDT)\n    Time (Eastern - EDT)\n    Time (UTC)\n  \n  \n    100%\n    −\n    Reset\n    +\n  \n  \n    \n      loading=\"lazy\"\n      scrolling=\"yes\"&gt;\n    \n    \n      loading=\"lazy\"\n      scrolling=\"yes\"&gt;"
+    "text": "Event Logistics\nThe Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 12pm-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project. If a project is lacking a programmer- please do not hesitate to reach out to the Hackthon hosts on the Slack site– we’ll find a way to help you out!\nThere is no cost for participating in the event.\n\n\nSchedule\nChoose the time zone that works best for you. Green: Highlights East Coast time Zone Yellow: Tutorials & Lecctures for EVERYONE!! Blue: Highlights Hawaii time zone\n\n  Show schedule in:\n  \n    Time (Pacific - PDT)\n    Time (Hawaii - HST)\n    Time (Central - CDT)\n    Time (Eastern - EDT)\n    Time (UTC)\n  \n  \n    100%\n    −\n    Reset\n    +\n  \n  \n    \n      loading=\"lazy\"\n      scrolling=\"yes\"&gt;\n    \n    \n      loading=\"lazy\"\n      scrolling=\"yes\"&gt;"
   },
   {
     "objectID": "hackathon/index.html",
@@ -64,56 +64,32 @@
     ]
   },
   {
-    "objectID": "hackathon/CopyOflogistics.html",
-    "href": "hackathon/CopyOflogistics.html",
-    "title": "Logistics",
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Reporting",
     "section": "",
-    "text": "The Glider Rodeo Hackathon will be a fully virtual event with a lecture and tutorial block in 11am-2pm Pacific time and two group work times (East and Hawaii). Participants and projects will choose a group work time slot that works best for their team members. There is no cost for participating in the event. The times of the events are optimized for participants in UTC-4 (Eastern) to UTC-10 (Hawaii). Participants in other time zones are welcome to participate but events will be late night or early morning. Time Zone Comparison.\nNo software is required as we will be using a JupyterHub (cloud computing platform) provisioned for the event. Participants and projects are welcome to use Python or R. We recommend at least one competent Python or R programmer per Project."
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
   },
   {
-    "objectID": "hackathon/CopyOflogistics.html#day-1-monday",
-    "href": "hackathon/CopyOflogistics.html#day-1-monday",
-    "title": "Logistics",
-    "section": "Day 1 — Monday",
-    "text": "Day 1 — Monday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 10:30\nEast Project Time\n10am to 1:30pm ET\n\n\n\n7:00 - 7:45\nEast Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n7:45 - 8:45\nEast Group Project Brainstorming (3 rotations)\n\n\n\n\n9:00 - 9:30\nEast Project Pitching\n1 slide pitch\n\n\n\n9:30 - 10:30\nEast Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized.\n\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:30\nScience Lecture\nGlider Rodeo Overview lectures\nSelene Fregosi\n\n\n11:30 - 12:15\nScience Lecture\nGlider Rodeo Data\nKourtney Burger\n\n\n12:15 - 12:30\nBreak\n\n\n\n\n12:30 - 13:00\nCoding Tutorial 1\nOrientation for the Hackweek JupyterHub Tutorials\nAksel Sloan\n\n\n13:00 - 14:00\nCoding Tutorial 2\nBest Practices for Working with Data\nAksel Sloan\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 17:30\nHawaii Project Time\n2:30pm to 5:30pm PT\n\n\n\n14:30 - 15:15\nHawaii Project Introduction\nWelcome, Introductions, & Housekeeping slides\nShannon Rankin\n\n\n15:15 - 16:00\nHawaii Group Project Brainstorming (3 rotations)\n\n\n\n\n16:00 - 16:30\nHawaii Project Pitching\n1 slide pitch\n\n\n\n16:30 - 17:30\nHawaii Group Project Breakout Rooms\nEach project will have a breakout room and start to get organized."
-  },
-  {
-    "objectID": "hackathon/CopyOflogistics.html#day-2-tuesday",
-    "href": "hackathon/CopyOflogistics.html#day-2-tuesday",
-    "title": "Logistics",
-    "section": "Day 2 — Tuesday",
-    "text": "Day 2 — Tuesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nAquaView\nTBD\n\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nNoise Analysis\nKaitlin Palmer\n\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Tutorial\nGlider Rodeo Hackweek Collaboration via Git and GitHub slides\nTBD\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/CopyOflogistics.html#day-3-wednesday",
-    "href": "hackathon/CopyOflogistics.html#day-3-wednesday",
-    "title": "Logistics",
-    "section": "Day 3 — Wednesday",
-    "text": "Day 3 — Wednesday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:15\nBreak\n\n\n\n\n12:15 - 13:00\nCoding Tutorial 1\nTBD\nTBD\n\n\n13:00 - 13:15\nBreak\n\n\n\n\n13:15 - 14:00\nCoding Tutorial 2\nTBD\nTBDn\n\n\n14:00 - 14:30\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/CopyOflogistics.html#day-4-thursday",
-    "href": "hackathon/CopyOflogistics.html#day-4-thursday",
-    "title": "Logistics",
-    "section": "Day 4 — Thursday",
-    "text": "Day 4 — Thursday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 7:30\nEast Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n7:30 - 10:30\nEast Project Work Time\nEach project will have a breakout room.\n\n\n\n9:00 - 10:30\nEast/Hawaii Open Helpdesk with Mentors\nBring your questions and go into breakout room with a mentor\nmentors\n\n\n10:30 - 11:00\nBreak\n\n\n\n\n11:00 - 11:45\nScience Lecture\nTBD\nTBD\n\n\n11:45 - 12:00\nBreak\n\n\n\n\n12:00 - 12:45\nPilot Q&A Panel\nTBD\nTBD\n\n\n12:30 - 12:45\nBreak\n\n\n\n\n12:45 - 13:30\nCoding Tutorial 2\nTBD\nTBD\n\n\n13:30 - 14:00\nBreak\n\n\n\n\n14:30 - 15:00\nHawaii Group Check-ins (Rose, Bud, Thorn)\n\nShannon Rankin\n\n\n15:00 - 17:30\nHawaii Project Work Time\nEach project will have a breakout room."
-  },
-  {
-    "objectID": "hackathon/CopyOflogistics.html#day-5-friday",
-    "href": "hackathon/CopyOflogistics.html#day-5-friday",
-    "title": "Logistics",
-    "section": "Day 5 — Friday",
-    "text": "Day 5 — Friday\n\n\n\n\n\n\n\n\n\nTime\nEvent\nDetails\nLead(s)\n\n\n\n\n7:00 - 11:00\nEast & Hawaii Project Work Time\nEach project will have a breakout room.\n\n\n\n11:00 - 12:30\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n12:30 - 13:00\nBreak\n\n\n\n\n13:00 - 14:00\nProject Presentations\nEast & Hawaii together schedule\n\n\n\n14:00 - 14:15\nHackWeek Wrap-Up\n\nShannon Rankin; Selene Fregosi"
-  },
-  {
-    "objectID": "content/pre-processing.html",
-    "href": "content/pre-processing.html",
-    "title": "Pre-Processing",
+    "objectID": "content/reporting.html#mission-field-reports",
+    "href": "content/reporting.html#mission-field-reports",
+    "title": "Reporting",
     "section": "",
-    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:\n\nOffloading the data from the PAM system,\nDecompressing files,\nCreating LTSAs,\nQAQC,\nDecimating files (lower sample rates are useful for different analyses), and\nUpdating the deployment tracker.\n\nWe’ve also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo).\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar\nEnvironmental Data Processing: Methods for extracting and processing environmental data collected during glider deployments\nDeployment Summaries: Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths\n\n\n\n\n\n\n\nNoteNote about PreProcessing Methods\n\n\n\nPre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.",
-    "crumbs": [
-      "Pre-Processing"
-    ]
+    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
+  },
+  {
+    "objectID": "content/reporting.html#vendor-reports",
+    "href": "content/reporting.html#vendor-reports",
+    "title": "Reporting",
+    "section": "Vendor Reports",
+    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository."
+  },
+  {
+    "objectID": "content/reporting.html#final-report",
+    "href": "content/reporting.html#final-report",
+    "title": "Reporting",
+    "section": "Final Report",
+    "text": "Final Report\nStay Tuned!"
   },
   {
     "objectID": "content/hardware.html",
@@ -160,176 +136,112 @@
     "href": "content/data_processing/slocum-wispr3.html",
     "title": "Slocum - WISPR 3",
     "section": "",
-    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
+    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/slocum-wispr3.html#offload-data",
     "href": "content/data_processing/slocum-wispr3.html#offload-data",
     "title": "Slocum - WISPR 3",
     "section": "",
-    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
+    "text": "Glider techs: open Slocum glider and remove two micro SD cards from WISPR board\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
     "href": "content/data_processing/slocum-wispr3.html#decompress-data-and-convert-to-usable-audio-file-format",
     "title": "Slocum - WISPR 3",
     "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script"
   },
   {
     "objectID": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
     "href": "content/data_processing/slocum-wispr3.html#create-full-bandwidth-ltsa",
     "title": "Slocum - WISPR 3",
     "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nDownload a zipped folder of Triton - flac version, extract and save it to your Matlab folder as Triton-flac\nOpen Matlab and set the path to this flac version of Triton\nOpen Triton by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. stenella-20250414_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
+    "text": "Create full bandwidth LTSA\n\nDownload a zipped folder of Triton - flac version, extract and save it to your Matlab folder as Triton-flac\nOpen Matlab and set the path to this flac version of Triton\nOpen Triton by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. stenella-20250414_200kHz_5s_200Hz.ltsa)"
   },
   {
     "objectID": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
     "href": "content/data_processing/slocum-wispr3.html#update-deployment-tracker-spreadsheet",
     "title": "Slocum - WISPR 3",
     "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - WISPR 3"
-    ]
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns"
   },
   {
     "objectID": "content/data_processing/seaglider-wispr.html",
     "href": "content/data_processing/seaglider-wispr.html",
     "title": "Seaglider - WISPR",
     "section": "",
-    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
+    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/seaglider-wispr.html#offload-data",
     "href": "content/data_processing/seaglider-wispr.html#offload-data",
     "title": "Seaglider - WISPR",
     "section": "",
-    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
+    "text": "Glider techs: open Seaglider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order. Card 1 is farthest from the power connector (at the edge of the board) and Card 2 is in between Card 1 and the power connector.\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
     "href": "content/data_processing/seaglider-wispr.html#decompress-data-and-convert-to-usable-audio-file-format",
     "title": "Seaglider - WISPR",
     "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac (guide)\nIf you have an existing mission configuration file, skip to step 8. If you do not have one, download the example configuration file and complete the following steps to edit it\nOpen configuration file with text editor and replace “% %%%  TEMPLATE - PUT MISSION METADATA HERE  %%%” with the glider deployment ID\n\ni.e. “% %%% sg639_Sep2024 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘sgXXX’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the following two lines of the configuration file\n\nCONFIG.ws.inDir = ‘D:\\sgXXX_Location_Mon20XX_raw_acoustic_data’;   % path to raw .dat files\nCONFIG.ws.outDir = ‘E:\\sgXXX_Location_Mon20XX\\flac’;   % path to save converted files\n\nIf only converting to flac, comment out all of the other lines in the config file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nDownload and open workflow_convertWISPR.m matlab script. Set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac (guide)\nIf you have an existing mission configuration file, skip to step 8. If you do not have one, download the example configuration file and complete the following steps to edit it\nOpen configuration file with text editor and replace “% %%%  TEMPLATE - PUT MISSION METADATA HERE  %%%” with the glider deployment ID\n\ni.e. “% %%% sg639_Sep2024 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘sgXXX’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the following two lines of the configuration file\n\nCONFIG.ws.inDir = ‘D:\\sgXXX_Location_Mon20XX_raw_acoustic_data’;   % path to raw .dat files\nCONFIG.ws.outDir = ‘E:\\sgXXX_Location_Mon20XX\\flac’;   % path to save converted files\n\nIf only converting to flac, comment out all of the other lines in the config file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nDownload and open workflow_convertWISPR.m matlab script. Set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script"
   },
   {
     "objectID": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
     "href": "content/data_processing/seaglider-wispr.html#create-full-bandwidth-ltsa",
     "title": "Seaglider - WISPR",
     "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)"
   },
   {
     "objectID": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
     "href": "content/data_processing/seaglider-wispr.html#update-deployment-tracker-spreadsheet",
     "title": "Seaglider - WISPR",
     "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality\nUse the acoustic effort summary from the post mission processing to fill in the deployment duration, distance, and recording duration columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - WISPR"
-    ]
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality\nUse the acoustic effort summary from the post mission processing to fill in the deployment duration, distance, and recording duration columns"
   },
   {
     "objectID": "content/data_processing/oceanscout-wispr6.html",
     "href": "content/data_processing/oceanscout-wispr6.html",
     "title": "Oceanscout WISPR 6",
     "section": "",
-    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
+    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/oceanscout-wispr6.html#offload-data",
     "href": "content/data_processing/oceanscout-wispr6.html#offload-data",
     "title": "Oceanscout WISPR 6",
     "section": "",
-    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
+    "text": "Glider techs: open glider and remove two micro SD cards from WISPR board\n\nThese cards are numbered/ordered to be sure to replace them in the right order (From left to right when looking at the SD slots - Card 1, Card 2, power port)\n\nPlug cards into computer and copy raw .dat files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
     "href": "content/data_processing/oceanscout-wispr6.html#decompress-data-and-convert-to-usable-audio-file-format",
     "title": "Oceanscout WISPR 6",
     "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: use agate convert WISPR workflow script to convert from .dat to .flac\nDownload workflow_convertWISPR.m and the example Hefring configuration file \nOpen configuration file with text editor and replace “% %%%     HEFRING WISPR EXAMPLE            %%%” with the glider deployment ID\n\ni.e. “% %%% stenella-20250414 %%%”\n\nAdd the glider serial number to the ‘CONFIG.glider = ‘ argument\n\ni.e. “CONFIG.glider = ‘stenella’;”\n\nAdd the path to the raw .dat files and path to converted flac files in the last two lines of the configuration file\nSave as ‘agate_config_DeploymentID.cnf’ to the input data directory\nIf you do not have agate downloaded already, clone the agate repository \nOpen the convert matlab script and set the path to the agate folder on line 36\nSet the path to the configuration file on line 42\nRun the script, processing should begin. You should see progress updates in the command window and flac files in the output directory you set in the config file\nIf .wav files are needed, use the flac2wav.m matlab script"
   },
   {
     "objectID": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
     "href": "content/data_processing/oceanscout-wispr6.html#create-full-bandwidth-ltsa",
     "title": "Oceanscout WISPR 6",
     "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window. Ensure you are using a version of Triton that supports FLAC files\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 3 for flac\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)"
   },
   {
     "objectID": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
     "href": "content/data_processing/oceanscout-wispr6.html#update-deployment-tracker-spreadsheet",
     "title": "Oceanscout WISPR 6",
     "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Oceanscout - WISPR 6.1"
-    ]
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns"
   },
   {
     "objectID": "content/data_processing/EnvData-processing.html",
     "href": "content/data_processing/EnvData-processing.html",
     "title": "Environmental Data Processing",
     "section": "",
-    "text": "Slocum\nLink to ESD instructions\n\n\nSeaglider\nLink to Agate instructions\n\n\nHefring\n\nExtract environmental data and oceanscout mission summaries from Hefring website",
-    "crumbs": [
-      "Pre-Processing",
-      "Environmental Data Processing"
-    ]
+    "text": "Slocum\nLink to ESD instructions\n\n\nSeaglider\nLink to Agate instructions\n\n\nHefring\n\nExtract environmental data and oceanscout mission summaries from Hefring website"
   },
   {
     "objectID": "content/data_processing/AcousticData-preprocessing.html",
@@ -381,6 +293,13 @@
     "text": "Modeling\nStay Tuned!"
   },
   {
+    "objectID": "content/XXpre-processing.html",
+    "href": "content/XXpre-processing.html",
+    "title": "Pre-Processing",
+    "section": "",
+    "text": "Each glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:\n\nOffloading the data from the PAM system,\nDecompressing files,\nCreating LTSAs,\nQAQC,\nDecimating files (lower sample rates are useful for different analyses), and\nUpdating the deployment tracker.\n\nWe’ve also included pre-processing methods for the Environmental Data and the Data Summaries. Prepared data is then transferred to cloud data storage via a shared NOAA Fisheries GCP bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo).\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar\nEnvironmental Data Processing: Methods for extracting and processing environmental data collected during glider deployments\nDeployment Summaries: Guidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths\n\n\n\n\n\n\n\nNoteNote about PreProcessing Methods\n\n\n\nPre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve."
+  },
+  {
     "objectID": "content/data.html",
     "href": "content/data.html",
     "title": "Data",
@@ -395,7 +314,7 @@
     "href": "content/data.html#raw-audio-data",
     "title": "Data",
     "section": "Raw Audio Data",
-    "text": "Raw Audio Data\nRaw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket. Data will be made publicly available via the National Centers for Environmental Information Passive Acoustic Data Portal after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.\nRaw audio data is not available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).",
+    "text": "Raw Audio Data\nRaw audio data is offloaded from the instrument, reformatted to FLAC using a standardized naming convention, and saved to our NOAA Fisheries Google Cloud Bucket (ggn-nmfs-pamdata-prod-1/nmfs-collaborative/2026_GliderRodeo). Data will be made publicly available via the National Centers for Environmental Information Passive Acoustic Data Portal after an initial review by the U.S. Navy (according to a Navy-NMFS MOU) and metadata QAQC review.\nEach glider/PAM system combination has a unique set of data pre-processing steps to complete, prior to data analysis. These steps include:\n\nOffloading the data from the PAM system,\nDecompressing files,\nCreating LTSAs,\nQAQC,\nDecimating files (lower sample rates are useful for different analyses), and\nUpdating the deployment tracker.\n\nRaw audio data is not available for analysis during the Hackathon due to limitations related to navy review. We will have data products associated with Soundscape Analysis methods available, as well as synthesized marine mammal acoustic detections (see below).",
     "crumbs": [
       "Data"
     ]
@@ -415,7 +334,7 @@
     "href": "content/data.html#marine-mammal-acoustic-detections",
     "title": "Data",
     "section": "Marine Mammal Acoustic Detections",
-    "text": "Marine Mammal Acoustic Detections\nDue to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!).",
+    "text": "Marine Mammal Acoustic Detections\nDue to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!).\nThe synthesized datasets are saved ad ’**_FakeData_EventDetections.csv’ and ’**_FakeData_HrlyDetections.csv’ for each glider.",
     "crumbs": [
       "Data"
     ]
@@ -425,7 +344,7 @@
     "href": "content/data.html#environmental-data",
     "title": "Data",
     "section": "Environmental Data",
-    "text": "Environmental Data\nStay Tuned!",
+    "text": "Environmental Data\nEnvironmental Data Processing Methods for extracting and processing environmental data collected during glider deployments are provided for the Seaglider (link to Agate instructions) and Slocum (link to ESD instructions). Hefring environmental is extracted from the Hefring website. Environmental data are saved as ’data/**_science_timeseries.csv’ for each glider.",
     "crumbs": [
       "Data"
     ]
@@ -435,7 +354,7 @@
     "href": "content/data.html#gps-data",
     "title": "Data",
     "section": "GPS Data",
-    "text": "GPS Data\nStay Tuned!",
+    "text": "GPS Data\nGPS data are identified for each glider surfacing, and estimated GPS points for the subsurface profiles are estimated. GPS data are saved as ’data/**_GPS_timeseries.csv’",
     "crumbs": [
       "Data"
     ]
@@ -445,7 +364,27 @@
     "href": "content/data.html#engineering-flight-and-profile-data",
     "title": "Data",
     "section": "Engineering, Flight, and Profile Data",
-    "text": "Engineering, Flight, and Profile Data\nStay Tuned!",
+    "text": "Engineering, Flight, and Profile Data\nGlider engineering and profile data varies by platform (methods and output). See the detailed methods for each glider/pam system in the Pre-processing methods, below.",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data.html#deployment-summaries",
+    "href": "content/data.html#deployment-summaries",
+    "title": "Data",
+    "section": "Deployment Summaries",
+    "text": "Deployment Summaries\nGuidelines for creating post-mission reports that include sampling locations, acoustic effort, and glider paths can be found here",
+    "crumbs": [
+      "Data"
+    ]
+  },
+  {
+    "objectID": "content/data.html#pre-processing-methods-by-glider",
+    "href": "content/data.html#pre-processing-methods-by-glider",
+    "title": "Data",
+    "section": "Pre-Processing Methods by Glider",
+    "text": "Pre-Processing Methods by Glider\nEach section below links to detailed methods for each glider/pam system combination\n\nSeaglider - WISPR\nSlocum - WISPR 3\nSlocum - DMON 2\nOceanscout - WISPR 6.1\nAlseamar\nEnvironmental Data Processing: Methods for extracting and processing environmental data collected during glider deployments\n\n\n\n\n\n\n\nNoteNote about PreProcessing Methods\n\n\n\nPre-processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a ‘living’ document and we expect the pre-processing methods to change as methods evolve.",
     "crumbs": [
       "Data"
     ]
@@ -455,88 +394,56 @@
     "href": "content/data_processing/DeploymentSummaries.html",
     "title": "Deployment Summaries",
     "section": "",
-    "text": "Slocum\nLink to ESD instructions\nMETHODS - Work in progress\nWork with SWFSC glider team to get post mission metadata (TBD) and create a Mission Report using this template. Save the report to … (TBD)\n\n\nSeaglider\nLink to Agate instructions\n\nFollow the Agate methods here to run post-mission processing.\n\nThis includes extracting sampling locations and environmental data, assessing acoustic effort, creating summary tables, and plotting the glider paths.\n\nCreate a Mission Report using this template. Save the report to … (TBD)\n\n\n\nHefring\nCreate a Mission Report using this template. Save the report to … (TBD)",
-    "crumbs": [
-      "Pre-Processing",
-      "Deployment Summaries"
-    ]
+    "text": "Slocum\nLink to ESD instructions\nMETHODS - Work in progress\nWork with SWFSC glider team to get post mission metadata (TBD) and create a Mission Report using this template. Save the report to … (TBD)\n\n\nSeaglider\nLink to Agate instructions\n\nFollow the Agate methods here to run post-mission processing.\n\nThis includes extracting sampling locations and environmental data, assessing acoustic effort, creating summary tables, and plotting the glider paths.\n\nCreate a Mission Report using this template. Save the report to … (TBD)\n\n\n\nHefring\nCreate a Mission Report using this template. Save the report to … (TBD)"
   },
   {
     "objectID": "content/data_processing/seaglider-pmar-xl.html",
     "href": "content/data_processing/seaglider-pmar-xl.html",
     "title": "Seaglider - PMAR XL",
     "section": "",
-    "text": "PMARXL has been removed from the OSU Seagliders and replaced with the WISPR3 system. If it is used again in the future by NMFS this page will be updated.",
-    "crumbs": [
-      "Pre-Processing",
-      "Seaglider - PMAR XL"
-    ]
+    "text": "PMARXL has been removed from the OSU Seagliders and replaced with the WISPR3 system. If it is used again in the future by NMFS this page will be updated."
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html",
     "href": "content/data_processing/slocum-dmon2.html",
     "title": "Slocum DMON 2",
     "section": "",
-    "text": "The DMON has two sampling routines for low and high frequency; continuous recording of the low-frequency hydrophone at 2 kHz and duty-cycled recording of the high-frequency hydrophone at 120 kHz for 30 seconds out of every 450 seconds (30 sec on 7.5 minutes off, 8 minute cycle) (LF2_HF120d30_450s.bin). The low frequency hydrophone recordings are .wav2 and the high frequency hydrophone recordings are .wav3. These files have to be renamed to .wav to be usable, so this script renames each wav file with its respective frequency",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "The DMON has two sampling routines for low and high frequency; continuous recording of the low-frequency hydrophone at 2 kHz and duty-cycled recording of the high-frequency hydrophone at 120 kHz for 30 seconds out of every 450 seconds (30 sec on 7.5 minutes off, 8 minute cycle) (LF2_HF120d30_450s.bin). The low frequency hydrophone recordings are .wav2 and the high frequency hydrophone recordings are .wav3. These files have to be renamed to .wav to be usable, so this script renames each wav file with its respective frequency"
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html#offload-data",
     "href": "content/data_processing/slocum-dmon2.html#offload-data",
     "title": "Slocum DMON 2",
     "section": "Offload data",
-    "text": "Offload data\n\nGlider techs: open Slocum glider and follow dmon instructions section H and I (up to step 4) here \ncopy raw files to a hard drive\nPass hard drive off to PAM analyst",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "Offload data\n\nGlider techs: open Slocum glider and follow dmon instructions section H and I (up to step 4) here \ncopy raw files to a hard drive\nPass hard drive off to PAM analyst"
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
     "href": "content/data_processing/slocum-dmon2.html#decompress-data-and-convert-to-usable-audio-file-format",
     "title": "Slocum DMON 2",
     "section": "Decompress data and convert to usable audio file format",
-    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: Get offloaded data from glider team (section I here)\nIf you only see .dgt files, then you will need to unpack them to get .wav and other recording metadata files \n\nYou do not need to follow these steps if you can see .err, .log, .wav2, .wav3, and .xml files for each .dtg file\n\nDownload the dmon software here and open d3read.exe\nYou should see a new terminal window open, prompting you to enter a directory. Copy the directory where the .dgt files are located and press enter\nYou will then be prompted to ‘Input filename base?’, type the file header of each dgt file (before the three digits ###) and hit enter\n\nExample: for the file named risso001.dgt, you would type risso and hit enter\n\nYou should then see a list of .dgt files in that directory and the unpacking process should start\nIf .flac files are needed, use the wav2flac.m matlab script",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "Decompress data and convert to usable audio file format\n\nPAM analyst: Get offloaded data from glider team (section I here)\nIf you only see .dgt files, then you will need to unpack them to get .wav and other recording metadata files \n\nYou do not need to follow these steps if you can see .err, .log, .wav2, .wav3, and .xml files for each .dtg file\n\nDownload the dmon software here and open d3read.exe\nYou should see a new terminal window open, prompting you to enter a directory. Copy the directory where the .dgt files are located and press enter\nYou will then be prompted to ‘Input filename base?’, type the file header of each dgt file (before the three digits ###) and hit enter\n\nExample: for the file named risso001.dgt, you would type risso and hit enter\n\nYou should then see a list of .dgt files in that directory and the unpacking process should start\nIf .flac files are needed, use the wav2flac.m matlab script"
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
     "href": "content/data_processing/slocum-dmon2.html#clean-wav-files-and-segment-duty-cycled-data",
     "title": "Slocum DMON 2",
     "section": "Clean wav Files and Segment Duty Cycled Data",
-    "text": "Clean wav Files and Segment Duty Cycled Data\n\n\n\n\n\n\nImportant\n\n\n\nThe existing processing workflow for DMON data requires access to an IDL Runtime license\n\n\n\nOpen the ‘reformat_dmon_wav_files.sav’ file, this will open a stand alone application window\nYou will be prompted to choose a folder with DMON data, select a directory that includes the unpackaged data files from the steps above (including wav and log.xml files)\nYou will then be prompted to choose an output folder, it is recommended you save your processed audio files in a subfolder\nYou should then see the two file paths in the application window, click ‘Go!’ and the processing will start\nClose the window once all the raw audio files have been renamed and separated based on the sampling routine\nThis processing renames the files to include a 4 digit year. Matlab and other processing softwares expect two digit years, so we need to rename these\nOpen files explorer and select all of the newly processed audio files\nRight click on the files and select ‘Rename with PowerRename’. If you do not see this option, you may need to use different renaming methods/software\nIn the PowerRename window, fill in the four digit year to the ‘Search for’ box and the two digit year in the ‘Replace with’ box\n\nClick ‘Apply’ and all of your files should now have the YYMMDD naming structure needed for the next data processing steps\nR methods - work in progress",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "Clean wav Files and Segment Duty Cycled Data\n\n\n\n\n\n\nImportant\n\n\n\nThe existing processing workflow for DMON data requires access to an IDL Runtime license\n\n\n\nOpen the ‘reformat_dmon_wav_files.sav’ file, this will open a stand alone application window\nYou will be prompted to choose a folder with DMON data, select a directory that includes the unpackaged data files from the steps above (including wav and log.xml files)\nYou will then be prompted to choose an output folder, it is recommended you save your processed audio files in a subfolder\nYou should then see the two file paths in the application window, click ‘Go!’ and the processing will start\nClose the window once all the raw audio files have been renamed and separated based on the sampling routine\nThis processing renames the files to include a 4 digit year. Matlab and other processing softwares expect two digit years, so we need to rename these\nOpen files explorer and select all of the newly processed audio files\nRight click on the files and select ‘Rename with PowerRename’. If you do not see this option, you may need to use different renaming methods/software\nIn the PowerRename window, fill in the four digit year to the ‘Search for’ box and the two digit year in the ‘Replace with’ box\n\nClick ‘Apply’ and all of your files should now have the YYMMDD naming structure needed for the next data processing steps\nR methods - work in progress"
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
     "href": "content/data_processing/slocum-dmon2.html#create-full-bandwidth-ltsa",
     "title": "Slocum DMON 2",
     "section": "Create full bandwidth LTSA",
-    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 1 for wav\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "Create full bandwidth LTSA\n\nOpen Triton in MATLAB by typing ‘triton’ into command window\nIn the control window, click on Tools -&gt; Make LTSA from Directory of Files \nEnter 1 for wav\nNavigate to your directory of flac files and click ‘Select Folder’\nUse 5 seconds and 200 Hz settings, press ok, save LTSA as DeploymentID_SamplingRate_5s_200Hz.ltsa (ex. sg639_Sep2024_200kHz_5s_200Hz.ltsa)"
   },
   {
     "objectID": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
     "href": "content/data_processing/slocum-dmon2.html#update-deployment-tracker-spreadsheet",
     "title": "Slocum DMON 2",
     "section": "Update Deployment Tracker Spreadsheet",
-    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns",
-    "crumbs": [
-      "Pre-Processing",
-      "Slocum - DMON 2"
-    ]
+    "text": "Update Deployment Tracker Spreadsheet\n\nOpen Glider Deployment Tracker Spreadsheet and ensure all fields have been completed\nUse the full bandwidth LTSA to mark the data start and end (or use file timestamps) and assess overall data quality \nCalculate the deployment duration, distance, and recording duration and fill in the associated columns"
   },
   {
     "objectID": "content/fieldwork.html",
@@ -647,34 +554,6 @@
     "crumbs": [
       "Overview"
     ]
-  },
-  {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
-  },
-  {
-    "objectID": "content/reporting.html#mission-field-reports",
-    "href": "content/reporting.html#mission-field-reports",
-    "title": "Reporting",
-    "section": "",
-    "text": "Mission Reports can be saved to the 📂supplement/missionReports folder\nPilot Logs can be saved to the 📂supplement/pilotLogs folder\nIf there are any other field reports, please save to the 📂supplement/ folder (if multiple, then provide a relevant subfolder)."
-  },
-  {
-    "objectID": "content/reporting.html#vendor-reports",
-    "href": "content/reporting.html#vendor-reports",
-    "title": "Reporting",
-    "section": "Vendor Reports",
-    "text": "Vendor Reports\nAlseamar Technical Report and Alseamar Acoustic real-time report are saved in the 📂supplement/ folder of this repository."
-  },
-  {
-    "objectID": "content/reporting.html#final-report",
-    "href": "content/reporting.html#final-report",
-    "title": "Reporting",
-    "section": "Final Report",
-    "text": "Final Report\nStay Tuned!"
   },
   {
     "objectID": "hackathon/conduct.html",
@@ -800,6 +679,6 @@
     "href": "hackathon/teams.html",
     "title": "Meet the Team",
     "section": "",
-    "text": "Meet the people participating in the Glider Rodeo Hackathon.\nThe cards below are generated from the member files in hackathon/team/.\n\n\n\n\n  \n    \n    \n    \n    \n      Aksel Sloan\n      \n      Software Engineer\n      \n      \n      \n        \n        Organizer\n        \n        Jupyter Hub\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Aksel Sloan\n          \n        \n        \n          \n          Software Engineer\n          \n          \n          NOAA Fisheries\n          \n          \n          Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n          \n          \n          Areas of expertise\n          \n            \n            skill 1\n            \n            skill 2\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Jupyter Hub\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Cara Wilson\n      \n      Program Lead CoastWatch and PolarWatch\n      \n      \n      \n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Cara Wilson\n          \n        \n        \n          \n          Program Lead CoastWatch and PolarWatch\n          \n          \n          Your institution\n          \n          \n          Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n          \n          \n          Areas of expertise\n          \n            \n            Satellite Data Access\n            \n            Ocean Color\n            \n            Hyperspectral Data\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kaitlin Palmer\n      \n      Acoustic Ecologist\n      \n      \n      \n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kaitlin Palmer\n          \n        \n        \n          \n          Acoustic Ecologist\n          \n          \n          NOAA Fisheries\n          \n          \n          Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n          \n          \n          Areas of expertise\n          \n            \n            Developing tools for Acoustic Analysis\n            \n            Marine mammal ecology\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kourtney Burger\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kourtney Burger\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            autonomous underwater gliders\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Selene Fregosi\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Data Analysis\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Selene Fregosi\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n          \n          \n          Areas of expertise\n          \n            \n            marine mammal acoustics\n            \n            passive acoustic data analysis\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Data Analysis\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Shannon Rankin\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n      \n      ```\n      \n      \n      Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Shannon Rankin\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            data workflows\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n          \n          \n        \n      \n    \n  \n\n\n\n\n```{=html}\nNo matching items"
+    "text": "Meet the people participating in the Glider Rodeo Hackathon.\nThe cards below are generated from the member files in hackathon/team/.\n\n\n\n\n  \n    \n    \n    \n    \n      Aksel Sloan\n      \n      Software Engineer\n      \n      \n      \n        \n        Organizer\n        \n        Jupyter Hub\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Aksel Sloan\n          \n        \n        \n          \n          Software Engineer\n          \n          \n          NOAA Fisheries\n          \n          \n          Aksel Sloan is a software programmer for the Cetacean Research Program at Pacific Islands Fisheries Science Center. He is helping develop onboard edge computing for PAM-Gliders. For the Glider Rodeo Hackathon, Aksel is organizing our computer resources on the Jupyter Hub.\n          \n          \n          Areas of expertise\n          \n            \n            skill 1\n            \n            skill 2\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Jupyter Hub\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Cara Wilson\n      \n      Program Lead CoastWatch and PolarWatch\n      \n      \n      \n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Cara Wilson\n          \n        \n        \n          \n          Program Lead CoastWatch and PolarWatch\n          \n          \n          Your institution\n          \n          \n          Cara is a biological oceanographer for the Environmental Research Division (ERD) at NOAA's Southwest Fisheries Science Center. She is the Program Lead of NOAA's CoastWatch and PolarWatch programs and the chair of the IOCCG (International Ocean Colour Coordinating Group).\n          \n          \n          Areas of expertise\n          \n            \n            Satellite Data Access\n            \n            Ocean Color\n            \n            Hyperspectral Data\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Joshua Hill\n      \n      Director of The Institute for Advanced Analytics and Society\n      \n      \n      \n        \n        Administrative & Point of Contact Coordination\n        \n      \n      ```\n      \n      \n      Dr. Joshua B. Hill is Director of the Institute for Advanced Analytics and Society (IAAS) at the University of Southern Mississippi, where he leads applied AI development for federal partners including NOAA. He directs AQUAVIEW, an oceanographic data platform that makes NOAA ocean and atmospheric datasets easier to discover, access, and use. He also leads the Enterprise Data Toolkit (EDT), an AI-powered platform for tracking how NOAA data products are used and what impact they have beyond the agency. His work centers on making federal environmental data more usable through AI, including emerging agent- and MCP-based approaches. He is also an Associate Professor at USM.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n        \n          \n        \n        \n        \n          \n        \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Joshua Hill\n          \n        \n        \n          \n          Director of The Institute for Advanced Analytics and Society\n          \n          \n          Institute for Advanced Analytics and Society\n          \n          \n          Dr. Joshua B. Hill is Director of the Institute for Advanced Analytics and Society (IAAS) at the University of Southern Mississippi, where he leads applied AI development for federal partners including NOAA. He directs AQUAVIEW, an oceanographic data platform that makes NOAA ocean and atmospheric datasets easier to discover, access, and use. He also leads the Enterprise Data Toolkit (EDT), an AI-powered platform for tracking how NOAA data products are used and what impact they have beyond the agency. His work centers on making federal environmental data more usable through AI, including emerging agent- and MCP-based approaches. He is also an Associate Professor at USM.\n          \n          \n          Areas of expertise\n          \n            \n            Analytics and AI\n            \n            Systems Design\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Administrative & Point of Contact Coordination\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kaitlin Palmer\n      \n      Acoustic Ecologist\n      \n      \n      \n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kaitlin Palmer\n          \n        \n        \n          \n          Acoustic Ecologist\n          \n          \n          NOAA Fisheries\n          \n          \n          Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. \n          \n          \n          Areas of expertise\n          \n            \n            Developing tools for Acoustic Analysis\n            \n            Marine mammal ecology\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Kourtney Burger\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Science Lecturer\n        \n        Data Analysis\n        \n      \n      ```\n      \n      \n      Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Kourtney Burger\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            autonomous underwater gliders\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Science Lecturer\n            \n            Data Analysis\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Selene Fregosi\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n        Data Analysis\n        \n        Science Lecturer\n        \n      \n      ```\n      \n      \n      Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Selene Fregosi\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.\n          \n          \n          Areas of expertise\n          \n            \n            marine mammal acoustics\n            \n            passive acoustic data analysis\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n            Data Analysis\n            \n            Science Lecturer\n            \n          \n          \n        \n      \n    \n  \n\n  \n    \n    \n    \n    \n      Shannon Rankin\n      \n      Glider Rodeo organizer\n      \n      \n      \n        \n        Organizer\n        \n      \n      ```\n      \n      \n      Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n      \n      \n        Read More →\n      \n      \n      \n        \n        \n          \n        \n        \n      \n      \n    \n  \n\n  \n    \n      \n        \n          Shannon Rankin\n          \n        \n        \n          \n          Glider Rodeo organizer\n          \n          \n          NOAA Fisheries\n          \n          \n          Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.\n          \n          \n          Areas of expertise\n          \n            \n            passive acoustic monitoring\n            \n            data workflows\n            \n          \n          \n          \n          Hackathon roles\n          \n            \n            Organizer\n            \n          \n          \n        \n      \n    \n  \n\n\n\n\n```{=html}\nNo matching items"
   }
 ]

@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle','listing-role','listing-organizations','listing-bio','listing-expertise','listing-user_groups','listing-description','listing-links','listing-social','listing-github','listing-linkedin','listing-orcid','listing-website',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-avatar","listing-image","listing-role","listing-organizations","listing-bio","listing-expertise","listing-social","listing-user_groups","listing-description"],
+      searchColumns: ["listing-title","listing-avatar","listing-image","listing-role","listing-organizations","listing-bio","listing-expertise","listing-social","listing-user_groups","listing-description","listing-subtitle","listing-github","listing-linkedin","listing-orcid","listing-website"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -412,6 +412,93 @@ window.Quarto = {
 
   <article class="team-card card" data-index="'2'">
     
+    <img src="../images/team/profile-placeholder.svg" class="team-card-image card-img-top" alt="Portrait of Joshua Hill" loading="lazy">
+    
+    <div class="team-card-body card-body">
+      <h2 class="team-card-title listing-title anchored">Joshua Hill</h2>
+      
+      <p class="team-card-subtitle">Director of The Institute for Advanced Analytics and Society</p>
+      
+      
+      <div class="team-card-badges listing-user_groups" aria-label="Hackathon roles">
+        
+        <span class="team-card-badge">Administrative &amp; Point of Contact Coordination</span>
+        
+      </div>
+      ```
+      
+      
+      <p class="team-card-summary listing-description">Dr. Joshua B. Hill is Director of the Institute for Advanced Analytics and Society (IAAS) at the University of Southern Mississippi, where he leads applied AI development for federal partners including NOAA. He directs AQUAVIEW, an oceanographic data platform that makes NOAA ocean and atmospheric datasets easier to discover, access, and use. He also leads the Enterprise Data Toolkit (EDT), an AI-powered platform for tracking how NOAA data products are used and what impact they have beyond the agency. His work centers on making federal environmental data more usable through AI, including emerging agent- and MCP-based approaches. He is also an Associate Professor at USM.</p>
+      
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-2" aria-label="Read more about Joshua Hill">
+        Read More →
+      </button>
+      
+      <div class="team-card-social" aria-label="Joshua Hill social links">
+        
+        <a href="https://github.com/your-username" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Joshua Hill on GitHub" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/your-profile" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Joshua Hill on LinkedIn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        
+        <a href="https://orcid.org/0000-0000-0000-0000" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Joshua Hill on ORCID" title="ORCID">
+          <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+        </a>
+        
+        <a href="https://example.com" class="team-card-social-link" target="_blank" rel="noopener noreferrer" aria-label="Joshua Hill on Personal website" title="Personal website">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <div class="modal fade team-card-modal" id="team-member-2" tabindex="-1" aria-labelledby="team-member-2-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 anchored" id="team-member-2-title">Joshua Hill</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="team-modal-role"><strong>Director of The Institute for Advanced Analytics and Society</strong></p>
+          
+          
+          <p>Institute for Advanced Analytics and Society</p>
+          
+          
+          <p>Dr. Joshua B. Hill is Director of the Institute for Advanced Analytics and Society (IAAS) at the University of Southern Mississippi, where he leads applied AI development for federal partners including NOAA. He directs AQUAVIEW, an oceanographic data platform that makes NOAA ocean and atmospheric datasets easier to discover, access, and use. He also leads the Enterprise Data Toolkit (EDT), an AI-powered platform for tracking how NOAA data products are used and what impact they have beyond the agency. His work centers on making federal environmental data more usable through AI, including emerging agent- and MCP-based approaches. He is also an Associate Professor at USM.</p>
+          
+          
+          <h3 class="anchored">Areas of expertise</h3>
+          <ul>
+            
+            <li>Analytics and AI</li>
+            
+            <li>Systems Design</li>
+            
+          </ul>
+          
+          
+          <h3 class="anchored">Hackathon roles</h3>
+          <div class="team-card-badges">
+            
+            <span class="team-card-badge">Administrative &amp; Point of Contact Coordination</span>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="team-card card" data-index="'3'">
+    
     <img src="team/img/KaitlinPalmer.jpg" class="team-card-image card-img-top" alt="Portrait of Kaitlin Palmer" loading="lazy">
     
     <div class="team-card-body card-body">
@@ -432,7 +519,7 @@ window.Quarto = {
       
       <p class="team-card-summary listing-description">Kaitlin Palmer is an Acoustic Ecologist working with Pacific Islands Fisheries Science Center. She is a quantitative biologist and skilled with developing tools for analyzing passive acoustic data. </p>
       
-      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-2" aria-label="Read more about Kaitlin Palmer">
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-3" aria-label="Read more about Kaitlin Palmer">
         Read More →
       </button>
       
@@ -447,11 +534,11 @@ window.Quarto = {
     </div>
   </article>
 
-  <div class="modal fade team-card-modal" id="team-member-2" tabindex="-1" aria-labelledby="team-member-2-title" aria-hidden="true">
+  <div class="modal fade team-card-modal" id="team-member-3" tabindex="-1" aria-labelledby="team-member-3-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 anchored" id="team-member-2-title">Kaitlin Palmer</h2>
+          <h2 class="modal-title fs-5 anchored" id="team-member-3-title">Kaitlin Palmer</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -489,7 +576,7 @@ window.Quarto = {
     </div>
   </div>
 
-  <article class="team-card card" data-index="'3'">
+  <article class="team-card card" data-index="'4'">
     
     <img src="team/img/KourtneyBurger.jpg" class="team-card-image card-img-top" alt="Portrait of Kourtney Burger" loading="lazy">
     
@@ -513,7 +600,7 @@ window.Quarto = {
       
       <p class="team-card-summary listing-description">Kourtney Burger works for the Ecosystem Science Division at NOAA's Southwest Fisheries Science Center. Kourtney works with passive acoustic data and underwater glider technology.</p>
       
-      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-3" aria-label="Read more about Kourtney Burger">
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-4" aria-label="Read more about Kourtney Burger">
         Read More →
       </button>
       
@@ -528,11 +615,11 @@ window.Quarto = {
     </div>
   </article>
 
-  <div class="modal fade team-card-modal" id="team-member-3" tabindex="-1" aria-labelledby="team-member-3-title" aria-hidden="true">
+  <div class="modal fade team-card-modal" id="team-member-4" tabindex="-1" aria-labelledby="team-member-4-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 anchored" id="team-member-3-title">Kourtney Burger</h2>
+          <h2 class="modal-title fs-5 anchored" id="team-member-4-title">Kourtney Burger</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -572,7 +659,7 @@ window.Quarto = {
     </div>
   </div>
 
-  <article class="team-card card" data-index="'4'">
+  <article class="team-card card" data-index="'5'">
     
     <img src="team/img/SeleneFregosi.jpg" class="team-card-image card-img-top" alt="Portrait of Selene Fregosi" loading="lazy">
     
@@ -596,7 +683,7 @@ window.Quarto = {
       
       <p class="team-card-summary listing-description">Selene Fregosi is affiliated with Pacific Islands Fisheries Science Center and Oregon State University. She studied marine mammal acoustic ecology using PAM-Gliders, and continues this work today. She led the Glider Rodeo field efforts and has developed tools for automated processing of raw glider data.</p>
       
-      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-4" aria-label="Read more about Selene Fregosi">
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-5" aria-label="Read more about Selene Fregosi">
         Read More →
       </button>
       
@@ -611,11 +698,11 @@ window.Quarto = {
     </div>
   </article>
 
-  <div class="modal fade team-card-modal" id="team-member-4" tabindex="-1" aria-labelledby="team-member-4-title" aria-hidden="true">
+  <div class="modal fade team-card-modal" id="team-member-5" tabindex="-1" aria-labelledby="team-member-5-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 anchored" id="team-member-4-title">Selene Fregosi</h2>
+          <h2 class="modal-title fs-5 anchored" id="team-member-5-title">Selene Fregosi</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -655,7 +742,7 @@ window.Quarto = {
     </div>
   </div>
 
-  <article class="team-card card" data-index="'5'">
+  <article class="team-card card" data-index="'6'">
     
     <img src="team/img/ShannonRankin.jpg" class="team-card-image card-img-top" alt="Portrait of Shannon Rankin" loading="lazy">
     
@@ -675,7 +762,7 @@ window.Quarto = {
       
       <p class="team-card-summary listing-description">Works on passive acoustic monitoring, data workflows, and the use of autonomous platforms for ocean observing.</p>
       
-      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-5" aria-label="Read more about Shannon Rankin">
+      <button class="team-card-read-more btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#team-member-6" aria-label="Read more about Shannon Rankin">
         Read More →
       </button>
       
@@ -690,11 +777,11 @@ window.Quarto = {
     </div>
   </article>
 
-  <div class="modal fade team-card-modal" id="team-member-5" tabindex="-1" aria-labelledby="team-member-5-title" aria-hidden="true">
+  <div class="modal fade team-card-modal" id="team-member-6" tabindex="-1" aria-labelledby="team-member-6-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 anchored" id="team-member-5-title">Shannon Rankin</h2>
+          <h2 class="modal-title fs-5 anchored" id="team-member-6-title">Shannon Rankin</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
