@@ -32,7 +32,7 @@ sci_time.insert(0, 'time', epoch_seconds)
 cutoff_start = pd.to_datetime(START_TIME_CUTOFF)
 cutoff_end = pd.to_datetime(END_TIME_CUTOFF)
 
-surfacing_coords = sci_time[
+sci_time = sci_time[
     (sci_time['time_utc'] >= cutoff_start) & 
     (sci_time['time_utc'] <= cutoff_end)
 ]
