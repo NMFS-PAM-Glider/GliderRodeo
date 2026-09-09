@@ -158,7 +158,7 @@ netcdf_variables:
     source: sci_rbrctd_conductivity_00
     long_name: sci_rbrctd_conductivity_00
     standard_name: sea_water_electrical_conductivity
-    units: mS/cm
+    units: mS cm-1
     instrument: instrument_ctd
     valid_min: 0.0
     valid_max: 85.0
