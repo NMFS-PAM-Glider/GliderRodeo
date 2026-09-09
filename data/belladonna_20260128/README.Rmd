@@ -20,6 +20,7 @@ Non-audio data from the Ocean Scout was prepared by Maria Vasilkin (Cornell Univ
 
 
 ## belladonna_20260128_flight_timeseries_engineering.csv
+** Under Development (not yet ready!) **
 
 The flight engineering dataset contains information on the pitch, roll, heading, etc. for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
@@ -56,15 +57,15 @@ data %>%
 ```
 
  
-## belladonna_20260128_GPS_timeseries.csv
+## belladonna_20260128_GPS.csv
 
-GPS time series data is formatted with one row per dive, with start and end times and locations for each dive. Movement between the end of one dive and the start of the next is due to any surface drift. The GPS dataset contains information on the Start and End Time, Latitude, Longitude as well as the duration, distance, and max depth for each dive. Additional variables are presented in the table (below). Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+GPS time series data is formatted with one row per surfacing, with surfacing times and locations for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 ```{r gps}
 #| echo = FALSE
 #| 
 data %>% 
-  filter(Dataset == "GPS_timeseries") %>%
+  filter(Dataset == "GPS") %>%
   kbl(
     align = "l", # Justify text to the left (use "c" for center or "r" for right)
     booktabs = TRUE # Clean, professional tablines
@@ -93,6 +94,7 @@ data %>%
 
 
 ## belladonna_20260128_science_timeseries.csv
+** Under Development (not yet ready!) **
 
 The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
@@ -128,7 +130,7 @@ data %>%
 
 ## belladonna_20260128_delayed_profiles.csv
 
-Profile data.
+** Under Development (not yet ready!) **
 
 
 ```{r profile}

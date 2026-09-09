@@ -587,9 +587,10 @@ available datasets:</p>
 <h2>SEA117-M026_20260128_flight_timeseries_engineering.csv</h2>
 <p>The flight engineering dataset contains information on the pitch,
 roll, heading, etc. for each dive. Methods to develop this dataset can
-be found here (cite!), and definitions/units for data are found in the
-table below. <em>Note: Data are preliminary and require additional
-QAQC.</em></p>
+be found on the SWFSC Ecosystem Science Division’s Slocum Glider Data
+Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -610,101 +611,244 @@ Units
 <tbody>
 <tr>
 <td style="text-align:left;">
-BallastCmd
+Time
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-ballast commanded
+Unix epoch timestamp (seconds elapsed since 1970-01-01 00:00:00 UTC).
 </td>
 <td style="text-align:left;">
-NA
+Seconds
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-BallastPos
+YO_NUMBER
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-ballast position
+Dive/yo sequence profile number recorded by the flight computer.
 </td>
 <td style="text-align:left;">
-NA
+Count
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-LinCmd
+Time_UTC
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-linear displacement commanded (change pitch)
+Coordinated Universal Time (UTC) logged by the flight computer.
 </td>
 <td style="text-align:left;">
-NA
+YYYY-MM-DD HH:MM:SS
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-LinPos
+NavState
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-linear position
+Operational state (e.g., descent, ascent, inflecting, surfacing, gps)
+mapped from numeric codes.
 </td>
 <td style="text-align:left;">
-NA
+Text string
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-AngCmd
+Heading
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-angular displacement commanded (change roll)
+Vehicle compass heading relative to north (0–360°).
 </td>
 <td style="text-align:left;">
-NA
+Degrees (°)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-AngPos
+Declination
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-angular position
+Local magnetic declination offset applied for true north corrections.
 </td>
 <td style="text-align:left;">
-NA
+Degrees (°)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Voltage
+Pitch
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-voltage: can be transformed in % of battery (see SeaExplorer Piloting
-manual Annex A.4 Figure 4: second generation battery)
+Pitch angle relative to horizontal (positive = nose up, negative = nose
+down).
 </td>
 <td style="text-align:left;">
-NA
+Degrees (°)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Roll
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Roll angle / tilt along the longitudinal axis (positive = right wing
+down).
+</td>
+<td style="text-align:left;">
+Degrees (°)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Depth
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Water depth calculated by the flight system pressure sensor.
+</td>
+<td style="text-align:left;">
+Meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PressureNav
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Raw hydrostatic pressure measured by the primary navigation transducer.
+</td>
+<td style="text-align:left;">
+Decibars (dbar)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PressureRel
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Relative/tare-corrected pressure used for flight depth calculations.
+</td>
+<td style="text-align:left;">
+Decibars (dbar)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Temperature
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Internal temperature measured inside the glider
+</td>
+<td style="text-align:left;">
+°C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pa
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Internal hull air pressure
+</td>
+<td style="text-align:left;">
+psia / mbar
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Humidity
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Relative humidity percentage inside the glider
+</td>
+<td style="text-align:left;">
+% RH
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lat
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Latitude coordinate converted from NMEA format (North is positive).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lon
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Longitude coordinate converted from NMEA format (West is negative).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DeadReckoning
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Position estimation flag (0 = true surface GPS fix, 1 = underwater
+dead-reckoned estimate).
+</td>
+<td style="text-align:left;">
+numerical integer
 </td>
 </tr>
 <tr>
@@ -715,10 +859,141 @@ DesiredH
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-desired heading
+Target heading set by the flight controller for active navigation
+segment.
 </td>
 <td style="text-align:left;">
-NA
+Degrees (°)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DesiredHCC
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Compass course adjustment command calculated by the flight controller
+considering current correction.
+</td>
+<td style="text-align:left;">
+Degrees (°)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BallastCmd
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Commanded variable buoyancy system oil volume move.
+</td>
+<td style="text-align:left;">
+mL / cm³
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BallastPos
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Actual measured position/volume displacement of the buoyancy ballast
+pump.
+</td>
+<td style="text-align:left;">
+mL / cm³
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LinCmd
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Commanded linear battery position along the longitudinal axis (pitch
+control).
+</td>
+<td style="text-align:left;">
+mm / inches
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LinPos
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Actual measured position of the linear pitch motor/battery pack.
+</td>
+<td style="text-align:left;">
+mm / inches
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AngCmd
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Commanded angular roll position for the rotating pitch mass.
+</td>
+<td style="text-align:left;">
+Degrees / Counts
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AngPos
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Actual measured angular position of the roll mass motor.
+</td>
+<td style="text-align:left;">
+Degrees / Counts
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Voltage
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Main battery pack bus voltage
+</td>
+<td style="text-align:left;">
+Volts (V)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Altitude
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Height above the seafloor measured by the altimeter sensor (when in
+range).
+</td>
+<td style="text-align:left;">
+Meters (m)
 </td>
 </tr>
 </tbody>
@@ -732,9 +1007,11 @@ one dive and the start of the next is due to any surface drift. The GPS
 dataset contains information on the Start and End Time, Latitude,
 Longitude as well as the duration, distance, and max depth for each
 dive. Additional variables are presented in the table (below). Methods
-to develop this dataset can be found here (cite!), and definitions/units
-for data are found in the table below. <em>Note: Data are preliminary
-and require additional QAQC.</em></p>
+to develop this dataset can be found on the SWFSC Ecosystem Science
+Division’s Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
+<p>Note the dead-reckoned_timeseries (below).</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -754,6 +1031,152 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+yo_number
+</td>
+<td style="text-align:left;">
+GPS_timeseries
+</td>
+<td style="text-align:left;">
+Dive/yo sequence profile number associated with the GPS fix
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_utc
+</td>
+<td style="text-align:left;">
+GPS_timeseries
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp corresponding to the specific
+fix.
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD HH:MM:SS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+latitude
+</td>
+<td style="text-align:left;">
+GPS_timeseries
+</td>
+<td style="text-align:left;">
+Geographical latitude coordinate converted from NMEA format (North is
+positive).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+longitude
+</td>
+<td style="text-align:left;">
+GPS_timeseries
+</td>
+<td style="text-align:left;">
+Geographical longitude coordinate converted from NMEA format (West is
+negative).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sea117-m026_20260128_dead-reckoned_timeseries.csv" class="section level2">
+<h2>SEA117-M026_20260128_dead-reckoned_timeseries.csv</h2>
+<p>The dead-reckoned GPS time series provides an estimate of latitude
+and longitude for different times for every ‘yo’ (profile). Methods to
+develop this dataset can be found on the SWFSC Ecosystem Science
+Division’s Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Column_Name
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Dataset
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Definition
+</th>
+<th style="text-align:left;font-weight: bold;border-bottom: 3px solid black;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+yo_number
+</td>
+<td style="text-align:left;">
+dead-reckoned_timeseries
+</td>
+<td style="text-align:left;">
+Dive/yo sequence profile number associated with the underwater track
+segment.
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_utc
+</td>
+<td style="text-align:left;">
+dead-reckoned_timeseries
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp recorded by the flight
+computer (DeadReckoning == 1).
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD HH:MM:SS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+latitude
+</td>
+<td style="text-align:left;">
+dead-reckoned_timeseries
+</td>
+<td style="text-align:left;">
+Underwater estimated latitude converted from NMEA format via dead
+reckoning (North is positive).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+longitude
+</td>
+<td style="text-align:left;">
+dead-reckoned_timeseries
+</td>
+<td style="text-align:left;">
+Underwater estimated longitude converted from NMEA format via dead
+reckoning (West is negative).
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
 </tr>
 </tbody>
 </table>
@@ -762,9 +1185,10 @@ Units
 <h2>SEA117-M026_20260128_science_timeseries.csv</h2>
 <p>The science dataset contains information on the depth, temperature,
 salinity, density, and sound velocity for each dive. Methods to develop
-this dataset can be found here (cite!), and definitions/units for data
-are found in the table below. <em>Note: Data are preliminary and require
-additional QAQC.</em></p>
+this dataset can be found on the SWFSC Ecosystem Science Division’s
+Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -784,13 +1208,258 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+Time
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Unix epoch timestamp (seconds elapsed since 1970-01-01 00:00:00 UTC).
+</td>
+<td style="text-align:left;">
+Seconds
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+YO_NUMBER
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Dive sequence/profile number
+</td>
+<td style="text-align:left;">
+numerical integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Time_UTC
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp from the payload real-time
+clock
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD HH:MM:SS.fff
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAV_STATE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Flight computer operational state (e.g., descent, ascent, inflecting,
+surfacing, gps). Forward-filled to bridge nav updates.
+</td>
+<td style="text-align:left;">
+Text string
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAV_LONGITUDE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Glider longitude coordinate
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAV_LATITUDE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Glider latitude coordinate
+</td>
+<td style="text-align:left;">
+decimal degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAV_DEPTH
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Water depth calculated by glider flight system; linearly interpolated
+over time
+</td>
+<td style="text-align:left;">
+Meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAV_HEADING
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Vehicle compass heading relative to magnetic/true north (0–360°).
+</td>
+<td style="text-align:left;">
+Degrees (°)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SD_CARD_USAGE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Total memory consumption on the internal payload SD card.
+</td>
+<td style="text-align:left;">
+Megabytes (MB)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SSD_USAGE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Total memory consumption on the solid-state drive (or -1 if unused).
+</td>
+<td style="text-align:left;">
+Megabytes (MB)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_CONDUCTIVITY
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Raw electrical conductivity measured by the Legato CTD sensor.
+</td>
+<td style="text-align:left;">
+mS/cm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_TEMPERATURE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+In-situ seawater temperature measured by the Legato CTD sensor.
+</td>
+<td style="text-align:left;">
+°C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_PRESSURE
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Hydrostatic water pressure measured by the Legato CTD sensor (~1 dbar ≈
+1 m depth).
+</td>
+<td style="text-align:left;">
+Decibars (dbar)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_SALINITY
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Practical Salinity (SP) derived from Legato conductivity, temperature,
+and pressure.
+</td>
+<td style="text-align:left;">
+PSU
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_CONDTEMP
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Internal temperature of the conductivity cell sensor element (used for
+thermal lag corrections).
+</td>
+<td style="text-align:left;">
+°C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_SOUND_VELOCITY
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Speed of sound in seawater calculated via TEOS-10 (GSW) from salinity,
+temperature, pressure, and position.
+</td>
+<td style="text-align:left;">
+m/s
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LEGATO_POTENTIAL_DENSITY
+</td>
+<td style="text-align:left;">
+science_timeseries
+</td>
+<td style="text-align:left;">
+Potential density of seawater calculated via TEOS-10 (GSW) referenced to
+surface pressure (0 dbar).
+</td>
+<td style="text-align:left;">
+kg/m³
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="sea117-m026_20260128_profiles.csv" class="section level2">
 <h2>SEA117-M026_20260128_profiles.csv</h2>
-<p>Profile data.</p>
+<p>Note: Profile data is still under development (and not ready
+yet)!</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1008,7 +1677,7 @@ field can be updated accordingly. There should be only one code listed
 per row. No commas should be used in this field.
 </td>
 <td style="text-align:left;">
-NA
+Text string
 </td>
 </tr>
 <tr>

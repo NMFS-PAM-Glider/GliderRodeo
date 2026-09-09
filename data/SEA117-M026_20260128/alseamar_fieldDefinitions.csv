@@ -43,10 +43,10 @@ LEGATO_SALINITY,science_timeseries,"Practical Salinity (SP) derived from Legato 
 LEGATO_CONDTEMP,science_timeseries,Internal temperature of the conductivity cell sensor element (used for thermal lag corrections).,°C
 LEGATO_SOUND_VELOCITY,science_timeseries,"Speed of sound in seawater calculated via TEOS-10 (GSW) from salinity, temperature, pressure, and position.",m/s
 LEGATO_POTENTIAL_DENSITY,science_timeseries,Potential density of seawater calculated via TEOS-10 (GSW) referenced to surface pressure (0 dbar).,kg/m³
-yo_number,gps_timeseries,Dive/yo sequence profile number associated with the GPS fix,integer
-time_utc,gps_timeseries,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,YYYY-MM-DD HH:MM:SS
-latitude,gps_timeseries,Geographical latitude coordinate converted from NMEA format (North is positive).,Decimal Degrees
-longitude,gps_timeseries,Geographical longitude coordinate converted from NMEA format (West is negative).,Decimal Degrees
+yo_number,GPS_timeseries,Dive/yo sequence profile number associated with the GPS fix,integer
+time_utc,GPS_timeseries,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,YYYY-MM-DD HH:MM:SS
+latitude,GPS_timeseries,Geographical latitude coordinate converted from NMEA format (North is positive).,Decimal Degrees
+longitude,GPS_timeseries,Geographical longitude coordinate converted from NMEA format (West is negative).,Decimal Degrees
 yo_number,dead-reckoned_timeseries,Dive/yo sequence profile number associated with the underwater track segment.,integer
 time_utc,dead-reckoned_timeseries,Coordinated Universal Time (UTC) timestamp recorded by the flight computer (DeadReckoning == 1).,YYYY-MM-DD HH:MM:SS
 latitude,dead-reckoned_timeseries,Underwater estimated latitude converted from NMEA format via dead reckoning (North is positive).,Decimal Degrees

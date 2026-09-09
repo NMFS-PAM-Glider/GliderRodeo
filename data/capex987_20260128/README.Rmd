@@ -10,7 +10,7 @@ library(knitr)
 library(kableExtra)
 
 # 1. Read the CSV file using here()
-data <- read_csv(here("data/capex987_20260128/jasco_fieldDefinitions.csv"))
+data <- read_csv(here("data/capex987_20260128/slocum_fieldDefinitions.csv"))
 ```
 
 # PRELIMINARY datasets for Slocum Glider with JASCO OceanObserver  'capex987'
@@ -19,7 +19,7 @@ Non-audio data from Slocum Glider with JASCO OceanObserver was prepared using [C
 
 ## capex987_20260128_flight_timeseries_engineering.csv
 
-The flight engineering dataset contains information on the pitch, roll, heading, etc. for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+The flight engineering dataset contains information on the pitch, roll, heading, etc. for each dive. Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 
 ```{r engineering}
@@ -56,7 +56,7 @@ data %>%
  
 ## capex987_20260128_GPS_timeseries.csv
 
-GPS time series data is formatted with one row per dive, with start and end times and locations for each dive. Movement between the end of one dive and the start of the next is due to any surface drift. The GPS dataset contains information on the Start and End Time, Latitude, Longitude as well as the duration, distance, and max depth for each dive. Additional variables are presented in the table (below). Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+GPS time series data is formatted with one row per dive, with start and end times and locations for each dive. Movement between the end of one dive and the start of the next is due to any surface drift. The GPS dataset contains information on the Start and End Time, Latitude, Longitude as well as the duration, distance, and max depth for each dive. Additional variables are presented in the table (below). Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 ```{r gps}
 #| echo = FALSE
@@ -92,7 +92,7 @@ data %>%
 
 ## capex987_20260128_science_timeseries.csv
 
-The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 ```{r sci}
 #| echo = FALSE
@@ -126,7 +126,7 @@ data %>%
 
 ## capex987_20260128_delayed_profiles.csv
 
-Profile data.
+The profile dataset provides information for each component of the profile (surfacing, descent, inflection, and ascent), including start/end times, start/end/min/max depth, min/max latitude and longitude, etc. Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 
 ```{r profile}

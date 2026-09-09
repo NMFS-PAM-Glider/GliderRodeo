@@ -587,9 +587,10 @@ available datasets:</p>
 <h2>stenella_20260128_flight_timeseries_engineering.csv</h2>
 <p>The flight engineering dataset contains information on the pitch,
 roll, heading, etc. for each dive. Methods to develop this dataset can
-be found here (cite!), and definitions/units for data are found in the
-table below. <em>Note: Data are preliminary and require additional
-QAQC.</em></p>
+be found on the SWFSC Ecosystem Science Division’s Slocum Glider Data
+Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -610,262 +611,58 @@ Units
 <tbody>
 <tr>
 <td style="text-align:left;">
-Heading
+time
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-c_heading, m_heading
+Time (seconds since 1970-01-01T00:00:00+00:00)
 </td>
 <td style="text-align:left;">
-NA
+seconds (s)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Roll
+time_utc
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-c_roll, m_roll
+Date/Time converted
 </td>
 <td style="text-align:left;">
-NA
+yyyy-mm-dd hh:mm:ss
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Distance_over_ground
+m_depth
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-NA
+Depth in meters
 </td>
 <td style="text-align:left;">
-NA
+meters (m)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Speed
+m_heading
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-NA
+measured heading
 </td>
 <td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ballast
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-m_speed_avg
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Average over a dive or climb, reset at next dive or climb (m/s)
-</td>
-<td style="text-align:left;">
-meters per second
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-m_speed
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Vehicle horizontal speed THRU WATER (m/s)
-</td>
-<td style="text-align:left;">
-meters per second
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-m_depth_rate
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Rate of change of depth, &gt;0 is down (m/s)
-</td>
-<td style="text-align:left;">
-meters per second
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_autoballast_state
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Describes the current state of autoballast. The user may also change its
-value to force autoballast to change state. (enum) # in/out: #
-0=uninitialized.; # 1=initialized, still converging; # 2=converged
-successfully; # 3=converged unsuccessfully: abs(c_dive_bpump) or
-c_climb_bpump &gt; X_BALLAST_PUMPED_MAX/X_DE_OIL_VOL_MAX; # 4=converged
-unsuccessfully: c_climb_bpump - c_dive_bpump &lt; c_autoballast_volume
-(d_bpump_value);<br />
-# 5=converged unsuccessfully: may be a bit more complicated. Consider
-examining .mlg
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-d_use_bpump
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-(enum):<br />
-# 0 Autoballast/Depth rate control (See
-doco/how-it-works/autoballast.txt); # 1 Reserved - do not use (uses
-c_bpump_value cc about 0); # 2 Buoyancy Pump absolute (uses
-c_bpump_value as total difference between dive and climbs); # 3 Buoyancy
-Pump absolute surface, uses this value during the surface interval
-(instead of pumping all the way out); # 5 Speed relative to water
-current. See ‘use_bpump=SM_WATER_SPEED’ section
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_use_bpump
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-(enum): # 0 Autoballast/Depth rate control (See
-doco/how-it-works/autoballast.txt); # 1 Reserved - do not use (uses
-c_bpump_value cc about 0); # 2 Buoyancy Pump absolute (uses
-c_bpump_value as total difference between dive and climbs); # 3 Buoyancy
-Pump absolute surface, uses this value during the surface interval
-(instead of pumping all the way out); # 5 Speed relative to water
-current. See ‘use_bpump=SM_WATER_SPEED’ section
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_bpump_value
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Commanded bpump value for climb (cc)
-</td>
-<td style="text-align:left;">
-cubic centimeters (cc)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-d_bpump_value
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Commanded bpump value for dive (cc)
-</td>
-<td style="text-align:left;">
-cubic centimeters (cc)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_climb_bpump
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Measured bpump value for climb (cc)
-</td>
-<td style="text-align:left;">
-cubic centimeters (cc)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_dive_bpump
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Measured bpump value for dive (cc)
-</td>
-<td style="text-align:left;">
-cubic centimeters (cc)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-use_pitch
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-(enum): # 4 Fluid Pumped absolute; # 3 Servo on Pitch; # 2 Pitch, set
-once from curve; # 1 BattPos
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-c_pitch
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-Commanded pitch value (radians)
-</td>
-<td style="text-align:left;">
-radians (rad)
+radians
 </td>
 </tr>
 <tr>
@@ -876,66 +673,82 @@ m_pitch
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-Measured pitch value (radians)
+The angle between the gliders’s longitudinal centerline and the
+horizontal plane of the earth. A positive pitch represents a ‘nose-up’
+attitude; a negative pitch respresents a ‘nose-down’ attitude.
 </td>
 <td style="text-align:left;">
-radians (rad) (also have a degrees option, m_pitch_deg)
+radians
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-d_pitch_value
+m_roll
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-Commanded pitch value for dives (radians)
+The angular rotation of the glider around its’ longitudinal axis.
 </td>
 <td style="text-align:left;">
-radians (rad)
+radians
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-c_pitch_value
+m_battery
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-Commanded pitch value for climbs (radians)
+measured battery voltage
 </td>
 <td style="text-align:left;">
-radians (rad)
+volts
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-m_fin
+m_battpos
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-measured digifin readings in radians
+meausred position of the pitch battery
 </td>
 <td style="text-align:left;">
-radians (rad)
+inches
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-c_fin
+m_coulomb_amphr
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-commanded (by glider) digifin readings in radians
+measured integrated current
 </td>
 <td style="text-align:left;">
-radians (rad)
+amp-hrs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+m_coulomb_amphr_total
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+peristent amp-hours total
+</td>
+<td style="text-align:left;">
+amp-hrs
 </td>
 </tr>
 <tr>
@@ -946,80 +759,180 @@ m_coulomb_current
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-instantaneous current
+instantaneous currnet
 </td>
 <td style="text-align:left;">
-amperage (amp)
+amps
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-m_water_vx
+m_de_oil_vol
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-0 # in/out How fast the water is going. LMC coord. sys.
+measured oil volume (0 is neutral, positive is pumping oil out (more
+boyuant), negative is oil flowing in (less boyuant))
 </td>
 <td style="text-align:left;">
-meters per second (m/s)
+cc
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-m_water_vy
+m_gps_lat
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-0 # used as input here (if u_use_current_correction is true)
+measured latitude from gps fix
 </td>
 <td style="text-align:left;">
-meters per second (m/s)
+Decimal Degrees
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-ctd
+m_gps_lon
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-Ctd on/off - pulled from science (off no value, identify on/off times)
+measured longitude from gps fix
 </td>
 <td style="text-align:left;">
-text
+Decimal Degrees
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Battery_voltage
+m_depth_rate
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-NA
+measured rate of change of depth, &gt;0 is down
 </td>
 <td style="text-align:left;">
-NA
+m/s
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Battpos
+m_fin
 </td>
 <td style="text-align:left;">
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-NA
+digifin position (left, right movement)
 </td>
 <td style="text-align:left;">
-NA
+radians
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+m_speed
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+horizontal speed through water
+</td>
+<td style="text-align:left;">
+m/s
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+m_speed_avg
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+running average speed over a dive or climb, reset at next dive or climb
+</td>
+<td style="text-align:left;">
+m/s
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+c_de_oil_vol
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+commanded oil volume
+</td>
+<td style="text-align:left;">
+cc
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+c_pitch
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+commanded pitch
+</td>
+<td style="text-align:left;">
+radians
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+c_fin
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+commanded fin position
+</td>
+<td style="text-align:left;">
+radians
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+profile_index
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Incremental index of profile phase from intial surfacing to final
+surfacing for the profile.
+</td>
+<td style="text-align:left;">
+numeric in 0.5 increments
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+profile_direction
+</td>
+<td style="text-align:left;">
+flight_timeseries_engineering
+</td>
+<td style="text-align:left;">
+Profile Direction: 0 = surfacing or inflection, 1 = descent, -1 = ascent
+</td>
+<td style="text-align:left;">
+numeric (0, 1, -1)
 </td>
 </tr>
 </tbody>
@@ -1033,9 +946,10 @@ one dive and the start of the next is due to any surface drift. The GPS
 dataset contains information on the Start and End Time, Latitude,
 Longitude as well as the duration, distance, and max depth for each
 dive. Additional variables are presented in the table (below). Methods
-to develop this dataset can be found here (cite!), and definitions/units
-for data are found in the table below. <em>Note: Data are preliminary
-and require additional QAQC.</em></p>
+to develop this dataset can be found on the SWFSC Ecosystem Science
+Division’s Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1117,9 +1031,10 @@ decimal degrees
 <h2>stenella_20260128_science_timeseries.csv</h2>
 <p>The science dataset contains information on the depth, temperature,
 salinity, density, and sound velocity for each dive. Methods to develop
-this dataset can be found here (cite!), and definitions/units for data
-are found in the table below. <em>Note: Data are preliminary and require
-additional QAQC.</em></p>
+this dataset can be found on the SWFSC Ecosystem Science Division’s
+Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+and definitions/units for data are found in the table below. <em>Note:
+Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1160,7 +1075,7 @@ time_utc
 science_timeseries
 </td>
 <td style="text-align:left;">
-Date/Time converted to epoch time
+Date/Time converted
 </td>
 <td style="text-align:left;">
 yyyy-mm-dd hh:mm:ss
@@ -1216,10 +1131,10 @@ conductivity
 science_timeseries
 </td>
 <td style="text-align:left;">
-NA
+Conductivity in Siemens per meter (S/m)
 </td>
 <td style="text-align:left;">
-NA
+Siemens per meter (S/m)
 </td>
 </tr>
 <tr>
@@ -1244,10 +1159,10 @@ pressure
 science_timeseries
 </td>
 <td style="text-align:left;">
-NA
+Water pressure measured by CTD
 </td>
 <td style="text-align:left;">
-NA
+dbar
 </td>
 </tr>
 <tr>
@@ -1286,24 +1201,24 @@ potential_temperature
 science_timeseries
 </td>
 <td style="text-align:left;">
-Underwater sound velocity in meters/second
+Potential temperature of seawater
 </td>
 <td style="text-align:left;">
-meters per second (m/s)
+celcius degrees (°C)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-soundVelocity
+potential_density
 </td>
 <td style="text-align:left;">
 science_timeseries
 </td>
 <td style="text-align:left;">
-Underwater sound velocity in meters/second
+Potential density of seawater
 </td>
 <td style="text-align:left;">
-meters per second (m/s)
+kilograms/cubic meter (kg m-3)
 </td>
 </tr>
 </tbody>
@@ -1311,7 +1226,8 @@ meters per second (m/s)
 </div>
 <div id="stenella_20260128_delayed_profiles.csv" class="section level2">
 <h2>stenella_20260128_delayed_profiles.csv</h2>
-<p>Profile data.</p>
+<p>Note: Profile data is still under development (and not ready
+yet)!</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1780,7 +1696,7 @@ field can be updated accordingly. There should be only one code listed
 per row. No commas should be used in this field.
 </td>
 <td style="text-align:left;">
-NA
+Text string
 </td>
 </tr>
 <tr>

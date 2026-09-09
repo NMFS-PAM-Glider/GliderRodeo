@@ -584,6 +584,7 @@ display: none;
 datasets:</p>
 <div id="belladonna_20260128_flight_timeseries_engineering.csv" class="section level2">
 <h2>belladonna_20260128_flight_timeseries_engineering.csv</h2>
+<p>** Under Development (not yet ready!) **</p>
 <p>The flight engineering dataset contains information on the pitch,
 roll, heading, etc. for each dive. Methods to develop this dataset can
 be found here (cite!), and definitions/units for data are found in the
@@ -612,17 +613,13 @@ Units
 </tbody>
 </table>
 </div>
-<div id="belladonna_20260128_gps_timeseries.csv" class="section level2">
-<h2>belladonna_20260128_GPS_timeseries.csv</h2>
-<p>GPS time series data is formatted with one row per dive, with start
-and end times and locations for each dive. Movement between the end of
-one dive and the start of the next is due to any surface drift. The GPS
-dataset contains information on the Start and End Time, Latitude,
-Longitude as well as the duration, distance, and max depth for each
-dive. Additional variables are presented in the table (below). Methods
-to develop this dataset can be found here (cite!), and definitions/units
-for data are found in the table below. <em>Note: Data are preliminary
-and require additional QAQC.</em></p>
+<div id="belladonna_20260128_gps.csv" class="section level2">
+<h2>belladonna_20260128_GPS.csv</h2>
+<p>GPS time series data is formatted with one row per surfacing, with
+surfacing times and locations for each dive. Methods to develop this
+dataset can be found here (cite!), and definitions/units for data are
+found in the table below. <em>Note: Data are preliminary and require
+additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -642,12 +639,54 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+time
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp corresponding to the specific
+fix.
+</td>
+<td style="text-align:left;">
+DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+longitude
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+latitude
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="belladonna_20260128_science_timeseries.csv" class="section level2">
 <h2>belladonna_20260128_science_timeseries.csv</h2>
+<p>** Under Development (not yet ready!) **</p>
 <p>The science dataset contains information on the depth, temperature,
 salinity, density, and sound velocity for each dive. Methods to develop
 this dataset can be found here (cite!), and definitions/units for data
@@ -678,7 +717,7 @@ Units
 </div>
 <div id="belladonna_20260128_delayed_profiles.csv" class="section level2">
 <h2>belladonna_20260128_delayed_profiles.csv</h2>
-<p>Profile data.</p>
+<p>** Under Development (not yet ready!) **</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>

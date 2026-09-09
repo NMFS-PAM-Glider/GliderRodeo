@@ -19,7 +19,7 @@ Non-audio data from Alseamar SeaExplorer was prepared using [CHECK] the Post-mis
 
 ## SEA117-M026_20260128_flight_timeseries_engineering.csv
 
-The flight engineering dataset contains information on the pitch, roll, heading, etc. for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+The flight engineering dataset contains information on the pitch, roll, heading, etc. for each dive. Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 
 ```{r engineering}
@@ -56,7 +56,9 @@ data %>%
  
 ## SEA117-M026_20260128_GPS_timeseries.csv
 
-GPS time series data is formatted with one row per dive, with start and end times and locations for each dive. Movement between the end of one dive and the start of the next is due to any surface drift. The GPS dataset contains information on the Start and End Time, Latitude, Longitude as well as the duration, distance, and max depth for each dive. Additional variables are presented in the table (below). Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+GPS time series data is formatted with one row per dive, with start and end times and locations for each dive. Movement between the end of one dive and the start of the next is due to any surface drift. The GPS dataset contains information on the Start and End Time, Latitude, Longitude as well as the duration, distance, and max depth for each dive. Additional variables are presented in the table (below). Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+
+Note the dead-reckoned_timeseries (below).
 
 ```{r gps}
 #| echo = FALSE
@@ -88,11 +90,44 @@ data %>%
   }
 ```
 
+## SEA117-M026_20260128_dead-reckoned_timeseries.csv
 
+The dead-reckoned GPS time series provides an estimate of latitude and longitude for different times for every 'yo' (profile).  Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+
+
+```{r gps-DR}
+#| echo = FALSE
+#| 
+data %>% 
+  filter(Dataset == "dead-reckoned_timeseries") %>%
+  kbl(
+    align = "l", # Justify text to the left (use "c" for center or "r" for right)
+    booktabs = TRUE # Clean, professional tablines
+  ) %>%
+  kable_styling(
+    latex_options = c("striped", "HOLD_position"), # Alternating row shading (gray/white)
+    bootstrap_options = c("striped", "hover", "condensed"), # Web alternative if compiling to HTML
+    full_width = TRUE # Fits text across the full page width with automatic word wrap
+  ) %>%
+  row_spec(
+    0, # Target header row
+    bold = TRUE,
+    extra_css = "border-bottom: 3px solid black;" # Thick bottom border for HTML
+  ) %>%
+  # Apply thick line underneath header for PDF/LaTeX output
+  {
+    if (knitr::is_latex_output()) {
+      row_spec(., 0, bold = TRUE) %>%
+        row_spec(0, extra_latex_after = "\\hline\\noalign{\\hrule height 1.5pt}")
+    } else {
+      .
+    }
+  }
+```
 
 ## SEA117-M026_20260128_science_timeseries.csv
 
-The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
+The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found on the SWFSC Ecosystem Science Division's Slocum Glider Data Processing Methods (https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 ```{r sci}
 #| echo = FALSE
@@ -126,7 +161,7 @@ data %>%
 
 ## SEA117-M026_20260128_profiles.csv
 
-Profile data.
+Note: Profile data is still under development (and not ready yet)!
 
 
 ```{r profile}
