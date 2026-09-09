@@ -71,7 +71,7 @@ glider_devices:
     platform: platform
     type: instrument
   
-  instrument_hydrophone:
+  instrument_hydrophone_H001896:
     _FillValue: -999
     make_model: 'M36-V35-EXBH-100'
     serial_number: 'H001896'
@@ -83,7 +83,7 @@ glider_devices:
     platform: platform
     type: instrument
   
-  instrument_hydrophone:
+  instrument_hydrophone_H001305:
     _FillValue: -999
     make_model: 'M36-V35-100'
     serial_number: 'H001305'
@@ -95,7 +95,7 @@ glider_devices:
     platform: platform
     type: instrument
   
-  instrument_hydrophone:
+  instrument_hydrophone_H001202:
     _FillValue: -999
     make_model: 'M36-V35-100'
     serial_number: 'H001202'
@@ -107,7 +107,7 @@ glider_devices:
     platform: platform
     type: instrument
   
-  instrument_hydrophone:
+  instrument_hydrophone_H001203:
     _FillValue: -999
     make_model: 'M36-V35-100'
     serial_number: 'H001203'
