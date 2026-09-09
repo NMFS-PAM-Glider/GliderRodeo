@@ -1,0 +1,10 @@
+Dataset,Column_Name,Definition,Units
+patients,patient_id,Unique identifier for patient,
+patients,age,Age of patient in years,years
+patients,sex,,
+patients,weight_kg,Body weight of the patient,kg
+labs,patient_id,Unique identifier for patient,
+labs,lab_date,Date labs were drawn,date
+labs,glucose,Blood glucose level,mg/dL
+labs,cholesterol,Blood cholesterol level,mg/dL
+labs,bmi,Body mass index,kg/m2

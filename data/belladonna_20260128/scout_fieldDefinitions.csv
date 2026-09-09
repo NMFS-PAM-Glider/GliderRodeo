@@ -13,3 +13,6 @@ DETECTION_SOFTWARE_NAME,detections,"The software used for the detection method. 
 DETECTION_SOFTWARE_VERSION,detections,"The version number of the software used, if applicable.",Text string
 MIN_ANALYSIS_FREQUENCY_RANGE_HZ,detections,"The minimum frequency (Hz) used for this analysis, if applicable. Default value is 0 (Hz). If middle frequencies were viewed for this analysis (i.e. 200-1000Hz), this value would be 200.",Hertz (Hz)
 MAX_ANALYSIS_FREQUENCY_RANGE_HZ,detections,"The maximum frequency (Hz) used for the analysis, if applicable. For example, if the original recordings had a sample rate of 48kHz, and the data was either resampled to 2kHz for the analysis, or only viewed at up to 1kHz, then this value would be 1000. Default value is relative to the recordings' sample rate (i.e. if sample rate is 48 kHz, the default value for this field is 24000).",Hertz (Hz)
+time,GPS,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+longitude,GPS,Decimal Degrees,
+latitude,GPS,Decimal Degrees,

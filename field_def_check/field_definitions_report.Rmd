@@ -1,0 +1,158 @@
+---
+title: "Field Definitions Completeness Report"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+library(here)
+library(DT)
+
+# Pins the project root to the folder containing this .Rmd file, regardless
+# of the working directory in effect when knitting (this is what avoids the
+# "cannot open the connection" error from here() guessing the wrong root).
+here::i_am("field_definitions_report.Rmd")
+
+source(here::here("R", "check_field_definitions.R"))
+```
+
+This report checks whether every column in your datasets is documented in
+your field definitions file, and whether every documented field has a
+complete `Definition` and `Units` value.
+
+## Inputs {.tabset}
+
+Edit the chunk below to point to your own datasets and field definitions
+file. Paths are relative to the project root (resolved via `here::here()`).
+
+```{r inputs, echo=TRUE}
+# ------------------------- EDIT THIS CHUNK -------------------------------
+datasets <- list(
+  detections = here("../data/capex987_20260128/capex987_20260128_FakeData_EventDetections.csv"),
+  detections = here("../data/capex987_20260128/capex987_20260128_FakeData_HrlyDetections.csv"),
+  # flight_timeseries_engineering = here("../data/risso_20260128/risso-20260128_flight_timeseries_engineering.csv"),
+  # flight_timeseries_modeled = here("../data/stenella_20260128/risso-20260128_flight_timeseries_modeled.csv"),
+  profiles = here("../data/capex987_20260128/capex987-20260128-delayed-profiles.csv"),
+  GPS_timeseries = here("../data/capex987_20260128/capex987-20260128_GPS_timeseries.csv")
+  # science_timeseries = here("../data/capex987_20260128/capex987_20260128_science_timeseries.csv")
+)
+
+field_definitions_path <- here("../data/capex987_20260128/slocum_fieldDefinitions.csv")
+# ---------------------------------------------------------------------------
+```
+
+```{r run}
+results <- check_field_definitions(datasets, field_definitions_path)
+```
+
+## Summary
+
+```{r summary-table}
+summary_tbl <- tibble::tibble(
+  Check = c(
+    "Columns in data, undocumented in fieldDefinitions",
+    "Columns in fieldDefinitions, not found in data",
+    "Dataset names in fieldDefinitions not supplied to this report",
+    "Dataset names supplied but absent from fieldDefinitions",
+    "fieldDefinitions rows missing Definition and/or Units"
+  ),
+  Count = c(
+    nrow(results$missing_from_defs),
+    nrow(results$missing_from_data),
+    length(results$datasets_only_in_defs),
+    length(results$datasets_only_in_data),
+    nrow(results$missing_info)
+  )
+)
+
+DT::datatable(summary_tbl, options = list(dom = "t"), rownames = FALSE)
+```
+
+```{r summary-flag, results='asis'}
+if (all(summary_tbl$Count == 0)) {
+  cat("**All checks passed — every field is documented and complete.**")
+} else {
+  cat("**", sum(summary_tbl$Count), "issue(s) found. See details below.**")
+}
+```
+
+## 1. Columns Missing From fieldDefinitions
+
+Columns that exist in a dataset but have no matching row in the field
+definitions file.
+
+```{r missing-from-defs, results='asis'}
+if (nrow(results$missing_from_defs) == 0) {
+  cat("None — every dataset column is documented.")
+} else {
+  DT::datatable(results$missing_from_defs, rownames = FALSE)
+}
+```
+
+## 2. Columns Missing From the Data
+
+Rows in the field definitions file that reference a Dataset / Column_Name
+combination that was not found in the corresponding dataset (either the
+column doesn't exist, or is misspelled).
+
+```{r missing-from-data, results='asis'}
+if (nrow(results$missing_from_data) == 0) {
+  cat("None — every documented field was found in the data.")
+} else {
+  DT::datatable(results$missing_from_data, rownames = FALSE)
+}
+```
+
+## 3. Dataset Name Mismatches
+
+Checks that the names used in `datasets` line up with the values in the
+`Dataset` column of the field definitions file.
+
+```{r dataset-mismatch, results='asis'}
+if (length(results$datasets_only_in_defs) == 0 && length(results$datasets_only_in_data) == 0) {
+  cat("None — dataset names match between your input list and fieldDefinitions.")
+} else {
+  if (length(results$datasets_only_in_defs) > 0) {
+    cat(
+      "**In fieldDefinitions, but not supplied to this report:** ",
+      paste(results$datasets_only_in_defs, collapse = ", "),
+      "\n\n"
+    )
+  }
+  if (length(results$datasets_only_in_data) > 0) {
+    cat(
+      "**Supplied to this report, but absent from fieldDefinitions:** ",
+      paste(results$datasets_only_in_data, collapse = ", ")
+    )
+  }
+}
+```
+
+## 4. Missing Definition / Units
+
+Field definition rows where `Definition` and/or `Units` is blank.
+
+```{r missing-info, results='asis'}
+if (nrow(results$missing_info) == 0) {
+  cat("None — every documented field has both a Definition and a Units value.")
+} else {
+  results$missing_info |>
+    dplyr::mutate(
+      Missing = dplyr::case_when(
+        Definition_missing & Units_missing ~ "Definition & Units",
+        Definition_missing ~ "Definition",
+        Units_missing ~ "Units"
+      )
+    ) |>
+    dplyr::select(Dataset, Column_Name, Missing) |>
+    DT::datatable(rownames = FALSE)
+}
+```

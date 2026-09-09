@@ -1,12 +1,56 @@
 Column_Name,Dataset,Definition,Units
-BallastCmd,flight_timeseries_engineering,ballast commanded,
-BallastPos,flight_timeseries_engineering,ballast position,
-LinCmd,flight_timeseries_engineering,linear displacement commanded (change pitch),
-LinPos,flight_timeseries_engineering,linear position,
-AngCmd,flight_timeseries_engineering,angular displacement commanded (change roll),
-AngPos,flight_timeseries_engineering,angular position,
-Voltage,flight_timeseries_engineering,voltage: can be transformed in % of battery (see SeaExplorer Piloting manual Annex A.4 Figure 4: second generation battery),
-DesiredH,flight_timeseries_engineering,desired heading,
+Time,flight_timeseries_engineering,Unix epoch timestamp (seconds elapsed since 1970-01-01 00:00:00 UTC).,Seconds
+YO_NUMBER,flight_timeseries_engineering,Dive/yo sequence profile number recorded by the flight computer.,Count
+Time_UTC,flight_timeseries_engineering,Coordinated Universal Time (UTC) logged by the flight computer.,YYYY-MM-DD HH:MM:SS
+NavState,flight_timeseries_engineering,"Operational state (e.g., descent, ascent, inflecting, surfacing, gps) mapped from numeric codes.",Text string
+Heading,flight_timeseries_engineering,Vehicle compass heading relative to north (0–360°).,Degrees (°)
+Declination,flight_timeseries_engineering,Local magnetic declination offset applied for true north corrections.,Degrees (°)
+Pitch,flight_timeseries_engineering,"Pitch angle relative to horizontal (positive = nose up, negative = nose down).",Degrees (°)
+Roll,flight_timeseries_engineering,Roll angle / tilt along the longitudinal axis (positive = right wing down).,Degrees (°)
+Depth,flight_timeseries_engineering,Water depth calculated by the flight system pressure sensor.,Meters (m)
+PressureNav,flight_timeseries_engineering,Raw hydrostatic pressure measured by the primary navigation transducer.,Decibars (dbar)
+PressureRel,flight_timeseries_engineering,Relative/tare-corrected pressure used for flight depth calculations.,Decibars (dbar)
+Temperature,flight_timeseries_engineering,Internal temperature measured inside the glider,°C
+Pa,flight_timeseries_engineering,Internal hull air pressure,psia / mbar
+Humidity,flight_timeseries_engineering,Relative humidity percentage inside the glider,% RH
+Lat,flight_timeseries_engineering,Latitude coordinate converted from NMEA format (North is positive).,Decimal Degrees
+Lon,flight_timeseries_engineering,Longitude coordinate converted from NMEA format (West is negative).,Decimal Degrees
+DeadReckoning,flight_timeseries_engineering,"Position estimation flag (0 = true surface GPS fix, 1 = underwater dead-reckoned estimate).",numerical integer
+DesiredH,flight_timeseries_engineering,Target heading set by the flight controller for active navigation segment.,Degrees (°)
+DesiredHCC,flight_timeseries_engineering,Compass course adjustment command calculated by the flight controller considering current correction.,Degrees (°)
+BallastCmd,flight_timeseries_engineering,Commanded variable buoyancy system oil volume move.,mL / cm³
+BallastPos,flight_timeseries_engineering,Actual measured position/volume displacement of the buoyancy ballast pump.,mL / cm³
+LinCmd,flight_timeseries_engineering,Commanded linear battery position along the longitudinal axis (pitch control).,mm / inches
+LinPos,flight_timeseries_engineering,Actual measured position of the linear pitch motor/battery pack.,mm / inches
+AngCmd,flight_timeseries_engineering,Commanded angular roll position for the rotating pitch mass.,Degrees / Counts
+AngPos,flight_timeseries_engineering,Actual measured angular position of the roll mass motor.,Degrees / Counts
+Voltage,flight_timeseries_engineering,Main battery pack bus voltage,Volts (V)
+Altitude,flight_timeseries_engineering,Height above the seafloor measured by the altimeter sensor (when in range).,Meters (m)
+Time,science_timeseries,Unix epoch timestamp (seconds elapsed since 1970-01-01 00:00:00 UTC).,Seconds
+YO_NUMBER,science_timeseries,Dive sequence/profile number,numerical integer
+Time_UTC,science_timeseries,Coordinated Universal Time (UTC) timestamp from the payload real-time clock,YYYY-MM-DD HH:MM:SS.fff
+NAV_STATE,science_timeseries,"Flight computer operational state (e.g., descent, ascent, inflecting, surfacing, gps). Forward-filled to bridge nav updates.",Text string
+NAV_LONGITUDE,science_timeseries,Glider longitude coordinate,decimal degrees
+NAV_LATITUDE,science_timeseries,Glider latitude coordinate,decimal degrees
+NAV_DEPTH,science_timeseries,Water depth calculated by glider flight system; linearly interpolated over time,Meters (m)
+NAV_HEADING,science_timeseries,Vehicle compass heading relative to magnetic/true north (0–360°).,Degrees (°)
+SD_CARD_USAGE,science_timeseries,Total memory consumption on the internal payload SD card.,Megabytes (MB)
+SSD_USAGE,science_timeseries,Total memory consumption on the solid-state drive (or -1 if unused).,Megabytes (MB)
+LEGATO_CONDUCTIVITY,science_timeseries,Raw electrical conductivity measured by the Legato CTD sensor.,mS/cm
+LEGATO_TEMPERATURE,science_timeseries,In-situ seawater temperature measured by the Legato CTD sensor.,°C
+LEGATO_PRESSURE,science_timeseries,Hydrostatic water pressure measured by the Legato CTD sensor (~1 dbar ≈ 1 m depth).,Decibars (dbar)
+LEGATO_SALINITY,science_timeseries,"Practical Salinity (SP) derived from Legato conductivity, temperature, and pressure.",PSU
+LEGATO_CONDTEMP,science_timeseries,Internal temperature of the conductivity cell sensor element (used for thermal lag corrections).,°C
+LEGATO_SOUND_VELOCITY,science_timeseries,"Speed of sound in seawater calculated via TEOS-10 (GSW) from salinity, temperature, pressure, and position.",m/s
+LEGATO_POTENTIAL_DENSITY,science_timeseries,Potential density of seawater calculated via TEOS-10 (GSW) referenced to surface pressure (0 dbar).,kg/m³
+yo_number,gps_timeseries,Dive/yo sequence profile number associated with the GPS fix,integer
+time_utc,gps_timeseries,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,YYYY-MM-DD HH:MM:SS
+latitude,gps_timeseries,Geographical latitude coordinate converted from NMEA format (North is positive).,Decimal Degrees
+longitude,gps_timeseries,Geographical longitude coordinate converted from NMEA format (West is negative).,Decimal Degrees
+yo_number,dead-reckoned_timeseries,Dive/yo sequence profile number associated with the underwater track segment.,integer
+time_utc,dead-reckoned_timeseries,Coordinated Universal Time (UTC) timestamp recorded by the flight computer (DeadReckoning == 1).,YYYY-MM-DD HH:MM:SS
+latitude,dead-reckoned_timeseries,Underwater estimated latitude converted from NMEA format via dead reckoning (North is positive).,Decimal Degrees
+longitude,dead-reckoned_timeseries,Underwater estimated longitude converted from NMEA format via dead reckoning (West is negative).,Decimal Degrees
 UNIQUE_ID,detections,"A unique ID for the recorder on the metadata sheet that this detection data can be linked to. There should be only one unique ID for any recorder entered. For each UNIQUE_ID and SPECIES combination, there should be the same combination of values for all of the following fields: CALL_TYPE, DETECTON_METHOD, PROTOCOL_REFERENCE, and ANALYSIS_SAMPLING_RATE_HZ. If multiple values are used across one UNIQUE_ID and SPECIES for any of these fields marked with an asterisk (*), enter all values and separate with a semicolon ("";""). A unique ID should have a combination with the minimum components: organization name or code, region or location of data collection, date for data (typically Year and Month of the first date of data collection), and site name or instrument ID for the particular recorder. Additional components could include project name, platform or recorder type, etc., as needed.",Text string
 ANALYSIS_PERIOD_START_DATETIME,detections,"Start date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the start date and time for the time bin of reporting right whales detected for that row of data); for daily presence, the start date would be the beginning date and time for that analysis day). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 ANALYSIS_PERIOD_END_DATETIME,detections,"End date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the end for the time bin of reporting right whales detected for that row of data). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
@@ -14,7 +58,7 @@ ANALYSIS_PERIOD_EFFORT_SECONDS,detections,"The amount of time, in seconds, the e
 ANALYSIS_TIME_ZONE,detections,"The time-zone that the analysis was conducted in and that the time stamps in the ANALYSIS_PERIOD_START_DATETIME match (these may differ from the time zone of the sound files, for example if sound files are in UTC, but analysis was conducted on a local time zone, the analysis time zone would be i.e. UTC-5).",Text string
 SPECIES_CODE,detections,"The species for which analysis was conducted for and the detection ""ACOUSTIC_PRESENCE"" column pertains to. See Species Code tab to find the appropriate code to use for each species.","BBWH = Beaked Whales, FIWH = Fin Whales, HUWH = Humpback Whales, SPWH = Sperm Whales, UNDO = Unidentified dolphins"
 ACOUSTIC_PRESENCE,detections,"Whether the species was detected, possibly detected, not detected, or not analyzed for. Entry options: D, P, N, M. ""D"" denotes a day with validated species' presence, ""P"" for days that cannot definitively confirm species' presence, ""N"" for no true detections, and ""M"" for data that has not been analyzed for that species' presence, or if the data is missing (i.e. if no recordings are available for that time- use M here for data gap times within a deployment).","""D""; ""P""; ""N""; ""M"""
-CALL_TYPE_CODE,detections,"The call type used for the analysis period to determine the species' presence. See the Call_Type_Code tab to use the appropriate CALL_TYPE_CODE listed for the call type and species descriptions. If an additional call type is used that is not listed in Call_Type_Codes, or a combination of call types are used that are not currently listed, please let nmfs.pacmdata@noaa.gov know upon submission so this field can be updated accordingly. There should be only one code listed per row. No commas should be used in this field.", 
+CALL_TYPE_CODE,detections,"The call type used for the analysis period to determine the species' presence. See the Call_Type_Code tab to use the appropriate CALL_TYPE_CODE listed for the call type and species descriptions. If an additional call type is used that is not listed in Call_Type_Codes, or a combination of call types are used that are not currently listed, please let nmfs.pacmdata@noaa.gov know upon submission so this field can be updated accordingly. There should be only one code listed per row. No commas should be used in this field.",Text string
 DETECTION_METHOD,detections,"How the data was reviewed for this species' presence, either ""Manual"" for hand browsing, or the detector used. For example, Manual, LFDCS, ISRAT, Pamguard Click Detector. If there is an available version of the detector, include here (i.e. ISRAT v3.5). If multiple detectors for this SPECIES and UNIQUE_ID were used, separate multiple entries with semicolon ("";"").",Text string
 PROTOCOL_REFERENCE,detections,"Published reference, DOI, or link to documentation for the detector used, and/or analysis method. If not available, ""Unpublished"" should be used. Separate multiple entries with a semicolon ("";"") and have doi in parenthesis following Author Year (if available). Do not use commas in this field.",Text string
 DETECTION_SOFTWARE_NAME,detections,"The software used for the detection method. This could be either the standalone software program (i.e. PAMGUARD, Raven), or the name of the programming language the detection method was written in (i.e. IDL, MATLAB).",Text string
