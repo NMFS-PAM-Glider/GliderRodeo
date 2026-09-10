@@ -36,16 +36,16 @@ file. Paths are relative to the project root (resolved via `here::here()`).
 ```{r inputs, echo=TRUE}
 # ------------------------- EDIT THIS CHUNK -------------------------------
 datasets <- list(
-  detections = here("../data/capex987_20260128/capex987_20260128_FakeData_EventDetections.csv"),
-  detections = here("../data/capex987_20260128/capex987_20260128_FakeData_HrlyDetections.csv"),
-  # flight_timeseries_engineering = here("../data/risso_20260128/risso-20260128_flight_timeseries_engineering.csv"),
-  # flight_timeseries_modeled = here("../data/stenella_20260128/risso-20260128_flight_timeseries_modeled.csv"),
-  profiles = here("../data/capex987_20260128/capex987-20260128-delayed-profiles.csv"),
-  GPS_timeseries = here("../data/capex987_20260128/capex987-20260128_GPS_timeseries.csv")
-  # science_timeseries = here("../data/capex987_20260128/capex987_20260128_science_timeseries.csv")
+  detections = here("../data/sg274_20260128/sg274_20260128_FakeData_EventDetections.csv"),
+  detections = here("../data/sg274_20260128/sg274_20260128_FakeData_HrlyDetections.csv"),
+  flight_timeseries_engineering = here("../data/sg274_20260128/sg274_20260128_flight_timeseries_engineering.csv"),
+  flight_timeseries_modeled = here("../data/sg274_20260128/sg274_20260128_flight_timeseries_modeled.csv"),
+  # profiles = here("../data/sg274_20260128/sg274_20260128-delayed-profiles.csv"),
+  GPS_timeseries = here("../data/sg274_20260128/sg274_20260128_GPS_timeseries.csv"),
+  science_timeseries = here("../data/sg274_20260128/sg274_20260128_science_timeseries.csv")
 )
 
-field_definitions_path <- here("../data/capex987_20260128/slocum_fieldDefinitions.csv")
+field_definitions_path <- here("../data/sg274_20260128/sg_fieldDefinitions.csv")
 # ---------------------------------------------------------------------------
 ```
 

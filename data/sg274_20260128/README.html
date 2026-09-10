@@ -640,20 +640,6 @@ seconds (s)
 </tr>
 <tr>
 <td style="text-align:left;">
-dateTime
-</td>
-<td style="text-align:left;">
-flight_timeseries_engineering
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 pitch
 </td>
 <td style="text-align:left;">
@@ -665,7 +651,7 @@ horizontal plane of the earth. A positive pitch represents a ‘nose-up’
 attitude; a negative pitch respresents a ‘nose-down’ attitude.
 </td>
 <td style="text-align:left;">
-radians
+degrees (°)
 </td>
 </tr>
 <tr>
@@ -676,10 +662,11 @@ roll
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-The angular rotation of the glider around its’ longitudinal axis.
+The angular rotation of the glider around its’ longitudinal axis. A
+positive value is rolled to starboard (starboard wing down).
 </td>
 <td style="text-align:left;">
-radians
+degrees (°)
 </td>
 </tr>
 <tr>
@@ -690,10 +677,10 @@ heading
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-measured heading
+Measured heading (magnetic)
 </td>
 <td style="text-align:left;">
-radians
+degrees (°)
 </td>
 </tr>
 <tr>
@@ -704,8 +691,8 @@ vbdCC
 flight_timeseries_engineering
 </td>
 <td style="text-align:left;">
-Measurement of the volume change/displacement pf the glider’s external
-oil bladder/buoyancy engine
+Measurement of the glider’s variable buoyancy device (VBD; buoyancy
+engine) position relative to neutral.
 </td>
 <td style="text-align:left;">
 cubic centimeters (cc)
@@ -778,7 +765,8 @@ vertSpeed
 flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
-The velocity along the vertical z-axis during the dive.
+The velocity along the vertical z-axis during the dive. Based on the
+hydrodynamic model.
 </td>
 <td style="text-align:left;">
 centimeters per second (cm/s)
@@ -792,7 +780,8 @@ horzSpeed
 flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
-The horizontal velocity through the water column during the dive.
+The horizontal velocity through the water during the dive. Based on the
+hydrodynamic model.
 </td>
 <td style="text-align:left;">
 centimeters per second (cm/s)
@@ -806,10 +795,10 @@ speed
 flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
-NA
+Vehicle speed based on the hydrodynamic flight model.
 </td>
 <td style="text-align:left;">
-NA
+centimeters per second (cm/s)
 </td>
 </tr>
 <tr>
@@ -820,10 +809,12 @@ speed_qc
 flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
-NA
+Flag to for quality of speed calculation. 0 - QC_NO_CHANGE 1 -QC_GOOD 2
+- QC_PROBABLY_GOOD 3 - QC_PROBABLY_BAD 4 - QC_BAD 5 - QC_CHANGED 6 -
+QC_UNSAMPLED 8 - QC_INTERPOLATED 9 - QC_MISSING
 </td>
 <td style="text-align:left;">
-NA
+n/a
 </td>
 </tr>
 <tr>
@@ -835,7 +826,8 @@ flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
 The downward or upward slope angle at which the vehicle moves through
-the water relative to the horizontal plane.
+the water relative to the horizontal plane, based on the hydrodynamic
+model.
 </td>
 <td style="text-align:left;">
 degrees (°)
@@ -849,10 +841,11 @@ buoyancy
 flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
-NA
+Buoyancy of vehicle, corrected for compression effects, based on the
+hydrodynamic model.
 </td>
 <td style="text-align:left;">
-NA
+grams (g)
 </td>
 </tr>
 <tr>
@@ -864,7 +857,7 @@ flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
 The estimated distance (in meters) the glider has traveled northward
-during the dive.
+during the dive, based on the hydrodynamic model.
 </td>
 <td style="text-align:left;">
 meters (m)
@@ -879,7 +872,7 @@ flight_timeseries_modeled
 </td>
 <td style="text-align:left;">
 The estimated distance (in meters) the glider has traveled eastward
-during the dive.
+during the dive, based on the hydrodynamic model.
 </td>
 <td style="text-align:left;">
 meters (m)
@@ -1069,7 +1062,9 @@ GPS_timeseries
 </td>
 <td style="text-align:left;">
 Northward component of the dive depth-average current based on
-hydrodynamic model, in m/s
+hydrodynamic model. Calculated as the difference between the expected
+surface location (from north_displacement) and the actual GPS surface
+location.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1084,7 +1079,9 @@ GPS_timeseries
 </td>
 <td style="text-align:left;">
 Eastward component of the dive depth-average current based on
-hydrodynamic model, in m/s
+hydrodynamic model. Calculated as the difference between the expected
+surface location (from east_displacement) and the actual GPS surface
+location.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1098,10 +1095,10 @@ dac_n_gsm
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Glider Slope Model: Depth averaged current northing, in m/s
+Glider Slope Model: Depth averaged current northing.
 </td>
 <td style="text-align:left;">
-meters (m)
+meters per second (m/s)
 </td>
 </tr>
 <tr>
@@ -1112,10 +1109,10 @@ dac_e_gsm
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Glider Slope Model: Depth averaged current easting, in m/s
+Glider Slope Model: Depth averaged current easting.
 </td>
 <td style="text-align:left;">
-meters (m)
+meters per second (m/s)
 </td>
 </tr>
 <tr>
@@ -1126,10 +1123,13 @@ dac_qc
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-NA
+Flag for quality of the depth averaged current calculation. 0 -
+QC_NO_CHANGE 1 -QC_GOOD 2 - QC_PROBABLY_GOOD 3 - QC_PROBABLY_BAD 4 -
+QC_BAD 5 - QC_CHANGED 6 - QC_UNSAMPLED 8 - QC_INTERPOLATED 9 -
+QC_MISSING
 </td>
 <td style="text-align:left;">
-NA
+n/a
 </td>
 </tr>
 <tr>
@@ -1140,8 +1140,7 @@ avg_speed_n
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Northward component of flight average speed based on hydrodynamic model,
-in meters per second
+Northward component of flight average speed based on hydrodynamic model.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1155,8 +1154,7 @@ avg_speed_e
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Eastward component of flight average speed based on hydrodynamic model,
-in meters per second
+Eastward component of flight average speed based on hydrodynamic model.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1170,7 +1168,7 @@ avg_speed_n_gsm
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Glider Slope Model (gsm): Flight average speed northing in meters/second
+Glider Slope Model (gsm): Flight average speed northing.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1184,8 +1182,7 @@ avg_speed_e_gsm
 GPS_timeseries
 </td>
 <td style="text-align:left;">
-Glider Slope Model (gsm): Flight average speed in easting in
-meters/second
+Glider Slope Model (gsm): Flight average speed in easting.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
@@ -1200,10 +1197,12 @@ GPS_timeseries
 </td>
 <td style="text-align:left;">
 A quality flag for validity of data dependent on the hydrodynamic
-model**
+model** 0 - QC_NO_CHANGE 1 -QC_GOOD 2 - QC_PROBABLY_GOOD 3 -
+QC_PROBABLY_BAD 4 - QC_BAD 5 - QC_CHANGED 6 - QC_UNSAMPLED 8 -
+QC_INTERPOLATED 9 - QC_MISSING
 </td>
 <td style="text-align:left;">
-NA
+n/a
 </td>
 </tr>
 </tbody>
@@ -1282,7 +1281,8 @@ latitude
 science_timeseries
 </td>
 <td style="text-align:left;">
-Latitude in decimal degrees (DD.DDDD)
+Latitude in decimal degrees (DD.DDDD), estimated from the hydrodynamic
+model.
 </td>
 <td style="text-align:left;">
 decimal degrees
@@ -1296,7 +1296,8 @@ longitude
 science_timeseries
 </td>
 <td style="text-align:left;">
-Longitude in decimal degrees (DD.DDDD)
+Longitude in decimal degrees (DD.DDDD), estimated from the hydrodynamic
+model.
 </td>
 <td style="text-align:left;">
 decimal degrees
@@ -1324,7 +1325,7 @@ temperature
 science_timeseries
 </td>
 <td style="text-align:left;">
-Temperature in Celcius degrees
+Temperature (in situ).
 </td>
 <td style="text-align:left;">
 celcius degrees (°C)
@@ -1338,10 +1339,10 @@ salinity
 science_timeseries
 </td>
 <td style="text-align:left;">
-Salinity in Practical Salinity Units (PSU)
+Salinity, corrected for thermal-intertia effects.
 </td>
 <td style="text-align:left;">
-PSU
+Practical Salinity Units (PSU)
 </td>
 </tr>
 <tr>
@@ -1352,7 +1353,7 @@ density
 science_timeseries
 </td>
 <td style="text-align:left;">
-Seawater density in kilograms per cubic meter
+Seawater potential density.
 </td>
 <td style="text-align:left;">
 kilograms/cubic meter (kg m-3)
@@ -1366,7 +1367,8 @@ soundVelocity
 science_timeseries
 </td>
 <td style="text-align:left;">
-Underwater sound velocity in meters/second
+Underwater sound velocity. Calculated using the Gibbs Seawater Toolbox
+(GSW) ‘gsw_sound_speed’ equation.
 </td>
 <td style="text-align:left;">
 meters per second (m/s)
