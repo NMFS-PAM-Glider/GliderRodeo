@@ -18,7 +18,7 @@ A draft [Data Management Plan](https://docs.google.com/document/d/12bI75Ho0-ega1
 ::: {.callout-note appearance="simple"}
 ## Note about Data Processing Methods
 
-Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve. Specific methods for pre-processing vary by glider/PAM system, and are provided in the [Pre-Processing section]().
+Processing methods for the Glider Rodeo data are static (developed for this purpose and retained); however, the PAM-Glider Lab manual is considered a 'living' document and we expect the pre-processing methods to change as methods evolve. Specific methods for pre-processing vary by glider/PAM system, and are provided in the [Pre-Processing section](https://nmfs-pam-glider.github.io/GliderRodeo/content/data.html#pre-processing-methods-by-glider).
 :::
 
 ## Raw Audio Data
@@ -49,7 +49,7 @@ Audio data was analyzed to provide Hybrid-millidecade band levels ([Martin et al
 
 Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with *real* datasets in the future!).
 
-The synthesized datasets are saved ad '**_FakeData_EventDetections.csv' and '**_FakeData_HrlyDetections.csv' for each glider.
+The synthesized datasets are saved as **_FakeData_EventDetections.csv and **_FakeData_HrlyDetections.csv for each glider.
 
 ## Environmental Data
 [Environmental Data Processing](https://nmfs-pam-glider.github.io/GliderRodeo/content/data_processing/EnvData-processing.html) Methods for extracting and processing environmental data collected during glider deployments are provided for the Seaglider ([link to Agate instructions](https://sfregosi.github.io/agate/)) and Slocum ([link to ESD instructions](https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html)). Hefring environmental is extracted from the Hefring website. Environmental data are saved as 'data/**_science_timeseries.csv' for each glider. 

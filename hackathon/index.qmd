@@ -47,6 +47,8 @@ Our goals are to share this dataset with the wider community and encourage use o
 
 - All communications will use the [Slack platform](https://slack.com/) (can use browser or app).
 
+- Please review our [Code of Conduct](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/conduct.html), and lets make sure everyone feels welcome!
+
 ### **How to Participate:**
 
 Please fill out this [participant form](https://forms.gle/y1kFU1U13iEbww2i9), and we'll invite you to join our conversation on our Slack Workspace!

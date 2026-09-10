@@ -3,7 +3,6 @@ title: "conduct"
 format: html
 ---
 
-
 # Event Code of Conduct
 
 Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the [Contributor Covenant Code of Conduct](https://github.com/fish-pace/hackweek-2025/blob/main/CODE_OF_CONDUCT.md) governing contributions to this JupyterBook.
@@ -14,7 +13,7 @@ The organizers of this event are dedicated to providing a harassment-free learni
 
 ## Definition of Harassment
 
-Harassment includes, but is not limited to:
+- Harassment includes, but is not limited to:
 
 - Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.
 
