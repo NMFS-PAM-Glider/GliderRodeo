@@ -41,7 +41,7 @@ lastTimes = [datetime(2026,2,10,8,20,0); datetime(2026,2,10,8,0,0)];
 
 
 %% loop through gliders
-for gtr = 2 %:length(gliders) % set to a number to test one glider
+for gtr = 1:length(gliders) % set to a number to test one glider
 
     glider = gliders{gtr};
 
@@ -92,7 +92,10 @@ for gtr = 2 %:length(gliders) % set to a number to test one glider
     % write to CSV in repo
     writetable(flightT, fullfile(path_out, [glider '_20260128_flight_timeseries_modeled.csv']))
 
-    % then just the engineering table as is
+    % then the engineering table
+    % convert times to unix epoch time and remove dateTime variable
+    engT.time = datenum2unix(engT.time);
+    engT = removevars(engT, 'dateTime');
     writetable(engT, fullfile(path_out, [glider '_20260128_flight_timeseries_engineering.csv']))
 
 end
