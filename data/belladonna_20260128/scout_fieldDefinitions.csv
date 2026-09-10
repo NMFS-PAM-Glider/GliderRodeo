@@ -1,4 +1,4 @@
-Column_Name,Dataset,Definition,Units
+﻿Column_Name,Dataset,Definition,Units
 UNIQUE_ID,detections,"A unique ID for the recorder on the metadata sheet that this detection data can be linked to. There should be only one unique ID for any recorder entered. For each UNIQUE_ID and SPECIES combination, there should be the same combination of values for all of the following fields: CALL_TYPE, DETECTON_METHOD, PROTOCOL_REFERENCE, and ANALYSIS_SAMPLING_RATE_HZ. If multiple values are used across one UNIQUE_ID and SPECIES for any of these fields marked with an asterisk (*), enter all values and separate with a semicolon ("";""). A unique ID should have a combination with the minimum components: organization name or code, region or location of data collection, date for data (typically Year and Month of the first date of data collection), and site name or instrument ID for the particular recorder. Additional components could include project name, platform or recorder type, etc., as needed.",Text string
 ANALYSIS_PERIOD_START_DATETIME,detections,"Start date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the start date and time for the time bin of reporting right whales detected for that row of data); for daily presence, the start date would be the beginning date and time for that analysis day). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 ANALYSIS_PERIOD_END_DATETIME,detections,"End date time of validated data analyzed, for the time scale of the analysis, in ISO8601 format (YYYY-MM-DDThh:mm:ssZ) (i.e. the end for the time bin of reporting right whales detected for that row of data). Z in date time refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.",DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
@@ -16,3 +16,29 @@ MAX_ANALYSIS_FREQUENCY_RANGE_HZ,detections,"The maximum frequency (Hz) used for 
 time,GPS,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
 longitude,GPS,Decimal Degrees,Decimal Degrees
 latitude,GPS,Decimal Degrees,Decimal Degrees
+time,GPS,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+longitude,GPS,Longitude in Decimal Degrees,Decimal Degrees
+latitude,GPS,Latitude in Decimal Degrees,Decimal Degrees
+dive_index,dives,Index of dives,Numeric
+start_time,dives,Dives Start Time: Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+end_time,dives,Dive End Time: Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+duration_s,dives,Duration of dive in seconds,seconds (s)
+start_latitude,dives,Dive Start Latitude in Decimal Degrees,Decimal Degrees
+start_longitude,dives,Dive Start Longitude in Decimal Degrees,Decimal Degrees
+end_latitude,dives,Dive End Latitude in Decimal Degrees,Decimal Degrees
+end_longitude,dives,Dive End Longitude in Decimal Degrees,Decimal Degrees
+distance_m,dives,Distance of dive in meters (m),meters (m)
+max_depth_m,dives,Maximum depth of dive in meters (m),meters (m)
+num_yos,dives,number of yos during a dive,Numeric
+time,science,Coordinated Universal Time (UTC) timestamp corresponding to the specific fix.,DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+dive_index,science,Index of dives,Numeric
+depth_m,science,Dive depth in meters (m),meters (m)
+pressure_dbar,science,Water pressure measured by CTD,dbar
+temperature_c,science,Temperature in Celcius degrees,celcius degrees (°C)
+conductivity_S_m,science,Conductivity in Siemens per meter (S/m),Siemens per meter (S/m)
+salinity_psu,science,Salinity in Practical Salinity Units (PSU),PSU
+density_kg_m3,science,Seawater density in kilograms per cubic meter,kilograms/cubic meter (kg m-3)
+sound_velocity_m_s,science,Velocity of sound in water measured using CTD data in meters per second (m/s),meters per second (m/s)
+latitude,science,Longitude in Decimal Degrees,Decimal Degrees
+longitude,science,Latitude in Decimal Degrees,Decimal Degrees
+source_file,science,Name of source file,Text string

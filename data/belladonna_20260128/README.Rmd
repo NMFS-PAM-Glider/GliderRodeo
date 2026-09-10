@@ -93,16 +93,14 @@ data %>%
 
 
 
-## belladonna_20260128_science_timeseries.csv
-** Under Development (not yet ready!) **
-
+## belladonna_20260128_science.csv
 The science dataset contains information on the depth, temperature, salinity, density, and sound velocity for each dive. Methods to develop this dataset can be found here (cite!), and definitions/units for data are found in the table below. *Note: Data are preliminary and require additional QAQC.*
 
 ```{r sci}
 #| echo = FALSE
 #| 
 data %>% 
-  filter(Dataset == "science_timeseries") %>%
+  filter(Dataset == "science") %>%
   kbl(
     align = "l", # Justify text to the left (use "c" for center or "r" for right)
     booktabs = TRUE # Clean, professional tablines
@@ -128,16 +126,15 @@ data %>%
   }
 ```
 
-## belladonna_20260128_delayed_profiles.csv
-
-** Under Development (not yet ready!) **
+## belladonna_20260128_dives.csv
+The profile dataset provides information for each dive including start/end times, min/max latitude and longitude, max depth, etc. Methods to develop this dataset can be found on (cite!), and definitions/units for data are found in the table below. Note: Data are preliminary and require additional QAQC.
 
 
 ```{r profile}
 #| echo = FALSE
 #| 
 data %>% 
-  filter(Dataset == "profiles") %>%
+  filter(Dataset == "dives") %>%
   kbl(
     align = "l", # Justify text to the left (use "c" for center or "r" for right)
     booktabs = TRUE # Clean, professional tablines

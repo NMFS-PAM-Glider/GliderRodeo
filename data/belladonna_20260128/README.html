@@ -681,12 +681,54 @@ Decimal Degrees
 Decimal Degrees
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+time
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp corresponding to the specific
+fix.
+</td>
+<td style="text-align:left;">
+DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+longitude
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Longitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+latitude
+</td>
+<td style="text-align:left;">
+GPS
+</td>
+<td style="text-align:left;">
+Latitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
 </tbody>
 </table>
 </div>
-<div id="belladonna_20260128_science_timeseries.csv" class="section level2">
-<h2>belladonna_20260128_science_timeseries.csv</h2>
-<p>** Under Development (not yet ready!) **</p>
+<div id="belladonna_20260128_science.csv" class="section level2">
+<h2>belladonna_20260128_science.csv</h2>
 <p>The science dataset contains information on the depth, temperature,
 salinity, density, and sound velocity for each dive. Methods to develop
 this dataset can be found here (cite!), and definitions/units for data
@@ -711,13 +753,185 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+time
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Coordinated Universal Time (UTC) timestamp corresponding to the specific
+fix.
+</td>
+<td style="text-align:left;">
+DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+dive_index
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Index of dives
+</td>
+<td style="text-align:left;">
+Numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+depth_m
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Dive depth in meters (m)
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pressure_dbar
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Water pressure measured by CTD
+</td>
+<td style="text-align:left;">
+dbar
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+temperature_c
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Temperature in Celcius degrees
+</td>
+<td style="text-align:left;">
+celcius degrees (°C)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+conductivity_S_m
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Conductivity in Siemens per meter (S/m)
+</td>
+<td style="text-align:left;">
+Siemens per meter (S/m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+salinity_psu
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Salinity in Practical Salinity Units (PSU)
+</td>
+<td style="text-align:left;">
+PSU
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+density_kg_m3
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Seawater density in kilograms per cubic meter
+</td>
+<td style="text-align:left;">
+kilograms/cubic meter (kg m-3)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sound_velocity_m_s
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Velocity of sound in water measured using CTD data in meters per second
+(m/s)
+</td>
+<td style="text-align:left;">
+meters per second (m/s)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+latitude
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Longitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+longitude
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Latitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+source_file
+</td>
+<td style="text-align:left;">
+science
+</td>
+<td style="text-align:left;">
+Name of source file
+</td>
+<td style="text-align:left;">
+Text string
+</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="belladonna_20260128_delayed_profiles.csv" class="section level2">
-<h2>belladonna_20260128_delayed_profiles.csv</h2>
-<p>** Under Development (not yet ready!) **</p>
+<div id="belladonna_20260128_dives.csv" class="section level2">
+<h2>belladonna_20260128_dives.csv</h2>
+<p>The profile dataset provides information for each dive including
+start/end times, min/max latitude and longitude, max depth, etc. Methods
+to develop this dataset can be found on (cite!), and definitions/units
+for data are found in the table below. Note: Data are preliminary and
+require additional QAQC.</p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -737,6 +951,160 @@ Units
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+dive_index
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Index of dives
+</td>
+<td style="text-align:left;">
+Numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start_time
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dives Start Time: Coordinated Universal Time (UTC) timestamp
+corresponding to the specific fix.
+</td>
+<td style="text-align:left;">
+DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+end_time
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dive End Time: Coordinated Universal Time (UTC) timestamp corresponding
+to the specific fix.
+</td>
+<td style="text-align:left;">
+DATETIME in ISO8601 format (YYYY-MM-DDThh:mm:ssZ)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+duration_s
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Duration of dive in seconds
+</td>
+<td style="text-align:left;">
+seconds (s)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start_latitude
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dive Start Latitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start_longitude
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dive Start Longitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+end_latitude
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dive End Latitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+end_longitude
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Dive End Longitude in Decimal Degrees
+</td>
+<td style="text-align:left;">
+Decimal Degrees
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+distance_m
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Distance of dive in meters (m)
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+max_depth_m
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+Maximum depth of dive in meters (m)
+</td>
+<td style="text-align:left;">
+meters (m)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+num_yos
+</td>
+<td style="text-align:left;">
+dives
+</td>
+<td style="text-align:left;">
+number of yos during a dive
+</td>
+<td style="text-align:left;">
+Numeric
+</td>
 </tr>
 </tbody>
 </table>
