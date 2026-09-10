@@ -1,0 +1,312 @@
+table_type,data_group,field,dtype,units,files_with_field,files_of_type,rows_min,rows_max,rows_total
+AHRS,/Data/AHRS,time,float64,seconds since 1970-01-01T00:00:00 UTC,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Valid,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Quaternion_W,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Quaternion_X,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Quaternion_Y,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Quaternion_Z,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Gyro_X,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Gyro_Y,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Gyro_Z,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Accelerometer_X,float32,g,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Accelerometer_Y,float32,g,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Accelerometer_Z,float32,g,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Magnetometer_X,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Magnetometer_Y,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Magnetometer_Z,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Temperature,float32,C,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Heading,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Pitch,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,Roll,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,VBEMotor,float32,ml,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,PitchMotor,float32,%,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,RollMotor,float32,,19,19,111,2111710,7370386
+AHRS,/Data/AHRS,ProcessorTime,float64,,19,19,111,2111710,7370386
+BatteryStatus,/Data/BatteryStatus,time,float64,seconds since 1970-01-01T00:00:00 UTC,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,Age,float32,Hours,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,Voltage,float32,V,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MinimumVoltage,float32,V,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MaximumVoltage_MinimumVoltage,float32,V,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MaximumVoltage,float32,V,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,Temperature,float32,C,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MinimumTemperature,float32,C,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MaximumTemperature_MinimumTemperature,float32,C,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MaximumTemperature,float32,C,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,Current,float32,A,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MaximumCurrent,float32,A,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,UsedCapacity,float32,%,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,FullCapacity,float32,Watt-hour,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,MixCapacity,float32,Watt-hour,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,AvCapacity_FullCapacity,float32,Watt-hour,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,AvCapacity,float32,Watt-hour,21,21,18,13663,48138
+BatteryStatus,/Data/BatteryStatus,Charge,float32,Coulomb,21,21,18,13663,48138
+Burst,/Data/Burst,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Auto_Orientation,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Orientation,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Wakeup,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Previous_Wakeup,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Low_Volt_Skip,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Boost,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Idle_3pcnt,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Idle_6pcnt,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,Status_Idle_12pcnt,int8,,15,15,130,24268,112258
+Burst,/Data/Burst,TimeStamp,float64,s,15,15,130,24268,112258
+Burst,/Data/Burst,MatlabTimeStamp,float64,days,15,15,130,24268,112258
+Burst,/Data/Burst,SerialNumber,float64,,15,15,130,24268,112258
+Burst,/Data/Burst,SpeedOfSound,float32,m/s,15,15,130,24268,112258
+Burst,/Data/Burst,Error,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,ExtendedStatus,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,Status,float64,,15,15,130,24268,112258
+Burst,/Data/Burst,CellSize,float32,m,15,15,130,24268,112258
+Burst,/Data/Burst,NumberofCells,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,Blanking,float64,m,15,15,130,24268,112258
+Burst,/Data/Burst,NominalCor,float32,%,15,15,130,24268,112258
+Burst,/Data/Burst,Battery,float32,V,15,15,130,24268,112258
+Burst,/Data/Burst,Magnetometer_X,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,Magnetometer_Y,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,Magnetometer_Z,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,Accelerometer_X,float32,g,15,15,130,24268,112258
+Burst,/Data/Burst,Accelerometer_Y,float32,g,15,15,130,24268,112258
+Burst,/Data/Burst,Accelerometer_Z,float32,g,15,15,130,24268,112258
+Burst,/Data/Burst,Ambiguity,float32,m/s,15,15,130,24268,112258
+Burst,/Data/Burst,TransmitEnergy,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,PowerLevel,float32,dB,15,15,130,24268,112258
+Burst,/Data/Burst,Physicalbeam__Dim2,float64,,15,15,130,24268,112258
+Burst,/Data/Burst,Physicalbeam,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,MagnetometerTemperature,float32,---,15,15,130,24268,112258
+Burst,/Data/Burst,RTCTemperature,float32,C,15,15,130,24268,112258
+Burst,/Data/Burst,PressureSensorTemperature,float32,C,15,15,130,24268,112258
+Burst,/Data/Burst,EnsembleCount,float64,,15,15,130,24268,112258
+Burst,/Data/Burst,WaterTemperature,float32,C,15,15,130,24268,112258
+Burst,/Data/Burst,Pressure,float64,dbar,15,15,130,24268,112258
+Burst,/Data/Burst,Altimeter_LE,float32,m / dbar,15,15,130,24268,112258
+Burst,/Data/Burst,Altimeter_AST,float32,m / dbar,15,15,130,24268,112258
+Burst,/Data/Burst,Altimeter_Pressure,float32,m / dbar,15,15,130,24268,112258
+Burst,/Data/Burst,AltimeterQuality_LE,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,AltimeterQuality_AST,float32,,15,15,130,24268,112258
+Burst,/Data/Burst,ASTPressureOffset,float32,s,15,15,130,24268,112258
+Burst,/Data/Burst,AltimeterStatus,float32,,15,15,130,24268,112258
+CTD,/Data/CTD,time,float64,seconds since 1970-01-01T00:00:00 UTC,17,17,145,142041,502336
+CTD,/Data/CTD,Status_Glider_Behaviour,int8,,17,17,145,142041,502336
+CTD,/Data/CTD,Pressure,float32,dbar,17,17,145,142041,502336
+CTD,/Data/CTD,Depth,float32,m,17,17,145,142041,502336
+CTD,/Data/CTD,Temperature,float32,C,17,17,145,142041,502336
+CTD,/Data/CTD,Conductivity,float32,S/m,17,17,145,142041,502336
+CTD,/Data/CTD,Salinity,float32,PSU,17,17,145,142041,502336
+CTD,/Data/CTD,Density,float32,g/l,17,17,145,142041,502336
+CTD,/Data/CTD,ProcessorTime,float64,,17,17,145,142041,502336
+CTD,/Data/CTD,Latitude,float64,,17,17,145,142041,502336
+CTD,/Data/CTD,Longitude,float64,,17,17,145,142041,502336
+CTD,/Data/CTD,GliderBehaviour,float32,,17,17,145,142041,502336
+CTDProfiles,/Data/CTDProfiles,time,float64,seconds since 1970-01-01T00:00:00 UTC,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Status_Glider_Behaviour,int8,,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Temperature_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Temperature,float32,C,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Conductivity_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Conductivity,float32,S/m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Salinity_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Salinity,float32,PSU,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Density_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Density,float32,g/l,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Latitude_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Latitude,float64,,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Longitude_Depth,float64,m,17,17,144,43634,169253
+CTDProfiles,/Data/CTDProfiles,Longitude,float64,,17,17,144,43634,169253
+GNSS,/Data/GNSS,time,float64,seconds since 1970-01-01T00:00:00 UTC,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Date,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Time,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Resolved,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Declination,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Fix,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Differential_Corrections,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Power_Save,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Heading,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Carrier_Solution_Ambiguities,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Confirmed_Available,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Confirmed_Date,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Status_Confirmed_Time,int8,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Time,float64,s,21,21,133,6375,23091
+GNSS,/Data/GNSS,Accuracy,float64,s,21,21,133,6375,23091
+GNSS,/Data/GNSS,Satellites,float32,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Longitude,float64,,21,21,133,6375,23091
+GNSS,/Data/GNSS,Latitude,float64,,21,21,133,6375,23091
+GNSS,/Data/GNSS,HeightAboveEllipsoid,float64,m,21,21,133,6375,23091
+GNSS,/Data/GNSS,HeightAboveSeaLevel,float64,m,21,21,133,6375,23091
+GNSS,/Data/GNSS,HorizontalAccuracy,float64,m,21,21,133,6375,23091
+GNSS,/Data/GNSS,VerticalAccuracy,float64,m,21,21,133,6375,23091
+GNSS,/Data/GNSS,Vel_North,float64,m/s,21,21,133,6375,23091
+GNSS,/Data/GNSS,Vel_East,float64,m/s,21,21,133,6375,23091
+GNSS,/Data/GNSS,Vel_Down,float64,m/s,21,21,133,6375,23091
+GNSS,/Data/GNSS,GroundSpeed_2D_,float64,m/s,21,21,133,6375,23091
+GNSS,/Data/GNSS,SpeedAccuracy,float64,m/s,21,21,133,6375,23091
+GNSS,/Data/GNSS,DilutionofPrecision,float32,,21,21,133,6375,23091
+GNSS,/Data/GNSS,MotionHead,float64,,21,21,133,6375,23091
+GNSS,/Data/GNSS,HeadAccuracy,float64,,21,21,133,6375,23091
+GNSS,/Data/GNSS,VehicleHead_2D_,float64,,21,21,133,6375,23091
+GNSS,/Data/GNSS,MagneticDeclination,float32,,21,21,133,6375,23091
+GNSS,/Data/GNSS,MagneticDelinationAccuracy,float32,,21,21,133,6375,23091
+Glide Data,/Data/GlideData,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,148,57801,196771
+Glide Data,/Data/GlideData,TargetDepth,float32,m,15,15,148,57801,196771
+Glide Data,/Data/GlideData,TargetAltitude,float32,m,15,15,148,57801,196771
+Glide Data,/Data/GlideData,Depth,float32,m,15,15,148,57801,196771
+Glide Data,/Data/GlideData,Altitude,float32,m,15,15,148,57801,196771
+Glide Data,/Data/GlideData,AltitudeQuality,float32,,15,15,148,57801,196771
+Glide Data,/Data/GlideData,dPdt,float32,,15,15,148,57801,196771
+Glide Data,/Data/GlideData,Heading,float32,,15,15,148,57801,196771
+Glide Data,/Data/GlideData,Pitch,float32,,15,15,148,57801,196771
+Glide Data,/Data/GlideData,Roll,float32,,15,15,148,57801,196771
+Glide Data,/Data/GlideData,ProcessorTime,float64,,15,15,148,57801,196771
+Glider State,/Data/GliderState,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,34,1766,6978
+Glider State,/Data/GliderState,Status_Glider_Behaviour,int8,,15,15,34,1766,6978
+Glider State,/Data/GliderState,Gliderstate,float64,,15,15,34,1766,6978
+Glider State,/Data/GliderState,ProcessorTime,float64,,15,15,34,1766,6978
+MPCU,/Data/MPCU,time,float64,seconds since 1970-01-01T00:00:00 UTC,21,21,18,13726,48420
+MPCU,/Data/MPCU,LeakDetect_A,float32,,21,21,18,13726,48420
+MPCU,/Data/MPCU,LeakDetect_B,float32,,21,21,18,13726,48420
+MPCU,/Data/MPCU,Battery,float32,Wh,21,21,18,13726,48420
+MPCU,/Data/MPCU,BatteryUse,float32,%,21,21,18,13726,48420
+MPCU,/Data/MPCU,Humidity,float32,%,21,21,18,13726,48420
+MPCU,/Data/MPCU,Pressure,float32,pa,21,21,18,13726,48420
+MPCU,/Data/MPCU,Temperature_HumidtySensor,float32,C,21,21,18,13726,48420
+MPCU,/Data/MPCU,Temperature_PressureSensor,float32,C,21,21,18,13726,48420
+MPCU,/Data/MPCU,Temperature_VBEMaximum,float32,C,21,21,18,13726,48420
+MPCU,/Data/MPCU,Voltage,float32,V,21,21,18,13726,48420
+MPCU,/Data/MPCU,MaxVoltage,float32,V,21,21,18,13726,48420
+MPCU,/Data/MPCU,MinVoltage,float32,V,21,21,18,13726,48420
+MPCU,/Data/MPCU,Current,float32,A,21,21,18,13726,48420
+MPCU,/Data/MPCU,MaxCurrent,float32,A,21,21,18,13726,48420
+MPCU,/Data/MPCU,Power,float32,Watts,21,21,18,13726,48420
+MPCU,/Data/MPCU,MaxPower,float32,Watts,21,21,18,13726,48420
+MPCU,/Data/MPCU,MinPower,float32,Watts,21,21,18,13726,48420
+MPCU,/Data/MPCU,Energy,float32,watt-hour,21,21,18,13726,48420
+MPCU,/Data/MPCU,Charge,float32,amp-hour,21,21,18,13726,48420
+MPCU,/Data/MPCU,RunTime,float32,hours,21,21,18,13726,48420
+MPCU,/Data/MPCU,BatterySticks_Capacity,float32,%,21,21,18,13726,48420
+Navigation Current,/Data/NavigationCurrent,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,Latitude,float64,,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,Longitude,float64,,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,DRLatitude,float64,,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,DRLongitude,float64,,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,DiveTime,float32,,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,DepthAveragedCurrent_Speed,float32,m/s,15,15,3,69,294
+Navigation Current,/Data/NavigationCurrent,DepthAveragedCurrent_Direction,float32,,15,15,3,69,294
+Navigation Position,/Data/NavigationPosition,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Status_Glider_Behaviour,int8,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Latitude,float64,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Longitude,float64,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Depth,float32,m,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Altitude,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,BottomDepth,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Speed,float32,m/s,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,dPdt,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Heading,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Pitch,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Roll,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Type,float32,,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Distance_East,float32,m,15,15,48,10498,50161
+Navigation Position,/Data/NavigationPosition,Distance_North,float32,m,15,15,48,10498,50161
+Navigation Sensor,/Data/NavigationSensor,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,InstrumentTimestamp,float64,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Ensemble,float64,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Pressure,float32,dbar,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Depth,float32,m,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,dp_dt,float32,dbar/s,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Altimeter_LE,float32,m,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Altimeter_AST,float32,m,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,QualityLE_Down,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,QualityAST_Down,float32,dB,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,DownBeamAngle,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,SpeedOfSound,float32,m/s,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,AverageSpeed_Down,float32,m/s,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,AverageCor_Down,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,WaterTemperature,float32,C,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Heading,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Pitch,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Roll,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,Motors,float32,,15,15,130,24268,112258
+Navigation Sensor,/Data/NavigationSensor,ProcessorTime,float64,,15,15,130,24268,112258
+PAM Spectrum,/Data/PAMSpectrum,time,float64,seconds since 1970-01-01T00:00:00 UTC,7,7,64,1424,3124
+PAM Spectrum,/Data/PAMSpectrum,TimeStamp,float64,s,7,7,64,1424,3124
+PAM Spectrum,/Data/PAMSpectrum,PowerSpectrum_PAMSpectrumFrequency,float64,Hz,7,7,64,1424,3124
+PAM Spectrum,/Data/PAMSpectrum,PowerSpectrum,float32,dB uPa^2/Hz,7,7,64,1424,3124
+PAM Status,/Data/PAMStatus,time,float64,seconds since 1970-01-01T00:00:00 UTC,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,TimeStamp,float64,s,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,SampleRate,float64,Hz,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_Disk1,float32,GB,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_Disk2,float32,GB,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_Disk3,float32,GB,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_Disk4,float32,GB,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_1_Disk1,float32,%,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_1_Disk2,float32,%,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_1_Disk3,float32,%,7,7,32,1424,3092
+PAM Status,/Data/PAMStatus,DiskUsage_1_Disk4,float32,%,7,7,32,1424,3092
+PID Heading,/Data/PIDHeading,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Status_PID_state,int8,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Heading,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Target,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Proportional,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Integral,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,Derivative,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,MotorCommand,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,LastMotorPosition,float32,,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,TimeDifference,float32,s,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,SensorTime,float64,s,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,HeadingError,float32,Percent,15,15,121,54996,188428
+PID Heading,/Data/PIDHeading,ProcessorTime,float64,s,15,15,121,54996,188428
+PID Pitch,/Data/PIDPitch,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Status_PID_state,int8,,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Pitch,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Target,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Proportional,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Integral,float32,,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,Derivative,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,MotorCommand,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,LastMotorPosition,float32,%,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,TimeDifference,float32,s,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,SensorTime,float64,s,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,PitchError,float32,Percent,15,15,121,59323,197463
+PID Pitch,/Data/PIDPitch,ProcessorTime,float64,s,15,15,121,59323,197463
+PID Vertical Rate,/Data/PIDVerticalRate,time,float64,seconds since 1970-01-01T00:00:00 UTC,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,Status_PID_state,int8,,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,VerticalRate,float32,m/s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,Target,float32,m/s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,Proportional,float32,m/s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,Integral,float32,,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,Derivative,float32,m/s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,MotorCommand,float32,ml,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,LastMotorPosition,float32,ml,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,TimeDifference,float32,s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,SensorTime,float64,s,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,VerticalRateError,float32,Percent,15,15,121,59447,197445
+PID Vertical Rate,/Data/PIDVerticalRate,ProcessorTime,float64,s,15,15,121,59447,197445
+Pressure,/Data/Pressure,time,float64,seconds since 1970-01-01T00:00:00 UTC,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,_,float32,dbar,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,Depth,float32,m,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,Temperature,float32,C,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,VBEMotor,float32,ml,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,PitchMotor,float32,%,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,RollMotor,float32,/00B0,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,SensorTimestamp,float64,,19,19,204,1352726,4721215
+Pressure,/Data/Pressure,ProcessorTime,float64,,19,19,204,1352726,4721215
+Processed Pressure,/Data/ProcessedPressure,time,float64,seconds since 1970-01-01T00:00:00 UTC,18,18,23,67634,236021
+Processed Pressure,/Data/ProcessedPressure,Pressure,float32,dbar,18,18,23,67634,236021
+Processed Pressure,/Data/ProcessedPressure,Depth,float32,m,18,18,23,67634,236021
+Processed Pressure,/Data/ProcessedPressure,SensorTimestamp,float64,,18,18,23,67634,236021
+Processed Pressure,/Data/ProcessedPressure,ProcessorTime,float64,,18,18,23,67634,236021
+VMP OS,/Data/VMPOS,time,float64,seconds since 1970-01-01T00:00:00 UTC,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,UserCPU,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,KernelCPU,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,IdleCPU,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,DataDiskAvailable,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,ConfigDiskAvailable,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,ConfigDisk,float32,MiB,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,DataDisk,float32,MiB,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,MemoryAvailable,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,TopCPUConsumer,float32,%,21,21,18,13747,48527
+VMP OS,/Data/VMPOS,TopMemoryConsumer,float32,bytes,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,time,float64,seconds since 1970-01-01T00:00:00 UTC,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,LeakDetect_A,float32,,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,LeakDetect_B,float32,,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,VMPTemperature,float32,C,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,Pressure,float32,Pa,21,21,18,13747,48527
+VMP System,/Data/VMPSystem,Humidity,float32,,21,21,18,13747,48527
