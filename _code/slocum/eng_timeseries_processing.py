@@ -3,11 +3,12 @@ import pandas as pd
 import xarray as xr
 
 # set global vars
-GLIDER = 'risso'
-START_TIME_CUTOFF = '2026-01-28 23:15:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
+GLIDER = 'capex987'
+START_TIME_CUTOFF = '2026-01-29 00:55:00'  # Format: 'YYYY-MM-DD HH:MM:SS'
 END_TIME_CUTOFF = '2026-02-10 09:45:00'    # Format: 'YYYY-MM-DD HH:MM:SS'
 
-eng_time_ds = xr.open_dataset(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-raw.nc')
+eng_time_ds = xr.open_dataset('gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/Data/capex987_20260128/esd data structure/data-out/2026/capex987-20260128/processed-L0/capex987-20260128-delayed-raw.nc')
+# eng_time_ds = xr.open_dataset(f'gcs-mnt/swfscesd-glider-deployments-data-out/2026/{GLIDER}-20260128/processed-L0/{GLIDER}-20260128-delayed-raw.nc')
 
 eng_time_df = eng_time_ds.to_dataframe()
 eng_time_df = eng_time_df.reset_index()
@@ -35,4 +36,5 @@ eng_time = eng_time[
 eng_time = eng_time.dropna(subset=['m_depth'])
 
 # save as csv
-eng_time.to_csv(f'GliderRodeo/data/{GLIDER}_20260128/{GLIDER}-20260128_flight_timeseries_engineering.csv', index=False)
+# eng_time.to_csv(f'GliderRodeo/data/{GLIDER}_20260128/{GLIDER}-20260128_flight_timeseries_engineering.csv', index=False)
+# eng_time.to_csv('gcs-mnt/nmfs-collaborative-working/2026_GliderRodeo/temp/large_uploads/capex987-20260128_flight_timeseries_engineering.csv', index=False)
