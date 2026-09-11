@@ -156,7 +156,7 @@ Slocum: Data download from the Slocum requires access to the internal acoustic m
 
 ## Field Reports
 
-Brief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork ([Feb 2,](https://drive.google.com/file/d/1ef5zI-_UE4WJwWlxOpZdEz625DopJ44u/view?usp=drivesdk) [Feb 9](https://drive.google.com/file/d/1w-aB2o7pMtN3jAHkogazJ11-pYViMWFv/view?usp=drivesdk), [Feb17](https://drive.google.com/file/d/1LPmR2GF-eWiwqoa6sY0LExupUPDJEG0K/view?usp=drivesdk), in addition to [NOAA Webstory and Blogs](https://nmfs-pam-glider.github.io/GliderRodeo/content/data-collection.html#communications)).
+Brief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork ([Feb 2,](https://drive.google.com/file/d/1ef5zI-_UE4WJwWlxOpZdEz625DopJ44u/view?usp=drivesdk) [Feb 9](https://drive.google.com/file/d/1w-aB2o7pMtN3jAHkogazJ11-pYViMWFv/view?usp=drivesdk), [Feb17](https://drive.google.com/file/d/1LPmR2GF-eWiwqoa6sY0LExupUPDJEG0K/view?usp=drivesdk), in addition to [NOAA Webstory and Blogs](https://nmfs-pam-glider.github.io/GliderRodeo/content/fieldwork.html#communications)).
 
 **Pilot Logs:** can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.
 

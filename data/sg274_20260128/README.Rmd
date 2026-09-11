@@ -14,9 +14,9 @@ library(kableExtra)
 data <- read_csv(here("data/sg274_20260128/sg_fieldDefinitions.csv"))
 ```
 
-# PRELIMINARY datasets for SeaGlider 'sg274'
+# PRELIMINARY datasets for Seaglider 'sg274'
 
-Non-audio data from Seagliders was prepared using the Post-mission processing via [Agate (Acoustic Glider Analysis Tools and Environment, Update from 10 March 2026)](https://sfregosi.github.io/agate/). Below are descriptions of the available datasets:
+Non-audio data from Seagliders was prepared using the Post-mission processing via [agate (Acoustic Glider Analysis Tools and Environment, v1.3.20260902)](https://sfregosi.github.io/agate/). Below are descriptions of the available datasets:
 
 ## sg274_20260128_flight_timeseries_engineering.csv
 
