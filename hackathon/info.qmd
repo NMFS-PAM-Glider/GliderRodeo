@@ -10,6 +10,7 @@ The slides and recordings will be linked from this page as they become available
 | Title | Slides | Recording |
 |:-----------------|:--------------------:|:------------------------------:|
 | Welcome to the Hackweek | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
+| Working with JupyterHub & Github | [<i class="bi bi-eye"><https://drive.google.com/file/d/1xC6kdoxpd3P2TDJWfdlyizQvxHTudZ3-/view?usp=drive_link>]() | [<i class="bi bi-youtube"></i>]() |
 | The Glider Rodeo | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 | Hackweek Wrapup | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 
