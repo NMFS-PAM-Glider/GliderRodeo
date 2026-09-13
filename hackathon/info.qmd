@@ -8,21 +8,19 @@ format: html
 The slides and recordings will be linked from this page as they become available. Download slides from the [shared drive](https://drive.google.com/drive/folders/1p_Bse9L02ogAFa7YYGKTI1AbC9WWGBUQ?usp=drive_link).
 
 | Title | Slides | Recording |
-|:-----------------|:--------------------:|:------------------------------:|
-| Welcome to the Hackweek | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
-| The Glider Rodeo | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Glider Data  | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+|:------------------|:--------------------:|:-----------------------------:|
+| Welcome to the Hackweek | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/18U9VJMDsVikDVrsbMuk85DiEW0y78svG/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| The Glider Rodeo Overview | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 | Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1xC6kdoxpd3P2TDJWfdlyizQvxHTudZ3-/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Hackweek Wrapup | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 
 
 # Tutorials
 
-| Title | Preview | Python {{ d1 }} | R {{ d1 }} |
-|:-----------------|:--------------------:|:------------------------------:|:------------------------------:|
-| Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | [<i class="bi bi-eye"></i>]("/_code/tutorials/GliderTracks.ipynb" download) | [<i class="bi bi-eye"></i>]("/_code/tutorials/GliderTracks.Rmd" download)
-| AquaView Tutorial | [<i class="bi bi-eye"></i>](https://aquaview.org/) | <a href="" download>{{ d1 }}</a> | <a href="" download>{{ d1 }}</a>
-
+| Title | Preview | Python  | R  |
+|:----------------|:---------------:|:-----------------:|:-----------------:|
+| Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.ipynb%22%20download) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.Rmd%22%20download) |
+| AquaView Tutorial | [<i class="bi bi-eye"></i>](https://aquaview.org/) | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-eye"></i>]()
 
 # References
 
@@ -31,3 +29,19 @@ The slides and recordings will be linked from this page as they become available
 Glider Rodeo Zenodo Repository
 
 [Aquaview](https://aquaview.org/)
+
+### More Information
+
+[NMFS Open Science JupyterHub Skills](https://nmfs-opensci.github.io/NMFSHackDays-2025/content/jhub.html)
+
+
+
+[Fish-PACE Hackweek Info](https://fish-pace.github.io/hackweek-2025/intro.html)
+
+Observable JS
+
+- [Quarto & Observable JS](https://quarto.org/docs/interactive/ojs/)
+
+- [Notebooks by Allison Horst](https://observablehq.com/@allisonhorst)
+
+[Allison Horst Data Science Art](https://allisonhorst.com/data-science-art)

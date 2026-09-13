@@ -581,10 +581,11 @@ display: none;
 <h1>PRELIMINARY datasets for Slocum Glider with JASCO OceanObserver
 ‘capex987’</h1>
 <p>Non-audio data from Slocum Glider with JASCO OceanObserver was
-prepared using [CHECK] the Post-mission processing via SWFSC Ecosystem
-Science Division’s <a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html">Slocum
-Glider Data Processing Methods)</a>. Below are descriptions of the
-available datasets:</p>
+prepared using the Post-mission processing via SWFSC Ecosystem Science
+Division’s <a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html">Slocum
+Glider Data Processing Methods</a> and summarized with additional
+timeseries processing <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/_code/slocum">code
+here</a>. Below are descriptions of the available datasets:</p>
 <div id="capex987_20260128_flight_timeseries_engineering.csv" class="section level2">
 <h2>capex987_20260128_flight_timeseries_engineering.csv</h2>
 <p>The flight engineering dataset contains information on the pitch,
@@ -945,13 +946,10 @@ numeric (0, 1, -1)
 <p>GPS time series data is formatted with one row per dive, with start
 and end times and locations for each dive. Movement between the end of
 one dive and the start of the next is due to any surface drift. The GPS
-dataset contains information on the Start and End Time, Latitude,
-Longitude as well as the duration, distance, and max depth for each
-dive. Additional variables are presented in the table (below). Methods
-to develop this dataset can be found on the SWFSC Ecosystem Science
-Division’s Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
-and definitions/units for data are found in the table below. <em>Note:
-Data are preliminary and require additional QAQC.</em></p>
+dataset contains information on the Start and End Time, Latitude, and
+Longitude. Methods to develop this dataset can be found in <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/_code/slocum">code
+here</a>, and definitions/units for data are found in the table below.
+<em>Note: Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1032,9 +1030,9 @@ decimal degrees
 <div id="capex987_20260128_science_timeseries.csv" class="section level2">
 <h2>capex987_20260128_science_timeseries.csv</h2>
 <p>The science dataset contains information on the depth, temperature,
-salinity, density, and sound velocity for each dive. Methods to develop
-this dataset can be found on the SWFSC Ecosystem Science Division’s
-Slocum Glider Data Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
+salinity, and density for each dive. Methods to develop this dataset can
+be found on the SWFSC Ecosystem Science Division’s Slocum Glider Data
+Processing Methods (<a href="https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html" class="uri">https://swfsc.github.io/glider-lab-manual/content/slocum-glider-data.html</a>),
 and definitions/units for data are found in the table below. <em>Note:
 Data are preliminary and require additional QAQC.</em></p>
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
@@ -1467,20 +1465,6 @@ meters (m)
 </tr>
 <tr>
 <td style="text-align:left;">
-num_points
-</td>
-<td style="text-align:left;">
-profiles
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 time_at_surface_s
 </td>
 <td style="text-align:left;">
@@ -1509,6 +1493,13 @@ seconds (s)
 </tr>
 </tbody>
 </table>
+</div>
+<div id="slocum-event-logs" class="section level2">
+<h2>Slocum Event Logs</h2>
+<p>Slocum gliders have a detailed event logs that include all commands
+sent to the gliders (user sent commands and scripted commands). These
+also include log notes entered by pilots. These logs are available <a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/data/Slocum%20Glider%20Rodeo%20Event%20Logs.xlsx">here</a>,
+navigate to the specific glider you are intereste in.</p>
 </div>
 <div id="capex987_20260128_fakedata_eventdetections.csv" class="section level2">
 <h2>capex987_20260128_FakeData_EventDetections.csv</h2>
