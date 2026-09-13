@@ -53,7 +53,6 @@ max_lon,profiles,Maximum longitude during profile in decimal degrees (DD.DDDD),d
 min_lat,profiles,Minimum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
 max_lat,profiles,Maximum latitude during profile in decimal degrees (DD.DDDD),decimal degrees
 distance_traveled,profiles,Distance traveled during profile in meters,meters (m)
-num_points,profiles,,
 time_at_surface_s,profiles,Length of time at surface in seconds (s),seconds (s)
 profile_duration_s,profiles,Length of time from start to end of profile in seconds (s),seconds (s)
 UNIQUE_ID,detections,"A unique ID for the recorder on the metadata sheet that this detection data can be linked to. There should be only one unique ID for any recorder entered. For each UNIQUE_ID and SPECIES combination, there should be the same combination of values for all of the following fields: CALL_TYPE, DETECTON_METHOD, PROTOCOL_REFERENCE, and ANALYSIS_SAMPLING_RATE_HZ. If multiple values are used across one UNIQUE_ID and SPECIES for any of these fields marked with an asterisk (*), enter all values and separate with a semicolon ("";""). A unique ID should have a combination with the minimum components: organization name or code, region or location of data collection, date for data (typically Year and Month of the first date of data collection), and site name or instrument ID for the particular recorder. Additional components could include project name, platform or recorder type, etc., as needed.",Text string
