@@ -10,22 +10,17 @@ The slides and recordings will be linked from this page as they become available
 | Title | Slides | Recording |
 |:-----------------|:--------------------:|:------------------------------:|
 | Welcome to the Hackweek | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
+| The Glider Rodeo | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| Glider Data  | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 | Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1xC6kdoxpd3P2TDJWfdlyizQvxHTudZ3-/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| The Glider Rodeo | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 | Hackweek Wrapup | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 
-```{=html}
-<!-- 
-| The Future of High-resolution Ocean Color | [{{ l0 }}][future-view]  | [{{ v0 }}][future-vid] |
-| Chlorophyll, Fish and Fisheries Management    | [{{ l0 }}][fish-view]  | [{{ v0 }}][fish-vid] | 
--->
-```
 
 # Tutorials
 
 | Title | Preview | Python {{ d1 }} | R {{ d1 }} |
 |:-----------------|:--------------------:|:------------------------------:|:------------------------------:|
-| Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | <a href="/_code/tutorials/GliderTracks.ipynb" download>{{ d1 }}</a> | <a href="/_code/tutorials/GliderTracks.Rmd" download>{{ d1 }}</a>
+| Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | [<i class="bi bi-eye"></i>]("/_code/tutorials/GliderTracks.ipynb" download) | [<i class="bi bi-eye"></i>]("/_code/tutorials/GliderTracks.Rmd" download)
 | AquaView Tutorial | [<i class="bi bi-eye"></i>](https://aquaview.org/) | <a href="" download>{{ d1 }}</a> | <a href="" download>{{ d1 }}</a>
 
 
