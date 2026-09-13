@@ -121,6 +121,9 @@ data %>%
   }
 ```
 
+## Slocum Event Logs
+Slocum gliders have a detailed event logs that include all commands sent to the gliders (user sent commands and scripted commands). These also include log notes entered by pilots. These logs are available [here](https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/data/Slocum%20Glider%20Rodeo%20Event%20Logs.xlsx), navigate to the specific glider you are intereste in. 
+
 ## stenella_20260128_FakeData_EventDetections.csv
 
 Due to complications beyond our control, accurate acoustic detection of cetacean species via manual and/or automated methods could not be completed prior to the Hackathon. A set of synthesized (fake!) data was provided in the data/detection folder to provide sample formatted data if a group would like to lead a project working with marine mammal acoustic data (projects developed with these synthesized datasets should be reproducible with real datasets in the future!). Field definitions/units for data are found in the table below (fields are the same for EventDetections and HrlyDetections).
