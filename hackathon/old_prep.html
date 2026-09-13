@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Collection – NOAA quarto simple</title>
+<title>Preparation – NOAA quarto simple</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,8 +35,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/data.html" rel="next">
-<link href="../content/hardware.html" rel="prev">
 <link href="../content/images/GliderRodeo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -79,20 +77,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="../site_libs/datatables-binding-0.34.0/datatables.js"></script>
-<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
-<link href="../site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
-<script src="../site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
-<link href="../site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
-<script src="../site_libs/selectize-0.12.0/selectize.min.js"></script>
-<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 </head>
@@ -268,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/fieldwork.html">Fieldwork</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Preparation</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -319,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/fieldwork.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/fieldwork.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fieldwork</span></a>
   </div>
 </li>
@@ -345,23 +329,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#partners" id="toc-partners" class="nav-link active" data-scroll-target="#partners">Partners</a></li>
-  <li><a href="#survey-design" id="toc-survey-design" class="nav-link" data-scroll-target="#survey-design">Survey Design</a>
+  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link active" data-scroll-target="#what-to-expect">What to Expect</a>
   <ul class="collapse">
-  <li><a href="#phase-1-trimming" id="toc-phase-1-trimming" class="nav-link" data-scroll-target="#phase-1-trimming">Phase 1: Trimming</a></li>
-  <li><a href="#phase-2-fast-mission-mode" id="toc-phase-2-fast-mission-mode" class="nav-link" data-scroll-target="#phase-2-fast-mission-mode">Phase 2: FAST Mission Mode</a></li>
-  <li><a href="#phase-3-slow-mission-mode" id="toc-phase-3-slow-mission-mode" class="nav-link" data-scroll-target="#phase-3-slow-mission-mode">Phase 3: SLOW Mission Mode</a></li>
-  <li><a href="#phase-4-intermediate-mission-mode" id="toc-phase-4-intermediate-mission-mode" class="nav-link" data-scroll-target="#phase-4-intermediate-mission-mode">Phase 4: INTERMEDIATE Mission Mode</a></li>
-  <li><a href="#phase-5-drift-mission-mode" id="toc-phase-5-drift-mission-mode" class="nav-link" data-scroll-target="#phase-5-drift-mission-mode">Phase 5: Drift Mission Mode</a></li>
-  <li><a href="#phase-6-mini-rodeo" id="toc-phase-6-mini-rodeo" class="nav-link" data-scroll-target="#phase-6-mini-rodeo">Phase 6: Mini-Rodeo</a></li>
-  <li><a href="#phase-7-recovery" id="toc-phase-7-recovery" class="nav-link" data-scroll-target="#phase-7-recovery">Phase 7: Recovery</a></li>
-  <li><a href="#waypoints-table" id="toc-waypoints-table" class="nav-link" data-scroll-target="#waypoints-table">Waypoints Table</a></li>
+  <li><a href="#typical-workflows-and-tools" id="toc-typical-workflows-and-tools" class="nav-link" data-scroll-target="#typical-workflows-and-tools">Typical Workflows and Tools</a></li>
+  <li><a href="#hackweek-projects" id="toc-hackweek-projects" class="nav-link" data-scroll-target="#hackweek-projects">HackWeek Projects</a></li>
   </ul></li>
-  <li><a href="#communications" id="toc-communications" class="nav-link" data-scroll-target="#communications">Communications</a></li>
-  <li><a href="#data-offload" id="toc-data-offload" class="nav-link" data-scroll-target="#data-offload">Data Offload</a></li>
-  <li><a href="#field-reports" id="toc-field-reports" class="nav-link" data-scroll-target="#field-reports">Field Reports</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a>
+  <ul class="collapse">
+  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account">Github Account</a></li>
+  <li><a href="#hackweek-jupyterhub" id="toc-hackweek-jupyterhub" class="nav-link" data-scroll-target="#hackweek-jupyterhub">Hackweek JupyterHub</a></li>
+  <li><a href="#pre-hackweek-learning-optional" id="toc-pre-hackweek-learning-optional" class="nav-link" data-scroll-target="#pre-hackweek-learning-optional">Pre-HackWeek Learning (Optional)</a></li>
+  </ul></li>
+  <li><a href="#setting-up-git" id="toc-setting-up-git" class="nav-link" data-scroll-target="#setting-up-git">Setting up <strong><code>git</code></strong></a>
+  <ul class="collapse">
+  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git">What is Git?</a></li>
+  <li><a href="#setting-up-on-jupyterhub" id="toc-setting-up-on-jupyterhub" class="nav-link" data-scroll-target="#setting-up-on-jupyterhub">Setting up on JupyterHub</a></li>
+  </ul></li>
+  <li><a href="#getting-started-with-python" id="toc-getting-started-with-python" class="nav-link" data-scroll-target="#getting-started-with-python">Getting started with Python</a>
+  <ul class="collapse">
+  <li><a href="#log-into-the-hackweek-jupyterhub" id="toc-log-into-the-hackweek-jupyterhub" class="nav-link" data-scroll-target="#log-into-the-hackweek-jupyterhub">Log into the hackweek JupyterHub</a></li>
+  <li><a href="#for-those-who-are-brand-new-to-python" id="toc-for-those-who-are-brand-new-to-python" class="nav-link" data-scroll-target="#for-those-who-are-brand-new-to-python">For those who are brand new to Python</a></li>
+  <li><a href="#start-with-some-basic-tutorials" id="toc-start-with-some-basic-tutorials" class="nav-link" data-scroll-target="#start-with-some-basic-tutorials">Start with some basic tutorials</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/fieldwork.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/fieldwork.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/old_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/old_prep.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -369,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Collection</h1>
+<h1 class="title">Preparation</h1>
 </div>
 
 
@@ -386,348 +377,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="partners" class="level2">
-<h2 class="anchored" data-anchor-id="partners">Partners</h2>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Pacific Islands Fisheries Science Center</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><a href="https://www.fisheries.noaa.gov/pacific-islands/population-assessments/passive-acoustics-pacific-islands"><em>Pacific Islands Fisheries Science Center</em></a> was the lead on all Glider Rodeo field efforts and co-lead of the PAM-Glider Strategic Initiative.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Southwest Fisheries Science Center</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><a href="https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab"><em>Southwest Fisheries Science Center</em></a> assisted with the Glider Rodeo event and co-leads the PAM-Glider Strategic Initiative.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Oregon State University, CIMERS and MMI</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The Cooperative Institute for Marine and Ecosystem Resources Studies (CIMERS) and Marine Mammal Institute (MMI) at Oregon State University are world leaders in marine mammal and bioacoustics research.</p>
-<p>They were involved in some of the earliest development to use gliders for marine mammal passive acoustic research and have conducted glider missions in many ocean basins for the U.S. Navy, BOEM, and NOAA.</p>
-<p>Participants: <a href="selene.fregosi@noaa.gov">Selene Fregosi</a>, <a href="dave.mellinger@noaa.gov">Dave Mellinger</a></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Cornell University</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>K. Lisa Yang Center for Conservation Bioacoustics provided Hefring OceanScout gliders.</p>
-<p>Participants: <a href="mv478@cornell.edu">Maria Vasilkin</a></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Teledyne Webb Research</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Teledyne Webb Research, in conjunction with JASCO Applied Sciences, provide a Slocum glider equipped with a JASCO OceanObserver acoustic sensor.</p>
-<p>Participants:<a href="karl.boettger@teledyne.com">Karl Boettger</a>, <a href="Shea.Quinn@teledyne.com">Shea Quinn</a>, <a href="cordielyn.goodrich@teledyne.com">Cordie Goodrich</a></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>Alseamar</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Alseamar provided an Alseamar SeaExplorer glider outfitted with an Auris acoustic sensor.</p>
-<p>Participants: <a href="cpierini@alseamar-alcen.com">Camille Pierini</a>, <a href="LBEGUERY@alseamar-alcen.com">Laurent Beguery</a></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>JASCO Applied Science</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>JASCO Applied Sciences, in conjunction with Teledyne Webb Research, provided a JASCO OceanObserver acoustic sensor on a Slocum.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span><em>University of Hawaii Marine Center</em>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Special thanks to <a href="https://www.soest.hawaii.edu/UHMC/">UH Marine Center</a> for providing charter vessel support</p>
-</div>
-</div>
-</div>
-</section>
-<section id="survey-design" class="level2">
-<h2 class="anchored" data-anchor-id="survey-design">Survey Design</h2>
-<p>Survey design consisted of a series of tracklines in a ‘Figure 8’ pattern, with each trackline serving as a different phase with its own mission goals. The goal was to reduce trimming changes in the middle of a phase (after initial trimming) to reduce covariates in our analysis. There was no attempt to keep the gliders together in any given phase; our intention was to allow gliders to operate as if they were doing a solo survey.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="images/tracklines_phase1-4.png" class="img-fluid"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="images/tracklines_phase5-6.png" class="img-fluid"></p>
-</div>
-</div>
-<section id="phase-1-trimming" class="level3">
-<h3 class="anchored" data-anchor-id="phase-1-trimming">Phase 1: Trimming</h3>
-<p><em>Fine Tune Adjustments</em> Glider deployment to take place near location SW (will take several hour). All teams were directed to send their gliders to waypoint GR02 (SW corner) while they do any initial trimming and assessments. This distance was 18 km and was intended to take the remainder of the day. Pilots were instructed to hold their glidres near GR02 until ~ 1200 HST on 29 January 2026.</p>
-</section>
-<section id="phase-2-fast-mission-mode" class="level3">
-<h3 class="anchored" data-anchor-id="phase-2-fast-mission-mode">Phase 2: FAST Mission Mode</h3>
-<p><em>Pilot to prioritize trackline progression</em> Goal is to fly gliders with goals of making good progress against currents and along the trackline and staying near the trackline, without worrying about glider motor noises or flow noise.</p>
-<p>Safety of the glider is the priority. GR03 is in shallower water (~600 m depth) so intention was to reduce maximum dive depths at the same point during the approach to GR03: decrease dive depth to 500 m before reaching 6 km to go to GR03 (water depth at 6 km to go is 1100 m). Intention was to increase dive depth after transiting 5 km from GR03 on way to GR04 (water depth at 5 km past is 1300+ m).</p>
-</section>
-<section id="phase-3-slow-mission-mode" class="level3">
-<h3 class="anchored" data-anchor-id="phase-3-slow-mission-mode">Phase 3: SLOW Mission Mode</h3>
-<p><em>Pilot to minimize niose while reaching the end of the line</em> Goal is to fly gliders with the goal of quiet acoustic data - reduced speed and guidance and control adjustments to reduce flow noise motor sounds. Making progress along the trackline is not the priority, within reason - we don’t want a glider wandering somewhere far away but are ok if it makes slower progress against currents.</p>
-</section>
-<section id="phase-4-intermediate-mission-mode" class="level3">
-<h3 class="anchored" data-anchor-id="phase-4-intermediate-mission-mode">Phase 4: INTERMEDIATE Mission Mode</h3>
-<p><em>Balancing maintaining course with reduced self-noise</em> Goal is balance of progress along trackline and maintaining course with reduction in glider-generated sounds or flow noise as possible. This is expected to be typical of what would be used for a PAM mission.</p>
-</section>
-<section id="phase-5-drift-mission-mode" class="level3">
-<h3 class="anchored" data-anchor-id="phase-5-drift-mission-mode">Phase 5: Drift Mission Mode</h3>
-<p><em>Intermediate mode with 20 min drifts at 800 m (repeated)</em> Goal is to fly gliders using the same general settings as intermediate phase, but add in drift at depth 800 m for 20 min duration (Oceanscout will drift at 150-180 m). It was decided that gliders could conduct a few dives within the first hour to first tune the drift settings/ballast. Intention was for a few 20 mins drift to understand glider movement over that duration of time.</p>
-</section>
-<section id="phase-6-mini-rodeo" class="level3">
-<h3 class="anchored" data-anchor-id="phase-6-mini-rodeo">Phase 6: Mini-Rodeo</h3>
-<p><em>Cycle through Phase 2-5 (12 hrs each)</em> To accommodate data storage problems with one glider, we conducted a ‘mini-rodeo’ to have all gliders cycle through the 4 phases one more time (12 hours each) before recovery. This began after the last 12 hours of drift mode and included: Slow, Intermediate, and Fast phases. Rather than target waypoints for the switches, transit along the NW to SE transect line as needed and switch at the specified times. Switch modes at your first surfacing after the 12 hour counter using the following:</p>
-<p>Sat 2000 HST - Last 12 hours of DRIFT mode (Phase 5) Sun 0800 HST - Start SLOW mode Sun 2000 HST - Start INTERMEDIATE mode Mon 0800 HST - Start FAST mode Mon 2000 HST - proceed to recovery - fly as you need to get as close as possible to recovery location</p>
-</section>
-<section id="phase-7-recovery" class="level3">
-<h3 class="anchored" data-anchor-id="phase-7-recovery">Phase 7: Recovery</h3>
-</section>
-<section id="waypoints-table" class="level3">
-<h3 class="anchored" data-anchor-id="waypoints-table">Waypoints Table</h3>
-<div class="cell" data-caption="Trackline Waypoints">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-dfb8b49c160c157ed1eb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-dfb8b49c160c157ed1eb">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"21.184875\" data-max=\"21.532685\" data-scale=\"7\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-158.419155\" data-max=\"-158.1704567\" data-scale=\"7\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Trackline Waypoints used during PAM-Glider Rodeo<\/caption>","data":[["1","2","3","4","5","6"],["GR01","GR02","GR03","GR04","GR05","RECV"],["21 13.6076","21 11.0925","21 31.9611","21 30.0704","21 23.0629","21 13.6076"],["-158 10.2274","-158 19.3966","-158 18.3548","-158 25.1493","-158 18.7956","-158 10.2274"],[21.2267933,21.184875,21.532685,21.5011733,21.3843817,21.2267933],[-158.1704567,-158.3232767,-158.3059133,-158.419155,-158.31326,-158.1704567],["SE; ~1190 m depth","SW; ~2990 m depth","NE; ~602 m depth","NW; ~2350 m depth","CX; ~2000 m depth","Same as GR01"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Name<\/th>\n      <th>Latitude_DDMM<\/th>\n      <th>Longitude_DDMM<\/th>\n      <th>Latitude_DD<\/th>\n      <th>Longitude_DD<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Name","targets":1},{"name":"Latitude_DDMM","targets":2},{"name":"Longitude_DDMM","targets":3},{"name":"Latitude_DD","targets":4},{"name":"Longitude_DD","targets":5},{"name":"Notes","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</section>
-</section>
-<section id="communications" class="level2">
-<h2 class="anchored" data-anchor-id="communications">Communications</h2>
-<p>PIFSC/SWFSC communication teams facilitated the creating and amplification of a series of integrated outreach/communications events that highlight how we are assessing capabilities of various passive acoustic glider systems to inform a transition to operations. These efforts were outlined in a Communications and Outreach plan developed by PIFSC (<a href="stefanie.gutierrez@noaa.gov">Stefanie Gutierrez</a>) and SWFSC (<a href="sarah.mesnick@noaa.gov">Sarah Mesnick</a>).</p>
-<p><em>Communications included:</em></p>
+<section id="what-to-expect" class="level1">
+<h1>What to Expect</h1>
+<p>The PAM-Glider Rodeo Hackweek will focus on applied, hands-on learning, with participants engaging in extended periods of small-group work. Our tutorials are designed to offer a broad snapshot of our data and science tools to support your applied investigations. Due to the relatively short duration of our events, we are not able to provide comprehensive, in-depth training in fundamental tools. Rather, our goal is to encourage team projects working with (or inspired by!) our glider and PAM datasets. The details of implementation will be what you work out via peer-learning (helping each other) in your project group.</p>
+<section id="typical-workflows-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="typical-workflows-and-tools">Typical Workflows and Tools</h2>
+<p>Here are a few specific scenarios of how hackweek participants will engage with data science tools:</p>
 <ul>
-<li><p><a href="https://www.fisheries.noaa.gov/feature-story/noaa-fisheries-launches-underwater-glider-challenge-hawaii"><strong>NOAA Fisheries Launches Underwater Glider Challenge in Hawai‘i</strong></a> (Stefanie Gutierrez, NOAA Featured Web Story, February 5, 2026)</p></li>
-<li><p><a href="https://www.fisheries.noaa.gov/science-blog/sound-bytes-meet-pilots-underwater-glider-challenge"><strong>Meet the Pilots of the Underwater Glider Challenge</strong></a> (Kourtney Burger, Sound Bytes Blog, February 5, 2026)</p></li>
-<li><p><a href="https://www.fisheries.noaa.gov/science-blog/sound-bytes-synchronous-swimming-robots-behind-glider-challenge"><strong>Synchronous Swimming (with Robots) - Behind the Glider Challenge</strong></a> (Selene Fregosi, Sound Bytes Blog, March 30, 2026)</p></li>
+<li><p>Connecting to a Jupyter Notebook environment to access data, github, and R/Python.</p></li>
+<li><p>Accessing cloud-hosted environmental data products through Aquaview and CoastWatch.</p></li>
+<li><p>Explore data from the ‘Glider Rodeo’ with multiple glider platforms and sensors.</p></li>
+<li><p>Modifying code, committing it to Git and pushing changes to GitHub, for others on your team to view and edit.</p></li>
+<li><p>Create summaries of your project team, methods, and results for final presentation &amp; sharing via github</p></li>
 </ul>
 </section>
-<section id="data-offload" class="level2">
-<h2 class="anchored" data-anchor-id="data-offload">Data Offload</h2>
-<p>Hefring Ocean Scout, Alseamar SeaExplorer: Data were offloaded at the end of the Glider Rodeo prior to shipping the gliders.</p>
-<p>At the end of the Glider Rodeo, the Seagliders started a mission with additional tracklines and for an additional 8-10 weeks associated with the WHICEAS survey, and data was downloaded when these gliders returned from their second mission.</p>
-<p>Slocum: Data download from the Slocum requires access to the internal acoustic module and was conducted after the glider returned to its home port (La Jolla, CA).</p>
+<section id="hackweek-projects" class="level2">
+<h2 class="anchored" data-anchor-id="hackweek-projects">HackWeek Projects</h2>
+<p>A good hackweek project is a concrete idea that a team can flesh out in a week together. Not everyone needs to code. There is background research to do, data to find, and lots and lots of data wrangling. A big part of the fun of hackweek is working together with a group with a diverse set of interests and skills. “I’ll find some data.” “I make some maps of our study area.” “I’ll figure out how to do a boosted regression tree.” “I’ll use that tutorial we were shown and get xyz glider data” etc, etc. It is messy, but through this process you’ll learn new skills and also get to know your project team mates.</p>
+<p>The project work is a combination of</p>
+<ul>
+<li><p>fleshing out a science idea that is small enough during Monday brainstorming.</p></li>
+<li><p>dividing up into tasks so that everyone can participate.</p></li>
+<li><p>coding and data wrangling on Tuesday through Thursday.</p></li>
+<li><p>and then Friday, frantically putting a presentation on your project and results.</p></li>
+</ul>
+<p>See <a href="https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/projects.html">Projects page</a> for more information.</p>
 </section>
-<section id="field-reports" class="level2">
-<h2 class="anchored" data-anchor-id="field-reports">Field Reports</h2>
-<p>Brief summaries were provided for the SWFSC Weekly Reports during the Glider Rodeo fieldwork (<a href="https://drive.google.com/file/d/1ef5zI-_UE4WJwWlxOpZdEz625DopJ44u/view?usp=drivesdk">Feb 2,</a> <a href="https://drive.google.com/file/d/1w-aB2o7pMtN3jAHkogazJ11-pYViMWFv/view?usp=drivesdk">Feb 9</a>, <a href="https://drive.google.com/file/d/1LPmR2GF-eWiwqoa6sY0LExupUPDJEG0K/view?usp=drivesdk">Feb17</a>, in addition to <a href="https://nmfs-pam-glider.github.io/GliderRodeo/content/fieldwork.html#communications">NOAA Webstory and Blogs</a>).</p>
-<p><strong>Pilot Logs:</strong> can be found in the 📂supplement/pilotLogs/ folder in the GliderRodeo github repository.</p>
-<p>Each glider platform provides a different approach to real-time summaries:</p>
-<section id="hefring-oceanscout" class="level4">
-<h4 class="anchored" data-anchor-id="hefring-oceanscout"><em>Hefring OceanScout</em></h4>
-<p><em>Stay Tuned!</em></p>
 </section>
-<section id="seaglider" class="level4">
-<h4 class="anchored" data-anchor-id="seaglider"><em>Seaglider</em></h4>
-<p><em>Stay Tuned!</em></p>
+<section id="checklist" class="level1">
+<h1>Checklist</h1>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Attention!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Here is a checklist of things you need to do in advance:</p>
+<p>- [ ] Create a Github Account</p>
+<p>- [ ] Login to the JupyterHub</p>
+<p>- [ ] Review material on the Glider Rodeo and Hackathon websites</p>
+</div>
+</div>
+<section id="github-account" class="level2">
+<h2 class="anchored" data-anchor-id="github-account">Github Account</h2>
+<p><a href="https://github.com/">GitHub</a> enables us to collaborate on code across teams in a web environment. If you do not already have a GitHub account, then navigate to <a href="https://github.com/">GitHub</a>, enter your email address and click on the green ‘Sign up for GitHub’ button. Be sure to save your username and password somewhere for use during the hackweek.</p>
 </section>
-<section id="dmon-on-slocum-glider" class="level4">
-<h4 class="anchored" data-anchor-id="dmon-on-slocum-glider"><em>DMON on Slocum Glider</em></h4>
-<p><em>Stay Tuned!</em></p>
+<section id="hackweek-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="hackweek-jupyterhub">Hackweek JupyterHub</h2>
+<p>We will be using a pre-provisioned compute environment for the hackweek which can be accessed via a web browser. You will not need to install anything. Please follow these instructions which will guide you through gaining access to the JupyterHub.</p>
+<p><a href="https://youtu.be/uZ2Uy376Az8">Watch this video</a> to get an orientation on our JupyterHub.</p>
+<p>Sign in by navigating to the JupyterHub. Instructions to sign in are in our Slack channel.</p>
+<p>You will see server options. To start, you can stay with the default image and RAM. It can take several minutes for new servers to launch on the cloud. Once things are spun up, you will see your very own instance of a JupyterLab environment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jh-server.png" class="img-fluid figure-img"></p>
+<figcaption>images</figcaption>
+</figure>
+</div>
+<p>You will have access to your own virtual drive space under the /home/jovyan directory. No other users will be able to see or access your data files. You can add/remove/edit files in your virtual drive space. You will also have access to the shared-public folder (read and write access). These are shared spaces so please make sure not to delete files from here unless they are yours.</p>
+<p>To save our community money, when you are finished working for the day it is helpful for you to explicitly stop your server before logging out of your JupyterHub session. To shut your server down immediately when you’re exiting your session please select “File -&gt; Hub Control Panel -&gt; Stop my Server” then you can click the “Log Out” button. We ask this because when you keep a session active it uses up AWS resources and these resources cost money per hour of use. If you forget this step, though, the server will shut down automatically after 90 min of no use. Logging out will NOT cause any files under your home directory to be deleted. It is equivalent to turning off your desktop computer at the end of the day.</p>
 </section>
-<section id="wispr-on-slocum-glider" class="level4">
-<h4 class="anchored" data-anchor-id="wispr-on-slocum-glider"><em>WISPR on Slocum Glider</em></h4>
-<p><em>Stay Tuned!</em></p>
+<section id="pre-hackweek-learning-optional" class="level2">
+<h2 class="anchored" data-anchor-id="pre-hackweek-learning-optional">Pre-HackWeek Learning (Optional)</h2>
+<p>If interested, please review course material from prior events:</p>
+<p>How do I run the tutorials if I don’t have Python and all the packages installed? Once you are in the Github Rodeo Hackweek slack, we’ll provide a link to our workshop compute environment (a JupyterHub). However, you can run 95% of the tutorials in <a href="https://colab.research.google.com/">Colab</a>. Here is a nice <a href="https://www.youtube.com/watch?v=Xi9-W26cDBs">intro to Colab for complete beginners</a>.</p>
 </section>
-<section id="jasco-oceanobserver-on-slocum-glider" class="level4">
-<h4 class="anchored" data-anchor-id="jasco-oceanobserver-on-slocum-glider"><em>JASCO OceanObserver on Slocum Glider</em></h4>
-<p>Pre-defined algorithims provided an opportunity for real-time detection of dolphins, minke whales, and humpback whales.</p>
-<details>
-<summary>
-Click to expand full details
-</summary>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_detections.jpg" class="img-fluid figure-img" alt="Real time detections provided by JASCO OceanObserver (on a Slocum Glider) during a window of several days."></p>
-<figcaption>Real time detections provided by Alseamar SeaExplorer during a window of several days</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_detectionMap.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time map of detections from a selection of several days from the JASCO OceanObserver (on a Slocum glider).</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_dolphinPlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of dolphin whistles identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_humpbackPlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of humpback whale song identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_minkePlot.png" class="img-fluid figure-img"></p>
-<figcaption>Near real-time detection of minke whale boing identified in a low resolution spectrogram contour plot.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_jasco_psd.png" class="img-fluid figure-img"></p>
-<figcaption>Power spectral density (PSD) measurements provided by near real-time updates from the JASCO OceanObserver (on a Slocum glider).</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</details>
 </section>
-<section id="alseamar-ocean-explorer" class="level4">
-<h4 class="anchored" data-anchor-id="alseamar-ocean-explorer"><em>Alseamar Ocean Explorer</em></h4>
-<p>Pre-defined algorithms provided an opportunity for real-time detection of dolphins, humpback whales, sperm whales, and fin whales. In addition to detections, low resolution spectrograms could be automatically sent from the glider in near real-time.</p>
-<details>
-<summary>
-Click to expand full details
-</summary>
-<div class="columns">
-<div class="column" style="width:40%;">
+<section id="setting-up-git" class="level1">
+<h1>Setting up <strong><code>git</code></strong></h1>
+<section id="what-is-git" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-git">What is Git?</h2>
+<p><a href="https://git-scm.com/">Git</a> is a version control system that many scientists use to collaborate on code.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are not required to know Git in advance of this event, but this is a great opportunity to learn all about it! <a href="https://git-scm.com/video/what-is-git">Here’s a quick introduction video from the official website</a></p>
+</div>
+</div>
+</section>
+<section id="setting-up-on-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-on-jupyterhub">Setting up on JupyterHub</h2>
+<p>Below are instructions to get you setup with&nbsp;<code>git</code>&nbsp;on the PAM-Glider Rodeo Hackweek JupyterHub. These are only basic instructions to get started. See the <a href="https://swcarpentry.github.io/git-novice/index.html" style="font-size: 11pt;">Software Carpentry Git</a> instructions for a thorough explanation and background information.</p>
+<ol type="1">
+<li><p>Login to JupyterHub</p>
+<p>Go to&nbsp;<a href="https://workshop.nmfs-openscapes.2i2c.cloud">https://workshop.nmfs-openscapes.2i2c.cloud</a>.</p></li>
+<li><p>Open a Terminal</p>
+<p>Choose the “Terminal” app from the “Other” options in the Launcher.</p>
+<p><img src="images/jh-open-terminal.png" class="img-fluid"></p></li>
+<li><p>Configure Basic <code>git</code> Information</p>
+<p>Set your name and email address. The&nbsp;<code>user.name</code>&nbsp;is your full name, not your “username” on GitHub or anywhere else. The email address should be one registered on your GitHub account.</p></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Attention
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use your own name instead of the placeholder Attendee Name in the below commands. For the email, it should be the address you used to create your GitHub account instead of attendee@hackweek.com. Both values need to be surrounded by quotes “.</p>
+</div>
+</div>
+<pre class="console"><code>$ git config --global user.name "Attendee Name"
+$ git config --global user.email "attendee@hackweek.com"
+$ git config --global pull.rebase true</code></pre>
+<p>The third line is a configuration you must set before pulling with git. It specifies the strategy on how git will apply changes you pull from a remote git repository. More on strategies is <a href="http://git-scm.com/book/en/v2/Git-Branching-Rebasing">described here</a>.</p>
+<p>To verify that you successfully executed the above commands, use the git config –list command in the Terminal. The output should look similar to this:</p>
+<pre class="console"><code>$ git config --list
+user.name=Attendee Name
+user.email=attendee@hackweek.com
+pull.rebase=true</code></pre>
+<ol start="4" type="1">
+<li>Authenticating with Github In order to interact with GitHub via the git command inside the JupyterHub environment, you need to set up authentication. This relies on secure Personal Access Tokens, which you can learn more about on <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">GitHub docs</a>.</li>
+</ol>
+<pre class="console"><code>Success! Authentication will expire in 8.0 hours.
+
+Visit https://github.com/apps/cryocloud-github-access to manage list of repositories you can push to from this location
+Tip: Use https:// URLs to clone and push to repos, not ssh URLs!</code></pre>
+<p>If you need to push to repositories that are not in Glider-Rodeo, such as to repos in your personal GitHub account, you will need to set up permission to access those repos. Follow the link provided. Here is a GIF walking through the workflow. Note that it shows a way to do the same setup in a notebook before showing the Terminal way just described.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/realTime_seaExplorer_detections.png" class="img-fluid figure-img"></p>
-<figcaption>Real time detections provided by Alseamar SeaExplorer during a window of several days.</figcaption>
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*B3qjACXLBG9pBOlzY8WNxA.gif" class="img-fluid figure-img"></p>
+<figcaption>image</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:40%;">
+<p>Option 2: Manual Configuration Work through the instructions on the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic">GitHub personal access tokens</a> page. The maximum permissions you likely need is the repo scope.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/realTime_seaExplorer_dolphins.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of dolphin acoustic detections from the Alseamar SeaExplorer.</figcaption>
+<p><img src="images/git-tokens.png" class="img-fluid figure-img"></p>
+<figcaption>image</figcaption>
 </figure>
 </div>
+<p>Once you have created your token, be sure to save it or use it before navigating away. It won’t be visible again. To have it saved on the JupyterHub the first time you use it, configure the git credential helper.</p>
+<pre class="console"><code>git config --global credential.helper store</code></pre>
+<p>To use the Personal Access Token, you need to use git to do something that requires authentication, such as pushing to a repository or cloning a private repository. These actions will prompt for input of your credentials. When prompted for a password, use the Personal Access Token rather than your GitHub password.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_humpbacks.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of humpback whale acoustic detections from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_spermWhale.png" class="img-fluid figure-img"></p>
-<figcaption>Low-resolution spectrogram of sperm whale acoustic detections from the Alseamar SeaExplorer.</figcaption>
-</figure>
+<div class="callout-body-container callout-body">
+<p>The prompt for the Password: will not show any characters that are entered and stay blank. Make sure to only copy and paste your token once and then hit the enter key.</p>
 </div>
 </div>
-</div>
-<p>The Alseamar SeaExplorer also provided near real-time plots of ambient noise measurements. Ambient noise measurements from early in the sea trial showed very low levels of low frequency ambient noise (near the theoretical minimum). These visualizations also provided information on detection of ship noise (and ship crossings), humpback whale chorus, and low frequency flow noise during fast (glider) travel. An increase in ambient noise associated with increasing sea states could be detected in the longer term LTSA shown by dive sequence.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_ltsa.psd.png" class="img-fluid figure-img"></p>
-<figcaption>Low resolution long term spectral average (LTSA) based on power spectral density (PSD) measurements provided by near real-time updates from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/realTime_seaExplorer_ltsa.yo.png" class="img-fluid figure-img"></p>
-<figcaption>Low resolution long term spectral average (LTSA) by dive (yo) provided by near real-time updates from the Alseamar SeaExplorer.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<details>
+</section>
+</section>
+<section id="getting-started-with-python" class="level1">
+<h1>Getting started with Python</h1>
+<p>For those of you who want to learn scientific programming with Python, here is one path you can follow.</p>
+<section id="log-into-the-hackweek-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="log-into-the-hackweek-jupyterhub">Log into the hackweek JupyterHub</h2>
+<pre class="console"><code>workshop.nmfs-openscapes.2i2c.cloud</code></pre>
+<p>Watch this <a href="https://youtu.be/uZ2Uy376Az8?si=Nh3simSYe94c0eEB">video</a> for a quick orientation to the JupyterHub.</p>
+</section>
+<section id="for-those-who-are-brand-new-to-python" class="level2">
+<h2 class="anchored" data-anchor-id="for-those-who-are-brand-new-to-python">For those who are brand new to Python</h2>
+<p>You might want to start with this basic <a href="https://swcarpentry.github.io/python-novice-inflammation/index.html">Software Carpentries Python</a> course.</p>
+<ul>
+<li><p>Log into the JupyterHub</p></li>
+<li><p>Open and new Jupyter notebook</p></li>
+<li><p>Enter code from the course and run</p></li>
+</ul>
+</section>
+<section id="start-with-some-basic-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-some-basic-tutorials">Start with some basic tutorials</h2>
+<p>Watch a <a href="https://youtu.be/scNDbOKZB4A">video</a> to see Eli doing these instructions.</p>
+<p>These are by <a href="https://jrjohansson.github.io/">Robert Johansson</a> author of Numerical Python.</p>
+<ul>
+<li><p>Log into the JupyterHub</p></li>
+<li><p>Open a terminal.</p></li>
+<li><p>Type</p></li>
+</ul>
+<pre class="console"><code>cd ~
+git clone https://github.com/jrjohansson/scientific-python-lectures</code></pre>
+<p>Open the ipynb notebooks and start working through the material.</p>
 
 
-</details></details></section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1149,18 +992,6 @@ Click to expand full details
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../content/hardware.html" class="pagination-link" aria-label="Hardware">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Hardware</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/data.html" class="pagination-link" aria-label="Data">
-        <span class="nav-page-text">Data</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1169,7 +1000,7 @@ Click to expand full details
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/content/fieldwork.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/content/fieldwork.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/edit/main/hackathon/old_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/old_prep.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/NMFS-PAM-Glider/GliderRodeo/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
