@@ -22,7 +22,7 @@ The slides and recordings will be linked from this page as they become available
 | Title | Preview | Python  | R  |
 |:----------------|:---------------:|:-----------------:|:-----------------:|
 | Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.ipynb%22%20download) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.Rmd%22%20download) |
-| AquaView Tutorial | [<i class="bi bi-eye"></i>](https://aquaview.org/) | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-eye"></i>]()
+| AQUAVIEW Tutorial | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/index.html) | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/notebook-preview.html) | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/notebook-preview-R.html) |
 
 # References
 
@@ -30,7 +30,7 @@ The slides and recordings will be linked from this page as they become available
 
 Glider Rodeo Zenodo Repository
 
-[Aquaview](https://aquaview.org/)
+[AQUAVIEW](https://aquaview.org/)
 
 ### More Information
 
