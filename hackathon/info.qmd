@@ -15,6 +15,8 @@ The slides and recordings will be linked from this page as they become available
 | Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 | Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 | Coastwatch Resources for using Satellite Oceo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kxixXIMS8IW-27Uc691ltnx-L-S8C70x/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| Analysis of Noise from PAM-Gliders | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
+| More about Glider Noise | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13TOCNHx62dQkmTPSRxTUL8n6WqdBj0Ni/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 
 
 # Tutorials
