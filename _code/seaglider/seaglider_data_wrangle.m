@@ -58,7 +58,7 @@ for gtr = 1:length(gliders) % set to a number to test one glider
     lastTime = lastTimes(gtr);
 
     % load agate outputs
-    load(fullfile(path_in, [glider '_20260128_WHICEAS_gpsSurfaceTable.mat']));
+    load(fullfile(path_in, [glider '_20260128_WHICEAS_gpsSurfaceTable_wFG.mat']));
     load(fullfile(path_in, [glider '_20260128_WHICEAS_locCalcT.mat']));
     load(fullfile(path_in, [glider '_20260128_WHICEAS_engTable.mat']));
 
