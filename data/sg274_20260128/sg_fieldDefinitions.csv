@@ -35,6 +35,8 @@ avg_speed_e,GPS_timeseries,Eastward component of flight average speed based on h
 avg_speed_n_gsm,GPS_timeseries,Glider Slope Model (gsm):  Flight average speed northing.,meters per second (m/s)
 avg_speed_e_gsm,GPS_timeseries,Glider Slope Model (gsm): Flight average speed in easting.,meters per second (m/s)
 hdm_qc,GPS_timeseries,A quality flag for validity of data dependent on the hydrodynamic model** 0 - QC_NO_CHANGE 1 -QC_GOOD 2 - QC_PROBABLY_GOOD 3 - QC_PROBABLY_BAD 4 - QC_BAD 5 - QC_CHANGED 6 - QC_UNSAMPLED 8 - QC_INTERPOLATED 9 - QC_MISSING,n/a
+FG_AHR_24V,GPS_timeseries,"Cumulative amp hours from the motors, tracked by the supervisor fuel gauge, at the start of the dive.",amp hours
+FG_AHR_10V,GPS_timeseries,"Cumulative amp hours from the sensors and electronics, tracked by the supervisor fuel gauge, at the start of the dive.",amp hours
 dive,science_timeseries,Dive number (sequential starting at 1) for a complete dive (a single 'yo'). A dive begins when the glider submerges to begin a descent and ends when the glider surfaces at the end of an ascent. ,numerical integer
 time,science_timeseries,Time (seconds since 1970-01-01T00:00:00+00:00),seconds (s)
 latitude,science_timeseries,"Latitude in decimal degrees (DD.DDDD), estimated from the hydrodynamic model.",decimal degrees
