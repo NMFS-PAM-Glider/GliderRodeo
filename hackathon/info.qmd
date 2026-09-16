@@ -9,12 +9,13 @@ The slides and recordings will be linked from this page as they become available
 
 | Title | Slides | Recording |
 |:------------------|:--------------------:|:-----------------------------:|
-| Welcome to the Hackweek | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/18U9VJMDsVikDVrsbMuk85DiEW0y78svG/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Project Pitches | [<i class="bi bi-eye"></i>](https://docs.google.com/presentation/d/1VRE5VWUvxvvJdLzhLmTpfChZMD6xnsmuEF-fzkHRd20/edit?usp=sharing) | [<i class="bi bi-youtube"></i>]() |
-| The Glider Rodeo Overview | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| Coastwatch Resources for using Satellite Oceo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kxixXIMS8IW-27Uc691ltnx-L-S8C70x/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| Welcome to the Hackweek | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/18U9VJMDsVikDVrsbMuk85DiEW0y78svG/view?usp=drive_link) | - |
+| Project Pitches | [<i class="bi bi-eye"></i>](https://docs.google.com/presentation/d/1VRE5VWUvxvvJdLzhLmTpfChZMD6xnsmuEF-fzkHRd20/edit?usp=sharing) | - |
+| The Glider Rodeo Overview | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | - |
+| Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | - |
+| Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | - |
+| Coastwatch Resources for using Satellite Oceo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kxixXIMS8IW-27Uc691ltnx-L-S8C70x/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_29zq7uy7) |
+| AQUAVIEW Data Portal | - | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_bee0ru1e) |
 | Analysis of Noise from PAM-Gliders | [<i class="bi bi-eye"></i>]() | [<i class="bi bi-youtube"></i>]() |
 | More about Glider Noise | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13TOCNHx62dQkmTPSRxTUL8n6WqdBj0Ni/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
 
