@@ -16,8 +16,8 @@ The slides and recordings will be linked from this page as they become available
 | Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | - |
 | Coastwatch Resources for using Satellite Oceo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kxixXIMS8IW-27Uc691ltnx-L-S8C70x/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_29zq7uy7) |
 | AQUAVIEW Data Portal | - | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_bee0ru1e) |
-| Analysis of Noise from PAM-Gliders | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1k0m5_IP3Y9ecoEg4qk22-VzLEQn9766j/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
-| More about Glider Noise | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13TOCNHx62dQkmTPSRxTUL8n6WqdBj0Ni/view?usp=drive_link) | [<i class="bi bi-youtube"></i>]() |
+| Analysis of Noise from PAM-Gliders | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1k0m5_IP3Y9ecoEg4qk22-VzLEQn9766j/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_hd6tjslf) |
+| More about Glider Noise | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13TOCNHx62dQkmTPSRxTUL8n6WqdBj0Ni/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_6a8yvafs) |
 
 
 # Tutorials
