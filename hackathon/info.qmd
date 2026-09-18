@@ -50,3 +50,11 @@ Observable JS
 - [Notebooks by Allison Horst](https://observablehq.com/@allisonhorst)
 
 [Allison Horst Data Science Art](https://allisonhorst.com/data-science-art)
+
+Resources shared in slack
+- [Research Compendium Template](https://sael-swfsc.github.io/PAM_template_ResearchCompendium/)
+- [IOOS QARTOD Real-Time Quality Control of Passive Acoustics Data](https://ioos.noaa.gov/ioos-in-action/passive-acoustics/)
+- [IOOS QARTOD Real-Time Quality Control of In-Situ Current Observations](https://ioos.noaa.gov/ioos-in-action/currents/)
+- [All IOOS QARTOD Manuals](https://ioos.noaa.gov/project/qartod/)
+- [DCLDE Ithaca 2027](https://www.dclde.org/)
+- [Underwater Glider Operations Knowledge Base](https://e-abdi.github.io/Glider-Operation-Best-Practices/)
