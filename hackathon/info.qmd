@@ -9,21 +9,20 @@ The slides and recordings will be linked from this page as they become available
 
 | Title | Slides | Recording |
 |:------------------|:--------------------:|:-----------------------------:|
-| Welcome to the Hackweek | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/18U9VJMDsVikDVrsbMuk85DiEW0y78svG/view?usp=drive_link) | - |
-| Project Pitches | [<i class="bi bi-eye"></i>](https://docs.google.com/presentation/d/1VRE5VWUvxvvJdLzhLmTpfChZMD6xnsmuEF-fzkHRd20/edit?usp=sharing) | - |
-| The Glider Rodeo Overview | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | - |
-| Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | - |
-| Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | - |
+| Welcome to the Hackweek | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/18U9VJMDsVikDVrsbMuk85DiEW0y78svG/view?usp=drive_link) | \- |
+| Project Pitches | [<i class="bi bi-eye"></i>](https://docs.google.com/presentation/d/1VRE5VWUvxvvJdLzhLmTpfChZMD6xnsmuEF-fzkHRd20/edit?usp=sharing) | \- |
+| The Glider Rodeo Overview | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kUeJSnmmcbOkfDq1S-R1k5US1Ct8jbO5/view?usp=drive_link) | \- |
+| Glider Rodeo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13XRyZCalXmM76htjsMpLn3Rwz06ifCCs/view?usp=drive_link) | \- |
+| Working with JupyterHub & Github | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1S0178YRPfDtPggUPrEV7zZUubKv6509B/view?usp=drive_link) | \- |
 | Coastwatch Resources for using Satellite Oceo Data | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1kxixXIMS8IW-27Uc691ltnx-L-S8C70x/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_29zq7uy7) |
-| AQUAVIEW Data Portal | - | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_bee0ru1e) |
+| AQUAVIEW Data Portal | \- | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_bee0ru1e) |
 | Analysis of Noise from PAM-Gliders | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/1k0m5_IP3Y9ecoEg4qk22-VzLEQn9766j/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_hd6tjslf) |
 | More about Glider Noise | [<i class="bi bi-eye"></i>](https://drive.google.com/file/d/13TOCNHx62dQkmTPSRxTUL8n6WqdBj0Ni/view?usp=drive_link) | [<i class="bi bi-youtube"></i>](https://media.oregonstate.edu/media/t/1_6a8yvafs) |
 
-
 # Tutorials
 
-| Title | Preview | Python  | R  |
-|:----------------|:---------------:|:-----------------:|:-----------------:|
+| Title | Preview | Python | R |
+|:-----------------|:----------------:|:-----------------:|:-----------------:|
 | Comparing Glider Observations with Satellite Data | [<i class="bi bi-eye"></i>](https://coastwatch-training.github.io/tutorials/codegallery.html#cg-glider-tracks-satellite-comparison) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.ipynb%22%20download) | [<i class="bi bi-eye"></i>](%22/_code/tutorials/GliderTracks.Rmd%22%20download) |
 | AQUAVIEW Tutorial | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/index.html) | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/notebook-preview.html) | [<i class="bi bi-eye"></i>](https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/notebook-preview-R.html) |
 
@@ -39,8 +38,6 @@ Glider Rodeo Zenodo Repository
 
 [NMFS Open Science JupyterHub Skills](https://nmfs-opensci.github.io/NMFSHackDays-2025/content/jhub.html)
 
-
-
 [Fish-PACE Hackweek Info](https://fish-pace.github.io/hackweek-2025/intro.html)
 
 Observable JS
@@ -52,9 +49,15 @@ Observable JS
 [Allison Horst Data Science Art](https://allisonhorst.com/data-science-art)
 
 Resources shared in slack
+
 - [Research Compendium Template](https://sael-swfsc.github.io/PAM_template_ResearchCompendium/)
+
 - [IOOS QARTOD Real-Time Quality Control of Passive Acoustics Data](https://ioos.noaa.gov/ioos-in-action/passive-acoustics/)
+
 - [IOOS QARTOD Real-Time Quality Control of In-Situ Current Observations](https://ioos.noaa.gov/ioos-in-action/currents/)
+
 - [All IOOS QARTOD Manuals](https://ioos.noaa.gov/project/qartod/)
+
 - [DCLDE Ithaca 2027](https://www.dclde.org/)
+
 - [Underwater Glider Operations Knowledge Base](https://e-abdi.github.io/Glider-Operation-Best-Practices/)
