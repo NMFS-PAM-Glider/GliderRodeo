@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: ../_site/hackathon
+  resources:
+    - slides/*.pdf
 
 book:
   title: "Glider Rodeo Hackathon"
