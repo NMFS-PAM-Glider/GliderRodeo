@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "content/**/*.qmd"
+  resources:
+    - hackathon/slides/*.pdf
 
 website: 
   page-navigation: true

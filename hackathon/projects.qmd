@@ -3,36 +3,64 @@ title: "Projects"
 format: html
 ---
 
-During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site [Submit your name here to join](https://forms.gle/y1kFU1U13iEbww2i9).
+**Final Presentation** The recording for our team share-out final project presentations is available [here](https://media.oregonstate.edu/media/t/1_wl75rvu2).
 
-We encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:
+## Glider Selection Dashboard
 
-- *focus on learning:* dive deeper into this shared data resource and tutorial content; gain more hands-on data science experience
+The goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.
 
-- *focus on research:* people often work to advance a research challenge using tools or data shared during the event. This often includes ongoing graduate and postgraduate investigations.
+**Team Members:** Ehsan Abdi (Akvaplan-niva) Anne Simonis (Estuary & Ocean Science Center, SFSU) Kasey Castello (Scripps Institution of Oceanography, UC San Diego) Héloïse Frouin-Mouy (University of Miami, NOAA SEFSC)
 
-- *focus on creating new tools:* The tools we build here will be shared with the greater community and can serve as a catalyst for new community libraries.
+**Links:** - Updated Glider Selection Dashboard - Hackathon Prototype Folder/README
 
-- *focus on community building:* hackweeks bring people together for the first time and projects are used to build social fabric and foster open science
+```{=html}
+<div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
+  <iframe src="hackathon_shared_repo/glider-selection-dashboard/glider-selection-dashboard_FinalPresentation.pdf"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+</div>
+```
 
-### Examples from previous Hackathons
+## Noise Profiler
 
-- Ocean Hackweek [Searchable table of Projects](https://oceanhackweek.org/ohw24_proj_catalog_us/OHW_project_list.html)
+Noise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.
 
-- [Fish-PACE Hackweek 2026 Projects](https://fish-pace.github.io/hackweek-2025/projects/list_of_projects.html)
+**Team Members:** Aaron Deans (Scripps Institution of Oceanography, UC San Diego) Julia Engdahl (Rutgers University, Center for Ocean Observing Leadership) Liz Ferguson (Ocean Science Analytics) Kaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)
 
-### Project development timeline:
+**Links:** - Updated Noise Profiler - Hackathon Prototype Folder/README
 
-- *pre-hackweek:* brainstorming ideas for projects with other participants in our Slack communication platform
+```{=html}
+<div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
+  <iframe src="hackathon_shared_repo/noise-fx-calc/PAM-Glider%20Noise%20Profiler%20Final%20Presentation.pdf"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+</div>
+```
 
-- *day one:* pitching of ideas and selection of a project to work on, identify tasks for each person on the team
+## PAM Transform Visualizer
 
-- *by morning day two:* create a Github repository in our hackweek GitHub organization and start coding and working on tasks!
+Passive Acoustic Monitoring (PAM) data often requires analysts to add one or more transforms to the raw audio data. The impact of transform settings and the cumulative effect of multiple transforms on the data is not intuitive. The goal of this project is to develop a visualization tool to understand the impact of one or more transforms to the original audio data. This tool will be beneficial to new (and experienced!) analysts and can serve as an educational tool.
 
-- *last day:* presentation of your project work. What did you create? What did you learn?
+**Team Members:** Aaron Mau (Voice of the Ocean) Brijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego) Ivia Closset (Finnish Meteorological Institute)
 
-::: callout-note
-## Want to join the conversation?
+**Links:** - Updated PAM Transform Visualizer - Hackathon Prototype Folder/README
 
-If you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by adding your contact information to the [Participant Form](https://forms.gle/y1kFU1U13iEbww2i9).
-:::
+```{=html}
+<div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
+  <iframe src="hackathon_shared_repo/hackathon-shared-repo/blob/main/pam-visualizer/transformer-viz_Presentation_09182026.pdf"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+</div>
+```
+
+## Noise Nowcaster
+
+Ocean noise impacts the detection range of underwater gliders, and environmental variables impact ambient noise levels. The goal of this study is to predict hourly ambient noise levels in five whale-call frequency bands from weather and sea state, and turning those levels into how far a glider can expect to hear.
+
+**Team Members:** Suramya Angdembay (University of Mississippi, Aquaview.org) Kapil Sharma (University of Mississippi, Aquaview.org) Bibas Kandel (University of Mississippi, Aquaview.org)
+
+**Links:** - [Updated Noise Nowcaster](https://github.com/imbishal7/GliderRodeo) - [README.md](https://github.com/NMFS-PAM-Glider/hackathon-shared-repo/tree/main/noise-nowcaster)
+
+```{=html}
+<iframe src="https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/noise-nowcaster-slides.html#1" width="100%" height="600px" style="border: none;"></iframe>
+```

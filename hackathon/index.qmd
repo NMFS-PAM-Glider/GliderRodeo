@@ -49,9 +49,5 @@ Our goals are to share this dataset with the wider community and encourage use o
 
 - Please review our [Code of Conduct](https://nmfs-pam-glider.github.io/GliderRodeo/hackathon/conduct.html), and lets make sure everyone feels welcome!
 
-### **How to Participate:**
 
-Please fill out this [participant form](https://forms.gle/y1kFU1U13iEbww2i9), and we'll invite you to join our conversation on our Slack Workspace!
-
-\
 *Learn more about the [NOAA Fisheries PAM-Glider Program](https://nmfs-ost.github.io/PAM-Glider/) and the [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)*
