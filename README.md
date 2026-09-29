@@ -1,4 +1,10 @@
+------------------------------------------------------------------------
+
+editor: markdown: wrap: 72 ---
+
 # NOAA Fisheries Glider Rodeo 2026
+
+[![](content/images/zenodo.23046571.svg)](https://doi.org/10.5281/zenodo.23046571)
 
 ## Link to Final Report
 
@@ -6,7 +12,7 @@
 
 ## How to Cite
 
-*Stay Tuned!*
+@misc{glider-rodeo2026compendium, author = {Rankin, Shannon, Fregosi, Selene and Burger, Kourtney}, title = {Research Compendium for NOAA Fisheries Glider Rodeo}, year = {2026}, version = {v1.0}, publisher = {Zenodo}, doi = {10.5281/zenodo.23046571}, url = {https://github.com/NMFS-PAM-Glider/GliderRodeo} }
 
 ## Research Compendium
 
@@ -16,21 +22,19 @@ This repository contains data and code for the ***2026 NOAA Fisheries Glider Rod
 
 This directory contains:
 
--   📁 manuscript: Manuscript for Report
+- 📁 manuscript: Manuscript for Report
 
--   📁 content: chapters/sections for online version; includes 📁 images subfolder for online figures
+- 📁 content: chapters/sections for online version; includes 📁 images subfolder for online figures
 
--   📁 figs: contains all figures generated for the analysis
+- 📁 docs: Contains rendered versions of the reports
 
--   📁 docs: Contains rendered versions of the reports
+- 📁 data: contains summarized data for reports
 
--   📁 data: Contains raw or raw-derived data
+- 📁 output: Include any modified or intermediate data or data products, including flowcharts (data in data folder is ORIGINAL, and data in output may be modified using code stored in R folder.
 
--   📁 output: Include any modified or intermediate data or data products, including flowcharts (data in data folder is ORIGINAL, and data in output may be modified using code stored in R folder.
+- 📁 \_code: scripts that actually do things.
 
--   📁 \_code: scripts that actually do things.
-
--   📁 supplement: Supplementary files that are not data, script, or components of the manuscript
+- 📁 supplement: Supplementary files that are not data, script, or components of the manuscript
 
 ## Updates for Reproducible Workflows
 
@@ -38,7 +42,7 @@ Periodically renv::snapshot() should be run to save the state of the project lib
 
 ## Funding
 
-*Stay Tuned!*
+The Glider Rodeo was funded by NOAA Fisheries as part of their modernization efforts.
 
 ### Disclaimer
 
