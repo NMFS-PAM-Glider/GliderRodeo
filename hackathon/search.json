@@ -134,7 +134,7 @@
     "href": "projects.html#glider-selection-dashboard",
     "title": "6  Projects",
     "section": "",
-    "text": "Glider Performance Tool\nUpdated Glider Selection Dashboard Repository\nPrototype 📁 (hackathon) hackathon-shared-repo/glider-selection-dashboard",
+    "text": "Glider Performance Tool\nUpdated Glider Selection Dashboard Repository\nPrototype 📁 (hackathon) hackathon-shared-repo/glider-selection-dashboard\n\nlibrary(here)",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
@@ -144,7 +144,7 @@
     "href": "projects.html#noise-profiler",
     "title": "6  Projects",
     "section": "6.2 Noise Profiler",
-    "text": "6.2 Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n\nUpdated Noise Profiler\nPrototype 📁 (hackathon) hackathon-shared-repo/noise-fx-calc\nREADME",
+    "text": "6.2 Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-based report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n\nUpdated Noise Profiler\nPrototype 📁 (hackathon) hackathon-shared-repo/noise-fx-calc\nREADME",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]

@@ -14,21 +14,21 @@
     "href": "hackathon/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Important\n\n\n\nFinal Presentations!! The recording for our team share-out final project presentations is available here."
+    "text": "here() starts at /home/runner/work/GliderRodeo/GliderRodeo/hackathon"
   },
   {
     "objectID": "hackathon/projects.html#glider-selection-dashboard",
     "href": "hackathon/projects.html#glider-selection-dashboard",
     "title": "Projects",
     "section": "Glider Selection Dashboard",
-    "text": "Glider Selection Dashboard\nThe goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.\nTeam Members:\nEhsan Abdi (Akvaplan-niva)\nAnne Simonis (Estuary & Ocean Science Center, SFSU)\nKasey Castello (Scripps Institution of Oceanography, UC San Diego)\nHéloïse Frouin-Mouy (University of Miami, NOAA SEFSC)\nLinks:\n\nGlider Performance Tool\nUpdated Glider Selection Dashboard Repository\nPrototype 📁 (hackathon) hackathon-shared-repo/glider-selection-dashboard"
+    "text": "Glider Selection Dashboard\nThe goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.\nTeam Members:\nEhsan Abdi (Akvaplan-niva)\nAnne Simonis (Estuary & Ocean Science Center, SFSU)\nKasey Castello (Scripps Institution of Oceanography, UC San Diego)\nHéloïse Frouin-Mouy (University of Miami, NOAA SEFSC)\nLinks:\n\nGlider Performance Tool\nUpdated Glider Selection Dashboard Repository\nPrototype 📁 (hackathon) hackathon-shared-repo/glider-selection-dashboard\n\nlibrary(here)"
   },
   {
     "objectID": "hackathon/projects.html#noise-profiler",
     "href": "hackathon/projects.html#noise-profiler",
     "title": "Projects",
     "section": "Noise Profiler",
-    "text": "Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n\nUpdated Noise Profiler\nPrototype 📁 (hackathon) hackathon-shared-repo/noise-fx-calc\nREADME"
+    "text": "Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-based report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n\nUpdated Noise Profiler\nPrototype 📁 (hackathon) hackathon-shared-repo/noise-fx-calc\nREADME"
   },
   {
     "objectID": "hackathon/projects.html#pam-transform-visualizer",
