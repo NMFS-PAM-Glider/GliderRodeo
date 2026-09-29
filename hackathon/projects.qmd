@@ -9,9 +9,21 @@ format: html
 
 The goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.
 
-**Team Members:** Ehsan Abdi (Akvaplan-niva) Anne Simonis (Estuary & Ocean Science Center, SFSU) Kasey Castello (Scripps Institution of Oceanography, UC San Diego) Héloïse Frouin-Mouy (University of Miami, NOAA SEFSC)
+**Team Members:**
 
-**Links:** - Updated Glider Selection Dashboard - Hackathon Prototype Folder/README
+Ehsan Abdi (Akvaplan-niva)
+
+Anne Simonis (Estuary & Ocean Science Center, SFSU)
+
+Kasey Castello (Scripps Institution of Oceanography, UC San Diego)
+
+Héloïse Frouin-Mouy (University of Miami, NOAA SEFSC)
+
+**Links:**
+
+\- Updated Glider Selection Dashboard
+
+\- Hackathon Prototype Folder/README
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -25,9 +37,21 @@ The goal is to develop a Glider Selection Dashboard that brings together informa
 
 Noise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.
 
-**Team Members:** Aaron Deans (Scripps Institution of Oceanography, UC San Diego) Julia Engdahl (Rutgers University, Center for Ocean Observing Leadership) Liz Ferguson (Ocean Science Analytics) Kaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)
+**Team Members:**
 
-**Links:** - Updated Noise Profiler - Hackathon Prototype Folder/README
+Aaron Deans (Scripps Institution of Oceanography, UC San Diego)
+
+Julia Engdahl (Rutgers University, Center for Ocean Observing Leadership)
+
+Liz Ferguson (Ocean Science Analytics)
+
+Kaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)
+
+**Links:**
+
+\- Updated Noise Profiler
+
+\- Hackathon Prototype Folder/README
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -41,9 +65,19 @@ Noise (ambient and self-noise from glider operations) may reduce our ability to 
 
 Passive Acoustic Monitoring (PAM) data often requires analysts to add one or more transforms to the raw audio data. The impact of transform settings and the cumulative effect of multiple transforms on the data is not intuitive. The goal of this project is to develop a visualization tool to understand the impact of one or more transforms to the original audio data. This tool will be beneficial to new (and experienced!) analysts and can serve as an educational tool.
 
-**Team Members:** Aaron Mau (Voice of the Ocean) Brijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego) Ivia Closset (Finnish Meteorological Institute)
+**Team Members:**
 
-**Links:** - Updated PAM Transform Visualizer - Hackathon Prototype Folder/README
+Aaron Mau (Voice of the Ocean)
+
+Brijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego)
+
+Ivia Closset (Finnish Meteorological Institute)
+
+**Links:**
+
+\- Updated PAM Transform Visualizer
+
+\- Hackathon Prototype Folder/README
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -57,9 +91,19 @@ Passive Acoustic Monitoring (PAM) data often requires analysts to add one or mor
 
 Ocean noise impacts the detection range of underwater gliders, and environmental variables impact ambient noise levels. The goal of this study is to predict hourly ambient noise levels in five whale-call frequency bands from weather and sea state, and turning those levels into how far a glider can expect to hear.
 
-**Team Members:** Suramya Angdembay (University of Mississippi, Aquaview.org) Kapil Sharma (University of Mississippi, Aquaview.org) Bibas Kandel (University of Mississippi, Aquaview.org)
+**Team Members:**
 
-**Links:** - [Updated Noise Nowcaster](https://github.com/imbishal7/GliderRodeo) - [README.md](https://github.com/NMFS-PAM-Glider/hackathon-shared-repo/tree/main/noise-nowcaster)
+Suramya Angdembay (University of Mississippi, Aquaview.org)
+
+Kapil Sharma (University of Mississippi, Aquaview.org)
+
+Bibas Kandel (University of Mississippi, Aquaview.org)
+
+**Links:**
+
+\- [Updated Noise Nowcaster](https://github.com/imbishal7/GliderRodeo)
+
+\- [README.md](https://github.com/NMFS-PAM-Glider/hackathon-shared-repo/tree/main/noise-nowcaster)
 
 ```{=html}
 <iframe src="https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/noise-nowcaster-slides.html#1" width="100%" height="600px" style="border: none;"></iframe>
