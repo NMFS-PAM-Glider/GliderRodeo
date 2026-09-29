@@ -24,7 +24,7 @@
     "href": "index.html#participation",
     "title": "Glider Rodeo Hackathon",
     "section": "0.3 Participation",
-    "text": "0.3 Participation\n\nDo you want to build community within the glider or PAM community?\nDo you have analyses or tools that you would like to apply to this dataset?\nDo you want to transfer analyses or tools developed here to your data?\nAre you a student in science, engineering, or software development looking for new experiences?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\n0.3.1 Expectations:\n\nNo experience is necessary, although we hope all project team participants will participate all week (you can work with your team if you have other commitments!).\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\nPlease review our Code of Conduct, and lets make sure everyone feels welcome!\n\n\n\n0.3.2 How to Participate:\nPlease fill out this participant form, and we’ll invite you to join our conversation on our Slack Workspace!\n\nLearn more about the NOAA Fisheries PAM-Glider Program and the Glider Rodeo",
+    "text": "0.3 Participation\n\nDo you want to build community within the glider or PAM community?\nDo you have analyses or tools that you would like to apply to this dataset?\nDo you want to transfer analyses or tools developed here to your data?\nAre you a student in science, engineering, or software development looking for new experiences?\nDo you have project ideas you’d like to propose (or lead?)?\n\n\n0.3.1 Expectations:\n\nNo experience is necessary, although we hope all project team participants will participate all week (you can work with your team if you have other commitments!).\nSee the tentative schedule for planning purposes.\nAll communications will use the Slack platform (can use browser or app).\nPlease review our Code of Conduct, and lets make sure everyone feels welcome!\n\nLearn more about the NOAA Fisheries PAM-Glider Program and the Glider Rodeo",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Glider Rodeo Hackathon</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "info.html",
     "title": "5  Information",
     "section": "",
-    "text": "6 Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n-\n\n\nProject Pitches\n\n-\n\n\nThe Glider Rodeo Overview\n\n-\n\n\nGlider Rodeo Data\n\n-\n\n\nWorking with JupyterHub & Github\n\n-\n\n\nCoastwatch Resources for using Satellite Oceo Data\n\n\n\n\nAQUAVIEW Data Portal\n-\n\n\n\nAnalysis of Noise from PAM-Gliders\n\n\n\n\nMore about Glider Noise\n\n\n\n\n\n\n\n7 Tutorials\n\n\n\nTitle\nPreview\nPython\nR\n\n\n\n\nComparing Glider Observations with Satellite Data\n\n\n\n\n\nAQUAVIEW Tutorial\n\n\n\n\n\n\n\n\n8 Final Presentation\nThe recording for our team share-out final project presentations is available here.\n\n\n9 References\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAQUAVIEW\n\n9.0.1 More Information\nNMFS Open Science JupyterHub Skills\nFish-PACE Hackweek Info\nObservable JS\n\nQuarto & Observable JS\nNotebooks by Allison Horst\n\nAllison Horst Data Science Art\nResources shared in slack\n\nResearch Compendium Template\nIOOS QARTOD Real-Time Quality Control of Passive Acoustics Data\nIOOS QARTOD Real-Time Quality Control of In-Situ Current Observations\nAll IOOS QARTOD Manuals\nDCLDE Ithaca 2027\nUnderwater Glider Operations Knowledge Base",
+    "text": "6 Hackathon Lectures\nThe slides and recordings will be linked from this page as they become available. Download slides from the shared drive.\n\n\n\nTitle\nSlides\nRecording\n\n\n\n\nWelcome to the Hackweek\n\n-\n\n\nProject Pitches\n\n-\n\n\nThe Glider Rodeo Overview\n\n-\n\n\nGlider Rodeo Data\n\n-\n\n\nWorking with JupyterHub & Github\n\n-\n\n\nCoastwatch Resources for using Satellite Oceo Data\n\n\n\n\nAQUAVIEW Data Portal\n-\n\n\n\nAnalysis of Noise from PAM-Gliders\n\n\n\n\nMore about Glider Noise\n\n\n\n\nFinal Presentations\n\n\n\n\n\n\n\n7 Tutorials\n\n\n\nTitle\nPreview\nPython\nR\n\n\n\n\nComparing Glider Observations with Satellite Data\n\n\n\n\n\nAQUAVIEW Tutorial\n\n\n\n\n\n\n\n\n8 References\nGlider Rodeo Github Repository and website\nGlider Rodeo Zenodo Repository\nAQUAVIEW\n\n8.0.1 More Information\nNMFS Open Science JupyterHub Skills\nFish-PACE Hackweek Info\nObservable JS\n\nQuarto & Observable JS\nNotebooks by Allison Horst\n\nAllison Horst Data Science Art\nResources shared in slack\n\nResearch Compendium Template\nIOOS QARTOD Real-Time Quality Control of Passive Acoustics Data\nIOOS QARTOD Real-Time Quality Control of In-Situ Current Observations\nAll IOOS QARTOD Manuals\nDCLDE Ithaca 2027\nUnderwater Glider Operations Knowledge Base",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Information</span>"
     ]
@@ -124,7 +124,37 @@
     "href": "projects.html",
     "title": "6  Projects",
     "section": "",
-    "text": "During this hackweek we invite participants to collaborate in small group project teams (usually 5-7 people). Projects provide unique opportunities for networking, advancing research and learning new things. Guidance on group project development will be ongoing prior to the hackweek via our Glider Rodeo slack site Submit your name here to join.\nWe encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:\n\nfocus on learning: dive deeper into this shared data resource and tutorial content; gain more hands-on data science experience\nfocus on research: people often work to advance a research challenge using tools or data shared during the event. This often includes ongoing graduate and postgraduate investigations.\nfocus on creating new tools: The tools we build here will be shared with the greater community and can serve as a catalyst for new community libraries.\nfocus on community building: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science\n\n\n6.0.1 Examples from previous Hackathons\n\nOcean Hackweek Searchable table of Projects\nFish-PACE Hackweek 2026 Projects\n\n\n\n6.0.2 Project development timeline:\n\npre-hackweek: brainstorming ideas for projects with other participants in our Slack communication platform\nday one: pitching of ideas and selection of a project to work on, identify tasks for each person on the team\nby morning day two: create a Github repository in our hackweek GitHub organization and start coding and working on tasks!\nlast day: presentation of your project work. What did you create? What did you learn?\n\n\n\n\n\n\n\nNoteWant to join the conversation?\n\n\n\nIf you have a project idea and would like to participate, request to join our Glider Rodeo slack channel by adding your contact information to the Participant Form.",
+    "text": "6.1 Glider Selection Dashboard\nFinal Presentation The recording for our team share-out final project presentations is available here.\nThe goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.\nTeam Members:\nEhsan Abdi (Akvaplan-niva)\nAnne Simonis (Estuary & Ocean Science Center, SFSU)\nKasey Castello (Scripps Institution of Oceanography, UC San Diego)\nHéloïse Frouin-Mouy (University of Miami, NOAA SEFSC)\nLinks:\n- Updated Glider Selection Dashboard\n- Hackathon Prototype Folder/README",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  },
+  {
+    "objectID": "projects.html#noise-profiler",
+    "href": "projects.html#noise-profiler",
+    "title": "6  Projects",
+    "section": "6.2 Noise Profiler",
+    "text": "6.2 Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n- Updated Noise Profiler\n- Hackathon Prototype Folder/README",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  },
+  {
+    "objectID": "projects.html#pam-transform-visualizer",
+    "href": "projects.html#pam-transform-visualizer",
+    "title": "6  Projects",
+    "section": "6.3 PAM Transform Visualizer",
+    "text": "6.3 PAM Transform Visualizer\nPassive Acoustic Monitoring (PAM) data often requires analysts to add one or more transforms to the raw audio data. The impact of transform settings and the cumulative effect of multiple transforms on the data is not intuitive. The goal of this project is to develop a visualization tool to understand the impact of one or more transforms to the original audio data. This tool will be beneficial to new (and experienced!) analysts and can serve as an educational tool.\nTeam Members:\nAaron Mau (Voice of the Ocean)\nBrijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego)\nIvia Closset (Finnish Meteorological Institute)\nLinks:\n- Updated PAM Transform Visualizer\n- Hackathon Prototype Folder/README",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  },
+  {
+    "objectID": "projects.html#noise-nowcaster",
+    "href": "projects.html#noise-nowcaster",
+    "title": "6  Projects",
+    "section": "6.4 Noise Nowcaster",
+    "text": "6.4 Noise Nowcaster\nOcean noise impacts the detection range of underwater gliders, and environmental variables impact ambient noise levels. The goal of this study is to predict hourly ambient noise levels in five whale-call frequency bands from weather and sea state, and turning those levels into how far a glider can expect to hear.\nTeam Members:\nSuramya Angdembay (University of Mississippi, Aquaview.org)\nKapil Sharma (University of Mississippi, Aquaview.org)\nBibas Kandel (University of Mississippi, Aquaview.org)\nLinks:\n- Updated Noise Nowcaster\n- README.md",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
