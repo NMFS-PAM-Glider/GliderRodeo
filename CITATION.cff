@@ -1,0 +1,15 @@
+cff-version: 1.0
+message: "If you use this Research Compendium, please cite it as below."
+authors:
+- family-names: Shannon 
+  given-names: Rankin
+orcid: https://orcid.org/0000-0002-8405-5169
+- family-names: Selene 
+  given-names: Fregosi
+orcid: https://orcid.org/0000-0002-2685-3736
+- family-names: Kourtney 
+  given-names: Burger
+orcid: https://orcid.org/0009-0008-5814-9752
+title:NMFS-PAM-Glider/GliderRodeo: Glider Rodeo & Hackathon v1.0
+version: v1.0
+date-released: 2026-09-29
