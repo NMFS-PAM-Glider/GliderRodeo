@@ -3,7 +3,9 @@ title: "Projects"
 format: html
 ---
 
-**Final Presentation** The recording for our team share-out final project presentations is available [here](https://media.oregonstate.edu/media/t/1_wl75rvu2).
+::: callout-important
+**Final Presentations!!** The recording for our team share-out final project presentations is available [here](https://media.oregonstate.edu/media/t/1_wl75rvu2).
+:::
 
 ## Glider Selection Dashboard
 
@@ -21,9 +23,11 @@ Héloïse Frouin-Mouy (University of Miami, NOAA SEFSC)
 
 **Links:**
 
-\- Updated Glider Selection Dashboard
+- [Glider Performance Tool](https://e-abdi.github.io/glider-performance-tool/)
 
-\- Hackathon Prototype Folder/README
+- [Updated Glider Selection Dashboard Repository](https://github.com/e-abdi/glider-performance-tool)
+
+- Prototype 📁 (hackathon) [hackathon-shared-repo/glider-selection-dashboard](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/glider-selection-dashboard)
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -49,9 +53,11 @@ Kaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)
 
 **Links:**
 
-\- Updated Noise Profiler
+- Updated Noise Profiler
 
-\- Hackathon Prototype Folder/README
+- Prototype 📁 (hackathon) [hackathon-shared-repo/noise-fx-calc](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/noise-fx-calc)
+
+- [README](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/noise-fx-calc#readme)
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -75,9 +81,11 @@ Ivia Closset (Finnish Meteorological Institute)
 
 **Links:**
 
-\- Updated PAM Transform Visualizer
+- Updated PAM Transform Visualizer
 
-\- Hackathon Prototype Folder/README
+- Prototype 📁 (hackathon) [hackathon-shared-repo/pam-visualizer](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/pam-visualizer)
+
+- [README](https://github.com/NMFS-PAM-Glider/GliderRodeo/blob/main/hackathon/hackathon-shared-repo/pam-visualizer/README.md)
 
 ```{=html}
 <div style="position: relative; padding-bottom: 55.5%; height: 0; overflow: hidden;">
@@ -101,9 +109,9 @@ Bibas Kandel (University of Mississippi, Aquaview.org)
 
 **Links:**
 
-\- [Updated Noise Nowcaster](https://github.com/imbishal7/GliderRodeo)
+- [Updated Noise Nowcaster](https://github.com/imbishal7/GliderRodeo)
 
-\- [README.md](https://github.com/NMFS-PAM-Glider/hackathon-shared-repo/tree/main/noise-nowcaster)
+- [README.md](https://github.com/NMFS-PAM-Glider/hackathon-shared-repo/tree/main/noise-nowcaster)
 
 ```{=html}
 <iframe src="https://storage.googleapis.com/aquaview-public-assets/glider-rodeo/noise-nowcaster-slides.html#1" width="100%" height="600px" style="border: none;"></iframe>
