@@ -124,7 +124,17 @@
     "href": "projects.html",
     "title": "6  Projects",
     "section": "",
-    "text": "6.1 Glider Selection Dashboard\nFinal Presentation The recording for our team share-out final project presentations is available here.\nThe goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.\nTeam Members:\nEhsan Abdi (Akvaplan-niva)\nAnne Simonis (Estuary & Ocean Science Center, SFSU)\nKasey Castello (Scripps Institution of Oceanography, UC San Diego)\nHéloïse Frouin-Mouy (University of Miami, NOAA SEFSC)\nLinks:\n- Updated Glider Selection Dashboard\n- Hackathon Prototype Folder/README",
+    "text": "6.1 Glider Selection Dashboard\nThe goal is to develop a Glider Selection Dashboard that brings together information from the Glider Rodeo, glider manufacturers, and relevant datasets to help users determine which glider platform and configuration would be best suited for a particular mission.\nTeam Members:\nEhsan Abdi (Akvaplan-niva)\nAnne Simonis (Estuary & Ocean Science Center, SFSU)\nKasey Castello (Scripps Institution of Oceanography, UC San Diego)\nHéloïse Frouin-Mouy (University of Miami, NOAA SEFSC)\nLinks:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
+    ]
+  },
+  {
+    "objectID": "projects.html#glider-selection-dashboard",
+    "href": "projects.html#glider-selection-dashboard",
+    "title": "6  Projects",
+    "section": "",
+    "text": "Glider Performance Tool\nUpdated Glider Selection Dashboard Repository\nPrototype 📁 (hackathon) hackathon-shared-repo/glider-selection-dashboard",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
@@ -134,7 +144,7 @@
     "href": "projects.html#noise-profiler",
     "title": "6  Projects",
     "section": "6.2 Noise Profiler",
-    "text": "6.2 Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n- Updated Noise Profiler\n- Hackathon Prototype Folder/README",
+    "text": "6.2 Noise Profiler\nNoise (ambient and self-noise from glider operations) may reduce our ability to detect sounds of importance. It is therefore important to identify the conditions which yield elevated noise levels. The goal of this project is to create an automated slideshow-baed report to summarize noise levels linked to input variables of interest. This will allow the user to easily visualize which conditions contribute to elevated noise levels, and which frequency bands are most affected.\nTeam Members:\nAaron Deans (Scripps Institution of Oceanography, UC San Diego)\nJulia Engdahl (Rutgers University, Center for Ocean Observing Leadership)\nLiz Ferguson (Ocean Science Analytics)\nKaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)\nLinks:\n\nUpdated Noise Profiler\nPrototype 📁 (hackathon) hackathon-shared-repo/noise-fx-calc\nREADME",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
@@ -144,7 +154,7 @@
     "href": "projects.html#pam-transform-visualizer",
     "title": "6  Projects",
     "section": "6.3 PAM Transform Visualizer",
-    "text": "6.3 PAM Transform Visualizer\nPassive Acoustic Monitoring (PAM) data often requires analysts to add one or more transforms to the raw audio data. The impact of transform settings and the cumulative effect of multiple transforms on the data is not intuitive. The goal of this project is to develop a visualization tool to understand the impact of one or more transforms to the original audio data. This tool will be beneficial to new (and experienced!) analysts and can serve as an educational tool.\nTeam Members:\nAaron Mau (Voice of the Ocean)\nBrijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego)\nIvia Closset (Finnish Meteorological Institute)\nLinks:\n- Updated PAM Transform Visualizer\n- Hackathon Prototype Folder/README",
+    "text": "6.3 PAM Transform Visualizer\nPassive Acoustic Monitoring (PAM) data often requires analysts to add one or more transforms to the raw audio data. The impact of transform settings and the cumulative effect of multiple transforms on the data is not intuitive. The goal of this project is to develop a visualization tool to understand the impact of one or more transforms to the original audio data. This tool will be beneficial to new (and experienced!) analysts and can serve as an educational tool.\nTeam Members:\nAaron Mau (Voice of the Ocean)\nBrijonnay Madrigal (Scripps Institution of Oceanography, UC San Diego)\nIvia Closset (Finnish Meteorological Institute)\nLinks:\n\nUpdated PAM Transform Visualizer\nPrototype 📁 (hackathon) hackathon-shared-repo/pam-visualizer\nREADME",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
@@ -154,7 +164,7 @@
     "href": "projects.html#noise-nowcaster",
     "title": "6  Projects",
     "section": "6.4 Noise Nowcaster",
-    "text": "6.4 Noise Nowcaster\nOcean noise impacts the detection range of underwater gliders, and environmental variables impact ambient noise levels. The goal of this study is to predict hourly ambient noise levels in five whale-call frequency bands from weather and sea state, and turning those levels into how far a glider can expect to hear.\nTeam Members:\nSuramya Angdembay (University of Mississippi, Aquaview.org)\nKapil Sharma (University of Mississippi, Aquaview.org)\nBibas Kandel (University of Mississippi, Aquaview.org)\nLinks:\n- Updated Noise Nowcaster\n- README.md",
+    "text": "6.4 Noise Nowcaster\nOcean noise impacts the detection range of underwater gliders, and environmental variables impact ambient noise levels. The goal of this study is to predict hourly ambient noise levels in five whale-call frequency bands from weather and sea state, and turning those levels into how far a glider can expect to hear.\nTeam Members:\nSuramya Angdembay (University of Mississippi, Aquaview.org)\nKapil Sharma (University of Mississippi, Aquaview.org)\nBibas Kandel (University of Mississippi, Aquaview.org)\nLinks:\n\nUpdated Noise Nowcaster\nREADME.md",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects</span>"
     ]
