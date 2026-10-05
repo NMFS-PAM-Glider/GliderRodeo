@@ -6,9 +6,14 @@ editor: markdown: wrap: 72 ---
 
 [![](content/images/zenodo.23046571.svg)](https://doi.org/10.5281/zenodo.23046571)
 
-## Link to Final Report
+## Link to Final Report, etc
 
-*Stay Tuned!*
+*Stay Tuned for Final report!*
+
+Zenodo Links:\
+[![](content/images/zenodo.23046205.svg)](https://doi.org/10.5281/zenodo.23046205)[NOAA Fisheries Glider Rodeo 2026 Preliminary Hackathon Dataset](https://zenodo.org/records/23046205)
+
+[![](content/images/zenodo.23046571.svg)](https://doi.org/10.5281/zenodo.23046571) [NMFS-PAM-GLider/GliderRodeo: Glider Rodeo & Hackathon v1.0](https://zenodo.org/records/23046571)
 
 ## How to Cite
 
@@ -22,11 +27,13 @@ This repository contains data and code for the ***2026 NOAA Fisheries Glider Rod
 
 This directory contains:
 
+- 📁 hackathon: Contains hackathon book info, and:
+  - 📁 hackathon-shared-repo: contains hackathon pilot projects and related info
+  - 📁 slides: PDFs of presentation slides
+
 - 📁 manuscript: Manuscript for Report
 
 - 📁 content: chapters/sections for online version; includes 📁 images subfolder for online figures
-
-- 📁 docs: Contains rendered versions of the reports
 
 - 📁 data: contains summarized data for reports
 

@@ -57,7 +57,7 @@ Kaitlin Palmer (OAI, NOAA Pacific Islands Fisheries Science Center)
 
 **Links:**
 
-- Updated Noise Profiler
+- [Updated Noise Profiler](https://github.com/jeengdahl97/noise-fx-calc)
 
 - Prototype 📁 (hackathon) [hackathon-shared-repo/noise-fx-calc](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/noise-fx-calc)
 
@@ -85,7 +85,7 @@ Ivia Closset (Finnish Meteorological Institute)
 
 **Links:**
 
-- Updated PAM Transform Visualizer
+- [Updated PAM Transform Visualizer](https://github.com/Klankers/pam_glider_viz)
 
 - Prototype 📁 (hackathon) [hackathon-shared-repo/pam-visualizer](https://github.com/NMFS-PAM-Glider/GliderRodeo/tree/main/hackathon/hackathon-shared-repo/pam-visualizer)
 
